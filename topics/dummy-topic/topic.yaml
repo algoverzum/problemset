@@ -1,0 +1,19 @@
+id: dummy-topic
+name: Dummy Topic
+problems:
+- id: dummy-task-first
+  type: ENTRY
+- id: dummy-task-second
+  type: REQUIRED
+- id: dummy-task-third
+  type: OPTIONAL
+- id: dummy-task-fourth
+  type: COMPLETION
+- id: dummy-task-fifth
+  type: EXTRA
+prerequisites:
+visualization:
+- image_filename: 1.svg
+- position:
+  - x: 0
+  - y: 0
