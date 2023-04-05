@@ -1,0 +1,14 @@
+### Hint 1
+Fill an array with answers to all possible questions of the first type.
+Can you calculate the answers to the second type?
+
+### Hint 2
+If we have $S_i = A_1 + A_2 + \ldots + A_i$ for every $i$, then the sum of a range
+$(A_L + \ldots + A_R)$ can be obtained with one operation. Can you find out how?
+
+### Hint 3
+Let us calculate the so called prefix sums, $S_i = A_1 + A_2 + \ldots + A_i$ for
+every $i$. This can be done with one loop that sets every $S_i = S_{i−1} + A_i$, with
+initially $S_0 = 0$. The answer to the first type of question will be $S_K$. The
+answer to a second type of question, the total asteroids between day $L$ and
+$R$ (inclusive) will be $A_L + A_{L+1} + \ldots + A_R = S_R − S_{L-1}$.

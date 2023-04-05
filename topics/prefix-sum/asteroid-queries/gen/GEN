@@ -1,0 +1,24 @@
+# N  Q  V  S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+
+# Subtask 2: N <= 100, V<=100
+#ST: 50
+#STNAME: small
+7    9  10  1
+10  12   9  2
+15  13  15  3
+20  20  20  4
+
+
+# Subtask 3: big
+#ST: 50
+#STNAME: big
+1000    1000    1000   5
+100000  100000  10     6
+100000  100000  1000   7
+100000  100000  10000  8
+

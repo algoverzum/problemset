@@ -1,32 +1,41 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
+# common auxiliary files
+.DS_Store
+*.pyc
 *.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
+.done
+.itime
+a.out
 *.exe
+
+# commonly used build folders
+input/
+output/
+io/
+tests/
+checker
+
+# task-maker build folders
+files/
+temp/
+bin/
+fuzz/
+
+# vscode internals
+.vscode
+__latexindent_temp.tex
+
+# WSL internals
+*:Zone.Identifier
+
+# Latex
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+
+# Ignore input/output files
+*.in
 *.out
-*.app
+*.zip
