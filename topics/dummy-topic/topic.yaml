@@ -11,9 +11,9 @@ problems:
   type: COMPLETION
 - id: dummy-task-fifth
   type: EXTRA
-prerequisites:
+prerequisites: []
 visualization:
-- image_filename: 1.svg
-- position:
-  - x: 0
-  - y: 0
+  image_filename: 1.svg
+  position:
+    x: 0
+    y: 0
