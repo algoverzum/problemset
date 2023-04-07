@@ -1,6 +1,7 @@
 # General info
 name: dummy-task-first
-title: Dummy Task First
+title:
+  en: Dummy Task First
 
 # Technical info
 memory_limit: 256

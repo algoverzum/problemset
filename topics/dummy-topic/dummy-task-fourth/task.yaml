@@ -1,6 +1,7 @@
 # General info
 name: dummy-task-fourth
-title: Dummy Task Fourth
+title:
+  en: Dummy Task Fourth
 
 # Technical info
 memory_limit: 256

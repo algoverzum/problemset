@@ -1,6 +1,7 @@
 # General info
 name: dummy-task-third
-title: Dummy Task Third
+title:
+  en: Dummy Task Third
 
 # Technical info
 memory_limit: 256

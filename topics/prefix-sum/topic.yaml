@@ -1,7 +1,7 @@
 id: prefix-sum
 name: Prefix Sum
 problems:
-- id: asteroid-queries
+- problem_id: asteroid-queries
   type: ENTRY
 prerequisites:
 - 2d-array

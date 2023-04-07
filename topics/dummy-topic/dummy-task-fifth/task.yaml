@@ -1,6 +1,7 @@
 # General info
 name: dummy-task-fifth
-title: Dummy Task Fifth
+title:
+  en: Dummy Task Fifth
 
 # Technical info
 memory_limit: 256

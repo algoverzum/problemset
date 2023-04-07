@@ -1,15 +1,15 @@
 id: dummy-topic
 name: Dummy Topic
 problems:
-- id: dummy-task-first
+- problem_id: dummy-task-first
   type: ENTRY
-- id: dummy-task-second
+- problem_id: dummy-task-second
   type: REQUIRED
-- id: dummy-task-third
+- problem_id: dummy-task-third
   type: OPTIONAL
-- id: dummy-task-fourth
+- problem_id: dummy-task-fourth
   type: COMPLETION
-- id: dummy-task-fifth
+- problem_id: dummy-task-fifth
   type: EXTRA
 prerequisites: []
 visualization:
