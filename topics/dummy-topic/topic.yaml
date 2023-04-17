@@ -12,6 +12,8 @@ problems:
 - problem_id: dummy-task-fifth
   type: EXTRA
 prerequisites: []
+dependents:
+ - prefix-sum
 visualization:
   image_filename: 1.svg
   position:

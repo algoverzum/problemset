@@ -4,7 +4,9 @@ problems:
 - problem_id: asteroid-queries
   type: ENTRY
 prerequisites:
-- 2d-array
+- dummy-topic
+# - 2d-array
+dependents: []
 visualization:
   image_filename: 2.svg
   position:
