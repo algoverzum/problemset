@@ -1,7 +1,8 @@
 # General info
-name: asteroid-queries
-title: Asteroid Queries
+name: greetings
+title: Greetings
 title_translations:
+  hu: Köszönések
 
 # Technical info
 memory_limit: 256

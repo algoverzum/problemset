@@ -1,0 +1,8 @@
+### Hint 1
+We need to subtract the amount of water carried away during 6 hours from the total 1111 liters. Try first coming up with a calculation for the total amount taken away in one hour.
+
+### Hint 2
+Nini takes 4 * 12 liters per hour and Goro takes 9 * 7 liters per hour.
+
+### Hint 3
+    cout << 1111 - 6 * (4 * 12 + 9 * 7);

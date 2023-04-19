@@ -1,0 +1,10 @@
+### Hint 1
+We need a separate variable for the sum. Don't forget setting it to 0 initially!
+
+### Hint 2
+Use a for loop to go over the elements and add each number to the sum variable: $S=S+A_i$
+
+### Hint 3
+    int s = 0;
+    for (int i = 0; i < n; i++)
+        s += a[i];

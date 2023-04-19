@@ -1,0 +1,2 @@
+## Plant Watering
+Imagine, plants are not green but purple on our planet, but they still need water. Nini and Goro are watering their plants in their garden. They have a 1111-liter barrel initially full of water, from which they take water to the plants using their watering cans. Nini fills her 12-liter watering can four times per hour, while Goro fills his 7-liter watering can nine times per hour. How many liters of water will be left in the barrel after 6 hours?

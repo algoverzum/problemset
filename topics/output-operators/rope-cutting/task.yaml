@@ -1,7 +1,8 @@
 # General info
-name: asteroid-queries
-title: Asteroid Queries
+name: rope-cutting
+title: Rope Cutting
 title_translations:
+  hu: Kötél vágás
 
 # Technical info
 memory_limit: 256

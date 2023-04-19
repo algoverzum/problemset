@@ -1,0 +1,10 @@
+### Hint 1
+The operator for division is `/` in C++. If the two operands are integer numbers, the result will be also an integer number, which means that the fractional part is discarded. (For this task it is very useful.) The remainder after a division can be calculated with the `%`, so-called *modulo* operator. For example `13 / 5 = 2` (not 2.6), and `13 % 5 = 3`, since `13 = 2 * 5 + 3`.
+
+### Hint 2
+We need to put a space between the two numbers that we print. To print any text, we have to put double quotes around it, so we can print a space with `cout << " ";`. The total length of the rope is 1337cm. We need to divide it by 42 to get the first answer, and take the remainder by 42 to get the second answer.
+
+### Hint 3
+    cout << 1337 / 42;
+    cout << " ";
+    cout << 1337 % 42;

@@ -1,7 +1,8 @@
 # General info
 name: __TASK_NAME__
-title:
-  en: __TASK_TITLE__
+title: __TASK_TITLE__
+title_translations:
+  hu: __TASK_TITLE__
 
 # Technical info
 memory_limit: 256

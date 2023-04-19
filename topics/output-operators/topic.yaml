@@ -1,0 +1,23 @@
+id: output-operators
+name: Output and Operators
+problems:
+- problem_id: total-animals
+  type: ENTRY
+- problem_id: number-of-legs
+  type: REQUIRED
+- problem_id: greetings
+  type: REQUIRED
+- problem_id: week-length
+  type: OPTIONAL
+- problem_id: rope-cutting
+  type: REQUIRED
+- problem_id: plant-watering
+  type: COMPLETION
+prerequisites: []
+dependents:
+ - input-variables
+visualization:
+  image_filename: 1.svg
+  position:
+    x: 0
+    y: 0

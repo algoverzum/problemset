@@ -1,0 +1,30 @@
+id: input-variables
+name: Input and Variables
+problems: []
+# - problem_id: neighbors
+#   type: ENTRY
+# - problem_id: sum-of-three
+#   type: REQUIRED
+# - problem_id: rectangle
+#   type: REQUIRED
+# - problem_id: pizza-cutting
+#   type: REQUIRED
+# - problem_id: fruit-sharing
+#   type: REQUIRED
+# - problem_id: tens-digit
+#   type: OPTIONAL
+# - problem_id: conversion
+#   type: REQUIRED
+# - problem_id: sport-match-length
+#   type: COMPLETION
+# - problem_id: duration
+#   type: EXTRA
+prerequisites:
+ - output-operators
+dependents:
+ - if
+visualization:
+  image_filename: 2.svg
+  position:
+    x: 100
+    y: 100
