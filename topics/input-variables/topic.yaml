@@ -1,10 +1,10 @@
 id: input-variables
 name: Input and Variables
 problems: []
-# - problem_id: neighbors
-#   type: ENTRY
-# - problem_id: sum-of-three
-#   type: REQUIRED
+- problem_id: global-warming
+  type: ENTRY
+- problem_id: total-fruits
+  type: REQUIRED
 # - problem_id: rectangle
 #   type: REQUIRED
 # - problem_id: pizza-cutting

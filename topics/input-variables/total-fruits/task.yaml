@@ -1,0 +1,15 @@
+# General info
+name: total-fruits
+title: Total Fruits
+title_translations:
+  hu: Total Fruits
+
+# Technical info
+memory_limit: 256
+time_limit: 1.0
+infile: ""
+outfile: ""
+
+# Other stuff
+score_mode: max_subtask
+feedback_level: full

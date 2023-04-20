@@ -1,23 +1,21 @@
 ## __TASK_TITLE__
-Calculate the sum of the given sequence of numbers.
+TODO
 
 ### Input
-The first line of the input contains $N$ - the length of the sequence.
-The second line contains $N$ integers, the elements of the sequence $(A_1, A_2, \ldots A_N)$. 
+The first line of the input contains $N$ - the 
+
 
 ### Output
-Print a single number, the sum of the elements in the sequence.
+Print a single number, the
 
 ### Constraints
-* $1 \le N \le 100\,000$
-* $0 \le A_i \le 10\,000$
+* $1 \le N \le 100$
 
 ### Example input
     5
-    4 11 0 6 21
 
 ### Example output
     42
 
 ### Explanation of the example
-It is the answer to all questions in the universe.
+

@@ -28,7 +28,7 @@ def run(A, B):
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    print(randint(A, B), randint(A, B), randint(A, B))
 
 
 if __name__ == "__main__":

@@ -26,9 +26,10 @@ sed "s/__TASK_NAME__/$name/g;s/__TASK_TITLE__/$up/g" "$folder/task.yaml" > "$nam
 grep -v "NOTE" "$folder/t.cpp" > "$name/sol/solution.cpp"
 sed "s/__TASK_TITLE__/$up/g" "$folder/statement.en.md" > "$name/statement/statement.en.md"
 cp "$folder/hints.en.md" "$name/statement/"
+sed "s/__TASK_TITLE__/$up/g" "$folder/statement.hu.md" > "$name/statement/statement.hu.md"
+cp "$folder/hints.hu.md" "$name/statement/"
 cat <<EOF > "$name/statement/input0.txt"
 5
-4 11 0 6 21
 EOF
 echo 42 > "$name/statement/output0.txt"
 sed "s/__TASK_NAME__/$name/g" "$folder/generator.py" > "$name/gen/generator.py"
@@ -36,5 +37,5 @@ sed "s/__TASK_NAME__/$name/g" "$folder/GEN" > "$name/gen/GEN"
 cp "$folder"/{limits.py,validator.py} "$name/gen/"
 chmod a+x "$name/gen/generator.py"
 
-sed -i.bak "s/^prerequisites:$/- id: $name\n  type: EXTRA\nprerequisites:/" topic.yaml
+sed -i.bak "s/^prerequisites:$/- problem_id: $name\n  type: REQUIRED\nprerequisites:/" topic.yaml
 rm topic.yaml.bak
