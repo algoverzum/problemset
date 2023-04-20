@@ -1,7 +1,7 @@
 # General info
 name: dummy-task-second
-title:
-  en: Dummy Task Second
+title: Dummy Task Second
+title_translations:
 
 # Technical info
 memory_limit: 256
