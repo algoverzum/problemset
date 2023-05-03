@@ -1,6 +1,6 @@
 id: input-variables
 name: Input and Variables
-problems: []
+problems:
 - problem_id: global-warming
   type: ENTRY
 - problem_id: total-fruits
