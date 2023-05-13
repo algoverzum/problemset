@@ -16,7 +16,7 @@ prerequisites:
 dependents:
  - prefix-sum
 visualization:
-  image_filename: 1.svg
+  image_filename: 3.svg
   position:
-    x: -350
-    y: -250
+    x: -150
+    y: -200

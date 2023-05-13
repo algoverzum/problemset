@@ -20,5 +20,5 @@ dependents:
 visualization:
   image_filename: 1.svg
   position:
-    x: 0
+    x: -400
     y: 0

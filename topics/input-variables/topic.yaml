@@ -21,10 +21,10 @@ problems:
 #   type: EXTRA
 prerequisites:
  - output-operators
-dependents:
- - if
+dependents: []
+# - if
 visualization:
   image_filename: 2.svg
   position:
-    x: 300
+    x: -100
     y: 200
