@@ -1,0 +1,10 @@
+- cpp: A kimenetre történő íráshoz a szöveget idézőjelek közé kell tennünk. Például, `cout << "valami";`. De a kettős idézőjelek között nem lehet sortörés, ezért egy speciális jelölést kell használnunk a sortörés kiírásához, ami a `\n`. Tudtad, hogy a sortörés egyszerűen maga is egy karakter? Elég csak a `\n` karaktert használnunk a programkódban. Így például a `cout << „alma\nalma”;` parancs a két alma szót két külön sorba írja ki.
+  py: Ahhoz, hogy szöveget írjunk ki a kimenetre, a print() függvénynek szimpla vagy dupla idézőjelek között kell átadnunk. Például, `print("valami")`. A print függvény automatikusan sortörést tesz a szöveg végére, ami ebben a feladatban hasznos számunkra.
+- cpp: Az első sorban a "Tutu Goro", a másodikban pedig a "Tutu Nini" szöveget kell kiírnunk. Ehhez két `cout <<` utasítást használhatunk. Ne felejtsük el a pontosvesszőt (`;`) az egyes utasítások végén.
+  py: Az első sorban a "Tutu Goro", a másodikban pedig a "Tutu Nini" szöveget kell kiírnunk. Ehhez két `print( )` utasítást használhatunk.
+- cpp: |
+     cout << "Tutu Goro\n";
+     cout << "Tutu Nini\n";
+  py: |
+      print("Tutu Goro") 
+      print("Tutu Nini")

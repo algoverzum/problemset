@@ -26,9 +26,9 @@ sed "s/__TASK_NAME__/$name/g;s/__TASK_TITLE__/$up/g" "$folder/task.yaml" > "$nam
 grep -v "NOTE" "$folder/t.cpp" > "$name/sol/solution.cpp"
 cp "$folder/statement.tex" "$name/statement/"
 sed "s/__TASK_TITLE__/$up/g" "$folder/statement.en.md" > "$name/statement/statement.en.md"
-cp "$folder/hints.en.md" "$name/statement/"
+cp "$folder/hints.en.yaml" "$name/statement/"
 sed "s/__TASK_TITLE__/$up/g" "$folder/statement.hu.md" > "$name/statement/statement.hu.md"
-cp "$folder/hints.hu.md" "$name/statement/"
+cp "$folder/hints.hu.yaml" "$name/statement/"
 cat <<EOF > "$name/statement/input0.txt"
 5
 EOF

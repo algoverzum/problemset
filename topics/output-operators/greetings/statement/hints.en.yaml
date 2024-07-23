@@ -1,0 +1,10 @@
+- cpp: To print text to the output, we need to put it between double quotes. For example, `cout << "some text;"`. But we cannot have a line break inside the double quotes, so we need to use a special *escape sequence* to print the line break, which is `\n`. Did you know that a line break is simply a character itself? We just use `\n` to represent this character in the program code. So, for example the `cout << "banana\nbanana";` command prints the two banana words on two separate lines.
+  py: To print text to the output, we need to pass it to the print() function between single or quotes. For example, `print("some text")`. The print function automatically puts a line break at the end of the text, which is useful for us in this task.
+- cpp: We need to print the text "Tutu Goro" in the first line, and "Tutu Nini" in the second. We can use two `cout <<` statements to achieve this. Don't forget the semicolon (`;`) at the end of each statement.
+  py: We need to print the text "Tutu Goro" in the first line, and "Tutu Nini" in the second. We can use two `print(  )` statements to achieve this.
+- cpp: |
+      cout << "Tutu Goro\n";
+      cout << "Tutu Nini\n";
+  py: |
+      print("Tutu Goro") 
+      print("Tutu Nini")
