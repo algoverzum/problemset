@@ -1,0 +1,5 @@
+- Először válasszuk le a másodperceket, majd a perceket, az órákat és a napokat!
+- A másodperceket egy maradék művelettel (%) tudjuk megkapni. Milyen maradékot vegyünk? Ezután hogyan tudjuk a másodperceket figyelmen kívül hagyva immár percekbe átváltani?
+- cpp: Ha a bemeneti érték az n változóban van, akkor `n % 60` megadja a másodperceket, és az `n = n / 60;` utasítás átváltja percekbe úgy, hogy eldobja a másodperceket. Hogy folytatnád?
+  py: Ha a bemeneti érték az n változóban van, akkor `n % 60` megadja a másodperceket, és az `n = n // 60` utasítás átváltja percekbe úgy, hogy eldobja a másodperceket. Hogy folytatnád?
+- A perceket ezután ugyanúgy tudjuk számolni, mint korábban a másodperceket, aztán az órák számításához ismét leoszthatunk 60-nal, majd venni kell a 24-es maradékot...

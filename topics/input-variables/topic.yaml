@@ -5,20 +5,16 @@ problems:
   type: ENTRY
 - problem_id: total-fruits
   type: REQUIRED
-# - problem_id: rectangle
-#   type: REQUIRED
-# - problem_id: pizza-cutting
-#   type: REQUIRED
-# - problem_id: fruit-sharing
-#   type: REQUIRED
-# - problem_id: tens-digit
-#   type: OPTIONAL
-# - problem_id: conversion
-#   type: REQUIRED
-# - problem_id: sport-match-length
-#   type: COMPLETION
-# - problem_id: duration
-#   type: EXTRA
+- problem_id: garden
+  type: REQUIRED
+- problem_id: fruit-sharing
+  type: REQUIRED
+- problem_id: tens-digit
+  type: OPTIONAL
+- problem_id: pingpong-match-length
+  type: COMPLETION
+- problem_id: duration
+  type: EXTRA
 prerequisites:
  - output-operators
 dependents: []

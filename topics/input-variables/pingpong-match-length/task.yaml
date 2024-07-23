@@ -1,8 +1,8 @@
 # General info
-name: total-fruits
-title: Total Fruits
+name: pingpong-match-length
+title: Pingpong Match Length
 title_translations:
-  hu: Összes gyümölcs
+  hu: Pingpong meccs hossza
 
 # Technical info
 memory_limit: 256

@@ -1,8 +1,8 @@
 # General info
-name: total-fruits
-title: Total Fruits
+name: garden
+title: Garden
 title_translations:
-  hu: Összes gyümölcs
+  hu: Kert
 
 # Technical info
 memory_limit: 256

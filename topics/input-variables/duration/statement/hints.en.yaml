@@ -1,0 +1,5 @@
+- Separate the seconds first, then the minutes, hours and days.
+- The seconds can be obtained with a remainder operation (%). Which remainder should we take? Then how can we convert the seconds to minutes without taking the seconds into account?
+- cpp: If the input value is in the variable n, then `n % 60` gives the seconds, and the statement `n = n / 60;` converts it to minutes by dropping the seconds. How would you proceed?
+  py: If the input value is in the variable n, then `n % 60` gives the seconds, and the statement `n = n // 60` converts it to minutes by dropping the seconds. How would you proceed?
+- We can then calculate the minutes the same way we calculate the seconds before, then to calculate the hours we can again divide by 60, then take the remainder 24...

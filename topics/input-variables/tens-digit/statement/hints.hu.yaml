@@ -1,0 +1,6 @@
+- |
+  A tízesek helyiértékén álló számjegy hátulról a második. Ötlet: tüntessük el az utolsó számjegyet, majd vegyük az eredmény utolsó számjegyét!
+- Az utolsó számjegy eltüntetését meg lehet csinálni az egyik alapművelettel. Az utolsó számjegy kiolvasásához egy olyan művelet kell, ami nem alapművelet, szerepelt már korábban.
+- cpp: Egy n szám utolsó számjegyét az `n = n / 10;` utasítással lehet eltüntetni. Az utolsó számjegy kiolvasásához pedig egy maradék képzés kell, milyen maradékot vegyünk?
+  py: Egy n szám utolsó számjegyét az `n = n // 10` utasítással lehet eltüntetni. Az utolsó számjegy kiolvasásához pedig egy maradék képzés kell, milyen maradékot vegyünk?
+- Egy n szám utolsó számjegyét megadja az `n % 10` művelet
