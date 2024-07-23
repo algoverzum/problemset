@@ -2,7 +2,7 @@
 name: duration
 title: Duration
 title_translations:
-  hu: Duration
+  hu: Időtartam
 
 # Technical info
 memory_limit: 256

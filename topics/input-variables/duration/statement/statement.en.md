@@ -1,10 +1,7 @@
 ## Duration
 You are given a duration in seconds. Print it in the following format:
 
-    D
-    H
-    M
-    S
+    D H M S
 
 where $D$ means days, $H$ means hours, $M$ means minutes and $S$ means seconds.
 
@@ -22,10 +19,7 @@ Print four numbers on separate lines, the duration in days, hours, minutes, seco
     93665
 
 ### Example output
-    1
-    2
-    1
-    5
+    1 2 1 5
 
 ### Explanation of the example
 $93\,665$ seconds equals $1$ day and $2$ hours and $1$ minute and $5$ seconds.
