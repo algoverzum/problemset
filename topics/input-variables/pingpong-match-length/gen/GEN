@@ -1,20 +1,21 @@
-# A     B       S
+# type	S
 
 # Subtask 1: Examples
 #ST: 0
 #STNAME: examples
 #COPY: statement/input0.txt
 
-# Subtask 2: 1 <= N <= 100
+# Subtask 2: all
 #ST: 100
 #STNAME: all
-1      1      1
-100    100    2
-1      10     3
-1      10     44
-1      20     5
-1      100    66
-1      100    7
-1      100    8
-1      100    9
-1      100    10
+spec	 1
+spec	 2
+spec     3
+spec     44
+spec     55
+rand	 66
+rand	 7
+rand	 8
+rand	 9
+rand	 10
+rand	 11

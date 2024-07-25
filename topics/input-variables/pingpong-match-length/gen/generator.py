@@ -9,26 +9,33 @@ from inspect import signature
 usage = """Generator for "global-warming".
 
 Parameters:
-* A (minimum value)
-* B (maximum value)
+* type (spec/rand)
 * S (seed)
-
-Constraint:
-* %d <= A <= %d
-* %d <= B <= %d
-""" % (
-    MIN, MAX,
-    MIN, MAX,
-)
+"""
 
 
-def run(A, B):
-    for row in reversed(usage.split("\n")[:-1]):
-        if row[0] != "*":
-            break
-        assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+def run(type):
+    assert type in ['spec','rand']
+
+    if type=='rand':
+        SH=SM=EM=EH=0
+        while EH*60+EM-SH*60-SM<=0:
+            SH = randint(0,23)
+            EH = randint(0,23)
+            SM = randint(0,59)
+            EM = randint(0,59)
+    else:
+        SH=SM=EM=EH=0
+        while EH*60+EM-SH*60-SM<=0 or SM<EM:
+            SH = randint(0,23)
+            EH = randint(0,23)
+            SM = randint(0,59)
+            EM = randint(0,59)
+    print(SH)
+    print(SM)
+    print(EH)
+    print(EM)
 
 
 if __name__ == "__main__":
