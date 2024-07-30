@@ -11,20 +11,20 @@ problems:
   type: REQUIRED
 - problem_id: at-least-one-odd
   type: REQUIRED
+- problem_id: bimm-bamm
+  type: REQUIRED
 prerequisites:
  - input-variables
 dependents:
 # - for-loop
 visualization:
-  image_filename: 2.svg
+  image_filename: 3.svg
   position:
-    x: -100
-    y: 200
+    x: 0
+    y: 100
 
 # Notes:
 # further tasks
-# - problem_id: bimm-bamm
-#   type: REQUIRED
 # - problem_id: how-many-even
 #   type: COMPLETION
 # - problem_id: chess
