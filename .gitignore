@@ -40,5 +40,3 @@ __latexindent_temp.tex
 *.out
 *.zip
 
-# Ignore pdf statements - we use markdown
-statement.pdf
