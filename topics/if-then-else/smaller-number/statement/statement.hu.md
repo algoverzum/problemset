@@ -2,7 +2,7 @@
 Mondok neked két egész számot. Meg tudod mondani, melyik a kisebb?
 
 ### Bemenet
-A bemenet első sora két egész számot tartalmaz: $A$ és $B$. 
+A bemenetben két egész szám van külön sorokban: $A$ és $B$. 
 
 
 ### Kimenet
@@ -12,7 +12,8 @@ Egyetlen számot kell kiírnod, a két szám közül a kisebbet. Ha a két szám
 * $1 \le A, B \le 100$
 
 ### Példa bemenet
-    13 7
+    13
+    7
 
 ### Példa kimenet
     7
