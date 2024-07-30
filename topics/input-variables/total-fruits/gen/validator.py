@@ -15,8 +15,7 @@ def run(f, st):
     for k, v in subtasks[st].items():
         globals()[k] = v
 
-    V = list(map(int, next(f).split()))
-    assert len(V) == 3
+    V = [int(next(f)) for _ in range(3)]
     assert all(MIN <= v <= MAX for v in V)
 
     assert next(f, None) is None

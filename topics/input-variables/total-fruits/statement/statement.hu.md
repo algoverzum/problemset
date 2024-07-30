@@ -2,7 +2,7 @@
 Sok egzotikus gyümölcs van a bolygónkon. Egy szép napon három barátom, Akiko, Bogiga és Csitoti elment gyümölcsöt szedni. Akiko $A$ darab angót, Bogiga $B$ darab bererét és Csitoti $C$ darab csirimorit szedett. Most arra kíváncsiak, hogy összesen mennyi gyümölcsöt szedtek. Tudsz írni egy programot, ami megválaszolja ezt a kérdést, ha megadjuk neki az egyes darabszámokat?
 
 ### Bemenet
-A bemenetben három egész szám van: $A$, $B$ és $C$ - a szedett angók, bererék és csirimorik száma.
+A bemenetben három egész szám van: $A$, $B$ és $C$ - a szedett angók, bererék és csirimorik száma, külön sorokban.
 
 
 ### Kimenet
@@ -12,7 +12,9 @@ Egyetlen számot kell kiírnod, a gyümölcsök számát, amennyit összesen sze
 * $1 \le A, B, C \le 100$
 
 ### Példa bemenet
-    13 5 24
+    13
+    5
+    24
 
 ### Példa kimenet
     42
