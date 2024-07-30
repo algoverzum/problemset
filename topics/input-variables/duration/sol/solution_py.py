@@ -9,4 +9,4 @@ n //= 60
 h = n % 24
 n //= 24
 d = n
-print(d,h,m,s)
+print(d, h, m, s)
