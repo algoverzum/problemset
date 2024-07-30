@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
-SH = int(input())
-SM = int(input())
-EH = int(input())
-EM = int(input())
-print(60 * EH + EM - 60 * SH - SM)
+sh = int(input())
+sm = int(input())
+eh = int(input())
+em = int(input())
+print(60 * eh + em - 60 * sh - sm)
