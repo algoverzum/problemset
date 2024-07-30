@@ -19,11 +19,13 @@ read x
 
 up=$(echo "$name" | sed "s/-/ /g;s/\b\(.\)/\u\1/g")
 mkdir "$name"
+mkdir "$name/att"
 mkdir "$name/gen"
 mkdir "$name/sol"
 mkdir "$name/statement"
 sed "s/__TASK_NAME__/$name/g;s/__TASK_TITLE__/$up/g" "$folder/task.yaml" > "$name/task.yaml"
 grep -v "NOTE" "$folder/t.cpp" > "$name/sol/solution.cpp"
+grep -v "NOTE" "$folder/t.py" > "$name/sol/solution_py.py"
 cp "$folder/statement.tex" "$name/statement/"
 sed "s/__TASK_TITLE__/$up/g" "$folder/statement.en.md" > "$name/statement/statement.en.md"
 cp "$folder/hints.en.yaml" "$name/statement/"
@@ -37,6 +39,8 @@ sed "s/__TASK_NAME__/$name/g" "$folder/generator.py" > "$name/gen/generator.py"
 sed "s/__TASK_NAME__/$name/g" "$folder/GEN" > "$name/gen/GEN"
 cp "$folder"/{limits.py,validator.py} "$name/gen/"
 chmod a+x "$name/gen/generator.py"
+ln -s "../statement/input0.txt" "$name/att/input0.txt"
+ln -s "../statement/output0.txt" "$name/att/output0.txt"
 
 sed -i.bak "s/^prerequisites:$/- problem_id: $name\n  type: REQUIRED\nprerequisites:/" topic.yaml
 rm topic.yaml.bak
