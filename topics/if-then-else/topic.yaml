@@ -7,10 +7,10 @@ problems:
   type: REQUIRED
 - problem_id: parity
   type: REQUIRED
-# - problem_id: two-digit
-#   type: REQUIRED
-# - problem_id: at-least-one-odd
-#   type: REQUIRED
+- problem_id: two-digit
+  type: REQUIRED
+- problem_id: at-least-one-odd
+  type: REQUIRED
 prerequisites:
  - input-variables
 dependents:
@@ -20,3 +20,12 @@ visualization:
   position:
     x: -100
     y: 200
+
+# Notes:
+# further tasks
+# - problem_id: bimm-bamm
+#   type: REQUIRED
+# - problem_id: how-many-even
+#   type: COMPLETION
+# - problem_id: chess
+#   type: EXTRA
