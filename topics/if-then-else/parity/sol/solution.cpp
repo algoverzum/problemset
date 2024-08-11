@@ -3,8 +3,12 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    cout << 42 << "\n";
-    return 0;
+  int n;
+  cin >> n;
+  if (n % 2 == 0) {
+    cout << 1 << "\n";
+  } else {
+    cout << -1 << "\n";
+  }
+  return 0;
 }
