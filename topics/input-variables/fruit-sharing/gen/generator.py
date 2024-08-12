@@ -6,7 +6,7 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "global-warming".
+usage = """Generator for "fruit-sharing".
 
 Parameters:
 * A (minimum value)
@@ -17,8 +17,10 @@ Constraint:
 * %d <= A <= %d
 * %d <= B <= %d
 """ % (
-    MIN, MAX,
-    MIN, MAX,
+    MIN,
+    MAX,
+    MIN,
+    MAX,
 )
 
 
@@ -28,6 +30,7 @@ def run(A, B):
             break
         assert eval(row[2:]), row[2:]
 
+    print(randint(A, B))
     print(randint(A, B))
 
 

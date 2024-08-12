@@ -15,10 +15,14 @@ def run(f, st):
     for k, v in subtasks[st].items():
         globals()[k] = v
 
+    C = int(next(f))
+    assert MIN <= C <= MAX
+
     N = int(next(f))
     assert MIN <= N <= MAX
 
     assert next(f, None) is None
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
