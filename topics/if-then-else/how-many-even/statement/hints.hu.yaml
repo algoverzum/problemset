@@ -1,3 +1,4 @@
-- TODO
+- Az `N % 2` utasítással kaphatjuk meg az $N$ szám 2-vel való osztási maradékát. Ha `N % 2` értéke 0 akkor $N$ páros, ha `N % 2` értéke 1 akkor $N$ páratlan. Ezt kell ellenőrizni $A$-ra és $B$-re is.
+- If nélkül is meg lehet oldani, a válasz: `2 - A % 2 - B % 2`
 - cpp: TODO
   py: TODO
