@@ -2,4 +2,4 @@
 # @check-wrong-answer: examples all
 
 t = int(input())
-print(t+1,t-1)
+print(t + 1, t - 1)

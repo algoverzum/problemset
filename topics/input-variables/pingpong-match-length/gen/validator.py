@@ -27,9 +27,10 @@ def run(f, st):
     EM = int(next(f))
     assert MINM <= EM <= MAXM
 
-    assert SH*60+SM < EH*60+EM
+    assert SH * 60 + SM < EH * 60 + EM
 
     assert next(f, None) is None
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

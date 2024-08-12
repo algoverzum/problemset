@@ -14,24 +14,23 @@ Parameters:
 """
 
 
-
 def run(type):
-    assert type in ['spec','rand']
+    assert type in ["spec", "rand"]
 
-    if type=='rand':
-        SH=SM=EM=EH=0
-        while EH*60+EM-SH*60-SM<=0:
-            SH = randint(0,23)
-            EH = randint(0,23)
-            SM = randint(0,59)
-            EM = randint(0,59)
+    if type == "rand":
+        SH = SM = EM = EH = 0
+        while EH * 60 + EM - SH * 60 - SM <= 0:
+            SH = randint(0, 23)
+            EH = randint(0, 23)
+            SM = randint(0, 59)
+            EM = randint(0, 59)
     else:
-        SH=SM=EM=EH=0
-        while EH*60+EM-SH*60-SM<=0 or SM<EM:
-            SH = randint(0,23)
-            EH = randint(0,23)
-            SM = randint(0,59)
-            EM = randint(0,59)
+        SH = SM = EM = EH = 0
+        while EH * 60 + EM - SH * 60 - SM <= 0 or SM < EM:
+            SH = randint(0, 23)
+            EH = randint(0, 23)
+            SM = randint(0, 59)
+            EM = randint(0, 59)
     print(SH)
     print(SM)
     print(EH)
