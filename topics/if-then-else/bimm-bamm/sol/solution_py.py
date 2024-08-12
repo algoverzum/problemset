@@ -4,11 +4,11 @@
 n = int(input())
 if n % 3 == 0:
     if n % 5 == 0:
-        print('bumm')
+        print("bumm")
     else:
-        print('bimm')
+        print("bimm")
 else:
     if n % 5 == 0:
-        print('bamm')
+        print("bamm")
     else:
         print(n)

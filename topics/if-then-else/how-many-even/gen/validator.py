@@ -17,11 +17,12 @@ def run(f, st):
 
     A = int(next(f))
     assert MIN <= A <= MAX
-    
+
     B = int(next(f))
     assert MIN <= B <= MAX
-    
+
     assert next(f, None) is None
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

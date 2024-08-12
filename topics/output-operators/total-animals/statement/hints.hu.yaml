@@ -1,0 +1,3 @@
+- cpp: A C++ nyelvben az eredményt a standard kimenetre a `cout` kimeneti adatfolyam segítségével és a `<<` operátorral írhatod ki. Például a `cout << 42;` parancs kiírja a számot 42 a kimenetre.
+- cpp: A számítógép könnyen végez matematikai számításokat. Csak használd a + műveleti jelet úgy, ahogy a papíron írnád.
+- cpp: cout << 13337 + 42424;

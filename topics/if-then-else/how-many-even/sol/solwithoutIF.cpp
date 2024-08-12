@@ -8,4 +8,3 @@ int main() {
   cout << 2 - A % 2 - B % 2 << "\n";
   return 0;
 }
-

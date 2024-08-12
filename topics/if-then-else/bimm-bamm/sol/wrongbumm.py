@@ -2,4 +2,4 @@
 # @check-wrong-answer: *
 
 n = int(input())
-print('bumm')
+print("bumm")

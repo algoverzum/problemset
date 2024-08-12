@@ -17,8 +17,10 @@ Constraint:
 * %d <= A <= %d
 * %d <= B <= %d
 """ % (
-    MIN, MAX,
-    MIN, MAX,
+    MIN,
+    MAX,
+    MIN,
+    MAX,
 )
 
 
