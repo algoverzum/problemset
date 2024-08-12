@@ -3,8 +3,11 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    cout << 42 << "\n";
-    return 0;
+  int A, B, result;
+  cin >> A >> B;
+  if (A % 2 == 0) {result += 1;}
+  if (B % 2 == 0) {result += 1;}
+  cout << result << "\n";
+  return 0;
 }
+
