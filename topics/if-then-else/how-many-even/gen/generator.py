@@ -28,7 +28,13 @@ def run(A, B):
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    x = randint(A, B)
+    y = randint(A, B)
+    while x == y:
+        x = randint(A, B)
+        y = randint(A, B)
+    print(x)
+    print(y)
 
 
 if __name__ == "__main__":
