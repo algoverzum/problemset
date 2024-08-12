@@ -1,3 +1,3 @@
-- TODO
+- Egy $N$ szám pontosan akkor osztató 3-mal, ha osztási maradéka nulla, azaz ha `N % 3 == 0`. A 3-as és 5-ös maradékok ismeretében könnyen dönthetünk: ha $N$ osztható 3-mal és 5-tel is, akkor `bumm`, ha csak 3-mal, akkor `bimm`, ha csak 5-tel, akkor `bamm`, különben pedig a szám $N$ írandó ki. 
 - cpp: TODO
   py: TODO
