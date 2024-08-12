@@ -1,3 +1,5 @@
-- cpp: In C++ you can print to the standard output using the `cout` output stream and the `<<` operator, for example, the `cout << 42;` command prints the number 42 to the output.
-- cpp: The computer can perform mathematical calculations easily. Just use the + operator as you would write down the calculation on a paper.
-- cpp: cout << 13337 + 42424;
+- cpp: In C++, you can print to the standard output using the `cout` output stream and the `<<` operator. For example, the `cout << 42;` command prints the number 42 to the output.
+  py: In Python, you can output data using the `print()` function. For example, the `print(42) command prints the number 42 to the output.
+- The computer can perform mathematical calculations easily. Just use the + operator as you would write down the calculation on a paper.
+- cpp: '`cout << 13337 + 42424;`'
+  py: '`print(13337 + 42424)`'

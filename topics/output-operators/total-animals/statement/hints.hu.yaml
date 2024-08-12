@@ -1,3 +1,5 @@
-- cpp: A C++ nyelvben az eredményt a standard kimenetre a `cout` kimeneti adatfolyam segítségével és a `<<` operátorral írhatod ki. Például a `cout << 42;` parancs kiírja a számot 42 a kimenetre.
-- cpp: A számítógép könnyen végez matematikai számításokat. Csak használd a + műveleti jelet úgy, ahogy a papíron írnád.
-- cpp: cout << 13337 + 42424;
+- cpp: A C++ nyelvben az eredményt a standard kimenetre a `cout` kimeneti adatfolyam segítségével és a `<<` operátorral írhatod ki. Például a `cout << 42;` parancs kiírja a 42 számot a kimenetre.
+  py: Pythonban a `print()` függvény használatával tudunk kiírni adatokat. Például a `print(42)` parancs kiírja a 42 számot a kimenetre.
+- A számítógép könnyen végez matematikai számításokat. Csak használd a + műveleti jelet úgy, ahogy a papíron írnád.
+- cpp: '`cout << 13337 + 42424;`'
+  py: '`print(13337 + 42424)`'

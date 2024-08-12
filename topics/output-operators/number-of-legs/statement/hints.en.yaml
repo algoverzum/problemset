@@ -1,6 +1,8 @@
-- cpp: We need a separate variable for the sum. Don't forget setting it to 0 initially!
-- cpp: 'Use a for loop to go over the elements and add each number to the sum variable: $S=S+A_i$'
-- cpp: | 
-    int s = 0;
-    for (int i = 0; i < n; i++)
-        s += a[i];
+ 
+- The symbol for multiplication in programming is `*` (the asterisk character). The computer calculates in the same way as you learn in maths class, so multiplication is a stronger operation than addition. 
+- cpp: |
+    Calculate first the number of legs of the lharks (seven times the number of animals), then the total number of legs of the wrookies (three times the number of items) and add them together. Reminder: use `cout <<` to print the result, and don't forget the `;` at the end of the statement.'
+  py: 'Calculate first the number of legs of the lharks (seven times the number of animals), then the total number of legs of the wrookies (three times the number of items) and add them together. Reminder: use `print()` to output the result.
+- cpp: '`cout << 7 * 13337 + 3 * 42424;`'
+  py: '`print(7 * 13337 + 3 * 42424)`'
+

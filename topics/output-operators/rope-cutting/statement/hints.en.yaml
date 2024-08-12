@@ -1,11 +1,10 @@
-- |
 - cpp: The operator for division is `/` in C++. If the two operands are integer numbers, the result will be also an integer number, which means that the fractional part is discarded. (For this task it is very useful.) The remainder after a division can be calculated with the `%`, so-called *modulo* operator. For example `13 / 5 = 2` (not 2.6), and `13 % 5 = 3`, since `13 = 2 * 5 + 3`.
-  py: The operator for division is `//` in Python. If the two operands are integer numbers, the result will be also an integer number, which means that the fractional part is discarded. (For this task it is very useful.) The remainder after a division can be calculated with the `%`, so-called *modulo* operator. For example `13 // 5 = 2` (not 2.6), and `13 % 5 = 3`, since `13 = 2 * 5 + 3`.
+  py: There are two different division operators in Python. The regular division is `/` (e.g. `13 / 5 = 2.6`), while `//` denotes the integer division, where the fractional part is discarded (e.g. `13 // 5 = 2`) The remainder after a division can be calculated with the `%`, so-called *modulo* operator. For example, `13 % 5 = 3`, since `13 = 2 * 5 + 3`.
 - cpp: We need to put a space between the two numbers that we print. To print any text, we have to put double quotes around it, so we can print a space with `cout << " ";`. The total length of the rope is 1337cm. We need to divide it by 42 to get the first answer, and take the remainder by 42 to get the second answer.
-  py: We need to put a space between the two numbers that we print. To put a space between the numbers we print, we simply have to put a `,` between the numbers. The total length of the rope is 1337cm. We need to divide it by 42 to get the first answer, and take the remainder by 42 to get the second answer.
+  py: We need to put a space between the two numbers that we print. We can give multiple arguments to the `print()` function separated by a `,` and there will be a space in the output between the printed data. The total length of the rope is 1337cm. We need to divide it by 42 to get the first answer, and take the remainder by 42 to get the second answer.
 - cpp: |
-    cout << 1337 / 42;
-    cout << " ";
-    cout << 1337 % 42;
+        cout << 1337 / 42;
+        cout << " ";
+        cout << 1337 % 42;
   py: |
-    print(1337 // 42, 1337 % 42)
+        print(1337 // 42, 1337 % 42)
