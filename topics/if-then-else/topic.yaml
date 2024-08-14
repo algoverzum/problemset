@@ -16,9 +16,9 @@ problems:
 - problem_id: how-many-even
   type: COMPLETION
 prerequisites:
- - input-variables
+- input-variables
 dependents:
-# - for-loop
+- for-loop
 visualization:
   image_filename: 3.svg
   position:

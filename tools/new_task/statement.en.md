@@ -4,7 +4,6 @@ TODO
 ### Input
 The first line of the input contains $N$ - the 
 
-
 ### Output
 Print a single number, the
 

@@ -1,8 +1,8 @@
 # General info
 name: two-digit
-title: Two-Digit Numbers
+title: Two-digit?
 title_translations:
-  hu: Kétjegyű számok
+  hu: Kétjegyű-e?
 
 # Technical info
 memory_limit: 256

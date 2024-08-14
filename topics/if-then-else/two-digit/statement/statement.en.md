@@ -1,4 +1,4 @@
-## Two Digit Numbers
+## Two-digit?
 We like numbers that have two digits, for example 12, 37, 95, and we don't like those that have more or less digits, e.g. 4, 666, 1000. There is a positive integer number in the input. Print 1 if we like it and -1 if we don't.
 
 ### Input

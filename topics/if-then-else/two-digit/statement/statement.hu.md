@@ -1,4 +1,4 @@
-## Kétjegyű számok
+## Kétjegyű-e?
 Kedveljük a kétjegyű számokat, például 12, 37, 95, és nem kedveljük azokat, amelyeknek több vagy kevesebb számjegye van, például 4, 666, 1000. A bemenetben adott egy pozitív egész szám. A kimenetre írj ki egy 1-est, ha kedvelt szám, és -1-et, ha nem az.
 
 ### Bemenet

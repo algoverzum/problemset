@@ -1,0 +1,30 @@
+id: for-loop
+name: For loop
+problems:
+- problem_id: count-to-hundred
+  type: ENTRY
+- problem_id: two-digit-numbers
+  type: REQUIRED
+- problem_id: two-digit-odd-numbers
+  type: REQUIRED
+- problem_id: countdown
+  type: REQUIRED
+- problem_id: square-numbers
+  type: REQUIRED
+- problem_id: bimm-bamm-sequence
+  type: REQUIRED
+- problem_id: divisors
+  type: EXTRA
+- problem_id: star-gate-code
+  type: COMPLETION
+prerequisites:
+ - if-then-else
+dependents:
+# - array
+visualization:
+  image_filename: 4.svg
+  position:
+    x: 100
+    y: 200
+
+# Notes:

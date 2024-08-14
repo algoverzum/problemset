@@ -4,7 +4,6 @@ TODO
 ### Bemenet
 A bemenetben egyetlen egész szám van: $N$ - 
 
-
 ### Kimenet
 Egyetlen számot kell kiírnod, 
 
