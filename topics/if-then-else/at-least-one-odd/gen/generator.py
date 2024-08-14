@@ -6,7 +6,7 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "global-warming".
+usage = """Generator for "at-least-one-odd".
 
 Parameters:
 * A (minimum value)
