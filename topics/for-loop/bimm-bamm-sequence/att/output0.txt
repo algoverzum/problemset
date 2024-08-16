@@ -1,8 +1,1 @@
-1
-2
-bimm
-4
-bamm
-bimm
-7
-8
+../statement/output0.txt

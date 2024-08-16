@@ -1,3 +1,8 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- Írj egy `for` ciklust $i=1$-től $N$-ig. Benne aztán az $i$ értékétől függően más-más dolgokat kell kiírni. Ezt milyen utasítással tudod csinálni?
+- `if` utasítást kell tenni a `for` ciklusba! Milyen operátorral tudod megvizsgálni az oszthatóságot? Melyik esettel érdemes kezdeni?
+- A 3-mal és 5-tel osztható számok vizsgálatával érdemes kezdeni, ekkor írjunk ki `bumm`-ot, aztán utána vizsgáljuk a többit.
+- cpp: `if (i % 3 == 0 && i % 5 == 0) { cout << "bumm"; } else if (i % 3 == 0) { ... } else if (...) {...} else ...`
+  py: `if i % 3 == 0 and i % 5 == 0: print("bumm")
+      elif i % 3 == 0: print( ... )
+      elif ...: print(...)
+      else: ...`

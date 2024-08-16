@@ -1,3 +1,8 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- Start with a `for` cycle from $i=1$ to $N$. Depending on the value of $i$ we need to print different things. Which operator do we need?
+- We need to put `if` statements inside the `for` loop! Which operator could be used to decide divisibility? Which case should we start with?
+- We should start with divisibility by 3 and 5, this case we need to print `bumm`. After this continue with the other cases.
+- cpp: `if (i % 3 == 0 && i % 5 == 0) { cout << "bumm"; } else if (i % 3 == 0) { ... } else if (...) {...} else ...`
+  py: `if i % 3 == 0 and i % 5 == 0: print("bumm")
+      elif i % 3 == 0: print( ... )
+      elif ...: print(...)
+      else: ...`
