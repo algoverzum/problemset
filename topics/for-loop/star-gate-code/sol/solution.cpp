@@ -3,8 +3,7 @@
 using namespace std;
 
 int main() {
-  int n;
-  cin >> n;
-  cout << 42 << "\n";
-  return 0;
+  for (int i = 1000; i < 10000; i += 100) {
+    cout << i << "\n";
+  }
 }

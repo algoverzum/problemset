@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
-n = int(input())
-print(42)
+for i in range(10, 100):
+    print(i)
