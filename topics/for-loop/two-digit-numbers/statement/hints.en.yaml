@@ -1,3 +1,9 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- description: With a `for` loop we should go through the numbers from $i=10$ to 99.
+- cpp: |
+    This can be done by `for (int i = 10; i < 100; i++) { ... }`
+  py: |
+    This can be done by `for i in range(10, 100):`
+- cpp: |
+    Inside the `for` loop we need to print $i$: `cout << i << "\n";`
+  py: |
+    Inside the `for` loop we need to print $i$: `print(i)`

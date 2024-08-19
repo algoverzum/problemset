@@ -1,3 +1,9 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- description: Menjünk végig $i=10$-től 99-ig a számokon `for` ciklussal!
+- cpp: |
+    Ezt megtehetjük így: `for (int i = 10; i < 100; i++) { ... }`
+  py: |
+    Ezt megtehetjük így: `for i in range(10, 100):`
+- cpp: |
+    A `for` cikluson belül a kiírást megtehetjük így: `cout << i << "\n";`
+  py: |
+    A `for` cikluson belül a kiírást megtehetjük így: `print(i)`

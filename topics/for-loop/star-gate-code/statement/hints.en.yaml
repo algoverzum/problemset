@@ -1,3 +1,9 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- description: With a `for` loop we should go through the numbers from $i=1000$ to 9999, with an increment of 100!
+- cpp: |
+    This can be done by `for (int i = 1000; i < 10000; i += 100) { ... }`
+  py: |
+    This can be done by `for i in range(1000, 10000, 100):`
+- cpp: |
+    Inside the `for` loop we need to print $i$: `cout << i << "\n";`
+  py: |
+    Inside the `for` loop we need to print $i$: `print(i)`

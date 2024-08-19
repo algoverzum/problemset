@@ -1,3 +1,9 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- description: Menjünk végig $i=1000$-től 9999-ig a számokon `for` ciklussal 100-as léptékkel!
+- cpp: |
+    Ezt megtehetjük így: `for (int i = 1000; i < 10000; i += 100) { ... }`
+  py: |
+    Ezt megtehetjük így: `for i in range(1000, 10000, 100):`
+- cpp: |
+    A `for` cikluson belül a kiírást megtehetjük így: `cout << i << "\n";`
+  py: |
+    A `for` cikluson belül a kiírást megtehetjük így: `print(i)`

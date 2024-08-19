@@ -3,35 +3,44 @@
 from limits import *
 from sys import argv, exit, stderr
 import os
+import math
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
 usage = """Generator for "fruit-sharing".
 
 Parameters:
-* A (minimum value)
-* B (maximum value)
+* type (spec1/spec2/spec3/rand)
+* A (maximum value)
 * S (seed)
 
 Constraint:
 * %d <= A <= %d
-* %d <= B <= %d
 """ % (
-    MIN,
-    MAX,
     MIN,
     MAX,
 )
 
 
-def run(A, B):
-    for row in reversed(usage.split("\n")[:-1]):
-        if row[0] != "*":
-            break
-        assert eval(row[2:]), row[2:]
-
-    print(randint(A, B))
-    print(randint(A, B))
+def run(type, A):
+    assert type in ["spec1", "spec2", "spec3", "rand"]
+    C = N = 0
+    match type:
+        case "spec1":
+            C = randint(2, A)
+            N = 1
+        case "spec2":
+            C = 1
+            N = randint(2, A)
+        case "spec3":
+            N = randint(2, math.floor(math.sqrt(A)))
+            k = randint(2, math.floor(math.sqrt(A)))
+            C = N * k
+        case "rand":
+            C = randint(1, A)
+            N = randint(1, A)
+    print(C)
+    print(N)
 
 
 if __name__ == "__main__":

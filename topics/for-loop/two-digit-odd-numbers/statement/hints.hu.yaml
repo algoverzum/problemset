@@ -1,3 +1,9 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- description: Menjünk végig $i=11$-től 99-ig a számokon `for` ciklussal! Ha kettesével növeljük i-t akkor megkapjuk az összes páratlan számot.
+- cpp: |
+    Ezt megtehetjük így: `for (int i = 11; i < 100; i+=2) { ... }`
+  py: |
+    Ezt megtehetjük így: `for i in range(11, 100, 2):`
+- cpp: |
+    A `for` cikluson bellül a kiírást megtehetjük így: `cout << i << "\n";`
+  py: |
+    A `for` cikluson bellül a kiírást megtehetjük így: `print(i)`
