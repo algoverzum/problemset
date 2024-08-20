@@ -1,3 +1,4 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- If $N$ is even, they can go to the playground, otherwise they can't. Use `N % 2` to get the remainder of the number $N$ divided by 2. If `N % 2` is 0 then $N$ is even, if `N % 2` is 1 then $N$ is odd.
+- cpp: What does the code fragment `if (N % 2 == 0) { cout << 1; }` do? What should be in the `else` branch?
+  py: |
+    What does the code fragment `if N % 2 == 0: print(1)` do? What should be in the `else` branch?
