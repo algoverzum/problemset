@@ -1,9 +1,9 @@
-- description: With a `for` loop we should go through the numbers from $i=20$ to 1, reducing \(i\) by 1 each time.
+- With a `for` loop we should go through the numbers from $i=20$ to 1, reducing $i$ by 1 each time. What do you think should be changed to make $i$ decrease?
 - cpp: |
-    This can be done by `for (int i = 20; i > 0; i--) { ... }`
+    Instead of `i++`, we should write `i--`, and pay attention to the limits of the loop as well: `for (int i = 20; i > 0; i--) { ... }`
   py: |
-    This can be done by `for i in range(20, 0, -1):`
+    We should give -1 as the step in the third parameter of the `range()`. Also don't forget that the second parameter of the `range()`, i.e. the end of the interval is excluded: `for i in range(20, 0, -1):`
 - cpp: |
-    Inside the `for` loop we need to print $i$: `cout << i << "\n";`
+    Inside the `for` loop, we need to print $i$: `cout << i << "\n";`
   py: |
-    Inside the `for` loop we need to print $i$: `print(i)`
+    Inside the `for` loop, we need to print $i$: `print(i)`

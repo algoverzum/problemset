@@ -1,8 +1,8 @@
-- description: Menjünk végig $i=20$-tól 1-ig a számokon `for` ciklussal és minden lépésben csökkentsük i-t 1-gyel!
+- Menjünk végig $i=20$-tól 1-ig a számokon `for` ciklussal és minden lépésben csökkentsük i-t 1-gyel! Vajon mit kell változtatni a for ciklus fejlécében, hogy csökkenő sorrendben menjünk a számokon?
 - cpp: |
-    Ezt megtehetjük így: `for (int i = 20; i > 0; i--) { ... }`
+    Az eddigi `i++` helyett `i--` kell. És persze a határokra figyelni kell: `for (int i = 20; i > 0; i--) { ... }`
   py: |
-    Ezt megtehetjük így: `for i in range(20, 0, -1):`
+    A `range()` harmadik paraméterében -1 lépésközt kell megadni. Arra is figyeljünk, hogy a `range()` második paramétere, azaz az intervallum vége már nincs benne a tartományban: `for i in range(20, 0, -1):`
 - cpp: |
     A `for` cikluson belül a kiírást megtehetjük így: `cout << i << "\n";`
   py: |

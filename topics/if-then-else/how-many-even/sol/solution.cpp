@@ -3,14 +3,14 @@
 using namespace std;
 
 int main() {
-  int A, B, result;
-  cin >> A >> B;
-  if (A % 2 == 0) {
-    result += 1;
+  int a, b;
+  cin >> a >> b;
+  if (a % 2 == 0 && b % 2 == 0) {
+    cout << 2;
+  } else if (a % 2 == 0 || b % 2 == 0) {
+    cout << 1;
+  } else {
+    cout << 0;
   }
-  if (B % 2 == 0) {
-    result += 1;
-  }
-  cout << result << "\n";
   return 0;
 }

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
-A = int(input())
-B = int(input())
-result = 0
-if A % 2 == 0:
-    result += 1
-if B % 2 == 0:
-    result += 1
-print(result)
+a = int(input())
+b = int(input())
+if a % 2 == 0 and b % 2 == 0:
+    print(2)
+elif a % 2 == 0 or b % 2 == 0:
+    print(1)
+else:
+    print(0)
