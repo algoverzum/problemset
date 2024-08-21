@@ -1,3 +1,18 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    Read the two sides of the garden to two variables:
+        
+        int a, b;
+        cin >> a >> b;
+  py: |
+    Read the two sides of the garden to two variables:
+
+        a = int(input())
+        b = int(input())
+- The total fence length is twice the sum of the two sides. The number of trees that can fit to the garden is the product of the two sides.
+- Using the above variables, the fence length is `2 * (a + b)`. The number of trees is `a * b`.
+- cpp: |
+        cout << 2 * (a + b) << "\n";
+        cout << a * b; 
+  py: |
+        print(2 * (a + b))
+        print(a * b)

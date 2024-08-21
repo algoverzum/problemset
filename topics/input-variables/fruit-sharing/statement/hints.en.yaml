@@ -1,3 +1,26 @@
-- We want to get the integer division and division with remainder of C and N
-- cpp: You can get the integer of the quotient of C and N with the statement `C / N`. And you can get the division's remainder of C and N with the statement `C % N`.
-  py: You can get the integer of the quotient of C and N with the statement `C // N`. And you can get the division's remainder of C and N with the statement `C % N`.
+- cpp: |
+    Reminder: in C++, if you take the quotient of two integers with the `/` operator, the result will also be an integer (the fractional part is discarded). And the remainder of the division is obtained with the `%` operator.
+- py: |
+    Reminder: if you want to do integer division in Python, you can use the `//` operator. The division remainder is obtained with the `%` operator.
+- cpp: If there are $C$ fruits and $N$ children, then everyone gets `C / N` fruits, and `C % N` fruits remain.
+  py: If there are $C$ fruits and $N$ children, then everyone gets `C // N` fruits and `C % N` fruits remain.
+- cpp: |
+    Variables and input reading:
+
+        int c, n;
+        cin >> c >> n;
+  py: |
+    Variables and input reading:
+
+        c = int(input())
+        n = int(input())
+- cpp: |
+    Printing the result:
+
+        cout << c / n << "\n";
+        cout << c % n << "\n";
+- py: |
+    Printing the result:
+
+        print(c // n)
+        print(c % n)

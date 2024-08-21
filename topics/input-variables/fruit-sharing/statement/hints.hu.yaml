@@ -1,3 +1,26 @@
-- Meg akarjuk kapni C és N maradékos és egész osztásának eredményét
-- cpp: C és N hányadosának egészrészét a `C / N` utasítással kaphatjuk meg, a C és N maradékos osztásának eredményét pedig a `C % N` utasítással
-  py: C és N hányadosának egészrészét a `C // N` utasítással kaphatjuk meg, a C és N maradékos osztásának eredményét pedig a `C % N` utasítással
+- cpp: |
+    Emlékeztető: C++ -ban ha két egész szám hányadosát vesszük a `/` operátorral, az eredmény is egész lesz (a törtrészt eldobja). Az osztási maradékot pedig a `%` operátorral kaphatjuk meg.
+- py: |
+    Emlékeztető: ha Pythonban egészosztást szeretnénk végezni, akkor a `//` operátort használhatjuk. Az osztási maradékot pedig a `%` operátorral kaphatjuk meg.
+- cpp: Ha $C$ gyümölcs és $N$ gyerek van, akkor mindenkinek `C / N` gyümölcs jut, és `C % N` gyümölcs marad.
+  py: Ha $C$ gyümölcs és $N$ gyerek van, akkor mindenkinek `C // N` gyümölcs jut, és `C % N` gyümölcs marad.
+- cpp: |
+    A változók és a beolvasás:
+
+        int c, n;
+        cin >> c >> n;
+  py: |
+    A változók és a beolvasás:
+
+        c = int(input())
+        n = int(input())
+- cpp: |
+    Eredmények kiírása:
+
+        cout << c / n << "\n";
+        cout << c % n << "\n";
+- py: |
+    Eredmények kiírása:
+
+        print(c // n)
+        print(c % n)

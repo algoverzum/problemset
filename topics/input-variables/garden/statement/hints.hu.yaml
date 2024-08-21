@@ -1,3 +1,18 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    A kert két oldalát olvassuk be két változóba:
+        
+        int a, b;
+        cin >> a >> b;
+  py: |
+    A kert két oldalát olvassuk be két változóba:
+
+        a = int(input())
+        b = int(input())
+- A kerítés teljes hossza a két oldal összegének kétszerese. A kertben elférő fák száma a két oldal szorzata.
+- A fenti változók segítségével a kerítés hossza `2 * (a + b)`. A fák száma `a * b`.
+- cpp: |
+        cout << 2 * (a + b) << "\n";
+        cout << a * b; 
+  py: |
+        print(2 * (a + b))
+        print(a * b)
