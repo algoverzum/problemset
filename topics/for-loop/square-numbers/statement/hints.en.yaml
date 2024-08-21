@@ -1,3 +1,9 @@
-- Instead of square numbers we should use a `for` cycle to go through numbers from $i=1$ to $N$. (The square of the number $i$ is $i*i$.)
-- cpp: Our for cycle could be: `for (int i = 1; i <= N; i++) { ... }`
-  py: Our for cycle could be: `for i in range(1, N + 1):`
+- Read the value of $N$ into a variable. In a `for` loop, go through the numbers $i=1$ to $N$, and always print the square of the current number.
+- cpp: |
+    The loop could look like this: `for (int i = 1; i <= N; i++) { ... }` Within this loop, we should print the square of the variable $i$.
+  py: |
+    The loop could look like this: `for i in range(1, N + 1):` Within this loop, we should print the square of the variable $i$.
+- cpp: |
+    Inside the loop, the square of $i$ can be printed like this: `cout << i * i << "\n"`
+  py: |
+    Inside the loop, the square of $i$ can be printed like this: `print(i * i)`.

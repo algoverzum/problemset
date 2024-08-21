@@ -1,9 +1,9 @@
-- description: Menjünk végig $i=10$-től 99-ig a számokon `for` ciklussal!
+- Menjünk végig $i=10$-től 99-ig a számokon `for` ciklussal! A ciklus kezdetének és végének megadásához vajon mit kell másképp írni?
 - cpp: |
-    Ezt megtehetjük így: `for (int i = 10; i < 100; i++) { ... }`
+    Így nézzen ki a ciklus fejléce: `for (int i = 10; i <= 99; i++) { ... }`
   py: |
-    Ezt megtehetjük így: `for i in range(10, 100):`
+    Így nézzen ki a ciklus fejléce (figyelj arra, hogy a range() második paramétere már nincs a tartományban): `for i in range(10, 100):`
 - cpp: |
-    A `for` cikluson belül a kiírást megtehetjük így: `cout << i << "\n";`
+    A `for` cikluson belül az $i$ értékét és egy sortörést kell kiírni: `cout << i << "\n";`
   py: |
-    A `for` cikluson belül a kiírást megtehetjük így: `print(i)`
+    A `for` cikluson belül az $i$ értékét kell kiírni: `print(i)`

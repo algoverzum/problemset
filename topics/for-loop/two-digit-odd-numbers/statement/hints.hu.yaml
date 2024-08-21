@@ -1,9 +1,9 @@
-- description: Menjünk végig $i=11$-től 99-ig a számokon `for` ciklussal! Ha kettesével növeljük i-t akkor megkapjuk az összes páratlan számot.
+- Most az lenne a legjobb nekünk, ha minden második számon menne végig a `for` ciklus. Ekkor 11-től kezdve pont megkapnánk a páratlan kétjegyű számokat. Vajon mit kell másképp írni, hogy kettesével lépkedjen a ciklus?
 - cpp: |
-    Ezt megtehetjük így: `for (int i = 11; i < 100; i+=2) { ... }`
+    Az `i++` helyett tudunk írni `i += 2`-t: `for (int i = 11; i <= 99; i +=2 ) { ... }`
   py: |
-    Ezt megtehetjük így: `for i in range(11, 100, 2):`
+    A range()-nek lehet adni egy harmadik paramétert, ami a lépésköz: `for i in range(11, 100, 2):`
 - cpp: |
-    A `for` cikluson bellül a kiírást megtehetjük így: `cout << i << "\n";`
+    A `for` cikluson belül az $i$ értékét és egy sortörést kell kiírni: `cout << i << "\n";`
   py: |
-    A `for` cikluson bellül a kiírást megtehetjük így: `print(i)`
+    A `for` cikluson belül az $i$ értékét kell kiírni: `print(i)`

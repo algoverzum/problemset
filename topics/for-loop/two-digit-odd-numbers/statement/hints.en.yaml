@@ -1,9 +1,9 @@
-- description: With a `for` loop we should go through the numbers from $i=11$ to 99. If we increment i by 2 each time, we will get all the odd numbers.
+- It would be great, if the `for` loop stepped on every second number. Then if we start from 11, we can get exactly the odd two-digit numbers. What do you think we need to change to make the loop step by 2 always?
 - cpp: |
-    This can be done by `for (int i = 11; i < 100; i+=2) { ... }`
+    Instead of `i++`, we can write `i += 2`: `for (int i = 11; i <= 99; i += 2 ) { ... }`
   py: |
-    This can be done by `for i in range(11, 100, 2):`
+    We can give a third parameter to the range() that is the step size: `for i in range(11, 100, 2):`
 - cpp: |
-    Inside the `for` loop we need to print $i$: `cout << i << "\n";`
+    Inside the `for` loop we need to print $i$ and a line break: `cout << i << "\n";`
   py: |
     Inside the `for` loop we need to print $i$: `print(i)`

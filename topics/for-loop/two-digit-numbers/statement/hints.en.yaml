@@ -1,9 +1,9 @@
-- description: With a `for` loop we should go through the numbers from $i=10$ to 99.
+- We should go through the numbers from $i=10$ to 99 with a `for` loop. How do you think we can set the start and end of the loop? 
 - cpp: |
-    This can be done by `for (int i = 10; i < 100; i++) { ... }`
+    The headline of the loop should look like this: `for (int i = 10; i <= 99; i++) { ... }`
   py: |
-    This can be done by `for i in range(10, 100):`
+    The headline of the loop should look like this (note that the second parameter of the range is exclusive): `for i in range(10, 100):`
 - cpp: |
-    Inside the `for` loop we need to print $i$: `cout << i << "\n";`
+    Inside the `for` loop we need to print $i$ and a line break: `cout << i << "\n";`
   py: |
     Inside the `for` loop we need to print $i$: `print(i)`
