@@ -1,4 +1,4 @@
-- description: Menjünk végig $i=1000$-től 9999-ig a számokon `for` ciklussal 100-as léptékkel!
+- Menjünk végig $i=1000$-től 9999-ig a számokon `for` ciklussal 100-as léptékkel!
 - cpp: |
     Ezt megtehetjük így: `for (int i = 1000; i < 10000; i += 100) { ... }`
   py: |

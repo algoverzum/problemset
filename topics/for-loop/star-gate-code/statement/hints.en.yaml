@@ -1,4 +1,4 @@
-- description: With a `for` loop we should go through the numbers from $i=1000$ to 9999, with an increment of 100!
+- With a `for` loop we should go through the numbers from $i=1000$ to 9999, with an increment of 100.
 - cpp: |
     This can be done by `for (int i = 1000; i < 10000; i += 100) { ... }`
   py: |

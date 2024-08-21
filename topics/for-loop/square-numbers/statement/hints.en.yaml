@@ -4,6 +4,6 @@
   py: |
     The loop could look like this: `for i in range(1, N + 1):` Within this loop, we should print the square of the variable $i$.
 - cpp: |
-    Inside the loop, the square of $i$ can be printed like this: `cout << i * i << "\n"`
+    Inside the loop, the square of $i$ can be printed like this: `cout << i * i << "\n"`.
   py: |
     Inside the loop, the square of $i$ can be printed like this: `print(i * i)`.

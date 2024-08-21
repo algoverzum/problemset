@@ -1,3 +1,6 @@
 - Menjünk végig a számokon $i=1$-től $N$-ig, és ha $N$ osztható $i$-vel, akkor írjuk ki.
-- cpp: A `for` cikluson belüli `if` utasítás így nézhet ki: `if (N % i == 0) {cout << i << "\n";}` 
-  py: A `for` cikluson belüli `if` utasítás így nézhet ki: `if N % i == 0: print(i)`
+- Azt, hogy $N$ osztható $i$-vel, úgy tudjuk megvizsgálni, hogy $N$ maradéka $i$-vel osztva egyenlő-e 0-val. A maradékot a % operátorral kaphatjuk meg.
+- cpp: |
+    A `for` cikluson belüli `if` utasítás így nézhet ki: `if (N % i == 0) { cout << i << "\n"; }` 
+  py: |
+    A `for` cikluson belüli `if` utasítás így nézhet ki: `if N % i == 0: print(i)`

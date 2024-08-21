@@ -1,3 +1,6 @@
 - We should go through the numbers from $i=1$ to $N$. If $N$ is divisible by $i$, then we should print it.
-- cpp: The `if` inside the `for` cycle could be `if (N % i == 0) {cout << i << "\n";}` 
-  py: The `if` inside the `for` cycle could be `if N % i == 0: print(i)`
+- We can tell whether $N$ is divisible by $i$ by checking whether the remainder of $N$ divided by $i$ equals 0. The remainder is obtained with the % operator.
+- cpp: |
+    The `if` statement inside the `for` loop could be `if (N % i == 0) { cout << i << "\n"; }` 
+  py: |
+    The `if` statement inside the `for` loop could be `if N % i == 0: print(i)`
