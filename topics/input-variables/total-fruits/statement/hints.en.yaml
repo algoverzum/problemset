@@ -1,0 +1,24 @@
+- cpp: |
+    Create three variables for storing the numbers like this:
+
+        int a, b, c;
+    
+    Read the three values in the input using `cin` and the `>>` operator.
+  py: |
+    Reading one number can be done like this:
+
+        a = int(input())
+    
+    We need to read two additional numbers to two other variables, e.g. `b` and `c`.
+- cpp: |
+    We can chain the input reading: `cin >> a >> b >> c;`
+  py: |
+    The complete input reading looks like this:
+
+        a = int(input())
+        b = int(input())
+        c = int(input())
+- cpp: |
+    Use the `+` operator to calculate the sum, and print with `cout`: `cout << a + b + c;`
+  py: |
+    Use the `+` operator to calculate the sum, and output the result using the `print` function: `print(a + b + c)`

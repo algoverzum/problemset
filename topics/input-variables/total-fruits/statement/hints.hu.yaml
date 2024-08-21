@@ -1,0 +1,24 @@
+- cpp: |
+    Hozzunk létre három változót a számok tárolására, így:
+
+        int a, b, c;
+    
+    Olvassuk be a három értéket a bemenetről a `cin` és a `>>` operátor segítségével.
+  py: |
+    Egy szám beolvasása így történhet:
+
+        a = int(input())
+    
+    További két számot kell beolvasnunk két másik változóba (`b` és `c`).
+- cpp: |
+    A beolvasás operátorokat láncolni is lehet: `cin >> a >> b >> c;`
+  py: |
+    A teljes beolvasás így néz ki:
+
+        a = int(input())
+        b = int(input())
+        c = int(input())
+- cpp: |
+    Az összeg kiszámításához használjuk a `+` operátort, és a `cout` segítségével írjuk ki: `cout << a + b + c;`
+  py: |
+    Az összeg kiszámításához használjuk a `+` operátort, és az eredményt a `print` függvénnyel írjuk ki: `print(a + b + c)`
