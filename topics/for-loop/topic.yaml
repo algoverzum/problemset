@@ -20,7 +20,7 @@ problems:
 prerequisites:
  - if-then-else
 dependents:
-# - array
+ - sum-count
 visualization:
   image_filename: 4.svg
   position:
