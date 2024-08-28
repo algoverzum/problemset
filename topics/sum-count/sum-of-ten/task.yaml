@@ -1,0 +1,15 @@
+# General info
+name: sum-of-ten
+title: Sum Of Ten Numbers
+title_translations:
+  hu: Tíz szám összege
+
+# Technical info
+memory_limit: 256
+time_limit: 1.0
+infile: ""
+outfile: ""
+
+# Other stuff
+score_mode: max_subtask
+feedback_level: full
