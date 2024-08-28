@@ -17,5 +17,7 @@
 
 - Például, ha a `t` -nél 1-gyel nagyobb számot akarjuk megkapni, akkor írhatjuk azt, hogy `t + 1`.
 
-- cpp: `cout << t - 1 << " " << t + 1;`
-  py: `print(t - 1, t + 1)`
+- cpp: |
+    `cout << t - 1 << " " << t + 1;`
+  py: |
+    `print(t - 1, t + 1)`

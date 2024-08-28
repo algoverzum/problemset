@@ -18,5 +18,7 @@
 
 - For example, if we want to get a number that is one greater than `t`, we can write `t + 1`.
 
-- cpp: `cout << t - 1 << " " << t + 1;`
-  py: `print(t - 1, t + 1)`
+- cpp: |
+    `cout << t - 1 << " " << t + 1;`
+  py: |
+    `print(t - 1, t + 1)`
