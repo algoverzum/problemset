@@ -6,7 +6,7 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "global-warming".
+usage = """Generator for "sum-of-ten".
 
 Parameters:
 * A (minimum value)
@@ -30,7 +30,8 @@ def run(A, B):
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    for _ in range(10):
+        print(randint(A, B))
 
 
 if __name__ == "__main__":

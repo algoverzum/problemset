@@ -1,20 +1,20 @@
 ## Product 1 To N
-TODO
+A positive integer $N$ is given in the input. Calculate the product of the numbers from 1 to $N$.
 
 ### Input
-The first line of the input contains $N$ - the 
+The input is a single integer: $N$.
 
 ### Output
-Print a single number, the
+You have to `print` a single number, the product of numbers from 1 to $N$.
 
 ### Constraints
-* $1 \le N \le 100$
+* $1 \le N \le 12$
 
 ### Example input
-    5
+    4
 
 ### Example output
-    42
+    24
 
 ### Explanation of the example
-
+$1 \cdot 2 \cdot 3 \cdot 4 = 24$

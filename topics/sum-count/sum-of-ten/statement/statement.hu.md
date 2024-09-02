@@ -1,5 +1,5 @@
 ## Tíz szám összege
-Adott 10 egész szám a bemeneten, szóközzel elválasztva. Írd ki az összegüket! Próbálj meg rövid és szép programot írni, minél kevesebb változó használatával!
+Mondok neked 10 egész számot. Meg tudod mondani az összegüket? Próbálj meg rövid és szép programot írni, minél kevesebb változó használatával!
 
 ### Bemenet
 A bemenetben 10 egész szám van, mindegyik külön sorban ($X_1, X_2, \ldots X_{10}$).

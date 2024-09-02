@@ -2,7 +2,7 @@
 name: product-1-to-n
 title: Product 1 To N
 title_translations:
-  hu: Product 1 To N
+  hu: Szorzat 1 * 2 * ... * N
 
 # Technical info
 memory_limit: 256

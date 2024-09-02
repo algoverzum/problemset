@@ -1,11 +1,11 @@
-## Szorzat 1-től N-ig
+## Szorzat 1-től $N$-ig
 A bemenetben adott egy $N$ pozitív egész szám. Számold ki a számok szorzatát 1-től $N$-ig!
 
 ### Bemenet
-A bemenetben egyetlen egész szám van: $N$. 
+A bemenet egyetlen egész szám: $N$. 
 
 ### Kimenet
-Egyetlen számot kell kiírnod, a számok szorzatát.
+Egyetlen számot kell kiírnod, a számok szorzatát 1-től $N$-ig.
 
 ### Korlátok
 * $1 \le N \le 12$

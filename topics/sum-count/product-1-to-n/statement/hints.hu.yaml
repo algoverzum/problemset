@@ -1,3 +1,13 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- Egy `for` ciklussal el tudunk számolni 1-től `N`-ig.
+- Hozzunk létre egy kezdetben 1 értékű változót a szorzat tárolásához, és cikluson bellül mindig az aktuális szorzatot megszorozzuk a soron következő számmal. A ciklus után már csak ki kell írni a keresett szorzatot.
+- cpp: |
+    Ezt megtehetjük így:
+    	`int prod = 1;
+       	for (int i = 1; i <= N; i++) {
+          prod *= i;
+       	}`
+  py: |
+    Ezt megtehetjük így:
+    	`prod = 1
+	for i in range(1, N + 1):
+	    prod *= i`
