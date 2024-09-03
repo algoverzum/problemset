@@ -3,18 +3,18 @@
 - cpp: |
     Ezt megtehetjük így:
     ```
-    int osztok = 0;
+    int divisors = 0;
     for (int i = 1; i <= n; i++) {
       if (n % i == 0) {
-        osztok++;
+        divisors++;
       }
     }
     ```
 - py: |
     Ezt megtehetjük így:
     ```
-    osztok = 0
+    divisors = 0
     for i in range(1, n + 1):
         if n % i == 0:
-            osztok = osztok + 1
+            divisors = divisors + 1
     ```
