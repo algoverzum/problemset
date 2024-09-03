@@ -1,5 +1,5 @@
-## Szorzat 1-től $N$-ig
-A bemenetben adott egy $N$ pozitív egész szám. Számold ki a számok szorzatát 1-től $N$-ig!
+## Szorzat 1-től N-ig
+Mondok neked egy $N$ pozitív egész számot. Ki tudod számolni a számok szorzatát 1-től $N$-ig?
 
 ### Bemenet
 A bemenet egyetlen egész szám: $N$. 

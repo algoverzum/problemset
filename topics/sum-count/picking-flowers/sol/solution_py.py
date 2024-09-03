@@ -4,8 +4,8 @@
 n = int(input())
 count = 0
 for i in range(n):
-    inp = int(input())
-    if inp % 2 == 0:
+    petals = int(input())
+    if petals % 2 == 0:
         count += 1
 
 print(count)
