@@ -5,6 +5,11 @@ using namespace std;
 int main() {
   int n;
   cin >> n;
-  cout << 42 << "\n";
-  return 0;
+  int osztok = 0;
+  for (int i = 1; i <= n; i++) {
+    if (n % i == 0) {
+      osztok++;
+    }
+  }
+  cout << osztok << "\n";
 }
