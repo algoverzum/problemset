@@ -3,32 +3,38 @@
 from limits import *
 from sys import argv, exit, stderr
 import os
+from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
 usage = """Generator for "count-divisors".
 
 Parameters:
-* N (VALUE BETWEEN 1 AND 10000)
+* A (minimum value)
+* B (maximum value)
+* S (seed)
 
 Constraint:
-* %d <= N <= %d
+* %d <= A <= %d
+* %d <= B <= %d
 """ % (
+    MIN,
+    MAX,
     MIN,
     MAX,
 )
 
 
-def run(N):
+def run(A, B):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(N)
+    print(randint(A, B))
 
 
 if __name__ == "__main__":
-    num_args = len(signature(run).parameters) + 1
+    num_args = len(signature(run).parameters) + 2
     if len(argv) != num_args:
         print("Got %d parameters, expecting %d" % (len(argv), num_args), file=stderr)
         print(usage, file=stderr)
@@ -41,5 +47,6 @@ if __name__ == "__main__":
             except:
                 pass
 
-    args = tryconv(argv[1])
-    run(args)
+    *args, S = map(tryconv, argv[1:])
+    seed(S)
+    run(*args)
