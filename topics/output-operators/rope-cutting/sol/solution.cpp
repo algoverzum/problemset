@@ -3,6 +3,6 @@
 using namespace std;
 
 int main() {
-  cout << 1337 / 42 << " " << 1337 % 42 << "\n";
-  return 0;
+    cout << 1337 / 42 << " " << 1337 % 42 << "\n";
+    return 0;
 }

@@ -3,6 +3,6 @@
 using namespace std;
 
 int main() {
-  cout << 13337 + 42424 << "\n";
-  return 0;
+    cout << 13337 + 42424 << "\n";
+    return 0;
 }

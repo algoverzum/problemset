@@ -55,7 +55,9 @@ def fmt() -> None:
     subprocess.run(["python", "-m", "black"] + python_files, cwd=root)
 
     cpp_files = get_git_cpp_files()
-    subprocess.run(["clang-format", "-i"] + cpp_files, cwd=root)
+    subprocess.run(
+        ["clang-format", "-i", "--style=file:style.clang-format"] + cpp_files, cwd=root
+    )
 
 
 fmt()

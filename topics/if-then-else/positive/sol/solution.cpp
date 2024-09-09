@@ -3,12 +3,12 @@
 using namespace std;
 
 int main() {
-  int x;
-  cin >> x;
-  if (x > 0) {
-    cout << "P\n";
-  } else {
-    cout << "N\n";
-  }
-  return 0;
+    int x;
+    cin >> x;
+    if (x > 0) {
+        cout << "P\n";
+    } else {
+        cout << "N\n";
+    }
+    return 0;
 }
