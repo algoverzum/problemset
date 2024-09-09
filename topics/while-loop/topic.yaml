@@ -2,6 +2,8 @@ id: while-loop
 name: While Loop
 problems:
 - problem_id: squares-less-than-n
+  type: ENTRY
+- problem_id: seeds
   type: REQUIRED
 prerequisites:
  - sum-count
