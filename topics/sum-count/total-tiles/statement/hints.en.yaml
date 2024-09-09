@@ -1,3 +1,6 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- After reading `N`, write a for loop in which you read the `N` side length. How can you get the square of a number? Reminder: the `^` operator for exponentiation does not work.
+- Store the partial result in a separate variable starting from 0. If `a` is the length of the side, then its square can be obtained by `a * a`.
+- cpp: |
+      The for loop should look like this: `for (int i = 1; i <= N; i++) {...}`
+ py: |
+      The for loop should look like this: `for i in range(N):`

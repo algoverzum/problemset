@@ -4,7 +4,11 @@ using namespace std;
 
 int main() {
   int n;
+  int seeds = 1;
   cin >> n;
-  cout << 42 << "\n";
+  while (seeds < n) {
+    seeds *= 3;
+  }
+  cout << seeds << "\n";
   return 0;
 }

@@ -2,4 +2,7 @@
 # @check-accepted: *
 
 n = int(input())
-print(42)
+seeds = 1
+while seeds < n:
+    seeds *= 3
+print(seeds)

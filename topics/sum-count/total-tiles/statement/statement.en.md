@@ -22,4 +22,4 @@ Print a single number, the total number of floor tiles Baltasar has to buy.
     42
 
 ### Explanation of the example
-There are 4 rooms with sizes 3, 1, 4, 4, and for covering their floors Baltasar needs $3 \cdot 3 = 9, 1 \cdot 1 = 1, 4 \cdot 4 = 16, 4 \cdot 4 = 16$ tiles respectively, in total 42.   
+There are 4 rooms with sizes 3, 4, 1, 4, and for covering their floors Baltasar needs $3 \cdot 3 = 9, 1 \cdot 1 = 1, 4 \cdot 4 = 16, 4 \cdot 4 = 16$ tiles respectively, in total 42.   

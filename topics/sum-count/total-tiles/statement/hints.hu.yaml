@@ -1,3 +1,6 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- `N` beolvasása után írj egy for ciklust, amiben beolvasod az `N` oldalt. Milyen művelettel kapod meg a négyzetét? Emlékeztető: nem működik a `^` operátor a hatványozásra.
+- Egy 0-tól induló külön váltózóban tároljuk a részeredményt. Ha `a` az oldal hossza, akkor a négyzetét az `a * a` művelettel lehet megkapni.
+- cpp: |
+       A for ciklus így nézzen ki: `for (int i = 1; i <= N; i++) {...}`
+  py: |
+       A for ciklus így nézzen ki: `for i in range(N):`

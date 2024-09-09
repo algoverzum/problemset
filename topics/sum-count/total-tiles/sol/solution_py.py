@@ -2,4 +2,8 @@
 # @check-accepted: *
 
 n = int(input())
-print(42)
+area = 0
+for i in range(n):
+    side = int(input())
+    area += side**2
+print(area)
