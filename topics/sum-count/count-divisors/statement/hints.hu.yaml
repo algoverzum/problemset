@@ -1,3 +1,20 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- Egy `for` ciklussal el tudunk számolni 1-től `n`-ig.
+- Hozzunk létre egy kezdetben 0 értékű változót az osztók számontarásához, minden alkalommal amikor találunk egy osztót, növeljük meg a változónkat 1-el. A ciklus után már csak ki kell írni a keresett szorzatot.
+- cpp: |
+    Ezt megtehetjük így:
+    ```
+    int divisors = 0;
+    for (int i = 1; i <= n; i++) {
+      if (n % i == 0) {
+        divisors++;
+      }
+    }
+    ```
+- py: |
+    Ezt megtehetjük így:
+    ```
+    divisors = 0
+    for i in range(1, n + 1):
+        if n % i == 0:
+            divisors = divisors + 1
+    ```

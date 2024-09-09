@@ -1,0 +1,2 @@
+- Vegyél fel egy `magok` változót, az értéke legyen 1.
+- Csinálj egy while ciklust, ami addig menjen, amíg `magok < N`. A cikluson belül mindig szorozzad meg `magok`-at 3-mal.
