@@ -1,0 +1,16 @@
+id: while-loop
+name: While Loop
+problems:
+- problem_id: squares-less-than-n
+  type: REQUIRED
+prerequisites:
+ - sum-count
+dependents:
+# - search
+visualization:
+  image_filename: 6.svg
+  position:
+    x: 300
+    y: -100
+
+# Notes:
