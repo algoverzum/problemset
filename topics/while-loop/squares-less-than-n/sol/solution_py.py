@@ -2,4 +2,7 @@
 # @check-accepted: *
 
 n = int(input())
-print(42)
+squarecounter = 1
+while squarecounter * squarecounter < n:
+    print(squarecounter * squarecounter)
+    squarecounter += 1

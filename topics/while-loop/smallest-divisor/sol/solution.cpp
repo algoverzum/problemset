@@ -5,6 +5,10 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    cout << 42 << "\n";
+    int divisor = 2;
+    while (n % divisor != 0) {
+        divisor++;
+    }
+    cout << divisor << "\n";
     return 0;
 }

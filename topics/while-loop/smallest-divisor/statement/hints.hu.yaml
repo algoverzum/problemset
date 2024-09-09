@@ -1,3 +1,10 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- "Próbálgassuk a számokat 2-től kezdve amíg nem találunk egyet ami osztja n-et. Mivel nem találtunk nála kissebb osztót így ez lesz a legkissebb."
+- cpp: |
+    Használjuk a while ciklust arra, hogy egy előre ismeretlen számú feltételt hajtsunk végre amíg nem találunk egy osztót.
+    while(n%divisor!=0){ 
+      divisor++;
+    }
+- py: |
+    Használjuk a while ciklust arra, hogy egy előre ismeretlen számú feltételt hajtsunk végre amíg nem találunk egy osztót.
+    while n%divisor!=0:
+      divisor+=1

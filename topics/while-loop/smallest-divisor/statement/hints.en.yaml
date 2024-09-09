@@ -1,3 +1,10 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- "Try every number starting from 2 until you find one that is a divisor of n, because we haven't found a divisor earlier, that will be the smallest one."
+- cpp: |
+    Let's use the while loop to execute an unknown number of conditions until we find a divisor.
+    while(n%divisor!=0){ 
+      divisor++;
+    }
+- py: |
+    Let's use the while loop to execute an unknown number of conditions until we find a divisor.
+    while n%divisor!=0:
+      divisor+=1

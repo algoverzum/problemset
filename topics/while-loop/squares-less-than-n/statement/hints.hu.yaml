@@ -1,3 +1,7 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- Ahelyet, hogy megnéznénk minden számot és abból kiválogatnánk a négyzetszámokat, állítsuk elő a négyzetszámokat amíg nem érjük el n-et.
+- cpp: |
+    Nem tudjuk előre, hogy hány négyzetszám van ami kissebb n-nél. Ezért használjunk while ciklust.
+    while(squarecounter * squarecounter < n) {}
+- py: |
+    Nem tudjuk előre, hogy hány négyzetszám van ami kissebb n-nél. Ezért használjunk while ciklust.
+    while squarecounter * squarecounter < n:
