@@ -13,6 +13,8 @@ problems:
   type: REQUIRED
 - problem_id: total-tiles
   type: REQUIRED
+- problem_id: number-of-teams
+  type: COMPLETION
 prerequisites:
  - for-loop
 dependents:
