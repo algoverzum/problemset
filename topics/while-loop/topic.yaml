@@ -5,6 +5,10 @@ problems:
   type: ENTRY
 - problem_id: seeds
   type: REQUIRED
+- problem_id: money-box
+  type: REQUIRED
+- problem_id: smallest-divisor
+  type: REQUIRED
 prerequisites:
  - sum-count
 dependents:
