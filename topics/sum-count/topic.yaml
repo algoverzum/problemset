@@ -11,10 +11,13 @@ problems:
   type: REQUIRED
 - problem_id: count-divisors
   type: REQUIRED
+- problem_id: total-tiles
+  type: REQUIRED
 prerequisites:
  - for-loop
 dependents:
 # - array
+# - while loop
 visualization:
   image_filename: 5.svg
   position:
