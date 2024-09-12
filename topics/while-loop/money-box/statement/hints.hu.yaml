@@ -1,3 +1,2 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- Vegyél fel egy `lada` változót, az értéke legyen 0. Szükségünk lesz egy másik `nap` változóra, ennek értékét a `while` cikluson bellül növeljük 1-gyel, illetve adjuk hozzá a `lada` változóhoz.
+- A `while` ciklus addig menjen, amíg `lada < N`. A `nap` váltzó tartalmazza ekkor a kérdésre a választ. 

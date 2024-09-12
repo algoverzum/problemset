@@ -52,7 +52,7 @@ def fmt() -> None:
 
     root = get_repo_root()
     python_files = get_git_python_files()
-    subprocess.run(["python", "-m", "black"] + python_files, cwd=root)
+    subprocess.run(["python3", "-m", "black"] + python_files, cwd=root)
 
     cpp_files = get_git_cpp_files()
     subprocess.run(

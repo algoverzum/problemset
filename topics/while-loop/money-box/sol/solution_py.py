@@ -2,4 +2,9 @@
 # @check-accepted: *
 
 n = int(input())
-print(42)
+k = 0
+day = 0
+while k < n:
+    day += 1
+    k += day
+print(day)

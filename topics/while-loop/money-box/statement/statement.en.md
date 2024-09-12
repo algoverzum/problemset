@@ -5,7 +5,7 @@ My friend Tamara collects money in her wrookie-box, which is initially empty. On
 The first line of the input contains $N$ - the desired number of coins. 
 
 ### Output
-Print a single integer number $K$ for which it is true that after $K$ days she will have at least $N$ coins.
+Print the smallest integer $K$ for which it is true that after $K$ days she will have at least $N$ coins.
 
 ### Constraints
 * $1 \le N \le 10\,000$
