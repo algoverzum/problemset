@@ -6,17 +6,25 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "global-warming".
+usage = """Generator for "number-of-teams".
 
 Parameters:
-* A (minimum value)
-* B (maximum value)
+* A (n minimum value)
+* B (n maximum value)
+* C (a minimum value)
+* D (a maximum value)
 * S (seed)
 
 Constraint:
 * %d <= A <= %d
 * %d <= B <= %d
+* %d <= C <= %d
+* %d <= D <= %d
 """ % (
+    MIN,
+    MAX,
+    MIN,
+    MAX,
     MIN,
     MAX,
     MIN,
@@ -24,13 +32,16 @@ Constraint:
 )
 
 
-def run(A, B):
+def run(A, B, C, D):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    n = randint(A, B)
+    print(n)
+    for i in range(n):
+        print(randint(C, D))
 
 
 if __name__ == "__main__":
