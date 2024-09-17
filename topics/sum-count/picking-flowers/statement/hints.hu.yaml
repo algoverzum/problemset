@@ -1,3 +1,4 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- Meg kell számolnunk, hogy hány páros szám van a bemeneti sorozatban. Az első szám a sorozat hossza (N), kezdjük azzal, hogy beolvassuk ezt, majd egy N-szer ismétlődő for ciklusban olvassuk be a számokat egyenként.
+- Vegyünk fel egy külön változót az eredménynek. Mivel ez megszámol dolgokat, ezért szokás számlálónak nevezni (angolul counter). Kezdetben legyen 0.
+- Ha a beolvasott elem jó tulajdonságú, akkor növeljük 1-gyel a számlálót. Ehhez egy `if` utasítást kell használnunk a for cikluson belül.
+- Egy `x` szám páros, ha a kettes maradéka 0 (`x % 2 == 0`).

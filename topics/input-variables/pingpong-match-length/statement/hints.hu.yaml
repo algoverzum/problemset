@@ -1,3 +1,4 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- Érdemes mindent átváltani percbe, vagyis az éjféltől eltelt percek számát számoljuk. (Például, ha 10:15 van, akkor 615 perc telt el éjfél óta.)
+- Ehhez az átváltáshoz az órák számát meg kell szorozni 60-nal és hozzáadni a percek számát.
+- A befejezési időpont percbe átváltott értékéből kell kivonni a kezdési időpont percbe átváltott értékét.
+- `SH * 60 + SM - (EH * 60 + EM)`

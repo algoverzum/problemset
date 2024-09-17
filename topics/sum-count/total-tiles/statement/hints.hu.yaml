@@ -1,6 +1,5 @@
-- `N` beolvasása után írj egy for ciklust, amiben beolvasod az `N` oldalt. Milyen művelettel kapod meg a négyzetét? Emlékeztető: nem működik a `^` operátor a hatványozásra.
-- Egy 0-tól induló külön váltózóban tároljuk a részeredményt. Ha `a` az oldal hossza, akkor a négyzetét az `a * a` művelettel lehet megkapni.
-- cpp: |
-       A for ciklus így nézzen ki: `for (int i = 1; i <= N; i++) {...}`
-  py: |
-       A for ciklus így nézzen ki: `for i in range(N):`
+- |
+  Az `N` értékének beolvasása után írj egy for ciklust, amiben beolvasod az egyes szobák oldalhosszát. Milyen művelettel kapod meg a négyzetét? Emlékeztető: nem működik a `^` operátor a hatványozásra.
+- Ha `a` az oldal hossza, akkor a négyzetét az `a * a` művelettel lehet megkapni.
+- Legyen egy külön változó az eredmény tárolására (`sum`), kezdetben legyen 0.
+- A beolvasott oldalhossz négyzetével növeljük mindig az eredmény változót (`sum += a * a`)

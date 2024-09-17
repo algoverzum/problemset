@@ -1,1 +1,2 @@
-- TODO
+- Az eredménynek létre kell hozni egy külön változót. Ezt szorozzuk meg egyenként az összes számmal 2-től N-ig! Mi legyen a kezdőértéke?
+- Mivel N-et csak a beolvasáskor tudjuk meg, ezért for ciklust kell írnunk a szorzásokhoz. Minden iterációban az eredményt változtassuk önmaga i-szeresére (i=2..N)

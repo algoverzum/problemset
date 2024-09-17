@@ -6,7 +6,7 @@ Ping-pong matches can take very long on our planet, especially if creatures with
 
 Here $H$ and $M$ are integer numbers denoting the hour and the minute in a 24-hour time format. There are no leading zeroes in the numbers, for example, if the starting time is 13:05, you would get `13` and `5` in the input.
 
-Determine the length of the ping-pong match in minutes. You can assume that the match ended the same day as it started, and it lasted at least one minute, so the end time is bigger than the start time. One hour is $60$ minutes.
+Determine the length of the ping-pong match in minutes. You can assume that the match ended the same day as it started, and it lasted at least one minute, so the end time is bigger than the start time. One hour is 60 minutes.
 
 ### Input
 The input contains four integer numbers on separate lines: $SH, SM, EH, EM$ - the starting hour, starting minute, ending hour, and ending minute of the ping-pong match.

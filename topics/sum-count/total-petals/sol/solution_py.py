@@ -2,10 +2,10 @@
 # @check-accepted: *
 
 n = int(input())
-count = 0
+sum = 0
 for i in range(n):
-    inp = int(input())
-    if inp % 2 == 1:
-        count += inp
+    petals = int(input())
+    if petals % 2 == 1:
+        sum += petals
 
-print(count)
+print(sum)

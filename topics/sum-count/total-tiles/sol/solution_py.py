@@ -5,5 +5,5 @@ n = int(input())
 area = 0
 for i in range(n):
     side = int(input())
-    area += side**2
+    area += side ** 2
 print(area)

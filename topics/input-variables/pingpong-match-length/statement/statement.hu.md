@@ -6,7 +6,7 @@ A pingpong meccsek bolygónkon nagyon sokáig tarthatnak, különösen, ha több
 
 Itt $H$ és $M$ egész számok, amelyek az órát és a percet jelölik 24 órás időformátumban. A számok elején nincsenek nullák, például ha a kezdési időpont 13:05, akkor a bemenetben `13` és `5` szerepel.
 
-Határozd meg a pingpong mérkőzés hosszát percben. Feltételezhető, hogy a meccs ugyanazon a napon ért véget, amikor elkezdődött, és legalább egy percig tartott, tehát a befejezési idő nagyobb, mint a kezdési idő. Egy óra 60$ perc.
+Határozd meg a pingpong mérkőzés hosszát percben. Feltételezhető, hogy a meccs ugyanazon a napon ért véget, amikor elkezdődött, és legalább egy percig tartott, tehát a befejezési idő nagyobb, mint a kezdési idő. Egy óra 60 perc.
 
 ### Bemenet
 A bemenet négy egész számot tartalmaz külön sorokban: $SH, SM, EH, EM$ - a pingpong meccs kezdő órája, kezdő perce, befejező órája és befejező perce.

@@ -1,1 +1,11 @@
-- TODO
+- Használjunk egy külön változót arra, hogy az eredményt kiszámoljuk, ez kezdetben legyen 0. Legyen egy másik változónk, amibe mindig beolvassuk a bemeneten érkező következő számot.
+- Egy 10-szer ismétlődő for cikluson belül csináljuk a beolvasást. Mit kell csinálni mindig a beolvasott számmal?
+- A for cikluson belül, miután beolvastunk egy értéket, adjuk ezt hozzá az eredmény változóhoz.
+- cpp: |
+    Ha egy `x` változót használunk a beolvasásra, és a `sum` változóban számoljuk az összeget, akkor ezek az utasítások így néznek ki:
+        cin >> x;
+        sum += x;
+- py: |
+    Ha egy `x` változót használunk a beolvasásra, és a `sum` változóban számoljuk az összeget, akkor ezek az utasítások így néznek ki:
+        x = int(input())
+        sum += x

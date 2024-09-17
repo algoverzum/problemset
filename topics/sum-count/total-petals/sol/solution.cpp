@@ -5,14 +5,14 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    int inp;
-    int count = 0;
+    int sum = 0;
     for (int i = 0; i < n; i++) {
-        cin >> inp;
-        if (inp % 2 == 1) {
-            count += inp;
+        int petals;
+        cin >> petals;
+        if (petals % 2 == 1) {
+            sum += petals;
         }
     }
-    cout << count << '\n';
+    cout << sum << "\n";
     return 0;
 }

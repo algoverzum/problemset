@@ -6,8 +6,8 @@ int main() {
     int n;
     cin >> n;
     int area = 0;
-    int side;
     for (int i = 0; i < n; i++) {
+        int side;
         cin >> side;
         area += side * side;
     }
