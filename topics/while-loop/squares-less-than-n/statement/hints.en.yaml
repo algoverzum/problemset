@@ -1,7 +1,9 @@
 - Instead of checking which smaller than n numbers are squares, let's generate square numbers until we reach n.
 - cpp: |
     Because we don't know how many smaller than n square numbers there are, let's use a while loop.
-    while (squarecounter * squarecounter < n) {}
 - py: |
     Because we don't know how many smaller than n square numbers there are, let's use a while loop.
-    while squarecounter * squarecounter < n:
+- cpp: |
+    `while (i * i < n) { ... }`
+- py: |
+    `while i * i < n: ...`

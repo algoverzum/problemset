@@ -5,10 +5,10 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    int squarecounter = 1;
-    while (squarecounter * squarecounter < n) {
-        cout << squarecounter * squarecounter << "\n";
-        squarecounter++;
+    int i = 1;
+    while (i * i < n) {
+        cout << i * i << "\n";
+        i++;
     }
     return 0;
 }

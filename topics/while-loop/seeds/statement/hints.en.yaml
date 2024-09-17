@@ -1,2 +1,2 @@
 - Take a `seeds` variable, its value should be 1.
-- Make a while loop that runs until `seeds < N`. Multiply `seeds` by 3 within the cycle.
+- Write a while loop that runs until `seeds < N`. Multiply `seeds` by 3 within the loop.

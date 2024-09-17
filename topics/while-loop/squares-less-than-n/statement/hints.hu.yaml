@@ -1,7 +1,9 @@
-- Ahelyet, hogy megnéznénk minden számot és abból kiválogatnánk a négyzetszámokat, állítsuk elő a négyzetszámokat amíg nem érjük el n-et.
+- Ahelyett, hogy megnéznénk minden számot és abból kiválogatnánk a négyzetszámokat, állítsuk elő a négyzetszámokat amíg nem érjük el n-t.
 - cpp: |
-    Nem tudjuk előre, hogy hány négyzetszám van ami kissebb n-nél. Ezért használjunk while ciklust.
-    while(squarecounter * squarecounter < n) {}
+    Nem tudjuk előre, hogy hány négyzetszám van ami kisebb n-nél. Ezért használjunk while ciklust.
 - py: |
     Nem tudjuk előre, hogy hány négyzetszám van ami kissebb n-nél. Ezért használjunk while ciklust.
-    while squarecounter * squarecounter < n:
+- cpp: |
+    `while(i * i < n) { ... }`
+- py: |
+    `while i * i < n: ...`

@@ -4,8 +4,8 @@ using namespace std;
 
 int main() {
     int n;
-    int seeds = 1;
     cin >> n;
+    int seeds = 1;
     while (seeds < n) {
         seeds *= 3;
     }
