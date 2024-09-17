@@ -1,20 +1,20 @@
-## Count Divisors
-TODO
+##  Count Divisors
+I will give you a positive integer at the input. Can you tell how many divisors it has?
 
 ### Input
-The first line of the input contains $N$ - the 
+There is a single integer $N$ in the input. 
 
 ### Output
-Print a single number, the
+You must print a single integer, the number of divisors of $N$.
 
-### Constraints
-* $1 \le N \le 100$
+### Limits
+* $1 \le N \le 10\,000$
 
 ### Example input
-    5
+    20
 
 ### Example output
-    42
+    6
 
 ### Explanation of the example
-
+20 has 6 divisors: 1, 2, 4, 5, 10, 20.

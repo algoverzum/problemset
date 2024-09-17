@@ -1,3 +1,5 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- It is a good idea to convert everything into minutes, i.e. counting the number of minutes since midnight (for example, if it is 10:15, then 615 minutes have elapsed since midnight)
+- To do this conversion, multiply the number of hours by 60 and add the number of minutes
+- Subtract the value of the start time converted into minutes from the value of the end time converted into minutes
+- |
+  `SH * 60 + SM - (EH * 60 + EM)`

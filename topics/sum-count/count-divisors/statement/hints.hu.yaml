@@ -1,2 +1,2 @@
-- Egy `for` ciklussal menjünk végig a számokon i=1-től N-ig. Mindig az aktuális i számra vizsgáljuk meg, hogy osztója-e az N-nek. Hogy lehet ezt? És mit csináljunk ekkor?
-- A `for` cikluson belül egy `if` utasítás kell a vizsgálathoz, a helyes feltétel pedig `n % i == 0`. Ha ez igaz, akkor növeljünk meg egy számláló változót, amit még a ciklus előtt létre kell hoznunk 0 kezdőértékkel. 
+- Using a `for` loop, go through the numbers from i=1 to N. For each number i, check whether it is a divisor of N. How can this be done? And what do we do then?
+- Within the `for` loop, we need an `if` statement to test the divisibility, and the correct condition is `n % i == 0`. If this is true, then increase a counter variable, which must be created before the loop with an initial value of 0. 

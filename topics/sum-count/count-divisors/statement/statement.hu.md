@@ -1,5 +1,5 @@
 ## Osztók száma
-Adott egy pozitív egész szám a bemeneten. Írd ki, hogy hány osztója van.
+Megadok neked egy pozitív egész számot. Meg tudod mondani, hogy hány osztója van?
 
 ### Bemenet
 A bemenetben egyetlen egész szám van: $N$. 

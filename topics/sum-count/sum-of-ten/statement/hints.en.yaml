@@ -1,1 +1,11 @@
-- TODO
+- Use a separate variable to compute the result, this should initially be 0. Have another variable in which we always read the next number from the input.
+- We do the scan within a for loop that repeats 10 times. What should we do with the number the we read?
+- Within the for loop, after reading a value, add it to the result variable.
+- cpp: |
+    If you use an `x` variable for the input and calculate the result in the `sum` variable, these statements look like this:
+        cin >> x;
+        sum += x;
+- py: |
+    If you use an `x` variable for the input and calculate the result in the `sum` variable, these statements look like this:
+        x = int(input())
+        sum += x

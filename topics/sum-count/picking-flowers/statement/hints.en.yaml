@@ -1,3 +1,4 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- We need to count how many even numbers are in the input sequence. The first number is the length of the sequence (N), start by reading this, then read in the numbers one by one in a for loop repeated N times.
+- Create a separate variable for the result. Since this counts stuff, it's called a counter. Initially, it should be 0.
+- If the item being read is good for us, increase the counter by 1. To do this, we need to use an `if` statement inside the for loop.
+- An `x` number is even if its remainder by two is 0 (`x % 2 == 0`).

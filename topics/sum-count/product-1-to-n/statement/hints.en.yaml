@@ -1,1 +1,2 @@
-- TODO
+- The result should be created as a separate variable. Multiply this by each of the numbers from 2 to N. Pay attention, what should be its initial value?
+- Since N is only known when the program is running, we need to write a for loop for the multiplication. In each iteration, multiply the result by `i` (i=2..N)

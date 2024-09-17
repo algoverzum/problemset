@@ -1,3 +1,3 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- We need to calculate the sum of the odd elements of the sequence. First read in the number of elements (N), then read in the elements one by one in a for loop repeated N times.
+- Have a separate variable to compute the result, and don't forget to set it to 0 initially.
+- After each number is read, use an `if` statement to check whether it is odd (`x % 2 == 1`), and if so, add it to the result variable.
