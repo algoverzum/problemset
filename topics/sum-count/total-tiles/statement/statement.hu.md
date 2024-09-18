@@ -2,7 +2,7 @@
 Baltazár király kastélyában $N$ szoba van. Minden szoba négyzet alakú, ráadásul minden helyiség oldalhossza egy egész szám. Baltazár minden szobába új padlólapokat szeretne rakni. Az új lapok négyzet alakúak, oldalhosszuk 1. Hány új lapra lesz szüksége összesen?
 
 ### Bemenet
-A bemenet első sorában $N$ található - a szobák száma. A következő $N$ sor mindegyike egyetlen számot tartalmaz: $S_i$ - az $i$-edik szoba oldalhosszát ($i =1, 2, \ldots, $N$).
+A bemenet első sorában $N$ található - a szobák száma. A következő $N$ sor mindegyike egyetlen számot tartalmaz: $S_i$ - az $i$-edik szoba oldalhosszát ($i =1, 2, \ldots, N$).
 
 ### Kimenet
 Egyetlen számot írj ki, a szükséges padlólapok számát.
