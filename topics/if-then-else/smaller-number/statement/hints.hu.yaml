@@ -1,3 +1,10 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- A két számot hasonlítsuk össze, majd ennek az eredményétől függően az egyiket vagy a másikat írjuk ki.
+- cpp: |
+    Az összehasonlításhoz az `if` utasítás használd, ami után zárójelbe kell írni a feltételt. Emlékeztető: a két szám beolvasásához az `int a, b; cin >> a >> b;` parancsok kellenek.
+  py: |
+    Az összehasonlításhoz az `if` utasítás használd. Emlékeztető: egy szám beolvasásához az `a = int(input())` parancs kell.
+- cpp: Ha a két számot az a és b változó tárolja, akkor az `if (a < b) { … } else { … }` programrészlettel lehet megoldani. Mi legyen a két … helyén?
+  py: |
+    Ha a két számot az a és b változó tárolja, akkor az `if a < b:  …  else: … ` programrészlettel lehet megoldani. Mi legyen a két … helyén?
+- cpp: Az előző hintben lévő programrészletben a … helyén `cout << a;` illetve `cout << b;` legyen.
+  py: Az előző hintben lévő programrészletben a … helyén `print(a)` illetve `print(b)` legyen.
