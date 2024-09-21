@@ -18,8 +18,8 @@ problems:
 prerequisites:
  - for-loop
 dependents:
-# - array
-# - while loop
+ - array
+ - while-loop
 visualization:
   image_filename: 5.svg
   position:

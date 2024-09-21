@@ -3,7 +3,7 @@ Aladar is picking flowers. He sees $N$ flowers in the meadow, he knows how many 
 The first number tells you how many flowers you see, followed by the number of petals each flower has.
 
 ### Input
-The first line of the input is the number of flowers: $N$. Then given the number $N$, each on a separate line, is the number of petals of each flower ($S_1, S_2, ..., S_N$).  
+The first line of the input is the number of flowers: $N$. Then given the number $N$, each on a separate line, is the number of petals of each flower ($S_1, S_2, \ldots, S_N$).  
 
 ### Output
 You must print a single number, the number of flowers remaining in the meadow. 
