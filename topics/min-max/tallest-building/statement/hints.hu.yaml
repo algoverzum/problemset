@@ -1,3 +1,8 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: A számokat tároljuk egy vectorban. Miközben végigmegyünk rajtuk, jegyezzük meg, hogy melyik volt az addigi legnagyobb.
+  py: A számokat tároljuk egy listában. Miközben végigmegyünk rajtuk, jegyezzük meg, hogy melyik volt az addigi legnagyobb.
+- Kell egy külön változó, amiben megjegyezzük a legnagyobbat, legyen a neve `maxi`. Kezdetben állítsuk a legelső elem értékére. Majd egy for ciklussal menjünk végig a többi elemen, és ha egy nagyobbat találunk, akkor frissítsük a `maxi` értékét.
+- cpp: |
+    Ha a vector neve `h`, akkor a for cikluson belül ezt kell csinálnunk: `if (h[i] > maxi) { maxi = h[i]; }`
+  py: |
+    Ha a lista neve `h`, akkor a for cikluson belül ezt kell csinálnunk: `if h[i] > maxi:  maxi = h[i]`
+s
