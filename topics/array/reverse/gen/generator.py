@@ -6,7 +6,7 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "global-warming".
+usage = """Generator for "reverse".
 
 Parameters:
 * A (minimum value)
@@ -29,8 +29,9 @@ def run(A, B):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
-
-    print(randint(A, B))
+    for i in range(13):
+        print(randint(A, B), end=" ")
+    print()
 
 
 if __name__ == "__main__":

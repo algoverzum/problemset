@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
-n = int(input())
-print(42)
+numbers = list(map(int, input().split()))
+print(*numbers)
+print(*numbers[::-1])

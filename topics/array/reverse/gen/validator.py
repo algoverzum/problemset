@@ -14,10 +14,10 @@ def usage():
 def run(f, st):
     for k, v in subtasks[st].items():
         globals()[k] = v
-
-    N = int(next(f))
-    assert MIN <= N <= MAX
-
+    numbers = list(map(int, next(f).split()))
+    assert len(numbers) == 13
+    for N in numbers:
+        assert MIN <= N <= MAX
     assert next(f, None) is None
 
 
