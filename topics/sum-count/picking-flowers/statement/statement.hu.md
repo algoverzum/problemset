@@ -3,7 +3,7 @@ Aladár virágokat szed. $N$ virágot lát a réten, mindegyikről tudja, hogy h
 Az első szám azt jelenti, hogy mennyi virágot lát, utána következnek egyesével, hogy melyik virágnak mennyi szirma van.
 
 ### Bemenet
-A bemenet első sorában a virágok száma van: $N$. Ezt követően adott $N$ szám, mindegyik külön sorban, az egyes virágok szirmainak száma ($S_1, S_2, ..., S_N$).  
+A bemenet első sorában a virágok száma van: $N$. Ezt követően adott $N$ szám, mindegyik külön sorban, az egyes virágok szirmainak száma ($S_1, S_2, \ldots, S_N$).  
 
 ### Kimenet
 Egyetlen számot kell kiírnod, a réten maradó virágok számát. 

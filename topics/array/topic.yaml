@@ -1,0 +1,20 @@
+id: array
+name: Array
+problems:
+- problem_id: reverse
+  type: ENTRY
+- problem_id: bonie-sequence
+  type: REQUIRED
+prerequisites:
+ - sum-count
+dependents:
+ - string
+ - min-max
+ - search-filter
+visualization:
+  image_filename: 7.svg
+  position:
+    x: 300
+    y: 200
+
+# Notes:

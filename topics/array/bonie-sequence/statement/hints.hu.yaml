@@ -1,0 +1,10 @@
+- Próbáld meg papíron kiszámolni az első néhány évben a bonik számát. Felfedezel valami szabályt?
+- Az előző évhez képest mindig annyival nő a bonik száma, amennyi két évvel ezelőtt volt. Vagyis a sorozat minden tagja az előző kettő összege.
+- cpp: |
+    Az `n` beolvasása után egy `n+1` elemű vectort hozzunk létre: `vector<int> b(n+1);`
+  py: |
+    Az `n` beolvasása után egy `n+1` elemű listát hozzunk létre: `[0] * (n+1)`
+- |
+  `b[0]=1` és `b[1]=1`, a többi elemet viszont egy for ciklussal számoljuk ki, ami i=2-től i<=n -ig megy! Hogyan tudod leírni a ciklusban azt, hogy az aktuális, i-edik elem legyen az előző kettő összege?
+- |
+  `b[i] = b[i - 1] + b[i - 2]`

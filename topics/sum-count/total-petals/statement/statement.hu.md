@@ -2,7 +2,7 @@
 Aladár virágokat szed. $N$ virágot lát a réten, mindegyikről tudja, hogy hány szirma van (ezek a számok fel vannak sorolva a bemeneten). Csak a páratlan szirmú virágokat szedi össze. Otthon leszedi a virágokról a szirmokat. Hány virágszirma lesz?
 
 ### Bemenet
-A bemenet első sorában a virágok száma van: $N$. Ezt követően adott $N$ szám, mindegyik külön sorban, az egyes virágok szirmainak száma ($S_1, S_2, ..., S_N$).  
+A bemenet első sorában a virágok száma van: $N$. Ezt követően adott $N$ szám, mindegyik külön sorban, az egyes virágok szirmainak száma ($S_1, S_2, \ldots, S_N$).  
 
 ### Kimenet
 Egyetlen számot kell kiírnod, az összes virágszirom számát, amit Aladár hazavisz. 

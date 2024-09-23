@@ -1,0 +1,14 @@
+- cpp: |
+    A számokat el kell tárolnunk. C++ -ban sok egész szám tárolására használhatjuk a `vector<int>` típust, egy 13 méretű vectort így lehet létrehozni: `vector<int> numbers(13);`. Ennek az elemei 0-tól kezdve vannak sorszámozva, így lehet hivatkozni rájuk: `numbers[0]`, `numbers[1]`, ..., `numbers[12]`. A vector egy eleme (pl. `numbers[0]`) pont ugyanúgy viselkedik, mint egy változó. 
+  py: |
+    A számokat el kell tárolnunk. Pythonban sok elem tárolására a listát lehet használni. A lista elemei 0-tól vannak sorszámozva, például egy 13 elemű `numbers` lista elemeire így hivatkozhatunk: `numbers[0]`, `numbers[1]`, ..., `numbers[12]`. A lista egy eleme (pl. `numbers[0]`) pont ugyanúgy viselkedik, mint egy változó.
+- cpp: |
+    Az elemek beolvasásra egy i=0-tól i<13-ig menő for ciklust érdemes használni. A ciklus belsejébe azt az utasítást kell tenni, ami `numbers[i]`-be beolvassa a következő értéket: `cin >> numbers[i];`
+  py: |
+    Egy sort beolvasni, majd abból ellőállítani a sorban lévő számokat tartalmazó listát egy meglehetősen összetett paranccsal lehet, ezt hosszas magyarázat nélkül közöljük: `numbers = [int(x) for x in input().split()]`
+- cpp: A vector elemeit kiírni eredeti sorrendben ugyanúgy egy for ciklussal lehet. A visszafelé kiíráshoz is egy for ciklust javaslunk, akkor az mettől meddig menjen?
+  py: A lista elemeinek kiírásához egy for ciklust javaslunk. Meg lehet változtatni azt, hogy a print parancs sortörés helyett csak egy szóközt tegyen egy adat kiírása után, a `print(numbers[i], end=" ")` írásmóddal. A for ciklusnak mettől meddig kell mennie, az eredeti sorrendben, illetve a visszafelé sorrendben való kiíráshoz?
+- cpp: |
+    A visszafelé kiíráshoz egy ilyen ciklus jó: `for (int i = 12; i >= 0; i--) cout << numbers[i] << " ";`
+  py: |
+    A `for i in range(13):` ciklus pont 0-tól 12-ig megy, ezen belül egy `print(numbers[i], end=" ")` utasítás jó. A visszafelé kiíráshoz `range(12, -1, -1)` kell.

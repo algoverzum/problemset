@@ -1,0 +1,7 @@
+- cpp: The numbers are stored in a vector. As we go through them, let's note which one was the biggest so far.
+ py: The numbers are stored in a list. As we go through them, let's note which one was the biggest so far.
+- We need a separate variable in which we remember the biggest one, let it be named `maxi`. Initially, set it to the value of the very first element. Then go through the rest of the elements with a for loop, and if a larger one is found, update the value of `maxi`.
+- cpp: |
+ If the name of the vector is `h`, we must do this within the for loop: `if (h[i] > maxi) { maxi = h[i]; }`
+ py: |
+ If the name of the list is `h`, then inside the for loop we have to do this: `if h[i] > maxi: maxi = h[i]`
