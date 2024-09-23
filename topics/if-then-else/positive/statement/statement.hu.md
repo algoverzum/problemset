@@ -1,5 +1,5 @@
 ## Pozitív?
-A mi bolygónkon a $0$-nál nagyobb számokat pozitív számoknak nevezzük, és P betűvel jelöljük őket. A $0$-nál nem nagyobb számokat nem pozitív számoknak nevezzük, és N-vel jelöljük őket. Adott egy egész szám. Írd ki a `P` betűt, ha pozitív, és `N` betűt, ha nem.
+A mi bolygónkon a $0$-nál nagyobb számokat pozitív számoknak nevezzük, és P betűvel jelöljük őket. A $0$-nál nem nagyobb számokat nem pozitív számoknak nevezzük, és N-nel jelöljük őket. Adott egy egész szám. Írd ki a `P` betűt, ha pozitív, és `N` betűt, ha nem.
 
 ### Bemenet
 A bemenetben egyetlen egész szám van: $X$.
