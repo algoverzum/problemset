@@ -16,7 +16,10 @@ def run(f, st):
         globals()[k] = v
 
     N = int(next(f))
-    assert MIN <= N <= MAX
+    assert N_MIN <= N <= N_MAX
+    LINE = next(f).split()
+    for i in range(N):
+        assert ARM_MIN <= int(LINE[i]) <= ARM_MAX
 
     assert next(f, None) is None
 
