@@ -9,6 +9,8 @@ pip install black
 pip install clang-format
 ```
 
+Remark: It worked for ubuntu 22.04, but for 24.04 I needed this: `sudo apt install pre-commit black clang-format`.
+
 - Set up precommit hooks
 ```bash
 pre-commit install
