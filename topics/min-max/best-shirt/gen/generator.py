@@ -16,21 +16,32 @@ Parameters:
 Constraint:
 * %d <= A <= %d
 * %d <= B <= %d
+* %d <= C <= %d
+* %d <= D <= %d
 """ % (
-    MIN,
-    MAX,
-    MIN,
-    MAX,
+    N_MIN,
+    N_MAX,
+    N_MIN,
+    N_MAX,
+    MONEY_MIN,
+    MONEY_MAX,
+    MONEY_MIN,
+    MONEY_MAX,
 )
 
 
-def run(A, B):
+def run(A, B, C, D):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    n = randint(A, B)
+    print(str(n) + " " + str(randint(C, D)))
+    second_line = ""
+    for _ in range(n):
+        second_line += str(randint(C, D)) + " "
+    print(second_line)
 
 
 if __name__ == "__main__":
