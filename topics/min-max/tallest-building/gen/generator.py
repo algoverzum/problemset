@@ -6,31 +6,33 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "global-warming".
+usage = """Generator for "tallest-building".
 
 Parameters:
-* A (minimum value)
-* B (maximum value)
+* N (array length)
+* V (maximum value)
 * S (seed)
 
 Constraint:
-* %d <= A <= %d
-* %d <= B <= %d
+* 1 <= N <= %d
+* 1 <= V <= %d
 """ % (
-    MIN,
-    MAX,
-    MIN,
-    MAX,
+    MAX_N,
+    MAX_V,
 )
 
 
-def run(A, B):
+def run(N, V):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    N = randint(1, N)
+    V = [randint(1, V) for _ in range(N)]
+
+    print(N)
+    print(*V)
 
 
 if __name__ == "__main__":

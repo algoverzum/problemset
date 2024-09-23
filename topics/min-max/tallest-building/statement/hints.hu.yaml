@@ -5,4 +5,3 @@
     Ha a vector neve `h`, akkor a for cikluson belül ezt kell csinálnunk: `if (h[i] > maxi) { maxi = h[i]; }`
   py: |
     Ha a lista neve `h`, akkor a for cikluson belül ezt kell csinálnunk: `if h[i] > maxi:  maxi = h[i]`
-s

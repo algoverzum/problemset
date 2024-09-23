@@ -1,3 +1,8 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: A számokat tároljuk egy vectorban. Miközben végigmegyünk rajtuk, jegyezzük meg, hogy melyik volt az addigi legkisebb.
+  py: A számokat tároljuk egy listában. Miközben végigmegyünk rajtuk, jegyezzük meg, hogy melyik volt az addigi legkisebb.
+- Kell egy külön változó, amiben megjegyezzük a legkisebbet, legyen a neve `mini`. Kezdetben állítsuk a legelső elem értékére. És kell egy változó az `index` tárolásához is (kezdetben 0). Majd egy for ciklussal menjünk végig a többi elemen, és ha egy kisebbet találunk, akkor frissítsük a `mini` és `index` értékét.
+- cpp: |
+    Ha a vector neve `t`, akkor a for cikluson belül ezt kell csinálnunk: `if (t[i] < mini) { mini = t[i]; index = i; }`
+  py: |
+    Ha a lista neve `t`, akkor a for cikluson belül ezt kell csinálnunk: `if t[i] < mini: mini, index = t[i], i`
+- Igazából nem kell a `mini` változó az `index` elég. Hogyan érhető ez el?

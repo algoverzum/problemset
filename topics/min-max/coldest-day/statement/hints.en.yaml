@@ -1,3 +1,8 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: The numbers are stored in a vector. As we go through them, note which one was the smallest until then.
+ py: The numbers are stored in a list. As we go through them, note which one was the smallest until then.
+- We need a separate variable in which we remember the smallest one, let it be called `mini`. Initially, set it to the value of the very first element. And you also need a variable to store the `index' (initially 0). Then use a for loop to go through the rest of the elements, and if a smaller one is found, update the `mini' and `index' values.
+- cpp: |
+ If the name of the vector is `t`, we must do this within the for loop: `if (t[i] < mini) { mini = t[i]; index = i; }`
+ py: |
+ If the name of the list is `t`, then inside the for loop we have to do this: `if t[i] < mini: mini, index = t[i], i`
+- You don't really need the `mini' variable, the `index' is enough. How is this achieved?

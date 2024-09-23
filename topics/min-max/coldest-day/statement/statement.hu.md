@@ -1,4 +1,4 @@
-## Coldest Day
+## Leghidegebb nap
 Van egy mágikus állatunk, a josi, ami $N$ napra előre meg tudja mondani, hogy mi lesz az egyes napokon a napi középhőmérséklet. A hőmérsékletet egész számként adja meg (annál pontosabb előrejelzésre nem képes). A következő $N$ nap közül az egyik napra egy hócsatát szervezünk a barátaimmal és ehhez ki szeretnénk választani a leghidegebb napot. A josi által előrejelzett hőmérsékletek ismeretében meg tudod mondani, hogy melyik lesz a leghidegebb nap és hány fok lesz akkor a hőmérséklet?
 
 ### Bemenet

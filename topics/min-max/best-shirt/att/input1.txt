@@ -1,2 +1,1 @@
-4 42
-150 50 900 299
+../statement/input1.txt

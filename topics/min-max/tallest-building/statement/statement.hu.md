@@ -1,8 +1,8 @@
 ## Legmagasabb épület
-Üdv a bolygónkon! A fővárosunkban, Dupabestben $N$ épület van, amelyek magasságai $H_1, H_2, \ldots, H_N$, araszban megadva, egész számok. Jelenleg a legmagasabb épület az űrkikötő irányítótornya, és tilos ennél magasabb épületet felhúzni. Állapítsd meg, hogy mi ez a maximális magasság!
+Üdv a bolygónkon! Fővárosunkban, Dupabesten $N$ épület van, amelyek magasságai $H_1, H_2, \ldots, H_N$, araszban megadva, egész számok. Jelenleg a legmagasabb épület az űrkikötő irányítótornya, és tilos ennél magasabb épületet felhúzni. Állapítsd meg, hogy mi ez a maximális magasság!
 
 ### Bemenet
-A bemenet első sorában található $N$ - az épületek száma. A második sorban $N$ egész szám van az épületek magasságai ($H_1, H_2, \ldots, H_N).
+A bemenet első sorában található $N$ - az épületek száma. A második sorban $N$ egész szám van az épületek magasságai ($H_1, H_2, \ldots, H_N$).
 
 ### Kimenet
 Egyetlen számot kell kiírnod, a legmagasabb épület magasságát.
