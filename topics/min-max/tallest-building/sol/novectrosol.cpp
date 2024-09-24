@@ -1,20 +1,17 @@
 // @check-accepted: *
 #include <iostream>
-#include <vector>
 using namespace std;
 
 int main() {
   int n;
   cin >> n;
-  vector<int> h(n);
-  for (int i = 0; i < n; i++) {
-    cin >> h[i];
-  }
   int maxi;
-  maxi = h[0];
+  cin >> maxi;
   for (int i = 1; i < n; i++) {
-    if (h[i] > maxi) {
-      maxi = h[i];
+    int height;
+    cin >> height;
+    if (height > maxi) {
+      maxi = height;
     }
   }
   cout << maxi << "\n";
