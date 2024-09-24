@@ -8,7 +8,7 @@ int main() {
     int k;
     cin >> k;
     int maximal = 0;
-    int maxindex;
+    int maxindex = 0;
     for (int i = 0; i < n; i++) {
         int current;
         cin >> current;
