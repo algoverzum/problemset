@@ -21,7 +21,7 @@ def run(f, st):
     V = list(map(int, next(f).split()))
     assert len(V) == N
 
-    assert all( abs(v) <= MAX_V for v in V)
+    assert all(abs(v) <= MAX_V for v in V)
 
     assert next(f, None) is None
 
