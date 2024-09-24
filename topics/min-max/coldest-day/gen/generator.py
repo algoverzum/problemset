@@ -44,7 +44,6 @@ def run(N, V, mult):
             VV[index] = m
         print(NN)
         print(*VV)
-        
 
 
 if __name__ == "__main__":
