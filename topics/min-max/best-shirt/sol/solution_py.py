@@ -1,16 +1,14 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
-line = input().split()
-n = int(line[0])
-k = int(line[1])
-maximal = 0
+
+n, k = [int(x) for x in input().split()]
 maxindex = 0
-p = input().split()
+maxvalue = 0
+prices = [int(x) for x in input().split()]
 for i in range(n):
-    current = int(p[i])
-    if current <= k and current > maximal:
-        maximal = current
+    if prices[i] <= k and prices[i] > maxvalue:
         maxindex = i + 1
+        maxvalue = prices[i]
 print(maxindex)
-print(maximal)
+print(maxvalue)

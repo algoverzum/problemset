@@ -6,19 +6,17 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    int counter = 0;
-    vector<int> numerals;
-    for (int i = 0; i < n; i++) {
-        int current;
-        cin >> current;
-        if (current <= 4) {
-            counter++;
-            numerals.push_back(i + 1);
+    vector<int> good_indices;
+    for (int i = 1; i <= n; i++) {
+        int hands;
+        cin >> hands;
+        if (hands <= 4) {
+            good_indices.push_back(i);
         }
     }
-    cout << counter << "\n";
-    for (int i = 0; i < counter; i++) {
-        cout << numerals[i] << " ";
+    cout << good_indices.size() << "\n";
+    for (int index : good_indices) {
+        cout << index << " ";
     }
     cout << "\n";
     return 0;
