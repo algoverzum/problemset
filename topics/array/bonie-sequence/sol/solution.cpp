@@ -6,9 +6,11 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    vector<int> bonie = {1, 1};
+    vector<int> bonie(n + 1);
+    bonie[0] = 1;
+    bonie[1] = 1;
     for (int i = 2; i <= n; i++) {
-        bonie.push_back(bonie[i - 1] + bonie[i - 2]);
+        bonie[i] = bonie[i - 1] + bonie[i - 2];
     }
     for (int i = 0; i <= n; i++) {
         cout << bonie[i] << " ";
