@@ -1,3 +1,14 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- Try to calculate on paper the number of bonies in the first few years. Can you find any rules?
+- The number of bonies always increases by the same amount as the number of bonies two years ago. That is, each member of the series is the sum of the previous two members.
+- cpp: |
+    After reading `n`, create a vector with `n+1` elements: `vector<int> bonie(n+1);`
+  py: |
+    After reading `n`, create a list of `n+1` elements: `bonie[0] * (n+1)`
+- |
+  `bonie[0]=1` and `bonie[1]=1`, the other elements are calculated with a for loop from i=2 to i<=n. How can you write in the loop that the current, i-th element should be the sum of the previous two?
+- |
+  `bonie[i] = bonie[i - 1] + bonie[i - 2]`
+- cpp: |
+    All elements of the vector `bonie` can be printed like this: `for (int b : bonie) cout << b << " ";`
+  py: |
+    All the elements of the list `bonie` can be printed like this: `print(*bonie)`
