@@ -6,31 +6,45 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "__TASK_NAME__".
+usage = """Generator for "cheap-space-travels".
 
 Parameters:
-* A (minimum value)
-* B (maximum value)
+* N (count of items)
+* A (minimum distance)
+* B (maximum distance)
+* C (minimum price)
+* D (maximum price)
 * S (seed)
 
 Constraint:
+* %d <= N <= %d
 * %d <= A <= %d
 * %d <= B <= %d
+* %d <= C <= %d
+* %d <= D <= %d
 """ % (
     MIN,
     MAX,
     MIN,
     MAX,
+    MIN,
+    MAX,
+    MIN,
+    MAXP,
+    MIN,
+    MAXP,
 )
 
 
-def run(A, B):
+def run(N, A, B, C, D):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    print(N)
+    for i in range(N):
+        print(randint(A, B), randint(C, D))
 
 
 if __name__ == "__main__":

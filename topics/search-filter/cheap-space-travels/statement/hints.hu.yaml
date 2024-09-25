@@ -1,0 +1,8 @@
+- Figyeljünk arra, hogy az ár / hossz arány lehet nem egész szám is. Jobb az osztás helyett a távolság 100-szorosához hasonlítani az árat.
+- cpp: Hozzunk létre egy kezdetben üres vectort az olcsó utazások sorszámainak tárolásához.
+  py: Hozzunk létre egy kezdetben üres listát az olcsó utazások sorszámainak tárolásához.
+- Ahogy végigmegyünk az utazásokon, ha teljesül az első segítségben megfogalmazott feltétel, akkor adjuk hozzá az olcsó utazásokhoz az aktuális sorszámot. Ezt akár beolvasás közben is csinálhatjuk. Figyeljünk arra, hogy 1-től kezdve vannak sorszámozva az utazások.
+- cpp: |
+    Írjuk ki az olcsó utazásokat tartalmazó vector méretét (`cheap.size()`), majd a következő sorba az elemeit, ezt megtehetjük így is: `for (int i : cheap) cout << i << " ";`
+  py: |
+    Írjuk ki az olcsó utazásokat tartalmazó lista méretét (`len(cheap)`), majd a következő sorba az elemeit, ezt megtehetjük így is: `print(*cheap)`

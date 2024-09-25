@@ -1,0 +1,15 @@
+# General info
+name: cheap-space-travels
+title: Cheap Space Travels
+title_translations:
+  hu: Olcsó űrutazások
+
+# Technical info
+memory_limit: 256
+time_limit: 1.0
+infile: ""
+outfile: ""
+
+# Other stuff
+score_mode: max_subtask
+feedback_level: full

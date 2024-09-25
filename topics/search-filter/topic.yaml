@@ -3,6 +3,8 @@ name: Search and Filter
 problems:
 - problem_id: not-too-many-hands
   type: REQUIRED
+- problem_id: cheap-space-travels
+  type: REQUIRED
 prerequisites:
  - array
  - while-loop
