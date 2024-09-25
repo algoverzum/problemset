@@ -1,3 +1,11 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    A kimenetre először az elemek számát kell kiírni, ezért használjunk vectort a jó versenyzők sorszámainak kigyűjtéséhez! Egy üres vectort így lehet létrehozni: `vector<int> good;`
+  py: |
+    A kimenetre először az elemek számát kell kiírni, ezért használjunk listát a jó versenyzők sorszámainak kigyűjtéséhez! Egy üres vectort így lehet létrehozni: `good = []`
+- cpp: |
+    Már akár beolvasás közben is megvizsgálhatjuk, hogy a kezek száma legfeljebb 4, és ha igen, akkor a sorszámot a `good.push_back(i);` paranccsal be tudjuk tenni a megoldás vectorba, feltételezve, hogy a for ciklusunk i=1 -től n-ig megy.
+  py: |
+    Olvassuk be egy listába a második sorban szereplő számokat, majd menjünk végig rajtuk egy indexelős for ciklussal, és ha az aktuális szám legfeljebb 4, akkor a sorszámot a `good.append(i + 1)` paranccsal be tudjuk tenni a megoldás listába. A +1 azért kell, mert a szövegben 1-től vannak sorszámozva a versenyzők, a listában viszont 0-tól.
+- cpp: A végén a `good.size()` megadja a vector méretét, tehát a jó elemek számát, majd egy for ciklussal menjünk végig a vector elemein és írjuk ki őket.
+  py: |
+    A végén a `len(good)` megadja a lista méretét, tehát a jó elemek számát, majd a `print(*good)` paranccsal az elemeit is ki tudjuk írni egy sorba.

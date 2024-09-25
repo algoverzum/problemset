@@ -1,3 +1,3 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- A szóba jövő ingek közül a legdrágább árára és ennek az ingnek az indexére legyen egy változó (`maxvalue`, `maxindex`), mindkettő kezdetben 0. Mikor és hogyan kell változtatni ezeket?
+- Menjünk végig az árakon és ha az aktuális szám legfeljebb `K`, akkor hasonlítsuk össze a `maxvalue` értékkel, és ha határozottan nagyobb, akkor állítsuk át azt és a `maxindex`-et is.
+- Végül írjuk ki a két változót két külön sorban. Figyeld meg, hogy így a több lehetőség közül a legelsőt adjuk meg, valamint hogy a változók kezdőértékeit pont úgy állítottuk be, hogy ha nincs egyáltalán megvehető ing, akkor is két 0 lesz a kimenet, ahogy kell lennie.
