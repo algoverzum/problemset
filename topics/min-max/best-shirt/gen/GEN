@@ -4,9 +4,10 @@
 #ST: 0
 #STNAME: examples
 #COPY: statement/input0.txt
+#COPY: statement/input1.txt
 
 # Subtask 2: 1 <= N <= 100
-#ST: 90
+#ST: 100
 #STNAME: normal
 1      1      1      1      1
 100    100    1000   1000   2
@@ -18,8 +19,5 @@
 1      100    1      500    8
 1      100    1      1000   9
 1      100    1      1000   10
-
-# Subtask 3: Edge case
-#ST: 10
-#STNAME: tricky
+80     90     400    410    12
 #COPY: statement/input2.txt
