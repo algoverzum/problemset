@@ -2,13 +2,11 @@
 # @check-accepted: *
 
 n = int(input())
-arms = [int(i) for i in input().split()]
-numerals = []
+hands = [int(x) for x in input().split()]
+good_indices = []
 for i in range(n):
-    current = int(arms[i])
-    if current <= 4:
-        numerals.append(i + 1)
+    if hands[i] <= 4:
+        good_indices.append(i + 1)
 
-print(len(numerals))
-print(*numerals)
-print("")
+print(len(good_indices))
+print(*good_indices)
