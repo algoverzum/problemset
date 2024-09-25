@@ -10,8 +10,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> h[i];
     }
-    int maxi;
-    maxi = h[0];
+    int maxi = h[0];
     for (int i = 1; i < n; i++) {
         if (h[i] > maxi) {
             maxi = h[i];
