@@ -32,5 +32,5 @@ Nena a 333 petákjával az 1., 3., 4., 6. és 7. inget tudja megvenni (áraik 95
     0
     0
 
-### A példa magyarázata
+### A 2. példa magyarázata
 Nena sajnos nem tud egy inget sem megvenni.

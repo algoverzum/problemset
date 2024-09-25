@@ -1,2 +1,1 @@
-4
-1 3 7 8
+../statement/output0.txt

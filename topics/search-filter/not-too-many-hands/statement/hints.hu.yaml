@@ -1,7 +1,7 @@
 - cpp: |
     A kimenetre először az elemek számát kell kiírni, ezért használjunk vectort a jó versenyzők sorszámainak kigyűjtéséhez! Egy üres vectort így lehet létrehozni: `vector<int> good;`
   py: |
-    A kimenetre először az elemek számát kell kiírni, ezért használjunk listát a jó versenyzők sorszámainak kigyűjtéséhez! Egy üres vectort így lehet létrehozni: `good = []`
+    A kimenetre először az elemek számát kell kiírni, ezért használjunk listát a jó versenyzők sorszámainak kigyűjtéséhez! Egy üres listát így lehet létrehozni: `good = []`
 - cpp: |
     Már akár beolvasás közben is megvizsgálhatjuk, hogy a kezek száma legfeljebb 4, és ha igen, akkor a sorszámot a `good.push_back(i);` paranccsal be tudjuk tenni a megoldás vectorba, feltételezve, hogy a for ciklusunk i=1 -től n-ig megy.
   py: |

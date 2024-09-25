@@ -1,3 +1,3 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- There should be two variables (`maxvalue`, `maxindex`) for the most expensive price of the shirts she can afford and for the index of this shirt, both initially 0. When and how should these be changed?
+- Let's go through the prices and if the current number is at most `K`, then compare it with the `maxvalue` price, and if it is higher, then change it and the `maxindex` as well.
+- Finally, write the two variables in two separate lines. Notice that this way we specify the first of several options, and that the initial values ​​of the variables are set in such a way that even if there is no shirt to buy at all, the output will still be two 0s, as it should be.
