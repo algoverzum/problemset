@@ -5,4 +5,4 @@
     If the name of the vector is `t`, we should do this within the for loop: `if (t[i] < mini) { mini = t[i]; index = i; }`
   py: |
     If the name of the list is `t`, then inside the for loop we have to do this: `if t[i] < mini: mini, index = t[i], i`
-- We don't really need the `mini' variable, the `index' is enough. How can we achieve that?
+- We don't really need the `mini` variable, the `index` is enough. How can we achieve that?

@@ -1,9 +1,9 @@
 - cpp: |
-    A számokat el kell tárolnunk. C++ -ban sok egész szám tárolására használhatjuk a `vector<int>` típust, egy 13 méretű vectort így lehet létrehozni: `vector<int> numbers(13);`. Ennek az elemei 0-tól kezdve vannak sorszámozva, így lehet hivatkozni rájuk: `numbers[0]`, `numbers[1]`, ..., `numbers[12]`. A vector egy eleme (pl. `numbers[0]`) pont ugyanúgy viselkedik, mint egy változó. 
+    A számokat el kell tárolnunk. C++ -ban sok egész szám tárolására használhatjuk a `vector<int>` típust, egy 13 méretű vectort így lehet létrehozni: `vector<int> numbers(13);`. Ennek az elemei 0-tól kezdve vannak sorszámozva, így lehet hivatkozni rájuk: `numbers[0]`, `numbers[1]`, $\ldots$, `numbers[12]`. A vector egy eleme (pl. `numbers[0]`) pont ugyanúgy viselkedik, mint egy változó. 
   py: |
-    A számokat el kell tárolnunk. Pythonban sok elem tárolására a listát lehet használni. A lista elemei 0-tól vannak sorszámozva, például egy 13 elemű `numbers` lista elemeire így hivatkozhatunk: `numbers[0]`, `numbers[1]`, ..., `numbers[12]`. A lista egy eleme (pl. `numbers[0]`) pont ugyanúgy viselkedik, mint egy változó.
+    A számokat el kell tárolnunk. Pythonban sok elem tárolására a listát lehet használni. A lista elemei 0-tól vannak sorszámozva, például egy 13 elemű `numbers` lista elemeire így hivatkozhatunk: `numbers[0]`, `numbers[1]`, $\ldots$, `numbers[12]`. A lista egy eleme (pl. `numbers[0]`) pont ugyanúgy viselkedik, mint egy változó.
 - cpp: |
-    Az elemek beolvasására egy i=0-tól i<13-ig menő for ciklust érdemes használni. A ciklus belsejébe azt az utasítást kell tenni, ami `numbers[i]`-be beolvassa a következő értéket: `cin >> numbers[i];`
+    Az elemek beolvasására egy `i=0`-tól `i<13`-ig menő for ciklust érdemes használni. A ciklus belsejébe azt az utasítást kell tenni, ami `numbers[i]`-be beolvassa a következő értéket: `cin >> numbers[i];`
   py: |
     Egy sort beolvasni, majd abból ellőállítani a sorban lévő számokat tartalmazó listát egy meglehetősen összetett paranccsal lehet, ezt hosszas magyarázat nélkül közöljük: `numbers = [int(x) for x in input().split()]`
 - cpp: A vector elemeit kiírni eredeti sorrendben ugyanúgy egy for ciklussal lehet. A visszafelé kiíráshoz is egy for ciklust javaslunk, akkor az mettől meddig menjen?

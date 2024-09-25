@@ -5,7 +5,7 @@
   py: |
     After reading `n`, create a list of `n+1` elements: `bonie[0] * (n+1)`
 - |
-  `bonie[0]=1` and `bonie[1]=1`, the other elements are calculated with a for loop from i=2 to i<=n. How can you write in the loop that the current, i-th element should be the sum of the previous two?
+  `bonie[0]=1` and `bonie[1]=1`, the other elements are calculated with a for loop from `i=2` to `i<=n`. How can you write in the loop that the current, `i`-th element should be the sum of the previous two?
 - |
   `bonie[i] = bonie[i - 1] + bonie[i - 2]`
 - cpp: |
