@@ -1,4 +1,4 @@
-## Not Too Many Hands
+## Nem túl sok kéz
 A bolygónkon sokféle intelligens lény él, változatos számú kezekkel. Nagyon népszerű sport a birkózás, és a birkózó világbajnokságon $N$ lény szeretne indulni. Őket 1-től $N$-ig sorszámozzuk, és mindegyiküknek ismert a kezeik száma: $H_1, H_2, \ldots, H_N$. Az igazságosság érdekében a versenybizottság úgy döntött, hogy csak azok a birkózók indulhatnak, akiknek legfeljebb 4 kezük van. Meg tudod adni, hogy hányan és kik indulhatnak?
 
 ### Bemenet
