@@ -1,3 +1,6 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- Hányféle (S, K) pár lehet összesen? Ki tudjuk számolni előre az összes lehetséges kérdésre a választ?
+- O(N logN) memóriát felhasználva előre kiszámolhatjuk minden kérdésre a választ. DP[i][j] jelentse azt, hogy az j-edik pozíciótól kezdve $2^i$ elemet véve mennyi a maximális érték.
+- DP[i][j] -t ki tudjuk számolni két korábban kiszámolt elemből.
+- $DP[i][j] = max(DP[i-1][j], DP[i - 1][j + 2^{i-1})$.
+- A kettőhatványokat érdemes a bitshiftelő operátorral számolni, $2^i$ = `1 << i`
+
