@@ -9,14 +9,20 @@ from inspect import signature
 usage = """Generator for "flight-maximums".
 
 Parameters:
+* N
+* Q
 * A (minimum value)
 * B (maximum value)
 * S (seed)
 
 Constraint:
+* 1 <= N <= %d
+* 1 <= Q <= %d
 * %d <= A <= %d
 * %d <= B <= %d
 """ % (
+    MAXN,
+    MAXQ,
     MIN,
     MAX,
     MIN,
@@ -24,13 +30,20 @@ Constraint:
 )
 
 
-def run(A, B):
+def run(N, Q, A, B):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
-
-    print(randint(A, B))
+    print(N, Q)
+    H = [randint(A, B) for _ in range(N)]
+    print(*H)
+    for _ in range(Q):
+        S = randint(1, N)
+        K = 18
+        while S + 2 ** K - 1 > N:
+            K = randint(0, 17)
+        print(S, K)
 
 
 if __name__ == "__main__":

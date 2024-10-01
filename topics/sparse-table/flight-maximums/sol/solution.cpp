@@ -22,7 +22,7 @@ int main() {
         cin >> st[0][i];
 
     for (int i = 1; i <= lg[n]; i++)
-        for (int j = 1; j + (1 << i) <= n; j++)
+        for (int j = 1; j + (1 << i) - 1 <= n; j++)
             st[i][j] = max(st[i - 1][j], st[i - 1][j + (1 << (i - 1))]);
     
     while (q--) {
