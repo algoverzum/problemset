@@ -1,0 +1,14 @@
+id: sparse-table
+name: Sparse Table
+problems:
+- problem_id: flight-maximums
+  type: ENTRY
+prerequisites:
+dependents:
+visualization:
+  image_filename: 42.svg
+  position:
+    x: 4200
+    y: 700
+
+# Notes:

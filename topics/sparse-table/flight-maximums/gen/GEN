@@ -1,0 +1,15 @@
+# A     B       S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+
+# Subtask 2: 1 <= N <= 100, 1 <= Q <= 100
+#ST: 50
+#STNAME: small
+
+
+# Subtask 3: 1 <= N <= 100\,000
+#ST: 50
+#STNAME: big
