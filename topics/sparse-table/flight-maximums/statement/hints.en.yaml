@@ -1,5 +1,5 @@
 - How many different (S, K) pairs can there be in total? Can we calculate the answer to all possible questions in advance?
 - Using O(N logN) memory, we can calculate the answer to all questions in advance. Let DP[i][j] denote the maximum value taking $2^i$ elements starting from the position j.
-- We can calculate DP[i][j] from two previously calculated elements.
+- We can calculate DP[i][j] from two previously calculated elements if i>=1, while DP[0][j] equals H[j].
 - $DP[i][j] = max(DP[i-1][j], DP[i - 1][j + 2^{i-1}])$.
 - The powers of two can be computed easily using the bit shift operator, $2^i$ = `1 << i`
