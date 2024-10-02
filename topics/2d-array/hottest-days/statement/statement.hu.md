@@ -1,8 +1,8 @@
 ## Legmelegebb napok száma
-Adott $N$ városra az elmúlt $M$ nap maximum hőmérséklete. Jelöljük a maximálisan előfordult hőmérsékleti értéket $H$-val. Add meg minden városra, hogy ott hány napon volt $H$ fok.
+Adott $N$ városra az elmúlt $M$ nap mindegyikére az aznap mért legmagasabb hőmérséklet. Jelöljük a maximális előfordult hőmérsékleti értéket $H$-val. Add meg minden városra, hogy ott hány napon volt $H$ fok.
 
 ### Bemenet
-A bemenetben első sorában két szám van: $N$ és $M$ - a városok és a napok száma. Az ezt követő $N$ sor mindegyikében $M$ darab egész szám van szóközökkel elválasztva. Az $i$-edik sorban a $j$-edik szám $T_{i,j}$, ami az $i$-edik városban a $j$-edik napon a napi maximum hőmérséklet. 
+A bemenet első sorában két szám van: $N$ és $M$ - a városok és a napok száma. Az ezt követő $N$ sor mindegyikében $M$ darab egész szám van szóközökkel elválasztva. Az $i$-edik sorban a $j$-edik szám $T_{i,j}$, ami az $i$-edik városban a $j$-edik napon a napi maximum hőmérséklet. 
 
 ### Kimenet
 $N$ számot kell kiírnod külön sorokban, az $i$-edik sorba azt, hogy az $i$-edik városban hány napon fordult elő a maximális $H$ hőmérséklet.
