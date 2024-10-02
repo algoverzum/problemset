@@ -6,5 +6,4 @@ int main() {
     int n;
     cin >> n;
     cout << 42 << "\n";
-    return 0;
 }
