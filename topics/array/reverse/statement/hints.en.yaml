@@ -1,15 +1,15 @@
 - cpp: |
- We have to store the numbers. In C++, we can use the `vector<int>` type to store many integers, a 13-size vector can be created as follows: `vector<int> numbers(13);`. Its elements are indexed starting from 0, so you can refer to them like this: `numbers[0]`, `numbers[1]`, $\ldots$, `numbers[12]`. An element of the vector (e.g. `numbers[0]`) behaves exactly as a variable.
- py: |
- We have to store the numbers. In Python, lists can be used to store many elements. The elements of the list are indexed from 0, for example the elements of a 13-element `numbers` list can be referred to as: `numbers[0]`, `numbers[1]`, $\ldots$, `numbers[12]`. An element of the list (e.g. `numbers[0]`) behaves exactly as a variable.
+    We have to store the numbers. In C++, we can use the `vector<int>` type to store many integers, a 13-size vector can be created as follows: `vector<int> numbers(13);`. Its elements are indexed starting from 0, so you can refer to them like this: `numbers[0]`, `numbers[1]`, $\ldots$, `numbers[12]`. An element of the vector (e.g. `numbers[0]`) behaves exactly as a variable.
+  py: |
+    We have to store the numbers. In Python, lists can be used to store many elements. The elements of the list are indexed from 0, for example the elements of a 13-element `numbers` list can be referred to as: `numbers[0]`, `numbers[1]`, $\ldots$, `numbers[12]`. An element of the list (e.g. `numbers[0]`) behaves exactly as a variable.
 - cpp: |
- It is worth using a for loop from $i=0$ to $i<13$ to read the elements. The instruction that reads the following value into `numbers[i]` must be placed inside the loop: `cin >> numbers[i];`
- py: |
- It is possible to read a line and then create a list containing the numbers in the line with a rather complex command, which is given without a long explanation: `numbers = [int(x) for x in input().split()]`
+    It is worth using a for loop from $i=0$ to $i<13$ to read the elements. The instruction that reads the following value into `numbers[i]` must be placed inside the loop: `cin >> numbers[i];`
+  py: |
+    It is possible to read a line and then create a list containing the numbers in the line with a rather complex command, which is given without a long explanation: `numbers = [int(x) for x in input().split()]`
 - cpp: The elements of the vector can be written out in their original order in the same way with a for loop. We also recommend a for loop for writing backwards, so how far should it go and where should we start?
- py: We recommend a for loop to write out the elements of the list. It is possible to change the fact that instead of a line break, the print command only adds a space after writing out a data, using `print(numbers[i], end=" ")`. How far does the for loop have to go from here, to write in the original order, or in reverse order?
+  py: We recommend a for loop to write out the elements of the list. It is possible to change the fact that instead of a line break, the print command only adds a space after writing out a data, using `print(numbers[i], end=" ")`. How far does the for loop have to go from here, to write in the original order, or in reverse order?
 - cpp: |
- For writing backwards, a loop like this is good: `for (int i = 12; i >= 0; i--) cout << numbers[i] << " ";`
- py: |
- The `for i in range(13):` cycle goes from point 0 to 12, within which a `print(numbers[i], end=" ")` statement is good. To write backwards, you need `range(12, -1, -1)`.
+    For writing backwards, a loop like this is good: `for (int i = 12; i >= 0; i--) cout << numbers[i] << " ";`
+  py: |
+    The `for i in range(13):` cycle goes from point 0 to 12, within which a `print(numbers[i], end=" ")` statement is good. To write backwards, you need `range(12, -1, -1)`.
  
