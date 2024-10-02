@@ -1,0 +1,15 @@
+# General info
+name: sum-a-b
+title: Sum from A to B
+title_translations:
+  hu: Összeg A-tól B-ig
+
+# Technical info
+memory_limit: 256
+time_limit: 1.0
+infile: ""
+outfile: ""
+
+# Other stuff
+score_mode: max_subtask
+feedback_level: full

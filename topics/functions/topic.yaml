@@ -1,0 +1,14 @@
+id: functions
+name: Functions
+problems:
+- problem_id: sum-a-b
+  type: ENTRY
+prerequisites:
+dependents:
+visualization:
+  image_filename: 12.svg
+  position:
+    x: 1200
+    y: 300
+
+# Notes:
