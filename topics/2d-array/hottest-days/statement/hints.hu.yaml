@@ -1,0 +1,7 @@
+- cpp: |
+    Tároljuk el egy két dimenziós vectorban a számokat. Az `n` és `m` beolvasása után így hozhatunk létre egy megfelelő méretű két dimenziós vectort: `vector<vector<int>> t(n, vector<int>(m));`
+  py: |
+    Listák listáját érdemes használni a számtáblázat eltárolásához. Kezdjünk egy üres listával (`t = []`), majd ahogy olvassuk be az egyes sorokat, adjuk hozzá a `t`-hez a sorból képzett számlistát: `t.append([int(x) for x in input().split()])`
+- Menjünk végig a számtáblázat minden során, és egy szokásos maximumkiválasztással jegyezzük meg a legnagyobb elemet (`maxi`).
+- Az i-edik sor j-edik elemére `t[i][j]`-vel lehet hivatkozni. Ügyelj arra, hogy amikor a sorok indexe (az i) 0-tól menjen n-1 -ig, és a soron belüli elem indexe (j) pedig 0-tól m-1-ig.
+- Menjünk végig újra a sorokon, és minden sorra számoljuk meg, hogy hány elem egyezik meg a `maxi`-val, majd írjuk is ki ezt a számlálót (szokásos megszámlálás).
