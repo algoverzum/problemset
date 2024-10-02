@@ -1,0 +1,8 @@
+- cpp: |
+    A függvény fejléce így nézzen ki: `int maximum(vector<int> v) { … }`
+  py: |
+    A függvény fejléce így nézzen ki: `def maximum(l)`, ahol l egy lista.
+- A függvényen belül egy maximumkiválasztást kell csinálni. Legyen egy maxi változónk, amit kezdetben az első elemre állítunk. 
+- |
+  A tanult maximumkiválasztást csináljuk: menjünk végig az elemeken egy for ciklussal, és ha a maxi-nál nagyobb elemet találunk, akkor állítsuk át arra a maxi értékét.
+

@@ -1,0 +1,3 @@
+- Figyeljünk az 1-esre külön. A többi számnál, ha találunk nála kisebb osztót, akkor nem prím.
+- Egy for ciklussal menjünk végig a számokon 2-től n-1-ig. Ha valamelyik számmal osztható (`n % i == 0`) akkor rögtön visszaadhatunk hamisat.
+- A ciklus után feltétel nélkül visszaadhatunk igazat, mert ha találunk osztót, akkor már korábban kilép a függvényből.

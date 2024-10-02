@@ -1,0 +1,8 @@
+- cpp: Menjünk végig a betűkön 'a'-tól 'z'-ig, és nézzük meg mindkét string-re, hogy benne van-e. Ez utóbbira írjunk egy másik függvényt (`bool contains(string word, char letter)`)
+  py: Menjünk végig a betűkön 'a'-tól 'z'-ig, és nézzük meg mindkét string-re, hogy benne van-e.
+- cpp: |
+    Az angol ábécé betűin végig tudunk menni egy for ciklussal, mivel a `char` típus egy (8-bites) szám típus: `for (char c = 'a'; c <= 'z'; c++)`
+  py: |
+    Az angol ábécé betűin végig tudunk menni egy for ciklussal, ha felsoroljuk őket: `for letter in "abcdefghijklmnopqrstuvwxyz":`
+- cpp: A korábban említett `contains` függvény csak annyi, hogy végigmegy a szó betűin, és ha az aktuális betű egyenlő a paraméterként kapottal, akkor visszaad igazat. A ciklus után visszaadhatunk hamisat.
+  py: Az `in` operátort használhatjuk annak eldöntésére, hogy egy betű szerepel-e egy string-ben (pl. `letter in s`).

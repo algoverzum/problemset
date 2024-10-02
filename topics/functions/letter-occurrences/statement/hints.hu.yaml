@@ -1,0 +1,3 @@
+- A függvény fejléce legyen `int count(string word, char letter)`
+- A függvényen belül egy megszámlálást kell csinálnunk, legyen tehát egy számláló változónk (`cnt`). A végén ezt kell visszaadni a return utasítással.
+- Menjünk végig a string karakterein egy for ciklussal, és ha az aktuálisan vizsgált karakter megegyezik a paraméterként kapottal (`letter`), akkor növeljük a számlálót (`cnt`).

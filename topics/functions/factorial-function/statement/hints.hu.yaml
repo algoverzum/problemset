@@ -1,0 +1,4 @@
+- Legyen a függvényen belül egy `result` változó az eredményre. Mi legyen a kezdőértéke? Szorozzuk meg az összes számmal 1-től n-ig.
+- Írjunk for ciklust a szorzásokra. Utána a `return` utasítással tudjuk eredményül adni a kiszámolt értéket.
+- cpp: Ügyelj arra, hogy a `result` változó típusa `long long` legyen, hogy a nagy számoknál se legyen túlcsordulás a szorzások elvégzésekor.
+  py: Ügyelj arra, hogy a for ciklus elmenjen n-ig, ehhez `range(1, n + 1)` kell.

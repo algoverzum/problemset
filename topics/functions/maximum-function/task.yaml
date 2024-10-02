@@ -1,0 +1,15 @@
+# General info
+name: maximum-function
+title: Maximum of a Sequence
+title_translations:
+  hu: Sorozat maximuma
+
+# Technical info
+memory_limit: 256
+time_limit: 1.0
+infile: ""
+outfile: ""
+
+# Other stuff
+score_mode: max_subtask
+feedback_level: full

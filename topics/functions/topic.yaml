@@ -3,6 +3,16 @@ name: Functions
 problems:
 - problem_id: sum-a-b
   type: ENTRY
+- problem_id: factorial-function
+  type: REQUIRED
+- problem_id: prime-function
+  type: REQUIRED
+- problem_id: letter-occurrences
+  type: REQUIRED
+- problem_id: common-letters
+  type: REQUIRED
+- problem_id: maximum-function
+  type: REQUIRED
 prerequisites:
 dependents:
 visualization:
