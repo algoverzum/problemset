@@ -1,4 +1,4 @@
-## Összeg A-tól B-ig
+## Faktoriális függvény
 Írj függvényt, ami kiszámolja $N$ faktoriálist, azaz 1-től $N$-ig a számok szorzatát!
 
 ### Korlátok
