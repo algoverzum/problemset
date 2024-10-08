@@ -3,6 +3,8 @@ name: Sparse Table
 problems:
 - problem_id: flight-maximums
   type: ENTRY
+- problem_id: kth-ancestor
+  type: REQUIRED
 prerequisites:
 dependents:
 visualization:
