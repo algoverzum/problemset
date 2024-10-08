@@ -3,6 +3,10 @@ name: 2D Array
 problems:
 - problem_id: hottest-days
   type: REQUIRED
+- problem_id: bigger-columns
+  type: REQUIRED
+- problem_id: more-oxygen
+  type: REQUIRED
 prerequisites:
 dependents:
 visualization:

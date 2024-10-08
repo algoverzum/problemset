@@ -9,6 +9,8 @@ problems:
   type: REQUIRED
 - problem_id: smallest-divisor
   type: REQUIRED
+- problem_id: grow-bigger
+  type: REQUIRED
 prerequisites:
  - sum-count
 dependents:
