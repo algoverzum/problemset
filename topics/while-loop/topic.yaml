@@ -11,6 +11,10 @@ problems:
   type: REQUIRED
 - problem_id: grow-bigger
   type: REQUIRED
+- problem_id: stop-at-zero
+  type: REQUIRED
+- problem_id: three-digit-before
+  type: REQUIRED
 prerequisites:
  - sum-count
 dependents:
