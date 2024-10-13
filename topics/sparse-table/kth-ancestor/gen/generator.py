@@ -36,9 +36,11 @@ def run(Case, N, Q, A, B, C, D):
     leaf_nodes = [1]
     tree[1] = {"parent": None, "children": 0, "depth": 0}
     for _ in range(A // 2):
-        X = random.choice(not_in_tree)
-        Y = random.choice(tree)
-        print(f"0 {Y} {X}")
+        X = choice(not_in_tree)
+        Y = choice(tree)
+        print(0, end=" ")
+        print(Y, end=" ")
+        print(X)
         not_in_tree.remove(X)
         tree[X] = {"parent": Y, "children": 0, "depth": tree[Y]["depth"] + 1}
         leaf_nodes.append(X)
@@ -47,12 +49,14 @@ def run(Case, N, Q, A, B, C, D):
             leaf_nodes.remove(Y)
     A = A - A // 2
     lst = [0] * A + [1] * B + [2] * C
-    random.shuffle(lst)
+    shuffle(lst)
     for item in lst:
         if item == 0:
-            X = random.choice(not_in_tree)
-            Y = random.choice(tree)
-            print(f"0 {Y} {X}")
+            X = choice(not_in_tree)
+            Y = choice(tree)
+            print(0, end=" ")
+            print(Y, end=" ")
+            print(X)
             not_in_tree.remove(X)
             tree[X] = {"parent": Y, "children": 0, "depth": tree[Y]["depth"] + 1}
             leaf_nodes.append(X)
@@ -60,8 +64,9 @@ def run(Case, N, Q, A, B, C, D):
             if Y in leaf_nodes:
                 leaf_nodes.remove(Y)
         elif item == 1:
-            X = random.choice(leaf_nodes)
-            print(f"1 {X}")
+            X = choice(leaf_nodes)
+            print(1, end=" ")
+            print(X)
             leaf_nodes.remove(X)
             parent = tree[X]["parent"]
             tree[parent]["children"] -= 1
@@ -71,16 +76,18 @@ def run(Case, N, Q, A, B, C, D):
             not_in_tree.append(X)
         elif item == 2:
             E = 1 - math.sqrt(1 - D)
-            if random.random() >= E:
-                X = random.choice(not_in_tree)
-                K = K = random.randint(1, 100)
+            if random() >= E:
+                X = choice(not_in_tree)
+                K = K = randint(1, 100)
             else:
-                X = random.choice(tree)
-                if random.random() >= E:
-                    K = random.randint(tree[X][depth], tree[X][depth] * 2)
+                X = choice(tree)
+                if random() >= E:
+                    K = randint(tree[X][depth], tree[X][depth] * 2)
                 else:
-                    K = random.randint(1, tree[x][depth])
-        print(f"2 {X} {K}")
+                    K = randint(1, tree[x][depth])
+        print(2, end=" ")
+        print(X, end=" ")
+        print(K)
 
 
 if __name__ == "__main__":

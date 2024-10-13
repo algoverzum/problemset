@@ -45,7 +45,6 @@ For each query of type 2 , output the Kth parent of X . If Kth parent doesn't ex
     0
     0
     8
-    0
 
 ### Explanation of the example
     0 1 5 -> 5 is added as a leaf node to 1.

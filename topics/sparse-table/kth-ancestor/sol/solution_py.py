@@ -23,7 +23,7 @@ for i in range(q):
                 v[x][j] = v[v[x][j - 1]][j - 1]
             else:
                 break
-    elif type_ == 1:
+    elif type == 1:
         x = query[1]
         v[x][0] = -1
         for j in range(1, 19):
