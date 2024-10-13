@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def kthancestor(v, x, k):
     for i in range(19):
         if x == -1:
