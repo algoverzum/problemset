@@ -39,7 +39,11 @@ def run(Case, N, Q, A, B, C, D):
     tree[1] = {"parent": None, "children": 0, "depth": 0}
     for _ in range(A // 2):
         X = choice(not_in_tree)
-        Y = choice(list(tree.keys()))
+        Y = 1
+        if Case == "long":
+            Y = choice(leaf_nodes)
+        else:
+            Y = choice(list(tree.keys()))
         print(0, end=" ")
         print(Y, end=" ")
         print(X)
