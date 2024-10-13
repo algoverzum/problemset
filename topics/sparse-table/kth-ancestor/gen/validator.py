@@ -15,26 +15,34 @@ def run(f, st):
     for k, v in subtasks[st].items():
         globals()[k] = v
 
-    N = int(next(f))
+    N = int(next(f).strip())
     assert MIN <= N <= MAX
-    Q = int(next(f))
+    Q = int(next(f).strip())
     assert MIN <= Q <= MAX
+
     for i in range(Q):
-        T = int(next(f))
+        line = next(f).strip()
+        parts = list(map(int, line.split()))
+        T = parts[0]
         assert 0 <= T <= 2
+
         if T == 0:
-            Y = int(next(f))
+            assert len(parts) == 3
+            Y = parts[1]
             assert MIN <= Y <= N
-            X = int(next(f))
+            X = parts[2]
             assert MIN <= X <= N
         elif T == 1:
-            X = int(next(f))
+            assert len(parts) == 2
+            X = parts[1]
             assert MIN <= X <= N
         elif T == 2:
-            X = int(next(f))
+            assert len(parts) == 3
+            X = parts[1]
             assert MIN <= X <= N
-            K = int(next(f))
-            assert MIN <= K <= N
+            K = parts[2]
+            assert MIN <= K <= MAX
+
     assert next(f, None) is None
 
 

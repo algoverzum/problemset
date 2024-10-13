@@ -90,6 +90,8 @@ def run(Case, N, Q, A, B, C, D):
                     K = randint(1, tree[X]["depth"])
             print(2, end=" ")
             print(X, end=" ")
+            if K == 0:
+                K = 1
             print(K)
 
 
