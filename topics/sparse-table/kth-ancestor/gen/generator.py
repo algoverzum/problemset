@@ -31,13 +31,15 @@ Constraint:
 
 
 def run(Case, N, Q, A, B, C, D):
+    print(N)
+    print(Q)
     tree = {}
     not_in_tree = list(range(2, N))
     leaf_nodes = [1]
     tree[1] = {"parent": None, "children": 0, "depth": 0}
     for _ in range(A // 2):
         X = choice(not_in_tree)
-        Y = choice(tree)
+        Y = choice(list(tree.keys()))
         print(0, end=" ")
         print(Y, end=" ")
         print(X)
@@ -53,7 +55,7 @@ def run(Case, N, Q, A, B, C, D):
     for item in lst:
         if item == 0:
             X = choice(not_in_tree)
-            Y = choice(tree)
+            Y = choice(list(tree.keys()))
             print(0, end=" ")
             print(Y, end=" ")
             print(X)
@@ -76,18 +78,19 @@ def run(Case, N, Q, A, B, C, D):
             not_in_tree.append(X)
         elif item == 2:
             E = 1 - math.sqrt(1 - D)
-            if random() >= E:
+            K = 1
+            if random() >= E and not_in_tree:
                 X = choice(not_in_tree)
                 K = K = randint(1, 100)
             else:
-                X = choice(tree)
+                X = choice(list(tree.keys()))
                 if random() >= E:
-                    K = randint(tree[X][depth], tree[X][depth] * 2)
+                    K = randint(tree[X]["depth"], tree[X]["depth"] * 2)
                 else:
-                    K = randint(1, tree[x][depth])
-        print(2, end=" ")
-        print(X, end=" ")
-        print(K)
+                    K = randint(1, tree[X]["depth"])
+            print(2, end=" ")
+            print(X, end=" ")
+            print(K)
 
 
 if __name__ == "__main__":
