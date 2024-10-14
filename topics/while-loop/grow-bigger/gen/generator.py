@@ -29,8 +29,12 @@ def run(A, B):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
-
-    print(randint(A, B))
+    a = randint(A, B)
+    b = randint(A, B)
+    if a > b:
+        a, b = b, a
+    print(a)
+    print(b)
 
 
 if __name__ == "__main__":

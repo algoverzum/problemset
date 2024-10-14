@@ -3,7 +3,13 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    cout << 42 << "\n";
+    int a, b;
+    cin >> a >> b;
+    int years = 0;
+    while (b >= a) {
+        a *= 3;
+        b *= 2;
+        years++;
+    }
+    cout << years << "\n";
 }

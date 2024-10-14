@@ -1,8 +1,9 @@
 MIN = 1
-MAX = 100
+MAX = 10
 
 subtasks = [
     {},  # 1-based
     {},  # examples
+    {},
     {},
 ]
