@@ -28,7 +28,7 @@ def run(f, st):
         S, K = map(int, next(f).split())
         assert 1 <= S <= N
         assert 0 <= K
-        assert S + 2 ** K - 1 <= N
+        assert S + 2**K - 1 <= N
 
     assert next(f, None) is None
 

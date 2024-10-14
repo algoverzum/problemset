@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
+
 def sum_between(a, b):
     return sum(range(a, b + 1))
+
 
 print(sum_between(3, 5))
 print(sum_between(0, 10))

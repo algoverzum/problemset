@@ -6,7 +6,8 @@ using namespace std;
 int maximum(vector<int> v) {
     int maxi = v[0];
     for (int x : v) {
-        if (x > maxi) maxi = x;
+        if (x > maxi)
+            maxi = x;
     }
     return maxi;
 }
@@ -18,5 +19,6 @@ int main() {
     cout << maximum({0}) << "\n";
     cout << maximum({42, 42, 42, 42, 42, 42, 42}) << "\n";
     cout << maximum({100, 101, 100, 101, 100, 101}) << "\n";
-    cout << maximum({3456, 8989, 432, 982, 3497, 34, 5430, 2134, 1092, 9997}) << "\n";
+    cout << maximum({3456, 8989, 432, 982, 3497, 34, 5430, 2134, 1092, 9997})
+         << "\n";
 }

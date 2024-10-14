@@ -5,7 +5,8 @@ using namespace std;
 int count(string word, char letter) {
     int cnt = 0;
     for (char c : word) {
-        if (c == letter) cnt++;
+        if (c == letter)
+            cnt++;
     }
     return cnt;
 }

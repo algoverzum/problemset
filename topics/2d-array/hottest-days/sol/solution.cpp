@@ -17,7 +17,8 @@ int main() {
     for (int i = 0; i < n; i++) {
         int cnt = 0;
         for (int j = 0; j < m; j++) {
-            if (t[i][j] == maxi) cnt++;
+            if (t[i][j] == maxi)
+                cnt++;
         }
         cout << cnt << "\n";
     }

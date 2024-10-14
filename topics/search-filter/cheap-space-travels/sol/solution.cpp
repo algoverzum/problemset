@@ -17,6 +17,7 @@ int main() {
         }
     }
     cout << cheap.size() << "\n";
-    for (int i : cheap) cout << i << " ";
+    for (int i : cheap)
+        cout << i << " ";
     cout << "\n";
 }

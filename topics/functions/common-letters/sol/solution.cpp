@@ -4,7 +4,8 @@ using namespace std;
 
 bool contains(string word, char letter) {
     for (char c : word) {
-        if (c == letter) return true;
+        if (c == letter)
+            return true;
     }
     return false;
 }
@@ -29,5 +30,7 @@ int main() {
     cout << common_letters("", "x") << "\n";
     cout << common_letters("oooooooooo", "ooo") << "\n";
     cout << common_letters("shshshshshshshsh", "shake") << "\n";
-    cout << common_letters("pneumonoultramicroscopicsilicovolcanoconiosis", "methylenedioxymethamphetamine") << "\n";
+    cout << common_letters("pneumonoultramicroscopicsilicovolcanoconiosis",
+                           "methylenedioxymethamphetamine")
+         << "\n";
 }

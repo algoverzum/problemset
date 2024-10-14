@@ -41,7 +41,7 @@ def run(N, Q, A, B):
     for _ in range(Q):
         S = randint(1, N)
         K = 18
-        while S + 2 ** K - 1 > N:
+        while S + 2**K - 1 > N:
             K = randint(0, 17)
         print(S, K)
 
