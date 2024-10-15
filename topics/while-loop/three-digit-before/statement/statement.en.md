@@ -3,14 +3,14 @@ On our planet, we play Bingo with the presenter drawing lots for you until zero 
 
 
 ### Input
-The first line of the input contains $N$ - the 
-The input contains integers, one number per line. The number in the $i$th row is the $i$th drawn number. The last line is guaranteed to be a zero.
+The input contains integers, one number per line. The number in the $i$-th row is the $i$-th drawn number, $S_i$. The last line is guaranteed to contain a zero.
 
 ### Output
 You have to write a single number, the number of three-digit numbers.
 
 ### Constraints
-* in the $i$th line you can found the number $S_i$, such that $0 \le S_i \le 1\, 000\, 000$. If $i\not=j$ then $S_i\not=S_j$.
+* $0 \le S_i \le 1\, 000\, 000$.
+* If $i\not=j$ then $S_i\not=S_j$.
 * the number of non-empty lines is $N$, where $1 \le N \le 1000$.
 
 ### Example input
@@ -27,4 +27,4 @@ You have to write a single number, the number of three-digit numbers.
     3
 
 ### Explanation of the example
-    There were 3 three-digit numbers before the zero: 123, 555, 678.
+There were 3 three-digit numbers before the zero: 123, 555, 678.
