@@ -10,7 +10,7 @@ The input contains integers, one number per line. The number in the $i$th row is
 You have to write a single number, the number of three-digit numbers.
 
 ### Constraints
-* in the $i$th line you can found the number $S_i$, such that $0 \le S_i \le 1\,000,\000$. If $i!=j$ then $S_i!=S_j$.
+* in the $i$th line you can found the number $S_i$, such that $0 \le S_i \le 1\, 000\, 000$. If $i\not=j$ then $S_i\not=S_j$.
 * the number of non-empty lines is $N$, where $1 \le N \le 1000$.
 
 ### Example input
