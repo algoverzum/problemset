@@ -1,2 +1,2 @@
-- Vegyél fel egy `lada` változót, az értéke legyen 0. Szükségünk lesz egy másik `nap` változóra, ennek értékét a `while` cikluson bellül növeljük 1-gyel, illetve adjuk hozzá a `lada` változóhoz.
-- A `while` ciklus addig menjen, amíg `lada < N`. A `nap` váltzó tartalmazza ekkor a kérdésre a választ. 
+- Vegyél fel egy `penz` változót, az értéke legyen 0. Szükségünk lesz egy másik `nap` változóra, ennek értékét a `while` cikluson bellül növeljük 1-gyel, illetve adjuk hozzá a `penz` változóhoz.
+- A `while` ciklus addig menjen, amíg `penz < N`. A `nap` változó tartalmazza ekkor a kérdésre a választ. 

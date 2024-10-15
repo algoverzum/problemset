@@ -1,3 +1,3 @@
-- Create a `box` variable, its value should be 0. We will need another `day` variable, its value will be increased by 1 inside the `while` loop. Inside the loop we should add the value of `day` to `box` as well.
-- The `while` loop should run until `lada < N`. The `day` variable then contains the answer to the question.
+- Create a `money` variable, its value should be 0. We will need another `day` variable, its value will be increased by 1 inside the `while` loop. Inside the loop we should add the value of `day` to `money` as well.
+- The `while` loop should run as long as `money < N` is true. The `day` variable then contains the answer to the question.
 
