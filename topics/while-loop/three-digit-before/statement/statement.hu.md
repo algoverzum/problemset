@@ -8,7 +8,7 @@ A bemenetben egész számok vannak, minden sorban egy szám. Az $i.$ sorban tal�
 Egyetlen számot kell kiírnod, a háromjegyű számok számát. 
 
 ### Korlátok
-* az $i$. sorban talalható $S_i$ számra $0 \le S_i \le 1\,000,\000$. Ha $i!=j$ akkor $S_i!=S_j$.
+* az $i$. sorban talalható $S_i$ számra $0 \le S_i \le 1\, 000\, 000$. Ha $i\not=j$ akkor $S_i\not=S_j$.
 * a nem üres sorok $N$ számára $1 \le N \le 1000$.
 
 ### Példa bemenet

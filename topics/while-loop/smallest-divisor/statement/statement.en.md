@@ -17,4 +17,4 @@ Print a single number, the smallest divisor of $N$ that is greater than 1. There
     7
 
 ### Explanation of the example
-The divisors of 63 are 1, 7, 11 and 77. The smallest of them that is bigger than 1 is the 7.
+The divisors of 77 are 1, 7, 11 and 77. The smallest of them that is bigger than 1 is the 7.
