@@ -8,7 +8,7 @@ The input contains a single positive integer $N$.
 Print a single number, the smallest divisor of $N$ that is greater than 1. There is always at least one such divisor of $N$, the number itself.
 
 ### Constraints
-* $2 \le N \le 100\,000$
+* $2 \le N \le 100\, 000$
 
 ### Example input
     77
