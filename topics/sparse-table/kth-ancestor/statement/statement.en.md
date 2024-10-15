@@ -6,8 +6,11 @@ If node $A$ is at $L$ distance away from the Root node and $B$ is at $L$ + $K$ d
 The first line of the input contains $N$ the number of Nodes in the tree.
 The second line of the input contains $Q$ the number of Queries.
 $Q$ lines follow each containing a query.
+
 * $0$ $Y$ $X$ : $X$ is added as a new leaf node whose parent is $Y$ . $X$ is not in the tree while $Y$ is in.
+
 * $1$ $X$ : This tells that leaf node $X$ is removed from the tree. $X$ is a leaf in the tree.
+
 * $2$ $X$ $K$ : In this query output the $K$-th parent of $X$ . $X$ is a node.
 
 

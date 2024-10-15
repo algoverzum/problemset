@@ -6,9 +6,12 @@ Ha az $A$ csomópont $L$ távolságra van a gyökér csomóponttól, $B$ pedig $
 ### Bemenet
 A bemenet első sora a fa csomópontjainak maximális lehetséges azonosító számát tartalmazza: $N$.
 A bemenet második sora a lekérdezések számát tartalmazza: $Q$.
-$Q$ sor következik, amelyek mindegyike egy-egy lekérdezést tartalmaz.
+Ezután $Q$ sor következik, amelyek mindegyike egy-egy lekérdezést tartalmaz.
+
 * $0$ $Y$ $X$ : $X$ új levélcsomópontként kerül be, amelynek szülője $Y$ . $X$ nincs a fában, míg $Y$ benne van.
+
 * $1$ $X$ : Ez azt jelenti, hogy a $X$ levélcsomópontot eltávolítjuk a fából. $X$ egy levél a fában.
+
 * $2$ $X$ $K$ : Ebben a lekérdezésben az $X$ $K$-adik szülőjét kell kiírni a kimenetre. $X$ egy csomópont.
 
 ### Kimenet
