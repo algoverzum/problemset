@@ -9,10 +9,10 @@ A bemenet második sora a lekérdezések számát tartalmazza: $Q$.
 $Q$ sor következik, amelyek mindegyike egy-egy lekérdezést tartalmaz.
 * $0$ $Y$ $X$ : $X$ új levélcsomópontként kerül be, amelynek szülője $Y$ . $X$ nincs a fában, míg $Y$ benne van.
 * $1$ $X$ : Ez azt jelenti, hogy a $X$ levélcsomópontot eltávolítjuk a fából. $X$ egy levél a fában.
-* $2$ $X$ $K$ : Ebben a lekérdezésben a $X$ $K$-adik szülője $X$ . $X$ egy csomópont a fában.
+* $2$ $X$ $K$ : Ebben a lekérdezésben a $X$ $K$-adik szülője $X$ . $X$ egy csomópont.
 
 ### Kimenet
-Minden 2. típusú lekérdezéshez írd ki $X$ K-adik szülőjét. Ha a K-adik szülő nem létezik, akkor 0-t, ha pedig a csomópont nem létezik, akkor 0-t írj ki.
+Minden 2. típusú lekérdezéshez írd ki $X$ $K$-adik szülőjét. Ha a $K$-adik szülő nem létezik, akkor írj ki 0-t és ha az $X$ csomópont nem létezik, akkor is írj ki 0-t.
 
 ### Korlátok
 * $1 \le N \le 200000$

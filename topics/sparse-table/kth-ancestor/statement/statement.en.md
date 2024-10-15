@@ -1,18 +1,18 @@
 ## Kth Ancestor
-Susan likes to play with graphs and Tree data structure is one of her favorites. She has designed a problem and wants to know if anyone can solve it. She starts with Node 1 as the root and sometimes she adds or removes a leaf node. Your task is to figure out the Kth parent of a node at any instant.
-If node A is at L distance away from the Root node and B is at L + K distance away from the Root node and there is a path of K length from A to B, then we call A as the Kth parent of B.
+Susan likes to play with graphs and Tree data structure is one of her favorites. She has designed a problem and wants to know if anyone can solve it. She starts with Node 1 as the root and sometimes she adds or removes a leaf node. Your task is to figure out the $K$-th parent of a node at any instant.
+If node $A$ is at $L$ distance away from the Root node and $B$ is at $L$ + $K$ distance away from the Root node and there is a path of $K$ length from $A$ to $B$, then we call A as the $K$-th parent of B.
 
 ### Input
 The first line of the input contains $N$ the number of Nodes in the tree.
-The second line of the input contains $Q$ the number of Queries
-lines follow each containing a query.
-    0 $Y$ $X$ : $X$ is added as a new leaf node whose parent is $Y$ . $X$ is not in the tree while $Y$ is in.
-    1 $X$ : This tells that leaf node $X$ is removed from the tree. $X$ is a leaf in the tree.
-    2 $X$ $K$ : In this query output the $K$th parent of $X$ . $X$ is a node in the tree.
+The second line of the input contains $Q$ the number of Queries.
+$Q$ lines follow each containing a query.
+* $0$ $Y$ $X$ : $X$ is added as a new leaf node whose parent is $Y$ . $X$ is not in the tree while $Y$ is in.
+* $1$ $X$ : This tells that leaf node $X$ is removed from the tree. $X$ is a leaf in the tree.
+* $2$ $X$ $K$ : In this query output the $K$-th parent of $X$ . $X$ is a node.
 
 
 ### Output
-For each query of type 2 , output the Kth parent of X . If Kth parent doesn't exist, output 0 and if the node doesn't exist, output 0.
+For each query of type 2 , output the $K$-th parent of $X$ . If the $K$-th parent doesn't exist, output 0 and if the node doesn't exist, output 0.
 
 ### Constraints
 * $1 \le N \le 200000$
