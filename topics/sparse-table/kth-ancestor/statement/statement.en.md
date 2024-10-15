@@ -47,19 +47,19 @@ For each query of type 2 , output the $K$-th parent of $X$ . If the $K$-th paren
     8
 
 ### Explanation of the example
-    0 1 5 -> 5 is added as a leaf node to 1.
-    0 5 3 -> 3 is added as a leaf node to 5.
-    0 5 7 -> 7 is added as a leaf node to 5.
-    0 1 8 -> 8 is added as a leaf node to 1.
-    0 8 9 -> 9 is added as a leaf node to 8.
-    0 8 6 -> 6 is added as a leaf node to 8.
-    0 5 15 -> 15 is added as a leaf node to 5.
-    2 15 2 -> 2nd parent of 15 is 15->5->1 is 1.
-    1 3 -> leaf node 3 is removed from the tree.
-    0 15 20 -> 20 is added as a leaf node to 15.
-    0 20 13 -> 13 is added as a leaf node to 20.
-    2 13 4 -> 4th parent of 13 is 1.
-    2 13 3 -> 3rd parent of 13 is 5.
-    2 6 10 -> there is no 10th parent of 6 and hence 0.
-    2 11 1 -> 11 is not a node in the tree, hence 0.
-    2 9 1 -> 9's parent is 8.
+* 0 1 5 $\rightarrow$ 5 is added as a leaf node to 1.
+* 0 5 3 $\rightarrow$ 3 is added as a leaf node to 5.
+* 0 5 7 $\rightarrow$ 7 is added as a leaf node to 5.
+* 0 1 8 $\rightarrow$ 8 is added as a leaf node to 1.
+* 0 8 9 $\rightarrow$ 9 is added as a leaf node to 8.
+* 0 8 6 $\rightarrow$ 6 is added as a leaf node to 8.
+* 0 5 15 $\rightarrow$ 15 is added as a leaf node to 5.
+* 2 15 2 $\rightarrow$ 2nd parent of 15 is 15 $\rightarrow$ 5 $\rightarrow$ 1 is 1.
+* 1 3 $\rightarrow$ leaf node 3 is removed from the tree.
+* 0 15 20 $\rightarrow$ 20 is added as a leaf node to 15.
+* 0 20 13 $\rightarrow$ 13 is added as a leaf node to 20.
+* 2 13 4 $\rightarrow$ 4th parent of 13 is 1.
+* 2 13 3 $\rightarrow$ 3rd parent of 13 is 5.
+* 2 6 10 $\rightarrow$ there is no 10th parent of 6 and hence 0.
+* 2 11 1 $\rightarrow$ 11 is not a node in the tree, hence 0.
+* 2 9 1 $\rightarrow$ 9's parent is 8.
