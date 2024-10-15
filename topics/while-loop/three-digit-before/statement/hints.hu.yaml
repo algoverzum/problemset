@@ -1,3 +1,3 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- Használjunk while ciklust arra, hogy addig olvassuk be a számokat, amíg 0-t nem kapunk
+- A cikluson belül a beolvasott számról ellenőrizzük le, hogy háromjegyű, és ha igen, akkor növeljünk egy számlálót, ami a megoldást adja majd.
+- Egy szám akkor háromjegyű, ha legalább 100 és legfeljebb 999.

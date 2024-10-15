@@ -2,9 +2,9 @@
 # @check-accepted: *
 
 n = int(input())
-k = 0
+money = 0
 day = 0
-while k < n:
+while money < n:
     day += 1
-    k += day
+    money += day
 print(day)
