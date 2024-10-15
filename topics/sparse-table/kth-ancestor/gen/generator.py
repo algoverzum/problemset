@@ -83,15 +83,18 @@ def run(Case, N, Q, A, B, C, D):
         elif item == 2:
             E = 1 - math.sqrt(1 - D)
             K = 1
-            if random() >= E and not_in_tree:
+            if random() <= E and not_in_tree:
                 X = choice(not_in_tree)
                 K = K = randint(1, 100)
             else:
                 X = choice(list(tree.keys()))
-                if random() >= E:
+                if random() <= E:
                     K = randint(tree[X]["depth"], tree[X]["depth"] * 2)
                 else:
-                    K = randint(1, tree[X]["depth"])
+                    if tree[X]["depth"] > 1:
+                        K = randint(1, tree[X]["depth"])
+                    else:
+                        K = 1
             print(2, end=" ")
             print(X, end=" ")
             if K == 0:
