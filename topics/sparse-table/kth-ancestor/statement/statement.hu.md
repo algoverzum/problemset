@@ -9,7 +9,7 @@ A bemenet második sora a lekérdezések számát tartalmazza: $Q$.
 $Q$ sor következik, amelyek mindegyike egy-egy lekérdezést tartalmaz.
 * $0$ $Y$ $X$ : $X$ új levélcsomópontként kerül be, amelynek szülője $Y$ . $X$ nincs a fában, míg $Y$ benne van.
 * $1$ $X$ : Ez azt jelenti, hogy a $X$ levélcsomópontot eltávolítjuk a fából. $X$ egy levél a fában.
-* $2$ $X$ $K$ : Ebben a lekérdezésben a $X$ $K$-adik szülője $X$ . $X$ egy csomópont.
+* $2$ $X$ $K$ : Ebben a lekérdezésben az $X$ $K$-adik szülőjét kell kiírni a kimenetre. $X$ egy csomópont.
 
 ### Kimenet
 Minden 2. típusú lekérdezéshez írd ki $X$ $K$-adik szülőjét. Ha a $K$-adik szülő nem létezik, akkor írj ki 0-t és ha az $X$ csomópont nem létezik, akkor is írj ki 0-t.
@@ -48,20 +48,20 @@ Minden 2. típusú lekérdezéshez írd ki $X$ $K$-adik szülőjét. Ha a $K$-ad
     8
 
 ### A példa magyarázata
-    0 1 5 -> Az 5 az 1-hez levélcsomópontként hozzáadódik.
-    0 5 3 -> 3 levélcsomópontként hozzáadódik az 5-höz.
-    0 5 7 -> 7 levélcsomópontként hozzáadódik az 5-höz.
-    0 1 8 -> 8 levélcsomópontként hozzáadódik az 1. csomóponthoz.
-    0 8 9 -> 9 levélcsomópontként hozzáadva a 8-hoz.
-    0 8 6 -> 6 levélcsomópontként hozzáadva a 8-hoz.
-    0 5 15 -> 15 levélcsomópontként hozzáadva az 5-höz.
-    2 15 2 -> a 15 második szülője 15->5->1 az 1.
-    1 3 -> a 3-as levélcsomópontot eltávolítjuk a fából.
-    0 15 20 -> 20 levélcsomópontként hozzáadódik a 15-öshöz.
-    0 20 13 -> a 20-hoz 13 levélcsomópontot adunk.
-    2 13 4 -> 13 4. szülője 1.
-    2 13 3 -> a 13 3. szülője az 5.
-    2 6 10 -> a 6-osnak nincs 10. szülője, tehát 0.
-    2 11 1 -> 11 nem csomópont a fán, tehát 0.
-    2 9 1 -> 9 szülője a 8-as.
+* 0 1 5 $\rightarrow$ Az 5 az 1-hez levélcsomópontként hozzáadódik.
+* 0 5 3 $\rightarrow$ 3 levélcsomópontként hozzáadódik az 5-höz.
+* 0 5 7 $\rightarrow$ 7 levélcsomópontként hozzáadódik az 5-höz.
+* 0 1 8 $\rightarrow$ 8 levélcsomópontként hozzáadódik az 1. csomóponthoz.
+* 0 8 9 $\rightarrow$ 9 levélcsomópontként hozzáadva a 8-hoz.
+* 0 8 6 $\rightarrow$ 6 levélcsomópontként hozzáadva a 8-hoz.
+* 0 5 15 $\rightarrow$ 15 levélcsomópontként hozzáadva az 5-höz.
+* 2 15 2 $\rightarrow$ a 15 második szülője 15 $\rightarrow$ 5 $\rightarrow$ 1 az 1.
+* 1 3 $\rightarrow$ a 3-as levélcsomópontot eltávolítjuk a fából.
+* 0 15 20 $\rightarrow$ 20 levélcsomópontként hozzáadódik a 15-öshöz.
+* 0 20 13 $\rightarrow$ a 20-hoz 13 levélcsomópontot adunk.
+* 2 13 4 $\rightarrow$ 13 4. szülője 1.
+* 2 13 3 $\rightarrow$ a 13 3. szülője az 5.
+* 2 6 10 $\rightarrow$ a 6-osnak nincs 10. szülője, tehát 0.
+* 2 11 1 $\rightarrow$ 11 nem csomópont a fában, tehát 0.
+* 2 9 1 $\rightarrow$ 9 szülője a 8-as.
 
