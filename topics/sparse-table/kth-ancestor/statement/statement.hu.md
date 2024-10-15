@@ -1,17 +1,18 @@
 ## K-adik ős
-Susan szeret grafikonokkal játszani, és a Tree adatszerkezet az egyik kedvence. Megtervezett egy problémát, és szeretné tudni, hogy valaki meg tudja-e oldani. Az 1. csomóponttal, mint gyökérrel kezdi, és néha hozzáad vagy eltávolít egy-egy levélcsomópontot. A feladata az, hogy kitalálja, melyik csomópontnak mi a K-edik szülője bármelyik pillanatban.
-Ha A csomópont L távolságra van a Gyökér csomóponttól, B pedig L + K távolságra van a Gyökér csomóponttól, és van egy K hosszúságú út A-tól B-ig, akkor A-t nevezzük B K-edik szülőjének.
+Susan szeret gráfokkal játszani, és a fa gráf az egyik kedvence. Kitalált egy feladatot, és szeretné tudni, hogy valaki meg tudja-e oldani. Az 1. csomóponttal, mint gyökérrel kezdi, és néha hozzáad vagy eltávolít egy-egy levélcsomópontot. Közben olyan kérdéseket kell megválaszolni, hogy egy adott csomópontnak mi a $K$-adik szülője.
+
+Ha az $A$ csomópont $L$ távolságra van a gyökér csomóponttól, $B$ pedig $L + K$ távolságra van a gyökér csomóponttól, és van egy $K$ hosszúságú út $A$-tól $B$-ig, akkor $A$-t nevezzük $B$ $K$-adik szülőjének.
 
 ### Bemenet
-A bemenet első sora $N$ a fa csomópontjainak számát tartalmazza.
-A bemenet második sora $Q$ a lekérdezések számát tartalmazza.
-sorok következnek, amelyek mindegyike egy-egy lekérdezést tartalmaz.
-    0 $Y$ $X$ : $X$ új levélcsomópontként kerül be, amelynek szülője $Y$ . $X$ nincs a fában, míg $Y$ benne van.
-    1 $X$$ : Ez azt jelenti, hogy a $X$ levélcsomópontot eltávolítjuk a fából. $X$ egy levél a fában.
-    2 $X$ $K$ : Ebben a lekérdezésben a $X$ $K$-adik szülője $X$ . $X$ egy csomópont a fában.
+A bemenet első sora a fa csomópontjainak maximális lehetséges azonosító számát tartalmazza: $N$.
+A bemenet második sora a lekérdezések számát tartalmazza: $Q$.
+$Q$ sor következik, amelyek mindegyike egy-egy lekérdezést tartalmaz.
+* $0$ $Y$ $X$ : $X$ új levélcsomópontként kerül be, amelynek szülője $Y$ . $X$ nincs a fában, míg $Y$ benne van.
+* $1$ $X$ : Ez azt jelenti, hogy a $X$ levélcsomópontot eltávolítjuk a fából. $X$ egy levél a fában.
+* $2$ $X$ $K$ : Ebben a lekérdezésben a $X$ $K$-adik szülője $X$ . $X$ egy csomópont a fában.
 
 ### Kimenet
-Minden 2. típusú lekérdezéshez adja ki X$$ K-edik szülőjét. Ha a K-edik szülő nem létezik, akkor 0-t, ha pedig a csomópont nem létezik, akkor 0-t adunk ki.
+Minden 2. típusú lekérdezéshez írd ki $X$ K-adik szülőjét. Ha a K-adik szülő nem létezik, akkor 0-t, ha pedig a csomópont nem létezik, akkor 0-t írj ki.
 
 ### Korlátok
 * $1 \le N \le 200000$
