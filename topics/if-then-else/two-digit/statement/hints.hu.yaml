@@ -1,3 +1,7 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- Egy szám kétjegyű, ha legalább 10 és legfeljebb 99.
+- cpp: |
+    Az `n >= 10` és `n <= 99` kifejezéseket össze tudjuk kötni a logikai és operátorral, amit a && jelekkel kell írni:
+        if (n >= 10 && n <= 99) ...
+  py: |
+    Az `n >= 10` és `n <= 99` kifejezéseket össze tudjuk kötni a logikai és operátorral, amit az `and` kulcsszó jelöl:
+        if n >= 10 and n <= 99: ...
