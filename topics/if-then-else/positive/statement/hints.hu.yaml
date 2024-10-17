@@ -1,3 +1,23 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- Más-más dolgot kell kiírnunk akkor, ha a szám > 0, illetve ha nem. Ezt az `if` utasítással tudjuk elérni.
+- cpp: |
+    Az `if` kulcsszó után zárójelekbe kell írni a vizsgálandó igaz-hamis feltételt, majd kapcsos zárójelek közé a végrehajtandó kódrészletet:
+        if (X > 0) {
+          cout << "P";
+        }
+  py: |
+    Az `if` kulcsszó után kell írni a vizsgálandó igaz-hamis feltételt, majd a sor végére kettőspontot, és utána beljebb kezdve a végrehajtandó kódrészletet:
+        if X > 0:
+          print("P")
+- cpp: |
+    Az else kulcsszó után lehet egy újabb kód-blokk, ami akkor hajtódik végre, amikor a vizsgált feltételt hamis:
+        if (X > 0) {
+          cout << "P";
+        } else {
+          cout << "N";
+        }
+  py: |
+    Az else kulcsszó után lehet egy újabb kód-blokk, ami akkor hajtódik végre, amikor a vizsgált feltételt hamis:
+        if X > 0:
+          print("P")
+        else:
+          print("N")

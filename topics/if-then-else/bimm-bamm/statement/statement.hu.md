@@ -1,7 +1,10 @@
 ## Bimm, bamm, bumm
 Az itteni gyerekek szeretik a következő játékot játszani a számokkal: hangosan mondják a számokat 1-től kezdődő sorrendben, de néha az aktuális számot helyettesíteniük kell egy szóval. Konkrétan:
+
 * ha az aktuális szám a 3 többszöröse, akkor azt kell mondaniuk, hogy `bimm`,
+
 * ha a szám az 5 többszöröse, akkor azt kell mondaniuk, hogy `bamm`,
+
 * és ha egyaránt a 3 és az 5 többszöröse is, akkor `bumm`-ot kell mondaniuk
 a szám helyett.
 

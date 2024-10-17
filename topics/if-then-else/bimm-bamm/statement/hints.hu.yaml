@@ -1,3 +1,18 @@
-- Egy $N$ szám pontosan akkor osztató 3-mal, ha osztási maradéka nulla, azaz ha `N % 3 == 0`. A 3-as és 5-ös maradékok ismeretében könnyen dönthetünk: ha $N$ osztható 3-mal és 5-tel is, akkor `bumm`, ha csak 3-mal, akkor `bimm`, ha csak 5-tel, akkor `bamm`, különben pedig a szám $N$ írandó ki. 
-- cpp: TODO
-  py: TODO
+- A vizsgálatot érdemes azzal kezdeni, hogy ha $N$ osztható 3-mal és 5-tel is, akkor írjunk ki `bumm`-ot, és ha nem, akkor megvizsgálni, hogy 3-mal osztható-e, illetve 5-tel osztható-e. 
+- Egy $N$ szám akkor osztható 3-mal, ha osztási maradéka nulla, azaz ha `N % 3 == 0`.
+- cpp: Egy `if ... else if ... else if ... else` szerkezetű elágazással jó ezt csinálni.
+  py: |
+    Egy `if ... elif ... elif ... else` szerkezetű elágazással jó ezt csinálni.
+- cpp: |
+        if (i % 3 == 0 && i % 5 == 0) {
+          cout << "bumm" << "\n";
+        } else if (i % 3 == 0) {
+          ...
+        } else if (...) {
+        ...
+        } else ...
+  py: |
+        if i % 3 == 0 and i % 5 == 0: print("bumm")
+        elif i % 3 == 0: print( ... )
+        elif ...: print(...)
+        else: ...

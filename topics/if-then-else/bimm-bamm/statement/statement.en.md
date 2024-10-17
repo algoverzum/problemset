@@ -1,7 +1,10 @@
 ## Bimm, Bamm, Bumm
 Kids here like to play a game with numbers: they will say out loud the numbers in order starting from 1, but sometimes they have to say a word instead of the current number. Specifically:
+
 * if the current number is a multiple of 3, they should say `bimm`,
+
 * if it is a multiple of 5, they should say `bamm`,
+
 * and if it is a multiple of both 3 and 5, they should say `bumm`
 instead of the number.
 
