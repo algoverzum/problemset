@@ -6,7 +6,7 @@ In the input, the first line contains two integers, the number of measuring stat
 The following $N$ lines contains $M$ numbers each, corresponding to the oxygen level measured at the $N$th measuring station on the $M$th day: $A_i$  
 
 ### Output
-In the first line of the output, you should write the count of correct days, and in the second line, the ordinal numbers of each correct day in increasing order, separated by spaces. 
+In the first line of the output, you should write the count of correct days, and in the second line, the indicies of each correct day in increasing order, separated by spaces. 
 
 ### Constraints
 * $1 \le N \le 100$
