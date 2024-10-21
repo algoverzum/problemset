@@ -1,4 +1,4 @@
-## Grow Bigger
+## Túlnövés
 A bolygónk állatvilágának tanulmányozása közben a kutatók a brumara kettő különböző alfaját találták meg, amit A és B típusú brumarának neveztek el. Az A típusú brumarák kisebb súllyal születnek, viszont gyorsabban növekednek, míg a B típus nagyobb súllyal születik, viszont lassabban növekszik.
 Egy A típusú brumara egy év alatt megháromszorozza a saját súlyát, míg egy B típusú megduplázza a magáét. Segíts a kutatóknak megállapítani, hogy a vizsgált újszülött brumarák közül az A típusú hány év alatt fogja túlnőni a B típusút.
 
