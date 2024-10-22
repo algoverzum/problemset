@@ -1,5 +1,5 @@
 ## Number Of Teams
-n the Planetary Youth Programming Contest (PYPC), teams of 3 young adults can participate. A young adult is a person whose age is at least 18 and at most 21 years. I will list the ages of people living in my settlement. We would like to create as many teams as possible from people living here (but a person can only belong to one team). What is the maximum number of teams we can make?
+On the Planetary Youth Programming Contest (PYPC), teams of 3 young adults can participate. A young adult is a person whose age is at least 18 and at most 21 years. I will list the ages of people living in my settlement. We would like to create as many teams as possible from people living here (but a person can only belong to one team). What is the maximum number of teams we can make?
 
 ### Input
 The first line of the input contains $N$ - the number of people in my settlement. Each of the next $N$ lines contains a person's age, which is an integer number $A_i$ ($i=1, 2, \ldots, N$).
