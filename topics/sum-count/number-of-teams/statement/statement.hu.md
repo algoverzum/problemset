@@ -2,7 +2,7 @@
 A Galaktikus Ifjúsági Programozó Versenyen (GIPV) 3 fős csapatok indulhatnak. Ifjúnak az a személy számít, akinek életkora legalább 18 és legfeljebb 21 év. Felsorolom a településemen élők életkorát. Szeretnénk minél több csapatot létrehozni az itt élőkből (de egy ember csak egy csapatba tartozhat). Hány csapatot alkothatunk legfeljebb?
 
 ### Bemenet
-A bemenet első sorában $N$ szerepel - a településemen élők száma. A következő $N$ sorok mindegyike egy személy életkorát tartalmazza, ami egy $A_i$ egész szám ($i=1, 2, \ldots, N$). 
+A bemenet első sorában $N$ szerepel - a településemen élők száma. A következő $N$ sor mindegyike egy személy életkorát tartalmazza, ami egy $A_i$ egész szám ($i=1, 2, \ldots, N$). 
 
 ### Kimenet
 Egyetlen számot kell kiírnod, a csapatok maximális számát, amennyit alkothatunk.
