@@ -9,7 +9,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         int age;
         cin >> age;
-        if (age >= 18 && age < 21) {
+        if (age >= 18 && age <= 21) {
             young_adults++;
         }
     }
