@@ -5,6 +5,8 @@ problems:
   type: ENTRY
 - problem_id: bonie-sequence
   type: REQUIRED
+- problem_id: flight-arrivals
+  type: REQUIRED
 prerequisites:
  - sum-count
 dependents:
