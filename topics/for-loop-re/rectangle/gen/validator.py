@@ -15,13 +15,10 @@ def run(f, st):
     for k, v in subtasks[st].items():
         globals()[k] = v
 
-    N = int(next(f))
-    assert 1 <= N <= MAX
-
-    V = list(map(int, next(f).split()))
-    assert len(V) == N
-
-    assert all(0 <= v <= MAX for v in V)
+    W = int(next(f))
+    assert 1 <= W <= MAXN
+    H = int(next(f))
+    assert 1 <= H <= MAXN
 
     assert next(f, None) is None
 

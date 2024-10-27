@@ -6,31 +6,26 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "flight-arrivals".
+usage = """Generator for "chess-board".
 
 Parameters:
-* A (number of airplanes)
-* B (maximum passangers)
+* N (square side)
 * S (seed)
 
 Constraint:
-* 1 <= A <= %d
-* 0 <= B <= %d
+* 1 <= N <= %d
 """ % (
-    MAX,
-    MAX,
+    MAXN,
 )
 
 
-def run(A, B):
+def run(N):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    N = randint(max(1, A // 2), A)
     print(N)
-    print(*[randint(0, B) for i in range(N)])
 
 
 if __name__ == "__main__":
