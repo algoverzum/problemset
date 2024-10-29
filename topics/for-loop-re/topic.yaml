@@ -1,21 +1,22 @@
+---
 id: for-loop-re
 name: For loop revisited
 problems:
-- problem_id: bimm-bamm-sequence
-  type: REQUIRED
-- problem_id: divisors
-  type: REQUIRED
-- problem_id: rectangle
-  type: REQUIRED
-- problem_id: chess-board
-  type: REQUIRED
+  - problem_id: bimm-bamm-sequence
+    type: REQUIRED
+  - problem_id: divisors
+    type: REQUIRED
+  - problem_id: rectangle
+    type: REQUIRED
+  - problem_id: chess-board
+    type: REQUIRED
+  - problem_id: multipication-table
+    type: REQUIRED
 prerequisites:
- - for-loop
+  - for-loop
 dependents:
 visualization:
   image_filename: 4.svg
   position:
     x: 150
     y: 200
-
-# Notes:
