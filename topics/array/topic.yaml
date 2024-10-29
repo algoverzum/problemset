@@ -1,18 +1,21 @@
+---
 id: array
 name: Array
 problems:
-- problem_id: reverse
-  type: ENTRY
-- problem_id: bonie-sequence
-  type: REQUIRED
-- problem_id: flight-arrivals
-  type: REQUIRED
+  - problem_id: reverse
+    type: ENTRY
+  - problem_id: bonie-sequence
+    type: REQUIRED
+  - problem_id: flight-arrivals
+    type: REQUIRED
+  - problem_id: bets
+    type: REQUIRED
 prerequisites:
- - sum-count
+  - sum-count
 dependents:
- - string
- - min-max
- - search-filter
+  - string
+  - min-max
+  - search-filter
 visualization:
   image_filename: 7.svg
   position:
