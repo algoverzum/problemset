@@ -1,5 +1,7 @@
-- Let's read the values ​​of $H$ and $W$ into variables. Use a `for' loop to go through the $H$ rows and always write the current row.
-- cpp: The loop can look like this: `for (int i = 1; i <= H; i++) { ... }`
-  py: The loop can look like this: `for i in range(H):`
-- cpp: Inside the loop, we use another `for` loop to write out the lines.
-  py: Inside the loop, $W$ pieces of $X$ must be written in a line, which can be obtained ny multiplication.
+- Let's read the values of $H$ and $W$ into variables. Use a `for` loop to go through the $H$ rows and always print the current row.
+- cpp: |
+    The loop can look like this: `for (int i = 0; i < H; i++) { ... }`
+  py: |
+    The loop can look like this: `for i in range(H):`
+- cpp: Inside the loop, we use another `for` loop to print one line.
+  py: Inside the loop, $W$ pieces of `X` must be written in a line, which can be obtained by multiplication.

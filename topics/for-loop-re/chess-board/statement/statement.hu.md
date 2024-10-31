@@ -1,5 +1,5 @@
 ## Sakktábla
-Elvesztettem a repülő beszálló kártyámat. Ha jól emlékszem, egy négyzetben voltak `X` és `Y` karakterek rajta, sakktábla szerűen. Segítenél egy újat nyomtatni?
+Elvesztettem a repülő beszálló kártyámat. Kiderült, hogy egy négyzetben voltak `X` és `Y` karakterek rajta, sakktábla szerűen. Segítenél egy újat nyomtatni?
 
 ### Bemenet
 A bemenet egyetlen sorában egy egész szám van: $N$ - a sakktábla oldalának a hossza.

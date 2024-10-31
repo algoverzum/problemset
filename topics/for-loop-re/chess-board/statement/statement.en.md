@@ -1,5 +1,5 @@
 ### Chess Board
-I lost my boarding pass. If I remember correctly, there were characters `X` and `Y` in a square, like a chessboard. Can you help me print a new one?
+I lost my boarding pass. It turns out that there were `X` and `Y` characters on it forming a square with a chessboard pattern. Can you help me print a new one?
 
 ### Input
 A single line of the input contains an integer: $N$ - the length of the side of the chessboard.
