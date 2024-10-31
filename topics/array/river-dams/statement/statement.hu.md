@@ -1,16 +1,16 @@
-## River Dams
-Új vízerőműveket szeretnénk építeni, mivel megnövekedett az energia felhasználásunk. Már ki is szemeltük, hogy melyik folyóra szeretnénk építeni, de ezen a folyón nem találtuk még meg a tökéletes helyet erre. Tudjuk a folyó egyes szakaszain a víz szélességét és az egyes szakaszok közül szeretnénk kiválasztani a lehetséges helyeket. Egy szakasz akkor megfelelő, ha szélesebb, mint az azt megelőző és az azután következő két szakasz. Mivel az első és az utolsó szakasznak csak egy szomszédja van, így azok nem lehetnek lehetséges helyek. Feladatod az, hogy egy N szakaszból álló folyóból válaszd ki a gátra alkalmas pontokat.
+## Vízerőművek
+Új vízerőműveket szeretnénk építeni egy folyóra, amelynek a szélességét megmértük $N$ kijelölt ponton. A kijelölt pontok közül azokon tudunk vízerőművet építeni, ahol a folyó szélessége nagyobb, mint az előző és következő pontnál. Mivel az első pont előtt és az utolsó pont után nincs mérési adatunk, így azok nem jönnek szóba vízerőmű építésére. Hány ponton tudunk vízerőművet építeni?
 
 ### Bemenet
-A bemenet első sorában egy szám van, a szakaszok darabszáma: $N$
-A második sorban $N$ darab szám van, az egyes szakaszok szélessége: $A_i$
+A bemenet első sorában egy szám van, a folyón kijelölt pontok száma: $N$.
+A második sorban $N$ darab szám van, az egyes pontokon mért szélesség: $A_1, A_2, \ldots A_N$.
 
 ### Kimenet
-Egyetlen számot kell kiírnod, a megfelelő szakaszok darabszáma
+Egyetlen számot kell kiírnod, a vízerőmű építésére megfelelő helyek számát, azaz az olyan mérési pontok számát, ahol a mért szélesség szigorúan nagyobb, mint az előtte és utána lévő ponton mért szélesség.
 
 ### Korlátok
 * $1 \le N \le 100$
-* $1 \le A_i \le 10000$
+* $1 \le A_i \le 10\,000$
 
 ### Példa bemenet
     5
@@ -20,4 +20,4 @@ Egyetlen számot kell kiírnod, a megfelelő szakaszok darabszáma
     1
 
 ### A példa magyarázata
-A harmadik szakasz szélesebb, mint a második és a negyedik. Bár az első és az ötödik is szélesebb, mint a saját szomszédja, de mivel ezek a szélén vannak, így ezek nem minősülnek jó helynek.
+A harmadik pontnál a folyó szélesebb, mint a második és a negyedik pontnál. Bár az első és az ötödik pontnál is szélesebb, mint mellette, de mivel ezek a szélén vannak, így ezek nem minősülnek jó helynek.
