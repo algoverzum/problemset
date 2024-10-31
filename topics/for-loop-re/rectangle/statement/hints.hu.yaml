@@ -1,5 +1,7 @@
-- Olvassuk be az $H$ és $W$ értékét egy-egy változóba. Egy `for` ciklussal menjünk végig a $H$ soron, és mindig írjuk ki az aktuális sort.
-- cpp: A ciklus így nézhet ki: `for (int i = 1; i <= H; i++) { ... }`
-  py: A ciklus így nézhet ki: `for i in range(H):`
-- cpp: A cikluson bellül egy másik `for` ciklussal csináljuk a sorok kiírását.
-  py: A cikluson bellül egy sorba kell kiírni $W$ darab $X$-et, amit egy sztringként megraphatunk szorzással.
+- Olvassuk be a $H$ és $W$ értékét egy-egy változóba. Egy `for` ciklussal menjünk végig a $H$ soron, és mindig írjuk ki az aktuális sort.
+- cpp: |
+    A ciklus így nézhet ki: `for (int i = 0; i < H; i++) { ... }`
+  py: |
+    A ciklus így nézhet ki: `for i in range(H):`
+- cpp: A cikluson belül egy másik `for` ciklussal csináljuk egy-egy sor kiírását.
+  py: A cikluson belül egy sorba kell kiírni $W$ darab `X`-et, amit egy stringként megkaphatunk szorzással.

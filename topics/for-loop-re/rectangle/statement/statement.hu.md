@@ -1,12 +1,12 @@
 ## Téglalap
-Elvesztettem a repülő beszálló kártyámat. Úgy emlékszem, hogy $X$-ekből álló téglalap volt rajta. Segítenél egy újjat nyomtatni?
+Elvesztettem a repülő beszálló kártyámat. Úgy emlékszem, hogy `X` betűkből álló téglalap volt rajta. Segítenél egy újat nyomtatni?
 
 ### Bemenet
 A bemenet első sorában egy egész szám van: $H$ - a téglalap magassága.
 A bemenet második sorában is egy egész szám van: $W$ - a téglalap szélessége.
 
 ### Kimenet
-$H$ sort kell kiírni. Minden sorban pontosan $W$ darab $X$-jel legyen egymás mellett.
+$H$ sort kell kiírni. Minden sorban pontosan $W$ darab nagy `X` betű legyen egymás mellett.
 
 ### Korlátok
 * $1 \le H, W \le 20$
@@ -21,4 +21,4 @@ $H$ sort kell kiírni. Minden sorban pontosan $W$ darab $X$-jel legyen egymás m
     XXXXX
 
 ### A példa magyarázata
-Egy 3x5-ös téglalapot kell kiírnunk.
+Egy $3 \times 5$-ös téglalapot kell kiírnunk.
