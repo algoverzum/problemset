@@ -1,11 +1,11 @@
-## Multipication Table
-Adott $N$, írjunk ki egy $N*N$-es szorzótáblát: az első sorban a számok 1, 2, ..., N, a második sorban ezek kétszeresei, a harmadik sorban ezek háromszorosai legyenek, és így tovább egészen az N-edik sorig.
+## Szorzótábla
+Adott $N$, írjunk ki egy $N \times N$-es szorzótáblát: az első sorban az $1, 2, \ldots, N$ számok legyenek, a második sorba ezeknek kétszereseit írjuk, a harmadik sorba a háromszorosaikat, és így tovább egészen az $N$-edik sorig.
 
 ### Bemenet
-A bemenetben egyetlen egész szám van: $N$ 
+A bemenetben egyetlen egész szám van: $N$.
 
 ### Kimenet
-$N$ sort kell kiírnod mindegyik sorban $N$ értékkel szóközökkel elválasztva, úgy hogy az értékek $A$ és $B$ szorzatai, ahol $A$ az érték sorának $B$ pedig az érték oszlopának indexe.
+$N$ sort kell kiírnod. Mindegyik sorba $N$ számot írj szóközökkel elválasztva, úgy, hogy az $A$-adik sor $B$-edik oszlopában lévő érték $A$ és $B$ szorzata legyen.
 
 ### Korlátok
 * $1 \le N \le 100$
@@ -20,5 +20,4 @@ $N$ sort kell kiírnod mindegyik sorban $N$ értékkel szóközökkel elválaszt
     4 8 12 16 20
     5 10 15 20 25
 
-### A példa magyarázata
     
