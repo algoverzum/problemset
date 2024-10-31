@@ -6,41 +6,33 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "river-dams".
+usage = """Generator for "bets".
 
 Parameters:
-* A (minimum value for n)
-* B (maximum value for n)
-* C (minimum value for a_i)
-* D (maximum value for a_i)
+* A ( days)
+* B (max money per day)
 * S (seed)
 
 Constraint:
 * %d <= A <= %d
 * %d <= B <= %d
-* %d <= C <= %d
-* %d <= D <= %d
 """ % (
-    MIN_N,
-    MAX_N,
-    MIN_N,
-    MAX_N,
-    MIN_A,
-    MAX_A,
-    MIN_A,
-    MAX_A,
+    MIN,
+    MAX,
+    MIN2,
+    MAX2,
 )
 
 
-def run(A, B, C, D):
+def run(A, B):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
-    n = randint(A, B)
-    print(n)
-
-    print(*[randint(C, D) for i in range(n)])
+    print(A)
+    for i in range(A - 1):
+        print(randint(0, B), end=" ")
+    print(randint(0, B))
 
 
 if __name__ == "__main__":
