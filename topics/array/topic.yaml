@@ -12,6 +12,8 @@ problems:
     type: REQUIRED
   - problem_id: river-dams
     type: REQUIRED
+  - problem_id: bets
+    type: REQUIRED
 prerequisites:
   - sum-count
 dependents:
@@ -23,5 +25,3 @@ visualization:
   position:
     x: 300
     y: 200
-
-# Notes:
