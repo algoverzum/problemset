@@ -1,7 +1,11 @@
-- Save the value of $N$ into a variable. Let's go through the $N$ line with a `for` loop and always print the current line.
-- cpp: The loop can look like this: `for (int i = 0; i < N; i++) { ... }`
- py: The loop can look like this: `for i in range(N):`
-- Inside the loop, we use another `for` loop to write the curent line.
-- cpp: This loop can look like this: `for (int j = 0; j < N; j++) { ... }`
- py: This loop can look like this: `for j in range(N):`
-- $X$ or $Y$ must be printed depending on the parity of `i + j`.
+- Read the value of $N$ into a variable. Let's go over the $N$ lines with a `for` loop and always print the current line.
+- cpp: |
+    The loop can look like this: `for (int i = 0; i < N; i++) { ... }`
+  py: |
+    The loop can look like this: `for i in range(N):`
+- Inside the loop, we use another `for` loop to print the current line.
+- cpp: |
+    This loop can look like this: `for (int j = 0; j < N; j++) { ... }`
+  py: |
+    This loop can look like this: `for j in range(N):`
+- We should print `X` or `Y` depending on the parity of `i + j`.
