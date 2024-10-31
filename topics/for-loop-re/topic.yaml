@@ -12,6 +12,8 @@ problems:
     type: REQUIRED
   - problem_id: multipication-table
     type: REQUIRED
+  - problem_id: multiples-of-7
+    type: REQUIRED
 prerequisites:
   - for-loop
 dependents:
