@@ -20,7 +20,6 @@ Constraint:
 * %d <= B <= %d
 * %d <= C <= %d
 * %d <= D <= %d
-
 """ % (
     MIN_N,
     MAX_N,
