@@ -1,7 +1,11 @@
-- Olvassuk be az $N$ értékét egy változóba. Egy `for` ciklussal menjünk végig a $N$ soron, és mindig írjuk ki az aktuális sort.
-- cpp: A ciklus így nézhet ki: `for (int i = 0; i < N; i++) { ... }`
-  py: A ciklus így nézhet ki: `for i in range(N):`
-- A cikluson bellül egy másik `for` ciklussal csináljuk a sorok kiírását.
-- cpp: A ciklus így nézhet ki: `for (int j = 0; j < N; j++) { ... }`
-  py: A ciklus így nézhet ki: `for j in range(N):`
-- `i + j` paritásától függően kell $X$-et vagy $Y$-t kiírni.
+- Olvassuk be az $N$ értékét egy változóba. Egy `for` ciklussal menjünk végig az $N$ soron, és mindig írjuk ki az aktuális sort.
+- cpp: |
+    A ciklus így nézhet ki: `for (int i = 0; i < N; i++) { ... }`
+  py: |
+    A ciklus így nézhet ki: `for i in range(N):`
+- A cikluson belül egy másik `for` ciklussal csináljuk a sorok kiírását.
+- cpp: |
+    A ciklus így nézhet ki: `for (int j = 0; j < N; j++) { ... }`
+  py: |
+    A ciklus így nézhet ki: `for j in range(N):`
+- Az `i + j` paritásától függően kell `X`-et vagy `Y`-t kiírni.

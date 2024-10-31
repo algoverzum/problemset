@@ -7,7 +7,7 @@ int main() {
     cin >> H >> W;
     for (int i = 0; i < H; i++) {
         for (int j = 0; j < W; j++) {
-            cout << 'X';
+            cout << "X";
         }
         cout << "\n";
     }
