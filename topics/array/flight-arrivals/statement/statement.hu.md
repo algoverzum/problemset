@@ -1,5 +1,5 @@
 ## Repülő érkezések
-Mo Sais Leenak van két reptére: Espa és Pelgo. Tudjuk, hogy ma hány repülőgép érkezik és hogy ezeken a gépeken hány utas lesz. Szeretnénk ezeket a gépeket felváltva elosztani közöttük. Az első gép menjen Espára, a második Plegora, a harmadik Espára, stb. A két reptér szeretné mielőbb megtudni, hogy a hozzájuk érkező gépeken hány utas van. 
+Mo Sais Leenek van két reptére: Espa és Pelgo. Tudjuk, hogy ma hány repülőgép érkezik és hogy ezeken a gépeken hány utas lesz. Szeretnénk ezeket a gépeket felváltva elosztani közöttük. Az első gép menjen Espába, a második Plegoba, a harmadik Espába, stb. A két reptér szeretné mielőbb megtudni, hogy a hozzájuk érkező gépeken hány utas van. 
 
 
 ### Bemenet

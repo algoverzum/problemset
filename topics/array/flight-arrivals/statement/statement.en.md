@@ -1,8 +1,8 @@
 ## Flight Arrivals
-Mo Sais Lee has two airports: Espa and Pelgo. We know how many planes are arriving today and how many passengers will be on those planes. We would like to distribute these machines alternately between them. The first plane should go to Espa, the second to Plego, the third to Espa, etc. The two airports want to know as soon as possible how many passengers are on the planes arriving to them.
+Mo Sais Lee has two airports: Espa and Pelgo. We know how many airplanes are arriving today and how many passengers will be on those planes. We would like to distribute these machines alternately between them. The first plane should go to Espa, the second to Pelgo, the third to Espa, etc. The two airports want to know as soon as possible how many passengers are on the planes arriving to them.
 
 ### Input
-The first line of the input contains a single integer: $N$ - the number of aircraft arriving that day.
+The first line of the input contains a single integer: $N$ - the number of airplanes arriving that day.
 In the second line we have the space separated numbers $A_0, A_1, \ldots, A_{N-1}$, the number of people arriving on each plane.
 
 ### Output
