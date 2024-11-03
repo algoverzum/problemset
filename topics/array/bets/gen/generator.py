@@ -30,9 +30,7 @@ def run(A, B):
             break
         assert eval(row[2:]), row[2:]
     print(A)
-    for i in range(A - 1):
-        print(randint(0, B), end=" ")
-    print(randint(0, B))
+    print(*[randint(1, B) for _ in range(A)])
 
 
 if __name__ == "__main__":

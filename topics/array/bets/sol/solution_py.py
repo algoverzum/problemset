@@ -3,11 +3,11 @@
 
 N = int(input())
 A = [int(x) for x in input().split()]
-day_diff = []
+win = []
 for i in range(N - 1):
-    day_diff.append(A[i + 1] - A[i])
-diff_diff = []
+    win.append(A[i + 1] - A[i])
+diff = []
 for i in range(N - 2):
-    diff_diff.append(day_diff[i + 1] - day_diff[i])
-print(*day_diff)
-print(*diff_diff)
+    diff.append(win[i + 1] - win[i])
+print(*win)
+print(*diff)
