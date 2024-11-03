@@ -15,11 +15,11 @@ def run(f, st):
     for k, v in subtasks[st].items():
         globals()[k] = v
 
-    A = int(next(f))
-    assert MIN <= A <= MAX
-    B = int(next(f))
-    assert MIN <= B <= MAX
-    assert A <= B
+    N = int(next(f))
+    assert MIN_N <= N <= MAX_N
+    A = [int(i) for i in next(f).split(" ")]
+    for a in A:
+        assert MIN_A <= a <= MAX_A
 
     assert next(f, None) is None
 

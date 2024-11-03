@@ -1,9 +1,9 @@
 ---
 # General info
-name: multiples-of-7
-title: Multiples Of 7
+name: astronaut-pairs
+title: Astronaut Pairs
 title_translations:
-  hu: 7 Többszörösei
+  hu: Asztronauta Párok
 
 # Technical info
 memory_limit: 256

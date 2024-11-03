@@ -6,41 +6,41 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "multiples-of-7".
+usage = """Generator for "astronaut-pairs".
 
 Parameters:
 * A (minimum value)
 * B (maximum value)
+* C (minimum weight)
+* D (maximum weight)
 * S (seed)
 
 Constraint:
 * %d <= A <= %d
 * %d <= B <= %d
+* %d <= C <= %d
+* %d <= D <= %d
 """ % (
-    MIN,
-    MAX,
-    MIN,
-    MAX,
+    MIN_N,
+    MAX_N,
+    MIN_N,
+    MAX_N,
+    MIN_A,
+    MAX_A,
+    MIN_A,
+    MAX_A,
 )
 
 
-def run(A, B):
+def run(A, B, C, D):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    A_inp = randint(A, B)
-    B_inp = randint(A, B)
-    if A_inp >= B_inp:
-        A_inp, B_inp = B_inp, A_inp
-    if B_inp - 7 <= A_inp:
-        if B_inp < 993:
-            B_inp += 7
-        else:
-            A_inp -= 7
-    print(A_inp)
-    print(B_inp)
+    n = randint(A, B)
+    print(n)
+    print(*[randint(C, D) for i in range(n)])
 
 
 if __name__ == "__main__":

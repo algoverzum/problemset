@@ -1,12 +1,12 @@
 ## River Dams
-We want to build new hydropower plants as our energy use has increased. We already know which river we want to build on, but we haven't found the perfect place on this river yet. We know the width of the water in each section of the river, and we want to know each possible location out of the sections. A section is suitable if it is wider than the two sections before and after it. Since the first and last sections have only one neighbour, they cannot be possible sites. Your task is to select suitable points for a dam from a river of N sections.
+We want to build a new hydroelectric power plant on a river, the width of which has been measured at $N$ different points. From the selected points, we can build a hydroelectric power plant at those points where the width of the river is greater than the previous and next points. Since we have no measurement data before the first point and after the last point, they are not suitable for building a hydroelectric power plant. At how many points can we build a hydroelectric power plant?
 
 ### Input
-The first line of the input contains an integer, the number of sections: $N$
-The second line contains $N$ numbers, the width of each section: $A_i$
+The first line of the input is a number, the number of points on the river: $N$.
+The second line contains $N$ numbers, the width at each point: $A_1, A_2, \ldots A_N$.
 
 ### Output
-Print a single number, the number of corresponding sections that are suitable
+You have to print one number, the number of places suitable for building a hydroelectric power plant, i.e. the number of measurement points where the measured width is strictly greater than the width measured at the point before and after.
 
 ### Constraints
 * $1 \le N \le 100$
@@ -20,4 +20,4 @@ Print a single number, the number of corresponding sections that are suitable
     1
 
 ### Explanation of the example
-The third section is wider than the second and fourth. Although the first and fifth are also wider than their neighbours, because they are on the edge, they are not considered to be suitable locations.
+The river is wider at the third point than at the second and fourth points. Although it is also wider at the first and fifth points than it is next to them, because they are on the edge, they are not considered good locations.

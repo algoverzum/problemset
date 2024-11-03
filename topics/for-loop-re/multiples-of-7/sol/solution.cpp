@@ -3,7 +3,12 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    cout << 42 << "\n";
+    int a, b;
+    cin >> a >> b;
+    for (int i = a + 1; i < b; i++) {
+        if (i % 7 == 0) {
+            cout << i << " ";
+        }
+    }
+    cout << "\n";
 }
