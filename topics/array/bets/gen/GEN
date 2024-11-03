@@ -5,7 +5,7 @@
 #STNAME: examples
 #COPY: statement/input0.txt
 
-# Subtask 2: 1 <= N <= 100
+# Subtask 2: 3 <= N <= 100
 #ST: 100
 #STNAME: all
 3      10      1

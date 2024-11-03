@@ -1,17 +1,18 @@
 ## Bets
-On the planet Appaloosa, you bet on horse races on $N$ days. At the end of each day, you record how much money you have. To make your bets better next time, you calculate how much your money has changed on consecutive days, and then calculate how much your consecutive money changes have changed.
+My friend Akiko likes to bet on space races. At the end of every day for the last $N$ days, he recorded how much money he had. He is curious to see how much money he won each day, i.e. how much his money changed from the previous day (if his money decreased, it's a negative win). He also wants to know how much more or less he won on each day compared to the previous day, so he also wants to calculate the change between winnings (same as before, so if his winnings have decreased, the change is negative). Can you help him with this?
 
 ### Input
-The falling line of the input is an integer: $N$  
-Then the next line contains $N$ of numbers $A_1, A_2, __ldots, A_{N}$.
+The first line of the input is the number of days: $N$.
+The next line contains $N$ numbers, Akiko's money at the end of each day: $A_1, A_2, \ldots, A_{N}$.
 
 ### Output
-You have to print two lines, both with the numbers separated by spaces
-In the first line, the difference between your money on consecutive days
-In the second line, the difference between the consecutive differences
+Print two lines, both with the numbers separated by spaces.
+In the first line, print $N-1$ numbers, Akiko's winnings for each day starting from the second day (there is no information about his money before the first day).
+In the second line, print $N-2$ numbers, the changes between adjacent winnings.
+
 
 ### Limits
-* $1 \le N \le 100$
+* $3 \le N \le 100$
 * $1 \le A \le 10000$
 
 ### Example input
@@ -23,4 +24,6 @@ In the second line, the difference between the consecutive differences
     -12 10 5 -11
 
 ### Explanation of the example
+On the second day he had 9 money and on the first day only 4, so on the second day his winnings were $9 - 4 = 5$. On the third day his money went down to 2, so he lost 7, so his winnings are -7, etc.
 
+The changes between winnings are in the second row, for example the first number is the change between 5 and -7, which is -12.
