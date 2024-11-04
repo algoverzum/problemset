@@ -1,24 +1,27 @@
+---
 id: if-then-else
 name: If, then, else - conditional statement
 problems:
-- problem_id: positive
-  type: ENTRY
-- problem_id: smaller-number
-  type: REQUIRED
-- problem_id: parity
-  type: REQUIRED
-- problem_id: two-digit
-  type: REQUIRED
-- problem_id: at-least-one-odd
-  type: REQUIRED
-- problem_id: bimm-bamm
-  type: REQUIRED
-- problem_id: how-many-even
-  type: COMPLETION
+  - problem_id: positive
+    type: ENTRY
+  - problem_id: smaller-number
+    type: REQUIRED
+  - problem_id: parity
+    type: REQUIRED
+  - problem_id: two-digit
+    type: REQUIRED
+  - problem_id: at-least-one-odd
+    type: REQUIRED
+  - problem_id: bimm-bamm
+    type: REQUIRED
+  - problem_id: how-many-even
+    type: COMPLETION
+  - problem_id: odd-sum
+    type: REQUIRED
 prerequisites:
-- input-variables
+  - input-variables
 dependents:
-- for-loop
+  - for-loop
 visualization:
   image_filename: 3.svg
   position:

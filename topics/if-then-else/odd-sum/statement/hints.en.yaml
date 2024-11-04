@@ -1,0 +1,5 @@
+---
+- If there are only even or only odd numbers?
+- Then the answer is `NO`.
+- If there are odd and even numbers as well?
+- Then their sum is odd, so the answer is `YES`.
