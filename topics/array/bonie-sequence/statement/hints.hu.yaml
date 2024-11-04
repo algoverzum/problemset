@@ -3,9 +3,9 @@
 - cpp: |
     Az `n` beolvasása után egy `n+1` elemű vectort hozzunk létre: `vector<int> boni(n+1);`
   py: |
-    Az `n` beolvasása után egy `n+1` elemű listát hozzunk létre: `boni[0] * (n+1)`
+    Az `n` beolvasása után egy `n+1` elemű listát hozzunk létre: `boni = [0] * (n+1)`
 - |
-  `boni[0]=1` és `boni[1]=1`, a többi elemet viszont egy for ciklussal számoljuk ki, ami `i=2`-től `i<=n` -ig megy. Hogyan tudod leírni a ciklusban azt, hogy az aktuális, i-edik elem legyen az előző kettő összege?
+  `boni[0] = 1` és `boni[1] = 1`, a többi elemet viszont egy for ciklussal számoljuk ki, ami `i = 2`-től `i <= n` -ig megy. Hogyan tudod leírni a ciklusban azt, hogy az aktuális, i-edik elem legyen az előző kettő összege?
 - |
   `boni[i] = boni[i - 1] + boni[i - 2]`
 - cpp: |
