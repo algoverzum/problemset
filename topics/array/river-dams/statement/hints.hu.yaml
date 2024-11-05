@@ -1,4 +1,10 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Az n beolvasása után tároljuk el egy n méretű vectorban a második sorban szereplő számokat.
+  py: |
+    A második sorban szereplő számokat egy ilyen paranccsal lehet beolvasni egy listába: `w = [int(x) for x in input().split()]
+- Meg kell számolnunk azokat az elemeket, amelyek nagyobbak mindkét szomszédjuknál. Ehhez szükségünk van egy számláló változóra, ami kezdetben 0, majd akkor növeljük, amikor egy olyan elemet találunk, ami nagyobb az előző elemnél és a következő elemnél is. A for ciklust úgy írjuk, hogy a legelső elemet és a legutolsó elemet ne is vizsgáljuk.
+- cpp: |
+    Az if utasítás feltétele így nézhet ki: `w[i - 1] < w[i] && w[i] > w[i + 1]`
+  py: |
+    Az if utasítás feltétele így nézhet ki: `w[i - 1] < w[i] and w[i] > w[i + 1]`
+  

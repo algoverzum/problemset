@@ -6,15 +6,15 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    vector<int> sections(n);
+    vector<int> width(n);
 
     for (int i = 0; i < n; i++) {
-        cin >> sections[i];
+        cin >> width[i];
     }
 
     int count = 0;
     for (int i = 1; i < n - 1; i++) {
-        if (sections[i - 1] < sections[i] && sections[i] > sections[i + 1]) {
+        if (width[i - 1] < width[i] && width[i] > width[i + 1]) {
             count++;
         }
     }

@@ -1,3 +1,7 @@
-- TODO
-- cpp: TODO
-  py: TODO
+---
+- cpp: Az n beolvasása után tároljuk el egy n méretű vectorban a második sorban szereplő számokat.
+  py: |
+    A második sorban szereplő számokat ezzel a paranccsal lehet beolvasni egy listába: `numbers = [int(x) for x in input().split()]
+- Először minden második számot kell kiírnunk, a 0 indexűtől kezdve, ehhez használjunk egy kettesével lépegető for ciklust. Majd ugyanezt kell csinálni az 1 indextől kezdve.
+- cpp: A for ciklusnál a lépésközt úgy lehet változtatni, hogy az i++ helyett i+=2 -t írunk.
+  py: A for ciklusnál a `range(0, n, 2)` írásmóddal lehet kettesével lépegetni. A kiírt számok közé szóközt kell tennünk, ezt pedig a `print(..., end=" ")` módszerrel lehet (ahol a ... helyén az van, amit ki akarunk írni, pl. numbers[i])

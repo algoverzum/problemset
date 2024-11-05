@@ -3,14 +3,14 @@
 
 ### Bemenet
 A bemenet első sorában egy szám van, a folyón kijelölt pontok száma: $N$.
-A második sorban $N$ darab szám van, az egyes pontokon mért szélesség: $A_1, A_2, \ldots A_N$.
+A második sorban $N$ darab szám van, az egyes pontokon mért szélesség: $W_1, W_2, \ldots W_N$.
 
 ### Kimenet
 Egyetlen számot kell kiírnod, a vízerőmű építésére megfelelő helyek számát, azaz az olyan mérési pontok számát, ahol a mért szélesség szigorúan nagyobb, mint az előtte és utána lévő ponton mért szélesség.
 
 ### Korlátok
 * $1 \le N \le 100$
-* $1 \le A_i \le 10\,000$
+* $1 \le W_i \le 10\,000$
 
 ### Példa bemenet
     5
