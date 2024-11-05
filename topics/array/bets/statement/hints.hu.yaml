@@ -1,4 +1,15 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Az n beolvasása után tároljuk el egy n méretű vectorban a második sorban szereplő számokat.
+  py: |
+    A második sorban szereplő számokat ezzel a paranccsal lehet beolvasni egy listába: `money = [int(x) for x in input().split()]
+- cpp: |
+    Hozzunk létre egy n-1 méretű vectort a nyeremények kiszámítására, ahova aztán a szomszédos értékek különbségét írjuk be, például így:
+        for (int i = 0; i < n - 1; i++) {
+            win[i] = money[i + 1] - money[i];
+        }
+  py: |
+    A nyereményeknek kezdetben legyen egy üres listánk, majd az append paranccsal tegyük bele sorban a szomszédos értékek különbségeit:
+        win = []
+        for i in range(n - 1):
+            win.append(money[i + 1] - money[i])
+- Majdnem ugyanezt kell csinálni a nyeremények közötti különbségekre, viszont figyeljünk arra, hogy csak n-2 elem lesz.
