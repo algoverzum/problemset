@@ -14,6 +14,8 @@ problems:
     type: REQUIRED
   - problem_id: bets
     type: REQUIRED
+  - problem_id: astronaut-pairs
+    type: REQUIRED
 prerequisites:
   - sum-count
 dependents:

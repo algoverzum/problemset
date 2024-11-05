@@ -30,7 +30,17 @@ def run(A, B):
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    A_inp = randint(A, B)
+    B_inp = randint(A, B)
+    if A_inp >= B_inp:
+        A_inp, B_inp = B_inp, A_inp
+    if B_inp - 7 <= A_inp:
+        if B_inp < 993:
+            B_inp += 7
+        else:
+            A_inp -= 7
+    print(A_inp)
+    print(B_inp)
 
 
 if __name__ == "__main__":

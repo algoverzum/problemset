@@ -2,10 +2,6 @@
 id: for-loop-re
 name: For loop revisited
 problems:
-  - problem_id: bimm-bamm-sequence
-    type: REQUIRED
-  - problem_id: divisors
-    type: REQUIRED
   - problem_id: rectangle
     type: REQUIRED
   - problem_id: chess-board

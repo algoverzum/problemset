@@ -1,0 +1,5 @@
+---
+- Ha csak páros vagy csak páratlan szám van?
+- Akkor `NO` a válasz.
+- Ha pedig van páros és páratlan szám is van?
+- Akkor ezek összege páratlan, azaz `YES` a válasz.
