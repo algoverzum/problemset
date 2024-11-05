@@ -1,12 +1,12 @@
 ## River Dams
-We want to build a new hydroelectric power plant on a river, the width of which has been measured at $N$ different points. From the selected points, we can build a hydroelectric power plant at those points where the width of the river is greater than the previous and next points. Since we have no measurement data before the first point and after the last point, they are not suitable for building a hydroelectric power plant. At how many points can we build a hydroelectric power plant?
+We want to build a new dam on a river, the width of which has been measured at $N$ different points. From the selected points, we can build a dam at those points where the width of the river is greater than the previous and next points. Since we have no measurement data before the first point and after the last point, they are not suitable for building a dam. At how many points can we build a dam?
 
 ### Input
 The first line of the input is a number, the number of points on the river: $N$.
 The second line contains $N$ numbers, the width at each point: $A_1, A_2, \ldots A_N$.
 
 ### Output
-You have to print one number, the number of places suitable for building a hydroelectric power plant, i.e. the number of measurement points where the measured width is strictly greater than the width measured at the point before and after.
+You have to print one number, the number of places suitable for building a dam, i.e. the number of measurement points where the measured width is strictly greater than the width measured at the point before and after.
 
 ### Constraints
 * $1 \le N \le 100$

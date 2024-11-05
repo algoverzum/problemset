@@ -9,20 +9,16 @@ from inspect import signature
 usage = """Generator for "river-dams".
 
 Parameters:
-* A (minimum value for n)
-* B (maximum value for n)
+* N (number of elements)
 * C (minimum value for a_i)
 * D (maximum value for a_i)
 * S (seed)
 
 Constraint:
-* %d <= A <= %d
-* %d <= B <= %d
+* %d <= N <= %d
 * %d <= C <= %d
 * %d <= D <= %d
 """ % (
-    MIN_N,
-    MAX_N,
     MIN_N,
     MAX_N,
     MIN_A,
@@ -32,15 +28,14 @@ Constraint:
 )
 
 
-def run(A, B, C, D):
+def run(N, C, D):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
-    n = randint(A, B)
-    print(n)
+    print(N)
 
-    print(*[randint(C, D) for i in range(n)])
+    print(*[randint(C, D) for i in range(N)])
 
 
 if __name__ == "__main__":
