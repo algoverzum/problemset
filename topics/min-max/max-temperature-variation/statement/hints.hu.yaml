@@ -1,0 +1,8 @@
+---
+- cpp: A napi minimum és maximum hőmérsékleteket tároljuk egy-egy vectorban. Miközben végigmegyünk rajtuk (indexet használva), jegyezzük meg, hogy mennyi volt az addigi legnagyobb hőingás.
+  py: A napi minimum és maximum hőmérsékleteket tároljuk egy-egy listában. Miközben végigmegyünk rajtuk (indexet használva), jegyezzük meg, hogy mennyi volt az addigi legnagyobb hőingás.
+- Kell egy külön változó, amiben megjegyezzük a legnagyobb különbséget, legyen a neve `maxi`. Kezdetben állítsuk a legelső nap hőingás értékére. Majd egy `for` ciklussal menjünk végig a többi napon, és ha egy nagyobb hőingást találunk, akkor frissítsük a `maxi` értékét.
+- cpp: |
+    Ha a vectorok neve `A,B`, akkor a for cikluson belül ezt kell csinálnunk: `if (B[i]-A[i] > maxi) { maxi = B[i]-A[i]; }`
+  py: |
+    Ha a listák neve `A,B`, akkor a for cikluson belül ezt kell csinálnunk: `if B[i]-A[i] > maxi:  maxi = B[i]-A[i]`

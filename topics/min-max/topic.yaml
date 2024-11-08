@@ -1,14 +1,17 @@
+---
 id: min-max
 name: Minimum and Maximum Selection
 problems:
-- problem_id: tallest-building
-  type: ENTRY
-- problem_id: coldest-day
-  type: REQUIRED
-- problem_id: best-shirt
-  type: REQUIRED
+  - problem_id: tallest-building
+    type: ENTRY
+  - problem_id: coldest-day
+    type: REQUIRED
+  - problem_id: best-shirt
+    type: REQUIRED
+  - problem_id: max-temperature-variation
+    type: REQUIRED
 prerequisites:
- - array
+  - array
 dependents:
 visualization:
   image_filename: 8.svg

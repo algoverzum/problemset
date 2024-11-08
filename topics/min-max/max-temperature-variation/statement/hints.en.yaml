@@ -1,0 +1,8 @@
+---
+- cpp: We store the daily minimum and maximum temperatures in a vector. As we go through them (using index), we save the largest temperature variation seen so far.
+  py: We store the daily minimum and maximum temperatures in a list. As we go through them (using index), we save the largest temperature variation seen so far.
+- We need a separate variable in which we store the largest difference, let it be called `maxi`. Initially, we set it to the temperature variation value of the first day. Then we go through the other days with a `for` loop, and if we find a larger temperature variation, we update the value of `maxi`.
+- cpp: |
+    If the vectors are named `A,B`, then we need to do this within the for loop: `if (B[i]-A[i] > maxi) { maxi = B[i]-A[i]; }`
+  py: |
+    If the lists are named `A,B`, then inside the for loop we need to do this: `if B[i]-A[i] > maxi: maxi = B[i]-A[i]`

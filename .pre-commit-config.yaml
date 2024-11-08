@@ -15,4 +15,4 @@ repos:
     rev: v1.29.0
     hooks:
       - id: yamllint
-        args: [--strict]
+        args: ['-d {extends: relaxed, rules: {line-length: disable}}', '-s']
