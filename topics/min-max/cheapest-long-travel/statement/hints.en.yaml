@@ -1,0 +1,9 @@
+---
+- cpp: We store the distances and prices of the trips in a vector. As we go through them (using index), we save the cheapest trip was so far for at least $K$ distance.
+  py: We store the distances and prices of the trips in a list. As we go through them (using index), we save the cheapest trip was so far for at least $K$ distance.
+- The easiest way is to go through the distances (by index), and if all of them is smaller then $K$, we are done (-1), otherwise we record the first one in a separate variable (`mini`). Then we use a `for` loop to go through the trips by index, and if we find a cheaper one that is at least $K$ distance, we update the value of `mini`.
+- cpp: |
+    If the vectors are named `A,B`, then inside the `for` loop we have to do this: `if (A[i] >= K && B[i] < mini) { mini = B[i]; }`
+  py: |
+    If the lists are named `A,B`, then inside the `for` loop we have to do this: `if A[i] >= K and B[i] < mini: mini = B[i]`
+- How could it be done with just one `for` loop?

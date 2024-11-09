@@ -1,0 +1,9 @@
+---
+- cpp: Az utazások távolságait és árait tároljuk egy-egy vectorban. Miközben végigmegyünk rajtuk (indexet használva), jegyezzük meg, hogy mennyi volt az addigi legolcsóbb utazás legalább $K$ távolságra.
+  py: Az utazások távolságait és árait tároljuk egy-egy listában. Miközben végigmegyünk rajtuk (indexet használva), jegyezzük meg, hogy mennyi volt az addigi legolcsóbb utazás legalább $K$ távolságra.
+- A legegyszerűbb végigmenni a távolságokon (index szerint), és ha nincs legalább $K$ közöttük, akkor készen vagyunk (-1), különben jegyezzük fel az elsőt egy külön változóban (`mini`). Majd egy `for` ciklussal menjünk végig az utazásokon index szerint, és ha egy olcsóbbat találunk legalább $K$ távolságra, akkor frissítsük a `mini` értékét.
+- cpp: |
+    Ha a vectorok neve `A,B`, akkor a `for` cikluson belül ezt kell csinálnunk: `if (A[i] >= K && B[i] < mini) { mini = B[i]; }`
+  py: |
+    Ha a listák neve `A,B`, akkor a `for` cikluson belül ezt kell csinálnunk: `if A[i] >= K and B[i] <  mini:  mini = B[i]`
+- Hogyan lehetne megcsinálni csak egy `for` ciklussal?

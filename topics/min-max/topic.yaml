@@ -10,6 +10,8 @@ problems:
     type: REQUIRED
   - problem_id: max-temperature-variation
     type: REQUIRED
+  - problem_id: cheapest-long-travel
+    type: REQUIRED
 prerequisites:
   - array
 dependents:
