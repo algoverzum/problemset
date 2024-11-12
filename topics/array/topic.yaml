@@ -16,6 +16,8 @@ problems:
     type: REQUIRED
   - problem_id: astronaut-pairs
     type: REQUIRED
+  - problem_id: swap-candies
+    type: REQUIRED
 prerequisites:
   - sum-count
 dependents:
