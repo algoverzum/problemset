@@ -1,9 +1,9 @@
-## 7 Többszörösei
-Adott kettő egész szám: $A$ és $B$. A feladatod, hogy kiírd azokat a 7-tel osztható egész számokat, amik nagyobbak $A$-nál, de kisebbek $B$-nél.
+## 7 többszörösei
+Adott két egész szám: $A$ és $B$. A feladatod, hogy kiírd azokat a 7-tel osztható egész számokat, amik nagyobbak $A$-nál, de kisebbek $B$-nél.
 
 ### Bemenet
-A bemenet első sorában egy szám van: $A$
-A bemenet második sorában egy szám van: $B$ 
+A bemenet első sorában egy egész szám van: $A$
+A bemenet második sorában egy egész szám van: $B$ 
 
 ### Kimenet
 A kimenet első sorában az A és B közötti összes 7-tel osztható egész számot kell kiírnod, növekvő sorrendben szóközökkel elválasztva.

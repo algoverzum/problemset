@@ -2,14 +2,18 @@
 id: for-loop-re
 name: For loop revisited
 problems:
+  - problem_id: multiples-of-7
+    type: ENTRY
+  - problem_id: bimm-bamm-sequence
+    type: REQUIRED
+  - problem_id: divisors
+    type: REQUIRED
   - problem_id: rectangle
     type: REQUIRED
   - problem_id: chess-board
     type: REQUIRED
-  - problem_id: multipication-table
-    type: REQUIRED
-  - problem_id: multiples-of-7
-    type: REQUIRED
+  - problem_id: multiplication-table
+    type: COMPLETION
 prerequisites:
   - for-loop
 dependents:

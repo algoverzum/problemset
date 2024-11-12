@@ -1,9 +1,9 @@
 ---
 # General info
 name: how-old
-title: How Old
+title: How Old?
 title_translations:
-  hu: hány-éves
+  hu: Hány éves?
 
 # Technical info
 memory_limit: 256

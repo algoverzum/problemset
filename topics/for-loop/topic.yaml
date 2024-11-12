@@ -12,14 +12,10 @@ problems:
     type: REQUIRED
   - problem_id: square-numbers
     type: REQUIRED
-  - problem_id: bimm-bamm-sequence
-    type: REQUIRED
-  - problem_id: divisors
-    type: EXTRA
   - problem_id: star-gate-code
     type: COMPLETION
   - problem_id: how-old
-    type: REQUIRED
+    type: EXTRA
 prerequisites:
   - if-then-else
 dependents:

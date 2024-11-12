@@ -1,5 +1,5 @@
 ## Multiples Of 7
-Given two integers: $A$ and $B$. Your task is to write out the integers divisible by 7 that are greater than $A$ but less than $B$.
+You are given two integers: $A$ and $B$. Your task is to print the integers divisible by 7 that are greater than $A$ but less than $B$.
 
 ### Input
 The first line of the input contains an integer: $A$
