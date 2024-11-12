@@ -7,11 +7,9 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    vector<int> candies;
-    int a;
+    vector<int> candies(n);
     for (int i = 0; i < n; i++) {
-        cin >> a;
-        candies.push_back(a);
+        cin >> candies[i];
     }
     for (int i = 0; i + 1 < candies.size(); i += 2) {
         // swap(vec[i], vec[i + 1]);
