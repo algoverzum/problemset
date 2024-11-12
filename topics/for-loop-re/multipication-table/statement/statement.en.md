@@ -1,11 +1,11 @@
-## Multipication Table
-Given $N$, write out a multiplication table of $N \times N$: in the first row, the numbers $1, 2, \ldots, N$, in the second row, twice these numbers, in the third row, three times these numbers, and so on up to the $N$-th row.
+## Multiplication Table
+Given $N$, print a multiplication table of size $N \times N$: in the first row, the numbers $1, 2, \ldots, N$, in the second row, twice these numbers, in the third row, three times these numbers, and so on up to the $N$-th row.
 
 ### Input
 The input is a single integer: $N$.
 
 ### Output
-You have to write $N$. In each row, write $N$, separated by spaces, so that the value in the $A$-th column of the $B$-th row is the product of $A$ and $B$.
+You have to print $N$ lines. In each line, print $N$ numbers separated by spaces, such that the value in the $j$-th column of the $i$-th row is the product of $i$ and $j$.
 
 ### Limits
 * $1 \le N \le 100$

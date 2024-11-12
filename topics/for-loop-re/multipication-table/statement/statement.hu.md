@@ -5,7 +5,7 @@ Adott $N$, írjunk ki egy $N \times N$-es szorzótáblát: az első sorban az $1
 A bemenetben egyetlen egész szám van: $N$.
 
 ### Kimenet
-$N$ sort kell kiírnod. Mindegyik sorba $N$ számot írj szóközökkel elválasztva, úgy, hogy az $A$-adik sor $B$-edik oszlopában lévő érték $A$ és $B$ szorzata legyen.
+$N$ sort kell kiírnod. Mindegyik sorba $N$ számot írj szóközökkel elválasztva, úgy, hogy az $i$-edik sor $j$-edik oszlopában lévő érték $i$ és $j$ szorzata legyen.
 
 ### Korlátok
 * $1 \le N \le 100$

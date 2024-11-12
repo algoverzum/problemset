@@ -19,7 +19,7 @@ problems:
   - problem_id: star-gate-code
     type: COMPLETION
   - problem_id: how-old
-    type: REQUIRED
+    type: EXTRA
 prerequisites:
   - if-then-else
 dependents:
