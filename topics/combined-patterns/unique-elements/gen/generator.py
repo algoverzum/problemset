@@ -6,39 +6,48 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "swap-min-max".
+usage = """Generator for "unique-elements".
 
 Parameters:
-* A (minimum value)
-* B (maximum value)
+* N (value of N)
+* A (minimum range of codes)
+* B (maximum range of codes)
 * S (seed)
 
 Constraint:
+* %d <= N <= %d
 * %d <= A <= %d
 * %d <= B <= %d
 """ % (
-    MIN,
-    MAX,
-    MIN,
-    MAX,
+    MIN_N,
+    MAX_N,
+    MIN_A,
+    MAX_A,
+    MIN_A,
+    MAX_A,
 )
 
 
-def run(A, B):
+def run(N, A, B):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
-    print(A)
-    if A >= 10:
-        minn = randint(1, B / 10)
-        maxx = randint(B - B / 10, B)
-        numbers = [randint(minn + 1, maxx - 1) for _ in range(A - 2)]
-        numbers = [minn] + numbers + [maxx]
-        shuffle(numbers)
-        print(*numbers)
-    else:
-        print(*[randint(1, B) for _ in range(A)])
+
+    print(N)
+    unique = randint(A, B)
+    codes = [unique]
+
+    for i in range(N - 1):
+        temp = randint(A, B)
+        if temp != unique:
+            codes.append(temp)
+        elif temp == B:
+            codes.append(temp - 1)
+        else:
+            codes.append(temp + 1)
+    shuffle(codes)
+    print(*codes)
 
 
 if __name__ == "__main__":

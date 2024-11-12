@@ -1,0 +1,14 @@
+---
+id: combined-patterns
+name: Combined Patterns
+problems:
+  - problem_id: unique-elements
+    type: REQUIRED
+prerequisites:
+  - dummy-topic
+dependents: []
+visualization:
+  image_filename: 4.svg
+  position:
+    x: 200
+    y: -300
