@@ -12,6 +12,8 @@ problems:
     type: REQUIRED
   - problem_id: cheapest-long-travel
     type: REQUIRED
+  - problem_id: swap-min-max
+    type: REQUIRED
 prerequisites:
   - array
 dependents:
