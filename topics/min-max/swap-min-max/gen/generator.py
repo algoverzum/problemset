@@ -30,7 +30,15 @@ def run(A, B):
             break
         assert eval(row[2:]), row[2:]
     print(A)
-    print(*[randint(1, B) for _ in range(A)])
+    if A >= 10:
+        minn = randint(1, B / 10)
+        maxx = randint(B - B / 10, B)
+        numbers = [randint(minn + 1, maxx - 1) for _ in range(A - 2)]
+        numbers = [minn] + numbers + [maxx]
+        shuffle(numbers)
+        print(*numbers)
+    else:
+        print(*[randint(1, B) for _ in range(A)])
 
 
 if __name__ == "__main__":
