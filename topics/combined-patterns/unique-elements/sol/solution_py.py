@@ -2,7 +2,7 @@
 # @check-accepted: *
 
 n = int(input())
-itemCodes = input.split()
+itemCodes = input().split(" ")
 for i in range(len(itemCodes)):
     unique = True
     for j in range(len(itemCodes)):

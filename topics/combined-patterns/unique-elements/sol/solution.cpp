@@ -12,13 +12,13 @@ int main() {
     }
     for (int i = 0; i < n; i++) {
         bool unique = true;
-        for (int j = 0; j < n; i++) {
+        for (int j = 0; j < n; j++) {
             if (i != j && itemCodes[i] == itemCodes[j]) {
                 unique = false;
             }
         }
         if (unique) {
-            cout << itemCodes[i];
+            cout << itemCodes[i] << " ";
         }
     }
     cout << "\n";
