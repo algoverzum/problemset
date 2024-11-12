@@ -8,7 +8,7 @@ problems:
     type: REQUIRED
   - problem_id: chess-board
     type: REQUIRED
-  - problem_id: multipication-table
+  - problem_id: multiplication-table
     type: REQUIRED
 prerequisites:
   - for-loop
