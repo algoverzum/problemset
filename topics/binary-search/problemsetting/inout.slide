@@ -1,0 +1,11 @@
+repeat test upto T:
+
+input:
+
+int N;
+int A[N];
+int B[N-1];
+
+output:
+
+int K;

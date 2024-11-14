@@ -1,0 +1,162 @@
+\usepackage{xcolor}
+\usepackage{afterpage}
+\usepackage{pifont,mdframed}
+\usepackage[bottom]{footmisc}
+
+\makeatletter
+\gdef\this@inputfilename{input}
+\gdef\this@outputfilename{output}
+\makeatother
+
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible
+}
+
+\setcounter{@subtaskcounter}{-1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\textit{This problem is loosely based on real events.}
+\textit{A feladat megtörtént eseményeken alapszik.}
+
+%The organising committee of an unspecified programming contest (UPC) is planning to hold many rounds this year,
+Egy meg nem nevezett programozási verseny szervezőbizottsága idén több forduló megrendezését tervezi,
+%each round consisting of $N$ problems of varying difficulties. The problems in a round are numbered from $1$ to $N$.
+melyek mindegyike $N$ darab, különböző nehézségű feladatból áll. Azt szeretnénk, hogy a feladatok nehézségi szintjei $1, 2, \ldots, N$ legyenek.
+
+%As such, there have been a lot of problem proposals.
+A versenyre rengeteg feladatjavaslat érkezett.
+%Each problem proposal has a difficulty rating, which is either
+Ezek mindegyikéhez tartozik egy nehézségi szint, mely lehet
+\begin{itemize}
+%\item an integer $i$ ($1 \le i \le N$) -- meaning that this problem is appropriate as problem $i$ in a round; or
+\item egy $i$ egész szám ($1 \le i \le N$), ami azt jelenti, hogy a javaslat valamelyik forduló $i$ nehézségű feladataként használható; vagy
+%\item a value in the form $i.5$ for some integer $i$ ($1 \le i < N$) -- meaning that this problem is appropriate as either problem $i$ or problem $i+1$ in a round.
+\item egy $i.5$ alakú érték, ahol $i$ egész szám, $1 \le i < N$), mely akár $i$ nehézségű, akár $i+1$ nehézségű feladat is lehet.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{problemsetting.jpg}
+    %\caption{Creating a balanced round is more difficult than you'd think.}
+    \caption{Egy megfelelő nehézségű verseny összeállítása nehezebb, mint gondolnád.}
+\end{figure}
+
+%Given the value of $N$ and the number of problem proposals for each difficulty rating,
+%find the maximum number of rounds that can be created using these problems.
+Az $N$ értékének és az egyes feladatok nehézségének ismeretében határozd meg, hogy legfeljebb hány fordulót lehet összeállítani ezen feladatokból.
+%Each problem can only be used in at most one round.
+Minden feladatot legfeljebb egy fordulóban használhatsz fel!
+
+\begin{warning}
+%Among the attachments of this task you may find a template file \texttt{problemsetting.*} with a sample incomplete implementation.
+Az értékelő rendszerből letölthető csatolmányok közt találhatsz
+\texttt{problemsetting.*} nevű fájlokat, melyek a bemeneti adatok beolvasását valósítják meg az egyes programnyelveken.
+A megoldásodat ezekből a hiányos minta implementációkból kiindulva is elkészítheted.
+\end{warning}
+
+
+
+\InputFile
+
+%Each test contains multiple test cases. The first line of input contains a single integer $T$, the number of test cases.
+Minden teszt több tesztesetet tartalmaz. A bemenet első sora egyetlen $T$ egész számot tartalmaz, a tesztesetek számát.
+
+%The first line of each test case contains the integer $N$, the number of problems in an UPC round.
+Minden teszteset első sora egyetlen $N$ egész számot tartalmaz, az egy fordulóba választandó feladatok számát.
+
+%The second line of each test case contains $N$ integers $A_1, A_2,\ldots, A_N$, where $A_i$ denotes the number of problem proposals with a difficulty rating of $i$.
+A teszteset második sora $N$ darab,  $A_1, A_2,\ldots, A_N$ egész számot tartalmaz, ahol $A_i$ az $i$ nehézségű feladatok száma.
+
+%The third line of each test case contains $N-1$ integers $B_1,B_2,\ldots,B_{N-1}$, where $B_i$ denotes the number of problem proposals with a difficulty rating of $i.5$.
+A harmadik sorában $N-1$ darab $B_1,B_2,\ldots,B_{N-1}$ egész szám található, ahol $B_i$ az $i.5$ nehézségű feladatok száma.
+
+\OutputFile
+
+%For each test case, print a single integer, the maximum number of rounds that can be created from the available problems.
+Minden tesztesethez egyetlen egész számot adj meg, az adott nehézségű feladatokból összeállítható fordulók maximális számát.
+
+
+\Constraints
+\begin{itemize}[nolistsep, itemsep=2mm]
+    \item $1 \le T \le \constraints{MAXT}$.
+	\item $2 \le N \le \constraints{MAXN}$.
+	\item $0 \le A_i \le \constraints{MAXA}$ minden $i=1 \ldots N$-re.
+	\item $0 \le B_i \le \constraints{MAXB}$ minden $i=1 \ldots N-1$-re.
+    %\item The sum of $N$ across all test cases does not exceed $\constraints{MAXN}$.
+    \item Az $N$-ek összege tesztenként nem haladja meg a $\constraints{MAXN}$-t.
+\end{itemize}
+
+\Scoring
+A megoldásodat sok különböző tesztesetre lefuttatjuk. A tesztesetek részfeladatokba vannak csoportosítva. Egy-egy részfeladatot akkor tekintünk megoldottnak, ha volt legalább egy olyan beadásod, amely az adott részfeladat minden tesztesetére helyes megoldást adott.
+A feladat összpontszámát a megoldott részfeladatokra kapott pontszámok összege adja.
+%Your program will be tested against several test cases grouped in subtasks.
+%In order to obtain the score of a subtask, your program needs to correctly solve all of its test cases.
+
+\IIOTsubtask{0}{1}{Példák.}
+
+\IIOTsubtask{5}{1}{$B_i=0$ minden $i=1 \ldots N-1$-re.}
+
+\IIOTsubtask{10}{1}{$A_i \le 1$ minden $i=1 \ldots N$-re; $B_i \le 1$ minden $i=1 \ldots N-1$-re.}
+
+\IIOTsubtask{30}{2}{$A_i \le 100$ minden $i=1 \ldots N$-re; $B_i \le 100$ minden $i=1 \ldots N-1$-re.}
+
+\IIOTsubtask{20}{2}{$A_i=0$ minden $i=1 \ldots N$-re.}
+
+\IIOTsubtask{35}{2}{Nincsenek további megkötések.}
+
+
+\Examples
+\begin{example}
+\exmpfile{problemsetting.input0.txt}{problemsetting.output0.txt}%
+\end{example}
+
+
+\Explanation
+
+%In the first test case, there are $7$ problem proposals, which have difficulty ratings of $1.5$, $2$, $3$, $3.5$, $5$, $5.5$ and $6$, respectively. 
+Az \textbf{első tesztesetben} $7$ feladatjavaslat van, amelyeknek a nehézsége rendre $1.5$, $2$, $3$, $3.5$, $5$, $5.5$ és $6$.
+
+%We can create a single round using these problems:
+Ezekből a feladatokból egyetlen fordulót hozhatunk létre:
+\begin{itemize}
+%\item The problem with a difficulty rating of $1.5$ will be used as the first problem in the round.
+\item A $1.5$-es nehézségi szintű javaslat a forduló első feladata lesz.
+
+%\item The problem with a difficulty rating of $2$ will be used as the second problem in the round.
+\item A $2$-es nehézségi szintű javaslat a forduló második feladata lesz.
+
+%\item The problem with a difficulty rating of $3$ will be used as the third problem in the round.
+\item A $3$-as nehézségi szintű javaslat a forduló harmadik feladata lesz.
+
+%\item The problem with a difficulty rating of $3.5$ will be used as the fourth problem in the round.
+\item A $3.5$-es nehézségi szintű javaslat a forduló negyedik feladata lesz.
+
+%\item The problem with a difficulty rating of $5.5$ will be used as the fifth problem in the round.
+\item A $5.5$-es nehézségi szintű javaslat a forduló ötödik feladata lesz.
+
+%\item The problem with a difficulty rating of $6$ will be used as the sixth problem in the round.
+\item A $6$-os nehézségi szintű javaslat a forduló hatodik feladata lesz.
+
+\end{itemize}
+
+%In the second test case, we can show that it is impossible to create a complete round from the given proposals.
+Belátható, hogy nem hozható létre egyetlen teljes forduló sem a \textbf{második tesztesetben} található feladatokból.
+
+
+%In the third test case, it is possible to create the following rounds from the given proposals:
+A \textbf{harmadik tesztesetben} két fordulót állíthatunk össze, melyek ilyen nehézségű feladatokat tartalmaznak:
+\begin{itemize}
+\item $[1,1.5]$
+\item $[1.5,2]$
+\end{itemize}
+
+%In the fourth test case, it is possible to create the following rounds from the given proposals:
+A \textbf{negyedik tesztesetben} az alábbi fordulók létrehozása lehetséges:
+\begin{itemize}
+\item $[1.5,1.5,3.5,3.5,5.5,5.5]$
+\item $[1.5,1.5,3.5,3.5,5.5,5.5]$
+\item $[1.5,2.5,2.5,3.5,5.5,5.5]$
+\end{itemize}

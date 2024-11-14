@@ -1,0 +1,53 @@
+: GEN default gen/generator.cpp t mina maxa minb maxb
+: GEN binary gen/binary.cpp t p
+
+: VAL author gen/validator.cpp
+: VAL default gen/validate.py
+
+: CONSTRAINT 1 <= $t <= 10000
+: CONSTRAINT 1 <= $n <= 200000
+: CONSTRAINT 1 <= $a_i <= 1000000000
+: CONSTRAINT 1 <= $b_i <= 1000000000
+: CONSTRAINT 1 <= $sumn <= 200000
+
+: SUBTASK 0 Examples
+#STNAME: example
+: COPY statement/input0.txt
+
+: SUBTASK 5 b_i=0
+#STNAME: freepoints
+10000 0 1000000000 0 0
+1 0 1000000000 0 0
+1 1000000000 1000000000 0 0
+
+: SUBTASK 10 a_i,b_i<=1
+#STNAME: greedy
+: GEN binary
+10000 3
+1000 7
+100 20
+2 60
+1 120
+
+: SUBTASK 30 a_i,b_i<=100
+#STNAME: no_binary_search
+: STDEP a_i,b_i<=1
+10000 0 100 0 100 > $
+10000 80 100 80 100 > $
+1 0 100 0 100 > $
+1 100 100 100 100 > $
+
+: SUBTASK 20 a_i=0
+#STNAME: simplergreedy
+10000 0 0 0 1000000000 > $
+1 0 0 0 1000000000 > $
+1 0 0 1000000000 1000000000 > $
+
+: SUBTASK 35 tests
+#STNAME: tests
+: STDEP *
+10000 0 1000000000 0 1000000000
+10000 999000000 1000000000 999000000 1000000000
+1 0 1000000000 0 1000000000
+1 1000000000 1000000000 1000000000 1000000000
+
