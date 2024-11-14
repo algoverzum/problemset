@@ -1,0 +1,32 @@
+: GEN default gen/gen.cpp t nmax
+
+: VAL author gen/validator.cpp
+: VAL default gen/validate.py
+
+: CONSTRAINT 1 <= $t <= 100
+: CONSTRAINT 1 <= $a <= 1000000000
+: CONSTRAINT 1 <= $b <= 1000000000
+: CONSTRAINT 1 <= $k <= 1000000000
+
+: SUBTASK 0 Examples
+#STNAME: example
+: COPY statement/input0.txt
+
+: SUBTASK 30 nmax<=10000
+#STNAME: brute
+: STDEP Examples
+20 100
+50 1000
+70 5904
+100 10000
+
+: SUBTASK 70 tests
+#STNAME: tests
+: STDEP *
+100 24924244
+100 49294299
+100 95358368
+100 648649646
+100 964964966
+100 1000000000
+

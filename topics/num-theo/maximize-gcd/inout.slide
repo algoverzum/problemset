@@ -1,0 +1,9 @@
+repeat test upto T:
+
+input:
+
+int A, B, K;
+
+output:
+
+int G;

@@ -1,0 +1,121 @@
+\documentclass[hu]{cms-contest}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{bookmark}
+\usepackage{import}
+
+\usepackage{xcolor}
+\usepackage{afterpage}
+\usepackage{pifont,mdframed}
+\usepackage[bottom]{footmisc}
+
+\newcommand{\IIOTsubtask}[3]{\OISubtask{#1}{#2}{#3}}
+\newcommand{\limit}[1]{\limiti{#1}}
+
+\makeatletter
+\gdef\this@inputfilename{input}
+\gdef\this@outputfilename{output}
+\makeatother
+
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible
+}
+
+\begin{document}
+	\begin{contest}{Kódkupa -- IIOT Válogatóverseny}{Első forduló}{2024. november 11.}
+		\setContestLogo{kodkupa.png}
+
+		\begin{problem}{Villámosztás}{divisor}{}{}{}{}{}{3}
+
+\setcounter{@subtaskcounter}{-1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Alex imádja a változatos matematikai fejtörőket, és hogy megünnepelje a Kódkupa idei szezonjának kezdetét, az alábbi feladattal ajándékoz meg titeket.
+Adott három pozitív egész szám, $A$, $B$ és $K$: \textbf{pontosan} $K$ alkalommal ki kell választanotok az $A$ és $B$ számok egyikét, és meg kell növelnetek az értékét $1$-gyel.
+Az a cél, hogy végül az $A$ és $B$ számok legnagyobb közös osztójának értéke a lehető legnagyobb legyen.
+%Alex is passionate about diverse mathematical challenges, and as a gift for you to start the new IIOT season,
+%he gives you three positive integers $A$, $B$ and $K$.
+%He tells you that you must use \textbf{exactly} $K$ increments (i.e., increasing a value by one) on $A$ and $B$, in any way you want.
+%Now, he wants to find the greatest possible value of the greatest common divisor of the two integers obtained after the increments.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\linewidth]{divisor.png}
+    \caption{Alex elméje csak úgy zsong a matematikai feladványoktól.}
+\end{figure}
+
+Például, ha $A = 7$, $B = 11$ és $K = 3$, akkor az elérhető legnagyobb közös osztó a $7$ lesz, melyet úgy kapunk, hogy három alkalommal megnöveljük $B$ értékét $1$-gyel: így végül $A = 7$, $B = 14$ és $lnko(7, 14) = 7$.
+Továbbá, ha $A = 18$, $B = 9$ és $K = 3$, akkor a három növeléssel elő tudjuk állítani $A = 20$ és $B = 10$ értékeket, melyekre $lnko(20, 10) = 10$ adódik - be lehet látni, hogy ez a maximális elérhető legnagyobb közös osztó.
+%For example, if $A = 7$, $B = 11$ and $K = 3$, the answer is $7$, because we can use all $3$ increments on $B$ to make it equal to $14$ and $gcd(7, 14) = 7$.
+%However, if $A = 18$, $B = 9$ and $K = 3$, the answer is $10$ ($A = 20$, $B = 10$ after incerementing the values $3$ times).
+
+Alex úgy döntött, hogy $T$ ilyen számhármasra is próbára teszi tudásotokat. Mutassátok meg neki, hogy ti is legalább olyan jól boldogultok a matematikai feladványokkal, mint ő!
+%Alex decided to test you on $T$ such triplets. Show Alex that math is your friend as well!
+
+\begin{warning}
+Az értékelő rendszerből letölthető csatolmányok közt találhatsz
+\texttt{divisor.*} nevű fájlokat, melyek a bemeneti adatok beolvasását valósítják meg az egyes programnyelveken.
+A megoldásodat ezekből a hiányos minta implementációkból kiindulva is elkészítheted.
+\end{warning}
+%\begin{warning}
+%Among the attachments of this task you may find a template file \texttt{divisor.*} with a sample incomplete implementation.
+%\end{warning}
+
+\InputFile
+
+Az első sor a számhármasok $T$ számát tartalmazza. A következő $T$ sor mindegyike három pozitív egészet tartalmaz, rendre $A$, $B$ és $K$ értékét.
+%The first line contains $T$, the number of test cases. Each of the next $T$ lines contains three positive integers, $A$, $B$, and $K$.
+
+\OutputFile
+
+A kimenetre $T$ sort kell írni, mindegyik sor a válaszotokat tartalmazza a megfelelő számhármasra.
+%You need to write $T$ lines, each line containing the answer for the corresponding triple of values.
+
+\Constraints
+\begin{itemize}[nolistsep, itemsep=2mm]
+	\item $1 \le T \le 100$.
+	\item $1 \le A, B, K \le 10^9$.
+\end{itemize}
+
+\Scoring
+A megoldásodat sok különböző tesztesetre lefuttatjuk. A tesztesetek részfeladatokba vannak csoportosítva. Egy-egy részfeladatot akkor tekintünk megoldottnak, ha volt legalább egy olyan beadásod, amely az adott részfeladat minden tesztesetére helyes megoldást adott.
+A feladat összpontszámát a megoldott részfeladatokra kapott pontszámok összege adja.
+%Your program will be tested against several test cases grouped in subtasks.
+%In order to obtain the score of a subtask, your program needs to correctly solve all of its test cases.
+
+\IIOTsubtask{0}{1}{Példák.}
+
+\IIOTsubtask{30}{1}{$A, B, K \le 10\,000$.}
+
+\IIOTsubtask{70}{3}{Nincsenek további megkötések.}
+
+
+\Examples
+\begin{example}
+\exmpfile{input0.txt}{output0.txt}%
+\end{example}
+
+
+\Explanation
+
+A \textbf{példa teszteset} négy számhármast tartalmaz, melyek közül az első kettőt a feladatleírásban korábban részleteztük.
+
+A harmadik számhármasban az első két szám értéke $66$-ig, illetve $44$-ig növelhető a $K=14$ művelet felhasználásával.
+
+A negyedik számhármasban az első két szám értéke $131$-ig, illetve $262$-ig növelhető a $K=231$ művelettel.
+
+Megmutatható, hogy ezekre az értékekre lesz a legnagyobb közös osztó értéke maximális az egyes esetekben.
+%The first two triples of the \textbf{sample case} were explained in the statement.
+%For the third triple, you can increment the numbers to $66$ and $44$, respectively.
+%For the last triple, you can increment the numbers to $131$ and $262$, respectively.
+%It can be proved that these values are optimal.
+
+\end{problem}
+
+\end{contest}
+\end{document}
