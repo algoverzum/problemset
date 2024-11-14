@@ -1,1 +1,0 @@
-../statement/output0.txt
