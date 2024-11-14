@@ -1,18 +1,7 @@
-\documentclass[hu]{cms-contest}
-
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
-\usepackage{bookmark}
-\usepackage{import}
-
 \usepackage{xcolor}
 \usepackage{afterpage}
 \usepackage{pifont,mdframed}
 \usepackage[bottom]{footmisc}
-
-\newcommand{\IIOTsubtask}[3]{\OISubtask{#1}{#2}{#3}}
-\newcommand{\limit}[1]{\limiti{#1}}
 
 \makeatletter
 \gdef\this@inputfilename{input}
@@ -23,12 +12,6 @@
   basicstyle=\ttfamily,
   columns=fullflexible
 }
-
-\begin{document}
-	\begin{contest}{Kódkupa -- IIOT Válogatóverseny}{Első forduló}{2024. november 11.}
-		\setContestLogo{kodkupa.png}
-
-		\begin{problem}{Villámosztás}{divisor}{}{}{}{}{}{3}
 
 \setcounter{@subtaskcounter}{-1}
 
@@ -97,7 +80,7 @@ A feladat összpontszámát a megoldott részfeladatokra kapott pontszámok öss
 
 \Examples
 \begin{example}
-\exmpfile{input0.txt}{output0.txt}%
+\exmpfile{divisor.input0.txt}{divisor.output0.txt}%
 \end{example}
 
 
@@ -114,8 +97,3 @@ Megmutatható, hogy ezekre az értékekre lesz a legnagyobb közös osztó ért�
 %For the third triple, you can increment the numbers to $66$ and $44$, respectively.
 %For the last triple, you can increment the numbers to $131$ and $262$, respectively.
 %It can be proved that these values are optimal.
-
-\end{problem}
-
-\end{contest}
-\end{document}
