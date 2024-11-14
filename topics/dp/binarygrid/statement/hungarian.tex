@@ -1,0 +1,145 @@
+\usepackage{xcolor}
+\usepackage{afterpage}
+\usepackage{pifont,mdframed}
+\usepackage[bottom]{footmisc}
+
+\makeatletter
+\gdef\this@inputfilename{input}
+\gdef\this@outputfilename{output}
+\makeatother
+
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible
+}
+
+\setcounter{@subtaskcounter}{-1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Adott egy $A$ táblázat, amely $N$ sorból és $M$ oszlopból áll, és csak $0$-t és $1$-et tartalmaz. A sorokat és oszlopokat $0$-tól indexeljük.
+A következő műveleteket végezhetjük el $A$-n:
+
+%You are given a grid $A$ consisting of $N$ rows and $M$ columns, containing only $0$s and $1$s.
+%You can do the following operations on $A$:
+
+\begin{itemize}
+  \item Választunk egy $i$ indexet ($0 \le i \le N - 1$), és az $i$-edik sort invertáljuk (azaz a sorban minden $0$-ból $1$, és minden $1$-ből $0$ lesz).
+  \item Választunk egy $j$ indexet ($0 \le j \le M - 1$), és a $j$-edik oszlopot invertáljuk (azaz az oszlopban minden $0$-ból $1$, és minden $1$-ből $0$ lesz).
+%Select a row $i$ ($0 \le i \le N - 1$) and invert it (i.e. flip every value in that row, such that each $0$ becomes a $1$ and each $1$ becomes a $0$).
+%  \item Select a column $j$ ($0 \le j \le M - 1$) and invert it.
+\end{itemize}
+
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.6\linewidth]{binarygrid.jpg}
+%    \caption{This is a nice caption.}
+%\end{figure}
+
+Egy táblázat akkor \textbf{szép}, ha nincs három egymást követő egyenlő érték ugyanabban a sorban, illetve oszlopban.
+Formálisabban: nincs olyan $i, j$ ($0 \le i \le N - 1, 0 \le j \le M - 3$), hogy $A_{i, j} = A_{i, j + 1} = A_{i, j + 2}$,
+és nincs olyan $i, j$ ($0 \le i \le N - 3, 0 \le j \le M - 1$), hogy $A_{i, j} = A_{i + 1, j} = A_{i + 2, j}$.
+
+A feladatunk az, hogy eldöntsük, lehet-e az adott táblázatot széppé tenni, és ha igen, akkor megmondjuk az ehhez szükséges minimális műveletszámot.
+
+%A binary grid is \textbf{beautiful} if there are no three consecutive equal values in the same row or in the same column.
+%More formally, there is no $i, j$ ($0 \le i \le N - 1, 0 \le j \le M - 3$) such that $A_{i, j} = A_{i, j + 1} = A_{i, j + 2}$,
+%and there is no $i, j$ ($0 \le i \le N - 3, 0 \le j \le M - 1$) such that $A_{i, j} = A_{i + 1, j} = A_{i + 2, j}$.
+
+%Your task is to decide whether it is possible to make a given grid beautiful, and if so, then report the minimum number of operations to do it.
+
+\begin{warning}
+Az értékelő rendszerből letölthető csatolmányok közt találhatsz \texttt{binarygrid.*} nevű fájlokat, melyek a bemeneti adatok beolvasását valósítják meg az egyes programnyelveken. A megoldásodat ezekből a hiányos minta implementációkból kiindulva is elkészítheted.
+\end{warning}
+%\begin{warning}
+%Among the attachments of this task you may find a template file \texttt{binarygrid.*} with a sample %incomplete implementation.
+%\end{warning}
+
+\InputFile
+A bemenet első sora egyetlen egész számot tartalmaz, a tesztesetek $T$ számát.
+
+Ezután $T$ teszteset következik, mindegyik előtt egy üres sor.
+
+Minden egyes teszteset a következő sorokból áll:
+\begin{itemize}
+\item egy sor, amely két szóközzel elválasztott egész számot tartalmaz, $N$-et és $M$-et, a táblázat sorainak és oszlopainak a számát,
+\item további $N$ sor, melyek mindegyike $M$ darab \texttt{0} vagy \texttt{1} számjegyet tartalmaz, a táblázat egy sorának elemeit. Az $i$-edik sor $j$-edik számjegye az $A_{i-1,j-1}$ értéket határozza meg.
+\end{itemize}
+
+%The first line of the input file contains a single integer $T$, the number of testcases.
+%$T$ testcases follow, each preceded by an empty line.
+
+%Each testcase consists of:
+%\begin{itemize}
+%  \item a line containing two space-separated integers $N$ and $M$.
+%  \item $N$ lines, the ($i + 1$)-th of which consisting of string $A_{i}$ consisting of $0$s and $1$s representing row $i$ of the grid.
+%\end{itemize}
+
+
+\OutputFile
+
+Mind a $T$ tesztesetre egyetlen egész számot kell kiírni (összesen $T$ sor lesz).
+Ha a táblázatot széppé lehet változtatni, akkor az ehhez szükséges minimális műveletszámot, ellenkező esetben, ha ez lehetetlen, akkor a \texttt{-1}-et írd ki.
+%The output file must contain $T$ lines, each consisting of a single integer, the answers of the testcases.
+%If it is possible to make a grid beautiful, then the answer to the testcase is the minimum number of operations to do so, otherwise, if it is impossible, then the answer is \texttt{-1}.
+
+
+\Constraints
+\begin{itemize}[nolistsep, itemsep=2mm]
+  \item $1 \le T \le 100$.
+  \item $1 \le N \le \constraints{MAXN}$.
+  \item $1 \le M \le \constraints{MAXM}$.
+  \item $A_{i, j}$ (a táblázat $i$-edik sorának $j$-edik eleme) $0$ vagy $1$ minden $i = 0\ldots N-1$ és $j = 0\ldots M-1$ esetén.
+  \item Az $N$ értékek összege az összes tesztesetben legfeljebb $2000$.
+  %The sum of $N$ over all testcases is at most $2000$.
+  \item Az $M$ értékek összege az összes tesztesetben legfeljebb $2000$.
+  %The sum of $M$ over all testcases is at most $2000$.
+\end{itemize}
+
+\Scoring
+%Your program will be tested against several test cases grouped in subtasks.
+%In order to obtain the score of a subtask, your program needs to correctly solve all of its test cases.
+A megoldásodat sok különböző tesztesetre lefuttatjuk. A tesztesetek részfeladatokba vannak csoportosítva. Egy-egy részfeladatot akkor tekintünk megoldottnak, ha volt legalább egy olyan beadásod, amely az adott részfeladat minden tesztesetére helyes megoldást adott.
+A feladat összpontszámát a megoldott részfeladatokra kapott pontszámok összege adja.
+
+\IIOTsubtask{0}{1}{Példák.}
+
+\IIOTsubtask{9}{2}{$N \le 10$ és $M \le 10$. Az $N$ értékek összege az összes tesztesetben nem haladja meg a $10$-et, és az $M$ értékek összege az összes tesztesetben nem haladja meg a $10$-et.}
+
+\IIOTsubtask{12}{2}{$N = 1$.}
+
+\IIOTsubtask{20}{4}{$N \le 10$. Az $N$ értékek összege az összes tesztesetben nem haladja meg a $10$-et.}
+
+\IIOTsubtask{59}{5}{Nincsenek további megkötések.}
+
+
+\Examples
+\begin{example}
+\exmpfile{binarygrid.input0.txt}{binarygrid.output0.txt}%
+\end{example}
+
+
+\Explanation
+Az \textbf{első példában} egy lehetséges módja annak, hogy a táblázatot 3 művelet segítségével széppé tegyük:
+\begin{itemize}
+\item Invertáljuk a $0$.~oszlopot.
+\item Invertáljuk a $2$.~sort.
+\item Invertáljuk az $1$.~oszlopot.
+\end{itemize}
+Igazolható, hogy 2 művelet nem elég.
+
+A \textbf{második példában} a táblázat már szép, így nincs szükség műveletekre.
+
+A \textbf{harmadik példa} esetében a táblázatot nem lehet az említett műveletekkel széppé tenni.
+%Explanation of the first sample:
+%
+%In the \textbf{first testcase}, a possible way to make the grid beautiful using 3 operations is as follows:
+%\begin{itemize}
+%  \item Invert column $0$.
+%  \item Invert row $2$.
+%  \item Invert column $1$.
+%\end{itemize}
+%
+%In the \textbf{second testcase}, the grid is already beautiful thus no operations are needed.
+%In the \textbf{third testcase}, it is impossible to make the grid beautiful using the mentioned operations.

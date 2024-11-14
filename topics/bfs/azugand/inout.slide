@@ -1,0 +1,9 @@
+input:
+
+int N, Q;
+int V[N];
+int queries[Q][2];
+
+output:
+
+int cost[Q];

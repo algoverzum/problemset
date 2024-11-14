@@ -1,0 +1,118 @@
+\usepackage{xcolor}
+\usepackage{afterpage}
+\usepackage{pifont,mdframed}
+\usepackage[bottom]{footmisc}
+
+\makeatletter
+\gdef\this@inputfilename{input}
+\gdef\this@outputfilename{output}
+\makeatother
+
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible
+}
+
+\setcounter{@subtaskcounter}{-1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Azugand, the city from the famous Prahovand Valley, is known for its peculiar structure:
+%it has $N$ intersections, numbered from $1$ to $N$, all of which has an assigned value $V_i$.
+%Two distinct intersections have a street between them if and only if the bitwise AND of their values is non-zero.
+
+Azugand, a Prahovand-völgy híres városa sajátos úthálózatáról ismert:
+$N$ kereszteződése van, amelyek $1$-től $N$-ig vannak számozva, és mindegyiknek van egy $V_i$ hozzárendelt értéke.
+Két különböző kereszteződés között akkor és csak akkor van utca, ha értékeik bitenkénti ÉS-e nem nulla.
+
+%Formally, you are given a graph with $N$ vertices, each vertex having a value $V_i$ assigned to it.
+%We have an edge between two distinct vertices $i$ and $j$ iff $V_i \ \& \ V_j \neq 0$.
+
+Formálisan, adott egy $N$ csúcsú gráf, amelynek minden egyes csúcsához egy $V_i$ értéket rendeltünk.
+Két különböző, $i$ és $j$ csúcs között akkor és csak akkor van él, ha $V_i \ \& \ V_j \neq 0$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{azugand.jpg}
+    \caption{Üdv Azugand városában!}
+\end{figure}
+
+%Andrei, a well-known child from the valley, wants to make a table with the shortest distances between two points of interest,
+%but he is overwhelmed by the number of queries he wants to solve, so he asks for your help!
+%You are given $Q$ queries, in which you have to compute $cost(X, Y)$.
+%We define $cost(X, Y)$ as the minimum number of \textbf{edges} that are in the shortest path in the graph between vertices $X$ and $Y$.
+%If we can't reach vertex $Y$ from vertex $X$, then the value of $cost(X, Y)$ is $-1$.
+
+Egy ismert fiú a völgyből, Andrei egy táblázatot szeretne készíteni bizonyos pontok közötti legrövidebb távolságokról, de a sok számolás túlzottan leterhelhi, ezért a segítségedet kéri!
+Adott $Q$ lekérdezés, mindegyikben egy-egy $cost(X, Y)$ értékeket kell kiszámítanod.
+A $cost(X, Y)$ a gráfban az $X$ és $Y$ csúcsok között a legrövidebb úton lévő \textbf{élek} száma.
+Ha az $X$ csúcsból nem tudjuk elérni az $Y$ csúcsot, akkor a $cost(X, Y)$ értéke $-1$.
+
+\begin{warning}
+Az értékelő rendszerből letölthető csatolmányok közt találhatsz
+\texttt{azugand.*} nevű fájlokat, melyek a bemeneti adatok beolvasását valósítják meg az egyes programnyelveken.
+A megoldásodat ezekből a hiányos minta implementációkból kiindulva is elkészítheted.
+\end{warning}
+
+\InputFile
+%The first line of input contains two integers $N$ and $Q$, the number of vertices in the graph, and the number of queries, respectively.
+
+A bemenet első sorában két egész szám van: $N$ és $Q$, a gráf csúcsainak száma, illetve a lekérdezések száma.
+
+%The next line contains $N$ integers $V_1, V_2, \dots, V_N$, the values assigned to the vertices of the graph.
+
+A második sorban $N$ egész szám van: $V_1, V_2, \dots, V_N$, a gráf csúcsaihoz rendelt értékek.
+
+% Each of the next $Q$ lines of the input contains two distinct integers $X_i$ and $Y_i$, the vertices for which you must compute $cost(X_i, Y_i)$.
+
+A  következő $Q$ sor mindegyike két-két különböző egész számot tartalmaz: $X_i$-t és $Y_i$-t, két csúcs azonosítóját, amelyekre ki kell számolni a $cost(X_i, Y_i)$ értéket.
+
+\OutputFile
+% Print $Q$ integers, each one on a separate line: the value of $cost(X_i, Y_i)$ for each query.
+$Q$ egész számot írj ki, mindegyiket külön sorban: a $cost(X_i, Y_i)$ értéket minden egyes lekérdezéshez.
+
+\Constraints
+\begin{itemize}[nolistsep, itemsep=2mm]
+	\item $1 \le N \le \constraints{MAXN}$.
+	\item $1 \le Q \le \constraints{MAXQ}$.
+	\item $0 \le V_i < 2^{\constraints{MAXB}}$ minden $i = 1\ldots N$ -re.
+	\item $1 \le X_i \neq Y_i \le N$ minden $i = 1\ldots Q$-ra.
+\end{itemize}
+
+\Scoring
+A megoldásodat sok különböző tesztesetre lefuttatjuk. A tesztesetek részfeladatokba vannak csoportosítva. Egy-egy részfeladatot akkor tekintünk megoldottnak, ha volt legalább egy olyan beadásod, amely az adott részfeladat minden tesztesetére helyes megoldást adott.
+A feladat összpontszámát a megoldott részfeladatokra kapott pontszámok összege adja.
+%Your program will be tested against several test cases grouped in subtasks.
+%In order to obtain the score of a subtask, your program needs to correctly solve all of its test cases.
+
+\IIOTsubtask{0}{1}{Példák.}
+
+\IIOTsubtask{7}{2}{$N \le 500, Q \le 500$.}
+
+\IIOTsubtask{23}{3}{$Q \le 1$.}
+
+\IIOTsubtask{21}{4}{$V_i < 2^{5}$ minden $i=1\ldots N$-re.}
+
+\IIOTsubtask{49}{5}{Nincsenek további megkötések.}
+
+
+\Examples
+\begin{example}
+\exmpfile{azugand.input0.txt}{azugand.output0.txt}%
+\exmpfile{azugand.input1.txt}{azugand.output1.txt}%
+\end{example}
+
+
+\Explanation
+Az \textbf{első példa bemenetben}:
+\begin{itemize}
+%	\item In the first query $V_1 = 9$ and $V_2 = 3$, $9\& 3 = 1$, so there is an edge between vertices $1$ and $2$, so the minimum distance is $1$. 
+\item Az első lekérdezésben $V_1 = 9$ és $V_2 = 3$, $9\& 3 = 1$, tehát van egy él az $1$-es és $2$-es csúcs között, tehát a minimális távolság $1$. 
+%	\item In the second query $V_2 = 3$ and $V_4 = 6$, $3\& 6 = 2$, so there is an edge between vertices $2$ and $4$, so the minimum distance is $1$. 
+\item A második lekérdezésben $V_2 = 3$ és $V_4 = 6$, $3\& 6 = 2$, tehát van egy él a $2$-es és $4$-es csúcs között, tehát a minimális távolság $1$. 
+ %\item In the third query $V_4 = 6$ and $V_1 = 9$, $6\& 9 = 0$, so there is no edge between vertices $4$ and $1$, so the minimum distance is at least $2$. For the path $4, 2, 1$ the values are $6, 3, 9$ respectively which means that there is an edge between vertices $4$ and $2$ also between $2$ and $1$, so so there is a path of length $2$ between vertices $4$ and $1$.
+ \item A harmadik lekérdezésben $V_4 = 6$ és $V_1 = 9$, $6\& 9 = 0$, tehát nincs él a $4$-es és $1$-es csúcsok között, tehát a minimális távolság legalább $2$. A $4, 2, 1$ útvonal esetében a csúcsok értékei $6, 3, 9$, ami azt jelenti, hogy a $4$-es és $2$-es csúcs között van egy él, valamint a $2$-es és $1$-es között is, tehát a $4$-es és $1$-es csúcs között van egy $2$ hosszúságú útvonal.
+%	\item In the fourth query $V_1 \& V_3 = 0$, $V_2 \& V_3 = 0$ and $V_4 \& V_3 = 0$, which means that there are no edge connected to vertex $3$, so there is no path between vertices $2$ and $3$.
+\item A negyedik lekérdezésben $V_1 \& V_3 = 0$, $V_2 \& V_3 = 0$ és $V_4 \& V_3 = 0$, ami azt jelenti, hogy a $3$-as csúcsból nem indul ki egy él sem, tehát nincs út a $2$-es és $3$-as csúcs között.
+\end{itemize}

@@ -1,0 +1,6 @@
+repeat test upto T:
+input:
+int N, M;
+{string S;}[N];
+output:
+int K;
