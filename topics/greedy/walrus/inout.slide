@@ -1,0 +1,10 @@
+repeat test upto T:
+
+input:
+
+int N;
+char c[N];
+
+output:
+
+int W, S;

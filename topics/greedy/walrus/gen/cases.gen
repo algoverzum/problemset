@@ -1,0 +1,55 @@
+: GEN default gen/gen.cpp t p
+: GEN sleeping gen/gensleeping.cpp t
+: GEN small gen/gensmall.cpp nmax
+: GEN manyintervals gen/manyintervals.cpp t n
+: GEN maxintervals gen/maxintervals.cpp t n
+: GEN subtask3 gen/subtask3.cpp t nmax p
+
+: VAL author gen/validator.cpp
+: VAL default gen/validate.py
+
+: CONSTRAINT 1 <= $t <= 10000
+: CONSTRAINT 1 <= $n <= 300000
+: CONSTRAINT 1 <= $sumn <= 300000
+
+: SUBTASK 0 Examples
+#STNAME: example
+: COPY statement/input0.txt
+
+: SUBTASK 10 all_walruses_sleep
+#STNAME: all_walruses_sleep
+: GEN sleeping
+1
+10000
+
+: SUBTASK 20 n<=10
+#STNAME: backtracking
+: GEN small
+10
+
+: SUBTASK 35 t<=10,n<=2000
+#STNAME: slowsort
+: STDEP Examples
+: GEN manyintervals
+10 2000
+: GEN maxintervals
+10 2000
+: GEN subtask3
+10 2000 3
+10 2000 10
+10 2000 100
+10 2000 1000
+
+: SUBTASK 35 tests
+#STNAME: tests
+: STDEP *
+10000 2
+1 2
+1 10
+1 100
+1 1000
+: GEN manyintervals
+1 300000
+: GEN maxintervals
+1 300000
+
