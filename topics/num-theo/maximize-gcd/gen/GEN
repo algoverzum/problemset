@@ -12,7 +12,7 @@
 #ST: 0
 #STNAME: Examples
 # Testcase 0
-#COPY: statement/divisor.input0.txt
+#COPY: statement/input0.txt
 
 # Subtask 1
 #ST: 30
