@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- A két szám összege állandó lesz (A+B+K).
+- Ezáltal csak olyan számok jönnek szóba legnagyobb közös osztóként, amelyek A+B+K-nak osztói. Végig tudjuk próbálni az összes lehetséges osztót.
+- Figyeljünk arra, hogy long long típust használjunk, valamint arra is, hogy az osztókeresés során az összeg gyökéig menjünk el, és minden osztó párját is vizsgáljuk (hogy elég gyors legyen a megoldás).
+- Egy osztó vizsgálatakor az A és B számok maradékaiból meg tudjuk mondani, hogy mennyivel kell őket növelni, és kérdés, hogy ezek összege nem túl nagy-e.

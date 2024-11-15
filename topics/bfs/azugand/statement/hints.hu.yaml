@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- 'Ha teljesen fel akarnánk építeni a gráfot, akkor túl sok éle lenne. Egy trükkel tudjuk szignifikánsan csökkenteni az élek számát: vegyünk fel pluszban segédcsúcsokat. Vajon milyen segédcsúcsokról van szó?'
+- Minden bithez tartozzon egy segédcsúcs, amihez azokat a csomopóntokat kötjük hozzá éllel, amelyikben az a bit 1-es. Így ezen a segédcsúcson keresztül fognak csatlakozni egymáshoz a csúcsok, nem kell mindegyiket mindegyikkel összekötni. A kérdések megválaszolásához pedig számoljunk ki bizonyos távolságértékeket előre. Miket érdemes kiszámolni?
+- Az összes felvett segédcsúcstól számoljuk ki az egyes csomópontok távolságát (egy-egy szélességi bejárással).
+- Bármely csúcsból elindulva minden útvonalon az első lépés egy segédcsúcsba vezet, onnan pedig már tudjuk a legkisebb távolságát bármely csúcsnak. Az összes lehetséges első lépést megvizsgálhatjuk (azok lesznek, ahol a kezdőcsúcs értékében 1-es bit van.)

@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Használjunk bináris keresést.
+- Azt kell tudnunk eldönteni, hogy egy megadott x mennyiségű fordulóra van-e elég feladat. Ezt megtehetjük mohón.
+- Használjuk el az összes 1 nehézségű feladatot az 1-es pozíciókba, és ha kell még, akkor a 1.5-esekből ki tudjuk pótolni, majd a maradék 1.5-esek a 2-es pozícióba tehetjük és így tovább... Ha sehol nem fogy el a feladat, akkor megoldható.

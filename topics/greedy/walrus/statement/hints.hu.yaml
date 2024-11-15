@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Ha sok alvó rozmár (.) van egymás mellett, közülük elég egyet felébreszteni, aztán onnantól kezdve végigfut az ébresztés az összes mellette lévőn, egészen addig, amig bele nem ütközünk egy ébren lévőbe (-).
+- Tehát annyi rozmárt kell felébreszteni, amennyi a . -okból álló szakaszok száma. És mit csináljunk ahhoz, hogy minél előbb felébredjenek? Melyiket válasszuk egy szakaszon belül?
+- Egy szakaszon belül a középső rozmárt érdemes felébreszteni (páros hosszú esetén a középső kettő valamelyikét). Másodpercenként egy szakaszban tudjuk így indítani az ébresztést. Milyen sorrendben menjünk végig a szakaszokon?
+- A szakaszok hossza szerinti csökkenő sorrend lesz a legjobb módszer.

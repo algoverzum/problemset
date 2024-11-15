@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- A sorok és oszlopok tulajdonképpen függetlenül működnek, hiszen ha egy teljes sort invertálunk, az nem változtat azon, hogy benne a szomszédos elemek azonosak-e vagy nem. Viszont az oszlopokat invertálva megváltozik a sorokban az egymást követő elemek viszonya.
+- Számoljuk tehát külön, hogy legalább hány oszlopot kell invertálnunk, hogy semelyik sorban ne legyen három azonos elem egymás mellett (ha lehetséges), illetve ugyanezt fordítva. Használjunk dinamikus programozást.
+- Legyen egy dp[0..n-1][0..1][0..1] tömb, ahol dp[i][x][y] azt adja meg, hogy az i-edik oszlopig bezárólag legalább hány oszlopot kell invertálni ahhoz, hogy egyik sorban se legyen három szomszédos elem, feltéve, hogy az x és y 0/1 értékek azt adják meg, hogy az utolsó két oszlop konkrétan invertáltuk-e. Ha ez nem lehetséges akkor állítsuk plusz végtelenre.
