@@ -1,0 +1,16 @@
+---
+# General info
+name: same-3-letters
+title: Same 3 Letters
+title_translations:
+  hu: Same 3 Letters
+
+# Technical info
+memory_limit: 256
+time_limit: 1.0
+infile: ""
+outfile: ""
+
+# Other stuff
+score_mode: max_subtask
+feedback_level: full

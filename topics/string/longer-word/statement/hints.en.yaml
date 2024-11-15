@@ -1,0 +1,5 @@
+---
+- How can we determine the length of a `string`?
+- cpp: Use the `string.size()` method!
+  py: Use the `len(string)` function!
+- Once the length of the two words is calculated, you just need to compare them.

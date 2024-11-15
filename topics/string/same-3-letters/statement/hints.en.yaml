@@ -1,0 +1,4 @@
+---
+- How to access the $i$-th character of a `string`?
+- We can use index `string[i]`.
+- So we just need to compare the three characters (pairwise).

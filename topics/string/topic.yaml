@@ -1,0 +1,19 @@
+---
+id: string
+name: String
+problems:
+  - problem_id: longer-word
+    type: REQUIRED
+  - problem_id: same-3-letters
+    type: REQUIRED
+prerequisites:
+  - for-loop
+  - if-then-else
+dependents:
+visualization:
+  image_filename: 5.svg
+  position:
+    x: 200
+    y: 100
+
+# Notes:

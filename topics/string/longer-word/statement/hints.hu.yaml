@@ -1,0 +1,5 @@
+---
+- Hogyan lehet egy `string` hosszát meghatározni?
+- cpp: Használjuk a `string.size()` metódust!
+  py: Használjuk a `len(string)` függvényt!
+- Ha a két szó hosszát kiszámoltuk, akkor csak össze kell hasonlítani őket.

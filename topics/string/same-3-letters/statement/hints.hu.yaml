@@ -1,0 +1,4 @@
+---
+- Hogyan lehet egy `sztring` $i$-edik karakterét elérni?
+- Használhatunk indexet, `sztring[i]`.
+- Tehát csak össze kell hasonlítanunk a három karaktert (páronként).
