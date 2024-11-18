@@ -50,7 +50,8 @@ int main() {
         int ans = INF, x, y;
         cin >> x >> y;
         for (int j = 0; j <= 20; j++) {
-            if (v[x] & (1 << j)) ans = min(ans, dist[j][y]);
+            if (v[x] & (1 << j))
+                ans = min(ans, dist[j][y]);
         }
         cout << (ans == INF ? -1 : ans / 2) << '\n';
     }

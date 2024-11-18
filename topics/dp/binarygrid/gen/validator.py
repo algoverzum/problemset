@@ -23,12 +23,28 @@ def run(f, st):
         assert 1 <= M <= MAXM
         sum_n += N
         sum_m += M
-        assert 1 <= sum_n <= SUMN, str(str(sum_n) + " " + str(T) + " " + str(MAXN) + " " + str(SUMN) + " " + str(MAXM) + " " + str(st) + " " + str(N) + " " + str(M))
+        assert 1 <= sum_n <= SUMN, str(
+            str(sum_n)
+            + " "
+            + str(T)
+            + " "
+            + str(MAXN)
+            + " "
+            + str(SUMN)
+            + " "
+            + str(MAXM)
+            + " "
+            + str(st)
+            + " "
+            + str(N)
+            + " "
+            + str(M)
+        )
         assert 1 <= sum_m <= MAXM
         for i in range(N):
             S = next(f).strip()
             assert len(S) == M
-            assert all('0' <= c <= '1' for c in S)
+            assert all("0" <= c <= "1" for c in S)
     assert next(f, None) is None
 
 

@@ -6,6 +6,12 @@ problems:
     type: REQUIRED
   - problem_id: same-3-letters
     type: REQUIRED
+  - problem_id: count-letter
+    type: REQUIRED
+  - problem_id: replace-letter
+    type: REQUIRED
+  - problem_id: palindrom
+    type: REQUIRED
 prerequisites:
   - for-loop
   - if-then-else

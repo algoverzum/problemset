@@ -38,14 +38,10 @@ def run(N, A, B):
     unique = randint(A, B)
     codes = [unique]
 
-    for i in range(N - 1):
+    while len(codes) < N:
         temp = randint(A, B)
         if temp != unique:
             codes.append(temp)
-        elif temp == B:
-            codes.append(temp - 1)
-        else:
-            codes.append(temp + 1)
     shuffle(codes)
     print(*codes)
 
