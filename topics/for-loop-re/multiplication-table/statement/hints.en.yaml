@@ -1,0 +1,13 @@
+---
+- Let's write a for loop that goes from 1 to n, and print a row of the table in it. What do we need for printing a row?
+- We need another for loop that goes from 1 to n and it is completely *inside* the outer loop.
+- cpp: |
+    The nested for loops can look like this:
+        for (int i = 1; i <= n; i++) {
+          for (int j = 1; j <= n; j++) {
+  py: |
+    The nested for loops can look like this:
+        for i in range(1, n + 1):
+          for j in range(1, n + 1):
+- And within the inner loop, print the product of i and j followed by a space.
+- Don't forget to put a line break at the end of each line, i.e. after the inner for loop, but still inside the outer for loop.

@@ -8,13 +8,13 @@ e) az ötödik sorba írjuk ki a második felét (ha páratlan hosszú, akkor a 
 
 
 ### Bemenet
-    A bemenetben egyetlen $S$ szó van.
+A bemenetben egyetlen $S$ szó van.
 
 ### Kimenet
-    5 szót kell kiírni, mindet külön sorba.
+5 szót kell kiírni, mindet külön sorba.
 
 ### Korlátok
-    * $3 \le S.size() \le 1000$
+* $3 \le S.size() \le 1000$
 
 ### Példa bemenet
     almafalevel
@@ -25,7 +25,4 @@ e) az ötödik sorba írjuk ki a második felét (ha páratlan hosszú, akkor a 
     mav
     almaf
     alevel
-    
-### A példa magyarázata
-
 
