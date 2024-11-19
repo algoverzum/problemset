@@ -1,0 +1,13 @@
+---
+- Írjunk egy for ciklust, ami 1-től n-ig megy, és a táblázat egy sorát írjuk ki benne. Hogy írjunk ki egy sort?
+- Ehhez is egy for ciklus kell, ami szintén 1-től n-ig megy, és a külső ciklus *belsejében* van (belső ciklus).
+- cpp: |
+    Az egymásba ágyazott for ciklusok így nézhetnek ki:
+        for (int i = 1; i <= n; i++) {
+          for (int j = 1; j <= n; j++) {
+  py: |
+    Az egymásba ágyazott for ciklusok így nézhetnek ki:
+        for i in range(1, n + 1):
+          for j in range(1, n + 1):
+- A belső cikluson belül pedig i és j szorzatát kell kiírni, amit szóköz kövessen.
+- Ne felejts el sortörést tenni minden sor végére, azaz a belső for ciklus után, de még a külső for cikluson belül.
