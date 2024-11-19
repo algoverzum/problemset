@@ -9,28 +9,32 @@ from inspect import signature
 usage = """Generator for "replace-letter".
 
 Parameters:
-* A (minimum value)
+* N (length of the word)
 * B (maximum value)
 * S (seed)
 
 Constraint:
-* %d <= A <= %d
-* %d <= B <= %d
+* %d <= N <= %d
 """ % (
-    MIN,
-    MAX,
     MIN,
     MAX,
 )
 
 
-def run(A, B):
+def run(N):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    word = ""
+    for _ in range(N - 1):
+        chance = randint(1, 10)
+        if chance < 3:
+            word += "a"
+        else:
+            word += chr(randint(ord("a"), ord("z")))
+    print(word)
 
 
 if __name__ == "__main__":

@@ -1,20 +1,20 @@
 ## Palindrom
-TODO
+Lajos könyvet olvas és szeretné eldönteni, hogy melyik szó palindrom. Segíts neki! Egy adott szóról, döntsd el, hogy visszafele olvasva ugyan azt a szót kapjuk-e és ettől függően írd ki, hogy "YES" vagy "NO".
 
 ### Bemenet
-A bemenetben egyetlen egész szám van: $N$ - 
+A bemenetben egyetlen string van: $S$
 
 ### Kimenet
-Egyetlen számot kell kiírnod, 
+A kimenet első és egyetlen sorába azt kell kiírnod, hogy "YES", ha valóban palindrom a szó és azr, hogy "NO", ha nem az.
 
 ### Korlátok
-* $1 \le N \le 100$
+* $1 \le |S| \le 256$
 
 ### Példa bemenet
-    5
+    icipici
 
 ### Példa kimenet
-    42
+    YES
 
 ### A példa magyarázata
-
+Az icipici szó visszafele olvasva is az, hogy icipici.
