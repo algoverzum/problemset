@@ -3,7 +3,7 @@
 name: string-slices
 title: String Slices
 title_translations:
-  hu: Szó Szeletek
+  hu: Szó szeletek
 
 # Technical info
 memory_limit: 256

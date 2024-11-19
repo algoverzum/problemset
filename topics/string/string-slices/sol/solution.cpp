@@ -13,7 +13,7 @@ int main() {
         cout << S[i];
     }
     cout << '\n';
-    for (int i = S.size() - 1; i >= 0; i -= 2) {
+    for (int i = S.size() - 2; i >= 0; i -= 2) {
         cout << S[i];
     }
     cout << '\n';

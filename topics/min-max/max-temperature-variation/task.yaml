@@ -3,7 +3,7 @@
 name: max-temperature-variation
 title: Max Temperature Variation
 title_translations:
-  hu: Legnagyobb Hőingás
+  hu: Legnagyobb hőingás
 
 # Technical info
 memory_limit: 256

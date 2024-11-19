@@ -8,23 +8,23 @@ e) on the fifth line, write every second letter (starting from the second)!<br /
 f) in the sixth line, write every second letter of the word, starting backwards!
 
 ### Input
-The input contains a single word $S$.
+The input contains a single word $S$ (without spaces), its length is denoted by $N$ below.
 
 ### Output
-Write 6 words, each on a separate line.
+Print 6 strings, each on a separate line.
 
 ### Constraints
-* $3 \le S.size() \le 1000$
+* $3 \le N \le 1000$
 
 ### Example input
-    Abrakadabra
+    AbrakaDabraX
 
 ### Example output
     r
-    r
+    a
     Abrak
-    Abrakadab
-    baaar
-    abdkrA
+    AbrakaDabr
+    baaarX
+    abDkrA
 
 
