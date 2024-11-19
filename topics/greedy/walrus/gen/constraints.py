@@ -7,6 +7,6 @@ subtasks = [
     {},  # examples
     {},
     dict(MAXN=10),
-    dict(MAXT=10,MAXN=2000),
+    dict(MAXT=10, MAXN=2000),
     {},
 ]

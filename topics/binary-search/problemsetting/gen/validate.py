@@ -27,7 +27,7 @@ def run(f, st):
         B = list(map(int, next(f).split()))
         assert len(B) == N - 1
         assert all(0 <= b <= MAXB for b in B)
-    
+
     assert S <= MAXN
 
     assert next(f, None) is None

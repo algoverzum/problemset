@@ -23,9 +23,9 @@ def run(f, st):
         S += N
         c = next(f).strip()
         assert len(c) == N
-        assert all(ci in '.-' for ci in c)
-        assert '.' in c
-    
+        assert all(ci in ".-" for ci in c)
+        assert "." in c
+
     assert S <= MAXNT
 
     assert next(f, None) is None

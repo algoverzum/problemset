@@ -20,10 +20,12 @@ int main() {
             } else if (x == '.')
                 ++l;
         }
-        if (l > 0) len.push_back(l);
+        if (l > 0)
+            len.push_back(l);
         int ans = 0;
         std::sort(len.rbegin(), len.rend());
-        for (int i = 0; i < len.size(); ++i) ans = std::max(len[i] / 2 + i + 1, ans);
+        for (int i = 0; i < len.size(); ++i)
+            ans = std::max(len[i] / 2 + i + 1, ans);
         std::cout << len.size() << ' ' << ans << std::endl;
     }
 }

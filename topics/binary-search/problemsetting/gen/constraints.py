@@ -7,8 +7,8 @@ subtasks = [
     {},  # 1-based
     {},  # examples
     dict(MAXB=0),
-    dict(MAXA=1,MAXB=1),
-    dict(MAXA=100,MAXB=100),
+    dict(MAXA=1, MAXB=1),
+    dict(MAXA=100, MAXB=100),
     dict(MAXA=0),
     {},
 ]

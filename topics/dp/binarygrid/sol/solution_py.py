@@ -3,18 +3,30 @@
 
 from sys import stdin, stdout
 
-def rd(): return stdin.readline().strip()
-def rdl(x): return map(x, rd().split())
-def wt(x): stdout.write(str(x))
-def wtl(x): wt(str(x) + '\n')
+
+def rd():
+    return stdin.readline().strip()
+
+
+def rdl(x):
+    return map(x, rd().split())
+
+
+def wt(x):
+    stdout.write(str(x))
+
+
+def wtl(x):
+    wt(str(x) + "\n")
+
 
 for tt in range(int(rd())):
-    rd();
+    rd()
     n, m = rdl(int)
     s = ["" for _ in range(n)]
     for i in range(n):
         s[i] = rd()
-    a = [[ord(s[i][j]) - ord('0') for j in range(m)] for i in range(n)]
+    a = [[ord(s[i][j]) - ord("0") for j in range(m)] for i in range(n)]
     inf = 1_000_000_009
     dp_cols = [[inf, inf], [inf, inf]]
     for f1 in range(2):

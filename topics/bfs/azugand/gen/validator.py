@@ -23,7 +23,7 @@ def run(f, st):
 
     V = list(map(int, next(f).split()))
     assert len(V) == N
-    
+
     assert all(0 <= v < 2**MAXB for v in V)
 
     for i in range(Q):
@@ -35,6 +35,7 @@ def run(f, st):
         assert X != Y
 
     assert next(f, None) is None
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

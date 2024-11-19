@@ -4,14 +4,14 @@ using namespace std;
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    
+
     int t;
     cin >> t;
-    
+
     while (t--) {
         long long a, b, k;
         cin >> a >> b >> k;
-        
+
         long long sum = a + b + k;
         long long ans = 0;
         for (long long i = 1; i * i <= sum; i++) {
@@ -39,10 +39,9 @@ int main() {
                 }
             }
         }
-        
+
         cout << ans << '\n';
     }
-    
+
     return 0;
 }
-
