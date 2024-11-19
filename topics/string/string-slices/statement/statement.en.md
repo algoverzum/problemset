@@ -1,20 +1,30 @@
 ## String Slices
-TODO
+On a deserted planet, we discover a ruin. At the top of the gate of the ruin, you see a code word at least 3 letters long. And around the gate are 6 panels. Answer the questions in all 6 panels. <br /> 
+a) in the first row write the third letter<br /> 
+b) in the second row, write the second letter from the back!<br /> 
+c) in the third row, write the first five letters of this letter!<br /> 
+d) on the fourth line, write the word without the last two letters!<br /> 
+e) on the fifth line, write every second letter (starting from the second)!<br /> 
+f) in the sixth line, write every second letter of the word, starting backwards!
 
 ### Input
-The first line of the input contains $N$ - the 
+The input contains a single word $S$.
 
 ### Output
-Print a single number, the
+Write 6 words, each on a separate line.
 
 ### Constraints
-* $1 \le N \le 100$
+* $3 \le S.size() \le 1000$
 
 ### Example input
-    5
+    Abrakadabra
 
 ### Example output
-    42
+    r
+    r
+    Abrak
+    Abrakadab
+    baaar
+    abdkrA
 
-### Explanation of the example
 

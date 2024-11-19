@@ -9,13 +9,13 @@ f) a hatodik sorba írjuk ki hátulról kezdve visszafelé minden második betű
 
 
 ### Bemenet
-    A bemenetben egyetlen $S$ szó van.
+A bemenetben egyetlen $S$ szó van.
 
 ### Kimenet
-    6 szót kell kiírni, mindet külön sorba.
+6 szót kell kiírni, mindet külön sorba.
 
 ### Korlátok
-    * $3 \le S.size() \le 1000$
+* $3 \le S.size() \le 1000$
 
 ### Példa bemenet
     Abrakadabra
@@ -27,7 +27,5 @@ f) a hatodik sorba írjuk ki hátulról kezdve visszafelé minden második betű
     Abrakadab
     baaar
     abdkrA
-
-### A példa magyarázata
 
 
