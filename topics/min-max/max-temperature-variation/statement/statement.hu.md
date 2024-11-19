@@ -1,5 +1,5 @@
-## Legnagyobb Hőingás
-Az időjárás előrejelzés megadta a következő $N$ napra a napi várható minimum és maximum hőmérséklet. Mekkora lesz a legnagyobb napi hőingás? (Azaz milyen nagy lehet a napi maximális hőmérséklet és az aznapi minimális hőmérséklet különbsége?)
+## Legnagyobb hőingás
+Az időjárást előrejelző mágikus állatunk, a josi megadta a következő $N$ napra a napi várható minimum és maximum hőmérséklet. Mekkora lesz a legnagyobb napi hőingás? (Azaz milyen nagy lehet a napi maximális hőmérséklet és az aznapi minimális hőmérséklet különbsége?)
 
 ### Bemenet
 A bemenetben első sorában egy egész szám van: $N$, az időjárás előrejelzésben szereplő napok száma. A második sorban $N$ egész szám van szóközzel elválasztva, az egyes napok minimum hőmérsékletei ($A_1, A_2, \ldots, A_N$). A harmadik sorban $N$ egész szám van szóközzel elválasztva, az egyes napok maximum hőmérsékletei ($B_1, B_2, \ldots, B_N$).
