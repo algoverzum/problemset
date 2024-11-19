@@ -3,7 +3,7 @@
 name: replace-letter
 title: Replace Letter
 title_translations:
-  hu: Replace Letter
+  hu: Betű Csere
 
 # Technical info
 memory_limit: 256

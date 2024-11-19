@@ -3,7 +3,12 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    cout << 42 << "\n";
+    string word;
+    cin >> word;
+    for (int i = 0; i < word.size(); i++) {
+        if (word[i] == 'a') {
+            word[i] = 'e';
+        }
+    }
+    cout << word << "\n";
 }
