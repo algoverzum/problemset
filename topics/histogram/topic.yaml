@@ -1,0 +1,17 @@
+---
+id: histogram
+name: Histogram
+problems:
+  - problem_id: count-attendance
+    type: REQUIRED
+  - problem_id: most-children
+    type: REQUIRED
+prerequisites:
+  - array
+  - for-loop
+dependents:
+visualization:
+  image_filename: 5.svg
+  position:
+    x: 500
+    y: 500

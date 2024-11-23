@@ -42,5 +42,5 @@ chmod a+x "$name/gen/generator.py"
 ln -s "../statement/input0.txt" "$name/att/input0.txt"
 ln -s "../statement/output0.txt" "$name/att/output0.txt"
 
-sed -i.bak "s/^prerequisites:$/- problem_id: $name\n  type: REQUIRED\nprerequisites:/" topic.yaml
+sed -i.bak "s/^prerequisites:$/  - problem_id: $name\n    type: REQUIRED\nprerequisites:/" topic.yaml
 rm topic.yaml.bak
