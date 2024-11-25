@@ -4,6 +4,8 @@ name: Combined Patterns
 problems:
   - problem_id: unique-elements
     type: REQUIRED
+  - problem_id: longest-ascent
+    type: REQUIRED
 prerequisites:
   - dummy-topic
 dependents: []
