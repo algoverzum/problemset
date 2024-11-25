@@ -20,6 +20,6 @@ Az egyes diákok cukorkáinak számát kell kiírnod a cserék után egy sorba, 
     4 9 2 5 3
 
 ### A példa magyarázata
-    Az 1. diáknak 9, a másodiknak 4 cukorkája van. Cserélnek, az elsőnek 4 lesz, a másodiknak 9.
-    A 3. diáknak 5 cukorkája van, a 4. diáknak 2. Cserélnek, a harmadiknak 2 lesz és a negyediknek pedig 5.
-    Az 5. diáknak nincs párja ezért nem cserél senkivel, így 3 cukorkája marad.
+Az 1. diáknak 9, a másodiknak 4 cukorkája van. Cserélnek, az elsőnek 4 lesz, a másodiknak 9.
+A 3. diáknak 5 cukorkája van, a 4. diáknak 2. Cserélnek, a harmadiknak 2 lesz és a negyediknek pedig 5.
+Az 5. diáknak nincs párja ezért nem cserél senkivel, így 3 cukorkája marad.

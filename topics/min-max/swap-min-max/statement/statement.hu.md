@@ -20,5 +20,5 @@ A bemenet második sorában a diákok által elvett cukorkák száma van: $A_1, 
     3 4 1 2 5
 
 ### A példa magyarázata
-    A legtöbb cukorkát a harmadik diák vette el, ötöt. A legkevesebbet pedig az ötödik diák, egyet. Nekik kell cserélni, ezért a végén a harmadik diáknak lesz egy, az ötödiknek öt.
+A legtöbb cukorkát a harmadik diák vette el, ötöt. A legkevesebbet pedig az ötödik diák, egyet. Nekik kell cserélni, ezért a végén a harmadik diáknak lesz egy, az ötödiknek öt.
 

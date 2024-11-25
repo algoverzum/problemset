@@ -20,6 +20,6 @@ You need to print the number of candies of all students on one line, separated b
     4 9 2 5 3
 
 ### Explanation of the example
-    Student 1 has 9 candies, student 2 has 4. Swap first 4 for second 9.
-    Student 3 has 5, student 4 has 2, student 3 has 5, student 4 has 2, student 3 has 2, student 4 has 5.
-    Student 5 has no partner so he doesn't swap with anyone, leaving him with 5 candies.
+Student 1 has 9 candies, student 2 has 4. Swap first 4 for second 9.
+Student 3 has 5, student 4 has 2, student 3 has 5, student 4 has 2, student 3 has 2, student 4 has 5.
+Student 5 has no partner so he doesn't swap with anyone, leaving him with 5 candies.

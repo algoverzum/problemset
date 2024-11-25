@@ -20,4 +20,4 @@ You need to print how many candies each student will have after the swap, separa
     3 4 1 2 5
 
 ### Explanation of the example
-    The third student took the most candies, five. The fifth student took the least, one. They have to exchange, so the third student will have one and the fifth student will ahve five.
+The third student took the most candies, five. The fifth student took the least, one. They have to exchange, so the third student will have one and the fifth student will ahve five.
