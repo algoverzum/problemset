@@ -7,28 +7,20 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    vector<int> candies;
-    int a;
+    vector<int> candies(n);
     for (int i = 0; i < n; i++) {
-        cin >> a;
-        candies.push_back(a);
+        cin >> candies[i];
     }
-    int maxc = 0;
-    int maxid = 0;
-    int minc = 10000;
-    int minid = 0;
+    int maxindex = 0, minindex = 0;
     for (int i = 0; i < n; i++) {
-        if (candies[i] > maxc) {
-            maxc = candies[i];
-            maxid = i;
+        if (candies[i] > candies[maxindex]) {
+            maxindex = i;
         }
-        if (candies[i] < minc) {
-            minc = candies[i];
-            minid = i;
+        if (candies[i] < candies[minindex]) {
+            minindex = i;
         }
     }
-    candies[minid] = maxc;
-    candies[maxid] = minc;
+    swap(candies[minindex], candies[maxindex]);
     for (int i = 0; i < n; i++) {
         cout << candies[i] << " ";
     }

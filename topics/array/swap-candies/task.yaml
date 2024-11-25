@@ -3,7 +3,7 @@
 name: swap-candies
 title: Swap Candies
 title_translations:
-  hu: cukorka cserélés
+  hu: Cukorka cserélés
 
 # Technical info
 memory_limit: 256

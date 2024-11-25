@@ -21,6 +21,8 @@ def run(f, st):
         values = list(map(int, line.strip().split()))
         for value in values:
             assert MIN <= value <= MAX
+        assert len(values) == N
+        assert len(set(values)) == N
 
     assert next(f, None) is None
 

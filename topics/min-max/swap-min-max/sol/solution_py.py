@@ -3,7 +3,12 @@
 
 n = int(input())
 candies = [int(x) for x in input().split()]
-min_index = candies.index(min(candies))
-max_index = candies.index(max(candies))
-candies[min_index], candies[max_index] = candies[max_index], candies[min_index]
+maxindex = 0
+minindex = 0
+for i in range(n):
+    if candies[i] > candies[maxindex]:
+        maxindex = i
+    if candies[i] < candies[minindex]:
+        minindex = i
+candies[minindex], candies[maxindex] = candies[maxindex], candies[minindex]
 print(*candies)

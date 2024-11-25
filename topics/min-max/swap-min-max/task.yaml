@@ -1,9 +1,9 @@
 ---
 # General info
 name: swap-min-max
-title: Swap Min Max
+title: Swap Most and Least Candies
 title_translations:
-  hu: Min Max Csere
+  hu: Legtöbb-legkevesebb csere
 
 # Technical info
 memory_limit: 256

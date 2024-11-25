@@ -6,25 +6,22 @@ using namespace std;
 int main() {
     int n, k;
     cin >> n >> k;
-    vector<int> A(n);
+    vector<int> distance(n);
     for (int i = 0; i < n; i++) {
-        cin >> A[i];
+        cin >> distance[i];
     }
-    vector<int> B(n);
+    vector<int> price(n);
     for (int i = 0; i < n; i++) {
-        cin >> B[i];
+        cin >> price[i];
     }
-    int result = -1;
+    int cheapest = -1;
     for (int i = 0; i < n; i++) {
-        if (A[i] >= k) {
-            if (result < B[i]) {
-                result = B[i];
-            }
-            if (result == -1) {
-                result = B[i];
+        if (distance[i] >= k) {
+            if (cheapest == -1 || cheapest > price[i]) {
+                cheapest = price[i];
             }
         }
     }
-    cout << result << "\n";
+    cout << cheapest << "\n";
     return 0;
 }

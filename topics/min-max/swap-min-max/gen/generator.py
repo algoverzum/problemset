@@ -29,16 +29,14 @@ def run(A, B):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
+    assert B >= A
     print(A)
-    if A >= 10:
-        minn = randint(1, B / 10)
-        maxx = randint(B - B / 10, B)
-        numbers = [randint(minn + 1, maxx - 1) for _ in range(A - 2)]
-        numbers = [minn] + numbers + [maxx]
-        shuffle(numbers)
-        print(*numbers)
-    else:
-        print(*[randint(1, B) for _ in range(A)])
+    s = set()
+    while len(s) < A:
+        s.add(randint(1, B))
+    numbers = list(s)
+    shuffle(numbers)
+    print(*numbers)
 
 
 if __name__ == "__main__":

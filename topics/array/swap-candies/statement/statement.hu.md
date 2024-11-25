@@ -1,16 +1,16 @@
-## Cukorka Cserélés
+## Cukorka cserélés
 Egy osztályban $N$ gyerek van. Az a hagyományuk, hogy párokba állnak a diákok és minden párban a két gyerek odaadja a cukorkáit a egymásnak. Idén a tanárnak nincs kedve párokba állítani a diákokat ezért csak sorba állította őket és a sor elejétől kezdve alkotott párokat. Ha páratlan sok diák van, akkor a sorban az utolsónak nem lesz párja és nem cserél senkivel. Adott a diákok cukorkáinak száma a cserék előtt, meg tudod mondani, hogy kinek mennyi lesz a cserék után?
 
 ### Bemenet
 A bemenet első sorában a diákok száma van $N$.
-A bemenet második sorában a diákok cukorkáinak száma van: $A_1, A_2, \ldots, A_{N}$.
+A bemenet második sorában a diákok cukorkáinak száma van: $C_1, C_2, \ldots, C_N$.
 
 ### Kimenet
 Az egyes diákok cukorkáinak számát kell kiírnod a cserék után egy sorba, szóközzel elválasztva.
 
 ### Korlátok
 * $1 \le N \le 1\,000$
-* $1 \le A_i \le 1\,000$
+* $1 \le C_i \le 1\,000$
 
 ### Példa bemenet
     5

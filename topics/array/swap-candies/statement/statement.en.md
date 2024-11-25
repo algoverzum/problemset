@@ -1,16 +1,16 @@
 ## Swap Candies
-There are $N$ children in a class. Their tradition is to pair up the students and in each pair, two children give their candy to each other. This year, the teacher didn't feel like pairing the students so she just lined them up and paired them starting from the front of the line.
+There are $N$ children in a class. Their tradition is to pair up the students and in each pair, two children give their candy to each other. This year, the teacher didn't feel like pairing the students so she just lined them up and paired them starting from the front of the line. If there are an odd number of students, the last one in the row will not have a pair and will not swap with anyone. Given the number of candies of the students before the swaps, can you tell how many candies each student will have after the swaps?
 
 ### Input
-The first line of the input is the number of students $N$.
-The second line in the input is the number of candies of the students. $A_1, A_2, \ldots, A_{N}$.
+The first line of the input is the number of students: $N$.
+The second line contains the number of candies of the students: $C_1, C_2, \ldots, C_N$.
 
 ### Output
 You need to print the number of candies of all students on one line, separated by a space.
 
 ### Limits
-* $1 \le N \le 1000$
-* $1 \le A \le 1000$
+* $2 \le N \le 1000$
+* $1 \le C_i \le 1000$
 
 ### Example input
     5

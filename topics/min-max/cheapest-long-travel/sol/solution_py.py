@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
-N, K = [int(x) for x in input().split()]
-A = [int(x) for x in input().split()]
-B = [int(x) for x in input().split()]
+n, k = [int(x) for x in input().split()]
+distance = [int(x) for x in input().split()]
+price = [int(x) for x in input().split()]
 
-result = -1
+cheapest = -1
 
-for i in range(N):
-    if A[i] >= K:
-        if result < B[i]:
-            result = B[i]
-        if result == -1:
-            result = B[i]
+for i in range(n):
+    if distance[i] >= k:
+        if cheapest == -1 or cheapest > price[i]:
+            cheapest = price[i]
 
-print(result)
+print(cheapest)

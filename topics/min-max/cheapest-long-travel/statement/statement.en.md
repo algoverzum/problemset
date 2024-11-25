@@ -1,16 +1,16 @@
 ## Cheapest Long Travel
-My friend Akiko has $N$ space trips to choose from. For each trip, the distance to the destination in light years and the cost of the trip in thalers are known. He wants to travel at least $K$ light years, and he will choose the cheapest of these trips. How much will it cost him?
+My friend Akiko has $N$ space trips to choose from. For each trip, we kow the distance to the destination in light years and the price of the trip in thalers. He wants to travel at least $K$ light years, and he will choose the cheapest of these trips. How much will it cost him?
 
 ### Input
-The first line of the input contains two integers separated by spaces: $N,K$, the number of possible space trips, and the desired minimum distance. The second line contains $N$ integers separated by spaces, the distances to the destination in light years for each trip ($A_1, A_2, \ldots, A_N$). The third line contains $N$ integers separated by spaces, the costs for each trip in thalers ($B_1, B_2, \ldots, B_N$).
+The first line of the input contains two integers separated by spaces: $N,K$, the number of possible space trips, and the desired minimum distance. The second line contains $N$ integers separated by spaces, the distances to the destination in light years for each trip ($D_1, D_2, \ldots, D_N$). The third line contains $N$ integers separated by spaces, the prices for each trip in thalers ($P_1, P_2, \ldots, P_N$).
 
 ### Output
 Print a single number, the cheapest price among the trips that are at least $K$ light years away, or $-1$ if there is no such trip.
 
 ### Constraints
 * $1 \le N \le 1000$
-* $1 \le A_i \le 1000$
-* $1 \le B_i \le 1000$
+* $1 \le D_i \le 1000$
+* $1 \le P_i \le 1000$
 
 ### Example 1 input
     5 10

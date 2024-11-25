@@ -1,16 +1,16 @@
-## Legolcsóbb Távoli Űrutazás
+## Legolcsóbb távoli űrutazás
 A barátom, Akikó $N$ darab űrutazás közül választhat. Mindegyik utazásra ismert a cél távolsága fényévekben és az utazás ára tallérokban. Szeretne legalább $K$ fényév távolságra elutazni, az ilyen utazások közül a legolcsóbbat fogja választani. Mennyibe fog kerülni neki?
 
 ### Bemenet
-A bemenetben első sorában két szóközzel elválasztott egész szám van: $N,K$, az eléthető űrutazások száma, és a kívánt minimális távolság. A második sorban $N$ egész szám van szóközzel elválasztva, az egyes utak céltávolságai fényévekben ($A_1, A_2, \ldots, A_N$). A harmadik sorban $N$ egész szám van szóközzel elválasztva, az egyes utazások árai tallérokban ($B_1, B_2, \ldots, B_N$).
+A bemenetben első sorában két szóközzel elválasztott egész szám van: $N,K$, az eléthető űrutazások száma, és a kívánt minimális távolság. A második sorban $N$ egész szám van szóközzel elválasztva, az egyes úti célok távolságai fényévekben ($D_1, D_2, \ldots, D_N$). A harmadik sorban $N$ egész szám van szóközzel elválasztva, az egyes utazások árai tallérokban ($P_1, P_2, \ldots, P_N$).
 
 ### Kimenet
 Egyetlen számot kell kiírnod, a legalább $K$ fényévű utazások közül a legolcsóbb árát, illetve $-1$-et ha nincs ilyen utazás.  
 
 ### Korlátok
 * $1 \le N \le 1000$
-* $1 \le A_i \le 1000$
-* $1 \le B_i \le 1000$
+* $1 \le D_i \le 1000$
+* $1 \le P_i \le 1000$
 
 ### 1. Példa bemenet
     5 10
