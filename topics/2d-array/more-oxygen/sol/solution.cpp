@@ -25,5 +25,5 @@ int main() {
     for (int i : highdays) {
         cout << i << " ";
     }
-    cout << "\n"
+    cout << "\n";
 }

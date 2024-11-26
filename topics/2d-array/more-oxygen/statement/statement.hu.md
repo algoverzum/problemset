@@ -10,6 +10,8 @@ A kimenet első sorába a helyes napok számát kell kiírnod, míg a másodikba
 
 ### Korlátok
 * $1 \le N \le 100$
+* $1 \le M \le 100$
+* $1 \le A_i \le 1000$
 
 ### Példa bemenet
     3 5

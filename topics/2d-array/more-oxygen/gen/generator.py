@@ -9,28 +9,50 @@ from inspect import signature
 usage = """Generator for "more-oxygen".
 
 Parameters:
+* N (value of N)
+* M (value of M)
 * A (minimum value)
 * B (maximum value)
 * S (seed)
 
 Constraint:
+* %d <= N <= %d
+* %d <= M <= %d
 * %d <= A <= %d
 * %d <= B <= %d
 """ % (
-    MIN,
-    MAX,
-    MIN,
-    MAX,
+    MIN_N,
+    MAX_N,
+    MIN_M,
+    MAX_M,
+    MIN_A,
+    MAX_A,
+    MIN_A,
+    MAX_A,
 )
 
 
-def run(A, B):
+def run(N, M, A, B):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    print(*[N, M])
+    days = []
+    for _ in range(N):
+        days.append([randint(A, B - 2)])
+    for i in range(1, M):
+        val = randint(1, 10)
+        if val < 3:
+            for j in range(N):
+                days[j].append(randint(days[j][i - 1], B))
+        else:
+            for j in range(N):
+                days[j].append(randint(A, B - 2))
+
+    for ar in days:
+        print(*ar)
 
 
 if __name__ == "__main__":
