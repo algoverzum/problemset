@@ -1,0 +1,13 @@
+6
+Earth
+200
+Mars
+100
+Venus
+600
+Jupiter
+500
+Saturn
+200
+Pluto
+800

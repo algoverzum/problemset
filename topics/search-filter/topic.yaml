@@ -1,13 +1,15 @@
 id: search-filter
 name: Search and Filter
 problems:
-- problem_id: not-too-many-hands
-  type: REQUIRED
-- problem_id: cheap-space-travels
-  type: REQUIRED
+  - problem_id: not-too-many-hands
+    type: REQUIRED
+  - problem_id: cheap-space-travels
+    type: REQUIRED
+  - problem_id: space-signals
+    type: REQUIRED
 prerequisites:
- - array
- - while-loop
+  - array
+  - while-loop
 dependents:
 visualization:
   image_filename: 9.svg
