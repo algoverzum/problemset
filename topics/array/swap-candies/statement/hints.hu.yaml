@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Olvassuk be a cukorkák számait egy `c` vectorba, majd ebben minden páros indexű elemet (c[0], c[2], ...) kell megcserélni a rákövetkezővel.
+  py: Olvassuk be a cukorkák számait egy `c` listába, majd ebben minden páros indexű elemet (c[0], c[2], ...) kell megcserélni a rákövetkezővel.
+- cpp: Két változó értékének megcseréléséhez igazából kell egy harmadik ideiglenes segédváltozó, tehát ha például `a` és `b` értékét akarnánk megcserélni, akkor használunk egy `c` változót és a `c = a; a = b; b = c;` műveletsor megoldja a cserét. Viszont mivel ezt gyakran kell csinálni, létezik rá egy beépített `swap(a, b)` függvény.
+  py: Két változó értékének megcserélését végezhetnénk akár egy harmadik segédváltozó segítségével, de Pythonban valójában rövidebben is lehet, az `a, b = b, a` írásmód használatával.
+- cpp: Tehát ha írunk egy kettesével lépegető for ciklust, abban a `swap(c[i], c[i+1]);` utasítás fog kelleni.
+  py: Tehát ha írunk egy kettesével lépegető for ciklust, abban a `c[i], c[i+1] = c[i+1], c[i]` utasítás fog kelleni.
