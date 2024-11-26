@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Határozzuk meg a legnagyobb és legkisebb elem indexét (maximum és minimumkiválasztás indexszel).
+- Ehhez a maximumkiválasztás közben, amikor frissítjük a maximum értékét, mindig jegyezzük meg az indexét is.
+- cpp: |
+    Ha `maxindex` és `minindex` jelöli a legnagyobb és legkisebb elem indexét, akkor ezeken a pozíciókon lévő elemeket kell megcserélni, amit megtehetünk például a swap függvény segítségével: `swap(c[maxindex], c[minindex])`, ahol c jelöli a cukorkák vectorát.
+  py: |
+    Ha `maxindex` és `minindex` jelöli a legnagyobb és legkisebb elem indexét, akkor ezeken a pozíciókon lévő elemeket kell megcserélni, amit megtehetünk például így: `c[maxindex], c[minindex] = c[minindex], c[maxindex]`, ahol c jelöli a cukorkák listáját.
