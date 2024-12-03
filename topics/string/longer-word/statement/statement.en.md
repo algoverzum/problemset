@@ -11,31 +11,31 @@ You have to print one word, the longer one. If the two words are the same length
 * both words contains at most 20 characters and at least 1
 
 ### Example 1 Input
-    almafa
-    barackfa
+    petulant
+    concubine
 
 ### Example output 1
-    barackfa
+    concubine
 
 ### Explanation of example 1
-"almafa" is 6 characters long, "barackfa" is 8 characters long, i.e. "barackfa" is the longer one.
+"petulant" is 8 characters long, "concubine" is 9 characters long, so "concubine" is the longer one.
 
 ### Example 2 Input
-    barack
-    almafa
+    petulant
+    volition
 
 ### Example output 2
-    barack
+    petulant
 
 ### Explanation of example 2
-Both words consist of 6 characters, so the first one should be printed.
+Both words consist of 8 characters, so the first one should be printed.
 
 ### Example 3 Input
-    macska
-    kutya
+    megalopolis
+    desiccated
 
 ### Example output 3
-    macska
+    megalopolis
 
 ### Explanation of example 3
-"macska" is 6 characters long, "kutya" is 5 characters long, i.e. "macska" is the longer one.
+"megalopolis" is 11 characters long, "desiccated" is 10 characters long, so "megalopolis" is the longer one.
