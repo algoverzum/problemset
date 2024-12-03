@@ -1,20 +1,20 @@
 ## Betű számlálás
-Számold meg, hogy egy kapott szóban hány darab "p" karakter van. A szó csak az angol abc kisbetűit fogja tartalmazni.
+Számold meg, hogy egy kapott szóban hány darab p betű van. A szó csak az angol ábécé kisbetűit tartalmazza.
 
 ### Bemenet
-A bemenetben egyetlen string van: $S$
+A bemenetben egyetlen string van: $S$.
 
 ### Kimenet
-Egyetlen számot kell kiírnod, az $S$-ben található "p" karakterek számát.
+Egyetlen számot kell kiírnod, az $S$-ben található p betűk számát.
 
 ### Korlátok
-* $1 \le |S| \le 256$
+* $S$ hossza legalább 1 és legfeljebb 256 karakter.
 
 ### Példa bemenet
-    pirospaprika
+    paprika
 
 ### Példa kimenet
-    3
+    2
 
 ### A példa magyarázata
-Három p betű található a szóban: **p**iros**p**a**p**rika
+Két p betű található a szóban: **p**a**p**rika

@@ -1,20 +1,20 @@
 ## Count Letter
-Count the number of "p" characters in a given word. The word will contain only the lower case letters of the English alphabet.
+Count the occurrences of the letter p in a given word. The word only contains lowercase letters of the English alphabet.
 
 ### Input
-The first line of the input contains a single string: $S$
+The first line of the input contains a single string: $S$.
 
 ### Output
-Print a single number, the number of "p" characters in $S$.
+Print a single integer, the number of p's in $S$.
 
 ### Constraints
-* $1 \le |S| \le 256$
+* The length of $S$ is between 1 and 256.
 
 ### Example input
-    pirospaprika
+    paprika
 
 ### Example output
-    3
+    2
 
 ### Explanation of the example
-The given word contains three p characters: **p**iros**p**a**p**rika
+The given word contains the letter p twice: **p**a**p**rika

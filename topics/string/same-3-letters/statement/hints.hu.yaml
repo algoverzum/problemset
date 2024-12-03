@@ -1,4 +1,7 @@
 ---
-- Hogyan lehet egy `sztring` $i$-edik karakterét elérni?
-- Használhatunk indexet, `sztring[i]`.
-- Tehát csak össze kell hasonlítanunk a három karaktert (páronként).
+- 'Az `s` string három karakterét a 0, 1, 2 indexekkel tudjuk elérni: `s[0]`, `s[1]`, `s[2]`.'
+- Hasonlítsuk össze a három karaktert (páronként). Figyelj arra, hogy az egyenlőség vizsgálatra az `==` operátort használd!
+- cpp: |
+    `if (s[0] == s[1] && s[1] == s[2])`
+  py: |
+    `if s[0] == s[1] and s[1] == s[2]:`
