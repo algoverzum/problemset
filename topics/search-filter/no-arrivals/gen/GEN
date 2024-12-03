@@ -1,0 +1,20 @@
+# A     B       S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+
+# Subtask 2: 1 <= N <= 100
+#ST: 100
+#STNAME: all
+5      1      10      1
+5      1      100     2
+20     1      100     3
+20     10     100     4
+20     20     100     15
+40     1      100     66
+100    1      100     7
+100    1      100     8
+100    1      100     9
+100    1      100     10
