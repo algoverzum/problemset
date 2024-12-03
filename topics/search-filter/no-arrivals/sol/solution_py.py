@@ -2,9 +2,10 @@
 # @check-accepted: *
 
 n = int(input())
-index = -1
-for i in range(n):
-    day = int(input())
-    if day == 0:
-        index = i + 1
-print(index)
+i = 1
+while i <= n and int(input()) != 0:
+    i += 1
+if i <= n:
+    print(i)
+else:
+    print(-1)

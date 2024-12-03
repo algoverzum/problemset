@@ -10,11 +10,12 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> days[i];
     }
-    int index = -1;
-    for (int i = 0; i < n; i++) {
-        if (days[i] == 0) {
-            index = i + 1;
-        }
+    int i = 0;
+    while (i < n && days[i] != 0)
+        i++;
+    if (i < n) {
+        cout << i + 1 << "\n";
+    } else {
+        cout << -1 << "\n";
     }
-    cout << index << "\n";
 }
