@@ -1,5 +1,5 @@
 ## Hosszabb szó
-A postaládában kér borítékot találtam, mindkettőre egy-egy szó van írva. Vajon melyik a hosszabb?
+A postaládában két borítékot találtam, mindkettőre egy-egy szó van írva. Vajon melyik a hosszabb?
 
 ### Bemenet
 A bemenet két sorból áll, mindkét sorban egy-egy szó szerepel. 
@@ -8,7 +8,7 @@ A bemenet két sorból áll, mindkét sorban egy-egy szó szerepel.
 Egyetlen szót kell kiírnod, a hosszabbat. Ha a két szó azonos hosszú, írd ki az elsőt.
 
 ### Korlátok
-* mindkét szó legfeljebb 20 karakterből áll, és legalább 1 hosszú
+* mindkét szó legalább 1 és legfeljebb 20 karakterből áll
 
 ### 1. Példa bemenet
     almafa

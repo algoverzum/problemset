@@ -1,4 +1,7 @@
 ---
-- How to access the $i$-th character of a `string`?
-- We can use index `string[i]`.
-- So we just need to compare the three characters (pairwise).
+- 'The three characters of a string `s` can be accessed using the subscripts 0, 1, 2: `s[0]`, `s[1]`, `s[2]`.'
+- Let's compare the three characters (pairwise). Make sure to use the `==` operator to check equality.
+- cpp: |
+    `if (s[0] == s[1] && s[1] == s[2])`
+  py: |
+    `if s[0] == s[1] and s[1] == s[2]:`

@@ -1,14 +1,14 @@
 ## Same 3 Letters
-My computer password is 3 characters long. Is my password safe?
+My computer password is 3 characters long. Is my password safe? We consider a password safe if not all of its characters are the same.
 
 ### Input
-The input contains a single line of a 3-character string. 
+The input contains a single line of a 3-character string $S$. 
 
 ### Output
 If all three letters of the input are the same, write "NO" otherwise write "YES".
 
 ### Constraints
-* Each string consists of 3 lower case letters of the English alphabet.
+* $S$ consists of 3 lowercase letters of the English alphabet.
 
 ### 1 Example input
     aaa

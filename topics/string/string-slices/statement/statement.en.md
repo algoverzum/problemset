@@ -1,11 +1,11 @@
 ## String Slices
 On a deserted planet, we discover a ruin. At the top of the gate of the ruin, you see a code word at least 3 letters long. And around the gate are 6 panels. Answer the questions in all 6 panels. <br /> 
-a) in the first row write the third letter<br /> 
-b) in the second row, write the second letter from the back!<br /> 
-c) in the third row, write the first five letters of this letter!<br /> 
-d) on the fourth line, write the word without the last two letters!<br /> 
-e) on the fifth line, write every second letter (starting from the second)!<br /> 
-f) in the sixth line, write every second letter of the word, starting backwards!
+a) In the first line, print the third letter.<br /> 
+b) In the second line, print the second to last character of the word.<br /> 
+c) In the third line, print the first five letters of this word.<br /> 
+d) In the fourth line, print the word without the last two letters.<br /> 
+e) In the fifth line, print every second letter (starting from the second).<br /> 
+f) In the sixth line, print every second letter of the word in reverse order, starting from the back.
 
 ### Input
 The input contains a single word $S$ (without spaces), its length is denoted by $N$ below.
