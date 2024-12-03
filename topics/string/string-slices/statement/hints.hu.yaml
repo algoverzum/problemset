@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- '0-tól indexelünk, szóval a 2-es indexű a harmadik betű: `s[2]`'
+- py: Hátulról a második karaktert a -2 indexszel kaphatjuk meg.
+- py: 'Vegyük a stringnek azt a szeletét, aminek felső határa 5: `s[:5]`'
+- py: Vegyük a stringnek azt a szeletét, aminek felső határa hátulról a második betű (-2 indexű).
+- py: 'Olyan szelet kell nekünk, ami az 1-es indexnél kezdődik, és kettesével lépegetünk: `s[1::2]`'
+- py: Olyan szelet kell nekünk, ami az -2-es indexnél kezdődik, és -2-esével lépegetünk.

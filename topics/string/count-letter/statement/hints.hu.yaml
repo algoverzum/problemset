@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Egy string betűin pont úgy tudunk végigmenni, mint egy vector elemein, legyen tehát egy for ciklusunk, amiben sorra vizsgáljuk a string egyes betűit. Egy `s` string `i`-edik karaktere `s[i]`.
+  py: Egy string betűin pont úgy tudunk végigmenni, mint egy lista elemein, legyen tehát egy for ciklusunk, amiben sorra vizsgáljuk a string egyes betűit. Egy `s` string `i`-edik karaktere `s[i]`.
+- cpp: Ha az adott karakter megegyezik a 'p' betűvel, akkor növeljünk egy számláló változót (megszámlálás algoritmus). Figyeljünk arra, hogy a 'p' betűt szimpla idézőjelek közé írjuk, hiszen a dupla idézőjelek karaktersorozatot jelölnek, nem egy karaktert.
+  py: Ha az adott karakter megegyezik a 'p' betűvel, akkor növeljünk egy számláló változót (megszámlálás algoritmus). Figyeljünk arra, hogy a 'p' betűt idézőjelek közé írjuk.

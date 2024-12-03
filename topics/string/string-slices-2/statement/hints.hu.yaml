@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- py: Az első betű az `s[0]`. Az utolsó betű elérésére használhatjuk a -1 indexet.
+- py: 'A teljes stringet vegyük úgy, hogy -1 -esével lépkedünk benne: `s[::-1]`'
+- py: 'A 2-es indexű betűtől kezdve a végéig 3-asával lépkedjünk: `s[2::3]`'
+- py: Gondold végig, hogy egy 6 hosszúnál, illetve egy 7 hosszúnál melyik az a betű, aminek már pont nem kell benne lennie. Mindkét esetre jó a `len(s) // 2`, tehát a szelet felső határa lehet ez.
+- py: 'A `len(s) // 2` indexű karaktertől kezdve a végéig kell: `s[len(s)//2:]`'
