@@ -10,17 +10,21 @@ usage = """Generator for "count-letter".
 
 Parameters:
 * N (length of the word)
+* P (chance to generate p character)
 * S (seed)
 
 Constraint:
 * %d <= N <= %d
+* %d <= P <= %d
 """ % (
     MIN,
     MAX,
+    MIN_P,
+    MAX_P,
 )
 
 
-def run(N):
+def run(N, P):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
@@ -28,8 +32,12 @@ def run(N):
 
     word = ""
     for _ in range(N - 1):
-        randchar = chr(randint(ord("a"), ord("z")))
-        word += randchar
+        chance = randint(1, 10)
+        if chance <= P * 10:
+            word += "p"
+        else:
+            randchar = chr(randint(ord("a"), ord("z")))
+            word += randchar
 
     print(word)
 
