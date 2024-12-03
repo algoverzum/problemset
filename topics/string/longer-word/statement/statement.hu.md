@@ -11,31 +11,31 @@ Egyetlen szót kell kiírnod, a hosszabbat. Ha a két szó azonos hosszú, írd 
 * mindkét szó legalább 1 és legfeljebb 20 karakterből áll
 
 ### 1. Példa bemenet
-    almafa
-    barackfa
+    petulant
+    concubine
 
 ### 1. Példa kimenet
-    barackfa
+    concubine
 
 ### Az 1. példa magyarázata
-"almafa" 6 karakter, "barackfa" 8 karakter hosszú, azaz "barackfa" a hosszabb.
+"petulant" 8 karakter, "concubine" 9 karakter hosszú, azaz "concubine" a hosszabb.
 
 ### 2. Példa bemenet
-    barack
-    almafa
+    petulant
+    volition
 
 ### 2. Példa kimenet
-    barack
+    petulant
 
 ### A 2. példa magyarázata
-Mindkét szó 6 karakterből áll, ilyenkor az elsőt kell kiírni.
+Mindkét szó 8 karakterből áll, ilyenkor az elsőt kell kiírni.
 
 ### 3. Példa bemenet
-    macska
-    kutya
+    megalopolis
+    desiccated
 
 ### 3. Példa kimenet
-    macska
+   megalopolis
 
 ### A 3. példa magyarázata
-"macska" 6 karakter, "kutya" 5 karakter hosszú, azaz "macska" a hosszabb.
+"megalopolis" 11 karakter, "desiccated" 10 karakter hosszú, azaz "megalopolis" a hosszabb.
