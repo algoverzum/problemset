@@ -1,17 +1,18 @@
 ## Space Signals
-A space station receives signals from all over the universe. But, the machine used to receive the signals broke, now it can't receive signals with frequency lower than 500. Find out the number of received signals and their sources.
+A space station receives signals from all over the universe. But, the machine used to receive the signals broke, and now it can't receive signals with frequencies lower than 500. Find out the number of received signals and their sources.
 
 ### Input
 The first line of the input contains $N$ the number of signals:<br> 
-Followed by $N$ signals. Each consisting of 2 lines, the first line is a word that is the source of the signal. And the second line the frequency of the signal.
+Followed by $N$ signals. Each consists of 2 lines, the first line is a word that is the source of the signal. The second line is the frequency of the signal.
 
 ### Output
-Print the number of received signals, then the sources of those signals separated by spaces.
+Print the number of received signals, then the sources of those signals are separated by spaces.
 
 ### Constraints
 * $1 \le N \le 1000$
 * $1 \le N \le 1000$
-* $1 \le S.size() \le 100$
+The words consist of the letters of the English alphabet and are almost 100 letters long. The letters can be lowercase or uppercase.
+
 ### Example input
     6
     Earth
@@ -32,14 +33,14 @@ Print the number of received signals, then the sources of those signals separate
 
 ### Explanation of the example
     Earth
-    200<500     can't receive
+    200<500     can't receive
     Mars
-    100<500     can't receive
-    Venus  
-    600>=500        received
+    100<500     can't receive
+    Venus  
+    600>=500        received
     Jupiter
-    500>=500        received
+    500>=500        received
     Saturn
-    200<500     can't receive
+    200<500     can't receive
     Pluto
-    800>=500        received
+    800>=500        received

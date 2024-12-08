@@ -1,5 +1,5 @@
 ## Longest Ascent
-A scientist built a spaceship, sadly he has no rocket to propell his spaceship up. So he will launch his spaceship off a cliff. The scientist in his older research measured the height of the terrain in fixed intervals. For the highest rate of success the scientist wants to find the longest ascent in the nearby terrain, so the spaceship can accelerate as much as possible. A sequence of numbers of heights is called an ascent if each element is greater than the one before it. The length of an ascent is the number of integers in the sequence.
+A brilliant scientist, Dr Pulsar, has long dreamed of flying into space, but instead of rockets, he must rely on the planet's natural resources. He has chosen a special mountainous region where he has accurately mapped the altitude of the terrain on previous expeditions. The plan is simple: launch his spacecraft from a long ascent to give him as much time as possible to accelerate. For the launch to be successful, he needs to find the longest continuous ascent in the terrain. An ascent is a section of altitudes where at each measurement point the altitude increases from the previous one. The scientist is asking you to help him determine the start and end points of the longest ascent.
 
 ### Input
 The first line of the input contains $N$  <br /> 

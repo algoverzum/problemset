@@ -6,17 +6,24 @@ A bemenetben első sorában egyetlen egész szám van: $N$
 A második sorában $N$ db szó szóközzel elválasztva.
 
 ### Kimenet
-A bemenet legrövidebb szavát kell kiírnod. Ha több legrövidebb szó is van, akkor azt kell kiírnod amelyik elősször fordult elő.
+A bemenet legrövidebb szavát kell kiírnod. Ha több legrövidebb szó is van, akkor azt kell kiírnod amelyik először fordult elő.
 
 ### Korlátok
 * $1 \le N \le 100$
+A szavak az angol ábécé betűiből állnak és legfeljebb 1000 betű hosszúak. A betűk lehetnek kicsik és nagyok is.
 
 ### Példa bemenet
     6
-    alma kecske uborka gesztenye kutya kert
+    silver gold iron bronze platinum copper
 
 ### Példa kimenet
-    alma
+    gold
 
 ### A példa magyarázata
-
+    silver 6 betű
+    gold 4 betű
+    iron 4 betű
+    bronze 6 betű
+    platinum 8 betű
+    copper 6 betű
+    2 db 4 betűs szó van a gold és az iron, de a gold van előrébb ezért az a kulcsszó.

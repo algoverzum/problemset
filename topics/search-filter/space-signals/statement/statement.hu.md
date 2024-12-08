@@ -1,5 +1,5 @@
 ## Űrjelzések
-Egy űrállomás jelzéseket fogad az univerzum minden részéről. De sajnos elromlott az ehhez használt műszerük, így nem tudják fogadni az 500-nál kisebb frekvenciáju jelzéseket. Írd ki hány jelzést tud fogadni az űrállomás és a fogadott jelzések forrásait.
+Egy űrállomás jelzéseket fogad az univerzum minden részéről. De sajnos elromlott az ehhez használt műszerük, így nem tudják fogadni az 500-nál kisebb frekvenciájú jelzéseket. Írd ki hány jelzést tud fogadni az űrállomás és a fogadott jelzések forrásait.
 
 ### Bemenet
 A bemenetben első sorában a jelzések száma egy egész szám van: $N$  <br> 
@@ -11,7 +11,8 @@ Egy sorban a fogadott jelzések számát kell kiírni, majd a jelzések forrása
 ### Korlátok
 * $1 \le N \le 1000$
 * $1 \le N \le 1000$
-* $1 \le S.size() \le 100$
+A szavak az angol ábécé betűiből állnak és legfeljebb 100 betű hosszúak. A betűk lehetnek kicsik és nagyok is.
+
 ### Példa bemenet
     6
     Earth

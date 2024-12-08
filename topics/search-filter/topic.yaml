@@ -9,6 +9,10 @@ problems:
     type: REQUIRED
   - problem_id: no-arrivals
     type: REQUIRED
+  - problem_id: first-occurrence
+    type: REQUIRED
+  - problem_id: last-occurrence
+    type: REQUIRED
 prerequisites:
   - array
   - while-loop

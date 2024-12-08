@@ -1,5 +1,5 @@
 ## Leghosszabb emelkedő
-Egy tudós űrhajót épített, sajnos nincs rakétája, hogy felszállhasson. Ezért egy emelkedőről szeretné kilövetni az űrhajóját. Régebbi kutatásai során megmérte azonos távolságonként a terep magasságát. Ahhoz, hogy a legnagyobb esélye legyen a sikerre, meg szeretné találni a leghosszabb emelkedőt, hogy a lehető legtöbb ideje legyen felgyorsulni. Emelkedőnek nevezzük azt a magasságokból álló számsorozatot, amelynek minden eleme nagyobb, mint az előtte lévő. Az emelkedő hossza a számsorozatban lévő számok darabszáma.
+Egy zseniális tudós, Dr. Pulsar, régóta álmodozik arról, hogy az űrbe repüljön, de rakéták helyett a bolygó természeti adottságaira kell támaszkodnia. Egy különleges hegyvidéket választott ki, ahol a terep magasságát korábbi expedíciói során pontosan feltérképezte. A terv egyszerű: egy hosszú emelkedőről indítja el az űrhajóját, hogy a lehető legtöbb ideje legyen felgyorsulni. Ahhoz, hogy a kilövés sikeres legyen, meg kell találnia a terepen a leghosszabb folyamatos emelkedőt. Egy emelkedő olyan magasságokból álló szakasz, ahol minden egyes mérési ponton a magasság növekszik az előzőhöz képest. A tudós arra kér téged, hogy segíts neki meghatározni a leghosszabb ilyen emelkedő kezdő és végpontját.
 
 ### Bemenet
 A bemenetben első sorában egyetlen egész szám van: $N$. <br /> 
