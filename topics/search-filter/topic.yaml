@@ -13,6 +13,8 @@ problems:
     type: REQUIRED
   - problem_id: last-occurrence
     type: REQUIRED
+  - problem_id: same-two-times
+    type: REQUIRED
 prerequisites:
   - array
   - while-loop

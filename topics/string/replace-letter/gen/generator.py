@@ -10,18 +10,21 @@ usage = """Generator for "replace-letter".
 
 Parameters:
 * N (length of the word)
-* B (maximum value)
+* P (chance of a generated)
 * S (seed)
 
 Constraint:
 * %d <= N <= %d
+* %d <= P <= %d
 """ % (
     MIN,
     MAX,
+    P_MIN,
+    P_MAX,
 )
 
 
-def run(N):
+def run(N, P):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
@@ -30,7 +33,7 @@ def run(N):
     word = ""
     for _ in range(N - 1):
         chance = randint(1, 10)
-        if chance < 3:
+        if chance <= P:
             word += "a"
         else:
             word += chr(randint(ord("a"), ord("z")))

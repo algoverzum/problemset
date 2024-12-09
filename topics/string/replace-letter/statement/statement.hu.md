@@ -1,5 +1,5 @@
 ## Betű Csere
-Gábor eszperente nyelven szeretne beszélni, de nem tud elég szót találni hozzá, így úgy döntött, hogy rendes szavakat fog átírni hozzá. Segíts neki azzal, hogy egy adott szóban az "a" karaktereket írjad át "e" karakterekre.
+Egy idegen faj egy bizonyos nyelvének különböző dialektusait tanulmányozzuk. A jelenleg vizsgált dialektus annyiban tér az általános kiejtéstől, hogy bármilyen a betűt e hangnak ejtünk. A feladatod, hogy egy kapott szót konvertáld át erre a dialektusra, tehát cseréld ki a kapott szóban az összes a betűt e betűre.
 
 ### Bemenet
 A bemenetben egyetlen string van: $S$
@@ -8,13 +8,13 @@ A bemenetben egyetlen string van: $S$
 Egyetlen stringet kell kiírnod, az eredetit a feladatban leírt változtatásokkal.
 
 ### Korlátok
-* $1 \le |S| \le 256$
+* Az $S$ string hossza legalább 1 és maximum 256 karakter.
 
 ### Példa bemenet
-    almafa
+    amalgam
 
 ### Példa kimenet
-    elmefe
+    emelgem
 
 ### A példa magyarázata
-A kapott szót ilyen módon kell átalakítani: **a**lm**a**f**a** -> **e**lm**e**f**e**
+A kapott szót ilyen módon kell átalakítani: **a**m**a**lg**a**m -> **e**m**e**lg**e**m

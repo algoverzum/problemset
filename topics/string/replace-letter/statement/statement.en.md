@@ -1,5 +1,5 @@
 ## Replace Letter
-Gábor wants to speak esperante, but he can't find enough words, so he decided to replace them with normal words. Help him by replacing the "a" characters in a word with "e" characters.
+We study different dialects of a particular language of an alien race. The dialect we are studying differs from the general pronunciation in a way that any letter $a$ produced as the letter $e$. Your task is to convert a given word into this dialect by replacing all the $a$ letters in the given word with the letter $e$.
 
 ### Input
 The input is a single string: $S$
@@ -8,13 +8,13 @@ The input is a single string: $S$
 Print a single string, the original with the changes described in the task statement.
 
 ### Constraints
-* $1 \le |S| \le 256$
+* The length of $S$ is between 1 and 256 characters.
 
 ### Example input
-    almafa
+    amalgam
 
 ### Example output
-    elmefe
+    emelgem
 
 ### Explanation of the example
-The resulting word is transformed as follows: **a**lm**a**f**a** -> **e**lm**e**f**e**
+The resulting word is transformed as follows: **a**m**a**lg**a**m -> **e**m**e**lg**e**m
