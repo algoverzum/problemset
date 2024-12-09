@@ -6,6 +6,8 @@ problems:
     type: REQUIRED
   - problem_id: most-children
     type: REQUIRED
+  - problem_id: museum
+    type: REQUIRED
 prerequisites:
   - array
   - for-loop
