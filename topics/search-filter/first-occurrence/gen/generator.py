@@ -30,9 +30,9 @@ def run(A, B):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
-    random_letter = choice(string.ascii_letters)
+    random_letter = choice(string.ascii_lowercase)
     letters = [random_letter] * B
-    remaining_letters = [char for char in string.ascii_letters if char != random_letter]
+    remaining_letters = [char for char in string.ascii_lowercase if char != random_letter]
     letters.extend(choices(remaining_letters, k=A - B))
     shuffle(letters)
     random_word = "".join(letters)

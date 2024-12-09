@@ -1,5 +1,5 @@
 ## Shortest Word
-You want to enter the treasury of an ancient civilization. During your adventures, you have already obtained the keyword list, but several words are on the list as misleading clues. Fortunately, you know the keyword is the shortest word on the list. Find the keyword!
+You want to enter the treasury of an ancient civilization. During your adventures, you have already obtained the keyword list, but several words are on the list as misleading clues. Fortunately, you know the keyword is the shortest word on the list, if there are multiple shortest words, then the keyword is the one that appeared first. Find the keyword!
 
 ### Input
 The first line of the input contains a single integer: $N$ 
@@ -10,7 +10,7 @@ Print the shortest word in the input. If there is more than one shortest word, P
 
 ### Constraints
 * $1 \le N \le 100$
-The words consist of the letters of the English alphabet and are almost 1000 letters long. The letters can be lowercase or uppercase.
+The words consist of lowercase letters of the English alphabet and are atmost 1000 letters long.
 
 ### Example input
     6

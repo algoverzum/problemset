@@ -9,15 +9,15 @@ A letter $C$ indicating the key letter.
 A single number, the first occurrence of the key letter. If the word $S$ does not contain the key letter $C$, print -1.
 
 ### Constraints
-The word $S$ consists of letters of the English alphabet and is up to 1000 letters long. The letters can be upper or lower case.
-The key letter $C$ is a lower or upper case letter from the English alphabet.
+The word $S$ consists of lowercase letters of the English alphabet and is up to 1000 letters long.
+The key letter $C$ is a lowercase letter from the English alphabet.
 
 ### Example input
-    Surreptitious  
+    surreptitious  
     u
 
 ### Example output
     2
 
 ### Explanation of the example
-    Surreptitious is 13 letters long. the character 'u''s first occurrence is at index 2.
+    surreptitious is 13 letters long. the character 'u''s first occurrence is at index 2.

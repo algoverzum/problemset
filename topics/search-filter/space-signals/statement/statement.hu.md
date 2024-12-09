@@ -11,36 +11,36 @@ Egy sorban a fogadott jelzések számát kell kiírni, majd a jelzések forrása
 ### Korlátok
 * $1 \le N \le 1000$
 * $1 \le N \le 1000$
-A szavak az angol ábécé betűiből állnak és legfeljebb 100 betű hosszúak. A betűk lehetnek kicsik és nagyok is.
+A szavak az angol ábécé kisbetűiből állnak és legfeljebb 100 betű hosszúak. 
 
 ### Példa bemenet
     6
-    Earth
+    earth
     200
-    Mars
+    mars
     100
-    Venus
+    venus
     600
-    Jupiter
+    jupiter
     500
-    Saturn
+    saturn
     200
-    Pluto
+    pluto
     800
 
 ### Példa kimenet
-    3 Venus Jupiter Pluto
+    3 venus jupiter pluto
 
 ### A példa magyarázata
-    Earth
+    earth
     200<500     nem tudjuk fogadni
-    Mars
+    mars
     100<500     nem tudjuk fogadni
-    Venus  
+    venus  
     600>=500        tudjuk fogadni
-    Jupiter
+    jupiter
     500>=500        tudjuk fogadni
-    Saturn
+    saturn
     200<500     nem tudjuk fogadni
-    Pluto
+    pluto
     800>=500        tudjuk fogadni

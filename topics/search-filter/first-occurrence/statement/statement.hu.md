@@ -9,15 +9,15 @@ Egy $C$ betű, amely a kulcsbetűt jelöli.
 Egyetlen számot kell kiírnod, a kulcsbetű utolsó előfordulásának helyét. Ha nem tartalmazza az $S$ szó a $C$ kulcsbetűt akkor -1-et kell kiírnod.
 
 ### Korlátok
-Az $S$ szó az angol ábécé betűiből áll és legfeljebb 1000 betű hosszú. A betűk lehetnek kicsik és nagyok is.
-A $C$ kulcsbetű egy kis- vagy nagybetű az angol ábécéből.
+Az $S$ szó az angol ábécé kisbetűiből áll és legfeljebb 1000 betű hosszú.
+A $C$ kulcsbetű egy kisbetű az angol ábécéből.
 
 ### Példa bemenet
-    Surreptitious  
+    surreptitious  
     u
 
 ### Példa kimenet
     2
 
 ### A példa magyarázata
-    Surreptitious 13 betű hosszú. az 'u' karakter a 2. helyen fordul elő először.
+    surreptitious 13 betű hosszú. az 'u' karakter a 2. helyen fordul elő először.

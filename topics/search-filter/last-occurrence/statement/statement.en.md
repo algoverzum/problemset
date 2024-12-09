@@ -9,15 +9,15 @@ A letter $C$ indicating the key letter.
 A single number, the last occurrence of the key letter. If the word $S$ does not contain the key letter $C$, print -1.
 
 ### Constraints
-The word $S$ consists of letters of the English alphabet and is up to 1000 letters long. The letters can be upper or lower case.
-The key letter $C$ is a lower or upper case letter from the English alphabet.
+The word $S$ consists of lowercase letters of the English alphabet and is up to 1000 letters long.
+The key letter $C$ is a lowercase letter from the English alphabet.
 
 ### Example input
-    Incomprehensibilities 
+    incomprehensibilities 
     i
 
 ### Example output
     19
 
 ### Explanation of the example
-    Incomprehensibilities is 21 letters long. the character 'i''s last occurrence is at index 19.
+    incomprehensibilities is 21 letters long. the character 'i''s last occurrence is at index 19.

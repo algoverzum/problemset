@@ -34,7 +34,7 @@ def run(A, B):
     print(A)
     for i in range(A):
         length = randint(1, B)
-        result = "".join(choices(string.ascii_letters, k=length))
+        result = "".join(choices(string.ascii_lowercase, k=length))
         print(result)
         print(randint(1, 1000))
 

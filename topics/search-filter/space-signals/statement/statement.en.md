@@ -11,36 +11,36 @@ Print the number of received signals, then the sources of those signals are sepa
 ### Constraints
 * $1 \le N \le 1000$
 * $1 \le N \le 1000$
-The words consist of the letters of the English alphabet and are almost 100 letters long. The letters can be lowercase or uppercase.
+The words consist of lowercase letters of the English alphabet and are atmost 100 letters long.
 
 ### Example input
     6
-    Earth
+    earth
     200
-    Mars
+    mars
     100
-    Venus
+    venus
     600
-    Jupiter
+    jupiter
     500
-    Saturn
+    saturn
     200
-    Pluto
+    pluto
     800
 
 ### Example output
-    3 Venus Jupiter Pluto
+    3 venus jupiter pluto
 
 ### Explanation of the example
-    Earth
+    earth
     200<500     can't receive
-    Mars
+    mars
     100<500     can't receive
-    Venus  
+    venus  
     600>=500        received
-    Jupiter
+    jupiter
     500>=500        received
-    Saturn
+    saturn
     200<500     can't receive
-    Pluto
+    pluto
     800>=500        received
