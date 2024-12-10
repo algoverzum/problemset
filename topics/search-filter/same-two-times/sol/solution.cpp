@@ -10,11 +10,11 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> codes[i];
     }
-    int index = -1;
-    for (int i = 0; i < n - 1; i++) {
-        if (codes[i] == codes[i + 1]) {
-            index = i;
-        }
-    }
-    cout << index + 1 << "\n";
+    int i = 0;
+    while (i < n - 1 && codes[i] != codes[i + 1])
+        i++;
+    if (i < n - 1)
+        cout << i + 1 << "\n";
+    else
+        cout << "0\n";
 }

@@ -32,11 +32,18 @@ def run(A, B):
         assert eval(row[2:]), row[2:]
 
     print(A)
-    for i in range(A):
-        length = randint(1, B)
-        result = "".join(choices(string.ascii_lowercase, k=length))
-        print(result)
-        print(randint(1, 1000))
+    if A == 150:
+        for i in range(A):
+            length = randint(1, B)
+            result = "".join(choices(string.ascii_lowercase, k=length))
+            print(result)
+            print(randint(500, 1000))
+    else:
+        for i in range(A):
+            length = randint(1, B)
+            result = "".join(choices(string.ascii_lowercase, k=length))
+            print(result)
+            print(randint(1, 1000))
 
 
 if __name__ == "__main__":

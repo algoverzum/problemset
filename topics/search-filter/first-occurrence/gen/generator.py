@@ -30,14 +30,25 @@ def run(A, B):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
-    random_letter = choice(string.ascii_lowercase)
-    letters = [random_letter] * B
-    remaining_letters = [char for char in string.ascii_lowercase if char != random_letter]
-    letters.extend(choices(remaining_letters, k=A - B))
-    shuffle(letters)
-    random_word = "".join(letters)
-    print(random_word)
-    print(random_letter)
+    if A == 300:
+        random_letter = choice(string.ascii_lowercase)
+        letters = [random_letter] * (B - 1)
+        remaining_letters = [char for char in string.ascii_lowercase if char != random_letter]
+        letters.extend(choices(remaining_letters, k=A - B))
+        shuffle(letters)
+        random_word = "".join(letters)
+        random_word = random_word + random_letter
+        print(random_word)
+        print(random_letter)
+    else:
+        random_letter = choice(string.ascii_lowercase)
+        letters = [random_letter] * B
+        remaining_letters = [char for char in string.ascii_lowercase if char != random_letter]
+        letters.extend(choices(remaining_letters, k=A - B))
+        shuffle(letters)
+        random_word = "".join(letters)
+        print(random_word)
+        print(random_letter)
 
 
 if __name__ == "__main__":
