@@ -6,7 +6,7 @@
 #COPY: statement/input0.txt
 
 # Subtask 2: 1 <= N <= 100
-#ST: 90
+#ST: 100
 #STNAME: all
 5      1      10      1
 5      1      100     2
@@ -18,8 +18,4 @@
 100    1      100     8
 100    1      100     9
 100    1      100     10
-
-# Subtask 3:  Edge case
-#ST: 10
-#STNAME: edge
 #COPY: statement/input1.txt
