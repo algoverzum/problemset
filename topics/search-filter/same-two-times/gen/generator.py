@@ -32,6 +32,7 @@ def run(N, M):
 
     print(N)
     codes = []
+    randbef = 0
     if M == 100:
         for _ in range(N):
             randnum = randint(1, 1000)
@@ -44,16 +45,21 @@ def run(N, M):
             while randnum in codes:
                 randnum = randint(1, 1000)
             codes.append(randint(1, 1000))
+            randbef = randnum
         randnum = randint(1, 1000)
         while randnum in codes:
             randnum = randint(1, 1000)
         codes.append(randnum)
         codes.append(randnum)
+        randbef = randnum
         for _ in range(N - M - 1):
+
             randnum = randint(1, 1000)
-            while randnum in codes:
-                randnum = randint(1, 1000)
-            codes.append(randint(1, 1000))
+            if randint(1, 10) <= 2:
+                codes.append(randbef)
+            else:
+                codes.append(randint(1, 1000))
+            randbef = randnum
     print(*codes)
 
 
