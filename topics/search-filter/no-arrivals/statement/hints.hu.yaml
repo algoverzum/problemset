@@ -1,4 +1,10 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- A keresés alapötlete, hogy a sorozat elejéről indulunk, és amíg az éppen vizsgált elem nem jó, eggyel arrébb lépünk.
+- cpp: Olvassuk be az értékeket egy `a` vectorba.
+  py: Olvassuk be az értékeket egy `a` listába.
+- Legyen egy `i` index változónk és amíg az `i` pozíción lévő elem nem 0, növeljük eggyel az `i`-t. Vigyázzunk arra nagyon, hogy nem menjen túl az utolsó számon az `i`.
+- cpp: |
+    `while (i < n && a[i] != 0) i++;`
+  py: |
+    `while i < n and a[i] != 0: i += 1`
+- A végén ne felejtsünk el 1-et hozzáadni az eredményhez, mivel a feladatszöveg 1-től sorszámozza az elemeket.

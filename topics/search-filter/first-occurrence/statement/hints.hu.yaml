@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- A keresés alapötlete, hogy a szó elejéről indulunk, és amíg az éppen vizsgált betű nem jó, eggyel arrébb lépünk.
+- Legyen egy `i` index változónk, ami kezdetben 0. Amíg `s[i]` nem egyenlő a kulcsbetűvel, növeljük eggyel az `i` értékét. Nagyon kell vigyázni arra, hogy az `i` ne menjen túl az `s` utolsó karakterén, ezt azelőtt kell ellenőrizni, mielőtt megpróbáljuk kiolvasni `s[i]` -t.
+- cpp: |
+    `while (i < s.size() && s[i] != key) i++;`
+  py: |
+    `while i < len(s) and s[i] != key: i += 1`

@@ -7,13 +7,10 @@ int main() {
     char key;
     cin >> word >> key;
     int i = 0;
-    while (word[i] != key) {
-        if (i == word.length() - 1) {
-            cout << -1 << "\n";
-            return 0;
-        }
+    while (i < word.size() && word[i] != key) {
         i++;
     }
-    cout << i + 1 << "\n";
+    if (i < word.size()) cout << i + 1 << "\n";
+    else cout << "-1\n";
     return 0;
 }

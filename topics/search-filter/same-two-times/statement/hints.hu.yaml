@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Ha a sorozatot az `a` tárolja, akkor olyan elemeket keresünk, melyekre `a[i] == a[i + 1]`
+- Az `i` index kezdetben legyen 0, és egyesével növeljük addig, amíg `a[i] != a[i + 1]`. Vigyázzunk arra, hogy az `i + 1` -edik elemnek is még a sorozaton belül kell lennie (`i < n - 1`).
+- cpp: |
+    `while (i < n - 1 && a[i] != a[i + 1]) i++;`
+  py: |
+    `while i < n - 1 and a[i] != a[i + 1]: i += 1`

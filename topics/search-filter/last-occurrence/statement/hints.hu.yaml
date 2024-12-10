@@ -1,4 +1,9 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Az utolsó előfordulás az hátulról az első.
+- Legyen egy `i` index változónk, ami kezdetben az utolsó betűre mutat, és ezt addig csökkentsük, amíg a mutatott betű nem egyezik meg a keresettel. Vigyázzunk, hogy 0 alá ne csökkenjen az `i`.
+- cpp: |
+        int i = s.size() - 1;
+        while (i >= 0 && s[i] != key) i--;
+  py: |
+        i = len(s) - 1
+        while i >= 0 and s[i] != key: i -= 1
