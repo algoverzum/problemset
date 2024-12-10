@@ -18,6 +18,8 @@ problems:
     type: REQUIRED
   - problem_id: swap-candies
     type: REQUIRED
+  - problem_id: last-one-out
+    type: REQUIRED
 prerequisites:
   - sum-count
 dependents:
