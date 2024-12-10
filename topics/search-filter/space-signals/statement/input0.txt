@@ -8,6 +8,6 @@ venus
 jupiter
 500
 saturn
-200
+499
 pluto
 800
