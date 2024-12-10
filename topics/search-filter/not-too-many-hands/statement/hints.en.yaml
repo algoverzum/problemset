@@ -1,11 +1,11 @@
 - cpp: |
- The number of at most 4 handed creatures must be printed on the output first, so let's use a vector to collect the indices of the good competitors! An empty vector can be created like this: `vector<int> good;`
- py: |
- The number of at most 4 handed creatures must be printed on the output first, so let's use a list to collect the numbers of the good competitors! An empty list can be created like this: `good = []`
+    The number of at most 4 handed creatures must be printed on the output first, so let's use a vector to collect the indices of the good competitors! An empty vector can be created like this: `vector<int> good;`
+  py: |
+    The number of at most 4 handed creatures must be printed on the output first, so let's use a list to collect the numbers of the good competitors! An empty list can be created like this: `good = []`
 - cpp: |
- Even during reading the second line, we can check that the number of hands is at most 4, and if so, we can put the index into the solution vector with the `good.push_back(i);` command, assuming that our for loop starts from $i=1$ goes up to $n$.
- py: |
- Let's read the numbers in the second line into a list, then go through them with a for loop, and if the current number is at most 4, then we can insert the index of the number into the solution list with the command `good.append(i + 1)'. The $+1$ is necessary because the competitors are numbered from 1 in the text, but from 0 in the list.
+    Even during reading the second line, we can check that the number of hands is at most 4, and if so, we can put the index into the solution vector with the `good.push_back(i);` command, assuming that our for loop starts from $i=1$ goes up to $n$.
+  py: |
+    Let's read the numbers in the second line into a list, then go through them with a for loop, and if the current number is at most 4, then we can insert the index of the number into the solution list with the command `good.append(i + 1)'. The $+1$ is necessary because the competitors are numbered from 1 in the text, but from 0 in the list.
 - cpp: At the end, `good.size()` gives the size of the vector, i.e. the number of good competitors, then we go through the elements of the vector with a for loop and write them out.
- py: |
- At the end, `len(good)` is the size of the list, i.e. the number of good competitors, and then with the command `print(*good)` we can also print out its elements in a line.
+  py: |
+    At the end, `len(good)` is the size of the list, i.e. the number of good competitors, and then with the command `print(*good)` we can also print out its elements in a line.

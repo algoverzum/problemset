@@ -4,9 +4,9 @@
 word = input()
 key = input()
 i = 0
-while word[i] != key:
-    if i == len(word) - 1:
-        print(-1)
-        exit(0)
+while i < len(word) and word[i] != key:
     i += 1
-print(i + 1)
+if i < len(word):
+    print(i + 1)
+else:
+    print(-1)
