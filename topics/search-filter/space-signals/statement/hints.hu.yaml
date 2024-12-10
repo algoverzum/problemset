@@ -5,7 +5,7 @@
   py: Kezdetben vegyünk fel egy üres listát (`[]`), majd az `append()` függvényt használva tudjuk beletenni a jó jelek forrását.
 - Azt kell ismételnünk n-szer, hogy beolvassuk egy string változóba a forrást, egy int változóba a frekvenciát, és ha a frekvencia <= 500, akkor a forrást bevesszük a megoldások közé.
 - cpp: |
-        vector<string> received;
+        ```vector<string> received;
         for (int i = 0; i < N; i++) {
             string source;
             int frequency;
@@ -15,10 +15,12 @@
                 received.push_back(source);
             }
         }
+        ```
   py: |
-        received = []
+        ```received = []
         for i in range(n):
             source = input()
             frequency = int(input())
             if frequency >= 500:
                 received.append(source)
+        ```

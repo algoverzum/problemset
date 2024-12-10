@@ -20,4 +20,4 @@ A $C$ kulcsbetű egy kisbetű az angol ábécéből.
     2
 
 ### A példa magyarázata
-    surreptitious 13 betű hosszú. az 'u' karakter a 2. helyen fordul elő először.
+surreptitious 13 betű hosszú. az 'u' karakter a 2. helyen fordul elő először.

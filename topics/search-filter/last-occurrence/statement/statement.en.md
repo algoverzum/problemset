@@ -20,4 +20,4 @@ The key letter $C$ is a lowercase letter from the English alphabet.
     19
 
 ### Explanation of the example
-    incomprehensibilities is 21 letters long. the character 'i''s last occurrence is at index 19.
+incomprehensibilities is 21 letters long. the character 'i''s last occurrence is at index 19.

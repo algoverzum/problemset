@@ -20,4 +20,4 @@ The key letter $C$ is a lowercase letter from the English alphabet.
     2
 
 ### Explanation of the example
-    surreptitious is 13 letters long. the character 'u''s first occurrence is at index 2.
+surreptitious is 13 letters long. the character 'u''s first occurrence is at index 2.
