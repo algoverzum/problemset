@@ -31,11 +31,21 @@ def run(A, B):
             break
         assert eval(row[2:]), row[2:]
     random_letter = choice(string.ascii_lowercase)
+    chance = 1
+    if B == 1:
+        chance = randint(1, 3)
+    if A > 1 and chance > 1:
+        B = B - 1
+        A = A - 1
     letters = [random_letter] * B
     remaining_letters = [char for char in string.ascii_lowercase if char != random_letter]
     letters.extend(choices(remaining_letters, k=A - B))
     shuffle(letters)
     random_word = "".join(letters)
+    if chance == 2:
+        random_word = random_word + random_letter
+    if chance == 3:
+        random_word = random_letter + random_word
     print(random_word)
     print(random_letter)
 
