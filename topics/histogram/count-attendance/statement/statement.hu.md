@@ -1,5 +1,5 @@
 ## Jelenlét számlálás
-Moo Seis Lee egy kis iskolájába 10 gyerek iratkozott be. Az elmúlt $N$ nap mindegyikén felírták, hogy hány gyerek jelent meg az iskolában. Ebből szeretnénk kiszámolni, hogy olyan nap volt amikor pontosan $0,1,\ldots,9$ vagy $10$ gyerek ment suliba.
+Moo Seis Lee egy kis iskolájába 10 gyerek iratkozott be. Az elmúlt $N$ nap mindegyikén felírták, hogy hány gyerek jelent meg az iskolában. Ebből szeretnénk kiszámolni, hogy hány olyan nap volt amikor pontosan $0,1,\ldots,9$ vagy $10$ gyerek ment suliba.
 
 ### Bemenet
 A bemenet első sorában egy egész szám van: $N$ - a vizsgált napok száma.

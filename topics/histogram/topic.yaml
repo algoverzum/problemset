@@ -3,7 +3,7 @@ id: histogram
 name: Histogram
 problems:
   - problem_id: count-attendance
-    type: REQUIRED
+    type: ENTRY
   - problem_id: most-children
     type: REQUIRED
   - problem_id: museum
