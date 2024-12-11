@@ -3,7 +3,7 @@
 name: count-attendance
 title: Count Attendance
 title_translations:
-  hu: Jelenlét Számlálás
+  hu: Jelenlét számlálás
 
 # Technical info
 memory_limit: 128

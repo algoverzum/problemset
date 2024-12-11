@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Create a vector `h` for the answer, initially containing 11 0's, where `h[i]` will count how many days there are exactly `i` children.
+  py: Create a list `h` for the answer, initially containing 11 0's, where `h[i]` will count how many days there are exactly `i` children (`h = [0] * 11`).
+- If there is a day when `c` children come to school, which element of `h` should be changed?
+- Increase `h[c]` by one. (The auxiliary array `h`, which contains the counters for the occurrences of each element, is called a *histogram*).

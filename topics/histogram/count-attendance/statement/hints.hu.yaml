@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: A megoldásnak vegyünk fel egy 11 darab 0-ból álló `h` vectort, amiben `h[i]` azt fogja számolni, hogy hány napon van pontosan `i` gyerek.
+  py: A megoldásnak vegyünk fel egy 11 darab 0-ból álló `h` listát, amiben `h[i]` azt fogja számolni, hogy hány napon van pontosan `i` gyerek (`h = [0] * 11`).
+- Ha van egy nap, amikor `c` gyerek jött az iskolába, akkor `h` melyik elemét kell változtatni?
+- A `h[c]`-t kell megnövelni eggyel. (A `h` segédtömböt, ami az egyes elemek előfordulásaihoz tartozó számlálókat tartalmazza, *hisztogramnak* szokás nevezni).
