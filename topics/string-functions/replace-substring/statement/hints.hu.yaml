@@ -1,0 +1,3 @@
+---
+- cpp: TODO
+  py: Használjuk az `S.replace()` függvényt.

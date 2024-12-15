@@ -1,0 +1,4 @@
+---
+- All we need is sort.
+- cpp: We can sort a string by `sort(S.begin(), S.end());`
+  py: Since string is inmutable we sould make a list out of it by `L = list(S)`. We can sort lists by `L.sort()`

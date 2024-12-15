@@ -1,0 +1,16 @@
+---
+id: string-functions
+name: String Functions
+problems:
+  - problem_id: order-characters
+    type: REQUIRED
+  - problem_id: replace-substring
+    type: REQUIRED
+prerequisites:
+  - string
+dependents:
+visualization:
+  image_filename: 42.svg
+  position:
+    x: 4300
+    y: 700
