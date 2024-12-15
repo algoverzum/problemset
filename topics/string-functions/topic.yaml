@@ -6,6 +6,10 @@ problems:
     type: REQUIRED
   - problem_id: replace-substring
     type: REQUIRED
+  - problem_id: fragment
+    type: REQUIRED
+  - problem_id: delete-character
+    type: REQUIRED
 prerequisites:
   - string
 dependents:
