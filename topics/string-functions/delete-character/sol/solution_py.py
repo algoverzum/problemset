@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
-n = int(input())
-print(42)
+word = input()
+letter = input()
+print(word.replace(letter, ""))

@@ -9,8 +9,8 @@ A második sorában pedig egy $C$ karakter.
 A $C$ karakter első és utolsó előfordulása közötti részét írjuk ki az $S$ stringnek. A karakter első és utolsó előfordulását is beleértve.
 
 ### Korlátok
-Az $S$ szó az angol ábécé kisbetűiből áll és maximum 1000 karakter hosszú.
-A $C$ karakter az angol ábécé egy kisbetűje.
+    Az $S$ szó az angol ábécé kisbetűiből áll és maximum 1000 karakter hosszú.
+    A $C$ karakter az angol ábécé egy kisbetűje.
 
 ### Példa bemenet
     fragmented
