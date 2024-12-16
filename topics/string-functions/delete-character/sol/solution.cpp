@@ -9,8 +9,11 @@ int main() {
     char letter;
     cin >> word >> letter;
     // word.erase(remove(word.begin(), word.end(), letter), word.end());
-    replace(word.begin(), word.end(), letter, ' ');
-    word.erase(remove(word.begin(), word.end(), ' '), word.end());
-    cout << word << "\n";
+    for (int i = 0; i < word.length(); i++) {
+        if (word[i] != letter) {
+            cout << word[i];
+        }
+    }
+    cout << "\n";
     return 0;
 }
