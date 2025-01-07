@@ -10,7 +10,7 @@ problems:
     type: REQUIRED
   - problem_id: replace-letter
     type: REQUIRED
-  - problem_id: palindrom
+  - problem_id: palindrome
     type: REQUIRED
   - problem_id: string-slices
     type: REQUIRED
