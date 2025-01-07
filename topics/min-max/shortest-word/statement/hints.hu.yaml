@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Olvassuk be a szavakat egy stringekből álló vectorba, majd használjuk a tanult minimumkiválasztás módszerét úgy, hogy a szavak hosszát hasonlítjuk össze.
+  py: Olvassuk be a szavakat egy stringekből álló listába, majd használjuk a tanult minimumkiválasztás módszerét úgy, hogy a szavak hosszát hasonlítjuk össze.
+- cpp: A szavak hosszát a `size()` metódussal tudjuk lekérdezni (pl. `words[i].size()`).
+  py: A szavak hosszát a `len` függvény adja meg (pl. `len(words[i])`).
+- A minimumkiválasztás során meg kell jegyezni mind a legrövidebb szó hosszát, mind pedig magát a szót.
