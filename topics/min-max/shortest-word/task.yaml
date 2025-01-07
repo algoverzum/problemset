@@ -3,7 +3,7 @@
 name: shortest-word
 title: Shortest Word
 title_translations:
-  hu: Legrövidebb Szó
+  hu: Legrövidebb szó
 
 # Technical info
 memory_limit: 256

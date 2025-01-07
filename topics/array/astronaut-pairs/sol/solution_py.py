@@ -2,12 +2,12 @@
 # @check-accepted: *
 
 n = int(input())
-weights = input().split(" ")
+weights = [int(x) for x in input().split()]
 
 pair_count = 0
 for i in range(n):
     for j in range(i + 1, n):
-        if int(weights[i]) == int(weights[j]):
+        if weights[i] == weights[j]:
             pair_count += 1
 
 print(pair_count)

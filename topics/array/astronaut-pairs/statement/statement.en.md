@@ -13,11 +13,11 @@ You need to output a single number, the number of possible pairs.
 * $1 \le A_i \le 1000$
 
 ### Example input
-    5
-    1 2 3 2 3
+    6
+    71 82 63 82 63 63
 
 ### Example output
-    2
+    4
 
 ### Explanation of the example
-The two possible pairs are the pair of weight two and the pair of weight three astronauts.
+We can create three different pairs from the three astronauts of weight 63, and one more possible pair are the two persons with weight 82.

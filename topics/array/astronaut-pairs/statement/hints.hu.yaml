@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Tároljuk el az összes űrhajós súlyát.
+- Meg kell számolnunk a jó párok számát, ehhez legyen egy számláló változónk. Minden űrhajóst hasonlítsunk össze a **nála nagyobb sorszámú** űrhajósokkal és növeljük a számlálót, ha a két űrhajós azonos súlyú. Így minden párt csak egyszer forunk megszámolni.
+- Ha egy for ciklust használunk, amiben `i` megy végig az űrhajósok sorszámain, akkor ezen belül kell egy belső for ciklus, amiben a ciklusváltozó `j = i+1` -től indul.
