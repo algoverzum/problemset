@@ -5,13 +5,11 @@ using namespace std;
 int main() {
     string word;
     cin >> word;
-    bool pal = true;
     for (int i = 0; i < word.size(); i++) {
-        pal &= word[i] == word[word.size() - 1 - i];
+        if (word[i] != word[word.size() - 1 - i]) {
+            cout << "NO\n";
+            return 0;
+        }
     }
-    if (pal) {
-        cout << "YES\n";
-    } else {
-        cout << "NO\n";
-    }
+    cout << "YES\n";
 }

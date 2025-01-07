@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Menjünk végig betűnként a szón, és a kimenetre mindig a megfelelő karaktert írjuk ki.
+- Ha az aktuális betű `a` betű, akkor `e` betűt írjunk ki, egyébként az aktuális betűt.
+- cpp: |
+    Figyeljünk arra, hogy a betűk `char` típusúak, és szimpla idézőjelek között kell őket megadni (pl.: `s[i] == 'a'`).
+  py: |
+    Emlékeztető: ahhoz, hogy a print parancs ne tegyen sortörést, illetve semmi mást a kiírt betű után, a végére írjuk az `end=''` argumentumot (pl.: `print(s[i], end='')`).

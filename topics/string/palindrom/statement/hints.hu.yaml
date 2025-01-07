@@ -1,4 +1,8 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Menjünk végig a szó betűin, és vizsgáljuk meg mindig, hogy egyezik-e hátulról az ugyanannyiadik betűvel.
+  py: Vizsgálhatnánk ciklussal egyesével a betűket, de a Pythonban egyszerűbb megoldás is van erre. Hogy kaphatjuk meg egy string megfordítását?
+- cpp: |
+    Figyelj arra, hogy 0-tól indexelünk. Ha a szó hossza `n`, akkor a `i`-edik betű hátulról az `(n - i - 1)`-edik helyen van.
+  py: |
+    Egy string megfordítására használhatjuk a `[::-1]` szintaxist. Például: `s[::-1]`.
+- cpp: Ha valahol nincs egyezés, akkor rögtön kiírhatjuk a "NO" választ, viszont véget kell vetni a programnak, nehogy többször is kiírjuk. Ezt a `return 0;` utasítással tehetjük meg. A ciklus után pedig feltétel nélkül kiírhatjuk, hogy "YES", mivel egyébként nem jutott volna el odáig a végrehajtás.

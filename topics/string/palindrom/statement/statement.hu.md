@@ -1,11 +1,11 @@
 ## Palindrom
-Földönkívüli diplomaták különböző nyelveket hasonlítanak össze és segítségre szorulnak annak az eldöntésében, hogy melyik szó palindrom. Segíts nekik! Egy adott szóról, döntsd el, hogy visszafele olvasva ugyan azt a szót kapjuk-e és ettől függően írd ki, hogy "YES" vagy "NO".
+Földönkívüli diplomaták különböző nyelveket hasonlítanak össze és segítségre szorulnak annak az eldöntésében, hogy melyik szó palindrom. Egy szó akkor palindrom, ha visszafele olvasva ugyanazt a szót kapjuk. Segíts nekik! Egy adott szóról döntsd el, hogy palindrom-e és ettől függően írd ki, hogy "YES" vagy "NO".
 
 ### Bemenet
-A bemenetben egyetlen string van: $S$
+A bemenetben egyetlen string van: $S$.
 
 ### Kimenet
-A kimenet első és egyetlen sorába azt kell kiírnod, hogy "YES", ha valóban palindrom a szó és azr, hogy "NO", ha nem az.
+A kimenetre azt kell kiírnod, hogy "YES" (csupa nagybetűvel), ha valóban palindrom a szó és azt, hogy "NO", ha nem az.
 
 ### Korlátok
 * $1 \le |S| \le 256$

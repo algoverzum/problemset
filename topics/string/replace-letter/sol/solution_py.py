@@ -2,5 +2,8 @@
 # @check-accepted: *
 
 word = input()
-word = word.replace("a", "e")
-print(word)
+for letter in word:
+    if letter == "a":
+        print("e", end="")
+    else:
+        print(letter, end="")

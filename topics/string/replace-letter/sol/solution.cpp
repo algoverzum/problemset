@@ -7,8 +7,9 @@ int main() {
     cin >> word;
     for (int i = 0; i < word.size(); i++) {
         if (word[i] == 'a') {
-            word[i] = 'e';
+            cout << 'e';
+        } else {
+            cout << word[i];
         }
     }
-    cout << word << "\n";
 }

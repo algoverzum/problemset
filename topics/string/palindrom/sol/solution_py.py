@@ -2,10 +2,7 @@
 # @check-accepted: *
 
 word = input()
-pal = True
-for i in range(len(word)):
-    pal &= word[i] == word[len(word) - 1 - i]
-if pal:
+if word == word[::-1]:
     print("YES")
 else:
     print("NO")
