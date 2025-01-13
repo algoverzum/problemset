@@ -6,6 +6,10 @@ problems:
     type: REQUIRED
   - problem_id: longest-ascent
     type: REQUIRED
+  - problem_id: treasure-planet
+    type: REQUIRED
+  - problem_id: most-frequent
+    type: REQUIRED
 prerequisites:
   - dummy-topic
 dependents: []

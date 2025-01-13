@@ -16,6 +16,8 @@ problems:
     type: REQUIRED
   - problem_id: string-slices-2
     type: REQUIRED
+  - problem_id: minimal-word
+    type: REQUIRED
 prerequisites:
   - for-loop
   - if-then-else
