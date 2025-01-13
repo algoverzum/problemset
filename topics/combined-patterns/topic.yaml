@@ -10,6 +10,10 @@ problems:
     type: REQUIRED
   - problem_id: most-frequent
     type: REQUIRED
+  - problem_id: count-different
+    type: REQUIRED
+  - problem_id: smallest-unique
+    type: REQUIRED
 prerequisites:
   - dummy-topic
 dependents: []
