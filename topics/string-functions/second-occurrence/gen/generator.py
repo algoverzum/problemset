@@ -9,28 +9,53 @@ from inspect import signature
 usage = """Generator for "second-occurrence".
 
 Parameters:
-* A (minimum value)
-* B (maximum value)
+* L (length of the string)
+* N (position of second f)
 * S (seed)
 
 Constraint:
-* %d <= A <= %d
-* %d <= B <= %d
+* %d <= L <= %d
 """ % (
-    MIN,
-    MAX,
     MIN,
     MAX,
 )
 
 
-def run(A, B):
+def randnotf():
+    c = chr(randint(ord("a"), ord("z")))
+    while c == "f":
+        c = chr(randint(ord("a"), ord("z")))
+    return c
+
+
+def run(L, N):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    word = ""
+    if N == -2:
+        for _ in range(L):
+            word += randnotf()
+    elif N == -1:
+        num = randint(0, L - 2)
+        for _ in range(num):
+            word += randnotf()
+        word += "f"
+        for _ in range(L - 1 - num):
+            word += randnotf()
+    else:
+        num = randint(0, N - 3)
+        for _ in range(num):
+            word += randnotf()
+        word += "f"
+        for _ in range(N - 2 - num):
+            word += randnotf()
+        word += "f"
+        while len(word) < L:
+            word += randnotf()
+    print(word)
 
 
 if __name__ == "__main__":
