@@ -5,13 +5,11 @@ using namespace std;
 int main() {
     string word;
     cin >> word;
-    int outindex = -2;
-    for (int i = 0; i < word.length(); i++) {
-        if (word[i] == 'x' && outindex == -2) {
-            outindex++;
-        } else if (word[i] == 'x' && outindex == -1) {
-            outindex = i;
-        }
+    int first = word.find('x');
+    if (first == -1) {
+        cout << -2 << "\n";
+        return 0;
     }
-    cout << outindex << "\n";
+    int second = word.find('x', first + 1);
+    cout << second << "\n";
 }

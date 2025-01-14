@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- A második előfordulás indexét az első előfordulás után kell keresni.
+- A find függvénynek lehet adni egy második paramétert is neki, ami megadja, hogy hol kezdje a keresést.
+- Legyen `first = s.find('x')`. Ha `first == -1`, akkor -2-t kell kiírni.
+- Egyébként pedig `s.find('x', first + 1)` eredményét.
+- cpp: C++ -ban valójában a visszatérési érték egy `string::npos` konstans, ha nem találja meg a keresett karaktert. Ez a konstans int-re konvertálva -1 lesz, de egyébként egy nagyon nagy szám.

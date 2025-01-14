@@ -8,7 +8,7 @@ The first line of the input contains $S$ - the letters of the messages, joined i
 Print a single number, the position of the second `x` character if there are at least two. If there is only one then print -1, if there is none then -2.
 
 ### Constraints
-* $1 \le S$ length $ \le 256$
+* $1 \le length$ $of$ $S \le 256$
 * $S$ contains only lower case letters of the English alphabet
 
 ### Example input

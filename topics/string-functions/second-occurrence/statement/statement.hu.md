@@ -8,7 +8,7 @@ A bemenetben egyetlen string van, a kódok egybe fűzve: $S$
 Egyetlen számot kell kiírnod, a második `x` karakter pozícióját, ha van legalább kettő. Ha csak egy van, akkor a kiírandó szám a -1, ha egy sincsen, akkor pedig a -2.
 
 ### Korlátok
-* $1 \le S$ hossza $ \le 256$
+* $1 \le S$ $hossza \le 256$
 * S csak az angol ábécé kisbetűit tartalmazza
 
 ### Példa bemenet
