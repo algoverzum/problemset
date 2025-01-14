@@ -10,7 +10,9 @@ int main() {
     while (i < word.size() && word[i] != key) {
         i++;
     }
-    if (i < word.size()) cout << i + 1 << "\n";
-    else cout << "-1\n";
+    if (i < word.size())
+        cout << i + 1 << "\n";
+    else
+        cout << "-1\n";
     return 0;
 }

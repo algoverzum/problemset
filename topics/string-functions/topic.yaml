@@ -10,6 +10,10 @@ problems:
     type: REQUIRED
   - problem_id: delete-character
     type: REQUIRED
+  - problem_id: second-occurrence
+    type: REQUIRED
+  - problem_id: count-occurrences
+    type: REQUIRED
 prerequisites:
   - string
 dependents:
