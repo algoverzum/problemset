@@ -6,7 +6,7 @@ The first line of the input is a string $S$, the message. It does not contain sp
 The second line contains a $C$ character.
 
 ### Output
-Print the part of the $S$ string between the first and last occurrence of the $C$ character, including the first and last occurrence of the character.
+Print the part of the $S$ string between the first and last occurrence of the $C$ character, including the first and last occurrence of the character. If the $C$ character does not occur in $S$, print -1.
 
 ### Constraints
 * The string $S$ consists of lowercase letters of the English alphabet and is up to 1000 characters long.

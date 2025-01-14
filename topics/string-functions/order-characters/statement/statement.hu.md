@@ -3,10 +3,10 @@ A galaxis külső peremén egy titokzatos tárgyat fedeztek fel: a Szablyák Kó
 Még egy konfliktusoktól szaggatott galaxisban is néha a legnagyobb erő a dolgok... rendbetételében rejlik.
 
 ### Bemenet
-A bemenet egyetlen sora tartalmazza az $S$ sztringet - a zagyva szöveget. $S$ csak angol nagybetűket tartalmaz.
+A bemenet egyetlen sora tartalmazza az $S$ stringet - a zagyva szöveget. $S$ csak angol nagybetűket tartalmaz.
 
 ### Kimenet
-Írj ki egyetlen sztringet, amely tartalmazza az $S$ betűit ábécé sorrendben.
+Írj ki egyetlen stringet, amely tartalmazza az $S$ betűit ábécé sorrendben.
 
 ### Korlátok
 * $1 \le $ $S$ hossza $ \le 1000$

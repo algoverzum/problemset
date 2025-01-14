@@ -1,4 +1,4 @@
 ---
 - Csak rendezni kell a stringet!
-- cpp: A sztringet lehet rendezni a `sort(S.begin(), S.end());` paranccsal.
-  py: Mivel a sztinget nem tudjuk karakterenként módosítani, `L = list(S)` paranccsal listát csinálhatunk belőlle. A listát rendexhetjük az `L.sort()` segítségével.
+- cpp: A stringet lehet rendezni a `sort(S.begin(), S.end());` paranccsal.
+  py: Mivel a stringet nem tudjuk karakterenként módosítani, `L = list(S)` paranccsal listát csinálhatunk belőlle. A listát rendexhetjük az `L.sort()` segítségével.

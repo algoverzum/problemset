@@ -6,7 +6,7 @@ A bemenet első sorában egy $S$ string van, az üzenet. Nincsenek benne szókö
 A második sorban pedig egy $C$ karakter.
 
 ### Kimenet
-A $C$ karakter első és utolsó előfordulása közötti részét írjuk ki az $S$ stringnek, a karakter első és utolsó előfordulását is beleértve.
+A $C$ karakter első és utolsó előfordulása közötti részét írjuk ki az $S$ stringnek, a karakter első és utolsó előfordulását is beleértve. Ha a $C$ karakter nem szerepel $S$-ben, akkor a kimenet legyen -1.
 
 ### Korlátok
 * Az $S$ szó az angol ábécé kisbetűiből áll és maximum 1000 karakter hosszú.
