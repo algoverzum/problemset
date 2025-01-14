@@ -7,9 +7,9 @@ int main() {
     cin >> word;
     int outindex = -2;
     for (int i = 0; i < word.length(); i++) {
-        if (word[i] == 'f' && outindex == -2) {
+        if (word[i] == 'x' && outindex == -2) {
             outindex++;
-        } else if (word[i] == 'f' && outindex == -1) {
+        } else if (word[i] == 'x' && outindex == -1) {
             outindex = i;
         }
     }

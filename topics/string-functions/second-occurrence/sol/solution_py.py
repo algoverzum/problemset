@@ -2,10 +2,10 @@
 # @check-accepted: *
 
 word = input()
-if word.count("f") == 0:
+if word.count("x") == 0:
     print(-2)
-elif word.count("f") == 1:
+elif word.count("x") == 1:
     print(-1)
 else:
-    first = word.find("f")
-    print(word.find("f", first + 1))
+    first = word.find("x")
+    print(word.find("x", first + 1))

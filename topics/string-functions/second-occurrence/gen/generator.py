@@ -10,20 +10,22 @@ usage = """Generator for "second-occurrence".
 
 Parameters:
 * L (length of the string)
-* N (position of second f)
+* N (position of second x)
 * S (seed)
 
 Constraint:
 * %d <= L <= %d
+* 1 <= L < %d
 """ % (
     MIN,
+    MAX,
     MAX,
 )
 
 
-def randnotf():
+def randnotx():
     c = chr(randint(ord("a"), ord("z")))
-    while c == "f":
+    while c == "x":
         c = chr(randint(ord("a"), ord("z")))
     return c
 
@@ -37,24 +39,24 @@ def run(L, N):
     word = ""
     if N == -2:
         for _ in range(L):
-            word += randnotf()
+            word += randnotx()
     elif N == -1:
         num = randint(0, L - 2)
         for _ in range(num):
-            word += randnotf()
-        word += "f"
+            word += randnotx()
+        word += "x"
         for _ in range(L - 1 - num):
-            word += randnotf()
+            word += randnotx()
     else:
         num = randint(0, N - 3)
         for _ in range(num):
-            word += randnotf()
-        word += "f"
+            word += randnotx()
+        word += "x"
         for _ in range(N - 2 - num):
-            word += randnotf()
-        word += "f"
+            word += randnotx()
+        word += "x"
         while len(word) < L:
-            word += randnotf()
+            word += randnotx()
     print(word)
 
 
