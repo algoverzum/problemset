@@ -4,14 +4,13 @@
 using namespace std;
 
 int main() {
-    string uzenet;
-    char betu;
-    cin >> uzenet >> betu;
-    size_t elso = uzenet.find(betu);
-    size_t utolso = uzenet.rfind(betu);
-    if (elso != string::npos && elso != utolso) {
-        string reszlet = uzenet.substr(elso, utolso - elso + 1);
-        cout << reszlet << "\n";
+    string message;
+    char letter;
+    cin >> message >> letter;
+    size_t first = message.find(letter);
+    size_t last = message.rfind(letter);
+    if (first != string::npos) {
+        cout << message.substr(first, last - first + 1) << "\n";
     } else {
         cout << -1 << "\n";
     }

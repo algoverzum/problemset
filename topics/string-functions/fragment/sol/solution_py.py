@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
-uzenet = input()
-betu = input()
-elso = uzenet.find(betu)
-utolso = uzenet.rfind(betu)
-if elso != -1 and elso != utolso:
-    reszlet = uzenet[elso : utolso + 1]
-    print(reszlet)
+message = input()
+letter = input()
+first = message.find(letter)
+last = message.rfind(letter)
+if first != -1:
+    print(message[first : last + 1])
 else:
     print(-1)
