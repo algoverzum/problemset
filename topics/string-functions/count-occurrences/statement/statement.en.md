@@ -8,7 +8,7 @@ The first line of the input contains $S$ - the given word to be examined.
 Print a single integer, the beauty of the given word.
 
 ### Constraints
-* $3 \le $ length of $S \le 256$
+* $3 \le length$ $of$ $S \le 256$
 * $S$ contains only lowercase letters of the English alphabet
 
 ### Example input

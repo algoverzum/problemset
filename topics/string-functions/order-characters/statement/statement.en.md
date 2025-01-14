@@ -9,7 +9,7 @@ The only line of the input contains $S$ - the jumbeld string. It contains only u
 Print a single string, containing the letters of $S$ in alphabetic order.
 
 ### Constraints
-* $1 \le $ the length of $S$ $ \le 1000$
+* $1 \le length$ $of$ $S \le 1000$
 * $S$ contains only upper case English letters
 
 ### Example input

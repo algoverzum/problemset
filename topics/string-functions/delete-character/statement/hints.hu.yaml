@@ -1,4 +1,3 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Menjünk végig a string karakterein, és ha az aktuális betű nem egyezik meg a törlendő betűvel, akkor írjuk ki.
+  py: Használjuk az `s.replace()` függvényt. A megfelelő betűt lecserélhetjük üres stringre ("").

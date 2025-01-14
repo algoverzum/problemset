@@ -8,7 +8,7 @@ A bemenetben egyetlen string van: $S$.
 Egyetlen számot kell kiírnod, a megkapott szó szépségét, tehát azt, hogy hányszor szerepel a stringben az "ebo" substring.
 
 ### Korlátok
-* $3 \le S$ hossza$ \le 256$
+* $3 \le S$ $hossza \le 256$
 * S csak az angol ábécé kisbetűit tartalmazza
 
 ### Példa bemenet

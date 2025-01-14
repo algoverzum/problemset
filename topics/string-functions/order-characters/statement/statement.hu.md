@@ -9,7 +9,7 @@ A bemenet egyetlen sora tartalmazza az $S$ stringet - a zagyva szöveget. $S$ cs
 Írj ki egyetlen stringet, amely tartalmazza az $S$ betűit ábécé sorrendben.
 
 ### Korlátok
-* $1 \le $ $S$ hossza $ \le 1000$
+* $1 \le S$ $hossza \le 1000$
 * $S$ csak angol nagybetűket tartalmaz
 
 ### Példa bemenet

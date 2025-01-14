@@ -11,7 +11,7 @@ The input contains $S$ - the message to be fixed. $S$ might look to you as rando
 Print the corrected string, replacing "FEAR" with "HOPE" in $S$ everywhere. 
 
 ### Constraints
-* $4 \le $ the length of $S$ $ \le 1000$
+* $4 \le length$ $of$ $S \le 1000$
 * $S$ contains only upper case English letters
 
 ### Example input

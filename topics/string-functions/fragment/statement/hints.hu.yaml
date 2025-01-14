@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Az `s.find(c)` megadja a c karakter első előfordulásának indexét az s stringben, az `s.rfind(c)` pedig az utolsót. Ha nincs ilyen karakter, akkor -1-et kapunk.
+- cpp: Ha az első előfordulás indexe `i` (ami nem -1), az utolsóé pedig `j`, akkor a kívánt rész az `s.substr(i, j - i + 1)`.
+  py: Ha az első előfordulás indexe `i` (ami nem -1), az utolsóé pedig `j`, akkor a kívánt rész az `s[i:j+1]`.

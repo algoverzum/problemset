@@ -10,7 +10,7 @@ A bemenet egyetlen stringet tartalmaz, $S$-et: a javítandó üzenetet. $S$ vél
 Írj ki egyetlen javított stringet, amiben lecserélted az $S$-ben lévő minden "FEAR" substringet a "HOPE" stringre.
 
 ### Korlátok
-* $4 \le $ $S$ hossza $ \le 1000$
+* $4 \le S$ $hossza \le 1000$
 * $S$ csak angol nagybetűket tartalmaz
 
 ### Példa bemenet
