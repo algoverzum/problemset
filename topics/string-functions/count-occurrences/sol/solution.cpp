@@ -7,8 +7,8 @@ int main() {
     string word;
     cin >> word;
     int beauty = 0;
-    for (int i = 0; i < word.length() - 2; i++) {
-        if (word.substr(i, 3) == "obo") {
+    for (int i = 0; i + 2 < word.length(); i++) {
+        if (word.substr(i, 3) == "ebo") {
             beauty++;
         }
     }

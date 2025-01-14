@@ -2,17 +2,17 @@
 id: string-functions
 name: String Functions
 problems:
-  - problem_id: order-characters
+  - problem_id: count-occurrences
+    type: ENTRY
+  - problem_id: fragment
     type: REQUIRED
   - problem_id: replace-substring
     type: REQUIRED
-  - problem_id: fragment
+  - problem_id: second-occurrence
     type: REQUIRED
   - problem_id: delete-character
     type: REQUIRED
-  - problem_id: second-occurrence
-    type: REQUIRED
-  - problem_id: count-occurrences
+  - problem_id: order-characters
     type: REQUIRED
 prerequisites:
   - string
