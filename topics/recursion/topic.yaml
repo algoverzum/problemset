@@ -1,0 +1,16 @@
+id: recursion
+name: Recursion
+problems:
+- problem_id: digit-sum
+  type: ENTRY
+- problem_id: factorial-recursive
+  type: REQUIRED
+prerequisites: functions
+dependents: dfs
+visualization:
+  image_filename: 20.svg
+  position:
+    x: 1800
+    y: 600
+
+# Notes:
