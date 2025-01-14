@@ -11,7 +11,7 @@ In the first line, print $N-1$ numbers, Akiko's winnings for each day starting f
 In the second line, print $N-2$ numbers, the changes between adjacent winnings.
 
 
-### Limits
+### Constraints
 * $3 \le N \le 100$
 * $1 \le A \le 10000$
 

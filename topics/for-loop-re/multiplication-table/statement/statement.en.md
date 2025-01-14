@@ -7,7 +7,7 @@ The input is a single integer: $N$.
 ### Output
 You have to print $N$ lines. In each line, print $N$ numbers separated by spaces, such that the value in the $j$-th column of the $i$-th row is the product of $i$ and $j$.
 
-### Limits
+### Constraints
 * $1 \le N \le 100$
 
 ### Example input

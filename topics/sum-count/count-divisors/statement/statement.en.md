@@ -7,7 +7,7 @@ There is a single integer $N$ in the input.
 ### Output
 You must print a single integer, the number of divisors of $N$.
 
-### Limits
+### Constraints
 * $1 \le N \le 10\,000$
 
 ### Example input

@@ -8,7 +8,7 @@ The second line contains a $C$ character.
 ### Output
 Print the part of the $S$ string between the first and last occurrence of the $C$ character, including the first and last occurrence of the character.
 
-### Limits
+### Constraints
 * The string $S$ consists of lowercase letters of the English alphabet and is up to 1000 characters long.
 * The character $C$ is a lowercase letter of the English alphabet.
 

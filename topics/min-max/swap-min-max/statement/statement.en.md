@@ -8,7 +8,7 @@ The second line contains the number of candies taken by the students, in order: 
 ### Output
 You need to print how many candies each student will have after the swap, separated by spaces.
 
-### Limits
+### Constraints
 * $1 \le N \le 1000$
 * $1 \le C_i \le 1000$
 

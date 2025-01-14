@@ -8,7 +8,7 @@ The second line contains the number of candies of the students: $C_1, C_2, \ldot
 ### Output
 You need to print the number of candies of all students on one line, separated by a space.
 
-### Limits
+### Constraints
 * $2 \le N \le 1000$
 * $1 \le C_i \le 1000$
 

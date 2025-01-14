@@ -7,7 +7,7 @@ The first line of the input contains the number of flowers: $N$. Then $N$ intege
 ### Output
 You must print one number, the number of petals of all the flowers that Aladar will take home. 
 
-### Limits
+### Constraints
 * $1 \le N \le 100$
 * $1 \le S_i \le 100$
 

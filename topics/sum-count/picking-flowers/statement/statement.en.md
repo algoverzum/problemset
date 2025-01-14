@@ -8,7 +8,7 @@ The first line of the input is the number of flowers: $N$. Then given the number
 ### Output
 You must print a single number, the number of flowers remaining in the meadow. 
 
-### Limits
+### Constraints
 * $1 \le N \le 100$
 * $1 \le S_i \le 100$
 
