@@ -1,0 +1,16 @@
+---
+# General info
+name: second-occurrence
+title: Second Occurrence
+title_translations:
+  hu: Second Occurrence
+
+# Technical info
+memory_limit: 256
+time_limit: 1.0
+infile: ""
+outfile: ""
+
+# Other stuff
+score_mode: max_subtask
+feedback_level: full
