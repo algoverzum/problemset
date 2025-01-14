@@ -3,7 +3,7 @@
 name: delete-character
 title: Delete Character
 title_translations:
-  hu: Delete Character
+  hu: Karakter törlés
 
 # Technical info
 memory_limit: 256

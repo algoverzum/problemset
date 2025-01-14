@@ -1,4 +1,4 @@
-MIN = 1
+MIN = 3
 MAX = 256
 
 subtasks = [

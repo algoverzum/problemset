@@ -10,7 +10,7 @@ usage = """Generator for "count-occurrences".
 
 Parameters:
 * L (word length)
-* N (number of "obo"s)
+* N (number of "ebo"s)
 * S (seed)
 
 Constraint:
@@ -34,7 +34,7 @@ def run(L, N):
     else:
         li = []
         for _ in range(N):
-            li.append("obo")
+            li.append("ebo")
         for _ in range(L - (3 * N)):
             li.append(chr(randint(ord("a"), ord("z"))))
         shuffle(li)

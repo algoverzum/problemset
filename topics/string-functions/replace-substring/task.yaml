@@ -3,7 +3,7 @@
 name: replace-substring
 title: Replace Substring
 title_translations:
-  hu: Részsztring csere
+  hu: Substring csere
 
 # Technical info
 memory_limit: 256

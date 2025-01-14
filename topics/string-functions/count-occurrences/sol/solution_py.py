@@ -2,5 +2,5 @@
 # @check-accepted: *
 
 word = input()
-beauty = word.count("obo")
+beauty = word.count("ebo")
 print(beauty)
