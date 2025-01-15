@@ -15,6 +15,7 @@ The first line contains $N$ and $Q$ - the number of days and number of questions
 
 Each of the next $Q$ lines describes one question in the form of `1 K` or `2 L R`.
 The first number is the type of question, and depending on this:
+
 * for type 1 there is a second number, the value $K$ in the question,
 * for type 2 there are two more numbers $L$ and $R$ - the start and end day of the period.
 

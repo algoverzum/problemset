@@ -16,6 +16,7 @@ Az első sorban $N$ és $Q$ - a napok száma és a kérdések száma szerepel. A
 
 A következő $Q$ sor mindegyike egy-egy kérdést ír le `1 K` vagy `2 L R` formában.
 Az első szám a kérdés típusát jelöli, és ettől függően:
+
 * az 1. típus esetében van egy második szám, a kérdésben szereplő $K$ érték,
 * a 2. típus esetében van még két szám, $L$ és $R$ - az időszak kezdő és zárónapja.
 
