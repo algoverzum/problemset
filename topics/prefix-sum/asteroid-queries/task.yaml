@@ -2,6 +2,7 @@
 name: asteroid-queries
 title: Asteroid Queries
 title_translations:
+   hu: Aszteroida kérdések
 
 # Technical info
 memory_limit: 256

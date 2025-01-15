@@ -1,0 +1,4 @@
+---
+- Tároljuk el egy tömbben az első típusú kérdésekre adott válaszokkal. Ki tudod számolni a második típusú kérdésekre adott válaszokat?
+- Ha minden $i$ esetén $S_i = A_1 + A_2 + \ldots + A_i$, akkor egy tartomány összege $(A_L + \ldots + A_R)$ egy művelettel megkapható. Rá tudsz jönni, hogyan?
+- Számítsuk ki az úgynevezett prefix összegeket, $S_i = A_1 + A_2 + \ldots + A_i$ minden $i$ esetén. Ezt egyetlen ciklussal elvégezhetjük, amelyben minden $i$-re  $S_i = S_{i-1} + A_i$ értékadást végezzük, kezdetben $S_0 = 0$. Az első típusú kérdésre a válasz $S_K$ lesz. A második típusú kérdésre adott válasz, az összes aszteroida az $L$ és az $R$ napok között $A_L + A_{L+1} + \ldots + A_R = S_R - S_{L-1}$.
