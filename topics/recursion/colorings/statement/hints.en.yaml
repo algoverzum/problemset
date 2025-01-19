@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Write a recursive function whose parameter is a coloring in progress (which is an `s` string).
+- If the existing coloring does not end in red, you can add a red one, i.e. call the function recursively by passing `s + "R"`. Also, you can add white in any case, so call the function recursively with that too.
+- If the length of the coloring reaches `n`, then that is a possible coloring to print.

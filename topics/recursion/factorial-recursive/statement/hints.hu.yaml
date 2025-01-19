@@ -1,4 +1,12 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- $n! = n \cdot (n-1)!$ vagyis számoljuk ki az $n$ faktoriálist úgy, hogy az $n-1$ faktoriálist megszorozzuk $n$-nel. Figyelj arra, hogy megálljon valahol a rekurzió!
+- cpp: |
+    ```
+    if (n <= 1) return 1;
+    return n * factorial(n - 1);
+    ```
+  py: |
+    ```
+    if n <= 1: return 1
+    return n * factorial(n - 1)
+    ```

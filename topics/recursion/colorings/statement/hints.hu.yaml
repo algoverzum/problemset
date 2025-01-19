@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Írj egy rekurzív függvényt, aminek a paraméterében egy kialakulóban lévő színezés van (ami egy `s` string).
+- Ha az eddigi színezés nem pirosra végződik, akkor hozzátehetünk egy pirosat, vagyis hívjuk meg a függvényt rekurzívan úgy, hogy `s + "R"` -et adunk át. Valamint fehéret minden esetben hozzá tudunk tenni, és azzal is hívjuk meg rekurzívan a függvényt.
+- Ha a színezés hossza elérte a `n`-et, akkor az egy lehetséges színezés, amit kiírhatunk.

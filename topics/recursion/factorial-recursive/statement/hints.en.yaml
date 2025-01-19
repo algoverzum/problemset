@@ -1,4 +1,12 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- $n! = n \cdot (n-1)!$, i.e. calculate $n$ factorial by multiplying $n-1$ factorial by $n$. Make sure to stop the recursion somewhere.
+- cpp: |
+    ```
+    if (n <= 1) return 1;
+    return n * factorial(n - 1);
+    ```
+  py: |
+    ```
+    if n <= 1: return 1
+    return n * factorial(n - 1)
+    ```

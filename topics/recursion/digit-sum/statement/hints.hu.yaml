@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Válasszuk le az utolsó számjegyet!
+- Az utolsó számjegy a 10-es maradék. Ezt eltüntetni úgy lehet, hogy elosztjuk 10-zel.
+- A számjegyek összege az utolsó számjegy + annak eltüntetése esetén megmaradó szám számjegyösszege.

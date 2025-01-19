@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Let's detach the last digit.
+- The last digit is the remainder  by 10. To erase it, divide by 10.
+- The sum of the digits is the last digit + the sum of the digits of the number that remains if you remove it.
