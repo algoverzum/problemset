@@ -1,4 +1,4 @@
-## Épület
+## Színezések
 A távoli jövőben, a USS Enterprise fedélzetén Picard kapitány fontos feladatot bíz rád. Az űrhajó néhány fedélzetét karbantartás miatt újra kell festeni. El kell döntened, mely szinteket fessék pirosra (`R`), és melyek legyenek fehérek (`W`).
 Azonban a Csillagflotta Protokollja kimondja: Két piros fedélzet nem lehet közvetlenül egymás mellett.
 Add meg minden érvényes festési mintát **ábécé** sorrendben.

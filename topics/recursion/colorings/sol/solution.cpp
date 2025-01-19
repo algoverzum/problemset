@@ -5,18 +5,18 @@ using namespace std;
 
 int n;
 
-void building(string S) {
+void colorings(string S) {
     if (S.size() == n) {
         cout << S << "\n";
         return;
     }
     if (S.length() == 0 || S.back() == 'W') {
-        building(S + "R");
+        colorings(S + "R");
     }
-    building(S + "W");
+    colorings(S + "W");
 }
 
 int main() {
     cin >> n;
-    building("");
+    colorings("");
 }

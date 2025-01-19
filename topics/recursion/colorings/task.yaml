@@ -1,9 +1,9 @@
 ---
 # General info
-name: building
-title: Building
+name: colorings
+title: Colorings
 title_translations:
-  hu: Épület
+  hu: Színezések
 
 # Technical info
 memory_limit: 256

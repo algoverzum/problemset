@@ -6,7 +6,7 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "building".
+usage = """Generator for "colorings".
 
 Parameters:
 * A (value of N)

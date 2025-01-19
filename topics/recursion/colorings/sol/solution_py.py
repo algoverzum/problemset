@@ -2,14 +2,14 @@
 # @check-accepted: *
 
 
-def building(cur, n):
+def colorings(cur, n):
     if len(cur) == n:
         print(cur)
         return
     if cur[-1:] != "R":
-        building(cur + "R", n)
-    building(cur + "W", n)
+        colorings(cur + "R", n)
+    colorings(cur + "W", n)
 
 
 n = int(input())
-building("", n)
+colorings("", n)

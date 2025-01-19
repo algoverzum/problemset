@@ -1,4 +1,4 @@
-## Building
+## Colorings
 In the distant future, aboard the USS Enterprise, Captain Picard has given you an important mission. Some of the decks of the starship need to be repainted for maintenance. You must decide which decks should be painted red (`R`) and which should be painted white (`W`).
 However, Starfleet Protocol states: Two red decks cannot be directly adjacent to each other.
 Print all valid paint patterns in **alphabetical** order.
