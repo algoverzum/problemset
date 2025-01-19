@@ -10,7 +10,7 @@ problems:
     type: REQUIRED
   - problem_id: gcd
     type: REQUIRED
-  - problem_id: building
+  - problem_id: colorings
     type: REQUIRED
   - problem_id: reverse-recursive
     type: REQUIRED
