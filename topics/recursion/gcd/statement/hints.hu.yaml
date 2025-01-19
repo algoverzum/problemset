@@ -1,0 +1,3 @@
+---
+- Az az alapötlet, hogy ha a két szám `a` és `b`, és `a>=b`, akkor `LNKO(a,b)=LNKO(b, a-b)`, hiszen ha egy szám osztója mindkét számnak, akkor a különbségüknek is osztható.
+- Egy idő után az egyik szám lecsökken 0-ra, és akkor a másik számot visszaadhatjuk eredményként.

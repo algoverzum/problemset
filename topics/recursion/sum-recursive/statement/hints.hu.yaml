@@ -1,0 +1,3 @@
+---
+- Ha a=b akkor az eredmény a. Egyébként az összeg felírható úgy, hogy b plusz az összeg a-tól b-1-ig, és ez utóbbit egy rekurzív hívással megkaphatjuk.
+- Tehát a rekurzív hívás így nézhet ki: return b + summa(a, b-1). Ne felejtsük el előtte megvizsgálni, hogy a=b, hiszen akkor már nem kell rekurzív hívás.

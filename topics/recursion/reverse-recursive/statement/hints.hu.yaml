@@ -1,0 +1,3 @@
+---
+- Csináljunk egy függvényt, ami úgy kezdődik, hogy beolvasunk egy számot, és a függvény utolsó utasítása legyen ennek a számnak a kiírása (return utasítás nem is kell bele). Mit csináljunk a kettő között?
+- Ha a beolvasott szám nem 0, akkor hívjuk meg rekurzívan a függvényt! Ezzel elérjük, hogy miután beolvastuk ezt a számot, és mielőtt kiírjuk, az összes utána következő számot beolvassuk, és kiírjuk.

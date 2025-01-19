@@ -1,0 +1,3 @@
+---
+- Let's make a function that starts by reading a number, and the last line of the function should be the print of that number (no return statement is needed). What should we do in between?
+- If the number read is not 0, then call the function recursively! This way, after reading this number, and before printing it, all numbers after it are read and printed.

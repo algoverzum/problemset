@@ -1,0 +1,4 @@
+---
+- Az n. Fibonacci szám az n-1. és n-2. Fibonacci szám összege, ezeket számoljuk ki úgy, hogy önmagát meghívja a függvény, majd adjuk őket össze.
+- fibonacci(n) = fibonacci(n-1)+fibonacci(n-2). Figyeljünk arra, hogy ne a végtelenségig hívja önmagát a függvény!
+- Ha n<=2, akkor adjunk vissza 1-et.

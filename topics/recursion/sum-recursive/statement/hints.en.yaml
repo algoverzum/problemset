@@ -1,0 +1,3 @@
+---
+- If `a=b` then the result is `a`. Otherwise the sum can be written as b plus the sum from a to b-1, and the latter can be obtained by a recursive call.
+- So a recursive call might look like `return b + summa(a, b-1)`. Don't forget to check first that `a=b`, since then you don't need a recursive call.

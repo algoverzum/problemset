@@ -1,0 +1,4 @@
+---
+- The n-th Fibonacci number is the sum of the n-1-th and n-2-th Fibonacci numbers. Calculate them by calling the function itself and then add them together.
+- fibonacci(n) = fibonacci(n-1)+fibonacci(n-2). Make sure that the function does not call itself infinitely!
+- If n<=2, return 1.

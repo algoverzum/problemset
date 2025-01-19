@@ -1,0 +1,5 @@
+RWR
+RWW
+WRW
+WWR
+WWW

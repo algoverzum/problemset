@@ -1,0 +1,10 @@
+---
+- If the word is empty, then the number of occurrences is 0. Otherwise, see if it matches the first character, and if so, the result is 1 plus the number of occurrences in the rest of the word, if not, then just the number of occurrences in the rest of the word.
+- py:
+    To make a new string from the string S by omitting the first character: S[1:]
+  cpp:
+    To make a new string from the string S by omitting the first character: S.substr(1)
+- py:
+    So, if S[0] == char then return 1 + count(S[1:], char) otherwise return count(S[1:], char). Remember to check first if the word is an empty string!
+  cpp:
+    So, if S[0] == char then return 1 + count(S.substr(1), char) else return count(S.substr(1), char). Don't forget to check first if the word is an empty string!

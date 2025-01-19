@@ -1,10 +1,23 @@
+---
 id: recursion
 name: Recursion
 problems:
-- problem_id: digit-sum
-  type: ENTRY
-- problem_id: factorial-recursive
-  type: REQUIRED
+  - problem_id: digit-sum
+    type: ENTRY
+  - problem_id: factorial-recursive
+    type: REQUIRED
+  - problem_id: fibonacci
+    type: REQUIRED
+  - problem_id: gcd
+    type: REQUIRED
+  - problem_id: building
+    type: REQUIRED
+  - problem_id: reverse-recursive
+    type: REQUIRED
+  - problem_id: sum-recursive
+    type: REQUIRED
+  - problem_id: count-recursive
+    type: REQUIRED
 prerequisites: functions
 dependents: dfs
 visualization:
