@@ -6,9 +6,8 @@ def building(cur, n):
     if len(cur) == n:
         print(cur)
         return
-    nextR = cur + "R"
-    if nextR[-2:] != "RR":
-        building(nextR, n)
+    if cur[-1:] != "R":
+        building(cur + "R", n)
     building(cur + "W", n)
 
 

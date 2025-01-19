@@ -1,3 +1,3 @@
 ---
-- The basic idea is that if the two numbers are `a` and `b`, and `a>=b`, then `gcd(a,b)=gcd(b, a-b)`, since if a number is a divisor of both numbers, then their difference is divisible.
-- After some time, one number will be reduced to 0, and then the other number can be returned as the result.
+- The basic idea is that if the two numbers are `a` and `b`, and `a>=b`, then `gcd(a,b)=gcd(b, a-b)`, since if a number is a divisor of both numbers, then it is a divisor of their difference as well.
+- After some steps, one number will be reduced to 0, and then the other number can be returned as the result.

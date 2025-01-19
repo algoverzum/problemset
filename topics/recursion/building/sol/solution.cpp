@@ -3,25 +3,20 @@
 #include <string>
 using namespace std;
 
-void building(string S, int n) {
-    if (S.length() == n) {
+int n;
+
+void building(string S) {
+    if (S.size() == n) {
         cout << S << "\n";
         return;
     }
-    if (S.length() == 0) {
-        building(S + "R", n);
-        building(S + "W", n);
-    } else {
-        if (S[S.length() - 1] == 'W') {
-            building(S + "R", n);
-        }
-        building(S + "W", n);
+    if (S.length() == 0 || S.back() == 'W') {
+        building(S + "R");
     }
+    building(S + "W");
 }
 
 int main() {
-    int n;
     cin >> n;
-    string S = "";
-    building(S, n);
+    building("");
 }

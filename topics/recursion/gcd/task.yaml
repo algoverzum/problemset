@@ -1,9 +1,9 @@
 ---
 # General info
 name: gcd
-title: GCD
+title: Greatest Common Divisor Recursively
 title_translations:
-  hu: LNKO
+  hu: Legnagyobb közös osztó rekurzívan
 
 # Technical info
 memory_limit: 256

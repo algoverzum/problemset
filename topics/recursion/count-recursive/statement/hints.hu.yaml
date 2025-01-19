@@ -1,10 +1,10 @@
 ---
 - Ha a szó üres, akkor az előfordulások száma 0. Egyébként nézzük meg, hogy az első karakterrel megegyezik-e, és ha igen, akkor az eredmény 1 plusz a szó többi részében az előfordulások száma, ha nem akkor simán a szó többi részében az előfordulások száma.
+- py: |
+    Az `s` stringből az első karakter elhagyásával egy új stringet csinálni így lehet: `s[1:]`
+  cpp: |
+    Az `s` stringből az első karakter elhagyásával egy új stringet csinálni így lehet: `s.substr(1)`
 - py:
-    A szo stringből az első karakter elhagyásával egy új stringet csinálni így lehet: szo[1:]
-  cpp:
-    A szo stringből az első karakter elhagyásával egy új stringet csinálni így lehet: szo.substr(1)
-- py:
-    Tehát, ha szo[0] == betu akkor return 1 + count(szo[1:], betu) egyébként return count(szo[1:], betu). Ne felejtsük el megvizsgálni előtte, hogy a szó üres string-e!
-  cpp:
-    Tehát, ha szo[0] == betu akkor return 1 + count(szo.substr(1), betu) egyébként return count(szo.substr(1), betu). Ne felejtsük el megvizsgálni előtte, hogy a szó üres string-e!
+    Tehát, ha `s[0] == betu` akkor `return 1 + count(s[1:], betu)` egyébként return `count(s[1:], betu)`. Ne felejtsük el megvizsgálni előtte, hogy s üres string-e!
+  cpp: |
+    Tehát, ha `s[0] == betu` akkor `return 1 + count(s.substr(1), betu)` egyébként `return count(s.substr(1), betu)`. Ne felejtsük el megvizsgálni előtte, hogy s üres string-e!
