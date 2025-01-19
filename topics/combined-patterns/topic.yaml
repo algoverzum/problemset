@@ -14,6 +14,8 @@ problems:
     type: REQUIRED
   - problem_id: smallest-unique
     type: REQUIRED
+  - problem_id: contest-results
+    type: REQUIRED
 prerequisites:
   - dummy-topic
 dependents: []
