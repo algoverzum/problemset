@@ -15,11 +15,13 @@ problems:
   type: REQUIRED
 - problem_id: number-of-teams
   type: COMPLETION
+- problem_id: solar-system
+  type: REQUIRED
 prerequisites:
- - for-loop
+- for-loop
 dependents:
- - array
- - while-loop
+- array
+- while-loop
 visualization:
   image_filename: 5.svg
   position:
