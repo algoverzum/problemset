@@ -10,5 +10,5 @@ int gcd(int a, int b) {
 int main() {
     int a, b;
     cin >> a >> b;
-    cout << gcd(a, b) << "/n";
+    cout << gcd(a, b) << "\n";
 }
