@@ -1,0 +1,16 @@
+---
+# General info
+name: heroes
+title: Heroes
+title_translations:
+  hu: Hősök
+
+# Technical info
+memory_limit: 256
+time_limit: 1.5
+infile: ""
+outfile: ""
+
+# Other stuff
+score_mode: max_subtask
+feedback_level: full
