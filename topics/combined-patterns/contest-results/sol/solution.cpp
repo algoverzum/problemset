@@ -6,30 +6,22 @@
 using namespace std;
 
 int main() {
-    int n, m;
-    cin >> n >> m;
-    vector<string> db(n);
-    vector<string> q(m);
-    vector<string> database(n);
+    int n, q;
+    cin >> n >> q;
+    vector<string> result(n);
     for (int i = 0; i < n; i++) {
-        cin >> database[i];
+        cin >> result[i];
     }
 
-    vector<string> queries(m);
-    for (int i = 0; i < m; i++) {
-        cin >> queries[i];
-    }
-    vector<int> result;
-    for (string query : queries) {
-        auto it = find(database.begin(), database.end(), query);
-        if (it != database.end()) {
-            result.push_back(distance(database.begin(), it) + 1);
+    for (int i = 0; i < q; i++) {
+        string query;
+        cin >> query;
+        auto it = find(result.begin(), result.end(), query);
+        if (it != result.end()) {
+            cout << it - result.begin() + 1 << " ";
         } else {
-            result.push_back(-1);
+            cout << "-1 ";
         }
-    }
-    for (size_t i = 0; i < m; i++) {
-        cout << result[i] << " ";
     }
     cout << "\n";
 }

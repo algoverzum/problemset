@@ -53,7 +53,9 @@ def run(A, B, C, D):
         if new_word not in list1:
             list2.add(new_word)
     list2 = list(list2)
-    list2.extend(sample(list1, D))
+    list2.extend(sample(list1, min(D, len(list1))))
+    while len(list2) < B:
+        list2.append(choice(list1))
     shuffle(list2)
     print(*list1)
     print(*list2)

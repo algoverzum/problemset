@@ -1,5 +1,5 @@
 MIN = 1
-MAX = 1000
+MAX = 100
 MIN2 = 0
 
 subtasks = [
