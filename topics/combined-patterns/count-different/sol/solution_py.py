@@ -4,7 +4,7 @@
 n = int(input())
 numbers = [int(x) for x in input().split()]
 unique_numbers = []
-for i in numbers:
-    if i not in unique_numbers:
-        unique_numbers.append(i)
+for num in numbers:
+    if num not in unique_numbers:
+        unique_numbers.append(num)
 print(len(unique_numbers))

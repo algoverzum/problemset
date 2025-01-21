@@ -7,19 +7,19 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    vector<int> A(n);
+    vector<int> a(n);
     for (int i = 0; i < n; i++) {
-        cin >> A[i];
+        cin >> a[i];
     }
-    int mostFrequent = A[0], Count = 1;
+    int mostFrequent = a[0], maxCount = 1;
     for (int i = 0; i < n; i++) {
-        int c = count(A.begin(), A.end(), A[i]);
-        if (c > Count) {
-            mostFrequent = A[i];
-            Count = c;
-        } else if (c == Count) {
-            if (mostFrequent > A[i]) {
-                mostFrequent = A[i];
+        int cnt = count(a.begin(), a.end(), a[i]);
+        if (cnt > maxCount) {
+            mostFrequent = a[i];
+            maxCount = cnt;
+        } else if (cnt == maxCount) {
+            if (mostFrequent > a[i]) {
+                mostFrequent = a[i];
             }
         }
     }

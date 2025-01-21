@@ -4,11 +4,11 @@ Ha több szám is egyforma gyakorisággal fordul elő, akkor a legkisebb számot
 Küldetésed tehát: határozd meg a sorozatban szereplő leggyakoribb (és ha kell, a legkisebb) számot, hogy felfedd az adatcsomag titkát! Az Erő vezessen!
 
 ### Bemenet
-A bemenetben első sorában egy egész szám van: $N$, az adatcsomagban szereplő számok száma.
-A bemenetben második sorában pontosan $N$ egész szám van szóközzel elválasztva: $A_1, A_2, \ldots, A_{N}$.
+A bemenet első sorában egy egész szám van: $N$, a számsorozat hossza.
+A bemenet második sorában pontosan $N$ egész szám van szóközzel elválasztva: $A_1, A_2, \ldots, A_{N}$, a sorozat elemei.
 
 ### Kimenet
-Egyetlen számot kell kiírnod, az adatcsomagban szereplő leggyakoribb (és ha több ilyen is van, akkor a legkisebb) számot.
+Egyetlen számot kell kiírnod, az adatcsomagban szereplő leggyakoribb számot. Ha több ilyen is van, akkor a legkisebbet kell kiírni közülük.
 
 ### Korlátok
 * $1 \le N \le 100$

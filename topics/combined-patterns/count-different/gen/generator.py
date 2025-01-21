@@ -31,16 +31,9 @@ def run(A, B):
         assert eval(row[2:]), row[2:]
 
     print(A)
-    remaining = A
-    distincts = sample(range(1, A + 1), B)
-    lista = []
-    for i in range(B):
-        c = randint(0, A // B)
-        remaining = remaining - c
-        lista = lista + [distincts[i]] * c
-    lista = lista + [distincts[0]] * remaining
-    if A == 1000:
-        lista = list(range(1, 1001))
+    lista = sample(range(1, A + 1), B)
+    while len(lista) < A:
+        lista.append(lista[randint(0, len(lista) - 1)])
     shuffle(lista)
     print(*lista)
 

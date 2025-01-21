@@ -2,8 +2,5 @@
 # @check-accepted: *
 
 n = int(input())
-moons = []
-for _ in range(n):
-    moon = int(input())
-    moons.append(moon)
+moons = [int(x) for x in input().split()]
 print(n + 1 + sum(moons))

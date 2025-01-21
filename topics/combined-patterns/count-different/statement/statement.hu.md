@@ -1,16 +1,16 @@
 ## Hány különböző
-A Galaktikus Kutatószövetség egy távoli bolygón mintákat vett a talajból. Minden minta egy számmal van jelölve az alapján, hogy milyen anyagból van. Hány különböző anyagot sikerült találnunk a mintavételezésünk során.
+A Galaktikus Kutatószövetség egy távoli bolygón mintákat vett a talajból. Minden minta egy számmal van jelölve az alapján, hogy milyen anyagból van. Hány különböző anyagot sikerült találnunk a mintavételezésünk során?
 
 ### Bemenet
-A bemenetben első sorában egyetlen egész szám van: $N$ 
-A bemenet második sorában $N$ db $A$ egész szám van .
+A bemenet első sorában egyetlen egész szám van: $N$.
+A bemenet második sorában $N$ egész szám van: $A_1, A_2, \ldots, A_N$, a talajminták anyagát jelölő számok.
 
 ### Kimenet
-Egyetlen számot kell kiírnod, hogy hányféle különböző elem van a számsorban.
+Egyetlen számot kell kiírnod, hogy hányféle különböző anyag van a talajminták között.
 
 ### Korlátok
-* $1 \le N \le 10000$
-* $1 \le A \le 10000$
+* $1 \le N \le 1000$
+* $1 \le A_i \le 1000$
 
 ### Példa bemenet
     5
@@ -20,4 +20,4 @@ Egyetlen számot kell kiírnod, hogy hányféle különböző elem van a számso
     3
 
 ### A példa magyarázata
-3 különböző elem: 1, 2, 3
+Három különböző elem van a bemenetben: 1, 2, 3.

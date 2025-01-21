@@ -2,17 +2,17 @@
 # @check-accepted: *
 
 n = int(input())
-A = [int(x) for x in input().split()]
+a = [int(x) for x in input().split()]
 
-mostFrequent = A[0]
-count = 1
+mostFrequent = a[0]
+maxCount = 1
 
-for a in A:
-    c = A.count(a)
-    if c > count:
-        mostFrequent = a
-        count = c
-    elif c == count:
-        mostFrequent = min(mostFrequent, a)
+for number in a:
+    cnt = a.count(number)
+    if cnt > maxCount:
+        mostFrequent = number
+        maxCount = cnt
+    elif cnt == maxCount:
+        mostFrequent = min(mostFrequent, number)
 
 print(mostFrequent)

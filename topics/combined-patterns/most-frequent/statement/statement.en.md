@@ -4,11 +4,11 @@ If there is a tie and multiple numbers occur with the same frequency, the smalle
 Your mission: determine the most frequent (and, if needed, the smallest) number in the sequence to unlock the secrets of the data packet. May the Force guide you!
 
 ### Input
-The first line of the input contains an integer $N$, the number of numbers in the data packet.
-The second line of the input contains exactly $N$ integers separated by spaces: $A_1, A_2, \ldots, A_{N}$.
+The first line of the input contains an integer $N$, the length of the sequence.
+The second line of the input contains exactly $N$ integers separated by spaces: $A_1, A_2, \ldots, A_{N}$, the elements of the sequence.
 
 ### Output
-Print a single number, the most common (and if there are more than one, the smallest) number in the data packet.
+Print a single number, the most common number in the data packet. If there are more than one such numbers, you should print the smallest among them.
 
 ### Constraints
 * $1 \le N \le 100$

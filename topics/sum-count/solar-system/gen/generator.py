@@ -31,8 +31,7 @@ def run(N, A):
         assert eval(row[2:]), row[2:]
 
     print(N)
-    for _ in range(N):
-        print(randint(0, A))
+    print(*[randint(0, A) for _ in range(N)])
 
 
 if __name__ == "__main__":

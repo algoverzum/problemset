@@ -1,9 +1,9 @@
 ## Naprendszer
-Bolygónk népe kíváncsi arra, hogy hány égi test van a naprendszerünkben. Ennek érdekében összegyűjtöttük, hogy melyik naprendszer béli bolygónak hány holdja van. Készíts egy programot, amely meg tudja állapítani, hogy hány égitest van a naprendszerben egy a bolygók holdjainak számát tartalmazó listából. (A feladat szempontjából égitestnek csak holdakat, bolygókat és csillagokat számítjuk és feltételezzük, hogy csak egy csillag van a naprendszer közepén.)
+Bolygónk népe kíváncsi arra, hogy hány égitest van a naprendszerünkben. Ennek érdekében összegyűjtöttük, hogy a naprendszerünk egyes bolygóinak hány holdja van. Készíts egy programot, amely megállapítja, hogy hány égitest van a naprendszerben, ha adott egy lista, amely az egyes bolygók holdjainak számát tartalmazza. (A feladat szempontjából égitestnek csak holdakat, bolygókat és csillagokat számítjuk és feltételezzük, hogy csak egy csillag van a naprendszer közepén.)
 
 ### Bemenet
-A bemenet első sorában egyetlen egész szám van, a bolygók száma: $N$
-A következő $N$ sorban egyetlen egy egész szám van, az $N$-edik bolygó holdjainak száma: $A_1, A_2, \dots, A_N$ 
+A bemenet első sorában egyetlen egész szám van, a bolygók száma: $N$.
+A második sorban $N$ egész szám van, az egyes bolygók holdjainak száma: $A_1, A_2, \dots, A_N$.
 
 ### Kimenet
 Egyetlen számot kell kiírnod, a naprendszer égitesteinek számát.
@@ -14,17 +14,10 @@ Egyetlen számot kell kiírnod, a naprendszer égitesteinek számát.
 
 ### Példa bemenet
     8
-    0
-    0
-    1
-    2
-    95
-    146
-    27
-    14
+    0 0 1 2 9 14 3 14
 
 ### Példa kimenet
-    294
+    52
 
 ### A példa magyarázata
-A holdakból összesen 285 van amihez ha hozzáveszünk még 8 bolygót és egy csillagot, akkor 294 égitestet kapunk.
+A holdakból összesen 43 van, amihez ha hozzáveszünk még 8 bolygót és 1 csillagot, akkor 52 égitestet kapunk.
