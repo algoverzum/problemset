@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Go through the elements and count the number of occurrences for each of them with a built-in function. We should keep track of the element with the most occurrences - this is a standard maximum selection. Just make sure that if more than one element occurs the same number of times, you choose the one with the lower value.
+- cpp: |
+    In C++, you can use the count function to count the occurrences of an element: `int cnt = count(a.begin(), a.end(), a[i]);`
+  py: |
+    In Python, the count method of a list can be used to count the occurrences of an element: `cnt = a.count(a[i])`.

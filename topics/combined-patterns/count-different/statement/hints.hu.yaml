@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Legyen egy segédlistánk, ami a különböző elemeket tárolja. Menjünk végig a sorozaton, mikor kell hozzáadnunk az aktuális elemet?
+- Ha az aktuális elem nem szerepel a listában, akkor tegyük bele. Ennek eldöntéséhez használjunk egy beépített függvényt.
+- cpp: |
+    C++ -ban a find függvényt használhatjuk arra, hogy ellenőrizzük, hogy egy elem nem szerepel egy vectorban: `find(v.begin(), v.end(), elem) == v.end()`.
+  py: |
+    Pythonban a `not in` operátorral tudjuk megállapítani, hogy egy elem nincs benne egy listában: `elem not in lista`.

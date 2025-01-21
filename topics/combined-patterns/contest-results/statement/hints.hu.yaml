@@ -1,4 +1,8 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Olvassuk be ay adatokat mindkét sorból, majd menjünk végig a kérdéses versenyzőkön, és mindegyikre határozzuk meg az indexét az eredménylistában. Használjunk erre a keresésre egy beépített függvényt!
+- cpp: |
+    C++ -ban a `find` függvény használható erre: `auto it = find(result.begin(), result.end(), name)`. Ez egy iterátorral tér vissza, ami az adott elemre mutat, vagy az `end()`-re, ha nem találja. Az indexet megkaphatjuk úgy, hogy kivonjuk belőle a `begin()`-t: `int index = it - result.begin()`.
+  py: |
+    Pythonban a lista index() metódusa használható erre: `result.index(name)`. Viszont hiba történik, ha a keresett elem nincs a listában. Hogy kezeljük ezt az esetet?
+- cpp: Figyeljünk arra, hogy az indexnél eggyel nagyobb értéket kell kiírni.
+  py: Először az `in` operátorral vizsgáljuk meg, hogy szerepel-e a név a listában. Figyeljünk arra is, hogy az indexnél eggyel nagyobb értéket kell kiírni.

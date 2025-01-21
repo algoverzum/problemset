@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- The solution is the sum of the moons + the length of the list + 1. To calculate the sum, use a built-in function.
+- cpp: We can use `accumulate(vec.begin(), vec.end(), 0);` to sum the elements of a vector.
+  py: The `sum(list)` function can be used to sum the elements of a list.

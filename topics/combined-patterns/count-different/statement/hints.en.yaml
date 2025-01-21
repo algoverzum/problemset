@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Use an auxiliary list to store the different items. Let's go through the sequence, when should we add the current item?
+- If the current item is not in the auxiliary list, add it. To decide this, we can use a built-in function.
+- cpp: |
+    In C++, you can use the find function to check that an element is not in a vector: `find(v.begin(), v.end(), element) == v.end()`.
+  py: |
+    In Python, we can use the `not in` operator to check that an element is not in a list: `element not in list`.

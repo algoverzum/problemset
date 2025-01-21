@@ -1,4 +1,9 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- First make an auxiliary list of the numbers appering only once, then take their minimum.
+- cpp: |
+    Initially the auxiliary list should be an empty vector, then go through the numbers and check that the current number occurs only once, and if so, add it to the auxiliary list. To count the occurrences, you can use the count function: `if (count(numbers.begin(), numbers.end(), numbers[i]) == 1) ...`.
+  py: |
+    The auxiliary list should initially be an empty list, then go through the numbers and check that the current number occurs only once, and if so, append it to the auxiliary list. To count the occurrences, you can use the count function: `if numbers.count(i) == 1: ...`
+- cpp: |
+    To select the smallest element in the auxiliary list, use the min_element function: `*min_element(v.begin(), v.end())`.
+  py: To select the smallest element in the auxiliary list, use the min function.

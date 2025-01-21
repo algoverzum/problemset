@@ -1,4 +1,9 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Először készítsünk egy segédlistát, amiben az egyszer szereplő számok vannak, majd vegyük azok minimumát.
+- cpp: |
+    A segédlista kezdetben legyen egy üres vector, majd menjünk végig a számokon és ellenőrizzük, hogy az aktuális szám csak egyszer szerepel, és ha igen, akkor adjuk hozzá a segédlistához. Az előfordulások megszámlálásához használhatjuk a count függvényt: `if (count(numbers.begin(), numbers.end(), numbers[i]) == 1) ...`.
+  py: |
+    A segédlista kezdetben legyen egy üres lista, majd menjünk végig a számokon és ellenőrizzük, hogy az aktuális szám csak egyszer szerepel, és ha igen, akkor adjuk hozzá a segédlistához. Az előfordulások megszámlálásához használhatjuk a count függvényt: `if numbers.count(i) == 1: ...`
+- cpp: |
+    A segédlistában legkisebb elem kiválasztásához használhatjuk a min_element függvényt: `*min_element(v.begin(), v.end())`.
+  py: A segédlistában legkisebb elem kiválasztásához használhatjuk a min függvényt.

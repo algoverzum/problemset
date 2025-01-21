@@ -14,9 +14,9 @@ int main() {
     }
 
     for (int i = 0; i < q; i++) {
-        string query;
-        cin >> query;
-        auto it = find(result.begin(), result.end(), query);
+        string name;
+        cin >> name;
+        auto it = find(result.begin(), result.end(), name);
         if (it != result.end()) {
             cout << it - result.begin() + 1 << " ";
         } else {

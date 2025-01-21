@@ -3,9 +3,9 @@
 
 n, q = map(int, input().split())
 result = input().split()
-queries = input().split()
-for query in queries:
-    if query in result:
-        print(result.index(query) + 1, end=" ")
+names = input().split()
+for name in names:
+    if name in result:
+        print(result.index(name) + 1, end=" ")
     else:
         print(-1, end=" ")

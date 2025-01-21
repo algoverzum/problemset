@@ -1,4 +1,8 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Store the data from both rows, then go through the contestants in question and determine the index for each of them in the result list. Use a built-in function for this search!
+- cpp: |
+    In C++, the `find` function can be used for this: `auto it = find(result.begin(), result.end(), name)`. It returns an iterator pointing to the given element, or `end()` if the element is not found. You can get the index by subtracting `begin()` from it: `int index = it - result.begin()`.
+  py: |
+    In Python, the index() method of a list can be used for this: `result.index(name)`. However, an error occurs if the item you are looking for is not in the list. How do we handle this case?
+- cpp: Note that we have to add one to the index because the contestants are numbered from one.
+  py: First check with the `in` operator whether the name is in the list. Note also that we have to add one to the index because the contestants are numbered from one.

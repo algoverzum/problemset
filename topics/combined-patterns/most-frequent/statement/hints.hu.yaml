@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Menjünk végig az elemeken, és mindegyikre számoljuk meg az előfordulásainak számát egy beépített függvénnyel! A legtöbbször előforduló elemet kell megjegyeznünk - ez egy szokásos maximumkiválasztás. Csak arra kell figyelni, hogy ha több elem is ugyanannyiszor fordul elő, akkor a kisebb értékűt válasszuk.
+- cpp: |
+    C++ -ban a count függvényt használhatjuk egy elem előfordulásainak megszámolására: `int cnt = count(a.begin(), a.end(), a[i]);`
+  py: |
+    Pythonban a lista count metódusa használható egy elem előfordulásainak megszámolására: `cnt = a.count(a[i])`.

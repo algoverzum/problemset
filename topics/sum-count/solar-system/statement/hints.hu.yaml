@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- A megoldás a holdak összege + a lista hossza + 1. Az összegzéshez használjunk egy beépített függvényt.
+- cpp: Az `accumulate(vec.begin(), vec.end(), 0);` paranccsal lehet egy vector elemeit összegezni.
+  py: Az `sum(lista)` függvény használható egy lista elemeinek összegzésére.
