@@ -3,7 +3,7 @@
 name: count-different
 title: Count Different
 title_translations:
-  hu: Hány különböző
+  hu: Hány különböző?
 
 # Technical info
 memory_limit: 256

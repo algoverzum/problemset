@@ -19,9 +19,8 @@ int main() {
         }
     }
     if (unique_numbers.size() == 0) {
-        cout << -1 << "\n";
+        cout << -1;
     } else {
-        cout << *min_element(unique_numbers.begin(), unique_numbers.end())
-             << "\n";
+        cout << *min_element(unique_numbers.begin(), unique_numbers.end());
     }
 }

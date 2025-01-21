@@ -1,4 +1,4 @@
-## Hány különböző
+## Hány különböző?
 A Galaktikus Kutatószövetség egy távoli bolygón mintákat vett a talajból. Minden minta egy számmal van jelölve az alapján, hogy milyen anyagból van. Hány különböző anyagot sikerült találnunk a mintavételezésünk során?
 
 ### Bemenet

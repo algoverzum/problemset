@@ -2,15 +2,15 @@
 Néhány gyerek azt a játékot játssza, hogy mindenki titokban leír egy pozitív számot egy kis papírra. Az nyer, aki a legkisebb olyan számot írja, amit senki más nem ír. A leírt számok listájának ismeretében határozd meg a nyertes számot! Ha nincs nyertese a játéknak írj ki -1-et.
 
 ### Bemenet
-A bemenetben első sorában egyetlen egész szám van: $N$ 
-A bemenet második sorában $N$ db $A$ egész szám van .
+A bemenetben első sorában egyetlen egész szám van: $N$, a gyerekek száma. 
+A bemenet második sorában $N$ egész szám van: $A_1, A_2, \ldots, A_N$, a gyerekek által leírt számok.
 
 ### Kimenet
-Egyetlen számot kell kiírnod, a legkisebb számot ami csak egyszer fordul elő a számsorozatban. Ha nincs ilyen szám akkor -1-et.
+Egyetlen számot kell kiírnod, a legkisebb számot ami csak egyszer fordul elő a számsorozatban. Ha nincs ilyen szám, akkor -1-et.
 
 ### Korlátok
-* $1 \le N \le 10000$
-* $1 \le A \le 10000$
+* $1 \le N \le 100$
+* $1 \le A_i \le 100$
 
 ### Példa bemenet
     7
@@ -20,4 +20,4 @@ Egyetlen számot kell kiírnod, a legkisebb számot ami csak egyszer fordul elő
     4
 
 ### A példa magyarázata
-Legkisebb szám 2, de 2 többször előfordul. 4 a második legkisebb szám és csak egyszer fordul elő ezért 4 a megoldás.
+A legkisebb szám a 2, de többször előfordul. A 4 a második legkisebb szám és csak egyszer fordul elő ezért 4 a megoldás.

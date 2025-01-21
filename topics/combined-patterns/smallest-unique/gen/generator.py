@@ -9,40 +9,45 @@ from inspect import signature
 usage = """Generator for "smallest-unique".
 
 Parameters:
-* A (N value)
-* B (how many different numbers)
+* A (max value)
+* B (number of small duplicates)
 * S (seed)
 
 Constraint:
+* %d <= N <= %d
 * %d <= A <= %d
-* %d <= B <= %d
+* 0  <= B <= %d
 """ % (
     MIN,
     MAX,
     MIN,
     MAX,
+    MAX,
 )
 
 
-def run(A, B):
+def run(N, A, B):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(A)
-    remaining = A
-    distincts = sample(range(1, A + 1), B)
-    lista = []
-    for i in range(B):
-        c = randint(0, A // B)
-        remaining = remaining - c
-        lista = lista + [distincts[i]] * c
-    lista = lista + [distincts[0]] * remaining
-    if A == 1000:
-        lista = list(range(1, 1001))
-    shuffle(lista)
-    print(*lista)
+    print(N)
+    if B > (N - 1) // 2:
+        distincts = sorted(sample(range(1, A + 1), min(A, randint(1, N // 2))))
+        nums = distincts * 2
+        while len(nums) < N:
+            nums.append(choice(distincts))
+    else:
+        distincts = sorted(sample(range(1, A + 1), min((N + 1) // 2, B + 1)), reverse=True)
+        nums = distincts[1:] * 2 + [distincts[0]]
+        while len(nums) < N:
+            num = randint(1, A)
+            while num == distincts[0] or num < distincts[0] and num not in distincts:
+                num = randint(1, A)
+            nums.append(num)
+    shuffle(nums)
+    print(*nums)
 
 
 if __name__ == "__main__":
