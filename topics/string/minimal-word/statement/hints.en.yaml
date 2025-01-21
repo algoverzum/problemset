@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    This is a minimum selection, the < operator works between strings, and the min_element() function works on a vector containing strings in the same way as if they were numbers: `*min_element(v.begin(), v.end())`.
+  py: This is a minimum selection, the < operator works between strings, and the min() function works on a list of strings as if they were numbers.
+- An important detail, by the way, is that there are all lowercase letters in the strings, since the letters are compared based on ASCII code, so all uppercase letters would precede lowercase letters.

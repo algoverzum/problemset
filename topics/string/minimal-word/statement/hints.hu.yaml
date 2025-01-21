@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    Ez egy minimumkiválasztás, a stringek között működik a < operátor, és egy stringeket tartalmazó vectorra ugyanúgy működik a min_element() függvény, mintha számok lennének: `*min_element(v.begin(), v.end())`.
+  py: Ez egy minimumkiválasztás, a stringek között működik a < operátor, és egy stringeket tartalmazó listára ugyanúgy működik a min() függvény, mintha számok lennének.
+- Fontos részlet egyébként, hogy csupa kisbetűk vannak a stringekben, mivel a betűket ASCII kód alapján hasonlítja össze, így a nagybetűk mind megelőznék a kisbetűket.

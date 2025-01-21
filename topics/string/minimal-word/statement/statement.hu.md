@@ -4,14 +4,14 @@ Adott a droid által előállított szavak listája, határozd meg az ábécé s
 
 ### Bemenet
 A bemenet első sora $N$ - a szavak számát tartalmazza.
-A második sor $N$ szóközzel elválasztott szavakat tartalmaz. Minden szó csak kisbetűket tartalmaz.
+A második sor $N$ szóközzel elválasztott szót tartalmaz. Minden szó csak angol kisbetűket tartalmaz.
 
 ### Kimenet
-Egyetlen szót kell kiírnod, az első szó ábécé sorrendben.
+Egyetlen szót kell kiírnod, az első szót ábécé sorrendben.
 
 ### Korlátok
 * $1 \le N \le 100$
-* minden szó csak kisbetűket tartalmaz
+* minden szó csak angol kisbetűket tartalmaz
 
 ### 1. Példa bemenet
     5
