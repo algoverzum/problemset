@@ -2957,6 +2957,11 @@ def run(A):
         else:
             more.append(word)
 
+    if randint(0, 8) == 0:
+        print(A)
+        print(*sample(null, A))
+        return
+
     B = set()
     X = randint(0, A)
     for _ in range(X):

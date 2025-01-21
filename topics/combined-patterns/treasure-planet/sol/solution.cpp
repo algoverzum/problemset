@@ -9,7 +9,7 @@ int main() {
     string word;
     for (int i = 0; i < n; i++) {
         cin >> word;
-        if (word.find('o') < word.length()) {
+        if (word.find('o') != string::npos) {
             count++;
         }
     }

@@ -4,14 +4,14 @@ Your mission: determine how many planets on the list contain the letter "o". May
 
 ### Input
 The first line of the input contains $N$ - the number of words.
-The second line contains $N$ space separated words. Each word contains only lower case letters.
+The second line contains $N$ space separated words. Each word contains only lowercase letters.
 
 ### Output
 Print a single number, the number of words containing "o".
 
 ### Constraints
 * $1 \le N \le 100$
-* each word contains only lower case letters
+* Each word contains only lowercase letters.
 
 ### Example input
     7
@@ -21,4 +21,4 @@ Print a single number, the number of words containing "o".
     3
 
 ### Explanation of the example
-Three words containd "o": oero, borg, soon
+Three words containd "o": oero, borg, soon.

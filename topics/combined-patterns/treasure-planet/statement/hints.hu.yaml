@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Menjünk végig a stringeken, és ha szerepel az aktuális stringben 'o' betű, akkor növeljünk egy számlálót. Használjunk egy beépített függvényt vagy operátort az 'o' betű keresésére!
+- cpp: |
+    C++ -ban a string find metódusa használható erre: `if (word.find('o') != string::npos) ...`.
+  py: |
+    Pythonban a `in` operátor használható erre: `if 'o' in word: ...`.

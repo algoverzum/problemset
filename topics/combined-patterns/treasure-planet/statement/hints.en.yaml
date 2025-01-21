@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Go through the strings, and if the current string contains the letter 'o', increment a counter. Use a built-in function or operator to search for the letter 'o'.
+- cpp: |
+    In C++, the find method of a string can be used for this: `if (word.find('o') != string::npos) ...`.
+  py: |
+    In Python, the `in` operator can be used to do this: `if 'o' in word: ...`.
