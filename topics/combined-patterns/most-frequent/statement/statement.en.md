@@ -12,7 +12,7 @@ Print a single number, the most common number in the data packet. If there are m
 
 ### Constraints
 * $1 \le N \le 100$
-* $1 \le A_{i} \le 100$
+* $0 \le A_{i} \le 100$
 
 ### Example input
     9

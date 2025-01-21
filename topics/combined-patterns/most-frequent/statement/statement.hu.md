@@ -12,7 +12,7 @@ Egyetlen számot kell kiírnod, az adatcsomagban szereplő leggyakoribb számot.
 
 ### Korlátok
 * $1 \le N \le 100$
-* $1 \le A_{i} \le 100$
+* $0 \le A_{i} \le 100$
 
 ### Példa bemenet
     9
