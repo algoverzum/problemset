@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Let's try to determine for each day how many people were present. What would you use to store this?
+- Let's have an array cnt[0..1000001], cnt[i] representing how many people are present on day i. Based on the input, how can you produce this?
+- Between each person's arrival and departure, the values of the cnt array should be incremented by 1. If this were done, what would be the maximum number of operations performed in the worst case? That is too slow, we need another trick...
+- First write the changes only into the cnt array. If a person arrives at time A, the cnt changes by +1 there, and by -1 after L, the time of departure. If we register these changes, how can we then get how many people are present?
+- If we know all the changes in the headcount before time i, how do we get the headcount at time i?
+- Let's sum up the change values from the beginning.

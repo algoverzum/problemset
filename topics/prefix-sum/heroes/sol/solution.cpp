@@ -4,23 +4,20 @@
 using namespace std;
 
 int main() {
+    const int m = 1000000;
     int n;
     cin >> n;
-    vector<int> arrivals(1000001, 0);
-    vector<int> leaves(1000001, 0);
+    vector<int> cnt(m + 2);
     for (int i = 0; i < n; i++) {
         int arr, leave;
         cin >> arr >> leave;
-        arrivals[arr] += 1;
-        leaves[leave] += 1;
+        cnt[arr] += 1;
+        cnt[leave + 1] -= 1;
     }
-    int result = 0;
-    int current = 0;
-    for (int i = 0; i < 1000001; i++) {
-        current += arrivals[i];
-        if (result < current)
-            result = current;
-        current -= leaves[i];
+    int ans = 0;
+    for (int i = 1; i <= m; i++) {
+        cnt[i] += cnt[i - 1];
+        ans = max(ans, cnt[i]);
     }
-    cout << result << "\n";
+    cout << ans << "\n";
 }

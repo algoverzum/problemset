@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Próbáljuk meg minden napra meghatározni, hogy akkor hányan voltak jelen. Mit használnál ennek tárolására?
+- Legyen egy cnt[0..1000001] tömb, cnt[i] jelentse azt, hogy hányan vannak jelen az i. napon. A bemenet alapján hogy lehet ezt előállítani?
+- Minden ember érkezése és távozása között a cnt tömb értékeit 1-gyel kell növelni. Ha ezt megcsinálnánk, maximum hány lépés lenne legrosszabb esetben? Ez túl lassú, kell még egy trükk...
+- Csak a változásokat írjuk bele a cnt tömbbe. Ha egy ember A időpontban érkezik, akkor ott +1-gyel változik a cnt, a távozása időpontja, L után pedig -1-gyel. Ha ezeket a változásokat regisztráljuk, akkor utána hogy lehet megkapni azt hogy hányan vannak jelen?
+- Ha ismerjük az i időpont előtti összes változását a létszámnak, akkor ebből hogy jön ki az i időpontbeli létszám?
+- Összegezzük a változás értékeket az elejétől kezdve.
