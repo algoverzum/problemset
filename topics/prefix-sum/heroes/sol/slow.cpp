@@ -1,4 +1,6 @@
-// @check-accepted: *
+// @check-accepted: examples
+// @check-time-limit-exceeded: all
+
 #include <iostream>
 #include <vector>
 using namespace std;

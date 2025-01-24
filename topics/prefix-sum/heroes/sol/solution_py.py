@@ -2,16 +2,13 @@
 # @check-accepted: *
 
 n = int(input())
-arrivals = [0] * 1000001
-leaves = [0] * 1000001
+cnt = [0] * 1000002
 for i in range(n):
-    arrival, leave = [int(x) for x in input().split()]
-    arrivals[arrival] += 1
-    leaves[leave] += 1
-result = 0
-current = 0
-for i in range(1000001):
-    current += arrivals[i]
-    result = max(result, current)
-    current -= leaves[i]
-print(result)
+    arr, leave = [int(x) for x in input().split()]
+    cnt[arr] += 1
+    cnt[leave + 1] -= 1
+ans = 0
+for i in range(1, 1000001):
+    cnt[i] += cnt[i - 1]
+    ans = max(ans, cnt[i])
+print(ans)
