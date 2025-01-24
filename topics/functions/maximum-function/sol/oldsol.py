@@ -2,12 +2,8 @@
 # @check-accepted: *
 
 
-def maximum(lista):
-    maxi = lista[0]
-    for x in lista:
-        if x > maxi:
-            maxi = x
-    return maxi
+def maximum(l):
+    return max(l)
 
 
 print(maximum([3, 1, 4, 5, 2]))
