@@ -1,0 +1,16 @@
+---
+id: sort
+name: Sort
+problems:
+  - problem_id: dividing-into-two-groups
+    type: EXTRA
+prerequisites:
+  - array
+dependents:
+visualization:
+  image_filename: 12.svg
+  position:
+    x: 700
+    y: -400
+
+# Notes:

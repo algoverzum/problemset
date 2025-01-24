@@ -1,0 +1,16 @@
+---
+# General info
+name: collecting-crystals
+title: Collecting Crystals
+title_translations:
+  hu: Kristályok összeszedése
+
+# Technical info
+memory_limit: 256
+time_limit: 2.0
+infile: ""
+outfile: ""
+
+# Other stuff
+score_mode: max_subtask
+feedback_level: full

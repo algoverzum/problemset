@@ -1,0 +1,16 @@
+---
+id: path-dp
+name: Path-dp
+problems:
+  - problem_id: collecting-crystals
+    type: EXTRA
+prerequisites:
+  - array
+dependents:
+visualization:
+  image_filename: 12.svg
+  position:
+    x: 800
+    y: -500
+
+# Notes:
