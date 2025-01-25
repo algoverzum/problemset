@@ -1,4 +1,3 @@
-// @check-accepted: *
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -26,17 +25,4 @@ int main() {
     }
 
     cout << cells[0][0] << "\n";
-    if (cells[0][0] != -1) {
-        int x = 0, y = 0;
-        for (int i = 0; i < n + m - 2; i++) {
-            if (cells[y][x + 1] > cells[y + 1][x]) {
-                cout << "R";
-                x += 1;
-            } else {
-                cout << "D";
-                y += 1;
-            }
-        }
-        cout << "\n";
-    }
 }

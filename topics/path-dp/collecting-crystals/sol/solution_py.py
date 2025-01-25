@@ -13,6 +13,7 @@ def dp(y, x):
     if (y, x) in memo:
         return memo[(y, x)]
     if cells[y][x] == -1:
+        memo[(y, x)] = -1
         return -1
     if y == N - 1:
         ans = dp(y, x + 1)
@@ -41,3 +42,20 @@ def dp(y, x):
 
 
 print(dp(0, 0))
+if dp(0, 0) != -1:
+    x = y = 0
+    for i in range(N + M - 2):
+        if y == N - 1:
+            x += 1
+            print("R", end="")
+        elif x == M - 1:
+            y += 1
+            print("D", end="")
+        else:
+            if dp(y, x + 1) > dp(y + 1, x):
+                x += 1
+                print("R", end="")
+            else:
+                y += 1
+                print("D", end="")
+print()

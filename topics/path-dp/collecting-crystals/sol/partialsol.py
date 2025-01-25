@@ -12,6 +12,7 @@ def dp(y, x):
     if (y, x) in memo:
         return memo[(y, x)]
     if cells[y][x] == -1:
+        memo[(y, x)] = -1
         return -1
     if y == N - 1:
         ans = dp(y, x + 1)
