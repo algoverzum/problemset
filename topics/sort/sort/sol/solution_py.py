@@ -5,5 +5,4 @@ n = int(input())
 elements = [int(x) for x in input().split()]
 elements.sort()
 print(*elements)
-elements.sort(reverse=True)
-print(*elements)
+print(*elements[::-1])

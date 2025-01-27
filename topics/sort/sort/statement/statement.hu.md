@@ -1,5 +1,5 @@
 ## Rendezés
-A bolygónkon földtani kutatás érdekében kőzetmintákat vettünk és felbontottuk elemekre, amiket a periódusos rendszerbeli rendszámaik alapján szeretnénk őket sorba rendezni két csoportnyi kutatónak. Az egyik kutató csoport növekvő sorrendben szeretné megkapni őket, a másik pedig csökkenőben. Írj egy programot, ami kiírja mind a két fajta rendezést.
+A bolygónkon földtani kutatás érdekében kőzetmintákat vettünk és felbontottuk elemekre, amiket a periódusos rendszerbeli rendszámaik alapján szeretnénk sorba rendezni két csoportnyi kutatónak. Az egyik kutatócsoport növekvő sorrendben szeretné megkapni őket, a másik pedig csökkenőben. Írj egy programot, ami kiírja mind a két fajta rendezést.
 
 ### Bemenet
 A bemenet első sorában egyetlen egész szám van, az elemek száma: $N$.

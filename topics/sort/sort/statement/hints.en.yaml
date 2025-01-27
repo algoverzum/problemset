@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Használjuk a rendezéshez a beépített `sort` függvényt. Majd fordítsuk meg a rendezett listát.
+- cpp: |
+    Egy v vector rendezése: `sort(v.begin(), v.end());`. Megfordítása: `reverse(v.begin(), v.end());`
+  py: |
+    Egy l lista rendezése: `l.sort()`. Megfordítása: `l.reverse()` vagy `l[::-1]`

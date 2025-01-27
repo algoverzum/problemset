@@ -1,4 +1,3 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Rendezzük növekvő sorrendbe a számokat.
+- Az egyik csoport legnagyobb eleme és a másik csoport legkisebb eleme a sorrendben két szomszédos szám lesz. Válasszuk ki őket úgy, hogy a lehető legnagyobb legyen a különbségük.

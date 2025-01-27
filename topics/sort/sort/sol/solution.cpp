@@ -16,7 +16,7 @@ int main() {
         cout << elements[i] << " ";
     }
     cout << "\n";
-    sort(elements.begin(), elements.end(), greater<int>());
+    reverse(elements.begin(), elements.end());
     for (int i = 0; i < n; i++) {
         cout << elements[i] << " ";
     }

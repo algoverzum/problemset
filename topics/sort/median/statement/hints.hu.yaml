@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Rendezzük az elemeket a sort függvény segítségével.
+- cpp: Az `(n - 1) / 2` indexű elem lesz jó nekünk páratlan és páros n esetén is.
+  py: Az `(n - 1) // 2` indexű elem lesz jó nekünk páratlan és páros n esetén is.

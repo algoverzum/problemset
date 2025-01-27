@@ -12,11 +12,9 @@ int main() {
         cin >> times[i];
     }
     sort(times.begin(), times.end());
-    int sol = 0;
     if (n % 2 == 0) {
-        sol += times[(n / 2) - 1];
+        cout << times[(n / 2) - 1] << "\n";
     } else {
-        sol += times[n / 2];
+        cout << times[n / 2] << "\n";
     }
-    cout << sol << "\n";
 }
