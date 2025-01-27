@@ -11,7 +11,7 @@ result = 0
 current = 0
 data.sort()
 
-for (x, y) in data:
+for x, y in data:
     if y == 0:
         current += 1
         result = max(result, current)

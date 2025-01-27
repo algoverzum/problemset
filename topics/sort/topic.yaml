@@ -4,6 +4,10 @@ name: Sort
 problems:
   - problem_id: dividing-into-two-groups
     type: EXTRA
+  - problem_id: sort
+    type: REQUIRED
+  - problem_id: median
+    type: REQUIRED
 prerequisites:
   - array
 dependents:

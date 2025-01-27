@@ -4,6 +4,8 @@ name: Path-dp
 problems:
   - problem_id: collecting-crystals
     type: EXTRA
+  - problem_id: meet-people
+    type: REQUIRED
 prerequisites:
   - array
 dependents:

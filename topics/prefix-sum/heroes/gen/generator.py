@@ -63,7 +63,7 @@ def run(A, B, C):
 
     print(A)
     shuffle(res)
-    for (a, b) in res:
+    for a, b in res:
         print(a, b)
 
 
