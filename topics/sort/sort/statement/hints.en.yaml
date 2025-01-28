@@ -1,6 +1,6 @@
 ---
-- Használjuk a rendezéshez a beépített `sort` függvényt. Majd fordítsuk meg a rendezett listát.
+- Use the built-in `sort` function to sort the list of numbers. Print it, then reverse the sorted list and print it again.
 - cpp: |
-    Egy v vector rendezése: `sort(v.begin(), v.end());`. Megfordítása: `reverse(v.begin(), v.end());`
+    Sort a vector v: `sort(v.begin(), v.end());`. Reverse: `reverse(v.begin(), v.end());`
   py: |
-    Egy l lista rendezése: `l.sort()`. Megfordítása: `l.reverse()` vagy `l[::-1]`
+    Sort a list l: `l.sort()`. Reverse: `l.reverse()` or `l = l[::-1]`
