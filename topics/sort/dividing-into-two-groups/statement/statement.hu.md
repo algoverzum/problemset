@@ -5,7 +5,7 @@ Az Akadémia fő számítógépe, a Starfleet Analytical Core éppen elromlott, 
 
 ### Bemenet
 A bemenet első sorában egyetlen egész szám van: $N$, a tisztek száma.
-A második sorban $N$ szám van: $T_0, T_1, \lodts, T_{N-1}$, a tisztek teljesítménypontszáma.
+A második sorban $N$ szám van: $T_0, T_1, \ldots, T_{N-1}$, a tisztek teljesítménypontszáma.
 
 ### Kimenet
 Egyetlen számot kell kiírnod, a két csoport közötti maximális teljesítménytávolságot.

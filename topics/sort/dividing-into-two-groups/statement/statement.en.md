@@ -5,7 +5,7 @@ The Academy's main computer, the Starfleet Analytical Core, has just broken down
 
 ### Input
 The first line of input is a single integer: $N$, the number of officers.
-The second line contains $N$: $T_0, T_1, \lodts, T_{N-1}$, the number of performance points of the officers.
+The second line contains $N$: $T_0, T_1, \ldots, T_{N-1}$, the number of performance points of the officers.
 
 ### Output
 You have to print one number, the maximum performance distance between the two groups.
