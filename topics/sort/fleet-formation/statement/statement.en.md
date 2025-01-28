@@ -3,22 +3,22 @@ You are leading a Fleet into battle, before the battle starts you want to arrang
 
 
 ### Input
-The first line of the input contains a single integer: $N$<br>
+The first line of the input contains a single odd integer: $N$<br>
 The second line of the input contains $N$ amount of $H$ numbers, the power of your ships 
 
 ### Output
 Print $N$ numbers, the power of your ships
 
 ### Constraints
-* $1 \le N \le 1000$
+* $1 \le N \le 999$
 * $1 \le H \le 10000$
 
 ### Example input
-    6
-    33 32 3 40 4 35
+    7
+    33 32 3 40 4 35 2
 
 ### Example output
-    3 32 35 40 33 4
+    3 32 35 40 33 4 2
 
 ### Explanation of the example
 strongest ship is 40, because there are even number of ships it will be placed 4th, because it will have the largest force in the middle, because the second strongest ship will be placed to the left of it.<br>
@@ -27,3 +27,4 @@ third strongest 5th place<br>
 fourth strongest 2nd place<br>
 fifth strongest 6th place<br>
 6th strongest 1st place<br>
+7th strongest 7th place<br>
