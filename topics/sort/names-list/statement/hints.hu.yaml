@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- A string típusú adatokra is működik a < összehasonlítás, és így a `sort` függvény is.
+- cpp: |
+    Olvassuk be a neveket egy vector<string>-be, és rendezzük őket: `sort(names.begin(), names.end());`.
+  py: |
+    Olvassuk be a neveket egy listába: `names = input().split()`.  Majd rendezzük őket: `names.sort()`.

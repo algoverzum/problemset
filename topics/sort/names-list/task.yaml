@@ -3,7 +3,7 @@
 name: names-list
 title: Names List
 title_translations:
-  hu: Nevek listája
+  hu: Névsor
 
 # Technical info
 memory_limit: 256
