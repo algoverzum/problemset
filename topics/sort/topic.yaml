@@ -8,6 +8,10 @@ problems:
     type: REQUIRED
   - problem_id: median
     type: REQUIRED
+  - problem_id: names-list
+    type: REQUIRED
+  - problem_id: fleet-formation
+    type: REQUIRED
 prerequisites:
   - array
 dependents:
