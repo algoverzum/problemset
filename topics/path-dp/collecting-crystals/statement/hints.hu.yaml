@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Minden mezőre számítsuk ki, hogy mennyi a legtöbb pontszám, amit addig tudunk összegyűjteni, amíg oda eljutunk.
+- Ezeket az értékeket dinamikus programozással tudjuk meghatározni, egy mező pontszáma a tőle balra és felette lévő mezők pontszámának maximuma lesz, plusz az aktuális mező pontszáma.
+- Ha egy mezőn csapda van, érdemes az ott lévő pontszámot egy kellően nagy negatív számra állítani.
+- Az útvonalat hátulról visszafelé lehet jól előállítani úgy, hogy visszakövetjük a döntéseinket, azaz megnézzük, hogy a balra vagy felette lévő mező pontszáma nagyobb.
+- Akár lehet úgy is csinálni, hogy hátulról visszafelé számoljuk ki a pontszámokat, és akkor az útvonalat előrefelé kapjuk meg (ilyenkor a DP értékek jelentése úgy fogalmazható meg, hogy az adott mezőről a jobb alsó sarokba menő útvonalon mennyi a maximális pontszám).

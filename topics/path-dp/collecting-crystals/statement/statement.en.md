@@ -13,7 +13,7 @@ If traps prevent him from reaching the bottom right corner, $-1$ should be print
 ### Input
 The first line of the input contains two space-separated integers, $N$ and $M$, the number of rows and columns of the surface grid map.
 
-An additional $N$ lines follow, each containing $M$ integers, the number of energy crystals in the cells of the map, or $-1$ if there is a trap. The $i$-th row is the $j$-th number $A_{i-1,j-1}$.
+An additional $N$ lines follow, each containing $M$ integers, the number of energy crystals in the cells of the map, or $-1$ if there is a trap. The $i$-th row is the $j$-th number $A_{i,j}$.
 
 ### Output
 In the first line of the output, you must enter a single number, the maximum number of energy crystals you can obtain. If you cannot get to the bottom right corner, write $-1$.
@@ -23,22 +23,10 @@ If you can get to the bottom right corner, then in the second line of the output
 ### Constraints
 * $1 \le N, M \le 1000$
 * $-1 \le A_{i,j} \le 10000$ for each $i,j$
-* $A_{0,0} \not= -1$
-* $A_{N-1,M-1} \not= -1$
+* $A_{1,1} \not= -1$
+* $A_{N,M} \not= -1$
 
 ### Example 1 input
-    3 3
-    1 2 -1
-    2 -1 2
-    -1 0 6
-
-### Example 1 Output
-    -1
-
-### Explanation of example 1
-You cannot get from the top left field to the bottom right field.
-
-### Example 2 input
     5 6
     1 2 3 4 0 1
     2 -1 2 1 -1 3
@@ -46,9 +34,21 @@ You cannot get from the top left field to the bottom right field.
     4 1 0 -1 1 -1
     0 0 1 2 0 0
 
-### Example 2 Output
+### Example 1 Output
     17
     RRDDDDRRR
 
-### Explanation of example 2
+### Explanation of example 1
 It is easy to check that this is the best of the 4 possible routes. 
+
+### Example 2 input
+    3 3
+    1 2 -1
+    2 -1 2
+    -1 0 6
+
+### Example 2 Output
+    -1
+
+### Explanation of example 2
+You cannot get from the top left field to the bottom right field.
