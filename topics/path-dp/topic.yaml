@@ -6,6 +6,8 @@ problems:
     type: EXTRA
   - problem_id: meet-people
     type: REQUIRED
+  - problem_id: staircase
+    type: REQUIRED
 prerequisites:
   - array
 dependents:

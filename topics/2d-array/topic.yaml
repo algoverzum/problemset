@@ -1,13 +1,19 @@
+---
 id: 2d-array
 name: 2D Array
 problems:
-- problem_id: hottest-days
-  type: REQUIRED
-- problem_id: bigger-columns
-  type: REQUIRED
-- problem_id: more-oxygen
-  type: REQUIRED
+  - problem_id: hottest-days
+    type: REQUIRED
+  - problem_id: bigger-columns
+    type: REQUIRED
+  - problem_id: more-oxygen
+    type: REQUIRED
+  - problem_id: scale-a-matrix
+    type: REQUIRED
+  - problem_id: swap-columns
+    type: REQUIRED
 prerequisites:
+  array
 dependents:
 visualization:
   image_filename: 11.svg
