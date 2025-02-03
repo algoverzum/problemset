@@ -16,7 +16,7 @@ problems:
     type: REQUIRED
 prerequisites:
   - string
-dependents:
+dependents: []
 visualization:
   image_filename: 42.svg
   position:

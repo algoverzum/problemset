@@ -4,8 +4,8 @@ name: Breadth-First Search
 problems:
   - problem_id: azugand
     type: EXTRA
-prerequisites:
-dependents:
+prerequisites: []
+dependents: []
 visualization:
   image_filename: 19.svg
   position:

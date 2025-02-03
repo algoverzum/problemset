@@ -3,11 +3,7 @@
 using namespace std;
 
 int main() {
-    for (int i = 10; i < 100; i++) {
-        int A = i / 10;
-        int B = i % 10;
-        if (A == B - 2) {
-            cout << i - 8 << "\n";
-        }
+    for (int i = 5; i <= 71; i += 11) {
+        cout << i << "\n";
     }
 }

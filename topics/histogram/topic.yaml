@@ -11,7 +11,7 @@ problems:
 prerequisites:
   - array
   - for-loop
-dependents:
+dependents: []
 visualization:
   image_filename: 5.svg
   position:

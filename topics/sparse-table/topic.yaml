@@ -5,8 +5,8 @@ problems:
   type: ENTRY
 - problem_id: kth-ancestor
   type: REQUIRED
-prerequisites:
-dependents:
+prerequisites: []
+dependents: []
 visualization:
   image_filename: 42.svg
   position:

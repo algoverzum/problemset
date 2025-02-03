@@ -14,7 +14,7 @@ problems:
     type: REQUIRED
 prerequisites:
   array
-dependents:
+dependents: []
 visualization:
   image_filename: 11.svg
   position:

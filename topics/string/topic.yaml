@@ -22,6 +22,7 @@ prerequisites:
   - for-loop
   - if-then-else
 dependents:
+  - string-functions
 visualization:
   image_filename: 5.svg
   position:

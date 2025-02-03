@@ -2,9 +2,9 @@
 id: sort
 name: Sort
 problems:
-  - problem_id: dividing-into-two-groups
-    type: EXTRA
   - problem_id: sort
+    type: ENTRY
+  - problem_id: dividing-into-two-groups
     type: REQUIRED
   - problem_id: median
     type: REQUIRED
@@ -14,7 +14,7 @@ problems:
     type: REQUIRED
 prerequisites:
   - array
-dependents:
+dependents: []
 visualization:
   image_filename: 12.svg
   position:
