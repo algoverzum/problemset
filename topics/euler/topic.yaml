@@ -1,0 +1,9 @@
+id: euler
+name: Euler
+problems:
+  - problem_id: word-arrangement
+    type: REQUIRED
+prerequisites:
+dependents:
+visualization:
+# Notes:

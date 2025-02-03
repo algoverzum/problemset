@@ -1,0 +1,7 @@
+6
+entrance
+exit
+code
+token
+cryptic
+enigmatic
