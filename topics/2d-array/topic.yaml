@@ -12,6 +12,10 @@ problems:
     type: REQUIRED
   - problem_id: swap-columns
     type: REQUIRED
+  - problem_id: power-cells
+    type: REQUIRED
+  - problem_id: better-spaceship
+    type: REQUIRED
 prerequisites:
   array
 dependents: []
