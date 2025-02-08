@@ -1,0 +1,7 @@
+---
+- cpp: The result will be a vector, so let's make an empty vector at the beginning, let it be called odd.
+  py: The result will be a list, so let's make an empty list at the beginning, let its name be odd.
+- cpp: Go through the input numbers, and if the number is odd, add it to the odd vector.
+  py: Go through the elements of the input list, and if the element is odd, add it to the odd list.
+- cpp: To check that a number is odd, use the condition `num % 2 == 1`. To append an element to our vector, use `odd.push_back(num);`.
+  py: To check that a number is odd, use the condition `num % 2 == 1`. To append an element to a list, use `odd.append(num)`.

@@ -1,0 +1,7 @@
+---
+- cpp: Az eredmény egy vektor lesz, csináljunk tehát egy üres vektort az elején, legyen a neve paratlan.
+  py: Az eredmény egy lista lesz, csináljunk tehát egy üres listát az elején, legyen a neve paratlan.
+- cpp: Menjünk végig a bemeneti számokon, és ha az adott szám páratlan, akkor adjuk hozzá a paratlan vektorba.
+  py: Menjünk végig a bemeneti lista elemein, és ha az adott elem páratlan, akkor tegyük bele a paratlan listába.
+- cpp: Azt, hogy egy szám páratlan, a `szam % 2 == 1` feltétel segítségével tudjuk ellenőrizni. A vektorunkhoz hozzáfűzni egy elemet a `paratlan.push_back(szam);` paranccsal lehet.
+  py: Azt, hogy egy szám páratlan, a `szam % 2 == 1` feltétel segítségével tudjuk ellenőrizni. Egy listához hozzáfűzni egy elemet a `paratlan.append(szam)` paranccsal lehet.

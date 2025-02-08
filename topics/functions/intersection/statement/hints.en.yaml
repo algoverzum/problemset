@@ -1,0 +1,8 @@
+---
+- cpp: The result will be a vector, so let's make an empty vector at the beginning, let it be called ans.
+  py: The result will be a list, so let's make an empty list at the beginning, let it be called ans.
+- cpp: Go through the elements of one vector, and if the element is in the other list, put it in the vector `ans`.
+  py: Go through the elements of one list, and if the element is in the other list, put it in the `ans` list.
+- cpp: To check if an element is in a vector; go through the second vector and check for each element if it is equal to the element.
+  py:
+  Use the `in` operator to determine whether an element is in a list (`if element in list: ...`)

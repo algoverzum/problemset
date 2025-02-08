@@ -1,0 +1,8 @@
+---
+- cpp: Az eredmény egy vektor lesz, csináljunk tehát egy üres vektort az elején, legyen a neve kozos.
+  py: Az eredmény egy lista lesz, csináljunk tehát egy üres listát az elején, legyen a neve kozos.
+- cpp: Menjünk végig az egyik vektor elemein, és ha az adott elem benne van a másik listában, akkor tegyük bele a `kozos` vektorba.
+  py: Menjünk végig az egyik lista elemein, és ha az adott elem benne van a másik listában, akkor tegyük bele a `kozos` listába.
+- cpp: Annak eldöntésére, hogy benne van-e egy elem egy vektorban; menjünk végig a második vektoron, és minden elemére ellenőrizzük, hogy egyenlő-e az elemmel.
+  py:
+  Az `in` operátort használhatjuk annak eldöntésére, hogy benne van-e egy elem egy listában (`if elem in lista: ...`)
