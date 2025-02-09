@@ -3,6 +3,8 @@ name: Euler
 problems:
   - problem_id: word-arrangement
     type: REQUIRED
+  - problem_id: stargates
+    type: REQUIRED
 prerequisites:
 dependents:
 visualization:
