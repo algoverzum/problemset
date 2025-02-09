@@ -10,22 +10,18 @@ from inspect import signature
 usage = """Generator for "word-arrangement".
 
 Parameters:
-* A (number of test cases )
+* A (type of test cases )
 * B (maximum word count)
-* C (valid chance )
 * S (seed)
 
 Constraint:
 * %d <= A <= %d
 * %d <= B <= %d
-* %d <= C <= %d
 """ % (
     MIN1,
     MAX1,
     MIN2,
     MAX2,
-    MIN4,
-    MAX4,
 )
 ALPHABET = string.ascii_lowercase
 
@@ -43,8 +39,8 @@ def generate_word(first, last, max_length=MAX3):
     return first + middle + last
 
 
-def generate_valid_case(num_words: int) -> list:
-    valid_type = choice(["cycle", "path"])
+def generate_valid_case(valid_type, num_words: int) -> list:
+    # valid_type = choice(["cycle", "path"])
     vertices = []
     if valid_type == "cycle":
         start = choice(ALPHABET)
@@ -90,35 +86,57 @@ def generate_valid_case_subset(num_words: int, letters: str) -> list:
     return words_sub
 
 
-def generate_invalid_case(num_words: int) -> list:
-    mode = choice(["degree", "connectivity"])
+def generate_invalid_case(mode, num_words: int) -> list:
+    # mode = choice(["degree", "connectivity"])
+    valid_type = "path"
     if num_words < 2:
-        mode = "degree"
+        return ["ablak"]
     if mode == "degree":
-        words = generate_valid_case(num_words)
-        i = randrange(len(words))
-        original_word = words[i]
-        new_first = choice([c for c in ALPHABET if c != original_word[0]])
-        if len(original_word) == 1:
-            words[i] = new_first
-        else:
-            words[i] = new_first + original_word[1:]
+        words = generate_valid_case(
+            valid_type, num_words - 1
+        )  # 1el kissebb méretű euler séta, mert hozzáadunk majd egy élt. num_words==1 eset fentebb megfogva
+        invertices = [0] * 26
+        outvertices = [0] * 26
+        for w in words:
+            invertices[ord(w[-1]) - ord("a")] += 1
+            outvertices[ord(w[0]) - ord("a")] += 1
+
+        start_nodes = [i for i in range(26) if outvertices[i] - invertices[i] == 1]
+        end_nodes = [i for i in range(26) if invertices[i] - outvertices[i] == 1]
+        start = start_nodes[0]
+        end = end_nodes[0]
+        vertices = [
+            i for i in range(26) if invertices[i] > 0 or outvertices[i] > 0
+        ]  # melyik csúcsok szereplen az euler sétában, hogy véletlen ne hozzunk létre üggetlen gráfot
+        while True:
+            u = choice(vertices)
+            v = choice(vertices)
+            if not (
+                (u == end and v == start) or (u == v)
+            ):  # ha kiegészítenénk euler körré vagy hurokél akkor generáélunk új choicet
+                break
+        spoiling_word = generate_word(chr(u + ord("a")), chr(v + ord("a")))
+        words.append(spoiling_word)
+        shuffle(words)
         return words
 
     else:
-        max_components = min(5, num_words)
+        max_components = min(
+            5, num_words
+        )  # 26 csúcsunk van ugye, egyenlőre be van égetve, hogy max 5 független részgráf
         components_count = randint(2, max_components)
-        # Elosztjuk az num_words-et a komponensek között úgy, hogy mindegyikhez legalább 1 szó tartozzon.
-        # Például, ha num_words = N, generálunk components_count-1 "vágási pontot" az [1, N-1] intervallumban,
-        # majd a különbségekkel kapjuk az egyes komponensek szó számát.
-        cut_points = sorted(sample(range(1, num_words), components_count - 1))
+        cut_points = sorted(
+            sample(range(1, num_words), components_count - 1)
+        )  # random választunk vágási pontokat, hogy melyik részgráf mennyi élet tartalmazzon
         words_distribution = (
             [cut_points[0]]
             + [cut_points[i] - cut_points[i - 1] for i in range(1, len(cut_points))]
             + [num_words - cut_points[-1]]
         )
 
-        shuffled_alphabet = list(ALPHABET)
+        shuffled_alphabet = list(
+            ALPHABET
+        )  # egyenletesen elosztjuk az ábécét, így biztos függetlenenk lesznek a generált részgráfok
         shuffle(shuffled_alphabet)
         sub_alphabets = []
         n_letters = len(shuffled_alphabet)
@@ -132,28 +150,40 @@ def generate_invalid_case(num_words: int) -> list:
             index += count
         words_all = []
         for comp_words, letters in zip(words_distribution, sub_alphabets):
-            words_sub = generate_valid_case_subset(comp_words, letters)
+            words_sub = generate_valid_case_subset(
+                comp_words, letters
+            )  # a részgráfok mind euler körök,mert ha euler séták lennének akkor több csúcs fokszáma se stimmelne ezért nem lenne szükség összefüggés ellenőrzésre.
             words_all.extend(words_sub)
 
         shuffle(words_all)
         return words_all
 
 
-def run(A, B, C):
+def run(A, B):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
     # print(A)
-    for _ in range(A):
-        num_words = randint(1, B)
-        print(num_words)
-        if randint(1, 10) < C:
-            words = generate_valid_case(num_words)
-        else:
-            words = generate_invalid_case(num_words)
-        for s in words:
-            print(s)
+    num_words = randint(1, B)
+    print(num_words)
+    mode = ""
+    match A:
+        case 1:  # euler séta,de nem kör
+            mode = "path"
+            words = generate_valid_case(mode, num_words)
+        case 2:  # euler kör
+            mode = "cycle"
+            words = generate_valid_case(mode, num_words)
+        case 3:  # valid euler sétához hozzá adok egy élet, úgy hogy él ne legyen hurokél vagy egészítse ki a sétát euler körré
+            mode = "degree"
+            words = generate_invalid_case(mode, num_words)
+        case 4:  # valid euler körök generálása független ábécékkel.
+            mode = "connectivity"
+            words = generate_invalid_case(mode, num_words)
+
+    for s in words:
+        print(s)
 
 
 if __name__ == "__main__":
