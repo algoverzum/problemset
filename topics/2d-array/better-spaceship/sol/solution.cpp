@@ -24,7 +24,7 @@ int main() {
                 sol = true;
             }
         }
-        if (sol && index != -1) {
+        if (sol && index == -1) {
             index = i + 1;
         }
     }
