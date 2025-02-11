@@ -1,4 +1,20 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Store the table in a 2D vector (or 2D array). We can get read it element by element, using a double for loop.
+  py: Store the table in a 2D list. To read it, we need a list generator expression, nested (e.g. `T = [[int(x) for x in input().split()] for i in range(n)]`)
+- We need to print a table in which each number is K times the original number. We can do this element by element, using a double for loop, always writing the K-multiple of the current element to the output. Note that you must also write out line breaks at the end of each line.
+- cpp: |
+    ```
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            cout << k * T[i][j] << " ";
+        }
+        cout << "\n";
+    }
+    ```
+  py: |
+    ```
+    for i in range(n):
+        for j in range(m):
+            print(k * T[i][j], end=" ")
+        print()
+    ```

@@ -1,4 +1,20 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Tároljuk el a táblázatot egy 2D vectorban (vagy 2D tömbben). Elemenként tudjuk bekérni, a beolvasáshoz dupla for ciklus for kelleni.
+  py: Tároljuk el a táblázatot egy 2D listában. A beolvasáshoz lista generátor kifejezés kell, duplán (pl. `T = [[int(x) for x in input().split()] for i in range(n)]`)
+- Egy olyan táblázatot kell kiírni, amiben minden szám az eredeti K-szorosa. Ezt elemenként tudjuk megtenni, egy dupla for ciklussal menjünk végig az elemeken, és mindig az adott elem K-szorosát írjuk ki a kimenetre. Figyeljünk arra, hogy sortöréseket is ki kell írnunk közben minden sor végén.
+- cpp: |
+    ```
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            cout << k * T[i][j] << " ";
+        }
+        cout << "\n";
+    }
+    ```
+  py: |
+    ```
+    for i in range(n):
+        for j in range(m):
+            print(k * T[i][j], end=" ")
+        print()
+    ```
