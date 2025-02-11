@@ -4,7 +4,7 @@
 #include <set>
 using namespace std;
 int in[26], out[26], par[26];
-char str[1005];
+
 int findPar(int r) {
     if (par[r] == r)
         return r;
@@ -13,15 +13,15 @@ int findPar(int r) {
 }
 int main() {
     int n;
-
-    scanf("%d", &n);
+    cin >> n;
     for (int i = 0; i < 26; i++) {
         in[i] = out[i] = 0;
         par[i] = i;
     }
     while (n--) {
-        scanf("%s", str);
-        int len = strlen(str);
+        string str;
+        cin >> str;
+        int len = str.size();
         int u = str[0] - 'a';
         int v = str[len - 1] - 'a';
         in[v]++;
@@ -45,15 +45,13 @@ int main() {
                 pos1++;
             else if (in[i] - out[i] == -1)
                 mns1++;
-            else if (in[i] - out[i] == 0)
-                ;
-            else
+            else if (in[i] - out[i] != 0)
                 other++;
         }
     }
     if (single && other == 0 &&
         ((pos1 == 0 && mns1 == 0) || (pos1 == 1 && mns1 == 1)))
-        printf("YES\n");
+        cout << "YES\n";
     else
-        printf("NO\n");
+        cout << "NO\n";
 }

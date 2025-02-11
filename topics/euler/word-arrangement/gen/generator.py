@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.12
+#!/usr/bin/env python3
 
 from limits import *
 from sys import argv, exit, stderr
