@@ -2,11 +2,11 @@
 #include <vector>
 using namespace std;
 
-int count_lower(vector<int> &nums, int barrier) {
+int count_lower(vector<int> numbers, int limit) {
 
     int count = 0;
-    for (int num : nums) {
-        if (num < barrier) {
+    for (int num : numbers) {
+        if (num < limit) {
             count++;
         }
     }
