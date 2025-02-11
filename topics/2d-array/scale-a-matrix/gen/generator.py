@@ -19,7 +19,7 @@ Constraint:
 """ % (
     MIN,
     MAXN,
-    -MAXC,
+    MIN,
     MAXC,
 )
 
@@ -32,11 +32,11 @@ def run(A, B):
 
     N = randint(1, A)
     M = randint(1, A)
-    C = randint(-B, B)
+    C = randint(1, B)
 
     print(N, M)
     for i in range(N):
-        print(*[randint(-B, B) for i in range(M)])
+        print(*[randint(1, B) for i in range(M)])
     print(C)
 
 

@@ -1,29 +1,31 @@
-## Scale A Matrix
-The Jedi Archives store battle strategy matrices to help the Republic plan its defenses. Each matrix consists of $N$ rows and $M$ columns, representing tactical values.
+## Vulcan Tea Prices
+Spock wants to organize a gathering where he invites $K$ fellow officers and provides each of them with a serving of Vulcan tea. He only needs to choose the meeting location and time. From the United Federation database, $N$ possible space stations are available, and Spock knows the price of the drinks at each location for the next $M$ stardates in advance.
 
-Your mission is to enhance a given matrix by multiplying each value with a Force amplification factor $C$.
+These prices are stored in a table $T$, where the element in the $i$-th row and $j$-th column, $T_{i,j}$, represents the cost of one serving of Vulcan tea at the $i$-th location on the $j$-th stardate.
+
+Spock wants to see the total cost of $K$ servings at each location and time to make the most logical decision. Can you create a table $S$ for him, where $S_{i,j}$ represents the total cost of $K$ servings of tea at the $i$-th location on the $j$-th stardate?
 
 ### Input
-The first line contains two integers, $N$ (number of rows) and $M$ (number of columns).
-The next $N$ lines contain $M$ integers each, representing the matrix values.
-The final line contains an integer $C$, the Force amplification factor.
+The first line contains two integers, $N$ (the number of space stations) and $M$ (the number of stardates).
+This is followed by the $T$ table: the next $N$ lines each contain $M$ integers representing the price of one serving of Vulcan tea at different locations and times.
+The last line contains a single integer: $K$, the number of Spock’s fellow officers.
 
 ### Output
-Print the transformed matrix, where each element is multiplied by $C$.
+Print the $S$ table as described above, representing the total price of $K$ servings of tea at each location and time.
 
 ### Constraints
 * $1 \le N, M \le 10$
-* $-100 \le C \le 100$
-* the values of the matrix are between $-100$ and $100$ as well.
+* $1 \le K \le 100$
+* $1 \le T_{i,j} \le 100$
 
 ### Example input
     3 4
-    11 12 13 14
-    21 22 23 24
-    31 32 33 34
+    1 3 2 5
+    7 6 4 8
+    2 9 1 4
     2
 
 ### Example output
-    22 24 26 28
-    42 44 46 48
-    62 64 66 68
+    2 6 4 10
+    14 12 8 16
+    4 18 2 8

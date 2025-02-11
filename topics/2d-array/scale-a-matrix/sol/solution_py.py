@@ -2,9 +2,9 @@
 # @check-accepted: *
 
 n, m = [int(x) for x in input().split()]
-A = [[int(x) for x in input().split()] for i in range(n)]
-c = int(input())
+T = [[int(x) for x in input().split()] for i in range(n)]
+k = int(input())
 for i in range(n):
     for j in range(m):
-        print(c * A[i][j], end=" ")
+        print(k * T[i][j], end=" ")
     print()

@@ -23,10 +23,10 @@ def run(f, st):
         line = list(map(int, next(f).split()))
         assert len(line) == M
         for v in line:
-            assert -MAXC <= v <= MAXC
+            assert MIN <= v <= MAXC
 
     C = int(next(f))
-    assert -MAXC <= C <= MAXC
+    assert MIN <= C <= MAXC
 
     assert next(f, None) is None
 
