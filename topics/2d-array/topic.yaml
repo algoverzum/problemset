@@ -2,17 +2,15 @@
 id: 2d-array
 name: 2D Array
 problems:
-  - problem_id: hottest-days
-    type: REQUIRED
   - problem_id: tea-prices
     type: REQUIRED
   - problem_id: swap-columns
     type: REQUIRED
   - problem_id: power-cells
     type: REQUIRED
-  - problem_id: more-oxygen
+  - problem_id: hottest-days
     type: REQUIRED
-  - problem_id: bigger-columns
+  - problem_id: more-oxygen
     type: COMPLETION
   - problem_id: better-spaceship
     type: EXTRA
