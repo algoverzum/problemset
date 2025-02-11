@@ -1,9 +1,9 @@
 ---
 # General info
 name: scale-a-matrix
-title: Scale a Matrix
+title: Vulcan Tea Prices
 title_translations:
-  hu: Táblázat szorzás
+  hu: Vulkáni tea árak
 
 # Technical info
 memory_limit: 128

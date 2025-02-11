@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.12
 # @check-accepted: *
 def find_par(par, r):
     if par[r] == r:

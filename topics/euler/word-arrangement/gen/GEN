@@ -18,3 +18,7 @@
 3      50000      8
 4      80000     9
 1     100000      10
+#COPY: testcases/spec1.txt
+#COPY: testcases/spec2.txt
+#COPY: testcases/spec3.txt
+#COPY: testcases/spec4.txt
