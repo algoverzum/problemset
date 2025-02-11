@@ -1,4 +1,3 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- A már ismert maximumkiválasztás algoritmusát kell alkalmaznunk, csak ezúttal táblázatra, azaz jegyezzük meg a maximális elemet, egy dupla for ciklussal menjünk végig a táblázat elemein, és ha nagyobbat találunk az eddigi maximumnál, akkor frissítsük.
+- A maximális elem sor- és oszlopindexét mindenképp meg kell jegyezni, mert ez lesz a megoldás. Meg lehet csinálni úgy is a maximumkiválasztást, hogy csak az indexeket jegyezzük meg, a maximum értékére nem kell külön változó, hiszen mindig ki tudjuk olvasni a táblázatból az adott helyen lévő értéket.

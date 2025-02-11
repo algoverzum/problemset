@@ -2,19 +2,13 @@
 # @check-accepted: *
 
 n, m = [int(x) for x in input().split()]
-powercells = []
-for _ in range(n):
-    line = [int(x) for x in input().split()]
-    powercells.append(line)
+powercells = [[int(x) for x in input().split()] for _ in range(n)]
 
-maximal = powercells[0][0]
-maxindexi = 0
-maxindexj = 0
+maxi = 0
+maxj = 0
 for i in range(n):
     for j in range(m):
-        if powercells[i][j] > maximal:
-            maximal = powercells[i][j]
-            maxindexi = i
-            maxindexj = j
-print(maxindexi, end=" ")
-print(maxindexj)
+        if powercells[i][j] > powercells[maxi][maxj]:
+            maxi = i
+            maxj = j
+print(maxi + 1, maxj + 1)

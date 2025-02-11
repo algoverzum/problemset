@@ -1,4 +1,17 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Tároljuk el a táblázatot egy 2D vectorban (vagy 2D tömbben). Elemenként tudjuk bekérni, a beolvasáshoz dupla for ciklus for kelleni.
+  py: Tároljuk el a táblázatot egy 2D listában. A beolvasáshoz lista generátor kifejezés kell, duplán (pl. `A = [[int(x) for x in input().split()] for i in range(n)]`)
+- cpp: A két oszlop elemeit egyenként tudjuk felcserélni, írjunk egy for ciklust ehhez. A cseréhez használhatjuk a `swap()` függvényt.
+  py: A két oszlop elemeit egyenként tudjuk felcserélni, írjunk egy for ciklust ehhez. A cseréhez használhatjuk az `a, b = b, a` írásmódot.
+- cpp: Ügyeljünk arra, hogy a for ciklus a sorok számáig menjen, és hogy a ciklusváltozó a 2D vectorban az első index, az `i` és `j` oszlopindexek pedig a második index. Beolvasáskor érdemes eggyel csökkenteni `i` és `j` értékét, hiszen C++ -ban 0-tól indexelünk.
+  py: Ügyeljünk arra, hogy a for ciklus a sorok számáig menjen, és hogy a ciklusváltozó a 2D listában az első index, az `i` és `j` oszlopindexek pedig a második index. Beolvasáskor érdemes eggyel csökkenteni `i` és `j` értékét, hiszen Pythonban 0-tól indexelünk.
+- cpp: |
+    ```
+    for (int k = 0; k < n; k++)
+      swap(A[k][i], A[k][j]);
+    ```
+  py: |
+    ```
+    for row in range(n):
+      A[row][i], A[row][j] = A[row][j], A[row][i]
+    ```

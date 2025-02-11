@@ -1,5 +1,5 @@
 ## Swap Columns
-The Rebel Alliance has intercepted secret Imperial blueprints stored in a data grid. This grid consists of $N$ rows and $M$ columns, each containing vital intelligence. However, due to an Imperial encryption anomaly, two columns have been swapped, and the Rebels need to restore the correct order to analyze the data.
+The Rebel Alliance has intercepted secret Imperial blueprints stored in a data grid. This grid consists of $N$ rows and $M$ columns, each containing vital intelligence. The rows are indexed from top to bottom $1$ to $N$, the columns from left to right $1$ to $M$. However, due to an Imperial encryption anomaly, two columns have been swapped, and the Rebels need to restore the correct order to analyze the data.
 
 Your mission is to take in the intercepted $N\,{\times}\,M$ data grid and then swap the contents of two specified columns, indexed as $i$ and $j$. Once the swap is complete, transmit the corrected matrix to the Rebel base.
 
@@ -15,17 +15,18 @@ Print the corrected data grid.
 
 ### Constraints
 * $1 \le N, M \le 100$
-* $1 \le I < J \le M$
+* $1 \le i < j \le M$
 * The values of the data grid are between $0$ and $1000$.
 
 ### Example input
     3 4
-    11 12 13 14
-    21 22 23 24
-    31 32 33 34
-    1 2
+    6 7 1 4
+    9 3 5 8
+    1 5 2 6
+    2 3
 
 ### Example output
-    12 11 13 14
-    22 21 23 24
-    32 31 33 34
+    6 1 7 4
+    9 5 3 8
+    1 2 5 6
+

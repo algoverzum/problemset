@@ -12,17 +12,14 @@ int main() {
             cin >> powercells[i][j];
         }
     }
-    int maximal = powercells[0][0];
-    int maxindexi = 0;
-    int maxindexj = 0;
+    int maxi = 0, maxj = 0;
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
-            if (powercells[i][j] > maximal) {
-                maximal = powercells[i][j];
-                maxindexi = i;
-                maxindexj = j;
+            if (powercells[i][j] > powercells[maxi][maxj]) {
+                maxi = i;
+                maxj = j;
             }
         }
     }
-    cout << maxindexi << " " << maxindexj << "\n";
+    cout << maxi + 1 << " " << maxj + 1 << "\n";
 }

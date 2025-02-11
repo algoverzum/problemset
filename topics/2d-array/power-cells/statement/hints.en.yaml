@@ -1,4 +1,3 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- We need to apply the familiar maximum selection algorithm, but this time to a table, i.e. store the maximum element, run a double for loop through the elements of the table, and if we find a larger maximum than the current one, update it.
+- Be sure to record the row and column index of the maximum element, because this will be the solution. We can also do the maximum selection by just keeping a note of the indices, we don't need a separate variable for the value of the maximum, as we can always read the value at that position from the table.

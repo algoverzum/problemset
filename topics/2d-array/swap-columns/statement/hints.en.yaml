@@ -1,4 +1,17 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: store the table in a 2D vector (or 2D array). We can read it element by element, so we need a double for loop for the input reading.
+  py: Store the table in a 2D list. To read it, we need a list generator expression, nested (e.g. `A = [[int(x) for x in input().split()] for i in range(n)]`)
+- cpp: We can swap the elements of the two columns one by one, write a for loop for this. To do the swap we can use the `swap()` function.
+  py: We can swap the elements of the two columns one by one, write a for loop for this. To swap, we can use `a, b = b, a`.
+- cpp: Make sure that the for loop goes up to the number of rows, and that the loop variable in the 2D vector is the first index, and the column indices `i` and `j` are the second indices. It is a good idea to decrease the values of `i` and `j` by one when reading them, since in C++ we index from 0.
+  py: Make sure that the for loop goes up to the number of rows, and that the loop variable in the 2D list is the first index, and the column indices `i` and `j` are the second indices. It is a good idea to decrease the values of `i` and `j` by one when reading them, since in Python we index from 0.
+- cpp: |
+    ```
+    for (int k = 0; k < n; k++)
+      swap(A[k][i], A[k][j]);
+    ```
+  py: |
+    ```
+    for row in range(n):
+      A[row][i], A[row][j] = A[row][j], A[row][i]
+    ```

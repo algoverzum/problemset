@@ -13,9 +13,11 @@ int main() {
     }
     int i, j;
     cin >> i >> j;
+    i--;
+    j--;
 
     for (int k = 0; k < n; k++) {
-        swap(A[k][i - 1], A[k][j - 1]);
+        swap(A[k][i], A[k][j]);
     }
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
