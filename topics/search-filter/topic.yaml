@@ -1,3 +1,4 @@
+---
 id: search-filter
 name: Search and Filter
 problems:
@@ -14,6 +15,8 @@ problems:
   - problem_id: last-occurrence
     type: REQUIRED
   - problem_id: same-two-times
+    type: REQUIRED
+  - problem_id: balanced-numbers
     type: REQUIRED
 prerequisites:
   - array
