@@ -34,14 +34,13 @@ def run(N, M, I):
             break
         assert eval(row[2:]), row[2:]
 
-    print(*[N, M])
-    if I != -1:
+    print(N, M)
+    if I > 0:
+        assert I <= N
         non_sol = []
         pre_sol = []
         sol = []
-        nums = []
-        for _ in range(4):
-            nums.append(randint(1, 1000))
+        nums = [randint(1, 1000) for _ in range(4)]
         nums.sort()
         for _ in range(M):
             pre_sol.append(nums[1])
@@ -54,11 +53,17 @@ def run(N, M, I):
         print(*sol)
         for _ in range(N - I):
             print(*non_sol)
+    elif I == 0:
+        if M != 100:
+            for _ in range(N):
+                non_sol = [randint(1, 1000) for _ in range(M)]
+                print(*non_sol)
+        else:
+            for _ in range(N):
+                non_sol = [randint(1, 1000) for _ in range(10)] * 10
+                print(*non_sol)
     else:
-        non_sol = []
-        num = randint(1, 1000)
-        for _ in range(M):
-            non_sol.append(num)
+        non_sol = [randint(1, 1000) for _ in range(M)]
         for _ in range(N):
             print(*non_sol)
 

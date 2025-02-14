@@ -2,9 +2,7 @@
 # @check-accepted: *
 
 n, m = [int(x) for x in input().split()]
-spaceships = []
-for _ in range(n):
-    spaceships.append([int(x) for x in input().split()])
+spaceships = [[int(x) for x in input().split()] for _ in range(n)]
 
 index = -1
 for i in range(n):
@@ -14,8 +12,11 @@ for i in range(n):
         for k in range(m):
             if spaceships[i][k] <= spaceships[j][k]:
                 better = False
+                break
         if better:
             sol = True
-    if sol and index == -1:
+            break
+    if sol:
         index = i + 1
+        break
 print(index)
