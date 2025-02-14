@@ -19,9 +19,10 @@ def run(f, st):
     assert MIN_DIM <= N <= MAX_DIM
     assert MIN_DIM <= M <= MAX_DIM
     for _ in range(N):
-        line = next(f).split()
+        line = list(map(int, next(f).split()))
+        assert len(line) == M
         for e in line:
-            assert MIN_P <= int(e) <= MAX_P
+            assert MIN_P <= e <= MAX_P
 
     assert next(f, None) is None
 

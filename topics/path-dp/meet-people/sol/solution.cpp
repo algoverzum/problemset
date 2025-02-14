@@ -1,5 +1,6 @@
 // @check-accepted: *
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 int main() {
@@ -19,12 +20,12 @@ int main() {
     }
     for (int j = 1; j < m; j++) {
         for (int i = 1; i < n + 1; i++) {
-            if (dp[i - 1][j - 1].first > dp[i][j - 1].first &&
-                dp[i - 1][j - 1].first > dp[i + 1][j - 1].first) {
+            if (dp[i - 1][j - 1].first >= dp[i][j - 1].first &&
+                dp[i - 1][j - 1].first >= dp[i + 1][j - 1].first) {
                 dp[i][j] = dp[i - 1][j - 1];
                 dp[i][j].first += grid[i - 1][j];
-            } else if (dp[i][j - 1].first > dp[i - 1][j - 1].first &&
-                       dp[i][j - 1].first > dp[i + 1][j - 1].first) {
+            } else if (dp[i][j - 1].first >= dp[i - 1][j - 1].first &&
+                       dp[i][j - 1].first >= dp[i + 1][j - 1].first) {
                 dp[i][j] = dp[i][j - 1];
                 dp[i][j].first += grid[i - 1][j];
             } else {

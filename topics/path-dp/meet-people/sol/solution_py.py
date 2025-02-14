@@ -2,41 +2,24 @@
 # @check-accepted: *
 
 n, m = [int(x) for x in input().split()]
-grid = []
-for _ in range(n):
-    line = [int(x) for x in input().split()]
-    grid.append(line)
+dp = [[int(x) for x in input().split()] for _ in range(n)]
 
-dpval = []
-dpindex = []
-
-for i in range(n + 2):
-    valline = [-100 for _ in range(m)]
-    indexline = [-1 for _ in range(m)]
-    dpval.append(valline)
-    dpindex.append(indexline)
-
-for i in range(1, n + 1):
-    dpval[i][0] = grid[i - 1][0]
-    dpindex[i][0] = i
+dpindex = [[i] + [0] * (m - 1) for i in range(n)]
 
 for j in range(1, m):
-    for i in range(1, n + 1):
-        if dpval[i - 1][j - 1] > dpval[i][j - 1] and dpval[i - 1][j - 1] > dpval[i + 1][j - 1]:
-            dpindex[i][j] = dpindex[i - 1][j - 1]
-            dpval[i][j] = dpval[i - 1][j - 1] + grid[i - 1][j]
-        elif dpval[i][j - 1] > dpval[i - 1][j - 1] and dpval[i][j - 1] > dpval[i + 1][j - 1]:
-            dpindex[i][j] = dpindex[i][j - 1]
-            dpval[i][j] = dpval[i][j - 1] + grid[i - 1][j]
-        else:
-            dpindex[i][j] = dpindex[i + 1][j - 1]
-            dpval[i][j] = dpval[i + 1][j - 1] + grid[i - 1][j]
+    for i in range(n):
+        cur = []
+        for k in [-1, 0, 1]:
+            if 0 <= i + k < n:
+                cur.append((dp[i + k][j - 1], -dpindex[i + k][j - 1]))
+        dp[i][j] += max(cur)[0]
+        dpindex[i][j] = -max(cur)[1]
 
-maximal = dpval[1][m - 1]
-maxindex = dpindex[1][m - 1]
-for i in range(1, n + 1):
-    if dpval[i][m - 1] > maximal:
-        maximal = dpval[i][m - 1]
+maximal = dp[0][m - 1]
+maxindex = dpindex[0][m - 1]
+for i in range(1, n):
+    if dp[i][m - 1] > maximal:
+        maximal = dp[i][m - 1]
         maxindex = dpindex[i][m - 1]
 print(maximal)
-print(maxindex)
+print(maxindex + 1)

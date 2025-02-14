@@ -30,11 +30,12 @@ def run(N, M):
             break
         assert eval(row[2:]), row[2:]
 
-    print(*(N, M))
+    print(N, M)
     for _ in range(N):
+        line = []
         for _ in range(M):
-            print(randint(0, 1000), end=" ")
-        print()
+            line.append(randint(0, 1000))
+        print(*line)
 
 
 if __name__ == "__main__":
