@@ -1,19 +1,16 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
-n, m = input().split()
-n = int(n)
-m = int(m)
+n, m = [int(x) for x in input().split()]
+oxi_levels = [[int(x) for x in input().split()] for i in range(n)]
 
-oxi_levels = []
-for i in range(n):
-    line = input().split()
-    oxi_levels.append(line)
 highdays = []
 for i in range(1, m):
     valid = True
     for j in range(n):
-        valid &= int(oxi_levels[j][i]) > int(oxi_levels[j][i - 1])
+        if oxi_levels[j][i] <= oxi_levels[j][i - 1]:
+            valid = False
+            break
     if valid:
         highdays.append(i + 1)
 print(len(highdays))

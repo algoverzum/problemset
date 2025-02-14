@@ -38,10 +38,9 @@ def run(N, M, A, B):
             break
         assert eval(row[2:]), row[2:]
 
-    print(*[N, M])
-    days = []
-    for _ in range(N):
-        days.append([randint(A, B - 2)])
+    print(N, M)
+    assert A <= B - 2
+    days = [[randint(A, B - 2)] for i in range(N)]
     for i in range(1, M):
         val = randint(1, 10)
         if val < 3:
