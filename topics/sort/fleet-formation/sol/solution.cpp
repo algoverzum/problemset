@@ -1,8 +1,6 @@
 // @check-accepted: *
 #include <algorithm>
-#include <functional>
 #include <iostream>
-#include <math.h>
 #include <vector>
 using namespace std;
 

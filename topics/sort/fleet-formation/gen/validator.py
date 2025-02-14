@@ -18,6 +18,7 @@ def run(f, st):
     N = int(next(f))
     assert MIN <= N <= MAX
     inputs = list(map(int, next(f).split()))
+    assert len(inputs) == N
     for i in range(N):
         assert MIN2 <= inputs[i] <= MAX2
     assert next(f, None) is None
