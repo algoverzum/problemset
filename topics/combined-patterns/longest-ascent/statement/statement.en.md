@@ -3,14 +3,14 @@ A brilliant scientist, Dr Pulsar, has long dreamed of flying into space, but ins
 
 ### Input
 The first line of the input contains $N$  <br /> 
-Followed by $N$ lines each containing the $M$ height of the $N$-th measurement.
+Followed by $N$ lines each containing the $M_i$ height of the $i$-th measurement.
 
 ### Output
 Print 2 numbers, the start and end points of the longest ascent. If there are no ascents, then write -1.
 
 ### Constraints
 * $1 \le N \le 1000$
-* $1 \le M \le 1000$
+* $1 \le M_i \le 1000$
 
 ### Example input
     10
@@ -29,6 +29,6 @@ Print 2 numbers, the start and end points of the longest ascent. If there are no
     5 8
 
 ### Explanation of the example
-    100<110<115  3 heights
-    105<115<125<130  4 heights, this is the longest ascent
+100<110<115  3 heights
 
+105<115<125<130  4 heights, this is the longest ascent

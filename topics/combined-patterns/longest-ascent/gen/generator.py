@@ -36,7 +36,7 @@ def run(A, B):
             if last < 0.95 * B:
                 chance = randint(1, 10)
                 if chance < 9:
-                    last = randint(last, 0.05 * B + last)
+                    last = randint(last, int(0.05 * B) + last)
                 else:
                     last = randint(1, B)
             else:

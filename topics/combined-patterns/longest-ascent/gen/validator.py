@@ -18,8 +18,8 @@ def run(f, st):
     N = int(next(f))
     assert MIN <= N <= MAX
     for _ in range(N):
-        N = int(next(f))
-        assert MIN <= N <= MAX
+        M = int(next(f))
+        assert MIN <= M <= MAX
     assert next(f, None) is None
 
 

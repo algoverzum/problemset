@@ -3,14 +3,14 @@ Egy zseniális tudós, Dr. Pulsar, régóta álmodozik arról, hogy az űrbe rep
 
 ### Bemenet
 A bemenetben első sorában egyetlen egész szám van: $N$. <br /> 
-Ezt követi $N$ sor mindegyik egy $M$ szám az $N$-ik mérés magassága.
+Ezt követi $N$ sor mindegyikben egy $M_i$ szám az $i$-ik mérés magassága.
 
 ### Kimenet
 Két számot kell kiírnod, a leghosszabb emelkedő kezdő és végpontját. Ha nincs emelkedő akkor -1-et kell kiírnod.
 
 ### Korlátok
 * $1 \le N \le 1000$
-* $1 \le M \le 1000$
+* $1 \le M_i \le 1000$
 
 ### Példa bemenet
     10
@@ -29,5 +29,6 @@ Két számot kell kiírnod, a leghosszabb emelkedő kezdő és végpontját. Ha 
     5 8
 
 ### A példa magyarázata
-    100<110<115  3 db magasság
-    105<115<125<130  4 db magasság, ez a leghosszabb emelkedő
+100<110<115  3 db magasság
+
+105<115<125<130  4 db magasság, ez a leghosszabb emelkedő
