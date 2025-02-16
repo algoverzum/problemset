@@ -1,4 +1,4 @@
-# A     B       S
+# A     B    C   S
 
 # Subtask 1: Examples
 #ST: 0
@@ -8,13 +8,17 @@
 # Subtask 2: 1 <= N <= 100
 #ST: 100
 #STNAME: all
-1      1      1
-100    100    2
-1      10     3
-1      10     44
-1      20     5
-1      100    66
-1      100    7
-1      100    8
-1      100    9
-1      100    10
+5       5            1        2
+10      20           2         33
+40      80            2        44
+60      100           1         5
+80      100          3        66
+100      1000        1       7
+140      2000        3      8
+150      5000       2         9
+200      8000       3       10
+200      10000      1       102
+#COPY: testcases/spec1.txt
+#COPY: testcases/spec2.txt
+#COPY: testcases/spec3.txt
+#COPY: testcases/spec4.txt

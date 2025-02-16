@@ -3,7 +3,7 @@ In a remote star system, an eager team of researchers has stumbled upon an ancie
 
 ### Input
 The first line of the input contains two integers: $N$ is the number of planets in the system and $R$ is the number of stargates. <br>
-This is followed by line $R$, each line has two distinct numbers $V1$ and $V2$ the two planets connected by the edge
+This is followed by $R$ lines , each line has two distinct numbers $V1$ and $V2$ the two planets connected by the edge
 
 ### Output
 Print a single word. $YES$ if there is such a traversal. $NO$ if there isn't.
