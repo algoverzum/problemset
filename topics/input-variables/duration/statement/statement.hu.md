@@ -10,7 +10,7 @@ A bemenetben egyetlen egész szám van: $N$ - a másodpercek száma.
 
 
 ### Kimenet
-Négy számot írj ki külön sorokba, az időtartamot nap, óra, perc, másodperc formátumban.
+Négy számot írj ki egy sorba, az időtartamot nap, óra, perc, másodperc formátumban.
 
 ### Korlátok
 * $1 \le N \le 1\,000\,000$
