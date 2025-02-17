@@ -2,7 +2,7 @@
 We run safety tests on spacecraft reactors. In one phase, the on-board calculator tests how many reactors will operate under a certain load. Write a function that can count how many are below a given limit among a list of load levels stored in a memory.
 
 ### Template
-Start from the predefined template code! Do not change anything in the main program, otherwise it will not be accepted. You need to write the `count_lower` function, which takes as parameters the sequence of numbers and the limit, and returns the number of items below the limit.
+Start from the predefined template code! Do not change anything in the main program, otherwise it will not be accepted. You need to write the `count_lower` function, which takes as parameters the sequence of numbers and the limit and returns the number of items below the limit.
 
 ### Constraints
 * $1 \le N \le 100$, where $N$ is the size of the number sequence.
