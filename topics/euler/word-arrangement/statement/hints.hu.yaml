@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- A szavaknak csak az első és utolsó betűje számít. Minden átmenetnél az aktuális szó utolsó betűje megegyezik a következő szó első betűjével.
+- 'Minden betűnek ugyanannyiszor kell szerepelni első és utolsó betűként, kivéve esetleg kettőt: a legelső szó első betűjét és az utolsó szó utolsó betűjét. Ez azonban még nem elégséges feltétel. Gondoljunk például ezekre a szavakra: ab, ba, cd, dc.'
+- Képzeljünk el egy gráfot, amiben a csúcsok a betűk és minden szó egy él, ami az első betűjéből az utolsóba megy (irányított). Ebben keresünk egy olyan sétát, ami minden élen végigmegy (Euler-séta). Ehhez szükséges feltétel az is, hogy a gráf összefüggő legyen - úgy értve, hogy az éleket irányítatlannak tekintjük (ezt gyengén összefüggőségnek nevezik).
+- 'Az összefüggőség, és a fokszámokra megfogalmazott feltétel (minden csúcsra befok = kifok, kivéve két csúcsot, ahol lehet 1 a különbségük) nyilvánvalóan szükséges, de az az érdekes, hogy elégséges is. A bizonyítás is érdekes, itt megtalálható: https://hu.wikipedia.org/wiki/Euler-k%C3%B6r '
