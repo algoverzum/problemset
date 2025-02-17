@@ -9,28 +9,48 @@ from inspect import signature
 usage = """Generator for "factory".
 
 Parameters:
-* A (minimum value)
-* B (maximum value)
+* A (length of input)
+* B (number of even)
+* C (max value)
 * S (seed)
 
 Constraint:
 * %d <= A <= %d
 * %d <= B <= %d
+* %d <= C <= %d
 """ % (
-    MIN,
-    MAX,
-    MIN,
-    MAX,
+    MINN,
+    MAXN,
+    0,
+    MAXN,
+    MINX,
+    MAXX,
 )
 
 
-def run(A, B):
+def run(A, B, C):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    N = A
+    B = min(A, B)
+    odd = []
+    even = []
+    while len(odd) < N - B:
+        num = randint(0, C)
+        if num % 2 == 1:
+            odd.append(num)
+    while len(even) < B:
+        num = randint(0, C)
+        if num % 2 == 0:
+            even.append(num)
+
+    print(N)
+    res = odd + even
+    shuffle(res)
+    print(*res)
 
 
 if __name__ == "__main__":
