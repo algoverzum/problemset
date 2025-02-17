@@ -6,39 +6,31 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "lower-count".
+usage = """Generator for "count-divisors".
 
 Parameters:
-* N (value of N)
-* M (value of M)
-* A (max value in sequence)
+* A (minimum value)
+* B (maximum value)
 * S (seed)
 
 Constraint:
-* %d <= N <= %d
-* %d <= M <= %d
 * %d <= A <= %d
+* %d <= B <= %d
 """ % (
-    MIN_N,
-    MAX_N,
-    MIN_A,
-    MAX_A,
-    MIN_A,
-    MAX_A,
+    MIN,
+    MAX,
+    MIN,
+    MAX,
 )
 
 
-def run(N, M, A):
+def run(A, B):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(N, M)
-    sequence = []
-    for _ in range(N):
-        sequence.append(randint(1, A))
-    print(*sequence)
+    print(randint(A, B))
 
 
 if __name__ == "__main__":
