@@ -16,7 +16,12 @@ def run(f, st):
         globals()[k] = v
 
     N = int(next(f))
-    assert MIN <= N <= MAX
+    assert MINN <= N <= MAXN
+
+    A = list(map(int, next(f).split()))
+    assert len(A) == N
+    for a in A:
+        assert MINX <= a <= MAXX
 
     assert next(f, None) is None
 
