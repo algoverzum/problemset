@@ -7,4 +7,5 @@ ans = []
 for i in range(1, n - 1):
     if 2 * A[i] == A[i - 1] + A[i + 1]:
         ans.append(A[i])
+print(len(ans))
 print(*ans)

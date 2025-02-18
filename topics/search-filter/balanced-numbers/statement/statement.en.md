@@ -8,7 +8,8 @@ The first line of the input is $N$, which is the length of the message.
 The next line contains $N$ integers, the numbers in the message: $A_1, A_2, \ldots, A_{N}$.
 
 ### Output
-You should print the numbers separated by spaces that are equal to the average of their neighbors.
+In the first line print the number of balanced numbers.
+In the second line print the numbers separated by spaces that are equal to the average of their neighbors.
 
 ### Constraints
 * $1 \le N \le 10\,000$
@@ -19,6 +20,7 @@ You should print the numbers separated by spaces that are equal to the average o
     1 4 7 11 10 8 6 10
 
 ### Example output
+    2
     4 8
 
 ### Explanation of the example
