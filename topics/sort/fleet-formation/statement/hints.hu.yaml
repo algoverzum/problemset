@@ -1,4 +1,13 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    Rendezzük csökkenő sorrendbe a hajók erősségeit: `sort(ships.begin(), ships.end(), greater<int>());` vagy `sort(ships.rbegin(), ships.rend());`
+  py: |
+    Rendezzük csökkenő sorrendbe a hajók erősségeit: `ships.sort(reverse=True)`
+- cpp: Készítsünk egy n elemű vectort a megoldásnak (`vector<int> formation(n);`), aminek majd a megfelelő helyeire tesszük be az elemeket
+  py: Készítsünk egy n elemű listát a megoldásnak (`formation = [0] * n`), aminek majd a megfelelő helyeire tesszük be az elemeket
+- cpp: A középső elem az n/2-edik. Ha csökkenő sorrendben megyünk, akkor az i-edik elem esetén a középső elemtől i/2 felső egészrész távolságra kell tenni, az i paritásától függően a közepétől lefelé vagy felfelé.
+- py: A középső elem az n//2-edik. Ha csökkenő sorrendben megyünk, akkor az i-edik elem esetén a középső elemtől i/2 felső egészrész távolságra kell tenni, az i paritásától függően a közepétől lefelé vagy felfelé.
+- cpp: |
+    i/2 felső egészrészt így szoktuk írni: `(i + 1) / 2`
+  py: |
+    i/2 felső egészrészt így szoktuk írni: `(i + 1) // 2`

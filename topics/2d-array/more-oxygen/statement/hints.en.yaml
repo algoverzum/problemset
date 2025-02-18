@@ -1,3 +1,6 @@
-- TODO
-- cpp: TODO
-  py: TODO
+---
+- cpp: Store the table in a 2D vector (or 2D array). We can get read it element by element, using a double for loop.
+  py: Store the table in a 2D list. To read it, we need a list generator expression, nested (e.g. `T = [[int(x) for x in input().split()] for i in range(n)]`)
+- cpp: Go through the columns starting from the second one and check if the current column is good, and if so, put its index into a vector that contains the solution. We suggest that the variable of this outer for loop should be j, since it will always be the second index.
+  py: Go through the columns starting from the second one and check if the column is good, and if so, put its index into a list that contains the solution. We suggest that the variable of this outer for loop should be j, since it will always be the second index.
+- To decide if the current column is good (i.e., if it is a nice day), we have to go through all the rows and see if the previous element in that row is smaller. A boolean flag variable could be used for this, which is initially set to true, and if a row is found where the previous element is not smaller, it is changed to false. If it remains true, then the current column is good.

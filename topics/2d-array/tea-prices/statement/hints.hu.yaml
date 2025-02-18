@@ -1,5 +1,6 @@
 ---
-- cpp: Tároljuk el a táblázatot egy 2D vectorban (vagy 2D tömbben). Elemenként tudjuk bekérni, a beolvasáshoz dupla for ciklus for kelleni.
+- cpp: |
+    Tároljuk el a táblázatot egy 2D vectorban (vagy 2D tömbben). Elemenként tudjuk bekérni, a beolvasáshoz dupla for ciklus fog kelleni. 2D vector létrehozásához segítség: `vector<vector<int>> T(n, vector<int>(m));`
   py: Tároljuk el a táblázatot egy 2D listában. A beolvasáshoz lista generátor kifejezés kell, duplán (pl. `T = [[int(x) for x in input().split()] for i in range(n)]`)
 - Egy olyan táblázatot kell kiírni, amiben minden szám az eredeti K-szorosa. Ezt elemenként tudjuk megtenni, egy dupla for ciklussal menjünk végig az elemeken, és mindig az adott elem K-szorosát írjuk ki a kimenetre. Figyeljünk arra, hogy sortöréseket is ki kell írnunk közben minden sor végén.
 - cpp: |

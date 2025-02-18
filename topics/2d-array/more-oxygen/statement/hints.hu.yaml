@@ -1,3 +1,6 @@
-- TODO
-- cpp: TODO
-  py: TODO
+---
+- cpp: Tároljuk el a táblázatot egy 2D vectorban (vagy 2D tömbben). Elemenként tudjuk bekérni, a beolvasáshoz dupla for ciklus fog kelleni.
+  py: Tároljuk el a táblázatot egy 2D listában. A beolvasáshoz lista generátor kifejezés kell, duplán (pl. `A = [[int(x) for x in input().split()] for i in range(n)]`)
+- cpp: Menjünk végig az oszlopokon a másodiktól kezdve és ellenőrizzük, hogy jó-e az adott oszlop, és ha igen, akkor tegyük bele egy vector-ba a sorszámát (kiválogatás). Azt javasoljuk, hogy ennek a külső for ciklusnak legyen j a változója, hiszen ez lesz a második index mindig.
+  py: Menjünk végig az oszlopokon a másodiktól kezdve és ellenőrizzük, hogy jó-e az adott oszlop, és ha igen, akkor tegyük bele egy listába a sorszámát (kiválogatás). Azt javasoljuk, hogy ennek a külső for ciklusnak legyen j a változója, hiszen ez lesz a második index mindig.
+- Ahhoz, hogy eldöntsük, hogy az aktuális oszlop jó-e (tehát kellemes-e a nap), végig kell menni az összes soron és megnézni, hogy abban a sorban az előző elem kisebb-e. Egy igaz-hamis változót érdemes erre használni, amit kezdetben igazra állítunk, és ha találunk egy olyan sort, ahol nem kisebb az előző elem, akkor hamisra változtatjuk. Ha igaz maradt, akkor jó ez az oszlop.

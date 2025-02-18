@@ -6,15 +6,11 @@ spaceships = [[int(x) for x in input().split()] for _ in range(n)]
 
 index = -1
 for i in range(n):
-    sol = False
     for j in range(n):
         better = True
         for k in range(m):
             if spaceships[i][k] <= spaceships[j][k]:
                 better = False
-        if better:
-            sol = True
-    if sol:
-        index = i + 1
-        break
+        if better and index == -1:
+            index = i + 1
 print(index)

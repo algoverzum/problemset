@@ -14,18 +14,14 @@ int main() {
     }
     int index = -1;
     for (int i = 0; i < n; i++) {
-        bool sol = false;
         for (int j = 0; j < n; j++) {
             int better = true;
             for (int k = 0; k < m; k++) {
                 better &= spaceships[i][k] > spaceships[j][k];
             }
-            if (better) {
-                sol = true;
+            if (better && index == -1) {
+                index = i + 1;
             }
-        }
-        if (sol && index == -1) {
-            index = i + 1;
         }
     }
     cout << index << "\n";

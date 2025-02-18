@@ -4,7 +4,7 @@ You are leading a Fleet into battle, before the battle starts you want to arrang
 
 ### Input
 The first line of the input contains a single odd integer: $N$.<br>
-The second line of the input contains $N$ numbers, $H_1,H_2,\ldots,H_N$, the power of your ships.
+The second line of the input contains $N$ numbers, $S_1,S_2,\ldots,S_N$, the power of your ships.
 
 ### Output
 Print $N$ numbers, the power of your ships in the battle formation.
@@ -12,7 +12,7 @@ Print $N$ numbers, the power of your ships in the battle formation.
 ### Constraints
 * $1 \le N \le 999$
 * $N$ is odd
-* $1 \le H_i \le 10000$
+* $1 \le S_i \le 10\,000$
 
 ### Example input
     7

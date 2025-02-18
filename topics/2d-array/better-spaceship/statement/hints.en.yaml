@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Go through the spaceships (corresponding to a row in the table), and for each one, look at all the other spaceships to see if there is another one that has all values lower than the current one. So let's have an outer for loop with variable i and an inner for loop with variable j, and compare the j-th row to the i-th row every time to see if all its elements are smaller.
+- To compare the i-th and j-th rows, we will also need a third, innermost for loop (may be index k) to compare the corresponding elements of the two rows. It is recommended to use a true-false variable, which is initially set to true and then set to false, if for any k `A[i][k] <= A[j][k]' holds, indicating that not all values of the i-th spacecraft are better.
+- Finally, if it turns out that all elements of the i-th row are greater than the corresponding element of the j-th row, we must save the index i, but it is important to find the first such index. We can do this for example by initially setting our solution variable to -1 and only rewriting it if it is still -1.

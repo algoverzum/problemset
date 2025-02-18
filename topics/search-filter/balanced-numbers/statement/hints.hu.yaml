@@ -1,2 +1,4 @@
 ---
-- Ellenőrizzük a feltételt a sorozat minden elemére az első és utolsó kivételével.
+- Ellenőrizzük a feltételt a sorozat minden elemére az első és utolsó kivételével. Célszerűbb úgy megfogalmazni, hogy az elem kétszerese megegyezik a két szomszéd összegével, mivel így elkerüljük az osztást, és minden maradhat egész szám.
+- cpp: Ha az aktuális elemre igaz a feltétel, akkor tegyük bele egy vector-ba (amiben a megoldást gyűjtjük). A végén ennek a vector-nak a méretét és az elemeit kell kiírni.
+  py: Ha az aktuális elemre igaz a feltétel, akkor tegyük bele egy listába (amiben a megoldást gyűjtjük). A végén ennek a listának a hosszát és az elemeit kell kiírni.

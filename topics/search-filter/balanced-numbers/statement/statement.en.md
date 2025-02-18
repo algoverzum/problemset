@@ -1,7 +1,7 @@
 ## Balanced Numbers
 Stargate Command has discovered a strange series of numbers in a message from an alien planet. This does not appear to be a random code, certain numbers are in equilibrium: their values are equal to the average of their immediate neighbors.
 
-Could you sort out these balanced numbers? Do not change their order!
+Could you select these balanced numbers? Do not change their order.
 
 ### Input
 The first line of the input is $N$, which is the length of the message.

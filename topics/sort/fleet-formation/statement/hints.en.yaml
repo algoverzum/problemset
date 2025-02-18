@@ -1,4 +1,13 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    Sort the ships in descending order of strength: `sort(ships.begin(), ships.end(), greater<int>());` or `sort(ships.rbegin(), ships.order());`
+  py: |
+    Sort the strengths of the ships in descending order: `ships.sort(reverse=True)`
+- cpp: Create a vector of n elements for the solution, then place the elements in the appropriate positions (`vector<int> formation(n);`)
+  py: Make a list of n elements for the solution, then place the elements in the appropriate positions (`formation = [0] * n`)
+- cpp: The middle element is in the position n/2. If we go in descending order, then for the i-th element, we must place it $\lceil \frac{i}{2} \rceil$ distance from the middle element, down or up from the middle depending on the parity of i.
+- py: The middle element is in the position n//2. If we go in descending order, then for the i-th element, we must place it $\lceil \frac{i}{2} \rceil$ distance from the middle element, down or up from the middle depending on the parity of i.
+- cpp: |
+    $\lceil \frac{i}{2} \rceil$ is usually calculated as `(i + 1) / 2`
+  py: |
+    $\lceil \frac{i}{2} \rceil$ is usually calculated as `(i + 1) // 2`

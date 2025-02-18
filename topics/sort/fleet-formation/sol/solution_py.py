@@ -2,12 +2,12 @@
 # @check-accepted: *
 
 n = int(input())
-numbers = [int(x) for x in input().split()]
-numbers.sort(reverse=True)
-result = [0] * n
+ships = [int(x) for x in input().split()]
+ships.sort(reverse=True)
+formation = [0] * n
 for i in range(n):
     if i % 2 == 1:
-        result[n // 2 - (i + 1) // 2] = numbers[i]
+        formation[n // 2 - (i + 1) // 2] = ships[i]
     else:
-        result[n // 2 + (i + 1) // 2] = numbers[i]
-print(*result)
+        formation[n // 2 + (i + 1) // 2] = ships[i]
+print(*formation)

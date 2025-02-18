@@ -3,7 +3,7 @@ Egy Flottát vezetsz csatába, az ütközet előtt szeretnéd úgy elrendezni a 
 
 ### Bemenet
 A bemenet első sorában egyetlen páratlan egész szám van: $N$.<br>
-A bemenet második sorában $N$ darab szám van, $H_1,H_2,\ldots,H_N$ a hajóid ereje.
+A bemenet második sorában $N$ darab szám van, $S_1,S_2,\ldots,S_N$ a hajóid ereje.
 
 ### Kimenet
 $N$ darab számot kell kiírnod egy sorba, a hajóid erejét, csatarendben.
@@ -11,7 +11,7 @@ $N$ darab számot kell kiírnod egy sorba, a hajóid erejét, csatarendben.
 ### Korlátok
 * $1 \le N \le 999$
 * $N$ páratlan
-* $1 \le H_i \le 10000$
+* $1 \le S_i \le 10000$
 
 ### Példa bemenet
     7

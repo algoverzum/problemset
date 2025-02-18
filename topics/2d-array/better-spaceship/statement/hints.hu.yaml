@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Menjünk végig az űrhajókon (amik a táblázat egy-egy sorának felelnek meg), és mindegyiknél nézzük végig az összes többi űrhajót, hogy van-e köztük olyan, aminek minden értéke gyengébb. Tehát legyen egy külső for ciklus i változóval, és egy belső for ciklus j változóval, és az i-edik sorhoz kell hasonlítanunk a j-edik sort mindig, hogy annak minden eleme kisebb-e.
+- Az i-edik és j-edik sor összehasonlításához még kelleni fog egy harmadik, legbelső for ciklus (lehet az index k), amivel a két sor megfelelő elemeit összehasonlítjuk. Érdemes használni egy igaz-hamis változót, amit kezdetben igazra állítunk, majd ha találunk olyan elemeket, hogy `A[i][k] <= A[j][k]`, akkor hamisra állítjuk, ezzel jelezve, hogy nem minden értéke jobb az i-edik űrhajónak.
+- Ha végül az derül ki, hogy az i-edik sor minden eleme nagyobb a j-edik sor megfelelő eleménél, akkor el kell mentenünk az i indexet, de fontos, hogy az első ilyet találjuk meg. Például lehet azt csinálni, hogy a megoldás változónkat kezdetben -1 -re állítjuk, és csak akkor írjuk át, ha még -1.

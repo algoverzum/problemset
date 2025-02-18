@@ -1,2 +1,4 @@
 ---
-- Check the condition for all elements in the series except the first and last.
+- Check the condition for all elements in the series except the first and last. It is more convenient to say that twice the element is equal to the sum of its two neighbours, as this avoids division and allows everything to remain an integer.
+- cpp: If the condition is true for the current element, put it into a vector (in which the solution is collected). At the end, we should print the size and the elements of this vector.
+  py: If the condition is true for the current element, then append it to a list (in which we collect the solution). At the end, we need to print the length and elements of this list.
