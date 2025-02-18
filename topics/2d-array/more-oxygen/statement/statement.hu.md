@@ -14,7 +14,7 @@ A kimenet első sorába a *kellemes* napok számát kell kiírnod, míg a másod
 * $1 \le A_{i,j} \le 1000$
 
 ### Példa bemenet
-    3 5
+    3 6
     2 10 4 5 7 8
     11 12 13 14 15 15
     1 20 42 1 13 13
