@@ -5,7 +5,7 @@ Minden nap egyszer kell feljutnia a templomba edzésre.
 Készíts egy programot, amely kiszámolja, hány napig tud a padawan más és más módon feljutni a lépcső tetejére!
 
 ### Bemenet
-A bemenetben egyetlen sorban két egész szám van: $N, K$ - a lepcsőfokok száma, és a maximális ugrás nagysága. 
+A bemenetben egyetlen sorban két egész szám van: $N, K$ - a lépcsőfokok száma, és a maximális ugrás nagysága. 
 
 ### Kimenet
 Egyetlen számot kell kiírnod, ami megadja az összes különböző feljutások számát.

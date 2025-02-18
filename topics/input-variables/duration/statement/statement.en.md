@@ -10,7 +10,7 @@ The first line of the input contains $N$ - the number of seconds.
 
 
 ### Output
-Print four numbers on separate lines, the duration in days, hours, minutes, seconds format.
+Print four numbers in one line, the duration in days, hours, minutes, seconds format.
 
 ### Constraints
 * $1 \le N \le 1\,000\,000$

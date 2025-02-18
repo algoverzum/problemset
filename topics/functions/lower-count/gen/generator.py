@@ -9,28 +9,36 @@ from inspect import signature
 usage = """Generator for "lower-count".
 
 Parameters:
-* A (minimum value)
-* B (maximum value)
+* N (value of N)
+* M (value of M)
+* A (max value in sequence)
 * S (seed)
 
 Constraint:
+* %d <= N <= %d
+* %d <= M <= %d
 * %d <= A <= %d
-* %d <= B <= %d
 """ % (
-    MIN,
-    MAX,
-    MIN,
-    MAX,
+    MIN_N,
+    MAX_N,
+    MIN_A,
+    MAX_A,
+    MIN_A,
+    MAX_A,
 )
 
 
-def run(A, B):
+def run(N, M, A):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    print(N, M)
+    sequence = []
+    for _ in range(N):
+        sequence.append(randint(1, A))
+    print(*sequence)
 
 
 if __name__ == "__main__":

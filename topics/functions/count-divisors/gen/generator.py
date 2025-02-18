@@ -6,51 +6,31 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "factory".
+usage = """Generator for "count-divisors".
 
 Parameters:
-* A (length of input)
-* B (number of even)
-* C (max value)
+* A (minimum value)
+* B (maximum value)
 * S (seed)
 
 Constraint:
 * %d <= A <= %d
 * %d <= B <= %d
-* %d <= C <= %d
 """ % (
-    MINN,
-    MAXN,
-    0,
-    MAXN,
-    MINX,
-    MAXX,
+    MIN,
+    MAX,
+    MIN,
+    MAX,
 )
 
 
-def run(A, B, C):
+def run(A, B):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    N = A
-    B = min(A, B)
-    odd = []
-    even = []
-    while len(odd) < N - B:
-        num = randint(0, C)
-        if num % 2 == 1:
-            odd.append(num)
-    while len(even) < B:
-        num = randint(0, C)
-        if num % 2 == 0:
-            even.append(num)
-
-    print(N)
-    res = odd + even
-    shuffle(res)
-    print(*res)
+    print(randint(A, B))
 
 
 if __name__ == "__main__":
