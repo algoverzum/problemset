@@ -1,5 +1,5 @@
 ## Jobb űrhajó
-Űrhajó modellek tulajdonságait értékeljük egészszámokkal, mivel szeretnénk megtalálni azokat, amik feleslegesek. Írj egy olyan programot, amely megtalálja, hogy melyik az az űrhajó, amelynek értékelései minden szempontból **jobbak**, mint egy másik-é.
+Űrhajó modellek tulajdonságait értékeljük egész számokkal, mivel szeretnénk megtalálni azokat, amik feleslegesek. Írj egy olyan programot, amely megtalálja, hogy melyik az az űrhajó, amelynek értékelései minden szempontból **jobbak**, mint egy másik-é.
 
 ### Bemenet
 A bemenet első sorában kettő egész szám van, az űrhajók száma és az értékelési szempontok száma: $N$ és $M$.

@@ -14,15 +14,14 @@ int main() {
     vector<int> formation(n);
     sort(v.begin(), v.end(), greater<int>());
     for (int i = 0; i < n; i++) {
-        // formation[((n)/2)+int((pow(-1,i)*(i+1)/2))]=v[i];
         if (i % 2 == 1) {
             formation[n / 2 - (i + 1) / 2] = v[i];
         } else {
             formation[n / 2 + (i + 1) / 2] = v[i];
         }
     }
-    for (int i = 0; i < n; i++) {
-        cout << formation[i] << " ";
+    for (int s : formation) {
+        cout << s << " ";
     }
     cout << "\n";
 }

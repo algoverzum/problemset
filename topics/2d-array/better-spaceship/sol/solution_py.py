@@ -12,10 +12,8 @@ for i in range(n):
         for k in range(m):
             if spaceships[i][k] <= spaceships[j][k]:
                 better = False
-                break
         if better:
             sol = True
-            break
     if sol:
         index = i + 1
         break

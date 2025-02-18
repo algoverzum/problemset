@@ -2,14 +2,15 @@
 Egy Flottát vezetsz csatába, az ütközet előtt szeretnéd úgy elrendezni a hajóidat, hogy középen legyenek a legerősebb hajóid és a széleken a gyengébbek. Ezt úgy teszed meg, hogy középre teszed a legerősebb hajódat, majd tőle balra a második legerősebbet, majd tőlük jobbra a harmadik legerősebbet és így tovább. Add meg a hajóid erejét a rendezés után, balról jobbra haladva.
 
 ### Bemenet
-A bemenetben első sorában egyetlen páratlan egész szám van: $N$.<br>
+A bemenet első sorában egyetlen páratlan egész szám van: $N$.<br>
 A bemenet második sorában $N$ darab szám van, $H_1,H_2,\ldots,H_N$ a hajóid ereje.
 
 ### Kimenet
-$N$ db számot kell kiírnod egy sorba, a hajóid erejét.
+$N$ darab számot kell kiírnod egy sorba, a hajóid erejét, csatarendben.
 
 ### Korlátok
 * $1 \le N \le 999$
+* $N$ páratlan
 * $1 \le H_i \le 10000$
 
 ### Példa bemenet
