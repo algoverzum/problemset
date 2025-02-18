@@ -5,13 +5,13 @@ Could you sort out these balanced numbers? Do not change their order!
 
 ### Input
 The first line of the input is $N$, which is the length of the message.
-The next line contains the numbers in the message: $A_1, A_2, \ldots, A_{N}$.
+The next line contains $N$ integers, the numbers in the message: $A_1, A_2, \ldots, A_{N}$.
 
 ### Output
-You should print out the numbers separated by spaces that are equal to the average of their neighbors.
+You should print the numbers separated by spaces that are equal to the average of their neighbors.
 
 ### Constraints
-* $1 \le N \le 10000$
+* $1 \le N \le 10\,000$
 * $1 \le A_i \le 1000$
 
 ### Example input

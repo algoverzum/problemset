@@ -5,13 +5,13 @@ Ki tudnád válogatni ezeket az egyensúlyban álló számokat? A sorrendjükön
 
 ### Bemenet
 A bemenet első sorában egy szám van: $N$, az üzenetben szereplő számok száma.<br>
-A következő sorban $N$ darab szám van, az üzenetben szereplő számok: $A_1, A_2, \ldots, A_{N}$.
+A következő sorban $N$ darab egész szám van, az üzenetben szereplő számok: $A_1, A_2, \ldots, A_{N}$.
 
 ### Kimenet
 Azokat a számokat kell kiírnod szóközzel elválasztva, amelyek megegyeznek a szomszédjaik átlagával.
 
 ### Korlátok
-* $1 \le N \le 10000$
+* $1 \le N \le 10\,000$
 * $1 \le A_i \le 1000$
 
 ### Példa bemenet
