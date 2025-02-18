@@ -6,24 +6,24 @@ using namespace std;
 int main() {
     int n, m;
     cin >> n >> m;
-    vector<vector<int>> allomasok(n, vector<int>(m));
+    vector<vector<int>> oxi_levels(n, vector<int>(m));
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
-            cin >> allomasok[i][j];
+            cin >> oxi_levels[i][j];
         }
     }
-    vector<int> highdays;
+    vector<int> nicedays;
     for (int i = 1; i < m; i++) {
-        bool megfelel = true;
+        bool valid = true;
         for (int j = 0; j < n; j++) {
-            megfelel &= allomasok[j][i] > allomasok[j][i - 1];
+            valid &= oxi_levels[j][i] > oxi_levels[j][i - 1];
         }
-        if (megfelel) {
-            highdays.push_back(i + 1);
+        if (valid) {
+            nicedays.push_back(i + 1);
         }
     }
-    cout << highdays.size() << "\n";
-    for (int i : highdays) {
+    cout << nicedays.size() << "\n";
+    for (int i : nicedays) {
         cout << i << " ";
     }
     cout << "\n";

@@ -1,12 +1,12 @@
 ## Több oxigén
-Egy idegen bolygót terraformálnak űrutazók, hogy az embereknek is lakható legyen. Ennek fontos lépése, hogy a bolygó oxigén szintje konzisztensen megfelelő szinten legyen. Ennek ellenőrzésére a feladatot végző tudósok több mérő állomást állítottak fel, amik a környezetük oxigén szintjét mutatják ki minden nap egy egész számként reprezentálva. A tudósok szeretnék tudni, hogy az elmúlt napokban mikor fordult elő, hogy minden mérő állomás nagyobb értéket mért, mint az azt megelőző napon. A feladatod, hogy ebben segíts nekik.
+Egy idegen bolygót terraformálnak űrutazók, hogy az embereknek is lakható legyen. Ennek fontos lépése, hogy a bolygó oxigén szintje konzisztensen megfelelő szinten legyen. Ennek ellenőrzésére a feladatot végző tudósok több mérő állomást állítottak fel, amik a környezetük oxigén szintjét mutatják ki minden nap egy egész számként reprezentálva. A tudósok szeretnék tudni, hogy az elmúlt napokban mikor fordult elő, hogy minden mérő állomás nagyobb értéket mért, mint az azt megelőző napon. Ezeket a napokat *kellemes* napoknak hívják. A feladatod, hogy segíts nekik meghatározni az összes kellemes napot. Megjegyzés: az első nap nem lehet kellemes, mert nincs is előző nap.
 
 ### Bemenet
 A bemenetben első sorában kettő egész szám van, a mérő állomások száma: $N$, és a napok száma: $M$.
 Az ezt követő $N$ sorban rendre $M$ szám van, ezek az $i$-edik mérő állomáson a $j$-edik nap mért oxigén szintnek felelnek meg: $A_{i,j}$.
 
 ### Kimenet
-A kimenet első sorába a helyes napok számát kell kiírnod, míg a másodikba a helyes napok sorszámát kell szóközzel elválasztva. 
+A kimenet első sorába a *kellemes* napok számát kell kiírnod, míg a másodikba ezen napok sorszámait kell írnod szóközzel elválasztva, növekvő sorrendben. 
 
 ### Korlátok
 * $1 \le N \le 100$

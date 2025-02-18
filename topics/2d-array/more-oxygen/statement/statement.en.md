@@ -1,16 +1,16 @@
 ## More Oxygen
-An alien planet is being terraformed by space travellers to make it habitable for humans. An important step is to ensure that the planet's oxygen levels are consistently at the right level. To check this, the scientists on the mission have set up a series of measuring stations that read out the oxygen levels in their environment every day, represented as an integer. The scientists want to know when in the last few days each measuring station measured a higher value than the day before. Your job is to help them do this.
+An alien planet is being terraformed by space travellers to make it habitable for humans. An important step is to ensure that the planet's oxygen levels are consistently at the right level. To check this, the scientists on the mission have set up a series of measuring stations that read out the oxygen levels in their environment every day, represented as an integer. The scientists want to know when in the last few days each measuring station measured a higher value than the day before. Such days are called *nice* days. Your job is to help them find all the nice days. Note: the first day cannot be nice because there is no previous day.
 
 ### Input
 The first line of the input contains two integers, the number of measuring stations $N$ and the number of days $M$.
 The following $N$ lines contains $M$ numbers each, corresponding to the oxygen level measured at the $i$-th measuring station on the $j$-th day: $A_{i,j}$.  
 
 ### Output
-In the first line of the output, you should write the count of correct days, and in the second line, the indicies of each correct day in increasing order, separated by spaces. 
+In the first line of the output, you should write the count of *nice* days, and in the second line, the indicies of all such days in increasing order, separated by spaces. 
 
 ### Constraints
 * $1 \le N \le 100$
-* $1 \le M \le 100$
+* $2 \le M \le 100$
 * $1 \le A_{i,j} \le 1000$
 
 ### Example input
