@@ -4,10 +4,10 @@
 n = int(input())
 numbers = [int(x) for x in input().split()]
 numbers.sort(reverse=True)
-result = [0] * n
+result = []
 for i in range(n):
-    if i % 2 == 1:
-        result[n // 2 - (i + 1) // 2] = numbers[i]
+    if i % 2 == 0:
+        result.append(numbers[i])
     else:
-        result[n // 2 + (i + 1) // 2] = numbers[i]
+        result.insert(0, numbers[i])
 print(*result)
