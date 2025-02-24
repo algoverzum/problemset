@@ -9,6 +9,8 @@ problems:
     type: REQUIRED
   - problem_id: biodiversity
     type: REQUIRED
+  - problem_id: happiness
+    type: REQUIRED
 prerequisites:
 dependents:
 visualization:
