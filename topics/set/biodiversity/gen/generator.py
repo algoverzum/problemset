@@ -9,28 +9,43 @@ from inspect import signature
 usage = """Generator for "biodiversity".
 
 Parameters:
-* A (minimum value)
-* B (maximum value)
+* A (N)
+* B (M)
+* C (different ids)
 * S (seed)
 
 Constraint:
 * %d <= A <= %d
 * %d <= B <= %d
+* %d <= C <= %d
 """ % (
     MIN,
     MAX,
     MIN,
     MAX,
+    MIN,
+    MAX * 2,
 )
 
 
-def run(A, B):
+def run(A, B, C):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    print(A, B)
+    unique_numbers = sample(range(1, 100001), C)
+    list1 = sample(unique_numbers, min(A, C))
+    list2 = sample(unique_numbers, min(B, C))
+    while len(list1) < A:
+        list1.append(choice(unique_numbers))
+    while len(list2) < B:
+        list2.append(choice(unique_numbers))
+    shuffle(list1)
+    shuffle(list2)
+    print(*list1)
+    print(*list2)
 
 
 if __name__ == "__main__":

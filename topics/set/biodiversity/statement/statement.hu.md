@@ -12,6 +12,7 @@ A második sorba ezeket az azonosítókat kell kiírni szóközzel elválasztva,
 
 ### Korlátok
 * $1 \le N,M \le 10000$
+* $1 \le ID \le 100000$
 
 ### Példa bemenet
     5 6
