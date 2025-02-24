@@ -1,0 +1,13 @@
+6
+apple
+apple
+peach
+peach
+strawberry
+plum
+4
+peach
+strawberry
+almond
+blackberry
+

@@ -3,6 +3,12 @@ name: Set
 problems:
   - problem_id: count-words
     type: REQUIRED
+  - problem_id: food-chain
+    type: REQUIRED
+  - problem_id: traders
+    type: REQUIRED
+  - problem_id: biodiversity
+    type: REQUIRED
 prerequisites:
 dependents:
 visualization:
