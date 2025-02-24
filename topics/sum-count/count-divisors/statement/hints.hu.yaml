@@ -1,2 +1,20 @@
-- Using a `for` loop, go through the numbers from i=1 to N. For each number i, check whether it is a divisor of N. How can this be done? And what do we do then?
-- Within the `for` loop, we need an `if` statement to test the divisibility, and the correct condition is `n % i == 0`. If this is true, then increase a counter variable, which must be created before the loop with an initial value of 0. 
+- Számoljunk el 1-től n-ig egy for ciklussal.
+- Hozzunk létre egy változót kezdeti értékként 0-val, és növeljük meg 1-gyel minden alkalommal, amikor találunk egy osztót. A ciklus után csak ki kell írnunk az eredményt.
+- cpp: |
+    Ezt így valósíthatjuk meg:
+    ```
+    int divisors = 0;
+    for (int i = 1; i <= n; i++) {
+      if (n % i == 0) {
+        divisors++;
+      }
+    }
+    ```
+- py: |
+    Ezt így valósíthatjuk meg:
+    ```
+    divisors = 0
+    for i in range(1, n + 1):
+        if n % i == 0:
+            divisors = divisors + 1
+    ```
