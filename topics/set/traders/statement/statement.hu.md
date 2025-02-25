@@ -33,10 +33,12 @@ sorrendben! Minden nevet csak egyszer szabad kiírni!
 
 ### Példa kimenet
     4
-    apple
+    4
     almond
+    apple
     blackberry
     plum
+
 
 
 ### A példa magyarázata

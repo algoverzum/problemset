@@ -33,10 +33,11 @@ The next $K$ lines should list these fruit names in alphabetical order, with eac
 
 ### Example output
     4
-    apple
     almond
+    apple
     blackberry
     plum
+
 
 ### Explanation of the example
 

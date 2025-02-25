@@ -1,32 +1,38 @@
 // @check-accepted: *
+#include <algorithm>
 #include <iostream>
-#include <unordered_set>
+#include <set>
+#include <vector>
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
 
     int N, M;
     cin >> N;
-    unordered_set<string> fruits1, fruits2, uniqueFruits;
+    set<string> fruits1, fruits2;
     string fruit;
 
     for (int i = 0; i < N; i++) {
         cin >> fruit;
         fruits1.insert(fruit);
-        uniqueFruits.insert(fruit);
     }
 
     cin >> M;
     for (int i = 0; i < M; i++) {
         cin >> fruit;
         fruits2.insert(fruit);
-        if (uniqueFruits.count(fruit))
-            uniqueFruits.erase(fruit);
-        else
-            uniqueFruits.insert(fruit);
     }
+
+    vector<string> uniqueFruits;
+    for (const auto &f : fruits1) {
+        if (!fruits2.count(f))
+            uniqueFruits.push_back(f);
+    }
+    for (const auto &f : fruits2) {
+        if (!fruits1.count(f))
+            uniqueFruits.push_back(f);
+    }
+    sort(uniqueFruits.begin(), uniqueFruits.end());
 
     cout << uniqueFruits.size() << '\n';
     for (const string &f : uniqueFruits) {
