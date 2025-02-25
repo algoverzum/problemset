@@ -3,14 +3,15 @@
 from limits import *
 from sys import argv, exit, stderr
 import os
-from random import random, randint, choice, sample, shuffle, seed
+import string
+from random import random, randint, choice, choices, sample, shuffle, seed
 from inspect import signature
 
 usage = """Generator for "traders".
 
 Parameters:
-* A (minimum value)
-* B (maximum value)
+* A (N)
+* B (M)
 * S (seed)
 
 Constraint:
@@ -24,13 +25,23 @@ Constraint:
 )
 
 
+def random_word(max_length=100):
+    length = randint(1, max_length)
+    return "".join(choices(string.ascii_lowercase, k=length))
+
+
 def run(A, B):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    print(A)
+    for i in range(A):
+        print(random_word())
+    print(B)
+    for j in range(B):
+        print(random_word())
 
 
 if __name__ == "__main__":
