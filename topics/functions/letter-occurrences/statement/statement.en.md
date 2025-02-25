@@ -1,20 +1,6 @@
-## Letter Occurrences
-TODO
+## Letter Counting  
+Write a function that counts how many times a letter appears in a word. 
 
-### Input
-The first line of the input contains $N$ - the 
-
-### Output
-Print a single number, the
-
-### Constraints
-* $1 \le N \le 100$
-
-### Example input
-    5
-
-### Example output
-    42
-
-### Explanation of the example
-
+### Template  
+Start from the given template code! Do not change anything in the main program, or your solution will not be accepted. You need to define a function called `count`, which takes two parameters: a word and a letter. The return value should be the number of occurrences of the given letter.  
+In C++, the two parameter types should be `string` and `char`, and the return type should be `int`.

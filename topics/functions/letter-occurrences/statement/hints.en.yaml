@@ -1,3 +1,5 @@
-- TODO
-- cpp: TODO
-  py: TODO
+---
+- cpp: The function header should be `int count(string word, char letter)`.
+  py: The function header should be `def count(word, letter)`.
+- Inside the function, we need to count the occurrences of the letter, so we should have a counter variable (`cnt`). At the end, this should be returned using the `return` statement.
+- Iterate through the characters of the string using a `for` loop, and if the current character matches the given parameter (`letter`), increment the counter (`cnt`).
