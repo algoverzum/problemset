@@ -1,14 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> intersection(vector<int> &A, vector<int> &B) {
+// Define a function called intersection here.
 
-    // Write your code here
-
-    return vector<int>();
-}
-
-// Do not change anything below!!!
+// Do not change anything below.
 int main() {
     int n, m;
     cin >> n >> m;

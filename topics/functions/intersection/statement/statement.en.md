@@ -4,7 +4,7 @@ Enterprise and Voyager are exploring two different sectors. Both have recorded t
 Let's write a function for a data-processing computer that will tell us which stars both Enterprise and Voyager have detected!
 
 ### Template
-Start from the template code you've prepared. Don't change anything in the main program or it won't be accepted. You need to write the inside of the `intesection` function, which will take as parameters the array of numbers in ascending order, and return the array of numbers in both in ascending order.
+Start from the pre-made template code! Do not change anything in the main program, otherwise it will not be accepted. You need to write a function called `intersection`, which takes as parameters the two arrays of numbers in ascending order, and return an array of numbers in ascending order that appear in both arrays.
 
 ### Constraints
 * $1 \le N, M \le 100$, where $N$ and $M$ are the sizes of the two sequences.
