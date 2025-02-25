@@ -13,6 +13,8 @@ problems:
     type: REQUIRED
   - problem_id: space-trading
     type: REQUIRED
+  - problem_id: starship-database
+    type: REQUIRED
 prerequisites:
 dependents:
 visualization:
