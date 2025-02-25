@@ -3,16 +3,16 @@ Egy bolygón élő összes élőlény azonosítóját szeretnénk összegyűjten
 
 ### Bemenet
 A bemenet első sorában két egész szám van szóközzel elválasztva: $N$ és $M$ a csapatok által gyűjtött azonosítók száma.
-A bemenet második sorában $N$ db egész szám van szóközzel elválasztva. Az első csapat által összegyűjtött azonosítók. 
-A bemenet harmadik sorában $M$ db egész szám van szóközzel elválasztva. A második csapat által összegyűjtött azonosítók. 
+A bemenet második sorában $N$ db egész szám van szóközzel elválasztva, az első csapat által összegyűjtött azonosítók. 
+A bemenet harmadik sorában $M$ db egész szám van szóközzel elválasztva, a második csapat által összegyűjtött azonosítók. 
 
 ### Kimenet
-A standard kimenet első sora azon azonosítók száma amelyek legalább az egyik listában szerepelnek.
+A standard kimenet első sorába azon azonosítók számát írd, amelyek legalább az egyik listában szerepelnek.
 A második sorba ezeket az azonosítókat kell kiírni szóközzel elválasztva, növekvő sorrendben. Minden azonosítót csak egyszer szabad kiírni!
 
 ### Korlátok
-* $1 \le N,M \le 10000$
-* $1 \le ID \le 100000$
+* $1 \le N,M \le 10\,000$
+* $1 \le ID \le 100\,000$
 
 ### Példa bemenet
     5 6
@@ -23,5 +23,4 @@ A második sorba ezeket az azonosítókat kell kiírni szóközzel elválasztva,
     7
     1 2 3 5 6 7 9
 
-### A példa magyarázata
 

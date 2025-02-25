@@ -17,7 +17,7 @@ A végén jelentsed a végső boldogság faktort.
 ### Bemenet
 Az első sorban az $N$ és $M$ egész számok vannak szóközzel elválasztva.
 
-A második sor $N$ egész számot tartalmaz, a rakomány azonosítóinak az $S$ sorozatat.
+A második sor $N$ egész számot tartalmaz, a rakomány azonosítóinak az $S$ sorozatát.
 A harmadik és negyedik sor $M$ egész számot tartalmaz, $A$ és $B$ értékeit.
 
 ### Kimenet

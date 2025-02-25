@@ -7,12 +7,12 @@ In the second line of the input, there are $N$ integers separated by spaces. The
 In the third line of the input, there are $M$ integers separated by spaces. These are the identifiers collected by the second team.
 
 ### Output
-The first line of the standard output is the number of identifiers that appear in at least one of the lists.
+In the first line of the standard output, print the number of identifiers that appear in at least one of the lists.
 The second line should contain these identifiers in ascending order, separated by spaces. Each identifier must appear only once.
 
 ### Constraints
-* $1 \le N,M \le 10000$
-* $1 \le ID \le 100000$
+* $1 \le N,M \le 10\,000$
+* $1 \le ID \le 100\,000$
 
 ### Example input
     5 6
@@ -23,5 +23,4 @@ The second line should contain these identifiers in ascending order, separated b
     7
     1 2 3 5 6 7 9
 
-### Explanation of the example
 
