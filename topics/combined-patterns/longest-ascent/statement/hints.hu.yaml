@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Legyen egy számlálónk, ami azt számolja, hogy éppen milyen hosszú növekvő szakaszban vagyunk benne.
+- Ha az aktuális magasság nagyobb, mint az előző, akkor eggyel növeljük a számlálót, egyébként pedig visszaállítjuk 1-re.
+- A folyamat közben meg kell jegyeznünk a maximális értékét ennek a számlálónak (ez a szakasz hossza), valamint azt is, hogy hol végződik - és ebből majd ki tudjuk számolni a kezdetét is.
