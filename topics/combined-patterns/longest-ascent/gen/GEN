@@ -19,5 +19,5 @@
 200     1000    84
 500     1000    92
 1000    1000    103
-#COPY: extrainput/extra1.txt
-#COPY: extrainput/extra2.txt
+#COPY: testcases/extra1.txt
+#COPY: testcases/extra2.txt
