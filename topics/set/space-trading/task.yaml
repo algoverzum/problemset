@@ -1,9 +1,9 @@
 ---
 # General info
-name: count-divisors
-title: Count Divisors
+name: space-trading
+title: Space Trading
 title_translations:
-  hu: Osztók száma
+  hu: Űrkereskedelem
 
 # Technical info
 memory_limit: 256

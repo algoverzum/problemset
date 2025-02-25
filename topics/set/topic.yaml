@@ -11,6 +11,8 @@ problems:
     type: REQUIRED
   - problem_id: happiness
     type: REQUIRED
+  - problem_id: space-trading
+    type: REQUIRED
 prerequisites:
 dependents:
 visualization:

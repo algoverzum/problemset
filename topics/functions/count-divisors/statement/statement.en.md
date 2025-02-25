@@ -1,20 +1,11 @@
 ## Count Divisors
-TODO
+We are exploring the temple of a lost alien civilization. To interpret the mysterious texts on the walls, it is essential to know the number of divisors that the numbers have at the beginning of each line. Write a function to help the researchers find the number of divisors for a given number.
 
-### Input
-The first line of the input contains $N$ - the 
-
-### Output
-Print a single number, the
+### Template
+Start from the pre-made template code! Do not change anything in the main program, otherwise it will not be accepted. You need to write the function `count-divisors`, which takes as a parameter the number whose divisors we are looking for, and returns the number of divisors of that number. (From the purpose of the exercise, we take as divisors both 1 and the number itself.)
 
 ### Constraints
-* $1 \le N \le 100$
+* The number obtained is always between $1$ and $100000$.
 
-### Example input
-    5
-
-### Example output
-    42
-
-### Explanation of the example
-
+### Example
+25 has 3 divisors: 1, 5, 25.

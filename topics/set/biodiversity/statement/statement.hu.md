@@ -3,8 +3,8 @@ Egy bolygón élő összes élőlény azonosítóját szeretnénk összegyűjten
 
 ### Bemenet
 A bemenet első sorában két egész szám van szóközzel elválasztva: $N$ és $M$ a csapatok által gyűjtött azonosítók száma.
-A bemenet második sorában $N$ db egész szám van szóközzel elválasztva. Az első csapat által összegyűjtött azonosítók 
-A bemenet harmadik sorában $M$ db egész szám van szóközzel elválasztva. A második csapat által összegyűjtött azonosítók 
+A bemenet második sorában $N$ db egész szám van szóközzel elválasztva. Az első csapat által összegyűjtött azonosítók. 
+A bemenet harmadik sorában $M$ db egész szám van szóközzel elválasztva. A második csapat által összegyűjtött azonosítók. 
 
 ### Kimenet
 A standard kimenet első sora azon azonosítók száma amelyek legalább az egyik listában szerepelnek.
