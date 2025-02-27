@@ -40,4 +40,4 @@ The next $K$ lines should list these fruit names in alphabetical order, with eac
 
 
 ### Explanation of the example
-
+The first trader sells only apple and plum. The second sells only almond and blackberry.

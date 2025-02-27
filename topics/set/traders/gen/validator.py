@@ -18,11 +18,17 @@ def run(f, st):
     N = int(next(f))
     assert MIN <= N <= MAX
     for _ in range(N):
-        assert MIN2 <= len(next(f)) <= MAX2
+        fruit = next(f).strip()
+        assert MIN2 <= len(fruit) <= MAX2
+        for char in fruit:
+            assert char.islower()
     M = int(next(f))
     assert MIN <= M <= MAX
     for _ in range(M):
-        assert MIN2 <= len(next(f)) <= MAX2
+        fruit = next(f).strip()
+        assert MIN2 <= len(fruit) <= MAX2
+        for char in fruit:
+            assert char.islower()
     assert next(f, None) is None
 
 

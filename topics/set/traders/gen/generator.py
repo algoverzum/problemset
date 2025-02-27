@@ -12,15 +12,19 @@ usage = """Generator for "traders".
 Parameters:
 * A (N)
 * B (M)
+* C (metszet)
 * S (seed)
 
 Constraint:
 * %d <= A <= %d
 * %d <= B <= %d
+* %d <= C <= %d
 """ % (
     MIN,
     MAX,
     MIN,
+    MAX,
+    0,
     MAX,
 )
 
@@ -30,18 +34,26 @@ def random_word(max_length=100):
     return "".join(choices(string.ascii_lowercase, k=length))
 
 
-def run(A, B):
+def run(A, B, C):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
     print(A)
+    F = []
     for i in range(A):
-        print(random_word())
+        f = random_word()
+        F.append(f)
+        print(f)
     print(B)
-    for j in range(B):
-        print(random_word())
+    shuffle(F)
+    F2 = F[:C]
+    while len(F2) < B:
+        F2.append(random_word())
+    shuffle(F2)
+    for f in F2:
+        print(f)
 
 
 if __name__ == "__main__":
