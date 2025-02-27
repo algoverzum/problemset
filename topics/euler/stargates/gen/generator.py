@@ -24,15 +24,15 @@ Constraint:
     MAX1,
     MIN2,
     MAX2,
-    MIN3,
-    MAX3,
+    1,
+    5,
 )
 
 used = set()  # a már felhasznált éleket (rendezett (min, max))
 edges = []  # az éleket tartalmazó lista
 
 
-def add_edge(u, v):  # add_edge hamis ha hurokél, vagy ha v1,v2 rendezett pár már szerepel
+def can_add_edge(u, v):  # can_add_edge hamis ha hurokél, vagy ha u,v pár már szerepel
     if u == v:
         return False
     a, b = min(u, v), max(u, v)
@@ -41,90 +41,93 @@ def add_edge(u, v):  # add_edge hamis ha hurokél, vagy ha v1,v2 rendezett pár 
     return True
 
 
+from collections import defaultdict
+
+
 def gen_euler_cycle(vertices, num_edges):
-    v1 = choice(vertices)
+    # nem fut le mindig... akkor a randseed-en kell valtoztatni...
+    v1 = choice(vertices)  # ez lesz deg 2
     v2 = choice(vertices)
-    while not add_edge(v1, v2):  # elkerüljük hurokélt
-        v1 = choice(vertices)
+    while v1 == v2:
         v2 = choice(vertices)
     a, b = min(v1, v2), max(v1, v2)
-    used.add((a, b))  # a used set rendezett párokat tartalmaz
-    for _ in range(num_edges - 2):  # -2 mert ezelőtt van kezdőél. és a végén egy éllel bezárjuk a kört
+    deg = defaultdict(int)
+    deg[a] += 1
+    deg[b] += 1
+    used.add((a, b))
+    deg = defaultdict(int)
+    for ii in range(num_edges - 2):  # -2 mert a végén egy éllel bezárjuk a kört, es elkezdtuk mar...
         v3 = choice(vertices)
-        while (
-            not add_edge(v2, v3) or v3 == v1
-        ):  # csalok, csak olyan gráfot generálok amiben van legalább egy pont 2 fokszámú csúcs
+        while v3 == v2:
             v3 = choice(vertices)
+        while not can_add_edge(v2, v3) or v3 == v1:
+            v4 = choice(vertices)
+            if ii != num_edges - 3 or deg[v4] < len(vertices) - 2:
+                v3 = v4
         a, b = min(v2, v3), max(v2, v3)
+        deg[a] += 1
+        deg[b] += 1
         used.add((a, b))
         v2 = v3
-    add_edge(v1, v3)
+    # can_add_edge(v1, v3) # ez tuti jo, deg(v2) = 2
     a, b = min(v1, v3), max(v1, v3)
     used.add((a, b))
 
 
 def gen_euler_path(vertices, num_edges):
-    v1 = choice(vertices)
-    v2 = choice(vertices)
-    while not add_edge(v1, v2):
-        v1 = choice(vertices)
-        v2 = choice(vertices)
-    a, b = min(v1, v2), max(v1, v2)
-    used.add((a, b))
-    for _ in range(num_edges - 3):  # -3 mert a végén elrontom a kör tulajdonságot egy éllel
-        v3 = choice(vertices)
-        while not add_edge(v2, v3) or v3 == v1:
-            v3 = choice(vertices)
-        a, b = min(v2, v3), max(v2, v3)
-        used.add((a, b))
-        v2 = v3
-    add_edge(v1, v3)
-    a, b = min(v1, v3), max(v1, v3)
-    used.add((a, b))  # ugyanaz mint előző csak még hozzáadok egy élt, hogy ne kör hanem séta legyen
+    gen_euler_cycle(
+        vertices, num_edges - 1
+    )  # ugyanaz mint előző csak még hozzáadok egy élt, hogy ne kör hanem séta legyen
     sv1 = choice(
         vertices
     )  # szintén picit csalás,mert így nincs összefüggő egyáltalán nem euler eset. Ugyanakkor nincs szükség a két eset megkülönböztetésére.
     sv2 = choice(vertices)
-    while not add_edge(sv1, sv2):
+    while not can_add_edge(sv1, sv2):
         sv1 = choice(vertices)
         sv2 = choice(vertices)
     a, b = min(sv1, sv2), max(sv1, sv2)
     used.add((a, b))
 
 
+def gen_euler_path2(vertices, num_edges):
+    gen_euler_cycle(vertices, num_edges + 1)
+    used.pop()
+
+
+def split(num_vertices, num_edges):
+    if num_vertices < 12 or num_edges < 10:
+        return [(num_vertices, num_edges)]
+    v1 = randint(6, num_vertices - 6)
+    v2 = num_vertices - v1
+    e1 = randint(3, max(3, min(num_edges - 3, (v1 - 1) * (((v1 - 2) // 2)))))
+    e2 = num_edges - e1
+    loop = 0
+    while e2 > (v2 - 1) * (((v2 - 2) // 2)):
+        v1 = randint(6, num_vertices - 6)
+        v2 = num_vertices - v1
+        e1 = randint(3, max(3, min(num_edges - 3, (v1 - 1) * (((v1 - 2) // 2)))))
+        e2 = num_edges - e1
+        loop += 1
+        if loop > 100:
+            return [(num_vertices, num_edges)]
+    assert v1 + v2 == num_vertices
+    assert e1 + e2 == num_edges
+    assert min(v1, v2, e1, e2) >= 3
+    return [(v1, e1), (v2, e2)]
+
+
 def disconnected_graphs(N_vertice, num_edges):
-    max_components = min(
-        N_vertice // int(math.sqrt(num_edges)), num_edges
-    )  # Egyszerű gráf ugye max n*(n-1)/2 élt tartalmazhat, de euler köröket generáálok amikben minden csúcs páros fokszám kell legyen
-    # stb stb szóval teljesen hasraütés szerűen ezeket a limiteket számontartva.v/sqrt(e) egész jó közelítés felsőértéknek
-    components_count = randint(2, max_components)
-    cut_points = sorted(
-        sample(range(1, num_edges), components_count - 1)
-    )  # random választunk vágási pontokat, hogy melyik részgráf mennyi élet tartalmazzon
-    distribution = (
-        [cut_points[0]]
-        + [cut_points[i] - cut_points[i - 1] for i in range(1, len(cut_points))]
-        + [num_edges - cut_points[-1]]
-    )
-    shuffled_vertices = list(range(1, N_vertice))
+    cur = [(N_vertice, num_edges)]
+    for j in range(randint(1, 11)):  # legalabb 1x, max 10x 1-gyel tobb komponens lesz ha lehet
+        i = randint(0, len(cur) - 1)
+        cur = cur[:i] + split(*cur[i]) + cur[i + 1 :]
+    shuffled_vertices = list(range(1, N_vertice + 1))
     # egyenletesen elosztjuk a csúcsokat, így biztos függetlenenk lesznek a generált részgráfok
-
     shuffle(shuffled_vertices)
-    sub_vertices = []
-    n_vertices = len(shuffled_vertices)
-    base = n_vertices // components_count
-    remainder = n_vertices % components_count
     index = 0
-    for i in range(components_count):
-        count = base + (1 if i < remainder else 0)
-        subset = shuffled_vertices[index : index + count]
-        sub_vertices.append(subset)
-        index += count
-
-    for comp_edges, comp_vertices in zip(distribution, sub_vertices):
-        words_sub = gen_euler_cycle(
-            comp_vertices, comp_edges
-        )  # a részgráfok mind euler körök,mert ha euler séták lennének akkor több csúcs fokszáma se stimmelne ezért nem lenne szükség összefüggés ellenőrzésre.
+    for (v, e) in cur:
+        gen_euler_cycle(shuffled_vertices[index : index + v], e)  # a részgráfok mind euler körök
+        index += v
 
 
 def run(A, B, C):
@@ -135,13 +138,31 @@ def run(A, B, C):
 
     print(A, B)
     vert = range(1, A + 1)
-    match C:
-        case 1:
-            gen_euler_cycle(vert, B)
-        case 2:
-            gen_euler_path(vert, B)
-        case 3:
-            disconnected_graphs(A, B)
+    if C == 1:
+        gen_euler_cycle(vert, B)
+    elif C == 2:
+        gen_euler_path(vert, B)
+    elif C == 3:
+        disconnected_graphs(A, B)
+    elif C == 4:  # random elek, valoszinu nagyon nem jo...
+        while len(used) < B:
+            u = randint(1, A)
+            v = randint(1, A)
+            if u != v:
+                used.add((min(u, v), max(u, v)))
+    elif C == 5:  # random haromszogek, ha 3|B es B eleg nagy akkor YES
+        while len(used) < B:
+            u = randint(1, A)
+            v = randint(1, A)
+            w = randint(1, A)
+            if len({u, v, w}) == 3 and can_add_edge(u, v) and can_add_edge(u, w) and can_add_edge(w, v):
+                used.add((min(u, v), max(u, v)))
+                if len(used) == B:
+                    break
+                used.add((min(u, w), max(u, w)))
+                if len(used) == B:
+                    break
+                used.add((min(w, v), max(w, v)))
 
     for u, v in used:
         if choice([True, False]):

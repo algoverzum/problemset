@@ -3,16 +3,16 @@ In a remote star system, an eager team of researchers has stumbled upon an ancie
 
 ### Input
 The first line of the input contains two integers: $N$ is the number of planets in the system and $R$ is the number of stargates. <br>
-This is followed by $R$ lines , each line has two distinct numbers $V1$ and $V2$ the two planets connected by the edge
+The planets are denoted by $1, \ldots, N$.<br>
+This is followed by $R$ lines , each line has two distinct numbers $V_i$ and $V_j$ the two planets connected by the edge.
 
 ### Output
-Print a single word. $YES$ if there is such a traversal. $NO$ if there isn't.
+Print a single word. **YES** if there is such a traversal. **NO** if there isn't.
 
 ### Constraints
 * $1 \le N \le 200$
 * $1 \le R \le 10000$
-* $1 \le V1,V2 \le N$
-
+* $1 \le V_i,V_j \le N$, $V_i \not= V_j$ 
 
 ### Example input
     5 6
@@ -28,4 +28,6 @@ Print a single word. $YES$ if there is such a traversal. $NO$ if there isn't.
 
 ### Explanation of the example
 A possible traversal for example:<br>
-1->2->5->1->4->3->1
+$1 \to 2 \to 5 \to 1 \to 4 \to 3 \to 1$
+
+![example](tex/abra.pdf)

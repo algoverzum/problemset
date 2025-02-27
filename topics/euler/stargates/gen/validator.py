@@ -19,10 +19,13 @@ def run(f, st):
     assert MIN1 <= N <= MAX1
     assert MIN2 <= R <= MAX2
 
+    edges = set()
     for _ in range(R):
         U, V = map(int, next(f).split())
         assert MIN1 <= U <= MAX1
         assert MIN1 <= V <= MAX1
+        edges.add((min(U, V), max(U, V)))
+    assert len(edges) == R
 
     assert next(f, None) is None
 
