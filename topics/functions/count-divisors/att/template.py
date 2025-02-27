@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-
-
 # Create a count_lower function here
 
 
