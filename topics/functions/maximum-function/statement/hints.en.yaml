@@ -1,3 +1,7 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    The function header should look like this: `int maximum(vector<int> v) { ... }`
+  py: |
+    The function header should look like `def maximum(l)`, where l is a list.
+- A maximum selection must be made within the function. Let's have a `maxi` variable, initially set to the first element.
+- |
+  We do the learned maximum selection: go through the elements with a for loop, and if we find an element larger than `maxi`, we change the value of `maxi` to that element.

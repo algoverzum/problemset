@@ -1,20 +1,8 @@
 ## Sum A B
-TODO
-
-### Input
-The first line of the input contains $N$ - the 
-
-### Output
-Print a single number, the
+Write a function that calculates the sum of the numbers $A$ to $B$. $A$ and $B$ are integers, and $A \le B$.
 
 ### Constraints
-* $1 \le N \le 100$
+* $-10\,000 \le A \le B \le 10\,000$
 
-### Example input
-    5
-
-### Example output
-    42
-
-### Explanation of the example
-
+### Template
+Start from the predefined template code. Do not change anything in the main program, otherwise it will not be accepted. You need to define a function called `sum_between` for yourself, which takes two parameters: $A$ and $B$. The return value must be the sum of the numbers $A$ to $B$.

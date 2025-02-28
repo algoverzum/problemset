@@ -1,3 +1,7 @@
 - Legyen a függvényen belül egy `sum` változó az eredményre, ami kezdetben 0. Menjünk végig a számokon a-tól b-ig és adjuk hozzá őket.
 - cpp: Egy for ciklussal tudunk végigmenni a számokon, figyeljünk arra, hogy a felső határ is benne legyen (`for (int i = a; i <= b; i++)`). Utána a `return` utasítással tudjuk eredményül adni a kiszámolt értéket.
   py: Egy for ciklussal tudunk végigmenni a számokon, figyeljünk arra, hogy a felső határ is benne legyen (`for i in range(a, b+1)`). Utána a `return` utasítással tudjuk eredményül adni a kiszámolt értéket.
+- cpp: |
+      A függvényt így definiálhatjuk: `int sum_between(int a, int b) {}`
+  py: |
+      A függvényt így definiálhatjuk: `def sum_between(a, b):`

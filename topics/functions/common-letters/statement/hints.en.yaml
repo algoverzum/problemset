@@ -1,3 +1,8 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Go through the letters from 'a' to 'z' and see if both strings are included. For the latter, write another function (`bool contains(string word, char letter)`)
+  py: Go through the letters from 'a' to 'z' and check for both strings to see if it is contained.
+- cpp: |
+    We can go through the letters of the English alphabet with a for loop, since the type `char` is an (8-bit) number type: `for (char c = 'a'; c <= 'z'; c++)`
+  py: |
+    We can go through the letters of the English alphabet with a for cycle by listing them: `for letter in "abcdefghijklmnopqrstuvwxyz":`
+- cpp: The `contains` function mentioned earlier is just to go through the letters of the word, and if the current letter is equal to the one given as a parameter, it returns true. You can return false after the loop.
+  py: The `in` operator can be used to determine whether a letter is contained in a string (e.g. `letter in s`).

@@ -1,11 +1,7 @@
-#!/usr/bin/env python3
-# @check-accepted: *
+# Define a function called maximum here.
 
 
-def maximum(l):
-    return max(l)
-
-
+# Do not change anything below.
 print(maximum([3, 1, 4, 5, 2]))
 print(maximum([6, 5, 4, 3, 2, 1]))
 print(maximum([-4, -3, -2, -1]))

@@ -1,20 +1,5 @@
 ## Common Letters
-TODO
+Write a function that returns the common letters of two strings containing only lowercase English letters. The result should be a string with the common letters in alphabetical order, each letter only once. For example, `common_letters("apple", "leaves")` results in `"ael"`. You can also write a helper function.
 
-### Input
-The first line of the input contains $N$ - the 
-
-### Output
-Print a single number, the
-
-### Constraints
-* $1 \le N \le 100$
-
-### Example input
-    5
-
-### Example output
-    42
-
-### Explanation of the example
-
+### Template
+Start from the predefined template code. Do not change anything in the main program, otherwise it will not be accepted. You have to define a function called `common_letters` yourself. Make sure you define a function with the given name, with the correct parameters and return type.

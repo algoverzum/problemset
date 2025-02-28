@@ -1,17 +1,7 @@
-#!/usr/bin/env python3
-# @check-accepted: *
-
-abc = [chr(ord("a") + i) for i in range(26)]
+# Define a function called common_letters here.
 
 
-def common_letters(s, t):
-    common = ""
-    for letter in abc:
-        if letter in s and letter in t:
-            common += letter
-    return common
-
-
+# Do not change anything below.
 print(common_letters("apple", "leaves"))
 print(common_letters("chocolate", "catching"))
 print(common_letters("chocolate", "chocolate"))

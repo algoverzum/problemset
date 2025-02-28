@@ -1,3 +1,5 @@
-- TODO
-- cpp: TODO
-  py: TODO
+- Let's handle 1 separately. For the other numbers, if you find a divisor smaller than number, it is not prime.
+- cpp: Using a for cycle, go through the numbers 2 to n-1. If any of the numbers is divisible by a prime (`n % i == 0`), we can return `false` immediately.
+  py: Using a for cycle, go through the numbers 2 to n-1. If any of the numbers is divisible by a prime (`n % i == 0`), we can return `False` immediately.
+- cpp: After the loop, we can return `true` unconditionally, because if we find a divisor, it exits the function earlier.
+  py: After the loop, we can return `True` unconditionally, because if we find a divisor, it exits the function earlier.
