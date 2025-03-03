@@ -17,7 +17,9 @@ for predator, prey in pairs:
         carnivores.add(predator)
 
 print(len(carnivores))
+sorted_carnivores = sorted(list(carnivores))
 if carnivores:
-    print("\n".join(carnivores))
+    for i in range(len(carnivores)):
+        print(sorted_carnivores[i])
 else:
     print("0")

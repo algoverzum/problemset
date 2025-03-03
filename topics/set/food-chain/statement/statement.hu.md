@@ -13,7 +13,7 @@ párokban szereplő nevekben csak ékezet nélküli betűk lehetnek.
 
 ### Kimenet
 A standard kimenet első sora azon állatok számát tartalmazza, amelyek esznek állatot (és
-esetleg növényt is)! A következő sorokba ezeket az állatokat kell kiírni soronként, tetszőleges sorrendben! Ha a megadott táplálkozási láncban nincs ilyen állat, akkor egyedül a 0-t kell a kimenetre
+esetleg növényt is)! A következő sorokba ezeket az állatokat kell kiírni soronként, ábécé sorrendben! Ha a megadott táplálkozási láncban nincs ilyen állat, akkor egyedül a 0-t kell a kimenetre
 írni!
 
 
@@ -33,9 +33,11 @@ Az élőlények nevei az angol ábécé kisbetűiből állnak és legfeljebb 100
     
 ### Példa kimenet
     3
-    fox
-    partridge 
     blackbird
+    fox
+    partridge
 
 ### A példa magyarázata
-
+    A feketerigó csigákat eszik, amelyek állatok, mert füvet esznek. Tehát a feketerigó egy állat, amelyik állatot eszik.
+    A róka megeszi a partifecskét és a feketerigót, amelyek mindketten állatok. Tehát a róka is állatevő állat.
+    A fogoly gilisztákat eszik, amelyek gyökereket esznek. Tehát a fogoly is állat, amelyik állatot eszik.

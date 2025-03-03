@@ -17,7 +17,10 @@ def run(f, st):
 
     N = int(next(f))
     assert MIN <= N <= MAX
-
+    for _ in range(N):
+        c, h = next(f).split()
+        assert 1 <= len(c) <= 100
+        assert 1 <= len(h) <= 100
     assert next(f, None) is None
 
 

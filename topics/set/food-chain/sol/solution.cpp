@@ -1,14 +1,14 @@
 // @check-accepted: *
 #include <iostream>
-#include <unordered_set>
+#include <set>
 using namespace std;
 
 int main() {
     int N;
     cin >> N;
 
-    unordered_set<string> animals;
-    unordered_set<string> carnivores;
+    set<string> animals;
+    set<string> carnivores;
     string predator, prey;
     pair<string, string> pairs[30];
 

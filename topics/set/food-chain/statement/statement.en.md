@@ -14,7 +14,7 @@ in the feeding pairs can only contain letters without accents.
 
 ### Output
 The first line of the standard output contains the number of animals that eat an animal (and
-possibly plants)! In the following rows, print out these animals line by line, in any order! If there is no such animal in the given food chain, only 0 should be printed out.
+possibly plants)! In the following rows, print out these animals line by line, in alphabetical order! If there is no such animal in the given food chain, only 0 should be printed out.
 
 ### Constraints
 * $1 \le N \le 30$<br>
@@ -32,10 +32,12 @@ The names of living things are in lower case in the English alphabet and are up 
 
 ### Example output
     3
-    fox
-    partridge 
     blackbird
+    fox 
+    partridge
 
 
 ### Explanation of the example
-
+    Blackbird eats snails which are animals because they eat grass. So blackbird is an animal that eats an animal.
+    Fox eats partridge and blackbird which are both animals. So fox is an animal eating animal too.
+    Partridge eats worms which eat roots. So partridge is also an animal that eats animals.
