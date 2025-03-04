@@ -1,12 +1,14 @@
 ## Legtöbb gyerek
-Találjuk meg azt, akinek a legtöbb gyereke van.
+$N$ ember között ismerjük a szülő-gyerek kapcsolatokat. Az embereket az $1, 2, \ldots, N$ számokkal azonosítjuk. Köztük $K$ szülő-gyerek kapcsolat van, amelyeket egy-egy számpárral adunk meg, amiben az első szám a szülő sorszáma, a második szám a gyereké. 
+
+Találjuk meg azt az embert, akinek a legtöbb gyereke van.
 
 ### Bemenet
 A bemenetben első sorában két egész szám van: $N, K$ - az emberek száma, és a kapcsolatok száma.
 Az ezt követő $K$ sor egy-egy szülő gyerek kapcsolatot ír le. Minden sorban két szám van $P_i, C_i$, ahol $P_i$ a szülő, $C_i$ a gyerek sorszáma.
 
 ### Kimenet
-Egyetlen számot kell kiírnod, annak az embernek a sorszámát, akinek a legtöbb gyereke van. Több megoldás esetén az legkisebb sorszámút írd ki.
+Egyetlen számot kell kiírnod, annak az embernek a sorszámát, akinek a legtöbb gyereke van. Több megoldás esetén a legkisebb sorszámút írd ki.
 
 ### Korlátok
 * $1 \le N \le 1000$

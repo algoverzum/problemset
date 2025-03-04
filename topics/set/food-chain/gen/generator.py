@@ -36,7 +36,7 @@ def unique_names(count):
     names = set()
     while len(names) < count:
         names.add(random_word())
-    return list(names)
+    return names
 
 
 def run(A, B):
@@ -44,20 +44,28 @@ def run(A, B):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
+
     print(A)
     pairs = set()
 
-    unused_carnivores = set(unique_names(B))
+    unused_carnivores = unique_names(B)
     used_carnivores = set()
     herbivores = unique_names(60)
+    while not unused_carnivores.isdisjoint(herbivores):
+        herbivores = unique_names(60)
+
     plants = unique_names(60)
+    while not plants.isdisjoint(unused_carnivores) or not plants.isdisjoint(herbivores):
+        plants = unique_names(60)
+    herbivores = list(herbivores)
+    plants = list(plants)
     remaining_pairs = A - B
     while unused_carnivores:
         current = unused_carnivores.pop()
         target = None
         carnivore_candidates = list(used_carnivores | unused_carnivores)
         used_carnivores.add(current)
-        # ha van még remaining pair akkor 50% hogy egy másik húsevőt eszik meg. ilyenkor a used+unused set ből választok egyet random. ha növényevőt eszik akkor meg azonnal generálok egy növényevő-növény párt
+        # ha van még remaining pair akkor 50% hogy egy másik húsevőt eszik meg. Ilyenkor a used+unused set-ből választok egyet random. Ha növényevőt eszik akkor meg azonnal generálok egy növényevő-növény párt.
         if (carnivore_candidates and choice([True, False])) or remaining_pairs == 0:
             target = choice(carnivore_candidates)
             pairs.add((current, target))
@@ -74,7 +82,6 @@ def run(A, B):
             target_pool = list(used_carnivores) + herbivores + plants
             right = choice(target_pool)
         else:
-
             left = choice(herbivores)
             right = choice(plants)
         attempts = 0
@@ -93,7 +100,7 @@ def run(A, B):
     shuffle(pairs_list)
 
     for left, right in pairs_list:
-        print(f"{left} {right}")
+        print(left, right)
 
 
 if __name__ == "__main__":

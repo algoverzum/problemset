@@ -3,8 +3,8 @@ We want to collect the identities of all living things on a planet. To do this, 
 
 ### Input
 In the first line of the input, there are two integers separated by spaces: $N$ and $M$ which are the number of identifiers collected by the teams.
-In the second line of the input, there are $N$ integers separated by spaces. These are the identifiers collected by the first team.
-In the third line of the input, there are $M$ integers separated by spaces. These are the identifiers collected by the second team.
+In the second line of the input, there are $N$ integers separated by spaces. These are the identifiers collected by the first team: $A_1, A_2, \ldots A_N$.
+In the third line of the input, there are $M$ integers separated by spaces. These are the identifiers collected by the second team: $B_1, B_2, \ldots B_M$.
 
 ### Output
 In the first line of the standard output, print the number of identifiers that appear in at least one of the lists.
@@ -12,7 +12,7 @@ The second line should contain these identifiers in ascending order, separated b
 
 ### Constraints
 * $1 \le N,M \le 10\,000$
-* $1 \le ID \le 100\,000$
+* $1 \le A_i, B_i \le 100\,000$
 
 ### Example input
     5 6

@@ -1,4 +1,6 @@
 ## Most Children
+You are given parent-child relationships among $N$ people. The people are identified by the numbers $1, 2, \ldots, N$. There are $K$ parent-child relationships, each represented as a pair of numbers, where the first number is the parent's identifier and the second number is the child's identifier.  
+
 Find the person who has the most children.
 
 ### Input

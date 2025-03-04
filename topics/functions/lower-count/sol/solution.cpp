@@ -22,7 +22,5 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> nums[i];
     }
-    int count;
-    count = count_lower(nums, k);
-    cout << count << "\n";
+    cout << count_lower(nums, k) << "\n";
 }

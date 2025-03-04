@@ -7,7 +7,7 @@ A bemenet második sorában $N$ darab egész szám van, az első hajó rakteréb
 A bemenet második sorában $M$ darab egész szám van, a második hajó rakterében lévő rakományok kódjai: $B_1, B_2, \dots, B_N$.
 
 ### Kimenet
-A kimenet első sorában azoknak a rakományoknak a kódját írjad ki, amelyek mind a kettő hajó rakterében megtalálhatóak.
+A kimenet első sorában azoknak a rakományoknak a kódját írd ki **növekvő sorrendben**, amelyek mind a kettő hajó rakterében megtalálhatóak.
 
 ### Korlátok
 * $1 \le N, M \le 100$

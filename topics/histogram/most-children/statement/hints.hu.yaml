@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- A feladatot megfogalmazhatjuk úgy is, hogy adjuk meg azt a számot, ami a legtöbbször szerepel az első oszlopban.
+- cpp: Minden emberhez tartozzon egy számláló, ami azt adja meg, hogy hány gyerek van. Vegyünk fel egy n+1 elemű vectort ennek amiben kezdetben minden elem 0.
+  py: Minden emberhez tartozzon egy számláló, ami azt adja meg, hogy hány gyerek van. Vegyünk fel egy n+1 elemű listát ennek amiben kezdetben minden elem 0.
+- cpp: Amikor beolvasunk egy számpárt, igazából csak az első szám érdekes, és az ahhoz tartozó számlálót (a vector annyiadik elemét) kell megnövelni.
+  py: Amikor beolvasunk egy számpárt, igazából csak az első szám érdekes, és az ahhoz tartozó számlálót (a lista annyiadik elemét) kell megnövelni.
+- A végén meg kell határoznunk a legnagyobb elem indexét, ez egy szokásos maximumkiválasztás.

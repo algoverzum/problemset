@@ -37,13 +37,17 @@ def run(Q, X):
         if y == 1:
             if cur and randint(1, 10) > 9:
                 x = choice(list(cur))
+                cur.add(x)
             else:
                 x = randint(1, X)
+                cur.add(x)
         if y == 2:
             if cur and randint(1, 10) > 6:
                 x = choice(list(cur))
+                cur.remove(x)
             else:
                 x = randint(1, X)
+                cur.discard(4)
         if y == 3:
             if cur and randint(1, 10) > 1:
                 x = choice(list(cur))

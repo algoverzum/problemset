@@ -9,11 +9,15 @@ from inspect import signature
 usage = """Generator for "space-trading".
 
 Parameters:
-* A (minimum value)
-* B (maximum value)
+* N (value of N)
+* M (value of M)
+* A (max value of items)
+* B (number of items)
 * S (seed)
 
 Constraint:
+* %d <= N <= %d
+* %d <= M <= %d
 * %d <= A <= %d
 * %d <= B <= %d
 """ % (
@@ -21,16 +25,31 @@ Constraint:
     MAX,
     MIN,
     MAX,
+    MIN_A,
+    MAX_A,
+    MIN_A,
+    MAX_A,
 )
 
 
-def run(A, B):
+def run(N, M, A, B):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    print(N, M)
+    unique_numbers = sample(range(1, A), B)
+    list1 = sample(unique_numbers, min(A, B))
+    list2 = sample(unique_numbers, min(B, B))
+    while len(list1) < N:
+        list1.append(choice(unique_numbers))
+    while len(list2) < M:
+        list2.append(choice(unique_numbers))
+    shuffle(list1)
+    shuffle(list2)
+    print(*list1)
+    print(*list2)
 
 
 if __name__ == "__main__":
