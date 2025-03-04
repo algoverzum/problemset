@@ -8,7 +8,7 @@ A bemenetben egyetlen egész szám van: $N$.
 Egyetlen számot kell kiírnod, az $N$ legkisebb osztóját, amely nagyobb 1-nél. Mindig van legalább egy ilyen osztója az $N$-nek, maga a szám (ami nem feltétlenül a legkisebb).
 
 ### Korlátok
-* $2 \le N \le 100\, 000 $
+* $2 \le N \le 100\, 000$
 
 ### Példa bemenet
     77

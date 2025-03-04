@@ -1,6 +1,6 @@
 // @check-accepted: *
 #include <iostream>
-#include <set>
+#include <set> //std::set is a sorted container.
 using namespace std;
 
 int main() {
@@ -27,10 +27,6 @@ int main() {
     cout << carnivores.size() << "\n";
     for (const string &name : carnivores) {
         cout << name << "\n";
-    }
-
-    if (carnivores.empty()) {
-        cout << "0" << "\n";
     }
 
     return 0;
