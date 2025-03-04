@@ -7,7 +7,7 @@ The second line of the input contains $N$ integers, the codes of the cargoes in 
 The second line of the input contains $M$ integers, the codes of the cargoes in the warehouse of the second ship: $B_1, B_2, \dots, B_N$.
 
 ### Output
-In the first line of the output, write the codes of the cargoes that are in the warehouses of both ships.
+In the first line of the output, write the codes of the cargoes **in increasing order** that are in the warehouses of both ships.
 
 ### Constraints
 * $1 \le N, M \le 100$

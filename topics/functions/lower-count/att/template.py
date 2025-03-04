@@ -5,4 +5,6 @@
 
 
 # Do not change anything below!!!
-print(count_lower([3, 1, 4], 2))
+N, K = [int(x) for x in input().split()]
+A = list(map(int, input().split()))
+print(count_lower(A, K))

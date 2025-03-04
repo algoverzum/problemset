@@ -5,4 +5,12 @@ using namespace std;
 // Create a count_lower function here
 
 // Do not change anything below!!!
-int main() { cout << count_lower({3, 1, 4}, 2) << "\n"; }
+int main() {
+    int n, k;
+    cin >> n >> k;
+    vector<int> nums(n);
+    for (int i = 0; i < n; i++) {
+        cin >> nums[i];
+    }
+    cout << count_lower(nums, k) << "\n";
+}

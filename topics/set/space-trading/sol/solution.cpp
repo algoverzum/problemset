@@ -25,7 +25,6 @@ int main() {
             intersection.push_back(id);
         }
     }
-    sort(intersection.begin(), intersection.end());
     for (int id : intersection) {
         cout << id << " ";
     }
