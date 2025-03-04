@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- The problem can also be formulated as finding the number that appears most frequently in the first column.
+- cpp: Each person should have a counter that keeps track of how many children they have. We should create a vector of size n+1, initialized with zeros.
+  py: Each person should have a counter that keeps track of how many children they have. We should create a list of size n+1, initialized with zeros.
+- cpp: When reading a pair of numbers, only the first number matters, and we need to increment the corresponding counter (the respective element in the vector).
+  py: When reading a pair of numbers, only the first number matters, and we need to increment the corresponding counter (the respective element in the list).
+- In the end, we need to determine the index of the largest element, which is a standard maximum selection problem.
