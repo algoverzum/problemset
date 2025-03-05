@@ -17,8 +17,8 @@ Minden angol szó az üzenetből benne lesz a szótárban.
 
 ### Korlátok
 
-* $1 \le N \le 100000$
-* $1 \le M \le 10000$
+* $1 \le N \le 100\,000$
+* $1 \le M \le 50\,000$
 * Minden szó az angol ábécé kisbetűiből áll.
 * Minden szó hossza 1 és 10 betű közt van.
 

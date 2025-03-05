@@ -4,16 +4,14 @@
 
 def binary_search(word, list):
     l = 0
-    r = len(list) - 1
-    while l <= r:
+    r = len(list)
+    while l + 1 < r:
         mid = (l + r) // 2
-        if list[mid] == word:
-            return mid
-        elif list[mid] < word:
-            l = mid + 1
+        if list[mid] <= word:
+            l = mid
         else:
-            r = mid - 1
-    return None
+            r = mid
+    return l
 
 
 n = int(input())

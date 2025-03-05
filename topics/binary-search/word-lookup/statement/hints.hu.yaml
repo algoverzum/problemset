@@ -1,4 +1,24 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Ha minden lefordítandó szónál az elejétől kezdve nézzük végig a szótárat, az túl lassú. Viszont kihasználhatjuk, hogy rendezve van. Ha valahol a közepén megnézed és összehasonlítod az ott lévő szót a keresett szóval, akkor mit csinálsz ezután?
+- Csináljuk bináris kereséssel. Tartsuk nyilván mindig a keresési tartományt, ami egy (l, r) index pár, kezdetben (0, n). Vizsgáljuk meg a középső elemet. Ha ez nagyobb a keresett szónál, akkor hogy módosul a keresési tartomány? És ha kisebb?
+- 'Érdemes úgy elképzelni a keresési tartományt, hogy a bal vége benne van, a jobb vége pedig nincs (l=0, r=n pont ezt jelenti). A középső elem: mid=(l+r)/2. Ha ez nagyobb a keresett szónál, akkor r-et átállítjuk mid-re, mivel ez a szó már biztos nem lehet, egyébként pedig l-et állítjuk át mid-re. A végén, ha egymás mellé kerül l és r, akkor az l a megoldás.'
+- cpp: |
+    ```
+    while (l + 1 < r) {
+        int mid = (l + r) / 2;
+        if (list[mid] <= word) {
+            l = mid;
+        } else {
+            r = mid;
+        }
+    }
+    ```
+  py: |
+    ```
+    while l + 1 < r:
+        mid = (l + r) // 2
+        if list[mid] <= word:
+            l = mid
+        else:
+            r = mid
+    ```

@@ -1,4 +1,24 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- If we search the dictionary from the beginning or each word to be translated, it will be too slow. However, we can take advantage of the fact that the dictionary is sorted. If you check a word somewhere in the middle and compare it with the target word, what do you do next?
+- Let's use binary search. We always keep track of the search range, represented as a pair of indices (l,r), initially (0,n). We examine the middle element. If it is greater than the target word, how should the search range be updated? And what if it is smaller?
+- It's useful to think of the search range as including the left end but excluding the right end (l=0, r=n represents this). The middle element is computed as mid=(l + r)/2. If this element is greater than the target word, we update r to mid. Otherwise, we update l to mid. At the end, when l and r are adjacent, l is the solution.
+- cpp: |
+    ```
+    while (l + 1 < r) {
+        int mid = (l + r) / 2;
+        if (list[mid] <= word) {
+            l = mid;
+        } else {
+            r = mid;
+        }
+    }
+    ```
+  py: |
+    ```
+    while l + 1 < r:
+        mid = (l + r) // 2
+        if list[mid] <= word:
+            l = mid
+        else:
+            r = mid
+    ```
