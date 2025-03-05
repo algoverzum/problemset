@@ -8,6 +8,8 @@ problems:
     type: REQUIRED
   - problem_id: museum
     type: REQUIRED
+  - problem_id: ship-rental
+    type: REQUIRED
 prerequisites:
   - array
   - for-loop

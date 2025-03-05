@@ -1,0 +1,8 @@
+---
+- A bemeneten lévő űrhajó sorszámokkal nem is kell törődnünk, csak az a lényeg, hogy a foglalás melyik naptól melyik napig tart.
+- cpp: Vegyünk fel egy hisztogram vektort, amely azt adja meg, hogy melyik nap hány hajó foglalt (pl. `vector<int> foglalt(m+1,0)`)
+  py: Vegyünk fel egy hisztogram listát, amely azt adja meg, hogy melyik nap hány hajó foglalt (pl. `foglalt = [0] * (m+1)`)
+- cpp: Amikor beolvasunk egy (a, b) foglalást, növeljük meg a foglalt vektor elemeit eggyel az a.-tól a b.-ig.
+  py: Amikor beolvasunk egy (a, b) foglalást, növeljük meg a foglalt lista elemeit eggyel az a.-tól a b.-ig.
+- cpp: A végén ki kell választanunk a foglalt vektorban a maximum sorszámát.
+  py: A végén ki kell választanunk a foglalt listában a maximum sorszámát.
