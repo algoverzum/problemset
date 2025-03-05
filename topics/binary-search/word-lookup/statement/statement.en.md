@@ -1,6 +1,6 @@
 ## Word Lookup
 
-Our brave astronauts have crash-landed on a strange planet. The grumpy aliens have taken their phones, but luckily, one astronaut kept a secret, tiny dictionary! Now, they need your help to translate a message and convince the aliens they're friendly. Translate the message quickly before the aliens get angry and suspicious!
+Our brave astronauts have crash-landed on a strange planet. The grumpy aliens took their phones, but luckily, one astronaut kept a secret, a tiny dictionary! Now, they need your help to translate a message and convince the aliens they're friendly. Translate the message quickly before the aliens get angry and suspicious!
 
 ### Input
 
@@ -19,7 +19,7 @@ Print $M$ lines, each containing the alien translation of the corresponding Engl
 
 * $1 \le N \le 100000$
 * $1 \le M \le 10000$
-* Each word is made of lowercase letters.
+* Each word is made of lowercase letters of the English alphabet.
 * Each word is between 1 and 10 letters long.
 
 ### Example input

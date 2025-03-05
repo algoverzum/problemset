@@ -1,6 +1,6 @@
 ## Szókeresés
 
-Bátor űrhajósaink egy furcsa bolygón zuhantak le. A mogorva idegenek elvették a telefonjaikat, de szerencsére egy űrhajós titokban megtartott egy apró szótárt! Most szükségük van a segítségedre, hogy lefordítsanak egy üzenetet és meggyőzzék az idegeneket, hogy barátságosak. Fordítsd le az üzenetet gyorsan, mielőtt az idegenek mérgesek és gyanakvóak lesznek!
+Bátor űrhajósaink egy furcsa bolygóra zuhantak le. A mogorva idegenek elvették a telefonjaikat, de szerencsére egy űrhajós titokban megtartott egy apró szótárt! Most szükségük van a segítségedre, hogy lefordítsanak egy üzenetet és meggyőzzék az idegeneket, hogy barátságosak. Fordítsd le az üzenetet gyorsan, mielőtt az idegenek mérgesek és gyanakvóak lesznek!
 
 ### Bemenet
 
@@ -13,13 +13,13 @@ Minden angol szó az üzenetből benne lesz a szótárban.
 
 ### Kimenet
 
-Írj ki $M$ sort, mindegyiken az üzenet megfelelő angol szavának idegen fordításával.
+Írj ki $M$ sort, mindegyik az üzenet megfelelő angol szavának idegen fordításával.
 
 ### Korlátok
 
 * $1 \le N \le 100000$
 * $1 \le M \le 10000$
-* Minden szó kisbetűkből áll.
+* Minden szó az angol ábécé kisbetűiből áll.
 * Minden szó hossza 1 és 10 betű közt van.
 
 ### Példa bemenet

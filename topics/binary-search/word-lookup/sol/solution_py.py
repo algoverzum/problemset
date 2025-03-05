@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
+
 def binary_search(word, list):
     l = 0
     r = len(list) - 1
@@ -14,20 +15,18 @@ def binary_search(word, list):
             r = mid - 1
     return None
 
+
 n = int(input())
 
 english_words = []
 alien_words = []
 for i in range(n):
-    ew, aw = input().split()
-    english_words.append(ew)
-    alien_words.append(aw)
-    
-m = int(input())
-message = []
-for i in range(m):
-    message.append(input())
+    english_word, alien_word = input().split()
+    english_words.append(english_word)
+    alien_words.append(alien_word)
 
-for word in message:
+m = int(input())
+for i in range(m):
+    word = input()
     idx = binary_search(word, english_words)
     print(alien_words[idx])
