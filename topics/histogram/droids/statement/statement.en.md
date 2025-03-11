@@ -18,4 +18,5 @@ Print a single number the amount of times the most common droid type appears.
 ### Example output
     5
 
-
+### Explanation of the example
+5 of type 1 droids were produced. (The droid type was not a question.)

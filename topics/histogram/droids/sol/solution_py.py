@@ -2,8 +2,8 @@
 # @check-accepted: *
 
 n = int(input())
-szamok = [int(x) for x in input().split()]
-db = [0] * 11
-for szam in szamok:
-    db[szam] += 1
-print(max(db))
+droids = [int(x) for x in input().split()]
+histogram = [0] * 11
+for type in droids:
+    histogram[type] += 1
+print(max(histogram))

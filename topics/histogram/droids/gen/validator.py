@@ -18,6 +18,7 @@ def run(f, st):
     N = int(next(f))
     assert MIN <= N <= MAX
     numbers = list(map(int, next(f).split()))
+    assert len(numbers) == N
     for num in numbers:
         assert 1 <= num <= 10
     assert next(f, None) is None
