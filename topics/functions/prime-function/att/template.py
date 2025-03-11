@@ -1,4 +1,5 @@
-# Define a function called prime here.
+# Define a function called prime that returns True if the
+# parameter number is a prime and False otherwise.
 
 
 # Do not change anything below.

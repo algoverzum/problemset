@@ -1,60 +1,34 @@
 // @check-accepted: *
-#include <iostream>
-#include <queue>
-#include <vector>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-void bfs(int start, vector<vector<int>> &adj, vector<bool> &visited) {
-    queue<int> q;
-    q.push(start);
-    visited[start] = true;
-    while (!q.empty()) {
-        int v = q.front();
-        q.pop();
-        for (int u : adj[v]) {
-            if (!visited[u]) {
-                visited[u] = true;
-                q.push(u);
-            }
-        }
-    }
-}
+int N, M, deg[201], vis[201];
+vector<int> g[201];
 
-bool euler(int n, vector<vector<int>> &adj) {
-    vector<bool> visited(n, false);
-    int start = -1;
-    for (int i = 0; i < n; i++) {
-        if (!adj[i].empty()) {
-            start = i;
-            break;
-        }
+void dfs(int u) {
+    vis[u] = 1;
+    for (int v : g[u]) {
+        if (!vis[v])
+            dfs(v);
     }
-    if (start == -1)
-        return true;
-    bfs(start, adj, visited);
-    for (int i = 0; i < n; i++) {
-        if (!adj[i].empty() && !visited[i])
-            return false;
-    }
-    for (int i = 0; i < n; i++) {
-        if (adj[i].size() % 2 != 0)
-            return false;
-    }
-    return true;
 }
 
 int main() {
-    int n, r;
-    cin >> n >> r;
-    n++;
-    vector<vector<int>> adj(n);
-    for (int i = 0; i < r; i++) {
-        int v1, v2;
-        cin >> v1 >> v2;
-        adj[v1].push_back(v2);
-        adj[v2].push_back(v1);
+    cin >> N >> M;
+    for (int i = 0; i < M; i++) {
+        int u, v;
+        cin >> u >> v;
+        deg[u]++;
+        deg[v]++;
+        g[u].push_back(v);
+        g[v].push_back(u);
     }
-    cout << (euler(n, adj) ? "YES" : "NO") << "\n";
-    return 0;
+    dfs(1);
+    for (int u = 1; u <= N; u++) {
+        if (deg[u] % 2 || !vis[u] && deg[u]) {
+            cout << "NO\n";
+            return 0;
+        }
+    }
+    cout << "YES\n";
 }

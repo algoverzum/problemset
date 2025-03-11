@@ -1,47 +1,33 @@
 #!/usr/bin/env python3
 # @check-accepted: *
-from collections import defaultdict
+import sys
+
+sys.setrecursionlimit(1000)
 
 
-def dfs(v, adj, visited):
-    stack = [v]
-    while stack:
-        node = stack.pop()
-        for neighbor in adj[node]:
-            if not visited[neighbor]:
-                visited[neighbor] = True
-                stack.append(neighbor)
+def dfs(u):
+    vis[u] = True
+    for v in g[u]:
+        if not vis[v]:
+            dfs(v)
 
 
-def euler(n, edges):
-    adj = defaultdict(list)
-    degree = defaultdict(int)
-    for v1, v2 in edges:
-        adj[v1].append(v2)
-        adj[v2].append(v1)
-        degree[v1] += 1
-        degree[v2] += 1
+N, M = map(int, input().split())
+g = [[] for _ in range(N + 1)]
+deg = [0] * (N + 1)
+vis = [False] * (N + 1)
 
-    for v in degree:
-        if degree[v] % 2 == 1:
-            return False
+for _ in range(M):
+    u, v = map(int, input().split())
+    deg[u] += 1
+    deg[v] += 1
+    g[u].append(v)
+    g[v].append(u)
 
-    visited = [False] * n
-    start, _ = degree.popitem()
+dfs(1)
+ans = "YES"
+for u in range(1, N + 1):
+    if deg[u] % 2 != 0 or (not vis[u] and deg[u] > 0):
+        ans = "NO"
 
-    visited[start] = True
-    dfs(start, adj, visited)
-
-    for i in range(n):
-        if not visited[i] and degree[i] != 0:
-            return False
-    return True
-
-
-n, r = map(int, input().split())
-edges = [tuple(map(int, input().split())) for _ in range(r)]
-
-if euler(n + 1, edges):
-    print("YES")
-else:
-    print("NO")
+print(ans)
