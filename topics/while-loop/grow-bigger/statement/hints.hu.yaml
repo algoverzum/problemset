@@ -2,4 +2,4 @@
 - Ha kezdetben a súlyok `A` és `B`, akkor mennyi lesz 1 év múlva? És két év múlva?
 - Egy év múlva `3*A` és `2*B`. Két év múlva `3*3*A` és `2*2*B`.
 - Egy `while` ciklussal lehet kényelmesen szorozgatni 3-mal illetve 2-vel. Meddig menjen a ciklus?
-- Amíg `A <= B`. (A `while` ciluson bellül szorozzuk meg őket 3-mal illetve 2-vel.)
+- Amíg `A <= B`. (A `while` cikluson belül szorozzuk meg őket 3-mal illetve 2-vel.)
