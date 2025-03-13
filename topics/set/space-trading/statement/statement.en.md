@@ -1,5 +1,5 @@
 ## Space Trading
-Two spaceships met in deep space and decided to trade. The on-board computers will automatically unpack the cargoes that are suitable for exchange, but those that are in the warehouses of both ships will be left in the warehouse. Create a program that decides which type of cargoes will stay in the warehouse based on the contents of the warehouses of the two ships in question!
+Two spaceships met in deep space and decided to trade. The on-board robots will automatically unpack the cargoes that are suitable for exchange, but those that are in the warehouses of both ships should be left in the warehouse. Create a program that decides which cargoes will stay in the warehouse based on the contents of the warehouses of the two ships in question.
 
 ### Input
 The first line of the input contains two integers, the number of cargoes in the warehouses of the first and the second ships: $N$, $M$.
@@ -11,7 +11,7 @@ In the first line of the output, write the number of cargoes that appear in both
 In the second line of the output, write the codes of the cargoes **in increasing order** that are in the warehouses of both ships.
 
 ### Constraints
-* $1 \le N, M \le 100000$
+* $1 \le N, M \le 10^5$
 * $1 \le A_i, B_i \le 10^9$
 
 ### Example input
@@ -24,4 +24,4 @@ In the second line of the output, write the codes of the cargoes **in increasing
     4 6 12
 
 ### Explanation of the example
-The codes 4, 6 and 12 are the codes that appear in both the first and second sequence of numbers.
+The codes 4, 6 and 12 are the codes that appear in both the first and second sequence.

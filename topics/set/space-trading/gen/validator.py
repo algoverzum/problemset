@@ -19,9 +19,11 @@ def run(f, st):
     assert MIN <= N <= MAX
     assert MIN <= M <= MAX
     line = [int(x) for x in next(f).split()]
+    assert len(line) == N
     for a in line:
         assert MIN_A <= a <= MAX_A
     line = [int(x) for x in next(f).split()]
+    assert len(line) == M
     for a in line:
         assert MIN_A <= a <= MAX_A
 

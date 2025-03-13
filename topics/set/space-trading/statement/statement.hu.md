@@ -1,5 +1,5 @@
 ## Űrkereskedelem
-Kettő űrhajó találkozott az világűr mélyén és úgy döntöttek, hogy cserekereskedelembe fognak. A fedélzeti számítógépek automatikusan kicsomagolják a cserére alkalmas rakományokat, de azokat, amik mind a kettő hajó raktárában vannak, azokat a raktárban fogja hagyni. Készíts programot, amely a két adott hajó raktárának tartalma alapján eldönti, hogy melyik típussú rakományok fognak a raktárban maradni!
+Kettő űrhajó találkozott a világűr mélyén és úgy döntöttek, hogy cserekereskedelembe fognak. A fedélzeti robotok automatikusan kicsomagolják a cserére alkalmas rakományokat, de amik mind a kettő hajó raktárában vannak, azokat a raktárban szeretnék hagyni. Készíts programot, amely a két hajó raktárának tartalma alapján eldönti, hogy melyik rakományok fognak a raktárban maradni!
 
 ### Bemenet
 A bemenet első sorában kettő egész szám van, az első, majd a második hajó rakterében lévő rakományok száma: $N$, $M$.
@@ -11,8 +11,8 @@ A kimenet első sorában azoknak a rakományoknak a számát írd ki, amelyek mi
 A kimenet második sorában ezeknek a rakományoknak a kódját írd ki **növekvő sorrendben**.
 
 ### Korlátok
-* $1 \le N, M \le 100$
-* $1 \le A_i, B_i \le 1000$
+* $1 \le N, M \le 10^5$
+* $1 \le A_i, B_i \le 10^9$
 
 ### Példa bemenet
     5 6
@@ -24,4 +24,4 @@ A kimenet második sorában ezeknek a rakományoknak a kódját írd ki **növek
     4 6 12
 
 ### A példa magyarázata
-A 4, 6 és a 12 azok a kódok, amelyek mind az első, mind a második számsorozatban szerepel.
+A 4, 6 és a 12 azok a kódok, amelyek mind az első, mind a második számsorozatban szerepelnek.
