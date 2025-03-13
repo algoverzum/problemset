@@ -40,8 +40,8 @@ def run(N, M, A, B):
 
     print(N, M)
     unique_numbers = sample(range(1, A), B)
-    list1 = sample(unique_numbers, min(A, B))
-    list2 = sample(unique_numbers, min(B, B))
+    list1 = sample(unique_numbers, min(N, B))
+    list2 = sample(unique_numbers, min(M, B))
     while len(list1) < N:
         list1.append(choice(unique_numbers))
     while len(list2) < M:

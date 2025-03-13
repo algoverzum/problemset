@@ -7,18 +7,20 @@ The second line of the input contains $N$ integers, the codes of the cargoes in 
 The second line of the input contains $M$ integers, the codes of the cargoes in the warehouse of the second ship: $B_1, B_2, \dots, B_N$.
 
 ### Output
-In the first line of the output, write the codes of the cargoes **in increasing order** that are in the warehouses of both ships.
+In the first line of the output, write the number of cargoes that appear in both warehouses.
+In the second line of the output, write the codes of the cargoes **in increasing order** that are in the warehouses of both ships.
 
 ### Constraints
-* $1 \le N, M \le 100$
-* $1 \le A_i, B_i \le 1000$
+* $1 \le N, M \le 100000$
+* $1 \le A_i, B_i \le 10^9$
 
 ### Example input
     5 6
-    1 4 6 12 23
-    4 6 7 8 9 12
+    1 12 4 23 6
+    7 4 8 9 12 6
 
 ### Example output
+    3
     4 6 12
 
 ### Explanation of the example

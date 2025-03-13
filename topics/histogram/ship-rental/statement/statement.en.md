@@ -7,7 +7,7 @@ The first line of the input contains the number of available spaceships ($1 \le 
 The next $K$ lines contains the charter data: the spacecraft ID ($1 \le S_i \le N$) and the first and last day ($1 \le A_i \le B_i \le M$) when the spacecraft was rented. There is no conflict or overlap between the data.
 
 ### Output
-The only line of the output shall contain the number of the day on which the highest number of spaceships were rented (if there are more than one such day, the earliest day shall be selected).
+In the first and only line of the output, write the number of the day on which the highest number of spaceships were rented (if there are more than one such day, the earliest day shall be selected).
 
 ### Constraints
 * $1 \le N \le 100$
