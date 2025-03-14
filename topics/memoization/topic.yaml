@@ -2,6 +2,8 @@
 id: memoization
 name: Memoization and Dynamic Programming
 problems:
+  - problem_id: holochess
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:
