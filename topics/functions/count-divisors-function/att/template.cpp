@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Create a count_lower function here
+// Create a count_divisors function here
 
 // Do not change anything below!!!
 int main() {

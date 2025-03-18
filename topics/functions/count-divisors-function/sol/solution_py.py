@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
-# Create a count_lower function here
+# Create a count_divisors function here
 def count_divisors(n):
     count = 0
     for i in range(1, n + 1):

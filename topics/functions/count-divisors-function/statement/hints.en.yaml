@@ -1,20 +1,11 @@
-- We can calculate from 1 to `n` with a `for` loop.
-- Create a variable with an initial value of 0 and increment it by 1 each time we find a divisor. After the cycle, you only have to print the product.
+---
 - cpp: |
-    We can do this like this:
-    ```
-    int divisors = 0;
-    for (int i = 1; i <= n; i++) {
-      if (n % i == 0) {
-        divisors++;
-      }
-    }
-    ```
-- py: |
-    We can do this like this:
-    ```
-    divisors = 0
-    for i in range(1, n + 1):
-        if n % i == 0:
-            divisors = divisors + 1
-    ```
+    The function header should be: `int count_divisors(int n) {`
+  py: |
+    The function header should be: `def count_divisors(n):`
+- Inside the function, we need to perform a counting, so we should have a counter variable (`cnt`), initially set to 0. At the end, we return this value using the `return` statement.
+- Iterate through numbers from `i = 1` to `n`, and if `n` is divisible by `i`, increment the counter (`cnt`).
+- cpp: |
+    The `if` statement inside the `for` loop can be written as: `if (n % i == 0) cnt++;`
+  py: |
+    The `if` statement inside the `for` loop can be written as: `if n % i == 0: cnt += 1`

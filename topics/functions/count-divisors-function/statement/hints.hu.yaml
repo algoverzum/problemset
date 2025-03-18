@@ -1,20 +1,11 @@
-- Számoljunk el 1-től n-ig egy for ciklussal.
-- Hozzunk létre egy változót kezdeti értékként 0-val, és növeljük meg 1-gyel minden alkalommal, amikor találunk egy osztót. A ciklus után csak ki kell írnunk az eredményt.
+---
 - cpp: |
-    Ezt így valósíthatjuk meg:
-    ```
-    int divisors = 0;
-    for (int i = 1; i <= n; i++) {
-      if (n % i == 0) {
-        divisors++;
-      }
-    }
-    ```
-- py: |
-    Ezt így valósíthatjuk meg:
-    ```
-    divisors = 0
-    for i in range(1, n + 1):
-        if n % i == 0:
-            divisors = divisors + 1
-    ```
+    A függvény fejléce ilyen legyen: `int count_divisors(int n) {`
+  py: |
+    A függvény fejléce ilyen legyen: `def count_divisors(n):`
+- A függvényen belül egy megszámlálást kell csinálnunk, legyen tehát egy számláló változónk (db), ami kezdetben 0. A végén ezt kell visszaadni a return utasítással.
+- Menjünk végig a számokon i=1-től n-ig, és ha n osztható i-vel, akkor növeljük a számlálót (db).
+- cpp: |
+    A for cikluson belüli if utasítás így nézhet ki: `if (n % i == 0) db++;`
+  py: |
+    A for cikluson belüli if utasítás így nézhet ki: `if n % i == 0: db += 1`
