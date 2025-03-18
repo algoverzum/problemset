@@ -22,6 +22,8 @@ problems:
     type: REQUIRED
   - problem_id: count-divisors-function
     type: REQUIRED
+  - problem_id: factory
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:
