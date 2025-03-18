@@ -1,9 +1,9 @@
 ---
 # General info
-name: count-divisors
-title: Count Divisors
+name: count-divisors-functions
+title: Count Divisors with Function
 title_translations:
-  hu: Osztók száma
+  hu: Osztók száma függvénnyel
 
 # Technical info
 memory_limit: 256

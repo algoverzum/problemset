@@ -1,0 +1,20 @@
+- We can calculate from 1 to `n` with a `for` loop.
+- Create a variable with an initial value of 0 and increment it by 1 each time we find a divisor. After the cycle, you only have to print the product.
+- cpp: |
+    We can do this like this:
+    ```
+    int divisors = 0;
+    for (int i = 1; i <= n; i++) {
+      if (n % i == 0) {
+        divisors++;
+      }
+    }
+    ```
+- py: |
+    We can do this like this:
+    ```
+    divisors = 0
+    for i in range(1, n + 1):
+        if n % i == 0:
+            divisors = divisors + 1
+    ```
