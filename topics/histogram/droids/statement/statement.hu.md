@@ -6,10 +6,10 @@ A bemenetben első sorában egyetlen egész szám van: $N$ a számsorozat hossza
 A bemenetben második sorában $N$ darab 1 és 10 közötti szám van szóközzel elválasztva.
 
 ### Kimenet
-Egyetlen számot kell kiírnod, a számsorozatban legtöbbször előforduló szám darabszámát.
+Egyetlen számot kell kiírnod, a legtöbbször előforduló droid típus darabszámát.
 
 ### Korlátok
-* $1 \le N \le 10000000$
+* $1 \le N \le 1\,000\,000$
 
 ### Példa bemenet
     10

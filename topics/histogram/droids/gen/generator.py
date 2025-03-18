@@ -10,21 +10,17 @@ usage = """Generator for "droids".
 
 Parameters:
 * A (N value)
-* B (nothing, only reason i don't delete it is that if full random inputs are not good enough for generator then i don't have to rewrite.)
 * S (seed)
 
 Constraint:
 * %d <= A <= %d
-* %d <= B <= %d
 """ % (
-    MIN,
-    MAX,
     MIN,
     MAX,
 )
 
 
-def run(A, B):
+def run(A):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break

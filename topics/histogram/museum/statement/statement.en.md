@@ -5,7 +5,7 @@ Write a program that returns the first and last days of the longest series of da
 
 ### Input
 The first line of the input contains two numbers: $N, M$ - the number of days and guards.
-The next line $M$ contains two numbers: $F_i, L_i$ - where the $i$-th guard was on duty from the $F_i$-th day to the $L_i$-th day (inclusive).
+Each of the next $M$ lines contains two numbers: $F_i, L_i$ - meaning that the $i$-th guard was on duty from the $F_i$-th day to the $L_i$-th day (inclusive).
 
 ### Output
 The first and last days of the longest series when fewer than two guards were on duty should be printed in a single line (separated by space)! If there is more than one solution, then print the one with the smallest first day. If there are no solutions, then print only a single 0.
@@ -13,7 +13,7 @@ The first and last days of the longest series when fewer than two guards were on
 ### Constraints
 * $1 \le N \le 1000$
 * $1 \le M \le 1000$
-* $1 \le F_i \le U_i \le M$ for all $1 \le i \le M$.
+* $1 \le F_i \le U_i \le N$ for all $1 \le i \le M$.
 
 ### Example 1 Input
     6 5
@@ -44,3 +44,6 @@ During the first day there were 2, on the second day there were 3, on the third 
 
 ### Example 2 Output
     0
+
+### Explanation of Example 2
+There were at least 2 guards every day.

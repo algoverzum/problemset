@@ -3,13 +3,13 @@ In a droid factory, 10 different types of droids are produced, numbered from 1 t
 
 ### Input
 The first line of the input contains $N$ - the length of the list
-The second line of the input contains $N$ amount of numbers between 1 and 10, separated by spaces.
+The second line of the input contains $N$ numbers between 1 and 10, separated by spaces, the types of the manufactured droids.
 
 ### Output
-Print a single number the amount of times the most common droid type appears.
+Print a single number: the amount of times the most common droid type appears.
 
 ### Constraints
-* $1 \le N \le 10000000$
+* $1 \le N \le 1\,000\,000$
 
 ### Example input
     10

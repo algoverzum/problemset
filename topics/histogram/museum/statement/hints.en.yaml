@@ -1,4 +1,8 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Create a vector that stores the number of guards present on each day. How can this be computed while reading the input?
+  py: Create a list that stores the number of guards present on each day. How can this be constructed while reading the input?
+- cpp: Use an N+1 element vector initialized with zeros. When a guard is present from day `F` to `L`, increase the corresponding elements in the vector using a loop.
+  py: Use an N+1 element list initialized with zeros. When a guard is present from day `F` to `L`, increase the corresponding elements in the list using a loop.
+- Then, determine the longest contiguous segment where all values are either 0 or 1.
+- Iterate through the days from 1 to N while keeping a counter that tracks the length of the current valid segment.
+- If the value is less than 2, increment the counter; if it is ≥2, reset it to 0. Keep track of the maximum counter value encountered.

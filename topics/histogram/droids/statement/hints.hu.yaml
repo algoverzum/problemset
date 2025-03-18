@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Minden droid típushoz legyen egy számlálónk, ehhez vegyünk fel egy 11 elemű vectort. Akár beolvasás közben tudjuk számolni a darabszámokat.
+  py: Minden droid típushoz legyen egy számlálónk, ehhez vegyünk fel egy 11 elemű listát nullákkal. Mit csináljunk, ahogy megyünk végig az inputon?
+- cpp: Az aktuális droid típusával indexelve a vectort, a megfelelő számlálót tudjuk megnövelni.
+  py: Az aktuális droid típusával indexelve a számlálók listáját, a megfelelő számlálót tudjuk megnövelni.
+- A végén egy maximumkiválasztást kell csinálni, a legnagyobb számláló értékét kiírni.

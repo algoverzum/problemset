@@ -6,15 +6,15 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    int szam;
-    vector<int> szamok(11);
+    vector<int> cnt(11);
     for (int i = 0; i < n; i++) {
-        cin >> szam;
-        szamok[szam]++;
+        int type;
+        cin >> type;
+        cnt[type]++;
     }
-    int maxdb = 0;
+    int maxi = 0;
     for (int i = 1; i < 11; i++) {
-        maxdb = max(maxdb, szamok[i]);
+        maxi = max(maxi, cnt[i]);
     }
-    cout << maxdb << "\n";
+    cout << maxi << "\n";
 }
