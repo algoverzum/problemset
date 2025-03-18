@@ -3,7 +3,7 @@ We want to build a new dam on a river, the width of which has been measured at $
 
 ### Input
 The first line of the input is a number, the number of points on the river: $N$.
-The second line contains $N$ numbers, the width at each point: $W_1, W_2, \ldots W_N$.
+The second line contains $N$ numbers, the width at each point: $W_1, W_2, \ldots, W_N$.
 
 ### Output
 You have to print one number, the number of places suitable for building a dam, i.e. the number of measurement points where the measured width is strictly greater than the width measured at the point before and after.
