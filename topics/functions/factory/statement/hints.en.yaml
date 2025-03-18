@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    Use a `for` loop to iterate through the indices (`for (int i = 0; i < numbers.size(); i++)`). If the current element is even, return its index immediately (`return i;`).
+  py: |
+    Use a `for` loop to iterate through the indices (`for i in range(len(numbers)):`). If the current element is even, return its index immediately (`return i`).
+- Since the `return` statement exits the function, we can be sure that if the loop completes without finding an even number, there are no even numbers in the list, so we can return -1.

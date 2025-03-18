@@ -2,15 +2,15 @@
 # @check-accepted: *
 
 
-def odd_numbers(lista):
+def odd_numbers(numbers):
     odd = []
-    for szam in lista:
-        if szam % 2 == 1:
-            odd.append(szam)
+    for num in numbers:
+        if num % 2 == 1:
+            odd.append(num)
     return odd
 
 
 # Do not change anything below!!!
 input()
-A = list(map(int, input().split()))
-print(*odd_numbers(A))
+numbers = list(map(int, input().split()))
+print(*odd_numbers(numbers))

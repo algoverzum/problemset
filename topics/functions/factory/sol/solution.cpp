@@ -3,10 +3,10 @@
 #include <vector>
 using namespace std;
 
-int first_even(vector<int> &nums) {
-    for (int i = 0; i < nums.size(); i++) {
-        if (nums[i] % 2 == 0) {
-            return i + 1;
+int first_even(vector<int> numbers) {
+    for (int i = 0; i < numbers.size(); i++) {
+        if (numbers[i] % 2 == 0) {
+            return i;
         }
     }
     return -1;
@@ -14,11 +14,10 @@ int first_even(vector<int> &nums) {
 int main() {
     int n;
     cin >> n;
-    vector<int> nums(n);
+    vector<int> numbers(n);
     for (int i = 0; i < n; i++) {
-        cin >> nums[i];
+        cin >> numbers[i];
     }
-    int first = first_even(nums);
 
-    cout << first << "\n";
+    cout << first_even(numbers) << "\n";
 }

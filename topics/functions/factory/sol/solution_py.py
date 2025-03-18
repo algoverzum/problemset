@@ -3,12 +3,12 @@
 
 
 def first_even(numbers):
-    for i, num in enumerate(numbers):
-        if num % 2 == 0:
-            return i + 1
+    for i in range(len(numbers)):
+        if numbers[i] % 2 == 0:
+            return i
     return -1
 
 
 input()
-A = list(map(int, input().split()))
-print(first_even(A))
+numbers = list(map(int, input().split()))
+print(first_even(numbers))

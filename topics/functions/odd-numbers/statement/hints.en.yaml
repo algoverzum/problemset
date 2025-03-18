@@ -1,4 +1,8 @@
 ---
+- cpp: |
+    The function header should look like this: `vector<int> odd_numbers(vector<int> numbers) {`
+  py: |
+    The function header should look like this: `def odd_numbers(numbers):`
 - cpp: The result will be a vector, so let's make an empty vector at the beginning, let it be called odd.
   py: The result will be a list, so let's make an empty list at the beginning, let its name be odd.
 - cpp: Go through the input numbers, and if the number is odd, add it to the odd vector.

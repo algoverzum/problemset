@@ -9,5 +9,5 @@ def first_even(numbers):
 
 # Do not change anything below!!!
 input()
-A = list(map(int, input().split()))
-print(first_even(A))
+numbers = list(map(int, input().split()))
+print(first_even(numbers))
