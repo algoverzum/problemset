@@ -1,4 +1,8 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Készítsünk egy vectort, ami azt adja meg, hogy az egyes napokon hány őr volt ott. Hogy lehet ezt a beolvasás közben elkészíteni?
+  py: Készítsünk egy listát, ami azt adja meg, hogy az egyes napokon hány őr volt ott. Hogy lehet ezt a beolvasás közben elkészíteni?
+- cpp: Legyen egy N+1 elemű vector, ami kezdetben csupa 0. Amikor egy őr van az F.-től L.-napig, akkor növeljük meg a vectorban az elemeket a megfelelő indexeken (egy ciklussal).
+  py: Legyen egy N+1 elemű lista, ami kezdetben csupa 0. Amikor egy őr van az F.-től L.-napig, akkor növeljük meg a listában az elemeket a megfelelő indexeken (egy ciklussal).
+- Ezt követően a leghosszabb olyan szakaszt kell meghatározni, amiben minden szám 0 vagy 1.
+- Menjünk végig a napokon 1-től N-ig, és legyen egy számlálónk, ami azt számolja, hogy éppen milyen hosszú folyamatos "jó" szakaszban vagyunk benne.
+- Ha 2-nél kisebb szám jön, akkor növelnünk kell a számlálót, ha ≥2, akkor át kell állítanunk 0-ra. Közben figyelni kell, hogy mikor volt maximális a számláló értéke.

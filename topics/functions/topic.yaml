@@ -18,6 +18,12 @@ problems:
     type: REQUIRED
   - problem_id: intersection
     type: REQUIRED
+  - problem_id: lower-count
+    type: REQUIRED
+  - problem_id: count-divisors-function
+    type: REQUIRED
+  - problem_id: factory
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

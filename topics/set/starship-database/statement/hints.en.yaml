@@ -1,4 +1,12 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    Store the database in a `set`: `set<int> database;`. There is a built-in function for every required operation, and they are efficient.
+  py: |
+    Store the database in a `set`: `database = set()`. All operations can be performed easily and efficiently with it.
+- cpp: Add elements using the `insert` function (`database.insert(x)`). If the element is already present, nothing happens.
+  py: Add elements using the `add` function (`database.add(x)`). If the element is already present, nothing happens.
+- cpp: Remove elements using the `erase` function (`database.erase(x)`). If the element is not present, nothing happens.
+  py: There are two functions for removal, `remove` and `discard`. However, `remove` raises an error if the element is not present, so in this case, it's better to use `discard` (`database.discard(x)`).
+- cpp: The `count` function returns 0 or 1, depending on whether the element is in the set (`database.count(x)`)
+  py: |
+    Use the `in` operator to check if an element is in the set (`if x in database: ...`)

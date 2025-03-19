@@ -35,7 +35,7 @@ def run(A, B, C):
         assert eval(row[2:]), row[2:]
 
     print(A, B)
-    unique_numbers = sample(range(1, 100001), C)
+    unique_numbers = sample(range(1, 1000000001), C)
     list1 = sample(unique_numbers, min(A, C))
     list2 = sample(unique_numbers, min(B, C))
     while len(list1) < A:

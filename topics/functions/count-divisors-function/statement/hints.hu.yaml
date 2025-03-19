@@ -1,0 +1,11 @@
+---
+- cpp: |
+    A függvény fejléce ilyen legyen: `int count_divisors(int n) {`
+  py: |
+    A függvény fejléce ilyen legyen: `def count_divisors(n):`
+- A függvényen belül egy megszámlálást kell csinálnunk, legyen tehát egy számláló változónk (db), ami kezdetben 0. A végén ezt kell visszaadni a return utasítással.
+- Menjünk végig a számokon i=1-től n-ig, és ha n osztható i-vel, akkor növeljük a számlálót (db).
+- cpp: |
+    A for cikluson belüli if utasítás így nézhet ki: `if (n % i == 0) db++;`
+  py: |
+    A for cikluson belüli if utasítás így nézhet ki: `if n % i == 0: db += 1`

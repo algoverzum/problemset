@@ -19,7 +19,7 @@ problems:
   - problem_id: count-recursive
     type: REQUIRED
 prerequisites: functions
-dependents: dfs
+dependents: []
 visualization:
   image_filename: 20.svg
   position:

@@ -1,7 +1,7 @@
-- Let the function have a `sum` variable for the result, which is initially 0. Go through the numbers a to b and add them.
+- Let the function have a `sum` variable for the result, which is initially 0. Go through the numbers from a to b and add them to this variable.
 - cpp: We can go through the numbers with a for loop, making sure to include the upper bound (`for (int i = a; i <= b; i++)`). Then we can use the `return` statement to return the calculated value.
-  py: You can loop through the numbers with a for loop, making sure that the upper limit is included (`for i in range(a, b+1)`). Then you can use the `return` statement to return the calculated value.
+  py: We can loop through the numbers with a for loop, making sure that the upper limit is included (`for i in range(a, b+1)`). Then we can use the `return` statement to return the calculated value.
 - cpp: |
       The function can be defined as `int sum_between(int a, int b) {}`
   py: |
-      The function is defined as `def sum_between(a, b):`
+      The function can be defined as `def sum_between(a, b):`

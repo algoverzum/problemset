@@ -1,0 +1,15 @@
+---
+id: memoization
+name: Memoization and Dynamic Programming
+problems:
+  - problem_id: holochess
+    type: REQUIRED
+prerequisites: []
+dependents: []
+visualization:
+  image_filename: 12.svg
+  position:
+    x: 700
+    y: -400
+
+# Notes:

@@ -1,0 +1,24 @@
+\documentclass[border={2pt 2pt 2pt 2pt}]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\begin{document}
+
+\begin{tikzpicture}[very thick]
+\draw (0,-0.3) grid (5.3,5);
+\draw[black,shorten >=0.3cm,dashed,-latex] (1.5,0.5) to [bend left=40] (0.5,2.5);
+\draw[black,shorten >=0.3cm,dashed,-latex] (1.5,0.5) to [bend right=40] (2.5,2.5);
+\draw[black,shorten >=0.3cm,-latex] (0.5,2.5) to [bend right=40] (1.5,4.5);
+\draw[black,shorten >=0.3cm,-latex] (2.5,2.5) to [bend right=40] (0.5,3.5);
+\draw[red,very thick,fill=red!75] (1.5,0.5) circle [radius=.3];
+\draw[blue,very thick,fill=blue!75] (0.5,2.5) circle [radius=.3];
+\draw[blue,very thick,fill=blue!75] (2.5,2.5) circle [radius=.3];
+\draw[red,very thick,fill=red!75] (0.5,3.5) circle [radius=.3];
+\draw[red,very thick,fill=red!75] (1.5,4.5) circle [radius=.3];
+%\node at (0.5,6.5) {\small(1,1)};
+\foreach \x in {1,...,5} {
+  \node[gray] at (\x-0.5,5.3) {\small\x};
+  \node[gray] at (-0.3,5.5-\x) {\small\x};
+}
+\end{tikzpicture}
+
+\end{document}

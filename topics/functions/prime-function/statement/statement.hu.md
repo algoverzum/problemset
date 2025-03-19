@@ -5,4 +5,4 @@
 * $1 \le N \le 1000$
 
 ### Sablon
-Indulj ki az előre megadott sablon kódból! Ne változtass a főprogramon semmit, mert különben nem lesz elfogadva. Egy `prime` nevű függvényt kell definiálnod magadnak, ami paraméterként kapja az $N$ értékét. A visszatérési érték pedig legyen "igaz" ha $N$ prím, különben pedig "hamis".
+Indulj ki az előre megadott sablon kódból! Ne változtass a főprogramon semmit, mert különben nem lesz elfogadva. Egy `prime` nevű függvényt kell definiálnod magadnak, ami paraméterként kapja az $N$ értékét. A visszatérési érték pedig legyen logikai típusú, igaz ha $N$ prím, különben pedig hamis.

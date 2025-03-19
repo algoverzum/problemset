@@ -1,4 +1,12 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    Az adatbázist tároljuk egy set -ben: `set<int> database;`. Minden műveletre van függvény, ami ráadásul gyors is.
+  py: |
+    Az adatbázist tároljuk egy set -ben: `database = set()`. Minden műveletet meg tudunk vele csinálni egyszerűen és hatékonyan.
+- cpp: Hozzáadni az insert függvénnyel lehet (`database.insert(x)`), ha már benne van az elem, akkor nem csinál semmit.
+  py: Hozzáadni az add függvénnyel lehet (`database.add(x)`), ha már benne van az elem, akkor nem csinál semmit.
+- cpp: Törölni az erase függvénnyel lehet (`database.erase(x)`), ha nincs benne az elem, akkor nem csinál semmit.
+  py: A törlésre van a remove és a discard függvény is, viszont a remove hibát ad, ha nincs benne a törölni kívánt elem, ezért most nekünk a discard függvényt érdemes használni (`database.discard(x)`).
+- cpp: A count függvény 0-t vagy 1-et ad vissza attól függően, hogy benne van-e az elem (`database.count(x)`).
+  py: |
+    Az `in` operátorral könnyű ellenőrizni, hogy benne van-e egy kérdéses elem a set-ben (`if x in database: ...`)

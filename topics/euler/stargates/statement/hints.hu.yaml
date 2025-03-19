@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- 'Tekintsük azt a gráfot, amelynek a bolygók a csúcsai és a csillagkapuk az élei. Az a kérdés, hogy van-e olyan körséta a gráfban, mely minden élen pontosan egyszer megy át. (Megjegyzés: a neve ennek Euler-körséta.) Minek kell teljesülnie a fokszámokra? És kell-e még más feltétel?'
+- Ha egy csúcsba k-szor járok közben, akkor tekinthetek rá úgy, hogy k-szor jöttem be és k-szor mentem ki. Ezek mind különböző élek. A kezdőcsúcsnál is tekinthetjük így, csak ott a legutolsó beérkezés tartozik a legelső kimenéshez.
+- Tehát ha k-szor járok egy csúcsban, akkor 2k élnek kell kapcsolódnia hozzá. Vagyis minden csúcs fokszámának párosnak kell lennie. Ez elégséges feltétel?
+- 'Fontos még, hogy összefüggőnek kell lennie a gráfnak. Ezzel együtt viszont már elégséges a feltétel, de ezt nem is olyan könnyű bizonyítani, itt megtalálható ez a bizonyítás: https://hu.wikipedia.org/wiki/Euler-k%C3%B6r '

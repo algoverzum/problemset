@@ -9,7 +9,7 @@ A standard bemenet első sorában az első kereskedő által árult gyümölcsö
 A standard kimenet első sorába azon gyümölcsök $K$ számát kell kiírni, amelyek csak az egyik kereskedőnél kaphatók! A következő $K$ sorba egy-egy ilyen gyümölcs nevét kell kiírni, **ábécé sorrendben**! Minden nevet csak egyszer szabad kiírni!
 
 ### Korlátok
-* $1 \le N,M \le 10^4$ <br>
+* $1 \le N,M \le 10^6$ <br>
 * A gyümölcsök nevei az angol ábécé kisbetűiből állnak és legfeljebb 100 karakter hosszúak.
 
 ### Példa bemenet

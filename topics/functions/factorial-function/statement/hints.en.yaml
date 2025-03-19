@@ -1,4 +1,4 @@
 - Let the function have a `result` variable for the result. What should be its initial value? Multiply by all numbers from 1 to n.
-- Write for cycles for the multiplications. Then we can use the `return` statement to return the calculated value.
+- Write a for loop for the multiplications. Then we can use the `return` statement to return the calculated value.
 - cpp: Make sure that the type of the `result` variable is `long long`, so that there is no overflow when performing multiplications on large numbers.
   py: Make sure that the for loop goes up to n, this requires `range(1, n + 1)`.

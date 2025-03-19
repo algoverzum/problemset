@@ -11,11 +11,13 @@ usage = """Generator for "word-lookup".
 Parameters:
 * A (number of word pairs)
 * B (number of words in the translation)
+* C (alphabet size)
 * S (seed)
 
 Constraint:
 * %d <= A <= %d
 * %d <= B <= %d
+* 4 <= C <= 26
 """ % (
     MIN,
     MAX_N,
@@ -24,10 +26,12 @@ Constraint:
 )
 
 
-def run(A, B):
+def run(A, B, C):
+    alphabet = sample("abcdefghijklmnopqrstuvwxyz", C)
+
     def generate_random_string():
         length = randint(1, 10)
-        return ''.join(choice('abcdefghijklmnopqrstuvwxyz') for _ in range(length))
+        return "".join(choice(alphabet) for _ in range(length))
 
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
@@ -40,17 +44,17 @@ def run(A, B):
         word = generate_random_string()
         english_words.add(word)
     english_words = list(english_words)
-    
+
     alien_words = set()
     while len(alien_words) < A:
         word = generate_random_string()
         alien_words.add(word)
     alien_words = list(alien_words)
-    
+
     english_words.sort()
     for ew, aw in zip(english_words, alien_words):
         print(ew, aw)
-    
+
     print(B)
     for i in range(B):
         print(choice(english_words))

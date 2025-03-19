@@ -3,7 +3,7 @@
 
 ### Bemenet
 A bemenet első sorában egy szám van, a folyón kijelölt pontok száma: $N$.
-A második sorban $N$ darab szám van, az egyes pontokon mért szélesség: $W_1, W_2, \ldots W_N$.
+A második sorban $N$ darab szám van, az egyes pontokon mért szélesség: $W_1, W_2, \ldots, W_N$.
 
 ### Kimenet
 Egyetlen számot kell kiírnod, a vízerőmű építésére megfelelő helyek számát, azaz az olyan mérési pontok számát, ahol a mért szélesség szigorúan nagyobb, mint az előtte és utána lévő ponton mért szélesség.

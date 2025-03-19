@@ -39,13 +39,13 @@ def run(N, M, A, B):
         assert eval(row[2:]), row[2:]
 
     print(N, M)
-    unique_numbers = sample(range(1, A), B)
-    list1 = sample(unique_numbers, min(A, B))
-    list2 = sample(unique_numbers, min(B, B))
-    while len(list1) < N:
-        list1.append(choice(unique_numbers))
-    while len(list2) < M:
-        list2.append(choice(unique_numbers))
+    assert A >= B
+    assert B >= N
+    assert B >= M
+
+    unique_numbers = sample(range(1, A + 1), B)
+    list1 = sample(unique_numbers, N)
+    list2 = sample(unique_numbers, M)
     shuffle(list1)
     shuffle(list2)
     print(*list1)

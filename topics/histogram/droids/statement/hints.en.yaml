@@ -1,0 +1,6 @@
+---
+- cpp: For each droid type we want to have a counter. For this we can create an 11-element vector. We can count the occurrences while reading the input.
+  py: For each droid type we want to have a counter. For this we can create an 11-element list with zeros. What should we do as we process the input?
+- cpp: By using the current droid type as an index for the vector, we can increment the corresponding counter.
+  py: By using the current droid type as an index for the list of counters, we can increment the corresponding counter.
+- At the end, perform a maximum selection and print the highest counter value.

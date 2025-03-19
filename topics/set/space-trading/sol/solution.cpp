@@ -6,6 +6,8 @@
 using namespace std;
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
     int n, m;
     cin >> n >> m;
     set<int> first_ship, second_ship;
@@ -25,6 +27,7 @@ int main() {
             intersection.push_back(id);
         }
     }
+    cout << intersection.size() << "\n";
     for (int id : intersection) {
         cout << id << " ";
     }

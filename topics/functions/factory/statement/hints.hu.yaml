@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    Egy számlálós for ciklussal menjünk végig az indexeken (`for (int i = 0; i < numbers.size(); i++)`). Ha az adott elem páros, akkor rögtön visszaadhatjuk az indexét (`return i;`).
+  py: |
+    Egy számlálós for ciklussal menjünk végig az indexeken (`for i in range(len(numbers)):`). Ha az adott elem páros, akkor rögtön visszaadhatjuk az indexét (`return i`).
+- Mivel a return utasítás kilép a függvényből, ezért a for ciklus végeztével biztosak lehetünk benne, hogy nincs páros szám a listában, és visszaadhatunk -1 -et.
