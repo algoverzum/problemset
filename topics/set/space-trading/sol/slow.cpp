@@ -10,23 +10,23 @@ int main() {
     cin.tie(nullptr);
     int n, m;
     cin >> n >> m;
-    set<int> first_ship, second_ship;
+    vector<int> first_ship(n), second_ship(m);
     for (int i = 0; i < n; i++) {
-        int num;
-        cin >> num;
-        first_ship.insert(num);
+        cin >> first_ship[i];
     }
     for (int i = 0; i < m; i++) {
-        int num;
-        cin >> num;
-        second_ship.insert(num);
+        cin >> second_ship[i];
     }
+    if (n < m)
+        swap(first_ship, second_ship);
     vector<int> intersection;
     for (int id : first_ship) {
-        if (second_ship.count(id) != 0) {
+        if (find(second_ship.begin(), second_ship.end(), id) !=
+            second_ship.end()) {
             intersection.push_back(id);
         }
     }
+    sort(intersection.begin(), intersection.end());
     cout << intersection.size() << "\n";
     for (int id : intersection) {
         cout << id << " ";

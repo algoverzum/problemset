@@ -1,4 +1,16 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Iterate through one of the sequences and check whether each element exists in the other. What data structure would be efficient for this task?
+  py: Convert both lists into sets and take their intersection.
+- cpp: Store the elements in a `set<int>`. Use the `.count()` function to check whether a specific element exists in the set.
+  py: |
+    We can read a ship's contents into a set like this: `first_ship = set([int(x) for x in input().split()])`
+- cpp: |
+    ```cpp
+    for (int id : first_ship) {
+        if (second_ship.count(id) != 0) {
+            intersection.push_back(id);
+        }
+    }
+    ```
+  py: |
+    Use the `intersection` function to find the common elements between two sets: `first_ship.intersection(second_ship)`. Make sure to print the result in sorted order.

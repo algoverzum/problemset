@@ -4,22 +4,19 @@
 using namespace std;
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
     int n;
     cin >> n;
     set<int> database;
     for (int i = 0; i < n; i++) {
-        int y, x;
-        cin >> y >> x;
-        if (y == 1)
+        int t, x;
+        cin >> t >> x;
+        if (t == 1)
             database.insert(x);
-        if (y == 2)
+        else if (t == 2)
             database.erase(x);
-        if (y == 3) {
-            if (database.count(x)) {
-                cout << "1" << "\n";
-            } else {
-                cout << "0" << "\n";
-            }
-        }
+        else
+            cout << database.count(x) << "\n";
     }
 }

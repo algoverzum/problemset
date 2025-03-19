@@ -8,14 +8,14 @@ The Starfleet has assigned you to manage a list of classified starship registry 
 Your job as captain is to execute these commands efficiently, ensuring the Starfleet database remains accurate and up to date. (In the beggining the database is empty, no ship is registered.)
 
 ### Input
-The first line of the input contains $Q$, the number of queries. The next $Q$ lines contain 1 query each. Each query consists of two integers $y$ and $x$ where $y$ is the type of the query and $x$ is a ship registration number.
+The first line of the input contains $Q$, the number of queries. The next $Q$ lines contain 1 query each. Each query consists of two integers $t$ and $x$ where $t$ is the type of the query and $x$ is a ship registration number.
 
 ### Output
 For queries of type 3 print **1** if the registration number $x$ is present in the database and if the registration number is not present, then print **0**.
 Each query of type 3 should be printed in a new line.
 
 ### Constraints
-* $1 \le Q \le 10^5$
+* $1 \le Q \le 10^6$
 * $1 \le y \le 3$
 * $1 \le x \le 10^9$
 

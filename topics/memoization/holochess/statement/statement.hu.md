@@ -1,5 +1,5 @@
-## Hologram sakk
-Miután a Dejarik hologram sakkozott Chewbacca és R2-D2, úgy döntöttek, hogy egy egyszerűbb játékot játszanak a $100 \times 100$-as táblán. A játék szabályai a következők:
+## Holosakk
+Miután Dejarik holosakkozott Chewbacca és R2-D2, úgy döntöttek, hogy egy egyszerűbb játékot játszanak a $100 \times 100$-as táblán. A játék szabályai a következők:
 
 A játék úgy kezdődik, hogy egyetlen érme van az $(x,y)$ koordinátájú mezőn. A bal felső mező koordinátái $(1,1)$.
 
@@ -10,7 +10,7 @@ A játékosnak minden egyes lépésben az érmét az $(x,y)$ celláról a követ
 * $(x+1,y-2)$
 * $(x-1,y-2)$
 
-Figyelem: Az érmének a táblán belül kell maradnia!
+Megjegyzés: Az érmének a táblán belül kell maradnia!
 
 Az alábbi ábra mind a négy lehetséges lépést mutatja:
 
@@ -18,15 +18,15 @@ Az alábbi ábra mind a négy lehetséges lépést mutatja:
 
 Az 1. játékos kezd. Utána a játékosok felváltva lépkednek. Az a játékos, aki nem tud lépni, elveszíti a játékot.
 
-R2-D2-nek tesztelnie kell a kvantumprocesszorát. Az érme kezdeti koordinátái alapján, feltételezve, hogy mindketten optimálisan játszanak, határozzuk meg, hogy melyik játékos nyeri a játékot.
+R2-D2-nak tesztelnie kell a kvantumprocesszorát. Az érme kezdeti koordinátái alapján, feltételezve, hogy mindketten optimálisan játszanak, határozzuk meg, hogy melyik játékos nyeri a játékot!
 
 ### Bemenet
 A bemenet első sorában $T$, a tesztesetek száma szerepel.
 
-A következő $T$ sor mindegyike 2 szóközzel elválasztott egész számot tartalmaz: $x_i$ és $y_i$, az érme kezdőpozícióját adja meg.
+A következő $T$ sor mindegyike 2 szóközzel elválasztott egész számot tartalmaz: $x_i$ és $y_i$, az érme kezdőpozíciója.
 
 ### Kimenet
-Minden egyes tesztesethez új sort írj ki. Ha az első játékos a győztes, írd ki, hogy "First". Ellenkező esetben írd ki, hogy "Second".
+Minden egyes tesztesethez egy sort írj ki. Ha az első játékos a győztes, írd ki, hogy "First". Ellenkező esetben írd ki, hogy "Second".
 
 ### Korlátok
 * $1 \le T, x_i, y_i \le 100$

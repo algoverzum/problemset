@@ -1,18 +1,21 @@
 ## Space Trading
-Two spaceships met in deep space and decided to trade. The on-board robots will automatically unpack the cargoes that are suitable for exchange, but those that are in the warehouses of both ships should be left in the warehouse. Create a program that decides which cargoes will stay in the warehouse based on the contents of the warehouses of the two ships in question.
+Two spaceships met in deep space and decided to trade. The first ship has $N$ *different* cargoes in its warehouse and the second ship has $M$ *different* cargoes. The goods are identified by numbers, and naturally same goods are identified by the same number, different goods by different numbers. The on-board robots will automatically unpack the cargoes that are suitable for exchange, but those that are in the warehouses of both ships should be left in the warehouse. Create a program that decides which cargoes will stay in the warehouse based on the contents of the warehouses of the two ships in question.
 
 ### Input
 The first line of the input contains two integers, the number of cargoes in the warehouses of the first and the second ships: $N$, $M$.
-The second line of the input contains $N$ integers, the codes of the cargoes in the warehouse of the first ship: $A_1, A_2, \dots, A_N$.
-The second line of the input contains $M$ integers, the codes of the cargoes in the warehouse of the second ship: $B_1, B_2, \dots, B_N$.
+The second line of the input contains $N$ distinct integers, the codes of the cargoes in the warehouse of the first ship: $A_1, A_2, \dots, A_N$.
+The second line of the input contains $M$ distinct integers, the codes of the cargoes in the warehouse of the second ship: $B_1, B_2, \dots, B_M$.
 
 ### Output
-In the first line of the output, write the number of cargoes that appear in both warehouses.
-In the second line of the output, write the codes of the cargoes **in increasing order** that are in the warehouses of both ships.
+In the first line of the output, print the number of cargoes that appear in both warehouses.
+In the second line of the output, print the codes of the cargoes **in increasing order** that are in the warehouses of both ships.
 
 ### Constraints
 * $1 \le N, M \le 10^5$
-* $1 \le A_i, B_i \le 10^9$
+* $1 \le A_i \le 10^9 (1 \le i \le N)$
+* $1 \le B_i \le 10^9 (1 \le i \le M)$
+* $A_i \ne A_j$, for every $i \ne j$
+* $B_i \ne B_j$, for every $i \ne j$
 
 ### Example input
     5 6

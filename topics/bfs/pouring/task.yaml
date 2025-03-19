@@ -1,9 +1,9 @@
 ---
 # General info
-name: starship-database
-title: Starship Database
+name: pouring
+title: Pouring
 title_translations:
-  hu: Űrhajó adatbázis
+  hu: Öntögetés
 
 # Technical info
 memory_limit: 256
