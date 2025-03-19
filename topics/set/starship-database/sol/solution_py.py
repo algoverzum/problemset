@@ -4,12 +4,12 @@
 n = int(input())
 database = set()
 for i in range(n):
-    y, x = [int(z) for z in input().split()]
-    if y == 1:
+    t, x = [int(z) for z in input().split()]
+    if t == 1:
         database.add(x)
-    elif y == 2:
+    elif t == 2:
         database.discard(x)
-    else:  # y == 3
+    else:
         if x in database:
             print(1)
         else:

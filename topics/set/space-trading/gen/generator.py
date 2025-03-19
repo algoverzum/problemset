@@ -40,15 +40,12 @@ def run(N, M, A, B):
 
     print(N, M)
     assert A >= B
-    unique_numbers = sample(range(1, A), B)
-    list1 = sample(unique_numbers, min(N, B))
-    list2 = sample(unique_numbers, min(M, B))
-    while len(list1) < N:
-        list1.append(choice(unique_numbers))
-        # list1.append(randint(1,A))
-    while len(list2) < M:
-        list2.append(choice(unique_numbers))
-        # list2.append(randint(1,A))
+    assert B >= N
+    assert B >= M
+
+    unique_numbers = sample(range(1, A + 1), B)
+    list1 = sample(unique_numbers, N)
+    list2 = sample(unique_numbers, M)
     shuffle(list1)
     shuffle(list2)
     print(*list1)

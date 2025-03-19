@@ -10,14 +10,14 @@ Az a feladatod, hogy hatékonyan hajtsd végre ezeket a parancsokat, biztosítva
 ### Bemenet
 A bemenet első sora $Q$-t, a végrehajtandó parancsok számát tartalmazza.
 
-A következő $Q$ sor egyenként 1 lekérdezést tartalmaz. Minden lekérdezés két egész számból áll: $y$ és $x$, ahol $y$ a lekérdezés típusa, $x$ pedig a hajó lajstromszáma.
+A következő $Q$ sor egyenként 1 lekérdezést tartalmaz. Minden lekérdezés két egész számból áll: $t$ és $x$, ahol $t$ a lekérdezés típusa, $x$ pedig a hajó lajstromszáma.
 
 ### Kimenet
 A 3. típusú lekérdezések esetén **1**-t ír ki, ha az $x$ lajstromszám szerepel az adatbázisban, ha pedig nem szerepel, akkor **0**-t ír ki.
 Minden egyes 3. típusú lekérdezést új sorban kell kiírni.
 
 ### Korlátok
-* $1 \le Q \le 10^5$
+* $1 \le Q \le 10^6$
 * $1 \le y \le 3$
 * $1 \le x \le 10^9$
 

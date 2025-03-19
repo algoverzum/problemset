@@ -1,4 +1,16 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Menjünk végig az egyik sorozaton, és mindegyik elemre ellenőrizzük, hogy bent van-e a másikban. Ahhoz, hogy ezt hatékonyan el tudjuk dönteni, milyen adatszerkezetet érdemes használni?
+  py: Mindkét listából csináljunk set-et, majd vegyük a metszetüket.
+- cpp: Tároljuk `set<int>` -ben az elemeket. A `.count()` függvénnyel le tudjuk kérdezni egy-egy elemről, hogy benne van-e a set-ben.
+  py: |
+    Így lehet például beolvasni az egyik hajó tartalmát egy set-be: `first_ship = set([int(x) for x in input().split()])`
+- cpp: |
+    ```cpp
+    for (int id : first_ship) {
+        if (second_ship.count(id) != 0) {
+            intersection.push_back(id);
+        }
+    }
+    ```
+  py: |
+    Az intersection függvénnyel tudjuk venni két set metszetét: `first_ship.intersection(second_ship)`. Figyeljünk arra, hogy rendezve kell kiírni.
