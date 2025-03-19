@@ -18,7 +18,7 @@ def solv(x, y):
 
 
 for t in range(int(input())):
-    x, y = [int(a) for a in input().split()]
+    x, y = map(int, input().split())
     ans = solv(x, y)
     if ans == 2:
         print("Second")

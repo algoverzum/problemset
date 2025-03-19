@@ -36,9 +36,9 @@ int main() {
         cin >> x >> y;
         int ans = solv(x, y);
         if (ans == 2) {
-            cout << "Second" << endl;
+            cout << "Second\n";
         } else {
-            cout << "First" << endl;
+            cout << "First\n";
         }
     }
 
