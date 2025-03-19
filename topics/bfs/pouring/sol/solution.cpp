@@ -3,7 +3,6 @@
 #include <queue>
 #include <vector>
 using namespace std;
-using pii = pair<int, int>;
 
 int main() {
     int n;
@@ -11,7 +10,7 @@ int main() {
     int a, b;
     cin >> a >> b;
     vector<vector<int>> pours(a + 1, vector<int>(b + 1, -1));
-    queue<pii> q;
+    queue<pair<int, int>> q;
     q.push({0, 0});
     pours[0][0] = 0;
     int solution = -1;

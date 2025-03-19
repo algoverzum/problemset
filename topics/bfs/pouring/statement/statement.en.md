@@ -1,5 +1,5 @@
 ## Pouring
-In a distant galaxy, on the planet of Zog, the wise and benevolent King Zorg challenges his people to a task of great ingenuity. The task is to measure exactly $N$ units of Zognium, a rare and precious fluid, using only two cans. These cans have volumes of $A$ and $B$ units, which are the king's two favorite numbers.
+In a distant galaxy, on the planet of Zog, the wise and benevolent King Zorg challenges his people to a task of great ingenuity. The task is to measure exactly $N$ units of Zognium, a rare and precious fluid, using only two cans. These cans have volumes of $A$ and $B$ units, the king's two favorite numbers.
 
 The winner of the challenge is the one who can measure exactly $N$ units of Zognium into can $B$ with the minimum number of pours. The six possible actions you can take with the cans are:
 
