@@ -4,12 +4,12 @@ A USS Enterprise fedélzetére új rakomány érkezett. A szállítmány minden 
 A Csillagflotta két listát is átadott:
 
 * $A$ halmaz (előnyben részesített készletek): Ezek a nagy értékű vagy alapvető fontosságú szövetségi áruk.
-* $B$ halmaz (korlátozott rakomány): Ezek a nem kívánt vagy problémás áruk, amelyek problémákat okozhatnak.
+* $B$ halmaz (korlátozott rakomány): Ezek a nem kívánt vagy problémás áruk, amelyek gondokat okozhatnak.
 
-A rakomány kezdeti boldogság faktora 0. Ahogy megvizsgálod az egyes ládákat:
+A rakomány kezdeti boldogság faktora **0**. Ahogy megvizsgálod az egyes ládákat:
 
-* Ha az azonosítója az $A$ halmazban van, akkor a boldogság faktor 1-gyel nő (ami növeli a küldetés sikerét).
-* Ha a láda azonosítója a $B$ halmazban van, a boldogságérték 1-gyel csökken (potenciális problémát okoz).
+* Ha az azonosítója az $A$ halmazban van, akkor a boldogság faktor **1**-gyel nő (ami növeli a küldetés sikerét).
+* Ha a láda azonosítója a $B$ halmazban van, a boldogságérték **1**-gyel csökken (potenciális problémát okoz).
 * Ellenkező esetben a rakomány boldogság faktora változatlan marad.
 
 A végén jelentsed a végső boldogság faktort.

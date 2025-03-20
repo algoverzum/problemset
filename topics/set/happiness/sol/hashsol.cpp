@@ -1,6 +1,6 @@
 // @check-accepted: *
 #include <iostream>
-#include <set>
+#include <unordered_set>
 #include <vector>
 using namespace std;
 
@@ -11,13 +11,13 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> S[i];
     }
-    set<int> A;
+    unordered_set<int> A;
     for (int i = 0; i < m; i++) {
         int x;
         cin >> x;
         A.insert(x);
     }
-    set<int> B;
+    unordered_set<int> B;
     for (int i = 0; i < m; i++) {
         int x;
         cin >> x;

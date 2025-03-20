@@ -1,6 +1,7 @@
-// @check-accepted: *
+// @check-accepted: examples
+// @check-time-limit-exceeded: all
+#include <algorithm>
 #include <iostream>
-#include <set>
 #include <vector>
 using namespace std;
 
@@ -11,24 +12,20 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> S[i];
     }
-    set<int> A;
+    vector<int> A(m);
     for (int i = 0; i < m; i++) {
-        int x;
-        cin >> x;
-        A.insert(x);
+        cin >> A[i];
     }
-    set<int> B;
+    vector<int> B(m);
     for (int i = 0; i < m; i++) {
-        int x;
-        cin >> x;
-        B.insert(x);
+        cin >> B[i];
     }
     int happiness = 0;
     for (int cargo : S) {
-        if (A.count(cargo)) {
+        if (find(A.begin(), A.end(), cargo) != A.end()) {
             happiness += 1;
         }
-        if (B.count(cargo)) {
+        if (find(B.begin(), B.end(), cargo) != B.end()) {
             happiness -= 1;
         }
     }

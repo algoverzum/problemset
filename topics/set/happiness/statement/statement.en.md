@@ -6,10 +6,10 @@ Starfleet has provided two reference lists:
 * Set $A$ (Preferred Supplies): These are high-value or essential Federation goods.
 * Set $B$ (Restricted Cargo): These are unwanted or problematic items that could cause issues.
 
-Your initial happiness rating is 0. As you inspect each crate:
+Your initial happiness rating is **0**. As you inspect each crate:
 
-* If its ID is in Set $A$, the happiness rating increases by 1 (boosting mission success).
-* If its ID is in Set $B$, the happiness rating decreases by 1 (causing potential trouble).
+* If its ID is in Set $A$, the happiness rating increases by **1** (boosting mission success).
+* If its ID is in Set $B$, the happiness rating decreases by **1** (causing potential trouble).
 * Otherwise, the cargo rating remains unchanged.
 
 At the end, report your final happiness rating.
