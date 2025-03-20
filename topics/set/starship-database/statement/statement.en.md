@@ -16,7 +16,7 @@ Each query of type 3 should be printed in a new line.
 
 ### Constraints
 * $1 \le Q \le 10^6$
-* $1 \le y \le 3$
+* $1 \le t \le 3$
 * $1 \le x \le 10^9$
 
 ### Example input

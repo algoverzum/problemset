@@ -18,7 +18,7 @@ Minden egyes 3. típusú lekérdezést új sorban kell kiírni.
 
 ### Korlátok
 * $1 \le Q \le 10^6$
-* $1 \le y \le 3$
+* $1 \le t \le 3$
 * $1 \le x \le 10^9$
 
 ### Példa bemenet
