@@ -64,10 +64,10 @@ def run(A, B, C):
         assert eval(row[2:]), row[2:]
 
     if C == 0:
-        # random testcase
+        # easy (n = a or b)
         a = randint(A, B)
         b = randint(A, B)
-        n = randint(1, b)
+        n = choice([a, b])
         print(n)
         print(a, b)
     if C == 1:
@@ -104,6 +104,20 @@ def run(A, B, C):
         a = randint(A, B)
         b = randint(A, B)
         n = randint(max(a, b) + 1, MAX)
+        print(n)
+        print(a, b)
+    if C == 4:
+        # random possible testcase
+        a = randint(A, B)
+        b = randint(A, B)
+        matrix = get_solution_matrix(a, b)
+        possible = []
+        for j in range(b + 1):
+            if all(matrix[i][j] == -1 for i in range(a + 1)):
+                continue
+            possible.append(j)
+        possible = sorted(possible)
+        n = choice(possible[: len(possible) // 2])
         print(n)
         print(a, b)
 
