@@ -1,0 +1,14 @@
+---
+id: map
+name: Map
+problems:
+  - problem_id: most-frequent2
+    type: REQUIRED
+  - problem_id: most-frequent3
+    type: REQUIRED
+  - problem_id: droid-repair
+    type: REQUIRED
+prerequisites:
+dependents:
+visualization:
+# Notes:

@@ -1,13 +1,13 @@
 ---
 # General info
-name: happiness
-title: Happiness
+name: droid-repair
+title: Droid Repair
 title_translations:
-  hu: Boldogság
+  hu: Robot selejtezés
 
 # Technical info
 memory_limit: 256
-time_limit: 2.0
+time_limit: 1.0
 infile: ""
 outfile: ""
 
