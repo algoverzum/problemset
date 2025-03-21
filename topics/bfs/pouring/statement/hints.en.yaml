@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Let's try representing the problem as a graph. What should the vertices of the graph be?
+- 'The vertices of the graph should represent different states, and the edges should represent transitions between them. A state can be described by a pair of numbers: (x, y) means that the first can contains *x* units of liquid, and the second can contains *y* units.'
+- From the state (x, y), possible next states include (A, y), (x, B), (0, y), (x, 0), as well as the states corresponding to the two types of pouring between the cans.
+- We are looking for the shortest path in this graph from the (0,0) vertex to a vertex of the form (x, B).
+- To achieve this, we should use Breadth-First Search.

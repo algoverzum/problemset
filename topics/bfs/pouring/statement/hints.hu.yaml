@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Próbáljuk gráffal ábrázolni a feladatot. Mik legyenek a gráf csúcsai?
+- 'A gráf csúcsai az egyes állapotok legyenek, az élek köztük lévő átmenetek. Egy állapot egy számpárral írható le: (x,y) számpár azt jelenti, hogy az első kannában x egység, a másodikban y egység folyadék van.'
+- Az (x,y) állapotból egy lépéssel elérhető például az (A,y), (x,B), (0,y), (x,0) állapot, és még a kétféle áttöltésnek megfelelő állapot is.
+- Legrövidebb utat keresünk ebben a gráfban a (0,0) csúcs és egy (x,B) alakú csúcs között.
+- Használjunk ehhez szélességi bejárást.
