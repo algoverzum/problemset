@@ -2,20 +2,21 @@
 // @check-time-limit-exceeded: all
 #include <iostream>
 #include <vector>
+using namespace std;
 
 int main() {
     int n;
-    std::cin >> n;
+    cin >> n;
 
-    std::vector<int> droids;
+    vector<int> droids;
 
     for (int i = 0; i < n; ++i) {
         int num;
-        std::cin >> num;
+        cin >> num;
 
         for (int j = 0; j < droids.size(); ++j) {
             if (droids[j] == num) {
-                std::cout << j << " " << i << std::endl;
+                cout << j << " " << i << endl;
                 return 0;
             }
         }
@@ -23,6 +24,6 @@ int main() {
         droids.push_back(num);
     }
 
-    std::cout << -1 << std::endl;
+    cout << -1 << endl;
     return 0;
 }

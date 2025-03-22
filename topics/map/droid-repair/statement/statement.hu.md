@@ -6,7 +6,7 @@ A bemenet első sora $N$, a listán szereplő azonosítók száma.
 A második sora $N$ azonosítót tartalmaz szóközzel elválasztva: $A_0, A_1, \ldots, A_{N-1}$.
 
 ### Kimenet
-Írj ki **-1**-et ha a listán minden azonosító különböző. Különben pedig a legelső ismétlödő azonosító első és második előfordulásának **indexeit** egy sorban.
+Írj ki **-1**-et ha a listán minden azonosító különböző. Különben pedig a legelső ismétlődő azonosító első és második előfordulásának **indexeit** egy sorban.
 
 ### Korlátok
 * $1 \le N \le 10^5$
