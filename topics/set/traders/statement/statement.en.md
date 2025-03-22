@@ -14,7 +14,7 @@ The first line should contain an integer $K$, the number of unique fruits availa
 The next $K$ lines should list these fruit names in alphabetical order, with each fruit appearing only once.
 
 ### Constraints
-* $1 \leq N, M \leq 10^6$ <br>
+* $1 \leq N, M \leq 10^5$ <br>
 * Fruit names consist only of lowercase English letters and are at most 100 characters long.
 
 ### Example input
