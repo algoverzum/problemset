@@ -31,4 +31,4 @@ A kertnek két 3 m hosszú oldala és két 5 m hosszú oldala van, így a kerül
 
 Az alábbi képen látható módon 15 fát ültethet:
 
-![grid](garden.png)
+![](garden.png)

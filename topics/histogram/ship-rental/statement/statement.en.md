@@ -31,4 +31,4 @@ In the first and only line of the output, write the number of the day on which t
 Three ships were rented on the fourth day and also on the eigth day, but we need to print the smaller of these. The image below illustrates the occupancy of ships on each day.
 
 
-![grid](ship-rental.png)
+![](ship-rental.png)

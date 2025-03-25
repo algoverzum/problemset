@@ -31,4 +31,4 @@ The garden has two sides of length 3m and two sides of length 5m, so the perimet
 
 She can plant 15 trees as the image below shows:
 
-![grid](garden.png)
+![](garden.png)
