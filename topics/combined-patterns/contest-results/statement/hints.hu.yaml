@@ -1,5 +1,5 @@
 ---
-- Olvassuk be ay adatokat mindkét sorból, majd menjünk végig a kérdéses versenyzőkön, és mindegyikre határozzuk meg az indexét az eredménylistában. Használjunk erre a keresésre egy beépített függvényt!
+- Olvassuk be az adatokat mindkét sorból, majd menjünk végig a kérdéses versenyzőkön, és mindegyikre határozzuk meg az indexét az eredménylistában. Használjunk erre a keresésre egy beépített függvényt!
 - cpp: |
     C++ -ban a `find` függvény használható erre: `auto it = find(result.begin(), result.end(), name)`. Ez egy iterátorral tér vissza, ami az adott elemre mutat, vagy az `end()`-re, ha nem találja. Az indexet megkaphatjuk úgy, hogy kivonjuk belőle a `begin()`-t: `int index = it - result.begin()`.
   py: |
