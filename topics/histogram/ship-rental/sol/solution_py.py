@@ -3,7 +3,7 @@
 
 no_of_ships, days, rentals = [int(x) for x in input().split()]
 
-ships = [-1] + [0] * days
+ships = [0] * (days + 1)
 
 for i in range(rentals):
     ship_ID, firstday, lastday = [int(x) for x in input().split()]

@@ -1,5 +1,5 @@
-// @check-accepted: examples
-// @check-time-limit-exceeded: all
+// @check-accepted: examples small
+// @check-time-limit-exceeded: no-limits
 #include <algorithm>
 #include <iostream>
 #include <vector>

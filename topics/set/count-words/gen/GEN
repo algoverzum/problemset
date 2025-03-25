@@ -5,15 +5,19 @@
 #STNAME: examples
 #COPY: statement/input0.txt
 
-# Subtask 2: all
-#ST: 100
-#STNAME: all
+# Subtask 2: N <= 100
+#ST: 50
+#STNAME: small
 1      1      1
 5      5      2
 5      1      3
 5      3      4
 10     7      5
 100    31     6
+
+# Subtask 3: N <= 100000
+#ST: 50
+#STNAME: no-limits
 1000   802    7
 10000  103    8
 100000 91     9

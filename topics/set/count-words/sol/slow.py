@@ -1,6 +1,6 @@
 #!/usr/bin/env pypy3
-# @check-accepted: examples
-# @check-time-limit-exceeded: all
+# @check-accepted: examples small
+# @check-time-limit-exceeded: no-limits
 
 n = int(input())
 words = input().split()

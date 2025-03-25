@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Let's put the words into a set.
+- cpp: The solution is the size of the set (`s.size()` if `s` is the name of the set).
+  py: The solution is the size of the set (`len(s)` if `s` is the name of the set).
+- cpp: When reading input, use `s.insert(word)` to insert a `word` string into the `s` set.
+  py: |
+    When reading input, we can create a set from the words like this: `set(input().split())`

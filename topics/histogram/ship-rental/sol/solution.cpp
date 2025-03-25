@@ -6,8 +6,8 @@
 using namespace std;
 
 int main() {
-    int no_of_ships, days, rentals;
-    cin >> no_of_ships >> days >> rentals;
+    int n_of_ships, days, rentals;
+    cin >> n_of_ships >> days >> rentals;
 
     vector<int> ships(days + 1, 0);
 
@@ -19,8 +19,11 @@ int main() {
         }
     }
 
-    cout << distance(ships.begin(), max_element(ships.begin(), ships.end()))
-         << endl;
+    int maxday = 1;
+    for (int i = 2; i <= days; i++)
+        if (ships[i] > ships[maxday])
+            maxday = i;
+    cout << maxday << "\n";
 
     return 0;
 }

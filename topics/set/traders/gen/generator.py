@@ -29,7 +29,7 @@ Constraint:
 )
 
 
-def random_word(max_length=100):
+def random_word(max_length=20):
     length = randint(1, max_length)
     return "".join(choices(string.ascii_lowercase, k=length))
 

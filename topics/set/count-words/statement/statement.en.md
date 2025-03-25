@@ -9,7 +9,7 @@ The second line contains $N$ space-separated words.
 You must print a single number: the count of unique words in the message.
 
 ### Constraints
-* $1 \leq N \leq 100000$
+* $1 \leq N \leq 100\,000$
 * Each word consists of lowercase letters of the English alphabet and is at most 20 characters long.
 
 

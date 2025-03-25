@@ -28,4 +28,6 @@ A kimenet egyetlen sorába annak a napnak a sorszámát kell kiírni, amikor a l
     4
 
 ### A példa magyarázata
-A negyedik napon három hajót béreltek. Igazolható, hogy ez a maximum.
+A negyedik napon három hajót béreltek, a nyolcadik napon is ugyanennyit, de a kettő közül a kisebbet kell kiírni. Az alábbi kép szemlélteti az űrhajók foglaltságát az egyes napokon.
+
+![grid](ship-rental.png)

@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Mindkét kereskedő gyümölcseit tegyük be egy-egy set-be.
+- cpp: Menjünk végig először az első set-en, és válogassuk ki belőle azokat az elemeket, amelyek nincsenek benne a második set-ben (tegyük be őket egy megoldás vector-ba). Ugyanezt csináljuk meg a második set-tel.
+  py: Menjünk végig először az első set-en, és válogassuk ki belőle azokat az elemeket, amelyek nincsenek benne a második set-ben (tegyük be őket egy megoldás listába). Ugyanezt csináljuk meg a második set-tel.
+- cpp: Az `s.count(elem)` parancsot használhatjuk arra, hogy eldöntsük, hogy az `s` set-ben benne van-e egy elem. Ez 0-t vagy 1-et ad vissza.
+  py: Az `elem in s` parancsot használhatjuk arra, hogy eldöntsük, hogy az `s` set-ben benne van-e egy elem. Ennek eredménye igaz vagy hamis.
+- A végén ne felejtsük el rendezni a megoldást a kiírás előtt.

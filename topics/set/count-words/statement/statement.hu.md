@@ -9,7 +9,7 @@ A bemenet második sorában $N$ szóközzel elválasztott szó van.
 Egyetlen számot kell kiírnod, az üzenetben szereplő különböző szavak számát.
 
 ### Korlátok
-* $1 \le N \le 100000$
+* $1 \le N \le 100\,000$
 * minden szó az angol ábécé kisbetűit tartalmazza, és minden szó legfeljebb 20 karakterből áll
 
 ### Példa bemenet

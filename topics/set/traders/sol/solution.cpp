@@ -24,18 +24,18 @@ int main() {
     }
 
     vector<string> uniqueFruits;
-    for (const auto &f : fruits1) {
+    for (string f : fruits1) {
         if (!fruits2.count(f))
             uniqueFruits.push_back(f);
     }
-    for (const auto &f : fruits2) {
+    for (string f : fruits2) {
         if (!fruits1.count(f))
             uniqueFruits.push_back(f);
     }
     sort(uniqueFruits.begin(), uniqueFruits.end());
 
     cout << uniqueFruits.size() << '\n';
-    for (const string &f : uniqueFruits) {
+    for (string f : uniqueFruits) {
         cout << f << '\n';
     }
 

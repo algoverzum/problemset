@@ -2,10 +2,10 @@
 # @check-accepted: *
 
 N = int(input())
-fruits1 = {input() for _ in range(N)}
+fruits1 = set([input() for _ in range(N)])
 
 M = int(input())
-fruits2 = {input() for _ in range(M)}
+fruits2 = set([input() for _ in range(M)])
 
 unique_fruits = sorted((fruits1 - fruits2) | (fruits2 - fruits1))
 

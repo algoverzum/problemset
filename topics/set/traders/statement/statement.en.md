@@ -1,5 +1,5 @@
 ## Traders
-On a distant planet, two fruit traders sell special intergalactic produce. Since they transport their goods from different worlds, their selections are partly different. Your task is to create a program that determines which fruits are exclusively available at one trader but not the other.
+On a distant planet, two fruit traders sell special intergalactic products. Since they transport their goods from different worlds, their selections are partly different. Your task is to create a program that determines which fruits are exclusively available at one trader but not the other.
 
 ### Input
 The first line contains an integer $N$, the number of fruits sold by the first trader.
@@ -14,8 +14,8 @@ The first line should contain an integer $K$, the number of unique fruits availa
 The next $K$ lines should list these fruit names in alphabetical order, with each fruit appearing only once.
 
 ### Constraints
-* $1 \leq N, M \leq 10^5$ <br>
-* Fruit names consist only of lowercase English letters and are at most 100 characters long.
+* $1 \leq N, M \leq 100\,000$
+* Fruit names consist only of lowercase English letters and are at most 20 characters long.
 
 ### Example input
     6
@@ -40,4 +40,4 @@ The next $K$ lines should list these fruit names in alphabetical order, with eac
 
 
 ### Explanation of the example
-The first trader sells only apple and plum. The second sells only almond and blackberry.
+Only the first trader sells apple and plum. Only the second sells almond and blackberry.

@@ -1,6 +1,6 @@
 ---
 - We don't even need to worry about the spacecraft ID numbers on the input. It's just important at which day the rental starts and which day ends.
-- cpp: Make a histogram vector that gives how many ships are busy on which day (e.g. `vector<int> ships (m+1,0)`)
+- cpp: Make a histogram vector that gives how many ships are busy on which day (e.g. `vector<int> ships(m+1,0)`)
   py: Make a histogram list of how many ships are busy on each day (e.g. `ships = [0] * (m+1)`)
 - cpp: When scanning an (a, b) rental interval, increment the elements of the ships vector by one from a to b.
   py: When scanning an (a, b) rental interval, increment the elements of the ships list by one from a to b.

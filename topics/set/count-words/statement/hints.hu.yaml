@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Tegyük be a szavakat egy set -be.
+- cpp: A set mérete lesz a megoldás (`s.size()` ha `s` a set neve).
+  py: A set mérete lesz a megoldás (`len(s)` ha `s` a set neve).
+- cpp: Beolvasáskor az `s.insert(word)` paranccsal tudunk betenni egy `word` stringet az `s` set-be.
+  py: |
+    Beolvasáskor akár így is tudunk egy set -et csinálni a szavakból: `set(input().split())`

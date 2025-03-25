@@ -5,5 +5,6 @@ MAXLENGTH = 20
 subtasks = [
     {},  # 1-based
     {},  # examples
+    dict(MAX=100),  # small
     {},
 ]

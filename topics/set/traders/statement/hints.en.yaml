@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Put the fruits of both traders into separate sets.
+- cpp: First, iterate through the first set and select the elements that are not in the second set (add them to a solution vector). Do the same for the second set.
+  py: First, iterate through the first set and select the elements that are not in the second set (add them to a solution list). Do the same for the second set.
+- cpp: Use the `s.count(elem)` command to check if an element is in the `s` set. This returns 0 or 1.
+  py: Use the `elem in s` command to check if an element is in the `s` set. This gives `True` or `False`.
+- Don't forget to sort the solution before printing it.
