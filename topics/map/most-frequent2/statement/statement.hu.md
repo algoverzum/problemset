@@ -11,7 +11,7 @@ A második sora $N$ azonosítót tartalmaz szóközzel elválasztva: $A_1, A_2,\
 Írd ki a listán szereplő leggyakoribb azonosítót. Ha több ilyen is lenne, akkor írd ki mindet egy sorba növekvő sorrendben. 
 
 ### Korlátok
-* $1 \le N \le 2 \ cdot 10^5$
+* $1 \le N \le 2 \cdot 10^5$
 * $-10^9 \le A_i \le 10^9$
 
 ### Példa bemenet
