@@ -1,5 +1,5 @@
 ## Kaszinó
-Egy távoli bolygón a helyiek szeretnek szerencsejátékozni, emiatt a kaszinóik tele vannak nyerőgépekkel. Minden gép egy zsetonnal működik. A helyiek azt hiszik, hogy a gépek véletlenszerűek, de neked sikerült megfejteteni a logikájukat! Ha egy `N` értékű zsetont helyezel be, a gép három zsetont ad ki: `N/2`, `N/3` és `N/4` értékben, mindegyik értéket lefelé kerekítve, ezzel biztosítva azt, hogy a kaszinók mindig előnyben legyenek.
+Egy távoli bolygón a helyiek szeretnek szerencsejátékozni, emiatt a kaszinóik tele vannak játékautomatákkal. Minden gép egy zsetonnal működik. A helyiek azt hiszik, hogy a gépek véletlenszerűek, de neked sikerült megfejteteni a logikájukat! Ha egy `N` értékű zsetont helyezel be, a gép három zsetont ad ki: `N/2`, `N/3` és `N/4` értékben, mindegyik értéket lefelé kerekítve, ezzel biztosítva azt, hogy a kaszinók mindig előnyben legyenek.
 
 Ezeket a zsetonokat a bolygó valutájára, az úgynevezett "Galaktikus Kreditre" is be lehet váltani, 1:1 arányban, de az átváltás után a valuta már nem használható zsetonok vásárlására.
 
