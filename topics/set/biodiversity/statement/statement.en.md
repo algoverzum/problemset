@@ -11,8 +11,8 @@ In the first line of the standard output, print the number of identifiers that a
 The second line should contain these identifiers in ascending order, separated by spaces. Each identifier must appear only once.
 
 ### Constraints
-* $1 \le N,M \le 1\,000\,000$
-* $1 \le A_i, B_i \le 100\,000\,000$
+* $1 \le N,M \le 200\,000$
+* $1 \le A_i, B_i \le 10^9$
 
 ### Example input
     5 6

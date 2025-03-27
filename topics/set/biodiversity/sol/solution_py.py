@@ -2,8 +2,8 @@
 # @check-accepted: *
 
 n, m = map(int, input().split())
-ids = set(map(int, input().split()))
-
-ids.update(map(int, input().split()))
-print(len(ids))
-print(*sorted(ids))
+a = set(map(int, input().split()))
+b = set(map(int, input().split()))
+all = a | b
+print(len(all))
+print(*sorted(all))

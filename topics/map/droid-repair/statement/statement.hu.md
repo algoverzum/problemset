@@ -3,7 +3,7 @@ A Galaktikus Birodalom robotjavító üzemében felírták az oda érkező robot
 
 ### Bemenet
 A bemenet első sora $N$, a listán szereplő azonosítók száma.
-A második sora $N$ azonosítót tartalmaz szóközzel elválasztva: $A_0, A_1, \ldots, A_{N-1}$.
+A második sora $N$ azonosítót tartalmaz szóközzel elválasztva: $A_1, A_2, \ldots, A_{N}$.
 
 ### Kimenet
 Írj ki **-1**-et ha a listán minden azonosító különböző. Különben pedig a legelső ismétlődő azonosító első és második előfordulásának **indexeit** egy sorban.

@@ -1,7 +1,7 @@
 ## Happiness
-You're a cargo officer aboard the USS Enterprise, responsible for tracking a shipment of supplies being transported across the galaxy. Each crate in the shipment is marked with an identification number.
+You're a cargo officer aboard the USS Enterprise, responsible for tracking a shipment of supplies being transported across the galaxy. There are $N$ crates in the shipment, and each one is marked with an identification number.
 
-Starfleet has provided two reference lists:
+Starfleet has provided two reference lists, each consisting of $M$ elements:
 
 * Set $A$ (Preferred Supplies): These are high-value or essential Federation goods.
 * Set $B$ (Restricted Cargo): These are unwanted or problematic items that could cause issues.
@@ -15,9 +15,9 @@ Your initial happiness rating is **0**. As you inspect each crate:
 At the end, report your final happiness rating.
 
 ### Input
-The first line contains integers $N$ and $M$ separated by a space.
-The second line contains $N$ integers, the the sequence $S$ of the shippment.
-The third and fourth lines contain $M$ integers, $A$ and $B$, respectively.
+The first line contains integers $N$ and $M$ separated by a space, the number of the crates and the length of the $A$ and $B$ lists.
+The second line contains $N$ integers, the sequence $S$ of the shipment.
+The third and fourth lines contain $M$ integers, the elements $A$ and $B$, respectively.
 
 ### Output
 Print a single integer, your total happiness.
@@ -25,8 +25,9 @@ Print a single integer, your total happiness.
 ### Constraints
 * $1 \le N \le 10^5$
 * $1 \le M \le 10^5$
-* $1 \le S_i, A_i, B_i \le 10^9$
-* $A$ and $B$ disjoint
+* $1 \le S_i \le 10^9 (1 \le i \le N)$
+* $1 \le A_i, B_i \le 10^9 (1 \le i \le M)$
+* $A$ and $B$ are disjoint, i.e. they don't have common elements
 
 ### Example input
     4 2

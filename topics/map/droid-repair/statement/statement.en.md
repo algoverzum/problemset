@@ -3,7 +3,7 @@ At the Galactic Empire's droid repair facility, the ID numbers of the robots arr
 
 ### Input
 The first line of the input is $N$, the number of IDs in the list.
-The second line contains $N$ IDs, separated by spaces: $A_0, A_1, \ldots, A_{N-1}$. 
+The second line contains $N$ IDs, separated by spaces: $A_1, A_2, \ldots, A_{N}$. 
 
 ### Output
 Print **-1** if all IDs in the list are different. Otherwise, the **indices** of the first and second occurrences of the first repeated ID in a row.
