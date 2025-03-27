@@ -1,8 +1,8 @@
 // @check-accepted: *
 #include <iostream>
+#include <map>
 #include <sstream>
 #include <unordered_map>
-// #include <map>
 #include <vector>
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
     int n, m;
     cin >> n;
     cin.ignore();
-    unordered_map<string, string> city_to_planet;
+    map<string, string> city_to_planet;
     for (int i = 0; i < n; ++i) {
         string line;
         getline(cin, line);

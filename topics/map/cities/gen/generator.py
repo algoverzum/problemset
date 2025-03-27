@@ -46,7 +46,7 @@ def run(A, B):
     print(A)
     for i in range(A):
         planet_data = []
-        word = createword()
+        word = createword()  # garantaltan uj
         planets.add(word)
         planet_data.append(word)
         wcount = randint(1, 1000)

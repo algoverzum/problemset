@@ -17,16 +17,20 @@ def run(f, st):
 
     N = int(next(f))
     assert MIN <= N <= MAX
+    cities = set()
     for i in range(N):
         row = next(f).split()
-        assert 2 <= len(row) <= 1001
+        assert 2 <= len(row) <= MAXC + 1
         for j in range(len(row)):
             assert 1 <= len(row[j]) <= 10
+        for j in range(1, len(row)):
+            cities.add(row[j])
     M = int(next(f))
     assert MIN <= M <= MAX
     for i in range(M):
         city = next(f).strip()
         assert 1 <= len(city) <= 10
+        assert city in cities
     assert next(f, None) is None
 
 

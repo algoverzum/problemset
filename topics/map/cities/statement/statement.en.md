@@ -13,7 +13,7 @@ A planet can have at most 1000 cities.
 Print $M$ planet names, each on a separate line. These are the planets where the queried cities are located.
 
 ### Constraints
-* $1 \le N \le 100$
+* $1 \le N,M \le 1000$
 
 ### Example input
     4
@@ -32,7 +32,6 @@ Print $M$ planet names, each on a separate line. These are the planets where the
     alderaan
 
 ### Explanation of the example
-    tipoca is on kamino
-    theed is on naboo
-    aldera is on alderaan
-
+tipoca is on kamino.
+theed is on naboo.
+aldera is on alderaan.
