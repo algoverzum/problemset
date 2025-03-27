@@ -8,6 +8,8 @@ problems:
     type: REQUIRED
   - problem_id: droid-repair
     type: REQUIRED
+  - problem_id: election
+    type: REQUIRED
 prerequisites:
 dependents:
 visualization:

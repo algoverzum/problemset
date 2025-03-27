@@ -7,7 +7,7 @@ memo = {}
 def solv(x, y):
     if (x, y) in memo:
         return memo[(x, y)]
-    for (stepx, stepy) in [(-2, -1), (-2, 1), (1, -2), (-1, -2)]:
+    for stepx, stepy in [(-2, -1), (-2, 1), (1, -2), (-1, -2)]:
         if 0 < stepx + x and 0 < stepy + y:
             ans = solv(stepx + x, stepy + y)
             if ans == 2:

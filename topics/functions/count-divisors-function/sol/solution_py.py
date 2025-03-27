@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
+
 # Create a count_divisors function here
 def count_divisors(n):
     count = 0
