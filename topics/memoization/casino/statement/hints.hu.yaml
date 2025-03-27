@@ -1,0 +1,11 @@
+---
+- Próbálj meg felírni egy rekurzív képletet egy n zsetonért maximálisan szerezhető kreditek számára! Nem nagyon bonyolult. Lehet belőle egy rekurzív függvényt csinálni, de a futási időt valahogy kordában kell tartani!
+- py: |
+    A rekurzív képlet így néz ki: `credits(n) = max(n, credits(n // 2) + credits(n // 3) + credits(n // 4))`. Miért lesz nagyon lassú, ha ezt így simán leprogramozzuk? Mert egy-egy értéket nagyon sokszor kiszámolunk újra és újra. Hogy lehetne ezt elkerülni, azt is figyelembe véve, hogy n max értéke 10^9 ?
+- cpp: |
+    A rekurzív képlet így néz ki: `credits(n) = max(n, credits(n / 2) + credits(n / 3) + credits(n / 4))`. Miért lesz nagyon lassú, ha ezt így simán leprogramozzuk? Mert egy-egy értéket nagyon sokszor kiszámolunk újra és újra. Hogy lehetne ezt elkerülni, azt is figyelembe véve, hogy n max értéke 10^9 ?
+- Az összes számra 10^9-ig nem tudjuk kiszámolni, az túl sok tárhely és idő is, tehát a dinamikus programozás nem működik. Viszont azt megtehetjük, hogy amit a rekurzív függvényünk kiszámolt egyszer, azt megjegyezzük és legközelebb nem számoljuk ki újra. Vagyis a rekurziót memorizálással csináljuk.
+- py: |
+    A kiszámolt értékek megjegyzéséhez használhatunk dict-et, vagy lehet úgy, hogy csak egy limitnél (pl. 10^7-nél) kisebb értékekre jegyezzük meg az eredményt, hogy beférjen a memóriába.
+- cpp: |
+    A kiszámolt értékek megjegyzéséhez használhatunk map-et, vagy lehet úgy, hogy csak egy limitnél (pl. 10^7-nél) kisebb értékekre jegyezzük meg az eredményt, hogy beférjen a memóriába.

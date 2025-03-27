@@ -125,7 +125,7 @@ def disconnected_graphs(N_vertice, num_edges):
     # egyenletesen elosztjuk a csúcsokat, így biztos függetlenenk lesznek a generált részgráfok
     shuffle(shuffled_vertices)
     index = 0
-    for (v, e) in cur:
+    for v, e in cur:
         gen_euler_cycle(shuffled_vertices[index : index + v], e)  # a részgráfok mind euler körök
         index += v
 

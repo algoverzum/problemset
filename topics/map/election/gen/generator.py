@@ -6,38 +6,31 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "holochess".
+usage = """Generator for "election".
 
 Parameters:
-* T (number of testcases)
-* N (maximum value)
+* A (minimum value)
+* B (maximum value)
 * S (seed)
 
 Constraint:
-* %d <= T <= %d
-* %d <= N <= %d
+* %d <= A <= %d
+* %d <= B <= %d
 """ % (
-    MINT,
-    MAXT,
+    MIN,
+    MAX,
     MIN,
     MAX,
 )
 
 
-def run(T, N):
+def run(A, B):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    tests = set()
-    while len(tests) < T:
-        x = randint(1, N)
-        y = randint(1, N)
-        tests.add((x, y))
-    print(T)
-    for x, y in tests:
-        print(x, y)
+    print(randint(A, B))
 
 
 if __name__ == "__main__":

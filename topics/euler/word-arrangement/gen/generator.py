@@ -175,7 +175,9 @@ def run(A, B):
         case 2:  # euler kör
             mode = "cycle"
             words = generate_valid_case(mode, num_words)
-        case 3:  # valid euler sétához hozzá adok egy élet, úgy hogy él ne legyen hurokél vagy egészítse ki a sétát euler körré
+        case (
+            3
+        ):  # valid euler sétához hozzá adok egy élet, úgy hogy él ne legyen hurokél vagy egészítse ki a sétát euler körré
             mode = "degree"
             words = generate_invalid_case(mode, num_words)
         case 4:  # valid euler körök generálása független ábécékkel.
