@@ -10,6 +10,8 @@ problems:
     type: REQUIRED
   - problem_id: election
     type: REQUIRED
+  - problem_id: cities
+    type: REQUIRED
 prerequisites:
 dependents:
 visualization:
