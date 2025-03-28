@@ -3,7 +3,7 @@
 from limits import *
 from sys import argv, exit, stderr
 import os
-from random import random, randint, choice, sample, shuffle, seed
+from random import random, randint, choice, sample, shuffle, seed, randrange
 from inspect import signature
 
 usage = """Generator for "biodiversity".
@@ -35,13 +35,20 @@ def run(A, B, C):
         assert eval(row[2:]), row[2:]
 
     print(A, B)
-    unique_numbers = sample(range(1, MAX2 + 1), C)
-    list1 = sample(unique_numbers, min(A, C))
-    list2 = sample(unique_numbers, min(B, C))
-    while len(list1) < A:
-        list1.append(choice(unique_numbers))
-    while len(list2) < B:
-        list2.append(choice(unique_numbers))
+    if C < 10**7:
+        unique_numbers = set()
+        while len(unique_numbers) < C:
+            unique_numbers.add(randrange(1, MAX2 + 1))
+        unique_numbers = list(unique_numbers)
+        list1 = sample(unique_numbers, min(A, C))
+        list2 = sample(unique_numbers, min(B, C))
+        while len(list1) < A:
+            list1.append(choice(unique_numbers))
+        while len(list2) < B:
+            list2.append(choice(unique_numbers))
+    else:
+        list1 = sample(range(1, C), A)
+        list2 = sample(range(1, C), B)
     shuffle(list1)
     shuffle(list2)
     print(*list1)
