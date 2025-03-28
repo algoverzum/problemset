@@ -11,14 +11,24 @@ A bal felső sarokban legyen `X`, azaz az első sor első karaktere legyen `X`!
 ### Korlátok
 * $1 \le N \le 20$
 
-### Példa bemenet
+### 1. Példa bemenet
     4
 
-### Példa kimenet
+### 1. Példa kimenet
     XYXY
     YXYX
     XYXY
     YXYX
 
-### A példa magyarázata
+### Az 1. példa magyarázata
 Egy $4 \times 4$-es sakktáblát kell kiírnunk.
+
+### 2. Példa bemenet
+    5
+
+### 2. Példa kimenet
+    XYXYX
+    YXYXY
+    XYXYX
+    YXYXY
+    XYXYX

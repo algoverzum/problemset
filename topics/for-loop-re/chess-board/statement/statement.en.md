@@ -11,14 +11,24 @@ There should be `X` in the upper left corner, i.e. the first character of the fi
 ### Constraints
 * $1 \le N \le 20$
 
-### Example input
+### Example 1 input
     4
 
-### Example output
+### Example 1 output
     XYXY
     YXYX
     XYXY
     YXYX
 
-### Explanation of the example
+### Explanation of example 1
 We need to draw a $4 \times 4$ chessboard.
+
+### Example 2 input
+    5
+
+### Example 2 output
+    XYXYX
+    YXYXY
+    XYXYX
+    YXYXY
+    XYXYX
