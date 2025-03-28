@@ -1,4 +1,4 @@
-## Leggyakoribb
+## Leggyakoribb hajó
 Moseyslee űrkikötője szokatlanul nagy forgalmat tapasztal. A Lázadók Szövetsége egy titkos üzenetet kapott egy beépített ügynökétől: a Birodalom rejtett tevékenységet folytat a kikötőben.
 
 R2-D2 és C-3PO hozzáférnek az állomás érkezési adataihoz - egy hosszú listához, amely az elmúlt időszakban dokkolt űrhajók azonosítóit tartalmazza. Ha sikerül meghatározni azt az űrhajót, amely a legtöbbször jelent meg, az kulcsfontosságú lehet a rejtély megoldásában.

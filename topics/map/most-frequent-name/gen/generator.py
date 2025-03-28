@@ -6,7 +6,7 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "most-frequent2".
+usage = """Generator for "most-frequent-name".
 
 Parameters:
 * N (length of the list (number of ships))
@@ -36,8 +36,8 @@ def run(N, M):
         N -= randint(1, 100)
     ships = set()
     while len(ships) < M:
-        l = randint(1, 25)
-        l = randint(1, l)  # shorten expected length to 25/4
+        l = randint(1, MAXA)
+        l = randint(1, l)  # shorten expected length to MAXA/4
         ship = ""
         while len(ship) < l:
             ship += choice(abc)

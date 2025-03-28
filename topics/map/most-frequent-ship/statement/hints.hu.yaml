@@ -1,0 +1,7 @@
+---
+- cpp: |
+    Az azonosítokat egy `map<int,int>` konténerben tároljuk, ahol a kulcs az űrhajó azonosítója, az érték pedig az előfordulásainak száma.
+  py: |
+    Az azonosítokat egy szótárban `{}` tároljuk, ahol a kulcs az űrhajó azonosítója, az érték pedig az előfordulásainak száma.
+- Ami marad egy szokásos maximumkiválasztás. Csak arra kell figyelni, hogy ha több elem is ugyanannyiszor fordul elő, akkor az összeset ki kell válasszuk.
+- Először határozzuk meg a maximum értékét, majd utána keressük ki a hozzá tartozó azonosítókat.

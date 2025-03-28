@@ -1,9 +1,9 @@
 ---
 # General info
-name: most-frequent3
-title: Most Frequent
+name: most-frequent-ship
+title: Most Frequent Ship
 title_translations:
-  hu: Leggyakoribb
+  hu: Leggyakoribb hajó
 
 # Technical info
 memory_limit: 256

@@ -6,7 +6,7 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "most-frequent2".
+usage = """Generator for "most-frequent-ship".
 
 Parameters:
 * N (length of list)

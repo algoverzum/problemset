@@ -12,7 +12,7 @@ Print a single integer, the index of the day with 0 arrivals.
 * $1 \le N \le 100$
 * $0 \le A_i \le 100$
 
-### Example input
+### Example 1 input
     6
     20
     1
@@ -21,8 +21,20 @@ Print a single integer, the index of the day with 0 arrivals.
     10
     6
 
-### Example output
+### Example 1 output
     3
 
 ### Explanation of the example
 On the third day there were no arrivals.
+
+### Example 2 input
+    6
+    32
+    13
+    41
+    52
+    13
+    0
+
+### Example 2 output
+    6

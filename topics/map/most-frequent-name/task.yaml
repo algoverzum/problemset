@@ -1,9 +1,9 @@
 ---
 # General info
-name: most-frequent2
-title: Most Frequent
+name: most-frequent-name
+title: Most Frequent Name
 title_translations:
-  hu: Leggyakoribb
+  hu: Leggyakoribb név
 
 # Technical info
 memory_limit: 256

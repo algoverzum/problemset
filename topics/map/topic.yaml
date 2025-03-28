@@ -2,9 +2,9 @@
 id: map
 name: Map
 problems:
-  - problem_id: most-frequent2
+  - problem_id: most-frequent-ship
     type: REQUIRED
-  - problem_id: most-frequent3
+  - problem_id: most-frequent-name
     type: REQUIRED
   - problem_id: droid-repair
     type: REQUIRED

@@ -12,7 +12,7 @@ Egyetlen számot kell kiírnod, annak a napnak a sorszámát, amikor 0 érkező 
 * $1 \le N \le 100$
 * $0 \le A_i \le 100$
 
-### Példa bemenet
+### 1. Példa bemenet
     6
     20
     1
@@ -21,8 +21,20 @@ Egyetlen számot kell kiírnod, annak a napnak a sorszámát, amikor 0 érkező 
     10
     6
 
-### Példa kimenet
+### 1. Példa kimenet
     3
 
-### A példa magyarázata
+### Az 1. példa magyarázata
 $N=6$ nap van. A harmadik napon fordult elő, hogy nem érkezett űrhajó.
+
+### 2. Példa bemenet
+    6
+    32
+    13
+    41
+    52
+    13
+    0
+
+### 2. Példa kimenet
+    6

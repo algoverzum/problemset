@@ -1,4 +1,4 @@
-## Most Frequent
+## Most Frequent Name
 The spaceport at Moseyslee is experiencing unusually high traffic. The Rebel Alliance has received a secret message from an undercover agent: the Empire is conducting covert operations at the port.
 
 R2-D2 and C-3PO gain access to the station's arrival records - a long list of names of recently docked spaceships. If they can identify the ship that has appeared most often, it could be the key to solving the mystery.

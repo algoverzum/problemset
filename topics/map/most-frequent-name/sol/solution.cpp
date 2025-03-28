@@ -1,9 +1,7 @@
-// @check-accepted: examples
-// @check-time-limit-exceeded: all
-
+// @check-accepted: *
 #include <algorithm>
 #include <iostream>
-#include <unordered_map>
+#include <map>
 #include <vector>
 using namespace std;
 
@@ -11,12 +9,12 @@ int main() {
     int n;
     cin >> n;
 
-    unordered_map<int, int> histogram;
+    map<string, int> histogram;
 
     for (int i = 0; i < n; i++) {
-        int shipID;
-        cin >> shipID;
-        histogram[shipID]++;
+        string ID;
+        cin >> ID;
+        histogram[ID]++;
     }
 
     int maxi = 0;
@@ -26,7 +24,7 @@ int main() {
         }
     }
 
-    vector<int> most_frequent;
+    vector<string> most_frequent;
     for (const auto &pair : histogram) {
         if (pair.second == maxi) {
             most_frequent.push_back(pair.first);
@@ -34,11 +32,10 @@ int main() {
     }
 
     sort(most_frequent.begin(), most_frequent.end());
-
-    for (int ship : most_frequent) {
-        cout << ship << " ";
+    cout << maxi << "\n";
+    for (string ship : most_frequent) {
+        cout << ship << "\n";
     }
-    cout << "\n";
 
     return 0;
 }

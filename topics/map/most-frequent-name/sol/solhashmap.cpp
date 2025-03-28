@@ -32,7 +32,7 @@ int main() {
     }
 
     sort(most_frequent.begin(), most_frequent.end());
-
+    cout << maxi << "\n";
     for (string ship : most_frequent) {
         cout << ship << "\n";
     }

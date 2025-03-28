@@ -2,7 +2,7 @@ MIN = 1
 MAX = 100_000
 
 MINA = 1
-MAXA = 25
+MAXA = 16
 
 subtasks = [
     {},  # 1-based

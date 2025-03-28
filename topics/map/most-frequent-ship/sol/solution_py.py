@@ -2,9 +2,9 @@
 # @check-accepted: *
 
 n = int(input())
+ships = list(map(int, input().split()))
 histogram = {}
-for i in range(n):
-    ship = input()
+for ship in ships:
     histogram[ship] = histogram.get(ship, 0) + 1
 maxi = max(histogram.values())
 most_frequent = []
@@ -12,5 +12,4 @@ for ship in histogram:
     if histogram[ship] == maxi:
         most_frequent.append(ship)
 most_frequent.sort()
-for ship in most_frequent:
-    print(ship)
+print(*most_frequent)

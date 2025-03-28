@@ -1,0 +1,7 @@
+---
+- cpp: |
+    The ship IDs should be stored in a `map<int,int>` container, where the key is the ID and the value is the number of occurrences.
+  py: |
+    The IDs should be stored in a dictionary `{}`, where the key is the ID and the value is the number of occurrences.
+- This leaves us with a standard maximum selection. Just make sure that if more than one ID occurs the same number of times, we select all of them.
+- First determine the value of the maximum and then look for the IDs associated with it.

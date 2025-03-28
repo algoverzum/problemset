@@ -1,0 +1,7 @@
+---
+- cpp: |
+    The ship names should be stored in a `map<string,int>` container, where the key is the name and the value is the number of occurrences.
+  py: |
+    The names should be stored in a dictionary `{}`, where the key is the name and the value is the number of occurrences.
+- This leaves us with a standard maximum selection. Just make sure that if more than one name occurs the same number of times, we select all of them.
+- First determine the value of the maximum and then look for the names associated with it.

@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-# @check-accepted: examples
-# @check-time-limit-exceeded: all
-
+# @check-accepted: *
 
 n = int(input())
-ships = list(map(int, input().split()))
 histogram = {}
-for ship in ships:
+for i in range(n):
+    ship = input()
     histogram[ship] = histogram.get(ship, 0) + 1
 maxi = max(histogram.values())
 most_frequent = []
@@ -14,4 +12,6 @@ for ship in histogram:
     if histogram[ship] == maxi:
         most_frequent.append(ship)
 most_frequent.sort()
-print(*most_frequent)
+print(maxi)
+for ship in most_frequent:
+    print(ship)
