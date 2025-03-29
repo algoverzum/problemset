@@ -12,7 +12,7 @@ A második sora $N$ azonosítót tartalmaz szóközzel elválasztva: $A_1, A_2,\
 
 ### Korlátok
 * $1 \le N \le 2 \cdot 10^5$
-* $-10^9 \le A_i \le 10^9$
+* $-10^9 \le A_i \le 10^9$ minden $i=1 \dots N$-re
 
 ### Példa bemenet
     8

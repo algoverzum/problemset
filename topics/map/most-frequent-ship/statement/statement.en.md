@@ -12,7 +12,7 @@ Print the most common ID in the list. If there are more than one, print them all
 
 ### Constraints
 * $1 \le N \le 2 \cdot 10^5$
-* $-10^9 \le A_i \le 10^9$
+* $-10^9 \le A_i \le 10^9$ for all $i=1 \dots N$
 
 ### Example input
     8

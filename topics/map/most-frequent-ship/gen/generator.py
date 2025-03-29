@@ -19,8 +19,8 @@ Constraint:
 """ % (
     MIN,
     MAX,
-    1,
-    MAXA,
+    0,
+    MAX,
 )
 
 
@@ -29,6 +29,17 @@ def run(N, M):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
+
+    if M == 0:
+        # special case for N different numbers
+        print(N)
+        s = set()
+        while len(s) < N:
+            s.add(randint(-(10**9), 10**9))
+        s = list(s)
+        shuffle(s)
+        print(*s)
+        return
 
     if N > 1000:
         N -= randint(1, 100)
