@@ -9,8 +9,8 @@ A kimenet első sorába azon utazások darabszámát írd ki, amelyeknél az egy
 
 ### Korlátok
 * $1 \le N \le 100$
-* $1 \le D_i \le 100$
-* $1 \le P_i \le 100\,000$
+* $1 \le D_i \le 100$ minden $i=1 \dots N$-re
+* $1 \le P_i \le 100\,000$ minden $i=1 \dots N$-re
 
 ### Példa bemenet
     5

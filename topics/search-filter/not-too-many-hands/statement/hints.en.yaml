@@ -1,7 +1,7 @@
 - cpp: |
-    The number of at most 4 handed creatures must be printed on the output first, so let's use a vector to collect the indices of the good competitors! An empty vector can be created like this: `vector<int> good;`
+    The number of at most 4 handed creatures must be printed first, so let's use a vector to collect the indices of the good competitors! An empty vector can be created like this: `vector<int> good;`
   py: |
-    The number of at most 4 handed creatures must be printed on the output first, so let's use a list to collect the numbers of the good competitors! An empty list can be created like this: `good = []`
+    The number of at most 4 handed creatures must be printed first, so let's use a list to collect the numbers of the good competitors! An empty list can be created like this: `good = []`
 - cpp: |
     Even during reading the second line, we can check that the number of hands is at most 4, and if so, we can put the index into the solution vector with the `good.push_back(i);` command, assuming that our for loop starts from $i=1$ goes up to $n$.
   py: |

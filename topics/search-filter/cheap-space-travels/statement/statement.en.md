@@ -9,8 +9,8 @@ In the first line print the number of trips for which the price per light-year i
 
 ### Constraints
 * $1 \le N \le 100$
-* $1 \le D_i \le 100$
-* $1 \le P_i \le 100\,000$
+* $1 \le D_i \le 100$ for all $i=1 \dots N$
+* $1 \le P_i \le 100\,000$ for all $i=1 \dots N$
 
 ### Example input
     5

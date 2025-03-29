@@ -1,3 +1,4 @@
+---
 - cpp: |
     A kimenetre először az elemek számát kell kiírni, ezért használjunk vectort a jó versenyzők sorszámainak kigyűjtéséhez! Egy üres vectort így lehet létrehozni: `vector<int> good;`
   py: |
