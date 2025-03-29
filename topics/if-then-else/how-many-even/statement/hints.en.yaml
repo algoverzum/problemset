@@ -1,3 +1,3 @@
-- TODO
-- cpp: TODO
-  py: TODO
+---
+- The `N % 2` statement gives the remainder when dividing the number $N$ by 2. If `N % 2` is 0, then $N$ is even; if `N % 2` is 1, then $N$ is odd. This must be checked for both $A$ and $B$.
+- Use an `if` statement and start by checking if $A$ is even *and* $B$ is also even, then the answer is 2. *Otherwise*, if $A$ is even *or* $B$ is even, then the answer is 1. *Otherwise*, the answer is 0.

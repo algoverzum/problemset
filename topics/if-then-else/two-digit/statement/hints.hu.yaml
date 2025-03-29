@@ -1,3 +1,4 @@
+---
 - Egy szám kétjegyű, ha legalább 10 és legfeljebb 99.
 - cpp: |
     Az `n >= 10` és `n <= 99` kifejezéseket össze tudjuk kötni a logikai és operátorral, amit a && jelekkel kell írni:

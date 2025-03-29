@@ -1,3 +1,4 @@
+---
 - A két számot hasonlítsuk össze, majd ennek az eredményétől függően az egyiket vagy a másikat írjuk ki.
 - cpp: |
     Az összehasonlításhoz az `if` utasítás használd, ami után zárójelbe kell írni a feltételt. Emlékeztető: a két szám beolvasásához az `int a, b; cin >> a >> b;` parancsok kellenek.
