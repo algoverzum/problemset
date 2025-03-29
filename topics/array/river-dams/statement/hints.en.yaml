@@ -1,4 +1,9 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: After reading `n`, store the numbers from the second line in a vector of size `n`.
+  py: |
+    The numbers from the second line can be read into a list using this command: `w = [int(x) for x in input().split()]`
+- We need to count the elements that are greater than both of their neighbors. For this, we need a counter variable initialized to 0, which we increment whenever we find an element that is greater than both the previous and the next element. The for loop should be written in such a way that it does not check the first and last elements.
+- cpp: |
+    The condition inside the if statement can be written as: `w[i - 1] < w[i] && w[i] > w[i + 1]`
+  py: |
+    The condition inside the if statement can be written as: `w[i - 1] < w[i] and w[i] > w[i + 1]`

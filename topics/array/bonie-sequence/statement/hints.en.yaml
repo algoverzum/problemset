@@ -1,3 +1,4 @@
+---
 - Try to calculate on paper the number of bonies in the first few years. Can you find any rules?
 - The number of bonies always increases by the same amount as the number of bonies two years ago. That is, each member of the series is the sum of the previous two members.
 - cpp: |

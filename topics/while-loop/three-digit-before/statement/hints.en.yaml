@@ -1,3 +1,4 @@
-- TODO
-- cpp: TODO
-  py: TODO
+---
+- Use a while loop to keep reading numbers until we receive a 0.
+- Inside the loop, check whether the entered number is a three-digit number, and if so, increment a counter that will provide the final result.
+- A number is considered three-digit if it is at least 100 and at most 999.

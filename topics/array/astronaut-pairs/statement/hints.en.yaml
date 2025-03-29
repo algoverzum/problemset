@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Store the weights of all astronauts.
+- We need to count the number of valid pairs, so let's use a counter variable. Compare each astronaut with those who have a **higher index** and increase the counter if the two astronauts have the same weight. This way, each pair is counted only once.
+- If we use a for loop where `i` iterates over the astronaut indices, then inside it, we need another for loop where the loop variable `j` starts from `i+1`.

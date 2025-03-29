@@ -7,4 +7,3 @@
     Az if utasítás feltétele így nézhet ki: `w[i - 1] < w[i] && w[i] > w[i + 1]`
   py: |
     Az if utasítás feltétele így nézhet ki: `w[i - 1] < w[i] and w[i] > w[i + 1]`
-  

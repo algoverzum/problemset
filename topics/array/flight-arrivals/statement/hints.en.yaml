@@ -1,3 +1,7 @@
-- TODO
-- cpp: TODO
-  py: TODO
+---
+- cpp: After reading `n`, store the numbers from the second line in a vector of size `n`.
+  py: |
+    The numbers from the second line can be read into a list using this command: `numbers = [int(x) for x in input().split()]`
+- First, print every second number, starting from index 0, using a for loop that increments by 2. Then, do the same starting from index 1.
+- cpp: In the for loop, the step size can be changed by writing `i += 2` instead of `i++`.
+  py: In the for loop, you can step by 2 using `range(0, n, 2)`. A space must be placed between the printed numbers, which can be done using `print(..., end=" ")` (where `...` is what you want to print, e.g., `numbers[i]`).
