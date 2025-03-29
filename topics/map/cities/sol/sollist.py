@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# binary search
 
 n = int(input())
 city_to_planet = []

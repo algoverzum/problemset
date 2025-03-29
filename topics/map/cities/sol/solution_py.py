@@ -4,7 +4,7 @@
 n = int(input())
 city_to_planet = {}
 for _ in range(n):
-    planet, citycount = input().split()
+    planet, city_count = input().split()
     cities = input().split()
     for city in cities:
         city_to_planet[city] = planet

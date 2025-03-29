@@ -7,7 +7,7 @@ A következő $N$ blokk mindegyike két sorból áll:<br>
 * Az első sorban a bolygó neve és egy egész szám szerepel, amely megadja az adott bolygón található városok számát.<br>
 * A második sor a bolygón található városok neveit tartalmazza szóközzel elválasztva.
 
-A bemenet következő ($N+2$-edik) sorában egy egész szám szerepel: $M$ a keresett városok száma.<br>
+A bemenet következő ($2N+1$-edik) sorában egy egész szám szerepel: $M$ a keresett városok száma.<br>
 Az ezt követő $M$ sor mindegyike egy-egy város nevét tartalmazza. Minden város biztosan megtalálható valamelyik bolygón.
 A bolygók és a városok neve kizárólag az angol ábécé kisbetűiből áll, legfeljebb 10 karakter hosszúak.
 Egy bolygón legfeljebb 1000 város lehet.

@@ -21,12 +21,12 @@ def run(f, st):
     for i in range(N):
         planet, city_count = next(f).split()
         cities = next(f).split()
+        assert len(cities) == int(city_count)
         assert 1 <= len(cities) <= MAXC
         assert 1 <= len(planet) <= 10
-        for j in range(len(cities)):
-            assert 1 <= len(cities[j]) <= 10
-        for j in range(len(cities)):
-            citynames.add(cities[j])
+        for varos in cities:
+            assert 1 <= len(varos) <= 10
+            citynames.add(varos)
     M = int(next(f))
     assert MIN <= M <= MAX
     for i in range(M):

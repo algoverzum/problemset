@@ -1,9 +1,6 @@
 // @check-accepted: *
 #include <iostream>
-#include <map>
-#include <sstream>
 #include <unordered_map>
-#include <vector>
 using namespace std;
 
 int main() {
