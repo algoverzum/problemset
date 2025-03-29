@@ -2,9 +2,12 @@
 Egy távoli csillagrendszert kell katalogizálnod. Ehhez rendelkezésedre áll egy lista, amelyben soronként egy bolygó neve szerepel, mellette pedig a rajta található városok. Emellett van egy másik listád, amely városneveket tartalmaz, és a feladatod az, hogy meghatározd, melyik bolygón találhatók ezek a városok.
 
 ### Bemenet
-A bemenetben első sorában egy egész szám van: $N$ a bolygók száma. 
-A következő $N$ sor mindegyike egy bolygó nevét tartalmazza, utána szóközzel elválasztva az azon található városokat.
-A bemenet következő ($N+2$-edik) sorában egy egész szám szerepel: $M$ a keresett városok száma.
+A bemenetben első sorában egy egész szám van: $N$ a bolygók száma. <br>
+A következő $N$ blokk mindegyike két sorból áll:<br>
+* Az első sorban a bolygó neve és egy egész szám szerepel, amely megadja az adott bolygón található városok számát.<br>
+* A második sor a bolygón található városok neveit tartalmazza szóközzel elválasztva.
+
+A bemenet következő ($N+2$-edik) sorában egy egész szám szerepel: $M$ a keresett városok száma.<br>
 Az ezt követő $M$ sor mindegyike egy-egy város nevét tartalmazza. Minden város biztosan megtalálható valamelyik bolygón.
 A bolygók és a városok neve kizárólag az angol ábécé kisbetűiből áll, legfeljebb 10 karakter hosszúak.
 Egy bolygón legfeljebb 1000 város lehet.
@@ -17,10 +20,14 @@ $M$ bolygó nevét kell kiírnod, mindegyiket külön sorba. Ezek azok a bolygó
 
 ### Példa bemenet
     4
-    mandalore sundari ronion
-    naboo theed keren vis
-    alderaan aldera juranno
-    kamino tipoca
+    mandalore 2
+    sundari ronion
+    naboo 3
+    theed keren vis
+    alderaan 2
+    aldera juranno
+    kamino 1
+    tipoca
     3
     tipoca
     theed

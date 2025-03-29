@@ -3,7 +3,8 @@
 n = int(input())
 city_to_planet = []
 for _ in range(n):
-    planet, *cities = input().split()
+    planet, city_count = input().split()
+    cities = input().split()
     for city in cities:
         city_to_planet.append((city, planet))
 city_to_planet.sort()

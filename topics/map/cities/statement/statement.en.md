@@ -2,9 +2,12 @@
 You need to catalog a distant star system. To do this, you have a list where each line contains the name of a planet, followed by the cities located on it. Additionally, you have another list containing city names, and your task is to determine which planet each city belongs to.
 
 ### Input
-The first line of the input contains an integer: $N$ the number of planets.
-The next $N$ lines each contain the name of a planet, followed by the cities located on it, separated by spaces.
-The $N+2$-th line contains an integer: $M$ the number of queried cities.
+The first line of the input contains an integer: $N$ the number of planets.<br>
+The next $N$ blocks each consist of two lines:<br>
+* The first line contains the name of a planet and an integer indicating the number of cities on that planet.<br>
+* The second line lists the names of the cities on that planet, separated by spaces.
+
+The $N+2$-th line contains an integer: $M$ the number of queried cities.<br>
 Each of the next $M$ lines contains a single city name. Each city is guaranteed to be present on one of the planets.
 Planet and city names consist only of lowercase English letters and are at most 10 characters long.
 A planet can have at most 1000 cities.
@@ -17,10 +20,14 @@ Print $M$ planet names, each on a separate line. These are the planets where the
 
 ### Example input
     4
-    mandalore sundari ronion
-    naboo theed keren vis
-    alderaan aldera juranno
-    kamino tipoca
+    mandalore 2
+    sundari ronion
+    naboo 3
+    theed keren vis
+    alderaan 2
+    aldera juranno
+    kamino 1
+    tipoca
     3
     tipoca
     theed

@@ -1,8 +1,12 @@
 4
-mandalore sundari ronion
-naboo theed keren vis
-alderaan aldera juranno
-kamino tipoca
+mandalore 2
+sundari ronion
+naboo 3
+theed keren vis
+alderaan 2
+aldera juranno
+kamino 1
+tipoca
 3
 tipoca
 theed

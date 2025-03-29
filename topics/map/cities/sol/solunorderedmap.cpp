@@ -10,14 +10,14 @@ int main() {
     int n, m;
     cin >> n;
     cin.ignore();
-    map<string, string> city_to_planet;
-    for (int i = 0; i < n; ++i) {
-        string line;
-        getline(cin, line);
-        istringstream iss(line);
+    unordered_map<string, string> city_to_planet;
+    for (int i = 0; i < n; i++) {
+        int cities;
         string planet, city;
-        iss >> planet;
-        while (iss >> city) {
+        cin >> planet;
+        cin >> cities;
+        for (int j = 0; j < cities; j++) {
+            cin >> city;
             city_to_planet[city] = planet;
         }
     }

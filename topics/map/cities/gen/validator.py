@@ -17,20 +17,22 @@ def run(f, st):
 
     N = int(next(f))
     assert MIN <= N <= MAX
-    cities = set()
+    citynames = set()
     for i in range(N):
-        row = next(f).split()
-        assert 2 <= len(row) <= MAXC + 1
-        for j in range(len(row)):
-            assert 1 <= len(row[j]) <= 10
-        for j in range(1, len(row)):
-            cities.add(row[j])
+        planet, city_count = next(f).split()
+        cities = next(f).split()
+        assert 1 <= len(cities) <= MAXC
+        assert 1 <= len(planet) <= 10
+        for j in range(len(cities)):
+            assert 1 <= len(cities[j]) <= 10
+        for j in range(len(cities)):
+            citynames.add(cities[j])
     M = int(next(f))
     assert MIN <= M <= MAX
     for i in range(M):
         city = next(f).strip()
         assert 1 <= len(city) <= 10
-        assert city in cities
+        assert city in citynames
     assert next(f, None) is None
 
 

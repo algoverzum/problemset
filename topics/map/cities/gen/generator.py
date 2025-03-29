@@ -48,8 +48,8 @@ def run(A, B):
         planet_data = []
         word = createword()  # garantaltan uj
         planets.add(word)
-        planet_data.append(word)
         wcount = randint(1, 1000)
+        print(word, wcount)
         for j in range(wcount):
             word = createword()
             cities.add(word)

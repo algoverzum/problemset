@@ -1,28 +1,24 @@
 // @check-accepted: *
 #include <iostream>
-#include <sstream>
-#include <unordered_map>
-// #include <map>
+#include <map>
 #include <vector>
 using namespace std;
 
 int main() {
     int n, m;
     cin >> n;
-    cin.ignore();
-    unordered_map<string, string> city_to_planet;
-    for (int i = 0; i < n; ++i) {
-        string line;
-        getline(cin, line);
-        istringstream iss(line);
+    map<string, string> city_to_planet;
+    for (int i = 0; i < n; i++) {
+        int cities;
         string planet, city;
-        iss >> planet;
-        while (iss >> city) {
+        cin >> planet;
+        cin >> cities;
+        for (int j = 0; j < cities; j++) {
+            cin >> city;
             city_to_planet[city] = planet;
         }
     }
     cin >> m;
-    cin.ignore();
     for (int i = 0; i < m; i++) {
         string city;
         cin >> city;

@@ -9,11 +9,13 @@ int main() {
     cin >> n;
     vector<pair<string, string>> city_to_planet;
 
-    for (int i = 0; i < n; ++i) {
-        string planet;
+    for (int i = 0; i < n; i++) {
+        int cities;
+        string planet, city;
         cin >> planet;
-        string city;
-        while (cin.peek() != '\n' && cin >> city) {
+        cin >> cities;
+        for (int j = 0; j < cities; j++) {
+            cin >> city;
             city_to_planet.emplace_back(city, planet);
         }
     }
