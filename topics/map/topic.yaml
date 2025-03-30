@@ -12,6 +12,8 @@ problems:
     type: REQUIRED
   - problem_id: cities
     type: REQUIRED
+  - problem_id: best-employee
+    type: REQUIRED
 prerequisites:
 dependents:
 visualization:
