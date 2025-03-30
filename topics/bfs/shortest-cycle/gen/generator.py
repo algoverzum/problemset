@@ -3,14 +3,17 @@
 from limits import *
 from sys import argv, exit, stderr
 import os
+import math
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
 usage = """Generator for "shortest-cycle".
 
 Parameters:
-* A (minimum value)
-* B (maximum value)
+* A (N)
+* B (M)
+* B (number of subtrees)
+* B (type)
 * S (seed)
 
 Constraint:
@@ -19,12 +22,16 @@ Constraint:
 """ % (
     MIN,
     MAX,
-    MIN,
-    MAX,
+    MIN2,
+    MAX2,
+    0,
+    MAX - 1,
+    1,
+    3,
 )
 
 
-def run(A, B):
+def run(A, B, C, D):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
@@ -39,7 +46,9 @@ def run(A, B):
     unused_nodes.remove(root)
     remaining_edges = B - A + 1
     mindist = 2 * A
-    sub_trees = 3
+    sub_trees = C
+    if C == 0:
+        sub_trees = randint(2, int(math.sqrt(A)))
     sub_tree_parents = [] * sub_trees
     for _ in range(sub_trees):
         v = choice(unused_nodes)
@@ -65,6 +74,8 @@ def run(A, B):
             parent[cs] = p
             edges.add((min(p, cs), max(cs, p)))
     # random generáltunk egy faszerkezetet. és maradt még B-A+1 élünk
+    # Ha a részfák közé random kezdünk el éleket behúzkodni, akkor kb garantált, hogy a megoldás kis méretű kör legyen.
+    # D type változó alapján döntjük el hogy random legyen a maradék, vagy szándékosan hosszú köröket akarunk generálni.
 
 
 if __name__ == "__main__":
