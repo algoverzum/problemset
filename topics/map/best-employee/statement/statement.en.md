@@ -1,7 +1,7 @@
 ## Best Employee
 In a galaxy not so far away, a renowned company, Galactical Technology Solutions Inc., decided to honor its most dedicated employee — the one who spent the longest time inside the corporate office without stepping out. This employee would be celebrated as the most loyal and hardworking individual in the company. To identify this star performer, the company recorded the arrival and departure times of its employees.
 
-Your mission is to help the company uncover who this exceptional employee is. The data is reliable: no one left without entering first, no one entered twice without leaving, and the office was empty both before and after the recorded events. Additionally, the employee with the maximum time spent inside the building exists uniquely, so it is impossible for the maximum time to be shared by two employees.
+Your mission is to help the company uncover who this exceptional employee is. The data is reliable: no one left without entering first, no one entered twice without leaving, and the office was empty both before and after the recorded events. Additionally, the employee with the maximum time spent inside the building exists uniquely, so the maximum time can't be shared by two employees.
 
 ### Input
 The first line of the input contains $N$—the number of events recorded.  

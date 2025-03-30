@@ -13,13 +13,13 @@ A következő $N$ sor mindegyike egy eseményt ír le három szóközzel elvála
 ### Kimenet
 Két számot írj ki szóközzel elválasztva:  
 - Annak az alkalmazottnak az azonosítóját, aki a leghosszabb időt töltötte az épületben.  
-- Ennek a megszakítatlan benttartózkodásnak a hosszát.
+- Ennek a megszakítatlan benntartózkodásnak a hosszát.
 
 ### Megkötések
 * $1 \le N \le 100\,000$
 * $0 \le A_i \le 10^9$ minden $i = 1 \dots N$ esetén
 * $0 \le T_i \le 10^9$ minden $i = 1 \dots N$ esetén
-* Az események kronológikusan (idő szerint rendezve) vannak megadva.
+* Az események kronologikusan (idő szerint rendezve) vannak megadva.
 
 ### Példa bemenet
     6
