@@ -30,19 +30,19 @@ while q:
                 min_dist = dist[x] + dist[cs] + 1
                 e, a = x, cs
 
-    if min_dist == n + 1:
-        print(-1)
-    else:
-        x, y = e, a
-        path = [e]
-        while x != p:
-            path.append(parent[x])
-            x = parent[x]
+if min_dist == n + 1:
+    print(-1)
+else:
+    x, y = e, a
+    path = [e]
+    while x != p:
+        path.append(parent[x])
+        x = parent[x]
 
-        print(min_dist)
-        print(*reversed(path), a, end=" ")
+print(min_dist)
+print(*reversed(path), a, end=" ")
 
-        while parent[y] != p:
-            print(parent[y], end=" ")
-            y = parent[y]
-        print()
+while parent[y] != p:
+    print(parent[y], end=" ")
+    y = parent[y]
+    print()

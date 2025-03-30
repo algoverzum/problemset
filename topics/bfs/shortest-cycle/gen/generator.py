@@ -37,7 +37,7 @@ def run(A, B):
     dist[root] = 0
     used_nodes = [root]
     unused_nodes.remove(root)
-    remaining_edges = B - A
+    remaining_edges = B - A + 1
     mindist = 2 * A
     sub_trees = 3
     sub_tree_parents = [] * sub_trees
@@ -50,9 +50,10 @@ def run(A, B):
         parent[v] = root
         edges.add((min(root, v), max(root, v)))
 
-    shuffle(unused_nodes)  # Shuffle to ensure randomness
-    split_points = sorted(sample(range(1, len(unused_nodes)), sub_trees - 1))  # Choose split points
+    shuffle(unused_nodes)
+    split_points = sorted(sample(range(1, len(unused_nodes)), sub_trees - 1))
     split_nodes = [unused_nodes[i:j] for i, j in zip([0] + split_points, split_points + [len(unused_nodes)])]
+    # Már az elején szétosztjuk a csúcsokat részfákra, hogy tudjuk kontrollálni hogy milyen mélyésgekben fordulnak elő körök, vagyis vissza élek a különböző részfák közöttt.
     for i in range(sub_trees):
         used_sub_nodes = [sub_tree_parents[i]]
         for j in range(len(split_nodes[i])):
@@ -63,6 +64,7 @@ def run(A, B):
             dist[cs] = dist[p] + 1
             parent[cs] = p
             edges.add((min(p, cs), max(cs, p)))
+    # random generáltunk egy faszerkezetet. és maradt még B-A+1 élünk
 
 
 if __name__ == "__main__":
