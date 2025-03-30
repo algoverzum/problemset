@@ -1,7 +1,8 @@
+---
 - Try every number starting from 2 until you find one that is a divisor of n.
 - Let's use the while loop and increment a variable until its value is not good for us, i.e., in the condition of the loop, check that the variable does not divide n.
 - cpp: |
-    while(n % divisor != 0) { 
+    while(n % divisor != 0) {
       divisor++;
     }
   py: |

@@ -1,7 +1,10 @@
-- Count how many of the listed ages is least 18 and at most 21 years. And divide the number of sufficent ages by 3 to get how many teams they can form.
+---
+- Count how many ages are at least 18 and at most 21. Then divide the count of eligible ages by 3 to determine how many full teams can be formed.
 - cpp: |
-      To get if an age meets the requirements you can use:
-      if(age >= 18 && age < 21)
+      To check if an age meets the conditions, we can use:
+      if (age >= 18 && age < 21)
 - py: |
-      To get if an age meets the requirements you can use:
+      To check if an age meets the conditions, we can use:
       if age >= 18 and age < 21:
+- cpp: When dividing, the `/` operator rounds down, which is exactly what we need to determine the number of teams.
+  py: When dividing, use the `//` operator to ensure rounding down when calculating the number of teams.

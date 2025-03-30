@@ -1,3 +1,11 @@
-- TODO
-- cpp: TODO
-  py: TODO
+---
+- Compare the two numbers, and based on the result, print one or the other.
+- cpp: |
+    Use the `if` statement for comparison, with the condition placed inside parentheses. Reminder: to read the two numbers, use the commands `int a, b; cin >> a >> b;`.
+  py: |
+    Use the `if` statement for comparison. Reminder: To read a number, use the command `a = int(input())`.
+- cpp: If the two numbers are stored in variables `a` and `b`, the solution can be implemented with the `if (a < b) { … } else { … }` code snippet. What should replace the two …?
+  py: |
+    If the two numbers are stored in variables `a` and `b`, the solution can be implemented with the `if a < b:  …  else: … ` code snippet. What should replace the two …?
+- cpp: In the previous hint's code snippet, replace `…` with `cout << a;` and `cout << b;`, respectively.
+  py: In the previous hint's code snippet, replace `…` with `print(a)` and `print(b)`, respectively.

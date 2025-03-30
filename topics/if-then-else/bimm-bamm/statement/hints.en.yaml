@@ -1,3 +1,19 @@
-- TODO
-- cpp: TODO
-  py: TODO
+---
+- It is best to start the check by determining whether $N$ is divisible by both 3 and 5. If so, print `bumm`. If not, then check whether it is divisible by 3 or by 5.
+- A number $N$ is divisible by 3 if its remainder when divided by 3 is zero, i.e., `N % 3 == 0`.
+- cpp: This can be done using an `if ... else if ... else if ... else` branching structure.
+  py: |
+    This can be done using an `if ... elif ... elif ... else` branching structure.
+- cpp: |
+        if (i % 3 == 0 && i % 5 == 0) {
+          cout << "bumm" << "\n";
+        } else if (i % 3 == 0) {
+          ...
+        } else if (...) {
+        ...
+        } else ...
+  py: |
+        if i % 3 == 0 and i % 5 == 0: print("bumm")
+        elif i % 3 == 0: print( ... )
+        elif ...: print(...)
+        else: ...

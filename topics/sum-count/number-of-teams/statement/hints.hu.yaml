@@ -1,3 +1,4 @@
+---
 - Számoljuk meg, hogy hány életkor legalább 18 és maximum 21. Majd osszuk el a megfelelő életkorok számát 3-mal, hogy megkapjuk hány teljes csapatot tudnak alkotni.
 - cpp: |
       Hogy megkapjuk, hogy egy életkor felel meg a feltételeknek, használhatjuk ezt:

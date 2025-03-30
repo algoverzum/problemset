@@ -1,3 +1,4 @@
+---
 - Próbáld meg papíron kiszámolni az első néhány évben a bonik számát. Felfedezel valami szabályt?
 - Az előző évhez képest mindig annyival nő a bonik száma, amennyi két évvel ezelőtt volt. Vagyis a sorozat minden tagja az előző kettő összege.
 - cpp: |

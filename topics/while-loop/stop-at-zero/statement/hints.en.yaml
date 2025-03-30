@@ -1,3 +1,4 @@
-- TODO
-- cpp: TODO
-  py: TODO
+---
+- Use a `while` loop, and inside it, always read a number. What should be the loop condition?
+- We need to keep repeating the input reading until the entered number is 0. Since we want to check this condition right from the start, we need to read an initial value before the loop.
+- To calculate the solution, increment a counter by one inside the while loop to count how many positive numbers appeared before the first 0.

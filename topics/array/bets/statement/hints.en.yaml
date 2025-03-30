@@ -1,4 +1,15 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: After reading `n`, store the numbers from the second line in a vector of size `n`.
+  py: |
+    The numbers from the second line can be read into a list using this command: `money = [int(x) for x in input().split()]`
+- cpp: |
+    Create a vector of size `n-1` to store the winnings, where we will store the differences between adjacent values, for example:
+        for (int i = 0; i < n - 1; i++) {
+            win[i] = money[i + 1] - money[i];
+        }
+  py: |
+    Start with an empty list for the winnings, then use the `append` command to add the differences between adjacent values:
+        win = []
+        for i in range(n - 1):
+            win.append(money[i + 1] - money[i])
+- We need to do almost the same for the differences between the winnings. Note that there will only be `n-2` elements.

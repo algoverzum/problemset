@@ -1,3 +1,4 @@
+---
 - cpp: |
     We have to store the numbers. In C++, we can use the `vector<int>` type to store many integers, a 13-size vector can be created as follows: `vector<int> numbers(13);`. Its elements are indexed starting from 0, so you can refer to them like this: `numbers[0]`, `numbers[1]`, $\ldots$, `numbers[12]`. An element of the vector (e.g. `numbers[0]`) behaves exactly as a variable.
   py: |
@@ -12,4 +13,3 @@
     For writing backwards, a loop like this is good: `for (int i = 12; i >= 0; i--) cout << numbers[i] << " ";`
   py: |
     The `for i in range(13):` cycle goes from point 0 to 12, within which a `print(numbers[i], end=" ")` statement is good. To write backwards, you need `range(12, -1, -1)`.
- 

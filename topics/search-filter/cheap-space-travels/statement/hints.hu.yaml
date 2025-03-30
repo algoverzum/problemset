@@ -1,3 +1,4 @@
+---
 - Figyeljünk arra, hogy az ár / hossz arány lehet nem egész szám is. Jobb az osztás helyett a távolság 100-szorosához hasonlítani az árat.
 - cpp: Hozzunk létre egy kezdetben üres vectort az olcsó utazások sorszámainak tárolásához.
   py: Hozzunk létre egy kezdetben üres listát az olcsó utazások sorszámainak tárolásához.

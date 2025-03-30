@@ -1,3 +1,4 @@
+---
 - Más-más dolgot kell kiírnunk akkor, ha a szám > 0, illetve ha nem. Ezt az `if` utasítással tudjuk elérni.
 - cpp: |
     Az `if` kulcsszó után zárójelekbe kell írni a vizsgálandó igaz-hamis feltételt, majd kapcsos zárójelek közé a végrehajtandó kódrészletet:

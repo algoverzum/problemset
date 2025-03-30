@@ -1,3 +1,5 @@
-- TODO
-- cpp: TODO
-  py: TODO
+---
+- If the initial weights are `A` and `B`, what will they be in 1 year? And in two years?
+- After one year their weights are `3*A` and `2*B`. After two years their weights are `3*3*A` and `2*2*B`.
+- A `while` loop can be conveniently used to repeatedly multiply by 3 and 2. How long should the loop run?
+- As long as `A <= B`. (Inside the `while` loop, multiply them by 3 and 2, respectively.)

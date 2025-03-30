@@ -1,9 +1,10 @@
-- Please note that the price / length ratio may not be an integer. It is better to compare the price to 100 times the distance instead of dividing.
-- cpp: Create an initially empty vector to store the indices of the cheap trips.
-  py: Let's create an initially empty list to store the indices of the cheap trips.
-- cpp: As we go through the trips, if the condition stated in the first help is met, we add the current imdex to the cheap trips (`cheap.push_back(i)`). We can do this even while reading lines. Please note that the trips are numbered starting from 1.
-  py: As we go through the trips, if the condition stated in the first help is met, then we add the current imdex to the cheap trips (`cheap.append(i)`). We can do this even while reading lines. Please note that the trips are numbered starting from 1.
+---
+- Keep in mind that the price-to-length ratio may not be an integer. Instead of division, it's better to compare the price to 100 times the distance.
+- cpp: Create an initially empty vector to store the indices of cheap trips.
+  py: Create an initially empty list to store the indices of cheap trips.
+- cpp: As we iterate through the trips, if the condition described in the first hint is met, add the current index to the list of cheap trips (`cheap.push_back(i)`). This can even be done during input reading. Note that trips are numbered starting from 1.
+  py: As we iterate through the trips, if the condition described in the first hint is met, add the current index to the list of cheap trips (`cheap.append(i)`). This can even be done during input reading. Note that trips are numbered starting from 1.
 - cpp: |
-    Write out the size of the vector containing cheap trips (`cheap.size()`), then its elements in the next line, you can also do it this way: `for (int i : cheap) cout << i << " ";`
+    Print the size of the vector containing the cheap trips (`cheap.size()`), then on the next line print its elements. This can be done as follows: `for (int i : cheap) cout << i << " ";`
   py: |
-    Write out the size of the list containing cheap trips (`len(cheap)`), then its elements in the next line, you can also do it this way: `print(*cheap)`
+    Print the size of the list containing the cheap trips (`len(cheap)`), then on the next line print its elements. This can be done as follows: `print(*cheap)`

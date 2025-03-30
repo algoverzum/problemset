@@ -18,4 +18,3 @@ $N + 1$ számot kell kiírnod egy sorban szóközzel elválasztva: $B_0, B_1, \l
 
 ### A példa magyarázata
 Egy év után még csak egy boni van, de két év után születik egy új boni, így ketten lesznek. Három év után szintén egy boni születik, így 3 lesz a bonik száma. Négy év után már az elsőként született boni is szülni fog, így 2 új boni lesz, vagyis összesen 5. Öt év után már 3 boni lesz, amelyik legalább két éves, így 3 új boni születik, és összesen 8 lesz, és a történetnek itt van vége, mert ezután el fog pusztulni a legelső boni.
-

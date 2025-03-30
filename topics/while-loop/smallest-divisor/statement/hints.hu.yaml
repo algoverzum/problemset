@@ -1,7 +1,8 @@
+---
 - Próbálgassuk a számokat 2-től kezdve amíg nem találunk egyet ami osztja n-et.
 - Használjuk a while ciklust, és benne növeljünk egy változót, amíg nem jó az értéke, azaz a ciklus feltételében vizsgáljuk, hogy a változó nem osztja n-et.
 - cpp: |
-    while(n % divisor != 0) { 
+    while(n % divisor != 0) {
       divisor++;
     }
   py: |

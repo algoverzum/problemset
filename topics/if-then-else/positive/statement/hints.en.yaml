@@ -1,3 +1,24 @@
-- TODO
-- cpp: TODO
-  py: TODO
+---
+- We need to print different outputs depending on whether the number is > 0 or not. This can be achieved using the `if` statement.
+- cpp: |
+    After the `if` keyword, the condition to be checked must be placed inside parentheses, followed by the code block enclosed in curly braces:
+        if (X > 0) {
+          cout << "P";
+        }
+  py: |
+    After the `if` keyword, the condition to be checked  must be written, followed by a colon at the end of the line, and then the indented code block:
+        if X > 0:
+          print("P")
+- cpp: |
+    The `else` keyword can be followed by another code block, which executes when the condition is false:
+        if (X > 0) {
+          cout << "P";
+        } else {
+          cout << "N";
+        }
+  py: |
+    The `else` keyword can be followed by another code block, which executes when the condition is false:
+        if X > 0:
+          print("P")
+        else:
+          print("N")

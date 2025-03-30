@@ -1,4 +1,5 @@
-- A vizsgálatot érdemes azzal kezdeni, hogy ha $N$ osztható 3-mal és 5-tel is, akkor írjunk ki `bumm`-ot, és ha nem, akkor megvizsgálni, hogy 3-mal osztható-e, illetve 5-tel osztható-e. 
+---
+- A vizsgálatot érdemes azzal kezdeni, hogy ha $N$ osztható 3-mal és 5-tel is, akkor írjunk ki `bumm`-ot, és ha nem, akkor megvizsgálni, hogy 3-mal osztható-e, illetve 5-tel osztható-e.
 - Egy $N$ szám akkor osztható 3-mal, ha osztási maradéka nulla, azaz ha `N % 3 == 0`.
 - cpp: Egy `if ... else if ... else if ... else` szerkezetű elágazással jó ezt csinálni.
   py: |

@@ -1,4 +1,4 @@
-- Használjunk while ciklust, azon belül mindig olvassunk be egy számot. Mi legyen a ciklus feltétele?
+---
+- Használjunk `while` ciklust, azon belül mindig olvassunk be egy számot. Mi legyen a ciklus feltétele?
 - Addig kell ismételnünk a beolvasást, amíg a beolvasott szám nem lesz 0. Mivel ezt már az elején is le akarjuk tesztelni, előtte be kell olvasnunk egy értéket.
 - A megoldás kiszámításához egy számlálót növeljünk eggyel a while cikluson belül, ezzel számoljuk, hogy hány pozitív szám volt az első 0 előtt.
-  
