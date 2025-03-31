@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Put the elements of the A and B lists into separate sets.
+- cpp: Iterate through the cargo elements and check whether each one is in A or it is in B. Based on this, increase or decrease the happiness value. To check if an element `x` is in set `A`, use the `A.count(x)` expression, which returns 0 or 1.
+  py: Iterate through the cargo elements and check whether each one is in A or it is in B. Based on this, increase or decrease the happiness value. To check if an element `x` is in set `A`, use the `x in A` expression.

@@ -8,5 +8,6 @@ MAXS = 1000_000_000
 subtasks = [
     {},  # 1-based
     {},  # examples
+    dict(MAXN=100, MAXM=100),
     {},
 ]

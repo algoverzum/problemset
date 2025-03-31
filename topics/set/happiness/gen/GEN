@@ -5,9 +5,9 @@
 #STNAME: examples
 #COPY: statement/input0.txt
 
-# Subtask 2: all
-#ST: 100
-#STNAME: all
+# Subtask 2: 1<=N, M <= 100
+#ST: 50
+#STNAME: small
 10     10	100	1
 10     10	100	2
 10     10	100	3
@@ -15,6 +15,10 @@
 100    100	1000	5
 100    100	1000	6
 100    100	1000	7
+
+# Subtask 3: no limits
+#ST: 50
+#STNAME: no-limits
 100000 100000	1000000000	8
 100000 100000	10000000	9
 100000 10000	100000	10

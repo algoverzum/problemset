@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Tegyük be az A és B lista elemeit egy-egy set-be.
+- cpp: Menjünk végig a rakomány elemein, és mindegyikre nézzük meg, hogy benne van-e A-ban, illetve benne van-e B-ben, és ettől függően növeljük vagy csökkentsük a boldogság értéket. Azt, hogy egy `A` set-ben benne van-e egy `x` elem, az `A.count(x)` utasítással lehet ellenőrizni, ami 0-t vagy 1-et ad vissza.
+  py: Menjünk végig a rakomány elemein, és mindegyikre nézzük meg, hogy benne van-e A-ban, illetve benne van-e B-ben, és ettől függően növeljük vagy csökkentsük a boldogság értéket. Azt, hogy egy `A` set-ben benne van-e egy `x` elem, az `x in A` utasítással lehet ellenőrizni.
