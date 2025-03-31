@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: We can iterate over the characters of a string just like the elements of a vector, so we should use a for loop to examine each character of the string. The `i`-th character of a string `s` is `s[i]`.
+  py: We can iterate over the characters of a string just like the elements of a list, so we should use a for loop to examine each character of the string. The `i`-th character of a string `s` is `s[i]`.
+- cpp: If the current character matches the letter 'p', increment a counter variable (counting algorithm). Be careful to enclose 'p' in single quotes, as double quotes represent a string, not a single character.
+  py: If the current character matches the letter 'p', increment a counter variable (counting algorithm). Make sure to enclose the letter 'p' in quotes.

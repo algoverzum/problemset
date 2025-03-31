@@ -27,17 +27,36 @@ def run(N):
         assert eval(row[2:]), row[2:]
 
     word = ""
-    if randint(1, 10) > 3:
-        for _ in range(N - 1):
+    x = randint(1, 10)
+    if N == 1:
+        x = 1
+    if x in [1, 2]:
+        for _ in range(N):
             word += chr(randint(ord("a"), ord("z")))
-    else:
-        for _ in range(int((N - 1) / 2)):
+    if x in [3, 4, 5, 6]:
+        for _ in range(N // 2):
             word += chr(randint(ord("a"), ord("z")))
-        revword = word[::-1]
-        if N - 1 % 2 == 0:
-            word += revword
+        rev = word[::-1]
+        if N % 2 == 0:
+            word += rev
         else:
-            word += revword[1::]
+            word += chr(randint(ord("a"), ord("z")))
+            word += rev
+    if x in [7, 8, 9, 10]:
+        for _ in range(N // 2):
+            word += chr(randint(ord("a"), ord("z")))
+        rev = word[::-1]
+        a = randint(1, 8)
+        w = list(word)
+        for i in range(a):
+            w[randint(0, len(word) - 1)] = chr(randint(ord("a"), ord("z")))
+        word = "".join(w)
+        if N % 2 == 0:
+            word += rev
+        else:
+            word += chr(randint(ord("a"), ord("z")))
+            word += rev
+
     print(word)
 
 

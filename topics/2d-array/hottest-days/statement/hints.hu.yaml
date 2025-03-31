@@ -1,3 +1,4 @@
+---
 - cpp: |
     Tároljuk el egy két dimenziós vectorban a számokat. Az `n` és `m` beolvasása után így hozhatunk létre egy megfelelő méretű két dimenziós vectort: `vector<vector<int>> t(n, vector<int>(m));`
   py: |

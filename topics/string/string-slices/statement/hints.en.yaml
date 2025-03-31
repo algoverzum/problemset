@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- 'We use 0-based indexing, so the character at index 2 is the third letter: `s[2]`'
+- py: The second-to-last character can be accessed using the -2 index.
+- py: 'Take the slice of the string with an upper limit of 5: `s[:5]`'
+- py: Take the slice of the string where the upper limit is the second-to-last character (index -2).
+- py: 'We need a slice that starts at index 1 and steps by 2: `s[1::2]`'
+- py: We need a slice that starts at index -2 and steps by -2.

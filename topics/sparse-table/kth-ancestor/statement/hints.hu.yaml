@@ -1,5 +1,5 @@
+---
 - Egy olyan megoldásra gondolj, amiben egy query megválaszolása logN lépésben megy, és minden csúcsra logN értéket tárolunk (ahol N a csúcsok száma). Milyen értékeket tároljunk el?
 - Minden csúcsra tároljuk el az 1,2,4,8,16,... lépéssel felette lévő csúcsot, vagyis minden 2-hatványadik ősét. Ha valamelyik nem létezik, akkor legyen az érték 0, az pont jó lesz az eredmény szempontjából.
 - Amikor egy X csúcs K-adik ősét kérdezik, akkor az olyan kettőhatványokkal kell feljebb lépnünk, amelyek a K kettes számrendszerbeli felbontásában szerepelnek, ezt tudjuk vizsgálni a K bináris alakja alapján, vagy úgy is, hogy felezgetjük a K-t.
 - A tárolt értékek tulajdonképpen egy Sparse Table-t alkotnak. Könnyű rekurzívan számolni őket az ősök alapján. Új csúcs felvételénél is ezt kell.
-

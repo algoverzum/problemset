@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Read the number of candies into a `c` vector, then swap every even-indexed element (c[0], c[2], ...) with the next one.
+  py: Read the number of candies into a `c` list, then swap every even-indexed element (c[0], c[2], ...) with the next one.
+- cpp: To swap the values of two variables, we actually need a third temporary helper variable. For example, if we wanted to swap `a` and `b`, we would use a `c` variable and perform the sequence `c = a; a = b; b = c;`. However, since this is a common operation, there is a built-in `swap(a, b)` function.
+  py: Swapping two variables could be done using a third helper variable, but in Python, it can be written more concisely using `a, b = b, a`.
+- cpp: So, if we write a for loop that iterates in steps of two, we need to use the `swap(c[i], c[i+1]);` statement.
+  py: So, if we write a for loop that iterates in steps of two, we need to use the `c[i], c[i+1] = c[i+1], c[i]` statement.
