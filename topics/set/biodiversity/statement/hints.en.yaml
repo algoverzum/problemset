@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: We can insert all identifiers into a set<int>. After reading a number, we can add it to the set using the `.insert()` method.
+  py: Read the two lists and convert them into sets. Then, take the union of the two sets.
+- cpp: At the end, print the size of the set, followed by its elements in order. It's convenient that the set stores the elements in ascending order.
+  py: The union of two sets (`a` and `b`) can be taken using `a.union(b)` or `a | b`. Then, print the size of the set, followed by its elements in ascending order using the `sorted()` function.

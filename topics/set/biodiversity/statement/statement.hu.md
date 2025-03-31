@@ -7,7 +7,7 @@ A bemenet második sorában $N$ db egész szám van szóközzel elválasztva, az
 A bemenet harmadik sorában $M$ db egész szám van szóközzel elválasztva, a második csapat által összegyűjtött azonosítók: $B_1, B_2, \ldots B_M$ . 
 
 ### Kimenet
-A standard kimenet első sorába azon azonosítók számát írd, amelyek legalább az egyik listában szerepelnek.
+A kimenet első sorába azon azonosítók számát írd, amelyek legalább az egyik listában szerepelnek.
 A második sorba ezeket az azonosítókat kell kiírni szóközzel elválasztva, növekvő sorrendben. Minden azonosítót csak egyszer szabad kiírni!
 
 ### Korlátok

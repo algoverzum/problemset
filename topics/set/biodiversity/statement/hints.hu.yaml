@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Az összes azonosítót egy set<int> -be beletehetjük. Miután beolvasunk egy számot az `.insert()` metódussal lehet beszúrni a set-be.
+  py: Olvassuk be a két listát, és csináljunk belőlük set-et. A két set unióját kell venni.
+- cpp: A végén a set méretét kell kiírni, majd az elemeit sorban. Pont jó, hogy a set növekvő sorrendben tárolja az elemeket.
+  py: Két halmaz (`a` és `b`) unióját lehet `a.union(b)` vagy `a | b` írásmóddal venni. Ezután ki kell írni a set méretét, majd az elemeit, növekvő sorrendben, ehhez használjuk a `sorted()` függvényt.
