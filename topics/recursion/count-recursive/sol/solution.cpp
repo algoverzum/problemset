@@ -14,7 +14,7 @@ int count(string S, char c) {
     }
 }
 
-// Do not change anything below
+// Do not change anything below.
 int main() {
     string S;
     char c;

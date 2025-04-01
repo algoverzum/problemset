@@ -9,6 +9,6 @@ def fibonacci(n):
     return fibonacci(n - 1) + fibonacci(n - 2)
 
 
-# Do not change anything below
+# Do not change anything below.
 for i in range(1, 31):
     print(fibonacci(i))

@@ -14,7 +14,7 @@ int gcd(int a, int b) {
     return gcd(a, b - a);
 }
 
-// Do not change anything below
+// Do not change anything below.
 int main() {
     int a, b;
     cin >> a >> b;

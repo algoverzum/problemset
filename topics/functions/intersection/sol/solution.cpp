@@ -20,7 +20,7 @@ vector<int> intersection(vector<int> a, vector<int> b) {
     return common;
 }
 
-// Do not change anything below!!!
+// Do not change anything below.
 int main() {
     int n, m;
     cin >> n >> m;

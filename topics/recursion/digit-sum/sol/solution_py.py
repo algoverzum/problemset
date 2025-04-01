@@ -8,7 +8,7 @@ def digit_sum(n):
     return n % 10 + digit_sum(n // 10)
 
 
-# Do not change anything below
+# Do not change anything below.
 print(digit_sum(1))
 print(digit_sum(9))
 print(digit_sum(42))

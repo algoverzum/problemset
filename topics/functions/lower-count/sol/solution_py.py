@@ -11,7 +11,7 @@ def count_lower(lista, hatar):
     return count
 
 
-# Do not change anything below!!!
+# Do not change anything below.
 n, k = [int(x) for x in input().split()]
 numbers = [int(x) for x in input().split()]
 print(count_lower(numbers, k))

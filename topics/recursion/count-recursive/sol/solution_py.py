@@ -11,7 +11,7 @@ def count(string, char):
         return count(string[1:], char)
 
 
-# Do not change anything below
+# Do not change anything below.
 S = input()
 c = input()
 print(count(S, c))

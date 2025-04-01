@@ -14,7 +14,7 @@ int count_divisors(int n) {
     return count;
 }
 
-// Do not change anything below!!!
+// Do not change anything below.
 int main() {
     int num;
     cin >> num;

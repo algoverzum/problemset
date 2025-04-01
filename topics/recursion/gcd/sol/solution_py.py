@@ -13,6 +13,6 @@ def gcd(a, b):
     return gcd(a, b - a)
 
 
-# Do not change anything below
+# Do not change anything below.
 a, b = map(int, input().split())
 print(gcd(a, b))

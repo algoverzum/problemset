@@ -9,7 +9,7 @@ long long fibonacci(int n) {
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
-// Do not change anything below
+// Do not change anything below.
 int main() {
     for (int i = 1; i <= 30; i++) {
         cout << fibonacci(i) << "\n";

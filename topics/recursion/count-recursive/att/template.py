@@ -6,7 +6,7 @@ def count(string, char):
     return
 
 
-# Do not change anything below!!!
+# Do not change anything below.
 S = input()
 c = input()
 print(count(S, c))

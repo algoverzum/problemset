@@ -12,7 +12,7 @@ int count_lower(vector<int> numbers, int limit) {
     return count;
 }
 
-// Do not change anything below!!!
+// Do not change anything below.
 int main() {
     int n, k;
     cin >> n >> k;

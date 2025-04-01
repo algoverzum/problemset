@@ -7,7 +7,7 @@ int count(string S, char c) {
     return 0;
 }
 
-// Do not change anything below!!!
+// Do not change anything below.
 int main() {
     string S;
     char c;

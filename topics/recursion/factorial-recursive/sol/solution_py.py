@@ -8,6 +8,6 @@ def factorial(n):
     return n * factorial(n - 1)
 
 
-# Do not change anything below
+# Do not change anything below.
 for i in range(1, 16):
     print(factorial(i))

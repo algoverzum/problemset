@@ -5,7 +5,7 @@ int digit_sum(int n) {
     // Write your code here
 }
 
-// Do not change anything below
+// Do not change anything below.
 int main() {
     cout << digit_sum(1) << "\n";
     cout << digit_sum(9) << "\n";

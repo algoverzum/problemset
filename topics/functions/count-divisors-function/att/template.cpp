@@ -3,7 +3,7 @@ using namespace std;
 
 // Create a count_divisors function here
 
-// Do not change anything below!!!
+// Do not change anything below.
 int main() {
     int num;
     cin >> num;

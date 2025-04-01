@@ -4,7 +4,7 @@ def digit_sum(n):
     # Write your code here
 
 
-# Do not change anything below
+# Do not change anything below.
 print(digit_sum(1))
 print(digit_sum(9))
 print(digit_sum(42))

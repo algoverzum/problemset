@@ -9,6 +9,6 @@ def summa(a, b):
     return
 
 
-# Do not change anything below!!!
+# Do not change anything below.
 a, b = map(int, input().split())
 print(summa(a, b))

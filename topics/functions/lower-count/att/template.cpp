@@ -4,7 +4,7 @@ using namespace std;
 
 // Create a count_lower function here
 
-// Do not change anything below!!!
+// Do not change anything below.
 int main() {
     int n, k;
     cin >> n >> k;

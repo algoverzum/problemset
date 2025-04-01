@@ -4,7 +4,7 @@ using namespace std;
 
 // Define a function called odd_numbers here.
 
-// Do not change anything below!!!
+// Do not change anything below.
 int main() {
     int n;
     cin >> n;

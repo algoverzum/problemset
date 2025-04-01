@@ -6,7 +6,7 @@ int first_even(vector<int> numbers) {
     // Write your code here
 }
 
-// Do not change anything below!!!
+// Do not change anything below.
 int main() {
     int n;
     cin >> n;

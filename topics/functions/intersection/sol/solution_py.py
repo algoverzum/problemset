@@ -10,7 +10,7 @@ def intersection(a, b):
     return common
 
 
-# Do not change anything below!!!
+# Do not change anything below.
 input()
 a = [int(x) for x in input().split()]
 b = [int(x) for x in input().split()]

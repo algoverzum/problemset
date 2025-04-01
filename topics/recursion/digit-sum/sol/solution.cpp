@@ -8,7 +8,7 @@ int digit_sum(int n) {
     return n % 10 + digit_sum(n / 10);
 }
 
-// Do not change anything below
+// Do not change anything below.
 int main() {
     cout << digit_sum(1) << "\n";
     cout << digit_sum(9) << "\n";

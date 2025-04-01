@@ -9,6 +9,6 @@ def gcd(a, b):
     return
 
 
-# Do not change anything below!!!
+# Do not change anything below.
 a, b = map(int, input().split())
 print(gcd(a, b))

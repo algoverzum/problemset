@@ -10,7 +10,7 @@ def odd_numbers(numbers):
     return odd
 
 
-# Do not change anything below!!!
+# Do not change anything below.
 input()
 numbers = [int(x) for x in input().split()]
 print(*odd_numbers(numbers))

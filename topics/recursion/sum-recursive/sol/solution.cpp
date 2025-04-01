@@ -9,7 +9,7 @@ long long summa(int a, int b) {
     return b + summa(a, b - 1);
 }
 
-// Do not change anything below
+// Do not change anything below.
 int main() {
     int a, b;
     cin >> a >> b;

@@ -11,6 +11,6 @@ def count_divisors(n):
     return count
 
 
-# Do not change anything below!!!
+# Do not change anything below.
 num = int(input())
 print(count_divisors(num))
