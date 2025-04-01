@@ -6,7 +6,7 @@
           cout << "P";
         }
   py: |
-    After the `if` keyword, the condition to be checked  must be written, followed by a colon at the end of the line, and then the indented code block:
+    After the `if` keyword, the condition to be checked must be written, followed by a colon at the end of the line, and then the indented code block:
         if X > 0:
           print("P")
 - cpp: |

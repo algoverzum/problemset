@@ -1,6 +1,6 @@
 ---
 - Ahhoz, hogy eldöntsük, hogy egy szám páratlan, vegyük a 2-es maradékát!
 - Egy n számról az `n % 2 == 1` kifejezéssel tudjuk eldönteni, hogy páratlan-e.
-- A két szám között akkor van páratlan, ha az egyik VAGY a másik páratlan.||
+- A két szám között akkor van páratlan, ha az egyik VAGY a másik páratlan.
 - cpp: Használj if utasítást, és azon belül a két számra a fenti kifejezést kösd össze egy VAGY operátorral, ami a C++ -ban dupla függőleges vonal (`||`), a magyar billentyűzeten AltGr - W.
   py: Használj if utasítást, és azon belül a két számra a fenti kifejezést kösd össze egy VAGY operátorral, ami Pythonban az `or` kulcsszó.

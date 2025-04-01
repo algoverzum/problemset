@@ -1,6 +1,6 @@
 ---
 - To determine whether a number is odd, take its remainder when divided by 2.
 - You can check if a number `n` is odd using the expression `n % 2 == 1`.
-- There is an odd number between two numbers if the first one OR the the second one is odd.||
+- There is an odd number between two numbers if the first one OR the the second one is odd.
 - cpp: Use an if statement and combine the above expression for both numbers with an OR operator, which in C++ is a double vertical bar (`||`).
   py: Use an if statement and combine the above expression for both numbers with an OR operator, which in Python is the `or` keyword.
