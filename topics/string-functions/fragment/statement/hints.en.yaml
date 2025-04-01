@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Remember that `s.find(c)` returns the index of the first occurrence of character `c` in string `s`, while `s.rfind(c)` returns the last occurrence. If the character is not found, it returns `-1`.
+- cpp: If the index of the first occurrence is `i` (which is not `-1`), and the last occurrence is `j`, then the desired substring is `s.substr(i, j - i + 1)`.
+  py: If the index of the first occurrence is `i` (which is not `-1`), and the last occurrence is `j`, then the desired substring is `s[i:j+1]`.

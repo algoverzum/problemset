@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- The index of the second occurrence must be searched for after the first occurrence.
+- The `find` function can take a second parameter, which specifies where to start the search.
+- Let `first = s.find('x')`. If `first == -1`, print `-2`.
+- Otherwise, print the result of `s.find('x', first + 1)`.
+- cpp: In C++, the return value is actually the `string::npos` constant if the character is not found. This constant converts to `-1` when cast to an integer, but it is actually a very large number.

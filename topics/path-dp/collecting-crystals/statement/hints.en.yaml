@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- For each cell, calculate the maximum score that can be collected by the time we reach that cell.
+- These values can be determined using dynamic programming. A cell's score will be the maximum of the scores from the cell to its left and the cell above it, plus the score of the current cell.
+- If a cell contains a trap, it is advisable to set its score to a sufficiently large negative number.
+- The path can be traced backwards from the end, following the decisions we made; i.e., by checking whether the cell to the left or the one above it has a higher score.
+- Alternatively, we can compute the scores from the back to the front, and then we get the path in the forward direction (in this case, the DP values represent the maximum score along the path from the given cell to the bottom-right corner).

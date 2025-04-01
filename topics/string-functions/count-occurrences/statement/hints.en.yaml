@@ -1,4 +1,3 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Iterate through the string's 3-character long substrings (`s.substr(i, 3)`), and if it matches the target substring, increment a counter.
+  py: Use the `s.count()` function.

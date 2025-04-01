@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- The `<` comparison also works for string data types, and thus the `sort` function works as well.
+- cpp: |
+    Read the names into a `vector<string>` and sort them: `sort(names.begin(), names.end());`.
+  py: |
+    Read the names into a list: `names = input().split()`. Then sort them: `names.sort()`.

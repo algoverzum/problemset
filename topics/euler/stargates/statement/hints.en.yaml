@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- 'Consider the graph where planets are the vertices and star gates are the edges. The question is whether there exists a Eulerian circuit in the graph, where every edge is visited exactly once. What must be true for the degrees of the vertices? And is there any other condition?'
+- If I pass through a vertex `k` times, I can consider it as `k` times entering and `k` times exiting. These are distinct edges. The starting vertex can also be considered this way, but there, the last entry corresponds to the first exit.
+- So if I pass through a vertex `k` times, then it must have `2k` edges connected to it. That is, the degree of every vertex must be even. Is this a sufficient condition?
+- 'It is also important that the graph must be connected. Together, this is a sufficient condition, but proving this is not so simple. You can find the proof here: https://en.wikipedia.org/wiki/Eulerian_path '

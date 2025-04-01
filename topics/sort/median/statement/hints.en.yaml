@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Sort the elements using the `sort` function.
+- cpp: The element at index `(n - 1) / 2` will work for both odd and even values of `n`.
+  py: The element at index `(n - 1) // 2` will work for both odd and even values of `n`.
