@@ -8,8 +8,8 @@ Indulj ki az előre készített sablon kódból! Ne változtass a főprogramon s
 
 ### Korlátok
 * $1 \le N \le 100$, ahol $N$ a számsorozat mérete.
-* $1 \le M \le 10000$, ahol $M$ a megadott határ.
-* A sorozat minden eleme $1$ és $10000$ között van.
+* $1 \le K \le 10\,000$, ahol $K$ a megadott határ.
+* A sorozat minden eleme $1$ és $10\,000$ között van.
 
 ### Példa
 A (6 3 4 1 2) számsorból az 1, a 2 és a 3 kisebb mint a megadott 4-es határ, így a függvény visszatérési értéke 3.

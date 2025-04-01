@@ -4,7 +4,7 @@
 # Create a count_lower function here
 
 
-# Do not change anything below!!!
-N, K = [int(x) for x in input().split()]
-A = list(map(int, input().split()))
-print(count_lower(A, K))
+# Do not change anything below.
+n, k = [int(x) for x in input().split()]
+numbers = [int(x) for x in input().split()]
+print(count_lower(numbers, k))
