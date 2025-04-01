@@ -11,7 +11,7 @@ A kimenet első sorába azon azonosítók számát írd, amelyek legalább az eg
 A második sorba ezeket az azonosítókat kell kiírni szóközzel elválasztva, növekvő sorrendben. Minden azonosítót csak egyszer szabad kiírni!
 
 ### Korlátok
-* $1 \le N,M \le 200\,000$
+* $1 \le N,M \le 100\,000$
 * $1 \le A_i, B_i \le 10^9$
 
 ### Példa bemenet
