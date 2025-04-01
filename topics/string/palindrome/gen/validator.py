@@ -15,7 +15,7 @@ def run(f, st):
     for k, v in subtasks[st].items():
         globals()[k] = v
 
-    word = next(f)
+    word = next(f).strip()
     assert MIN <= len(word) <= MAX
 
     assert next(f, None) is None

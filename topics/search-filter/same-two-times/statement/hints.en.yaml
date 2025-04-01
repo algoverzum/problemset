@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- If the sequence is stored in `a`, we are looking for elements where `a[i] == a[i + 1]`.
+- The index `i` should initially be 0, and we increment it one by one until `a[i] == a[i + 1]`. Be careful that the `i + 1`-th element must still be within the sequence (`i < n - 1`).
+- cpp: |
+    `while (i < n - 1 && a[i] != a[i + 1]) i++;`
+  py: |
+    `while i < n - 1 and a[i] != a[i + 1]: i += 1`

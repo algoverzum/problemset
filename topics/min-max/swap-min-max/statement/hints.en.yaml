@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Determine the indices of the largest and smallest elements (maximum and minimum selection with index tracking).
+- During the maximum selection process, always store the index whenever updating the maximum value.
+- cpp: |
+    If `maxindex` and `minindex` represent the indices of the largest and smallest elements, we need to swap the elements at these positions. This can be done using the swap function: `swap(c[maxindex], c[minindex])`, where `c` represents the vector of candies.
+  py: |
+    If `maxindex` and `minindex` represent the indices of the largest and smallest elements, we need to swap the elements at these positions. This can be done as follows: `c[maxindex], c[minindex] = c[minindex], c[maxindex]`, where `c` represents the list of candies.

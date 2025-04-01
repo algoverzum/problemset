@@ -1,3 +1,8 @@
-- TODO
-- cpp: TODO
-  py: TODO
+---
+- cpp: |
+    Store the numbers in a two-dimensional vector. After reading `n` and `m`, you can create a properly sized two-dimensional vector like this: `vector<vector<int>> t(n, vector<int>(m));`
+  py: |
+    It is recommended to use a list of lists to store the number table. Start with an empty list (`t = []`), and as you read each row, add the list of numbers created from the row to `t`: `t.append([int(x) for x in input().split()])`
+- Iterate through each row of the number table and use a standard maximum selection to keep track of the largest element (`maxi`).
+- The j-th element of the i-th row can be accessed using `t[i][j]`. Make sure that the row indices (i) go from 0 to n-1, and the element indices within a row (j) go from 0 to m-1.
+- Iterate through the rows again, count how many elements in each row match `maxi`, and print this count (standard counting method).

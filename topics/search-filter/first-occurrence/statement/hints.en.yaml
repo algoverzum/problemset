@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- The basic idea of the search is to start from the beginning of the word and move one step forward until the examined letter matches the key letter.
+- Define an index variable `i`, initially set to 0. While `s[i]` is not equal to the key letter, increment `i` by one. Be very careful to ensure that `i` does not exceed the last character of `s`; this must be checked before attempting to read `s[i]`.
+- cpp: |
+    `while (i < s.size() && s[i] != key) i++;`
+  py: |
+    `while i < len(s) and s[i] != key: i += 1`

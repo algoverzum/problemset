@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Read the words into a vector of strings, then use the learned minimum selection method by comparing the lengths of the words.
+  py: Read the words into a list of strings, then use the learned minimum selection method by comparing the lengths of the words.
+- cpp: The length of a word can be retrieved using the `size()` method (e.g., `words[i].size()`).
+  py: The length of a word is given by the `len` function (e.g., `len(words[i])`).
+- During the minimum selection process, we need to store both the length of the shortest word and the word itself.

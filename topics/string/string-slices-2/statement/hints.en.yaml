@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- py: The first letter is `s[0]`. To access the last letter, we can use the -1 index.
+- py: 'Take the entire string while stepping by -1: `s[::-1]`'
+- py: 'Start from the character at index 2 and step by 3 until the end: `s[2::3]`'
+- py: Think about which character should no longer be included in a string of length 6 or 7. The expression `len(s) // 2` works for both cases, so this can be used as the upper limit of the slice.
+- py: 'Take the substring starting from the `len(s) // 2` index to the end: `s[len(s)//2:]`'

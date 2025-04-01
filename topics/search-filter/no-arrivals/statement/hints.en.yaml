@@ -1,4 +1,10 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- The basic idea of the search is to start from the beginning of the sequence and move one step forward until the examined element meets the condition.
+- cpp: Read the values into a vector `a`.
+  py: Read the values into a list `a`.
+- Define an index variable `i`, and while the element at position `i` is not 0, increment `i` by one. Be careful to ensure that `i` does not go beyond the last number.
+- cpp: |
+    `while (i < n && a[i] != 0) i++;`
+  py: |
+    `while i < n and a[i] != 0: i += 1`
+- At the end, don't forget to add 1 to the result, as the problem statement numbers the elements starting from 1.

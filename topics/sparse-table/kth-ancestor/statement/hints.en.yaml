@@ -1,3 +1,5 @@
-- TODO
-- cpp: TODO
-  py: TODO
+---
+- Think of a solution where answering a query takes logN steps, and we store logN values for each node (where N is the number of nodes). What values should we store?
+- For each node, store the ancestor located 1, 2, 4, 8, 16, ... steps above it, meaning every power-of-2 ancestor. If any of these do not exist, store 0, as that will work well for the result.
+- When querying the K-th ancestor of a node X, we need to move upwards using the powers of two that appear in the binary representation of K. This can be determined by examining K's binary form or by repeatedly halving K.
+- The stored values essentially form a Sparse Table. These values can be computed recursively based on the ancestors. When adding a new node, the same approach should be used.

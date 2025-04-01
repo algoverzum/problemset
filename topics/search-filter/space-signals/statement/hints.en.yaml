@@ -1,4 +1,28 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: We can already collect the sources of acceptable signals into a vector during reading the input.
+  py: We can already collect the sources of acceptable signals into a list during reading the input.
+- cpp: Initially, create an empty `vector<string>`, then use the `push_back()` function to add the valid signal sources.
+  py: Initially, create an empty list (`[]`), then use the `append()` function to add the valid signal sources.
+- Repeat the following `n` times: read the source into a string variable and the frequency into an int variable. If the frequency is <= 500, include the source in the results.
+- cpp: |
+        ```cpp
+        vector<string> received;
+        for (int i = 0; i < N; i++) {
+            string source;
+            int frequency;
+            cin >> source;
+            cin >> frequency;
+            if (frequency >= 500) {
+                received.push_back(source);
+            }
+        }
+        ```
+  py: |
+        ```python
+        received = []
+        for i in range(n):
+            source = input()
+            frequency = int(input())
+            if frequency >= 500:
+                received.append(source)
+        ```

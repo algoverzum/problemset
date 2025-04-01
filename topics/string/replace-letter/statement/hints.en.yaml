@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Iterate over the characters of the word and print the corresponding character to the output.
+- If the current character is the letter `a`, print the letter `e`; otherwise, print the current character.
+- cpp: |
+    Note that the letters are of type `char`, and they should be specified within single quotes (e.g., `s[i] == 'a'`).
+  py: |
+    Reminder: to prevent the `print` function from adding a newline or anything else after the printed character, use the `end=''` argument at the end (e.g., `print(s[i], end='')`).
