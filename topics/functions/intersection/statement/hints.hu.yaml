@@ -1,8 +1,12 @@
 ---
-- cpp: Az eredmény egy vektor lesz, csináljunk tehát egy üres vektort az elején, legyen a neve kozos.
+- cpp: |
+    A függvény fejléce így nézzen ki: `vector<int> intersection(vector<int> a, vector<int> b)`
+  py: |
+    A függvény fejléce így nézzen ki: `def intersection(a, b):` Itt `a` és `b` két lista.
+- cpp: Az eredmény egy vector lesz, csináljunk tehát egy üres vectort az elején, legyen a neve kozos.
   py: Az eredmény egy lista lesz, csináljunk tehát egy üres listát az elején, legyen a neve kozos.
-- cpp: Menjünk végig az egyik vektor elemein, és ha az adott elem benne van a másik listában, akkor tegyük bele a `kozos` vektorba.
+- cpp: Menjünk végig az egyik vector elemein, és ha az adott elem benne van a másik vectorban, akkor tegyük bele a `kozos` vectorba.
   py: Menjünk végig az egyik lista elemein, és ha az adott elem benne van a másik listában, akkor tegyük bele a `kozos` listába.
-- cpp: Annak eldöntésére, hogy benne van-e egy elem egy vektorban; menjünk végig a második vektoron, és minden elemére ellenőrizzük, hogy egyenlő-e az elemmel.
-  py:
-  Az `in` operátort használhatjuk annak eldöntésére, hogy benne van-e egy elem egy listában (`if elem in lista: ...`)
+- cpp: Annak eldöntésére, hogy benne van-e egy elem a második vectorban, menjünk végig rajta, és minden elemére ellenőrizzük, hogy egyenlő-e az elemmel.
+  py: |
+    Az `in` operátort használhatjuk annak eldöntésére, hogy benne van-e egy elem egy listában (`if elem in lista: ...`)

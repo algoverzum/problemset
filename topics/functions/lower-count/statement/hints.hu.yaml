@@ -1,4 +1,8 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    A függvény fejléce így nézzen ki: `int count_lower(vector<int> numbers, int limit)`
+  py: |
+    A függvény fejléce így nézzen ki: `def count_lower(numbers, limit):`. Ebben a `numbers` paraméter egy lista lesz, míg a `limit` egy szám.
+- cpp: A függvényen belül a szokásos megszámlálást csináljuk, azaz legyen egy számláló változó, ami kezdetben 0, menjünk végig a vector elemein, és ha az aktuális elem kisebb, mint a limit, növeljük a számlálót.
+  py: A függvényen belül a szokásos megszámlálást csináljuk, azaz legyen egy számláló változó, ami kezdetben 0, menjünk végig a lista elemein, és ha az aktuális elem kisebb, mint a limit, növeljük a számlálót.
+- A ciklus után a `return` utasítással adjuk vissza a számláló értékét.

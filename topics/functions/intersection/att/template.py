@@ -6,6 +6,6 @@
 
 # Do not change anything below.
 input()
-A = [int(x) for x in input().split()]
-B = [int(x) for x in input().split()]
-print(*intersection(A, B))
+a = [int(x) for x in input().split()]
+b = [int(x) for x in input().split()]
+print(*intersection(a, b))

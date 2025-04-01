@@ -1,4 +1,9 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    The function header should look like this: `int count_lower(vector<int> numbers, int limit)`
+  py: |
+    The function header should look like this: `def count_lower(numbers, limit):`. Here, `numbers` will be a list, while `limit` will be a number.
+- cpp: 'Inside the function, we perform the usual counting process: initialize a counter variable to 0, iterate through the elements of the vector, and if the current element is smaller than the limit, increment the counter.'
+  py: 'Inside the function, we perform the usual counting process: initialize a counter variable to 0, iterate through the elements of the list, and if the current element is smaller than the limit, increment the counter.'
+- cpp: After the loop, return the value of the counter using the `return counter;` statement.
+  py: After the loop, return the value of the counter using the `return counter` statement.

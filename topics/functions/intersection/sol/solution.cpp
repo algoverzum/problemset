@@ -3,40 +3,38 @@
 #include <vector>
 using namespace std;
 
-vector<int> intersection(vector<int> &A, vector<int> &B) {
-    vector<int> ans;
-    for (int i = 0; i < A.size(); i++) {
-        bool ok = false;
-        for (int j = 0; j < B.size(); j++) {
-            if (A[i] == B[j]) {
-                ok = true;
+vector<int> intersection(vector<int> a, vector<int> b) {
+    vector<int> common;
+    for (int i = 0; i < a.size(); i++) {
+        bool found = false;
+        for (int j = 0; j < b.size(); j++) {
+            if (a[i] == b[j]) {
+                found = true;
             }
         }
-        if (ok) {
-            ans.push_back(A[i]);
+        if (found) {
+            common.push_back(a[i]);
         }
     }
 
-    return ans;
+    return common;
 }
 
 // Do not change anything below!!!
 int main() {
     int n, m;
     cin >> n >> m;
-    vector<int> A(n);
+    vector<int> a(n);
     for (int i = 0; i < n; i++) {
-        cin >> A[i];
+        cin >> a[i];
     }
-    vector<int> B(m);
+    vector<int> b(m);
     for (int i = 0; i < m; i++) {
-        cin >> B[i];
+        cin >> b[i];
     }
-    vector<int> ans;
-    ans = intersection(A, B);
-    for (auto &num : ans) {
+    vector<int> ans = intersection(a, b);
+    for (int num : ans) {
         cout << num << " ";
     }
-
     cout << "\n";
 }

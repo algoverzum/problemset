@@ -1,8 +1,12 @@
 ---
-- cpp: The result will be a vector, so let's make an empty vector at the beginning, let it be called ans.
-  py: The result will be a list, so let's make an empty list at the beginning, let it be called ans.
-- cpp: Go through the elements of one vector, and if the element is in the other list, put it in the vector `ans`.
-  py: Go through the elements of one list, and if the element is in the other list, put it in the `ans` list.
-- cpp: To check if an element is in a vector; go through the second vector and check for each element if it is equal to the element.
-  py:
-  Use the `in` operator to determine whether an element is in a list (`if element in list: ...`)
+- cpp: |
+    The function header should look like this: `vector<int> intersection(vector<int> a, vector<int> b)`
+  py: |
+    The function header should look like this: `def intersection(a, b):` Here, `a` and `b` are two lists.
+- cpp: The result will be a vector, so let's create an empty vector at the beginning and call it `common`.
+  py: The result will be a list, so let's create an empty list at the beginning and call it `common`.
+- cpp: Iterate through the elements of one vector, and if an element is in the other vector, add it to the `common` vector.
+  py: Iterate through the elements of one list, and if an element is in the other list, add it to the `common` list.
+- cpp: To check if a number appears in the second vector, iterate through its elements and check if the current element is equal to the target number.
+  py: |
+    Use the `in` operator to check whether an element is in a list (`if element in list: ...`).

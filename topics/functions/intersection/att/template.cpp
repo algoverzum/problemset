@@ -7,19 +7,17 @@ using namespace std;
 int main() {
     int n, m;
     cin >> n >> m;
-    vector<int> A(n);
+    vector<int> a(n);
     for (int i = 0; i < n; i++) {
-        cin >> A[i];
+        cin >> a[i];
     }
-    vector<int> B(m);
+    vector<int> b(m);
     for (int i = 0; i < m; i++) {
-        cin >> B[i];
+        cin >> b[i];
     }
-    vector<int> ans;
-    ans = intersection(A, B);
-    for (auto &num : ans) {
+    vector<int> ans = intersection(a, b);
+    for (int num : ans) {
         cout << num << " ";
     }
-
     cout << "\n";
 }
