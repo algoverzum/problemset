@@ -11,7 +11,7 @@ usage = """Generator for "election".
 
 Parameters:
 * N (count of packets)
-* M (count of vote options)
+* M (count of name options)
 * A (maximum vote amount)
 * S (seed)
 
@@ -38,11 +38,11 @@ def run(N, M, A):
     print(N)
     names = []
     for _ in range(M):
-        name = "".join([choice(string.ascii_lowercase) for _ in range(10)])
+        hossz = randint(5, 10)
+        name = "".join([choice(string.ascii_lowercase) for _ in range(hossz)])
         names.append(name)
     for _ in range(N):
-        print(choice(names), end=" ")
-        print(randint(1, A))
+        print(choice(names), randint(1, A))
 
 
 if __name__ == "__main__":

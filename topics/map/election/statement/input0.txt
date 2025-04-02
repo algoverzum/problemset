@@ -1,6 +1,6 @@
 5
-Dreebo 5
-Eeper 2
-Dreebo 2
-Dreebo 6
-Scrimbler 8
+dreebo 5
+eeper 2
+dreebo 2
+dreebo 6
+scrimbler 8
