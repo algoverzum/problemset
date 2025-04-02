@@ -1,4 +1,8 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Használjunk a `map<string,int> votecount;` változót a szavazatok összeszámlálására.
+  py: |
+    'Használjunk `dictionary`-t a szavazatok összeszámlálására: `votecount = {}`'
+- cpp: Minden sorban szereplő név és szavazatszám beolvasása után a `votecount[név] += szavazatszám;` utasítással összeszámolhatjuk a szavazatokat.
+  py: Minden sorban szereplő név és szavazatszám beolvasása után a `votecount[név] = votecount.get(név, 0) + szavazatszám` utasítással összeszámolhatjuk a szavazatokat.
+- cpp: Szerencsére a `map` ábécé sorrendben tárolja a neveket, így a kiírás nem okoz gondot.
+  py: '`votecount.keys()` paranccsal megkaphatjuk az eltárolt neveket, és a `sorted` utasítással ezeket rendeznünk is kell a kiírás előtt.'

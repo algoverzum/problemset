@@ -16,7 +16,13 @@ def run(f, st):
         globals()[k] = v
 
     N = int(next(f))
-    assert MIN <= N <= MAX
+    assert MIN_N <= N <= MAX_N
+    for _ in range(N):
+        name, count = next(f).split()
+        assert STR_MIN <= len(str(name)) <= STR_MAX
+        assert MIN_A <= int(count) <= MAX_A
+        for char in name:
+            assert ord("a") <= ord(char) <= ord("z")  # or ord("A") <= ord(char) <= ord("Z")
 
     assert next(f, None) is None
 
