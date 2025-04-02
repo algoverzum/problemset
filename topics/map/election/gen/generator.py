@@ -5,32 +5,44 @@ from sys import argv, exit, stderr
 import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
+import string
 
 usage = """Generator for "election".
 
 Parameters:
-* A (minimum value)
-* B (maximum value)
+* N (count of packets)
+* M (count of vote options)
+* A (maximum vote amount)
 * S (seed)
 
 Constraint:
+* %d <= N <= %d
+* %d <= M <= %d
 * %d <= A <= %d
-* %d <= B <= %d
 """ % (
-    MIN,
-    MAX,
-    MIN,
-    MAX,
+    MIN_N,
+    MAX_N,
+    MIN_N,
+    MAX_N,
+    MIN_A,
+    MAX_A,
 )
 
 
-def run(A, B):
+def run(N, M, A):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    print(N)
+    names = []
+    for _ in range(M):
+        name = "".join([choice(string.ascii_lowercase) for _ in range(10)])
+        names.append(name)
+    for _ in range(N):
+        print(choice(names), end=" ")
+        print(randint(1, A))
 
 
 if __name__ == "__main__":

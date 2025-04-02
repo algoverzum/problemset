@@ -9,6 +9,6 @@ for _ in range(n):
         votecount[name] += int(votes)
     else:
         votecount[name] = int(votes)
-for key in votecount.keys():
+for key in sorted(votecount.keys()):
     print(key, end=" ")
     print(votecount[key])
