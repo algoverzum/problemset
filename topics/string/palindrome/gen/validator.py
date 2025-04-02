@@ -15,8 +15,12 @@ def run(f, st):
     for k, v in subtasks[st].items():
         globals()[k] = v
 
-    word = next(f).strip()
+    word = next(f)
+    assert word[-1] == "\n"
+    word = word[:-1]
     assert MIN <= len(word) <= MAX
+    for char in word:
+        assert ord("a") <= ord(char) <= ord("z")
 
     assert next(f, None) is None
 
