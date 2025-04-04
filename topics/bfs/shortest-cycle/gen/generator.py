@@ -121,7 +121,7 @@ def run(A, B, C, D):
             used_nodes.append(v)
             sub_tree_parents.append(v)
             # dist[v] = 1
-            # parent[v] = root
+            parent[v] = v
             edges.add((min(root, v), max(root, v)))
             neighbors[root].append(v)
             neighbors[v].append(root)
@@ -142,7 +142,7 @@ def run(A, B, C, D):
                 split_nodes[i].remove(cs)
                 used_sub_nodes.append(cs)
                 # dist[cs] = dist[p] + 1
-                # parent[cs] = p
+                parent[cs] = sub_tree_parents[i]
                 edges.add((min(p, cs), max(cs, p)))
                 neighbors[p].append(cs)
                 neighbors[cs].append(p)
@@ -182,14 +182,96 @@ def run(A, B, C, D):
             key=lambda x: dist[x],
             reverse=True,
         )
+        """ Proof of concept
+        részfák(van belső kör már fákban szóval részgráf)
+        fa1: 10,10,9 8, 8, 7
+        fa2: 10,9,9,9,8,
+        fa3: 9,8,8,8,7
+        fa4: 7,6,5,4
+        sorted_nodes:      x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x,
+        dist[sorted_nodes]:10,10,10,9,9,9,9,8,8,8....
+        value_start:0,3,7,13
+        1.legnagyobb összeg value_start[0]+value_start[0]
+        2. legnagyobb.  value_start[0]+value_start[1]
+        3. legnagyobb.  value_start[0]+value_start[2] Vagy value_start[1]+value_start[1]
+        
+        összegek alapján megyek sorba
+        n. legnagyobb value_start[a]+value_start[b].   a+b=n-1
+        currentsum=n-1
+        P1c=a, P2c=b                         0,1
+        P1index=value_start[a],P2index       0,3
+        P1=sorted_nodes[value_start[a]],P"   x0,x3
+        v1=dist[P1],v2=dist[P2]              10,9                        
+        """
 
+        sorted_nodes = sorted(nodes, key=lambda x: dist[x], reverse=True)
+        maxdist = sorted_nodes[0]
+        value_start_index = list(range(maxdist))
         P1, P2 = 0, 1
-        for j in range(cross_edge):
-            u, v = Y[P1], Y[P2]
-            edges.add((min(u, v), max(u, v)))
-            neighbors[u].append(v)
-            neighbors[v].append(u)
-            dist[u] = min(dist[u], dist[v] + 1)
+        P1index, P2index = 0, 0
+        P1c, P2c = 0, 0
+        if sub_tree_type == 1:
+            bigcycles = 0
+            lastvalue = maxdist
+            valuecount = 0
+            value_start_index[0] = 0
+            currentsum = 0
+            while bigcycles <= cross_edge:
+                # value_start_index tömböt nem kell előfeldolgozni, mert sose kell start index ami nagyobb mint a currentsum. Ezt még lehet változtanom kell, ha error.
+                if dist[P2] != lastvalue:
+                    lastvalue = dist[P2]
+                    valuecount = valuecount + 1
+                    value_start_index[valuecount] = P2
+                for j in range((currentsum + 1) // 2):
+                    if bigcycles == cross_edge:
+                        return
+                    P1c = j
+                    P2c = currentsum - j
+                    P1index = value_start_index[P1c]
+                    P2index = value_start_index[P2c]
+                    P1 = sorted_nodes[P1index]
+                    P2 = sorted_nodes[P2index]
+                    v1 = dist[P1]
+                    v2 = dist[P2]
+                    while dist[P1] == v1:
+                        P2 = sorted_nodes[P2index]
+                        while dist[P2] == v2:
+                            if bigcycles == cross_edge:
+                                return
+                            if parent[P1] != parent[P2]:
+                                e = (min(P1, P2), max(P1, P2))
+                                edges.add(e)
+                                bigcycles = bigcycles + 1
+                            P2 = P2 + 1
+                        P1 = P1 + 1
+                # Amikor value_start[a]+value_start[a] eset van.
+                if currentsum % 2 == 0:
+                    P1c, P2c = currentsum / 2, currentsum / 2
+                    P1index, P2index = value_start_index[P1c], value_start_index[P2c]
+                    P1 = sorted_nodes[P1index]
+                    P2 = sorted_nodes[P1index + 1]
+                currentsum = currentsum + 1
+
+                if parent[P1] != parent[P2]:
+
+                    next
+                else:
+                    next
+                """if parent[P1]!=parent[P2]:
+                    e=(min(P1,P2),max(P1,P2))
+                    while e in edges:
+                        P2=P2+1
+                    edges.add(e)
+                    P2=P2+1    
+                else:
+                    P2=P2+1"""
+        else:
+            for j in range(cross_edge):
+                u, v = Y[P1], Y[P2]
+                edges.add((min(u, v), max(u, v)))
+                neighbors[u].append(v)
+                neighbors[v].append(u)
+                dist[u] = min(dist[u], dist[v] + 1)
 
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
