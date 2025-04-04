@@ -4,6 +4,10 @@ name: Greedy
 problems:
   - problem_id: walrus
     type: EXTRA
+  - problem_id: fewest-pilots
+    type: REQUIRED
+  - problem_id: sentinel-line
+    type: REQUIRED
 prerequisites:
   - combined-patterns
 dependents: []
