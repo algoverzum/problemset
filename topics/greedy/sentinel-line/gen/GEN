@@ -1,0 +1,31 @@
+# N     H	X	T       S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+
+# Subtask 2: 1 <= N <= 1000
+#ST: 50
+#STNAME: small
+1	 5	10	rand      1
+5	 4	10	rand      2
+10	 10	50	rand	  3
+100	 10	200	rand	  4
+1000	 100	1000	rand	  5
+1000	 100	1000	uniform   6
+1000	 100	1000	cluster   7
+
+# Subtask 3: 1 <= N <= 100000
+#ST: 50
+#STNAME: all
+100000	 100000	1000000000	rand      8
+100000	 100	1000000000	rand      9
+100000	 1000	1000000000	uniform   10
+100000	 10000	1000000000	uniform   11
+100000	 100000	1000000000	uniform   12
+100000	 10	1000000		uniform   13
+1000	 10	1000000		cluster   14
+1000	 1000	10000000	cluster   15
+10000	 10000	100000000	cluster   16
+100000	 100000	1000000000	cluster   17
