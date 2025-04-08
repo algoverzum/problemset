@@ -35,13 +35,14 @@ Constraint:
 
 
 def run(A, B, C, D):
-    unused_nodes = list(range(A))
-    nodes = list(range(A))
+    unused_nodes = list(range(1, A + 1))
+    nodes = list(range(1, A + 1))
     edges = set()
+    # parent itt nem direct szülőt ért, hanem, hogy melyik részfából ered.
     parent = [-1] * (A + 1)
-    neighbors = [] * (A + 1)
+    neighbors = [[] for _ in range(A + 1)]
     dist = [-1] * (A + 1)
-    root = 1
+    root = randint(1, A + 1)
     dist[root] = 0
     used_nodes = [root]
     unused_nodes.remove(root)
@@ -79,11 +80,12 @@ def run(A, B, C, D):
 
     # egyenes gráf
     last_node = -1
-
-    def line_graph():
+    # ahol last node azért kell, hogy amikor ezt meghívom mert egy nagy kört szeretnék akkor csak összekötöm a last_node-ot a gyökérrel
+    def line_graph(edge_param):
+        nonlocal last_node
         edge_count = 0
         u = root
-        while edge_count < B - 1:
+        while edge_count < edge_param:
             v = choice(unused_nodes)
             edge = (min(u, v), max(u, v))
             while edge in edges:
@@ -101,10 +103,8 @@ def run(A, B, C, D):
     # gyökeren átmenő kör hossza a két külön részfában lévő csúcs distjeinek összege+1. De sajnos ez normalizálja a két csúcs distjét a két csúcs minimum distjére.
     # dist[A]=3;dist[B]=900. akkor (A,B) 904 hosszú lesz,de dist[B]=4 lesz. És ha rakunk egy dist[C]=2;(B,C) élet akkor P gyökérnél az eddigi (P,A,B)=904 helyett lesz egy (P,A,B,C)=7 körünk.
     # Itt jön képbe a sub_tree_type
-    # sub_tree_type 1:  minél kevesebb gyökeren átmenő kör és minél kevesebb részfa(normalizált darabszámmal). Ezzel garantálni tudom, hogy ne legyenek ilyen kiugró értékek mint a fenti példában.
-    # És mohózom a leghosszabb köröket
-    # sub_tree_type 2: Ez sokkal randomabb viszont ahelyett hogy mohóznám a max körhosszt. helyette hasonló distü csúcsokat párosítok és így akadályozom meg hogy kis kör legyen.
-    # itt az a feltevésem hogy hosszab kört generál mint full random gráf, de rövidebbet mint a sub_tree_type 1.
+    # sub_tree_type 1:  minél kevesebb gyökeren átmenő kör és minél kevesebb részfa(normalizált elemszámmal). Ezzel garantálni tudom, hogy ne legyenek ilyen kiugró értékek mint a fenti példában.
+    # sub_tree_type 2: Ez sokkal randomabb.
     def sub_tree_graph(in_edge, cross_edge, sub_tree_type):
         # Ha C=0 akkor random választunk részfa mennyiséget, hogy ne kelljen beállítgatnom mindig értéket. Egyenlőre csúcsszám gyökig.
         sub_trees = C
@@ -120,7 +120,6 @@ def run(A, B, C, D):
             unused_nodes.remove(v)
             used_nodes.append(v)
             sub_tree_parents.append(v)
-            # dist[v] = 1
             parent[v] = v
             edges.add((min(root, v), max(root, v)))
             neighbors[root].append(v)
@@ -128,11 +127,12 @@ def run(A, B, C, D):
         # Már az elején szétosztjuk a csúcsokat részfákra, hogy tudjuk kontrollálni hogy milyen mélyésgekben fordulnak elő körök, vagyis élek a különböző részfák közöttt.
         shuffle(unused_nodes)
         if sub_tree_type == 1:
+            # random elemszámú részfa helyett azonos darabszám,de van variancia mert a fákat random építem fel
             split_points = [i * (len(unused_nodes) // sub_trees) for i in range(1, sub_trees)]
         else:
             split_points = sorted(sample(range(1, len(unused_nodes)), sub_trees - 1))
         split_nodes = [unused_nodes[i:j] for i, j in zip([0] + split_points, split_points + [len(unused_nodes)])]
-
+        stderr.write(f"subtrees: {sub_trees}\n")
         # elősször csinálom meg a fa struktúrát aztán a részfán belüli éleket.
         for i in range(sub_trees):
             used_sub_nodes = [sub_tree_parents[i]]
@@ -148,13 +148,16 @@ def run(A, B, C, D):
                 neighbors[cs].append(p)
 
         # belső élek
+        split_nodes = [unused_nodes[i:j] for i, j in zip([0] + split_points, split_points + [len(unused_nodes)])]
         for i in range(in_edge):
-            sub_tree_choice = randint(sub_trees)
+
+            sub_tree_choice = randint(0, sub_trees - 1)
+            stderr.write(f"subtree_choice: {sub_tree_choice},splitlen: {len(split_nodes)}\n")
             u = choice(split_nodes[sub_tree_choice])
             v = choice(split_nodes[sub_tree_choice])
             e = (min(u, v), max(u, v))
-            while e in edges:
-                sub_tree_choice = randint(sub_trees)
+            while (e in edges) or u == v:
+                sub_tree_choice = randint(0, sub_trees - 1)
                 u = choice(split_nodes[sub_tree_choice])
                 v = choice(split_nodes[sub_tree_choice])
                 e = (min(u, v), max(u, v))
@@ -198,80 +201,66 @@ def run(A, B, C, D):
         összegek alapján megyek sorba
         n. legnagyobb value_start[a]+value_start[b].   a+b=n-1
         currentsum=n-1
-        P1c=a, P2c=b                         0,1
-        P1index=value_start[a],P2index       0,3
-        P1=sorted_nodes[value_start[a]],P"   x0,x3
-        v1=dist[P1],v2=dist[P2]              10,9                        
+        start_a=a, start_b=b                         0,1
+        start_a_index=value_start[a],start_b_index   0,3
+        a_node=sorted_nodes[value_start[a]]         x0,x3
+        dist_a=dist[P1],dist_b=dist[P2]              10,9                        
         """
 
         sorted_nodes = sorted(nodes, key=lambda x: dist[x], reverse=True)
-        maxdist = sorted_nodes[0]
-        value_start_index = list(range(maxdist))
-        P1, P2 = 0, 1
-        P1index, P2index = 0, 0
-        P1c, P2c = 0, 0
-        if sub_tree_type == 1:
+        maxdist = dist[sorted_nodes[0]]
+        value_start_index = [0]
+        if True:
             bigcycles = 0
             lastvalue = maxdist
             valuecount = 0
-            value_start_index[0] = 0
+            # value_start_index[0] = 0
             currentsum = 0
-            while bigcycles <= cross_edge:
-                # value_start_index tömböt nem kell előfeldolgozni, mert sose kell start index ami nagyobb mint a currentsum. Ezt még lehet változtanom kell, ha error.
-                if dist[P2] != lastvalue:
-                    lastvalue = dist[P2]
+            # stderr.write(f"distlen: {len(dist)}, sorted_nodes_len: {len(sorted_nodes)}\n")
+            for k in range(len(dist) - 1):
+                if dist[sorted_nodes[k]] != lastvalue:
+                    lastvalue = dist[sorted_nodes[k]]
                     valuecount = valuecount + 1
-                    value_start_index[valuecount] = P2
+                    # stderr.write(f"dist: {dist[sorted_nodes[k]]}, lastvalue: {lastvalue}\n")
+                    value_start_index.append(k)
+            while bigcycles <= cross_edge:
                 for j in range((currentsum + 1) // 2):
                     if bigcycles == cross_edge:
                         return
-                    P1c = j
-                    P2c = currentsum - j
-                    P1index = value_start_index[P1c]
-                    P2index = value_start_index[P2c]
-                    P1 = sorted_nodes[P1index]
-                    P2 = sorted_nodes[P2index]
-                    v1 = dist[P1]
-                    v2 = dist[P2]
-                    while dist[P1] == v1:
-                        P2 = sorted_nodes[P2index]
-                        while dist[P2] == v2:
+                    start_a = j
+                    start_b = currentsum - j
+                    start_a_index = value_start_index[start_a]
+                    start_b_index = value_start_index[start_b]
+                    a_node = sorted_nodes[start_a_index]
+                    b_node = sorted_nodes[start_b_index]
+                    dist_a = dist[a_node]
+                    dist_b = dist[b_node]
+                    for P1 in range(value_start_index[start_a], value_start_index[start_a + 1]):
+                        for P2 in range(value_start_index[start_b], value_start_index[start_b + 1]):
+                            a_node = sorted_nodes[P1]
+                            b_node = sorted_nodes[P2]
                             if bigcycles == cross_edge:
                                 return
-                            if parent[P1] != parent[P2]:
-                                e = (min(P1, P2), max(P1, P2))
+                            if parent[a_node] != parent[b_node]:
+                                e = (min(a_node, b_node), max(a_node, b_node))
                                 edges.add(e)
                                 bigcycles = bigcycles + 1
-                            P2 = P2 + 1
-                        P1 = P1 + 1
                 # Amikor value_start[a]+value_start[a] eset van.
                 if currentsum % 2 == 0:
-                    P1c, P2c = currentsum / 2, currentsum / 2
-                    P1index, P2index = value_start_index[P1c], value_start_index[P2c]
-                    P1 = sorted_nodes[P1index]
-                    P2 = sorted_nodes[P1index + 1]
+                    start_a = currentsum // 2
+                    for P1 in range(value_start_index[start_a], value_start_index[start_a + 1]):
+                        for P2 in range(P1, value_start_index[start_a + 1]):
+                            a_node = sorted_nodes[P1]
+                            b_node = sorted_nodes[P2]
+                            if bigcycles == cross_edge:
+                                return
+                            if parent[a_node] != parent[b_node]:
+                                e = (min(a_node, b_node), max(a_node, b_node))
+                                edges.add(e)
+                                bigcycles = bigcycles + 1
                 currentsum = currentsum + 1
-
-                if parent[P1] != parent[P2]:
-
-                    next
-                else:
-                    next
-                """if parent[P1]!=parent[P2]:
-                    e=(min(P1,P2),max(P1,P2))
-                    while e in edges:
-                        P2=P2+1
-                    edges.add(e)
-                    P2=P2+1    
-                else:
-                    P2=P2+1"""
         else:
-            for j in range(cross_edge):
-                u, v = Y[P1], Y[P2]
-                edges.add((min(u, v), max(u, v)))
-                neighbors[u].append(v)
-                neighbors[v].append(u)
-                dist[u] = min(dist[u], dist[v] + 1)
+            next
 
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
@@ -291,15 +280,19 @@ def run(A, B, C, D):
         case 0:
             random_graph()
         case 1:
-            sub_tree_graph()
+            inedge = int(0.99 * (B - A + 1))
+            cedge = B - A + 1 - inedge
+            sub_tree_graph(inedge, cedge, 1)
         case 2:
+            assert C == A - 1
+            assert B == A - 1
             sub_tree_graph(0, 0, 1)
         case 3:
-            B = A - 1
-            line_graph()
+            assert B == A - 1
+            line_graph(B)
         case 4:
-            B = A
-            line_graph()
+            assert B == A
+            line_graph(B - 1)
             edges.add((min(root, last_node), max(root, last_node)))
         case 5:
             sub_tree_graph(B - A + 1, 0, 1)

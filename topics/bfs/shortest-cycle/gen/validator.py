@@ -15,9 +15,20 @@ def run(f, st):
     for k, v in subtasks[st].items():
         globals()[k] = v
 
-    N = int(next(f))
+    N, M, P = map(int, next(f).split())
     assert MIN <= N <= MAX
-
+    assert MIN2 <= M <= MAX2
+    assert MIN <= P <= N
+    edges = set()
+    # sys.stderr.write(f"edges: {M}\n")
+    for i in range(M):
+        a, b = map(int, next(f).split())
+        assert MIN <= a <= MAX
+        assert MIN <= b <= MAX
+        edge = (min(a, b), max(a, b))
+        assert edge not in edges
+        edges.add(edge)
+    # sys.stderr.write(f"edges_in_set: {len(edges)}\n")
     assert next(f, None) is None
 
 
