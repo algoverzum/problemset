@@ -4,19 +4,18 @@
 n = int(input())
 
 animals = set()
-carnivores = set()
+predators = set()
 pairs = []
 
 for _ in range(n):
-    predator, prey = input().split()
-    animals.add(predator)
-    pairs.append((predator, prey))
+    eater, food = input().split()
+    animals.add(eater)
+    pairs.append([eater, food])
 
-for predator, prey in pairs:
-    if prey in animals:
-        carnivores.add(predator)
+for eater, food in pairs:
+    if food in animals:
+        predators.add(eater)
 
-print(len(carnivores))
-sorted_carnivores = sorted(carnivores)
-for i in range(len(carnivores)):
-    print(sorted_carnivores[i])
+print(len(predators))
+for name in sorted(predators):
+    print(name)

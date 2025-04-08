@@ -1,41 +1,47 @@
 ## Food Chain
-On an alien planet, we conducted a biological survey, identifying so-called feeding pairs (what eats what?). The number of these pairs is up to 30.
-Plants do not eat any living organisms, animals eat either plants or other animals. The meaning of a feeding pair is: the first eats the second, e.g. "fox eats partridge", "snail eats grass".
-Write a program that gives the names of the animals in the food pairs that eat an animal (and possibly a plant). Note: something that eats nothing is a plant.
+We are on planet Zorgatron-7. We study living creatures and what they eat. Some eat plants. Some eat other animals. Some eat both.  
+
+Each piece of data we found is a **feeding pair**: the first creature **eats** the second.  For example:  
+- `nebbi slug` means **nebbi** eats **slug**.  
+- `slug moss` means **slug** eats **moss** (a plant).  
+
+We call every creature that **eats something** an **animal**. If a creature eats nothing, it is a plant.  
+
+Some animals eat other animals. We call them **predators**. Your job is to find all the **predators**.
 
 ### Input
-The first row of the standard input contains the number of feeding pairs ($1 \le N \le 30$). Each of the following $N$ lines contains one feeding pair, two words separated by a space.
-The organism given in the first word eats the one given in the second.
+The first line contains a number $N$: the number of feeding pairs. The next $N$ lines each show one feeding pair: two words, separated by a space: the first word is the **eater** and the second word is the **food**.
 
 ### Output
-The first line of the standard output contains the number of animals that eat an animal (and possibly plants). In the following rows, print out these animals line by line, in **alphabetical** order! If there is no such animal in the given food chain, only 0 should be printed.
+In the first line, print the number of predators. Then, print the names of all predators, one per line. The names must be in **alphabetical order**. If there are no predators, just print `0`.
 
 ### Constraints
-* $1 \le N \le 30$<br>
-The names of the organisms are lower case letters of the English alphabet and are up to 100 characters long.
+* $1 \le N \le 100$
+* Each name contains only lowercase English letters, up to 10 characters long.
 
 ### Example input
     7
-    fox partridge
-    fox blackbird
-    partridge worm
-    snail grass
-    blackbird snail
-    worm roots
-    blackbird seeds
+    drak puffin
+    drak nebbi
+    puffin grub
+    slug moss
+    nebbi slug
+    grub root
+    nebbi seed
 
 ### Example output
     3
-    blackbird
-    fox
-    partridge
+    drak
+    nebbi
+    puffin
 
+### Explanation
+- **moss**, **root**, and **seed** are not eaten by anyone → they are **plants**.  
+- **slug** eats **moss** → eats a plant → **animal**.  
+- **grub** eats **root** → eats a plant → **animal**.  
+- **puffin** eats **grub** → eats an animal → **predator**.  
+- **nebbi** eats **slug** and **seed** → eats an animal → **predator**.  
+- **drak** eats **puffin** and **nebbi** → both are animals → **predator**.
 
-### Explanation of the example
-A blackbird eats snails, but snails are animals because they eat grass. So a blackbird is an animal that eats animals.
-
-The partridge eats worms, they eat roots. So a partridge is also an animal that eats animals.
-
-The fox eats the partridge and the blackbird, which are both animals. So the fox is also an animal that eats animals.
-
-It can be seen that there are no further solutions.
+So the predators are:  
+**nebbi**, **puffin**, **drak**.
