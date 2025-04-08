@@ -1,4 +1,3 @@
-#include <algorithm>
 #include <iostream>
 #include <queue>
 #include <vector>
@@ -20,9 +19,6 @@ int main() {
     dist[p] = 0;
     queue<int> q;
     q.push(p);
-
-    int min_dist = n + 1;
-    int cycle_end = -1, cycle_start = -1;
     while (!q.empty()) {
         int cur = q.front();
         q.pop();
@@ -45,8 +41,8 @@ int main() {
             }
         }
     }
-    if (min_dist == n + 1) {
-        cout << -1;
+    if (mindist == n + 1) {
+        cout << "-1";
         return 0;
     }
     int x = cycle_a, y = cycle_b;
@@ -54,23 +50,16 @@ int main() {
     vector<int> path;
     path.push_back(cycle_a);
     while (x != p) {
-        path.push_back(x);
+        path.push_back(parent[x]);
         x = parent[x];
     }
-    path.push_back(p);
-    reverse(path.begin(), path.end());
-
-    vector<int> tail;
-    x = cycle_start;
-    while (x != p) {
-        tail.push_back(x);
-        x = parent[x];
+    for (int i = path.size() - 1; i >= 0; i--) {
+        cout << path[i] << " ";
     }
     cout << cycle_b << ' ';
     while (parent[y] != p) {
         cout << parent[y] << ' ';
         y = parent[y];
     }
-
     return 0;
 }
