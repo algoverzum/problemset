@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Készítsünk egy halmazt (set-et), ami az állatokat tartalmazza. Ezt akár beolvasás közben is meg tudjuk csinálni, hogyan?
+- Minden pár első tagját tegyük bele az állatok halmazába (hiszen pont azok az állatok, amik esznek valamit).
+- Ezután menjünk végig újra a párokon, és ellenőrizzük, hogy a pár második tagja, amit megesznek, az állat-e. Ha igen, akkor tegyük bele a pár első tagját egy halmazba, ami a ragadozókat fogja tartalmazni.

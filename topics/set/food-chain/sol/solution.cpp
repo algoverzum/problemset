@@ -1,6 +1,7 @@
 // @check-accepted: *
 #include <iostream>
-#include <set> //std::set is a sorted container.
+#include <set>
+#include <vector>
 using namespace std;
 
 int main() {
@@ -8,24 +9,24 @@ int main() {
     cin >> N;
 
     set<string> animals;
-    set<string> carnivores;
-    string predator, prey;
-    pair<string, string> pairs[30];
+    set<string> predators;
+    string eater, food;
+    vector<pair<string, string>> pairs(N);
 
     for (int i = 0; i < N; i++) {
-        cin >> predator >> prey;
-        animals.insert(predator);
-        pairs[i] = {predator, prey};
+        cin >> eater >> food;
+        animals.insert(eater);
+        pairs[i] = {eater, food};
     }
 
     for (int i = 0; i < N; i++) {
         if (animals.count(pairs[i].second)) {
-            carnivores.insert(pairs[i].first);
+            predators.insert(pairs[i].first);
         }
     }
 
-    cout << carnivores.size() << "\n";
-    for (const string &name : carnivores) {
+    cout << predators.size() << "\n";
+    for (const string &name : predators) {
         cout << name << "\n";
     }
 

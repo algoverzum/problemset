@@ -16,16 +16,15 @@ Parameters:
 
 Constraint:
 * %d <= A <= %d
-* %d <= B <= %d
+* 0 <= B <= %d
 """ % (
     MIN,
     MAX,
-    MINC,
-    MAXC,
+    MAX - 2,
 )
 
 
-def random_word(min_length=3, max_length=100):
+def random_word(min_length=3, max_length=MAXLEN):
     """Generate a random word of lowercase letters between min_length and max_length."""
     length = randint(min_length, max_length)
     return "".join(choices(string.ascii_lowercase, k=length))
@@ -50,13 +49,13 @@ def run(A, B):
 
     unused_carnivores = unique_names(B)
     used_carnivores = set()
-    herbivores = unique_names(60)
+    herbivores = unique_names(2 * A)
     while not unused_carnivores.isdisjoint(herbivores):
-        herbivores = unique_names(60)
+        herbivores = unique_names(2 * A)
 
-    plants = unique_names(60)
+    plants = unique_names(2 * A)
     while not plants.isdisjoint(unused_carnivores) or not plants.isdisjoint(herbivores):
-        plants = unique_names(60)
+        plants = unique_names(2 * A)
     herbivores = list(herbivores)
     plants = list(plants)
     remaining_pairs = A - B

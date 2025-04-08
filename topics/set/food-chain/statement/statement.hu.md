@@ -1,41 +1,48 @@
 ## Tápláléklánc
-Egy idegen bolygón biológiai felmérést végeztünk, ún. táplálkozási párokat azonosítottunk (mi eszik mit?). E párok száma legfeljebb 30. A növények nem esznek semmilyen élőlényt, az állatok pedig vagy növényeket, vagy más állatokat esznek. A táplálkozási pár jelentése: az elsőnek megadott eszi a másodiknak megadottat, pl. "róka eszi fogoly", "csiga eszi fű".
-Írj programot, amely a táplálkozási párok közül megadja azoknak az állatoknak a nevét, amelyek esznek állatot (és esetleg növényt is)! Figyelem: ami nem eszik semmit, az növény.
+A Zorgatron–7 bolygón vagyunk. Élőlényeket vizsgálunk, és azt, hogy mit esznek. Vannak, amik növényeket esznek. Vannak, amik más állatokat. És vannak, amik mindkettőt.
 
+Minden adat, amit találtunk, egy **táplálkozási pár**: az első lény **megeszi** a másodikat.
+Például:
+- `nebbi slug` azt jelenti, hogy a **nebbi** megeszi a **slug**-ot.
+- `slug moss` azt jelenti, hogy a **slug** megeszi a **moss**-t (ami egy növény).
+
+Minden lényt, aki **eszik valamit**, **állatnak** nevezünk. Ami **nem eszik semmit**, az egy **növény**.
+
+Vannak állatok, amik más állatokat esznek. Őket **ragadozóknak** nevezzük. A feladatod: keresd meg az összes **ragadozót**!
 
 ### Bemenet
-A standard bemenet első sora a táplálkozási párok számát tartalmazza ($1 \le N \le 30$). A következő $N$ sor mindegyikében egy-egy táplálkozási pár van megadva: két szóközzel elválasztott szó formájában. Az első szóval megadott élőlény eszi meg a másodikkal megadottat.
-
+Az első sorban egy szám van, $N$: a táplálkozási párok száma.  A következő $N$ sor mindegyike egy párt tartalmaz: két szót, szóközzel elválasztva: az első szó az **evő**, a második szó az **étel** (amit megesznek).
 
 ### Kimenet
-A standard kimenet első sora azon állatok számát tartalmazza, amelyek esznek állatot vagy (és esetleg növényt is)! A következő sorokba ezeket az állatokat kell kiírni soronként, ábécé sorrendben! Ha a megadott táplálkozási láncban nincs ilyen állat, akkor egyedül a 0-t kell a kimenetre írni!
-
+Az első sorban írd ki a ragadozók számát. Utána minden ragadozó nevét külön sorba, a nevek **ábécérendben** legyenek. Ha nincs egy ragadozó sem, akkor csak egy `0`-t írj ki.
 
 ### Korlátok
-* $1 \le N \le 30$<br>
-Az élőlények nevei az angol ábécé kisbetűiből állnak és legfeljebb 100 karakter hosszúak.
+* $1 \le N \le 100$
+* A nevek angol kisbetűkből állnak, legfeljebb 10 karakter hosszúak.
 
 ### Példa bemenet
     7
-    fox partridge
-    fox blackbird
-    partridge worm
-    snail grass
-    blackbird snail
-    worm roots
-    blackbird seeds
-    
+    drak puffin
+    drak nebbi
+    puffin grub
+    slug moss
+    nebbi slug
+    grub root
+    nebbi seed
+
 ### Példa kimenet
     3
-    blackbird
-    fox
-    partridge
+    drak
+    nebbi
+    puffin
 
 ### A példa magyarázata
-A feketerigó (blackbird) csigákat (snail) eszik, de a csigák is állatok, mert füvet (grass) esznek. Tehát a feketerigó egy állat, amelyik állatot eszik.
+- **moss**, **root** és **seed** nevű lényeket senki sem eszi meg → ők **növények**.  
+- **slug** megeszi a **moss**-t → növényt eszik → **állat**.  
+- **grub** megeszi a **root**-ot → növényt eszik → **állat**.  
+- **puffin** megeszi a **grub**-ot → állatot eszik → **ragadozó**.  
+- **nebbi** megeszi a **slug**-ot és a **seed**-et → eszik egy állatot → **ragadozó**.  
+- **drak** megeszi a **puffin**-t és a **nebbi**-t → mindkettő állat → **ragadozó**.
 
-A fogoly (partridge) gilisztákat (worm) eszik, amelyek gyökereket (roots) esznek. Tehát a fogoly is állat, amelyik állatot eszik.
-
-A róka (fox) megeszi a foglyot (partridge) és a feketerigót (blackbird), amelyek mindketten állatok. Tehát a róka is állatevő állat.
-
-Meggondolható, hogy nincsenek további megoldások.
+A ragadozók tehát:  
+**drak**, **nebbi**, **puffin**.

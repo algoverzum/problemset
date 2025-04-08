@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Let's create a set that contains the animals. We can even build this set while reading the input — how?
+- Put the first element of each pair into the animal set (since the creatures that eat something are the animals).
+- Then go through the pairs again, and check whether the second element — the one being eaten — is an animal. If it is, add the first element of the pair to another set, which will contain the predators.
