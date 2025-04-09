@@ -1,4 +1,8 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Use a variable `map<string, int> votecount;` to count the votes.
+  py: |
+    Use a `dictionary` to count the votes: `votecount = {}`
+- cpp: After reading the name and number of votes from each line, we can count the votes using the instruction `votecount[name] += number_of_votes;`.
+  py: After reading the name and number of votes from each line, we can count the votes using the instruction `votecount[name] = votecount.get(name, 0) + number_of_votes`.
+- cpp: Fortunately, the `map` stores the names in alphabetical order, so printing them is simple.
+  py: With the `votecount.keys()` command, we can get the stored names, and we should sort them using the `sorted` function before displaying.

@@ -22,18 +22,20 @@ Két számot írj ki szóközzel elválasztva:
 * Az események kronologikusan (idő szerint rendezve) vannak megadva.
 
 ### Példa bemenet
-    6
+    8
     1 1 1
     2 1 2
     1 0 5
     3 1 7
+    1 1 8
     2 0 8
     3 0 10
+    1 0 11
 
 ### Példa kimenet
     2 6
 
 ### A példa magyarázata
-Az 1-es alkalmazott 1-es időbélyegnél lépett be az irodába, és 5-ös időbélyegnél távozott, így 4 egységnyi időt töltött bent.  
+Az 1-es alkalmazott 1-es időbélyegnél lépett be az irodába, és 5-ös időbélyegnél távozott, így 4 egységnyi időt töltött bent, majd még egyszer belépett és 3 egységnyi időtt töltött bent a 8-as és 11-es időbélyeg között.
 A 2-es alkalmazott 2-es időbélyegnél lépett be, és 8-as időbélyegnél távozott, így 6 egységnyi időt töltött bent.  
 A 3-as alkalmazott 7-es időbélyegnél lépett be, és 10-es időbélyegnél távozott, így 3 egységnyi időt töltött bent.  

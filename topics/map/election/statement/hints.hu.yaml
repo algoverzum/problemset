@@ -1,5 +1,5 @@
 ---
-- cpp: Használjunk a `map<string,int> votecount;` változót a szavazatok összeszámlálására.
+- cpp: Használjunk a `map<string, int> votecount;` változót a szavazatok összeszámlálására.
   py: |
     'Használjunk `dictionary`-t a szavazatok összeszámlálására: `votecount = {}`'
 - cpp: Minden sorban szereplő név és szavazatszám beolvasása után a `votecount[név] += szavazatszám;` utasítással összeszámolhatjuk a szavazatokat.

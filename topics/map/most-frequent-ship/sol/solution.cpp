@@ -14,29 +14,21 @@ int main() {
     map<int, int> histogram;
 
     for (int i = 0; i < n; i++) {
-        int ID;
-        cin >> ID;
-        histogram[ID]++;
+        int id;
+        cin >> id;
+        histogram[id]++;
     }
 
     int maxi = 0;
-    for (const auto &pair : histogram) {
-        if (pair.second > maxi) {
-            maxi = pair.second;
-        }
+    for (auto [id, cnt] : histogram) {
+        maxi = max(maxi, cnt);
     }
 
     vector<int> most_frequent;
-    for (const auto &pair : histogram) {
-        if (pair.second == maxi) {
-            most_frequent.push_back(pair.first);
+    for (auto [id, cnt] : histogram) {
+        if (cnt == maxi) {
+            cout << id << " ";
         }
-    }
-
-    sort(most_frequent.begin(), most_frequent.end());
-
-    for (int ship : most_frequent) {
-        cout << ship << " ";
     }
     cout << "\n";
 

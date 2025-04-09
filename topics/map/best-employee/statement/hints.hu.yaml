@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Egy `map<int, int>` -ben tároljuk minden alkalmazotthoz, hogy mikor lépett be utoljára.
+  py: Egy dictionary-ben tároljuk minden alkalmazotthoz, hogy mikor lépett be utoljára.
+- A belépésnél (1-es típusú esemény) nincs más dolgunk, mint hogy eltároljuk az azonosítóhoz tartozó belépési időt.
+- Kilépéskor nézzük meg, hogy mennyi az eltárolt utolsó belépési idővel vett különbség, és ha nagyobb, mint az eddigi maximum, akkor mentsük el az alkalmazottat és az időtartamot is.

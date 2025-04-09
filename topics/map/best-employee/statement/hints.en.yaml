@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Store the last entry time for each employee in a `map<int, int>`.
+  py: Store the last entry time for each employee in a dictionary.
+- When processing an entry (event type 1), simply store the entry time associated with the ID.
+- When processing an exit, check the difference from the stored last entry time, and if it's greater than the biggest so far, save the employee and the duration as well.

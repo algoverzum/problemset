@@ -1,7 +1,9 @@
 ---
 - cpp: |
-    The ship IDs should be stored in a `map<int,int>` container, where the key is the ID and the value is the number of occurrences.
+    The ship IDs should be stored in a `map<int, int>`, where the key is the ID and the value is the number of occurrences.
   py: |
     The IDs should be stored in a dictionary `{}`, where the key is the ID and the value is the number of occurrences.
+- cpp: As we read the spaceship IDs, we always increment the corresponding value in the map by one.
+  py: Go through the spaceship IDs and increment the corresponding value in the dictionary by one. Be careful that if a key is not yet in the dictionary, it can cause an error. This can be avoided using the `.get()` function.
 - This leaves us with a standard maximum selection. Just make sure that if more than one ID occurs the same number of times, we select all of them.
 - First determine the value of the maximum and then look for the IDs associated with it.
