@@ -1,3 +1,4 @@
+// @check-accepted: *
 #include <iostream>
 #include <queue>
 #include <vector>
