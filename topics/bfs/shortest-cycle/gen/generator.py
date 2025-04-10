@@ -104,9 +104,9 @@ def run(A, B, C, D):
                 sub_trees = randint(2, int(math.sqrt(A)))
         sub_tree_parents = []
 
+        shuffle(unused_nodes)
         for _ in range(sub_trees):
-            v = choice(unused_nodes)
-            unused_nodes.remove(v)
+            v = unused_nodes.pop()
             used_nodes.append(v)
             sub_tree_parents.append(v)
             parent[v] = v
@@ -114,7 +114,6 @@ def run(A, B, C, D):
             neighbors[root].append(v)
             neighbors[v].append(root)
         # Már az elején szétosztjuk a csúcsokat részfákra, hogy tudjuk kontrollálni hogy milyen mélyésgekben fordulnak elő körök, vagyis élek a különböző részfák közöttt.
-        shuffle(unused_nodes)
         if sub_tree_type == 1:
             # random elemszámú részfa helyett azonos darabszám,de van variancia mert a fákat random építem fel
             split_points = [i * (len(unused_nodes) // sub_trees) for i in range(1, sub_trees)]
@@ -248,8 +247,6 @@ def run(A, B, C, D):
                                 edges.add(e)
                                 bigcycles = bigcycles + 1
                 currentsum = currentsum + 1
-        else:
-            next
 
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
