@@ -30,8 +30,4 @@ Print a single word. **YES** if there is such a traversal. **NO** if there isn't
 A possible traversal for example:<br>
 $1 \to 2 \to 5 \to 1 \to 4 \to 3 \to 1$
 
-![](tex/black.png)
-
-![](tex/white.png)
-
 ![](tex/trans.png)

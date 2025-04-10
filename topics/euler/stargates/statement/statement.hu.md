@@ -30,4 +30,4 @@ Egyetlen szót kell kiírnod. **YES**, ha van ilyen bejárás, **NO**, ha nincs.
 Egy lehetséges bejárás például az:<br>
 $1 \to 2 \to 5 \to 1 \to 4 \to 3 \to 1$
 
-![](tex/abra.pdf)
+![](tex/trans.png)
