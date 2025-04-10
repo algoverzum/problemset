@@ -51,31 +51,25 @@ def run(A, B, C, D):
 
     # full random nem feltétlen összefüggő
     def random_graph():
-        edge_count = 0
-        while edge_count < B:
+        while len(edges) < B:
             u = choice(nodes)
             v = choice(nodes)
-            edge = (min(u, v), max(u, v))
-            while edge in edges:
+            while u == v:
                 u = choice(nodes)
                 v = choice(nodes)
-                edge = (min(u, v), max(u, v))
-            edge_count += 1
+            edge = (min(u, v), max(u, v))
             edges.add(edge)
 
     # random, de összefüggő
     def random_connected_graph():
-        edge_count = 0
-        while edge_count < B:
-            u = choice(used_nodes)
+        while len(edges) < B:
+            u = choice(used_nodes)  # kezdetben csak root
             v = choice(nodes)
-            edge = (min(u, v), max(u, v))
-            while edge in edges:
+            while u == v:
                 u = choice(used_nodes)
                 v = choice(nodes)
-                edge = (min(u, v), max(u, v))
+            edge = (min(u, v), max(u, v))
             used_nodes.append(v)
-            edge_count += 1
             edges.add(edge)
 
     # egyenes gráf
@@ -83,17 +77,12 @@ def run(A, B, C, D):
     # ahol last node azért kell, hogy amikor ezt meghívom mert egy nagy kört szeretnék akkor csak összekötöm a last_node-ot a gyökérrel
     def line_graph(edge_param):
         nonlocal last_node
-        edge_count = 0
         u = root
-        while edge_count < edge_param:
-            v = choice(unused_nodes)
+        shuffle(unused_nodes)
+        while len(edges) < edge_param:
+            v = unused_nodes.pop()
             edge = (min(u, v), max(u, v))
-            while edge in edges:
-                v = choice(unused_nodes)
-                edge = (min(u, v), max(u, v))
-            edge_count = edge_count + 1
             edges.add(edge)
-            unused_nodes.remove(v)
             u = v
             last_node = v
 
@@ -132,7 +121,7 @@ def run(A, B, C, D):
         else:
             split_points = sorted(sample(range(1, len(unused_nodes)), sub_trees - 1))
         split_nodes = [unused_nodes[i:j] for i, j in zip([0] + split_points, split_points + [len(unused_nodes)])]
-        stderr.write(f"subtrees: {sub_trees}\n")
+        # stderr.write(f"subtrees: {sub_trees}\n")
         # elősször csinálom meg a fa struktúrát aztán a részfán belüli éleket.
         for i in range(sub_trees):
             used_sub_nodes = [sub_tree_parents[i]]
@@ -152,7 +141,7 @@ def run(A, B, C, D):
         for i in range(in_edge):
 
             sub_tree_choice = randint(0, sub_trees - 1)
-            stderr.write(f"subtree_choice: {sub_tree_choice},splitlen: {len(split_nodes)}\n")
+            # stderr.write(f"subtree_choice: {sub_tree_choice},splitlen: {len(split_nodes)}\n")
             u = choice(split_nodes[sub_tree_choice])
             v = choice(split_nodes[sub_tree_choice])
             e = (min(u, v), max(u, v))
@@ -271,7 +260,7 @@ def run(A, B, C, D):
     # Type 1 eset nagy legkissebb körrel. Felépítem a részfákat és specifikus kereszt éleket húzok be, hogy hosszú körök legyenek.
     # Type 2 gyökérnek minden csúcs gyereke. Ezt tudom generálni a részfással.
     # Type 3 "Egyenes" gráf.
-    # Type 4 gráf egy nagy kör. egyenes gráf speceset
+    # Type 4 gráf egy nagy kör; egyenes gráf + egy él
     # Type 5 Nincs kör. csak nem húzok be kereszt élt.
     # type 6 random de összefüggő
 

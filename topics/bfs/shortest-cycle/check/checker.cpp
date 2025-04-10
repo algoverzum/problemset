@@ -12,7 +12,12 @@ int main(int argc, char **argv) {
     int userans = ouf.readInt();
 
     if (goodans != userans)
-        quit(_wa, "wrong");
+        quitf(_wa, "wrong");
+
+    if (userans == -1) {
+        quit(_ok, "ok");
+    }
+    ouf.readEoln();
 
     int n = inf.readInt();
     int m = inf.readInt();
@@ -25,19 +30,15 @@ int main(int argc, char **argv) {
         edges.insert({min(a, b), max(a, b)});
     }
 
-    if (userans == -1) {
-        quit(_ok, "ok");
-    }
-    ouf.readEoln();
     bool rootin = false;
     int node, firstnode;
+    int lastnode = -1;
     for (int i = 0; i < goodans; i++) {
         node = ouf.readInt();
         if (i == 0) {
             firstnode = node;
         }
 
-        int lastnode = -1;
         if (node == p) {
             if (rootin) {
                 quitp(0.5, "wrong path p in path twice");
@@ -45,7 +46,7 @@ int main(int argc, char **argv) {
                 rootin = true;
             }
         }
-        if (node == 0 || node > n) {
+        if (node < 1 || node > n) {
             quitp(0.5, "node not in graph");
         }
         if (lastnode != -1) {
@@ -68,7 +69,7 @@ int main(int argc, char **argv) {
     }
 
     if (rootin) {
-        quit(_ok, "ok");
+        quitf(_ok, "ok");
     } else {
         quitp(0.5, "wrong path p not in path");
     }

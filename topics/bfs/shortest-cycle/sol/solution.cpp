@@ -43,7 +43,7 @@ int main() {
         }
     }
     if (mindist == n + 1) {
-        cout << "-1";
+        cout << "-1\n";
         return 0;
     }
     int x = cycle_a, y = cycle_b;
@@ -62,5 +62,6 @@ int main() {
         cout << parent[y] << ' ';
         y = parent[y];
     }
+    cout << '\n';
     return 0;
 }

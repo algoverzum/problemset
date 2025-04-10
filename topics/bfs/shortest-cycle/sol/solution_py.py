@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
+from sys import stdin
+
+input = stdin.readline
 from collections import deque
 
 n, m, p = map(int, input().split())
-edges = [tuple(map(int, input().split())) for _ in range(m)]
 graph = [[] for _ in range(n + 1)]
-for b, a in edges:
-    graph[a].append(b)
-    graph[b].append(a)
+for i in range(m):
+    u, v = map(int, input().split())
+    graph[u].append(v)
+    graph[v].append(u)
 
 dist = [-1] * (n + 1)
 parent = [-1] * (n + 1)
@@ -16,48 +19,43 @@ branch = [-1] * (n + 1)
 
 dist[p] = 0
 branch[p] = p
-q = deque([p])
+queue = deque([p])
 
 min_dist = n + 1
 cycle_end, cycle_start = -1, -1
 
-while q:
-    cs = q.popleft()
-    for x in graph[cs]:
-        if dist[x] == -1:
-            parent[x] = cs
-            dist[x] = dist[cs] + 1
-            branch[x] = x if cs == p else branch[cs]
-            q.append(x)
+while queue:
+    u = queue.popleft()
+    for v in graph[u]:
+        if dist[v] == -1:
+            parent[v] = u
+            dist[v] = dist[u] + 1
+            if u == p:
+                branch[v] = v
+            else:
+                branch[v] = branch[u]
+            queue.append(v)
         else:
-            if x == parent[cs]:
+            if v == parent[u]:
                 continue
-
-            if branch[cs] != branch[x]:
-
-                if dist[x] >= dist[cs] and min_dist > dist[x] + dist[cs] + 1:
-                    min_dist = dist[x] + dist[cs] + 1
-                    cycle_end, cycle_start = x, cs
-
+            if branch[u] != branch[v]:
+                if dist[v] >= dist[u] and min_dist > dist[v] + dist[u] + 1:
+                    min_dist = dist[v] + dist[u] + 1
+                    cycle_end, cycle_start = v, u
 
 if min_dist == n + 1:
     print(-1)
 else:
-
-    x = cycle_end
-    path = [x]
-    while x != p:
-        path.append(parent[x])
-        x = parent[x]
-    path = list(reversed(path))
+    u = cycle_end
+    path = [u]
+    while u != p:
+        path.append(parent[u])
+        u = parent[u]
+    path = path[::-1]
     tail = [cycle_start]
-    y = cycle_start
-    while y != p:
-        tail.append(parent[y])
-        y = parent[y]
+    v = cycle_start
+    while v != p:
+        tail.append(parent[v])
+        v = parent[v]
     print(min_dist)
-    print(*path, end=" ")
-    for v in tail:
-        if v == p:
-            break
-        print(v, end=" ")
+    print(*path, *tail[:-1])

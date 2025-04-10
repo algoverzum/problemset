@@ -6,9 +6,8 @@ A bemenet első sorában három egész szám van: $N$ a városok száma, $M$ az 
 A következő $M$ sor mindegyike két számot tartalmaz, amelyek egy-egy összekötött várost jelölnek.
 
 ### Kimenet
-A kimenet első sorába egyetlen számot kell kiírnod a $P$ városon átmenő legrövidebb kör $K$ hosszát kell írni! . Ha nincs ilyen kör akkor $-1$-et.<br>
-A második sor $K$ darab különböző pont sorszámát tartalmazza, amelyek ebben a sorrendben a bemeneti gráf egy $K$
-hosszú körét alkotják, ha hozzávesszük az utolsó pontból az elsőbe vezető élet is!
+A kimenet első sorába egyetlen számot kell kiírnod a $P$ városon átmenő legrövidebb kör $K$ hosszát. Ha nincs ilyen kör akkor $-1$-et.<br>
+A második sor $K$ darab különböző pont sorszámát tartalmazza, amelyek ebben a sorrendben a bemeneti gráf egy $K$ hosszú körét alkotják, ha hozzávesszük az utolsó pontból az elsőbe vezető élet is!
 Több megoldás esetén bármelyik megadható.
 
 ### Korlátok
@@ -35,6 +34,8 @@ Több megoldás esetén bármelyik megadható.
     2 5 3
 
 ### A példa magyarázata
-    A legrövidebb kör az alábbi utakból áll: 2–5, 5–3 és 3–2.
-    A városokat bármilyen sorrendben megadhatjuk, amíg a megadott lista továbbra is egy kört alkot.
-    Például az 5 2 3 szintén egy érvényes megoldás.
+A legrövidebb kör az alábbi utakból áll: 2–5, 5–3 és 3–2.
+A városokat bármilyen sorrendben megadhatjuk, amíg a megadott lista továbbra is egy kört alkot.
+Például az 5 2 3 szintén egy érvényes megoldás.
+
+![](tex/abra.png)

@@ -23,6 +23,7 @@ def run(f, st):
     # sys.stderr.write(f"edges: {M}\n")
     for i in range(M):
         a, b = map(int, next(f).split())
+        assert a != b  # hurkok nincsenek
         assert MIN <= a <= MAX
         assert MIN <= b <= MAX
         edge = (min(a, b), max(a, b))
