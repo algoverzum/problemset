@@ -1,0 +1,11 @@
+id: range-dp
+name: Range-dp
+problems:
+  - problem_id: longest-palindrome
+    type: REQUIRED
+  - problem_id: longest-substring
+    type: REQUIRED
+prerequisites:
+dependents:
+visualization:
+# Notes:

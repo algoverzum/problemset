@@ -1,0 +1,12 @@
+---
+- Let DP[i][j] be the length of the longest palindrome in the substring from the i-th character to the j-th character of the string.
+- Initially, set all values ​​of DP to 0. DP[i][i] is 1 for all i.
+- If i<j then the value of DP[i][j] can be calculated form DP[i+1][j-1], DP[i+1][j] and DP[i][j-1].
+- If the i-th and j-th characters of the string are the same, then
+  ```
+  DP[i][j] = DP[i+1][j-1] + 2
+  ```
+  Otherwise
+  ```
+  DP[i][j] = max(DP[i+1][j], DP[i][j-1])
+  ```

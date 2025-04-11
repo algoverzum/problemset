@@ -1,0 +1,12 @@
+---
+- Legyen DP[i][j] a string i-edik karakterétől a j-edik karakteréig tartó substringjében szereplő leghosszabb tükörszó hossza.
+- Kezdetben DP minden értéke legyen 0. DP[i][i] pedig 1 minden i-re.
+- Ha i<j akkor DP[i][j] értékét kiszámolhatjuk a DP[i+1][j-1], DP[i+1][j] és DP[i][j-1] ismeretében.
+- Ha a string i-edik és j-edik karaktere azonos, akkor
+  ```
+  DP[i][j] = DP[i+1][j-1] + 2
+  ```
+  Különben pedig
+  ```
+  DP[i][j] = max(DP[i+1][j], DP[i][j-1])
+  ```

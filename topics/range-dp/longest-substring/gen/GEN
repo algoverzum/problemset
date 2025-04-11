@@ -1,0 +1,45 @@
+# A     B	C       S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+
+# Subtask 2: N <= 100
+#ST: 50
+#STNAME: small
+10     5      rand	1
+5      10     rand	2
+10     10     rand	3
+10     10     5		4
+20     20     15	5
+50     50     30	6
+10     100    2		7
+100    100    25	8
+100    10     6		9
+100    100    75	10
+#COPY: testcases/null.txt
+#COPY: testcases/front.txt
+#COPY: testcases/back.txt
+100    100    spec	14
+100    100    spec	15
+100    100    spec	16
+
+# Subtask 2: N <= 1000
+#ST: 50
+#STNAME: all
+1000   100    rand	17
+100    1000   rand	18
+1000   1000   rand	19
+1000   1000   rand	20
+1000   1000   100	21
+1000   1000   300	22
+1000   1000   600	23
+2000   2000   1250	24
+1000   500    100	25
+500    1000   5		26
+1000   1000   spec	27
+1000   1000   spec	28
+2000   2000   spec	29
+1500   1500   spec2	30
+2000   2000   spec2	30
