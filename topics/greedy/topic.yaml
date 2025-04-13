@@ -8,6 +8,8 @@ problems:
     type: REQUIRED
   - problem_id: sentinel-line
     type: REQUIRED
+  - problem_id: shipbuilder
+    type: REQUIRED
 prerequisites:
   - combined-patterns
 dependents: []
