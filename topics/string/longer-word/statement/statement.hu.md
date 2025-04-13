@@ -35,7 +35,7 @@ Mindkét szó 8 karakterből áll, ilyenkor az elsőt kell kiírni.
     desiccated
 
 ### 3. Példa kimenet
-   megalopolis
+    megalopolis
 
 ### A 3. példa magyarázata
 "megalopolis" 11 karakter, "desiccated" 10 karakter hosszú, azaz "megalopolis" a hosszabb.
