@@ -1,30 +1,24 @@
 ## Hajóépítő
-Sikeres űrhajóépítő vállalkozó vagy, és olyan népszerű lettél, hogy több megbízást kapsz, mint amennyit el tudsz vállalni. Szerencsére korszerű felszereléseidnek köszönhetően bármilyen űrhajót pontosan egy nap alatt el tudsz készíteni.
-Rendelkezésedre áll egy $N$ elemű lista, amelyben az egyes megbízások határideje szerepel, növekvő sorrendben. Egy megrendelést akkor tekintünk időben teljesítettnek, ha az legkésőbb a határidő napján elkészül.
+Sikeres űrhajóépítő vállalkozó vagy, és olyan népszerű lettél, hogy több megbízást kapsz, mint amennyit el tudsz végezni. Szerencsére korszerű felszereléseidnek köszönhetően bármilyen űrhajót pontosan egy nap alatt el tudsz készíteni.
+Rendelkezésedre áll egy $N$ elemű lista, amelyben az egyes megbízások határideje szerepel, növekvő sorrendben. Egy megrendelést akkor tekintünk időben teljesítettnek, ha legkésőbb a határidő napján elkészül.
 Határozd meg, legfeljebb hány űrhajót tudsz határidőre elkészíteni, és add meg ezeknek az indexeit!
 
 ### Bemenet
-A bemenetben első sorában egyetlen egész szám van: $N$ a megbízások darabszáma. <br>
-A következő $N$ sor mindegyikében egy-egy egész szám szerepel:
+A bemenet első sorában egyetlen egész szám van: $N$ a megbízások darabszáma. <br>
+A bemenet második sorában $N$ db egész szám szerepel:
 $H_i$ — az $i$-edik megrendelés határideje.
 
 ### Kimenet
-A kimenet első sorába egyetlen számot kell kiírnod, $S$ a megbízások számát amit sikeresen eltudtál végezni határidőre.<br>
+A kimenet első sorába egyetlen számot kell kiírnod, $S$ a megbízások számát, amelyeket sikeresen el tudtál végezni határidőre.<br>
 A második sorban $S$ db szám szerepeljen növekvő sorrendben: azoknak a megrendeléseknek az 1-től indexelt sorszámai, amelyeket teljesítettél.
 
 ### Korlátok
-* $1 \le N,$H_i$ \le 100000$
+* $1 \le N, H_i \le 100,000$
 
 ### Példa bemenet
     7
-    1
-    1
-    2
-    2
-    2
-    4
-    4
-
+    1 1 2 2 2 4 4
+    
 ### Példa kimenet
     4
     1 3 6 7

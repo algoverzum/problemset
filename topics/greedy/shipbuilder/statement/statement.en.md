@@ -1,12 +1,12 @@
 ## Shipbuilder
-You are a successful spaceship-building entrepreneur, and you've become so popular that you're receiving more orders than you can handle. Fortunately, thanks to your advanced equipment, you can build any spaceship in exactly one day.
-You are given a list of $N$ orders, where each order has a deadline. The deadlines are given in increasing order. An order is considered completed on time if it is finished on or before its deadline day.
-Determine the maximum number of spaceships you can build on time, and output the indices of the orders you complete.
+You are a successful spaceship-building entrepreneur who has become so popular that you're receiving more orders than you can handle. Fortunately, thanks to your advanced equipment, you can build any spaceship in exactly one day.
+You are given a list of $N$ orders, where each order has a deadline. The deadlines are given in increasing order. An order is considered completed on time if it is finished on or before its deadline.
+Determine the maximum number of spaceships you can build on time and output the indices of the orders you complete.
 
 ### Input
 The first line of the input contains a single integer:
 $N$ — the number of orders.<br>
-The next $N$ lines each contain an integer:
+The second line of the input contains $N$ integers:
 $H_i$ — the deadline of the $i$-th order.
 
 ### Output
@@ -15,17 +15,11 @@ $S$ — the number of orders you completed on time.<br>
 The second line should contain $S$ integers in increasing order: the 1-based indices of the orders you completed.
 
 ### Constraints
-* $1 \le N,$H_i$ \le 100000$
+$1 \le N, H_i \le 100,000$
 
 ### Example input
     7
-    1
-    1
-    2
-    2
-    2
-    4
-    4
+    1 1 2 2 2 4 4
 
 
 ### Example output

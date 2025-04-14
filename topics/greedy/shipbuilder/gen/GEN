@@ -13,8 +13,9 @@
 10	 10		random	  3
 100	 10		random	  4
 1000	 1		random	  5
-1000	 1000		random   6
+1000	 1000		one_deadline   6
 1000	 1000		incremental   7
+1000     1000      random    58
 
 # Subtask 3: 1 <= N,H <= 100000
 #ST: 50
@@ -23,11 +24,11 @@
 100000	 100		random      9
 100000	 1000		random   10
 100000	 10000		random   11
-100000	 100000		random   12
+100000	 100000		one_deadline   12
 100000	 10			random   13
 1000	 10			random   14
 100000	 1		    random   15
 100000	 100000		random   165
-100000	 100000		random   168
-100000	 100000		random   163
+100000	 100000		random   207
+100000	 100		incremental   163
 100000	 100000		incremental   17

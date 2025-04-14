@@ -32,20 +32,31 @@ def run(A, B, T):
         assert eval(row[2:]), row[2:]
 
     print(A)
+    days = []
     match T:
         case "random":
-            split_points = sorted(sample(range(1, A), B))
-            split_days = [unused_nodes[i:j] for i, j in zip([0] + split_points, split_points + [len(unused_nodes)])]
+            bias = 0.9
             for i in range(A):
-
-                next
+                if days and random() < bias:
+                    day = choice(days)
+                else:
+                    day = randint(1, B)
+                days.append(day)
         case "incremental":
             lastday = 0
             for i in range(A):
-                lastday = lastday + 1
-                print(lastday)
+                if lastday < B:
+                    lastday = lastday + 1
+                    days.append(lastday)
+                else:
+                    days.append(randint(1, B))
+
         case "one_deadline":
-            next
+            day = randint(1, B)
+            for i in range(A):
+                days.append(day)
+    sorted(days)
+    print(*days)
 
 
 if __name__ == "__main__":

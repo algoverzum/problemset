@@ -2,7 +2,7 @@
 # @check-accepted: *
 
 n = int(input())
-deadlines = [int(input()) for _ in range(n)]
+deadlines = [int(i) for i in input().split()]
 result = []
 day = 1
 for i, deadline in enumerate(deadlines):
