@@ -1,5 +1,5 @@
 ## Leghosszabb tükörszó
-A Csillagflotta egy kódolt üzenetet kapott. A dekódoláshoz az első lépés: azonosítani a leghosszabb tükörszót (palindrómot) a kódolt üzenetben. Egy tükörszó balról és jobbról olvasva is azonos. Az üzenetből tetszőleges betűk elhagyásával is létrejöhet!
+A Csillagflotta egy kódolt üzenetet kapott. A dekódoláshoz az első lépés: azonosítani a leghosszabb tükörszót (palindrómot) a kódolt üzenetben. Egy tükörszó balról és jobbról olvasva is azonos. A tükörszó az üzenet tetszőleges számú betűjének elhagyásával is létrehozható.
 
 ### Bemenet
 A bemenetben egyetlen sorában egy string van: $S$ - a kódolt üzenetet.

@@ -1,5 +1,5 @@
 ## Longest Palindrome
-Starfleet has received a coded message. The first step to decrypting it is to identify the longest palindrome in the coded message. A palindrome is the same when read from left to right. It can also be created by omitting any letters from the message.
+Starfleet has received a coded message. The first step in decrypting it is to identify the longest palindrome in the coded message. A palindrome is the same when read from left to right.  The palindrome can be formed by omitting any number of letters from the message.
 
 ### Input
 The input contains a single line of string: $S$ - the coded message.
