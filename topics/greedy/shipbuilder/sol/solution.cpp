@@ -20,11 +20,11 @@ int main() {
         }
     }
 
-    cout << result.size() << endl;
+    cout << result.size() << "\n";
     for (int i = 0; i < result.size(); i++) {
         cout << result[i] << " ";
     }
-    cout << endl;
+    cout << "\n";
 
     return 0;
 }

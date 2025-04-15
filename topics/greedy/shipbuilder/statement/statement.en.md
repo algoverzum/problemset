@@ -6,8 +6,7 @@ Determine the maximum number of spaceships you can build on time and output the 
 ### Input
 The first line of the input contains a single integer:
 $N$ — the number of orders.<br>
-The second line of the input contains $N$ integers:
-$H_i$ — the deadline of the $i$-th order.
+The second line of the input contains $N$ integers: $H_1, H_2, \ldots, H_N$, where $H_i$ is the deadline of the $i$-th order.
 
 ### Output
 The first line of the output should contain a single integer:
@@ -15,12 +14,12 @@ $S$ — the number of orders you completed on time.<br>
 The second line should contain $S$ integers in increasing order: the 1-based indices of the orders you completed.
 
 ### Constraints
-$1 \le N, H_i \le 100,000$
+* $1 \le N, H_i \le 100\,000$
+* $H_i \le H_j$ for all $1 \le i < j \le N$
 
 ### Example input
     7
     1 1 2 2 2 4 4
-
 
 ### Example output
     4

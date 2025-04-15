@@ -1,4 +1,4 @@
-# A     B       S
+# A     B	C       S
 
 # Subtask 1: Examples
 #ST: 0
@@ -32,3 +32,5 @@
 100000	 100000		random   207
 100000	 100		incremental   163
 100000	 100000		incremental   17
+100000	 1241		random   21
+100000	 123		random   22

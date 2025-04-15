@@ -55,7 +55,7 @@ def run(A, B, T):
             day = randint(1, B)
             for i in range(A):
                 days.append(day)
-    sorted(days)
+    days.sort()
     print(*days)
 
 

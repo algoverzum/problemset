@@ -18,8 +18,11 @@ def run(f, st):
     N = int(next(f))
     assert MINN <= N <= MAXN
     deadlines = list(map(int, next(f).split()))
+    assert len(deadlines) == N
     for dl in deadlines:
         assert MINH <= dl <= MAXH
+    for i in range(N - 1):
+        assert deadlines[i] <= deadlines[i + 1]
     assert next(f, None) is None
 
 
