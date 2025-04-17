@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Egy for ciklussal menjünk végig az A-nál nagyobb és B-nél kisebb számokon, és ha 7-tel osztható az adott szám, akkor írjuk ki.
+- A for ciklusban használjunk egy if utasítást. Az `i % 7 == 0` kifejezéssel tudjuk vizsgálni, hogy az `i` szám 7-tel osztható-e.
+- cpp: |
+    A for ciklus fejléce így nézzen ki: `for (int i = A + 1; i < B; i++)`
+  py: |
+    A for ciklus fejléce így nézzen ki: `for i in range(A + 1, B):`

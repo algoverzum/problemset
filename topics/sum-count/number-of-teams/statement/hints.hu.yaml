@@ -2,9 +2,9 @@
 - Számoljuk meg, hogy hány életkor legalább 18 és maximum 21. Majd osszuk el a megfelelő életkorok számát 3-mal, hogy megkapjuk hány teljes csapatot tudnak alkotni.
 - cpp: |
       Hogy megkapjuk, hogy egy életkor felel meg a feltételeknek, használhatjuk ezt:
-      if (kor >= 18 && kor < 21)
+      if (kor >= 18 && kor <= 21)
 - py: |
       Hogy megkapjuk, hogy egy életkor felel meg a feltételeknek, használhatjuk ezt:
-      if kor >= 18 and kor < 21:
+      if kor >= 18 and kor <= 21:
 - cpp: Az osztásnál a `/` jel lefelé kerekít, ez pont jó nekünk, amikor a csapatok számát akarjuk megkapni.
   py: Az osztásnál a `//` jelet kell használni, hogy lefelé kerekítsünk, amikor a csapatok számát akarjuk megkapni.

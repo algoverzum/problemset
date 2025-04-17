@@ -1,5 +1,5 @@
 ## Reverse
-I will tell you 13 numbers. Can you write them in exactly the same order? And you can write them out in reverse order afterwards.
+I will tell you 13 numbers. Can you print them in exactly the same order? And can you print them in reverse order afterwards?
 
 ### Input
 In the input, there are exactly 13 integers separated by spaces in one line: $A_1, A_2, \ldots, A_{13}$. 
