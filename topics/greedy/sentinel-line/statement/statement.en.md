@@ -3,6 +3,10 @@ The Federation operates $N$ observation stations along a straight line on the Ro
 
 All old cloaking generators will be discarded, but it is not necessary to replace each one. However, new generators can only be installed at the location of an observation station.
 
+For example, if the stations are located at the points with coordinates $0, 10, 30, 40, 60, 85, 100$, and the new generators cloak everything within a radius of $20$, then it is enough to install three of them, for instance at the $10$, $60$, and $100$ stations. (Only stations can be the centers of the circles, and there are several other possible solutions as well.)
+
+![](tex/abra.png)
+
 Write a program that determines the minimum number of new cloaking generators required and specifies the stations where they should be installed so that every observation station falls within the range of at least one new cloaking field.
 
 ### Input

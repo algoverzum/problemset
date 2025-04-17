@@ -1,7 +1,11 @@
 ## Védelmi vonal
-A Föderáció a Romaulán határon egy egyenes mentén $N$ megfigyelő állomást üzemeltet. A biztonságuk fokozása érdekében új nagy teljesítményű álcázó védőrendszer telepítését határozták el a régiek helyére. Egy új álca-generátor $H$ sugarú lefedettséget biztosít, elrejtve minden állomást a hatósugáron belül a kíváncsi szemek (pl. Romaulán Tal Shiar vagy a Klingon Hírszerzés) elől.
+A Föderáció a Romaulán határon egy egyenes mentén $N$ megfigyelő állomást üzemeltet. A biztonságuk fokozása érdekében új nagy teljesítményű álcázó védőrendszer telepítését határozták el a régiek helyére. Egy új álca-generátor $H$ sugarú lefedettséget biztosít, elrejtve minden állomást a hatósugáron belül a kíváncsi szemek elől (pl. Romaulán Tal Shiar vagy a Klingon Hírszerzés).
 
 Minden régi álca-generátort kidobunk, de nem kell mindegyik helyére újat vennünk, viszont csak valamelyik megfigyelő állomás helyén lehet beépíteni őket.
+
+Például, ha az állomások a $0, 10, 30, 40, 60, 85, 100$ koordinátájú pontokban vannak, és az új generátorok $20$ sugarú körön belül álcáznak mindent, akkor elég hármat telepíteni, például a $10$, $60$ és $100$ állomásoknál. (Csak állomások lehetnek a körök középpontjai, és van több más lehetőség is.)
+
+![](tex/abra.png)
 
 Készíts egy programot, amely meghatározza a szükséges új álca-generátorok minimális számát és kijelöli, mely pontokra kell ezeket telepíteni, hogy minden megfigyelő állomás az egyik álcázó mező védelmén belül helyezkedjen el.
 
