@@ -15,11 +15,11 @@ int main() {
         cin >> droids[i];
 
         if (histogram.find(droids[i]) != histogram.end()) {
-            cout << histogram[droids[i]] << " " << i << "\n";
+            cout << histogram[droids[i]] << " " << i + 1 << "\n";
             return 0;
         }
 
-        histogram[droids[i]] = i;
+        histogram[droids[i]] = i + 1;
     }
 
     cout << "-1\n";

@@ -6,7 +6,7 @@ A bemenet első sora $N$, a listán szereplő azonosítók száma.
 A második sora $N$ azonosítót tartalmaz szóközzel elválasztva: $A_1, A_2, \ldots, A_{N}$.
 
 ### Kimenet
-Írj ki **-1**-et ha a listán minden azonosító különböző. Különben pedig a legelső ismétlődő azonosító első és második előfordulásának **indexeit** egy sorban.
+Írj ki **-1**-et ha a listán minden azonosító különböző. Különben pedig a legelső ismétlődő azonosító első és második előfordulásának **sorszámait** írd ki egy sorban.
 
 ### Korlátok
 * $1 \le N \le 10^5$
@@ -17,7 +17,7 @@ A második sora $N$ azonosítót tartalmaz szóközzel elválasztva: $A_1, A_2, 
     -1 4 -3 1 7 4 7 4
 
 ### 1. Példa kimenet
-    1 5
+    2 6
 
 ### Az 1. példa magyarázata
 A 4-es azonosítójú robot és a 7-es is többször volt javítva, de a 4-es szerepel korábban.
