@@ -1,5 +1,5 @@
 ## Leghosszabb substring
-Az Enterprise ugyanazt az üzenetet kétszer is megkapta ($A$, $B$), de mindkétszer sajnos torzult az eredeti üzenet. Feladatunk a leghosszabb közös substring meghatározása. A közös substring segíthet megérteni az üzenetet.
+Az Enterprise kétszer is megkapta ugyanazt az üzenetet ($A$, $B$), de mindkét alkalommal az eredeti üzenet torzult. A feladat az, hogy meghatározzuk a leghosszabb összefüggő közös rész (substring) hosszát. Ez az információ segíthet az üzenetekben keletkezett hibák mértékének felmérésében.
 
 ### Bemenet
 A bemenetben első sorában egy string van: $A$ - az első üzenet.
@@ -10,7 +10,7 @@ Egyetlen számot kell kiírnod, a két üzenetben szereplő leghosszabb közös 
 
 ### Korlátok
 * $1 \le |A|,|B| \le 2000$
-* mindkét string angol kisbetűket tartalmaz
+* Mindkét string csak az angol ábécé kisbetűit tartalmazza.
 
 ### Példa bemenet
     ancientlanguagesx
