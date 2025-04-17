@@ -1,5 +1,5 @@
 ## Longest Substring
-Enterprise received the same message twice ($A$, $B$), but both times the original message was corrupted. Our task is to determine the longest common substring. The common substring can help us understand the message.
+The starship Enterprise received the same message twice ($A$, $B$), but both instances were corrupted during transmission. Your task is to determine the length of the longest contiguous common substring between the two messages. This will help assess the extent of the corruption.
 
 ### Input
 The first line of the input contains a string: $A$ - the first message.
@@ -10,7 +10,7 @@ Print a single number, the length of the longest common substring in the two mes
 
 ### Constraints
 * $1 \le |A|,|B| \le 2000$
-* both strings contain lowercase English letters
+* Both strings consist only of lowercase English letters.
 
 ### Example input
     ancientlanguagesx
