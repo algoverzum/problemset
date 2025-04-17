@@ -21,7 +21,7 @@ int main() {
     sort(pilots.begin(), pilots.end());
 
     vector<int> res;
-    int reached = 0, curend = 0, last = -1;
+    int reached = 0, cur_end = 0, last = -1;
     size_t i = 0;
 
     while (i < pilots.size()) {
@@ -30,21 +30,21 @@ int main() {
 
         if (start <= reached) {
             i++;
-            if (curend < end) {
+            if (cur_end < end) {
                 last = index;
-                curend = end;
+                cur_end = end;
             }
         } else {
             res.push_back(last);
-            reached = curend;
-            if (start > curend) {
+            reached = cur_end;
+            if (start > cur_end) {
                 cout << "0\n";
                 return 0;
             }
         }
     }
 
-    cout << res.size() << endl;
+    cout << res.size() << "\n";
     for (int r : res) {
         cout << r << " ";
     }

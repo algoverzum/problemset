@@ -1,7 +1,7 @@
 ## Fewest Pilots
-The Rebel Alliance is preparing for a secret mission: they must deliver a data cassette from Tatooine to the distant Yavin 4, where the Rebel headquarters is located. The distance between the two planets is $K$ light-years.
+The Rebel Alliance is preparing for a secret mission: they must deliver a data cassette from Tatooine to the distant Yavin 4, where the Rebel base is located. The distance between the two planets is $K$ light-years.
 
-Many smugglers and pilots have offered their help, using their own ships to transport the data cassette. Each pilot has a known range of light-years they are willing to travel. If a pilot can travel from $x$ to $y$ light-years, then any other pilot who starts their journey at $z$ light-years, where $x \le z \le y$, can take over the cassette from them.
+Many smugglers and pilots have offered their help, using their own ships to transport the data cassette. However, pilots are only willing to fly within their own sector, which is defined by the range of light-years they are willing to cover along the route from Tatooine. If a pilot is willing to transport the cassette from the $x$-th light-year to the $y$-th light-year, then any other pilot who starts their journey at the $z$-th light-year, where $x \le z \le y$, can take over the cassette from them.
 
 Write a program that determines the minimum number of pilots needed to transport the data cassette to Yavin 4.
 

@@ -11,20 +11,20 @@ for i in range(n):
 pilots.sort()
 res = []
 reached = 0
-curend = 0
+cur_end = 0
 last = -1
 i = 0
 while i < n + 1:
     start, end, index = pilots[i]
     if start <= reached:
         i += 1
-        if curend < end:
+        if cur_end < end:
             last = index
-            curend = end
+            cur_end = end
     else:
         res.append(last)
-        reached = curend
-        if start > curend:
+        reached = cur_end
+        if start > cur_end:
             print(0)
             exit()
 
