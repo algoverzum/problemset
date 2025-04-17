@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Egy map<int, int> -ben tároljuk minden korábban látott azonosítóhoz azt, hogy hányadik helyen láttuk.
+  py: Egy dictionary-ben tároljuk minden korábban látott azonosítóhoz azt, hogy hányadik helyen láttuk.
+- Menjünk végig az azonosítókon, és először vizsgáljuk meg, hogy a mostanit láttuk-e már korábban. Ha igen, akkor megállhatunk és kiírhatjuk a korábbi sorszámot és a mostanit. Egyébként jegyezzük fel az azonosítóhoz a mostani sorszámot.
+- cpp: Az `m.count(k)` utasítással tudjuk ellenőrizni azt, hogy egy `m` mapben szerepel-e egy `k` kulcs.
+  py: A `k in d` utasítással tudjuk ellenőrizni azt, hogy egy `d` dictionaryben szerepel-e egy `k` kulcs. Az `exit()` parancsot használhatjuk arra, hogy megállítsuk a programot, miután megtaláltuk a megoldást.

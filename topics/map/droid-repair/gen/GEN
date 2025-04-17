@@ -6,18 +6,23 @@
 #COPY: statement/input0.txt
 #COPY: statement/input1.txt
 
-# Subtask 2: all
-#ST: 100
-#STNAME: all
+# Subtask 2: N<=1000
+#ST: 50
+#STNAME: small
 10     4		rand     1
 10     10		rand     2
 10     10		null     3
 100    100		null     4
 1000   10000		one	 5
-10000  100000		one      6
-100000 1000000		rand     7
-100000 1000000000	rand     8
-100000 1000000		null     9
-100000 1000000000	null     10
-100000 1000000		one	 11
-100000 1000000000	one      12
+1000   1000000000 rand  6
+
+# Subtask 2: N<=100000
+#ST: 50
+#STNAME: no-limits
+10000  100000		one      7
+100000 1000000		rand     8
+100000 1000000000	rand     9
+100000 1000000		null     10
+100000 1000000000	null     11
+100000 1000000		one	 12
+100000 1000000000	one      13

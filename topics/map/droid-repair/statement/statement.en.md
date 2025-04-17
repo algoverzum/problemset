@@ -6,7 +6,7 @@ The first line of the input is $N$, the number of IDs in the list.
 The second line contains $N$ IDs, separated by spaces: $A_1, A_2, \ldots, A_{N}$. 
 
 ### Output
-Print **-1** if all IDs in the list are different. Otherwise, the **indices** of the first and second occurrences of the first repeated ID in a row.
+Print **-1** if all IDs in the list are different. Otherwise, print the **indices** of the first and second occurrences of the first repeated ID in one line. The indexing of the list starts from 1.
 
 ### Constraints
 * $1 \le N \le 10^5$
@@ -17,10 +17,10 @@ Print **-1** if all IDs in the list are different. Otherwise, the **indices** of
     -1 4 -3 1 7 4 7 4
 
 ### Example 1 output
-    1 5
+    2 6
 
 ### Explanation of the example
-Droids with IDs 4 and 7 have been repaired several times, but 4 is listed earlier at index 1 and 5.
+Droids with IDs 4 and 7 have been repaired several times, but 4 is listed earlier at positions 2 and 6.
 
 ### Example 2 input
     8

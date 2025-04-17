@@ -1,5 +1,5 @@
-// @check-accepted: examples
-// @check-time-limit-exceeded: all
+// @check-accepted: examples small
+// @check-time-limit-exceeded: no-limits
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -16,7 +16,7 @@ int main() {
 
         for (int j = 0; j < droids.size(); ++j) {
             if (droids[j] == num) {
-                cout << j << " " << i << endl;
+                cout << j + 1 << " " << i + 1 << endl;
                 return 0;
             }
         }

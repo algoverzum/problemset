@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Let us store, in a `map<int, int>`, the position at which we first saw each previously encountered ID.
+  py: Let us store, in a dictionary, the position at which we first saw each previously encountered ID.
+- Go through the IDs, and first check whether the current one has already been seen. If it has, we can stop and print the previous position and the current one. Otherwise, record the current position for that ID.
+- cpp: You can check whether a key `k` exists in a map `m` using the statement `m.count(k)`.
+  py: You can check whether a key `k` exists in a dictionary `d` using the statement `k in d`. You can use the `exit()` command to stop the program after finding the solution.

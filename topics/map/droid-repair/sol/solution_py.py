@@ -3,11 +3,10 @@
 
 n = int(input())
 droids = list(map(int, input().split()))
-histogram = {}
+index = {}
 for i in range(n):
-    if droids[i] not in histogram:
-        histogram[droids[i]] = i
-    else:
-        print(histogram[droids[i]], i)
+    if droids[i] in index:
+        print(index[droids[i]], i + 1)
         exit()
+    index[droids[i]] = i + 1
 print(-1)
