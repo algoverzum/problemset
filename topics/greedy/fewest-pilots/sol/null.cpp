@@ -1,3 +1,4 @@
+// @check-wrong-answer: *
 #include <iostream>
 using namespace std;
 
