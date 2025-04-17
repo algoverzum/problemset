@@ -1,5 +1,5 @@
 ## Fordított sorrend
-Mondok neked 13 számot. Ki tudod írni őket pont ugyanolyan sorrendben? És ki tudod írni őket utána fordított sorrendben.
+Mondok neked 13 számot. Ki tudod írni őket pont ugyanolyan sorrendben? És ki tudod írni őket utána fordított sorrendben?
 
 ### Bemenet
 A bemenetben egy sorban pontosan 13 egész szám van szóközzel elválasztva: $A_1, A_2, \ldots, A_{13}$.

@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Use a for loop to go through the numbers greater than A and less than B, and if a number is divisible by 7, print it.
+- Use an if statement inside the for loop. You can check if `i` is divisible by 7 with the expression `i % 7 == 0`.
+- cpp: |
+    The for loop header should look like this: `for (int i = A + 1; i < B; i++)`
+  py: |
+    The for loop header should look like this: `for i in range(A + 1, B):`
