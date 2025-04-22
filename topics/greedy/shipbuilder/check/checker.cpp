@@ -24,25 +24,25 @@ int main(int argc, char *argv[]) {
     for (int i = 0; i < user_K; ++i) {
         user_pos[i] = ouf.readInt(1, N);
         if (user_pos[i] < last) {
-            quitf(_wa, "Nem növekvő sorrendben adtad meg az indexeket.");
+            quitf(_wa, "Indices not in increasing order");
         }
         day++;
         if (orders[user_pos[i]] < day) {
-            quitf(_wa, "A (%d). határidő már lejárt.", user_pos[i]);
+            quitf(_wa, "The (%d). deadline has already passed.", user_pos[i]);
         }
         last = user_pos[i];
     }
 
     // Optimalitás
-    if (user_K > opt_K) {
+    if (user_K < opt_K) {
         quitf(_wa,
-              "Nem optimális megoldás: %d generátor, de a legjobb %d "
-              "generátorral megoldható.",
+              "Not optimal solution: %d jobs done, but %d "
+              "jobs could have been done.",
               user_K, opt_K);
     }
-    if (user_K < opt_K) {
-        quitf(_wa, "Túl szép, hogy igaz legyen OR Official solution broken.");
+    if (user_K > opt_K) {
+        quitf(_wa, "Too good to be real OR Official solution broken.");
     }
 
-    quitf(_ok, "Helyes megoldás");
+    quitf(_ok, "Correct Answer");
 }
