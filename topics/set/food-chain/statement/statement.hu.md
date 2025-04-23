@@ -1,10 +1,11 @@
 ## Tápláléklánc
 A Zorgatron–7 bolygón vagyunk. Élőlényeket vizsgálunk, és azt, hogy mit esznek. Vannak, amik növényeket esznek. Vannak, amik más állatokat. És vannak, amik mindkettőt.
 
-Minden adat, amit találtunk, egy **táplálkozási pár**: az első lény **megeszi** a másodikat.
-Például:
-- `nebbi slug` azt jelenti, hogy a **nebbi** megeszi a **slug**-ot.
-- `slug moss` azt jelenti, hogy a **slug** megeszi a **moss**-t (ami egy növény).
+Minden adat, amit találtunk, egy **táplálkozási pár**: az első lény **megeszi** a másodikat. Például:  
+
+- `nebbi slug` azt jelenti, hogy a **nebbi** megeszi a **slug**-ot.  
+- `slug moss` azt jelenti, hogy a **slug** megeszi a **moss**-t (ami egy növény).  
+
 
 Minden lényt, aki **eszik valamit**, **állatnak** nevezünk. Ami **nem eszik semmit**, az egy **növény**.
 

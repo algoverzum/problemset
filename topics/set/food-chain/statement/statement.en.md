@@ -1,9 +1,11 @@
 ## Food Chain
 We are on planet Zorgatron-7. We study living creatures and what they eat. Some eat plants. Some eat other animals. Some eat both.  
 
-Each piece of data we found is a **feeding pair**: the first creature **eats** the second.  For example:  
+Each piece of data we found is a **feeding pair**: the first creature **eats** the second. For example:  
+
 - `nebbi slug` means **nebbi** eats **slug**.  
 - `slug moss` means **slug** eats **moss** (a plant).  
+
 
 We call every creature that **eats something** an **animal**. If a creature eats nothing, it is a plant.  
 
