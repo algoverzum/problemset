@@ -10,6 +10,8 @@ problems:
     type: REQUIRED
   - problem_id: shipbuilder
     type: REQUIRED
+  - problem_id: sky-spy
+    type: REQUIRED
 prerequisites:
   - combined-patterns
 dependents: []
