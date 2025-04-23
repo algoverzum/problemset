@@ -38,7 +38,7 @@ In the first line, print the number of predators. Then, print the names of all p
     puffin
 
 ### Explanation
-- **moss**, **root**, and **seed** are not eaten by anyone → they are **plants**.  
+- **moss**, **root**, and **seed** do not eat anything → they are **plants**.  
 - **slug** eats **moss** → eats a plant → **animal**.  
 - **grub** eats **root** → eats a plant → **animal**.  
 - **puffin** eats **grub** → eats an animal → **predator**.  
