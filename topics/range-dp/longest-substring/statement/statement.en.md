@@ -9,7 +9,7 @@ The second line of the input contains a string: $B$ - the second message.
 Print a single number, the length of the longest common substring in the two messages.
 
 ### Constraints
-* $1 \le |A|,|B| \le 2000$
+* $1 \le |A|,|B| \le 2500$
 * Both strings consist only of lowercase English letters.
 
 ### Example input

@@ -9,7 +9,7 @@ A bemenetben második sorában egy string van: $B$ - a második üzenet.
 Egyetlen számot kell kiírnod, a két üzenetben szereplő leghosszabb közös substring hosszát.
 
 ### Korlátok
-* $1 \le |A|,|B| \le 2000$
+* $1 \le |A|,|B| \le 2500$
 * Mindkét string csak az angol ábécé kisbetűit tartalmazza.
 
 ### Példa bemenet
