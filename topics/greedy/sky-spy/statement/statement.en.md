@@ -1,9 +1,9 @@
 ## Sky Spy
-The Rebels have successfully hacked one of the Empire's geostationary spy satellites. This satellite orbits directly above the infamous Mos Eisley spaceport, and now the Rebels can take photographs of the docked spaceships without the Empire's knowledge.
+The Rebels have successfully hacked one of the Empire's geostationary spy satellites. This satellite orbits directly above the infamous Mos Eisley spaceport, allowing the Rebels to take photographs of the docked spaceships without the Empire's knowledge.
 
 Rebel intelligence has obtained information that $N$ spaceships will arrive at different times. Each ship has precisely indicated the time interval during which it will be present at the spaceport. The spy satellite is capable of taking high-resolution photographs, but to avoid detection, we want to take as few photos as possible — while ensuring that each of the $N$ spaceships appears in at least one photograph.
 
-Determine the number of distinct time points when the satellite must be activated to observe the spaceport so that every spaceship is captured at least once while it is actually present.
+Determine the minimum number of distinct time points when the satellite must be activated to observe the spaceport so that every spaceship is captured at least once while it is actually present.
 
 ### Input
 The first line of the input contains the number of incoming spaceships: $N$.
