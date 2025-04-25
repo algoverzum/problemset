@@ -1,0 +1,9 @@
+id: knapsack-dp
+name: Knapsack-dp
+problems:
+  - problem_id: pyrate-loot
+    type: REQUIRED
+prerequisites:
+dependents:
+visualization:
+# Notes:

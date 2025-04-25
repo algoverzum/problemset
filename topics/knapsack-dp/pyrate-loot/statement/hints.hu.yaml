@@ -1,0 +1,5 @@
+---
+- Használj egy `dp` tömböt, ahol `dp[i]` a legkisebb értéket tárolja, amit elérhetünk, ha a rakomány súlya `i`.
+- Állítsd be `dp[0] = 0`-t (0 súlyú rakománynak 0 értéke van), és az összes többi értéket végtelenre.
+- Minden egyes ládát végig kell iterálni, és frissíteni a `dp` értékeket a súlyok és értékek alapján. Figyelj a súlyok frissítésére; a ciklusokat helyesen kell végrehajtani, hogy biztosan a legkisebb értéket kapd.
+- A válasz a `dp[s]` értéke, ahol `s` a rakomány összsúlya.
