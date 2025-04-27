@@ -1,0 +1,6 @@
+---
+- Úgy kell kiválasztani a konténereket, hogy az egyik oldal összsúlya a teljes súly feléhez a lehető legközelebb legyen.
+- Használj dinamikus programozást: tartsd nyilván, hogy mely összsúlyok érhetők el.
+- Legyen `dp[w] = igaz/hamis`, ahol `w` egy elérhető összsúly az eddig választott konténerekkel.
+- A dinamikus programozás során tárolhatod, hogy egy adott súly eléréséhez melyik konténert használtad utoljára.
+- A cél súly elérése után visszafelé követve ezekből rekonstruálhatod a bal oldali raktér konténereit.
