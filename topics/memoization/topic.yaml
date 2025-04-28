@@ -3,6 +3,10 @@ id: memoization
 name: Memoization and Dynamic Programming
 problems:
   - problem_id: holochess
+    type: ENTRY
+  - problem_id: casino
+    type: REQUIRED
+  - problem_id: mountain-climb
     type: REQUIRED
 prerequisites: []
 dependents: []

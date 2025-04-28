@@ -4,8 +4,8 @@
     The recursive formula looks like this: `credits(n) = max(n, credits(n // 2) + credits(n // 3) + credits(n // 4))`. Why will it be very slow if we just program it like this? Because we calculate the same value many times over and over again. How could we avoid this, considering that the max value of n is 10^9?
 - cpp: |
     The recursive formula looks like this: `credits(n) = max(n, credits(n / 2) + credits(n / 3) + credits(n / 4))`. Why will it be very slow if we just program it like this? Because we calculate the same value many times over and over again. How could we avoid this, considering that the max value of n is 10^9?
-- We can't calculate for all numbers up to 10^9, that's too much storage and time, so dynamic programming doesn't work. However, we can remember what our recursive function has calculated once and not calculate it again next time. That is, we do the recursion with memoization.
+- We can't calculate for all numbers up to $10^9$, that's too much storage and time, so dynamic programming doesn't work. However, we can remember what our recursive function has calculated once and not calculate it again next time. That is, we do the recursion with memoization.
 - py: |
-    To remember the calculated values, we can use a dict, or we can only remember the results for values smaller than a limit (e.g., 10^7) so that it fits into the memory.
+    To remember the calculated values, we can use a dict, or we can only remember the results for values smaller than a limit (e.g., $10^7$) so that it fits into the memory.
 - cpp: |
-    To remember the calculated values, we can use a map, or we can only remember the results for values smaller than a limit (e.g., 10^7) so that it fits into the memory.
+    To remember the calculated values, we can use a map, or we can only remember the results for values smaller than a limit (e.g., $10^7$) so that it fits into the memory.
