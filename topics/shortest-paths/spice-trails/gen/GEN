@@ -1,0 +1,37 @@
+# N	M	W	X	S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+
+# Subtask 2: N <= 1000
+#ST: 100
+#STNAME: all
+5      10	10	rand	1
+5      100	10	rand	2
+10     20	10	rand	3
+50     1000	10	rand	4
+100    200	10	rand	5
+100    1000	10	rand	6
+100    1000	100	rand	7
+1000   2000	10	rand	8
+1000   2000	1000000	rand	9
+1000   2000	1000000	rand	10
+500    2000	1000000	rand	11
+1000   2000	1000000	loopless 12
+500    2000	1000000	loopless 13
+1000   2000	1000000	loopless 14
+5      10	10	rand2	15
+5      100	10	rand2	16
+10     20	10	rand2	17
+50     1000	10	rand2	18
+100    200	10	rand2	19
+100    1000	10	rand2	20
+100    1000	100	rand2	21
+1000   2000	10	rand2	22
+1000   2000	1000000	rand2	23
+1000   2000	1000000	rand2	24
+500    2000	1000000	rand2	25
+1000   2000	1000000	rand3	26
+10     20	100	rand3	27

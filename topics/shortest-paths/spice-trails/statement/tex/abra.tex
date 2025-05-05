@@ -1,0 +1,46 @@
+%pdflatex abra.tex
+%convert -density 150x150 abra.pdf abra.png
+\documentclass[border={2pt 2pt 2pt 2pt}]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\begin{document}
+
+\begin{tikzpicture}
+\coordinate (A) at (0,3);
+\coordinate (B) at (3,3);
+\coordinate (C) at (0,0);
+\coordinate (D) at (3,0);
+\draw[gray,ultra thick,-latex,shorten >=0.5cm] (A)--(B) node [gray,midway, above] {\small 5};
+\draw[gray,ultra thick,-latex,shorten >=0.5cm] (C)--(D) node [gray,midway, below] {\small 10};
+\draw[gray,ultra thick,-latex,shorten >=0.5cm] (A)--(C) node [gray,midway,left] {\small 2};
+\draw[gray,ultra thick,-latex,shorten >=0.5cm] (B)--(D) node [gray,midway,right] {\small 4};
+\draw[gray,ultra thick,-latex,shorten >=0.5cm] (C)--(B) node [gray,midway, above] {\small 1};
+\draw[gray,very thick,fill=white] (A) circle [radius=0.5];
+\draw[gray,very thick,fill=white] (B) circle [radius=0.5];
+\draw[gray,very thick,fill=white] (C) circle [radius=0.5];
+\draw[gray,very thick,fill=white] (D) circle [radius=0.5];
+\node at (A) {\huge\bf 0};
+\node at (B) {\huge\bf 1};
+\node at (C) {\huge\bf 2};
+\node at (D) {\huge\bf 3};
+\end{tikzpicture}\hspace{10mm}
+\begin{tikzpicture}
+\coordinate (A) at (0,3);
+\coordinate (B) at (3,3);
+\coordinate (C) at (0,0);
+\coordinate (D) at (3,0);
+\draw[gray,ultra thick,-latex,shorten >=0.5cm] (A)--(B) node [gray,midway, above] {\small 2};
+\draw[gray,ultra thick,-latex,shorten >=0.5cm] (C)--(D) node [gray,midway, below] {\small 4};
+\draw[gray,ultra thick,-latex,shorten >=0.5cm] (C)--(A) node [gray,midway,left] {\small 1};
+\draw[gray,ultra thick,-latex,shorten >=0.5cm] (B)to[bend right=18]node[gray,midway,above] {\small 3}(C);
+\draw[gray,ultra thick,-latex,shorten >=0.5cm] (C)to[bend right=18]node[gray,midway,below]{\small 1}(B);
+\draw[gray,very thick,fill=white] (A) circle [radius=0.5];
+\draw[gray,very thick,fill=white] (B) circle [radius=0.5];
+\draw[gray,very thick,fill=white] (C) circle [radius=0.5];
+\draw[gray,very thick,fill=white] (D) circle [radius=0.5];
+\node at (A) {\huge\bf 0};
+\node at (B) {\huge\bf 1};
+\node at (C) {\huge\bf 2};
+\node at (D) {\huge\bf 3};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,11 @@
+id: shortest-paths
+name: Shortest Path
+problems:
+  - problem_id: spice-trails
+    type: REQUIRED
+  - problem_id: route-optimizer
+    type: REQUIRED
+prerequisites:
+dependents:
+visualization:
+# Notes:
