@@ -2,6 +2,10 @@
 id: bfs
 name: Breadth-First Search
 problems:
+  - problem_id: shortest-cycle
+    type: REQUIRED
+  - problem_id: pouring
+    type: REQUIRED
   - problem_id: azugand
     type: EXTRA
 prerequisites: []
