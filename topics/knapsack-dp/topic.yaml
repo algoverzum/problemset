@@ -5,6 +5,8 @@ problems:
     type: REQUIRED
   - problem_id: balanced-loading
     type: REQUIRED
+  - problem_id: coin-validation
+    type: REQUIRED
 prerequisites:
 dependents:
 visualization:
