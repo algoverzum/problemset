@@ -11,9 +11,9 @@ For each query, print `YES` if the amount $X_i$ can be paid using the available 
 
 ### Constraints
 * $1 \le N \le 100$
-* $1 \le Q \le 100,000$
-* $1 \le C_i \le 100,000$ for all $i=1 \dots N$
-* $1 \le X_j \le 100,000$ for all $j=1 \dots Q$
+* $1 \le Q \le 100\,000$
+* $1 \le C_i \le 100\,000$ for all $i=1 \dots N$
+* $1 \le X_j \le 100\,000$ for all $j=1 \dots Q$
 
 ### Example input
     2 4
