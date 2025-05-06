@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Perform a Breadth-First Search (BFS) from the given starting node. If we find an edge leading to a node that has already been visited (but is not the parent of the current node), then a cycle is formed. The question is whether that cycle passes through the starting node.
+- The edges used during the BFS form a tree. In this tree, the neighbors of the starting node are its children, and under each child, there is a subtree — those are the nodes reachable from that child. If there is an edge between two different such subtrees, then it forms a cycle that goes through the starting node.
+- So during BFS, we keep track of which subtree each visited node belongs to. For the starting node's direct neighbors, this value is their own index. For all other nodes, we copy this value from their parent. When we find an edge connecting nodes from two different subtrees, we compute the cycle length as the sum of their distances from the starting node plus one. We remember the endpoints of the shortest such cycle.
+- Finally, we trace back from both endpoints to the starting node to reconstruct the cycle.

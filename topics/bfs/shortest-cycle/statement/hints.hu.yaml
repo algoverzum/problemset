@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Csináljunk egy szélességi bejárást a megadott csúcsból. Ha találunk közben olyan élt, ami már meglátogatott csúcsba vezet, de az nem a mostani csúcs szülője, akkor ott létrejön egy kör. Az a kérdés, hogy vajon az a kör a kezdőcsúcson átmegy-e?
+- A szélességi bejárás során használt élek egy fát alkotnak. Ebben a fában a kezdőcsúcs szomszédai az ő gyerekei, és mindegyik alatt van egy részfa, amelyek azok a csúcsok ahova onnan jutunk el. Ha van egy él, ami két különböző ilyen részfa között megy, akkor ott egy kezdőcsúcson átmenő kör jön létre.
+- Tehát a szélességi bejárás közben tároljuk el minden csúcsra, hogy a kezdőcsúcs melyik gyereke alatti részfában van. Ez a kezdőcsúcs szomszédaira a saját sorszámuk lesz, a többi csúcsra pedig mindig a szülőhöz tartozó értéket másoljuk. Amikor olyan élet találunk, ami két különböző részfa között megy, akkor nézzük meg a hozzá tartozó kör hosszát (két végpont kezdőcsúcstól vett távolságainak összege + 1), és a legrövidebbnek a végpontjait jegyezzük meg.
+- A végén a végpontokból vissza kell lépkedni a kezdőcsúcsba, hogy megkapjuk a kört.
