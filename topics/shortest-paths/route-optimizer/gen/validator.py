@@ -44,8 +44,7 @@ def run(f, st):
     for (U, V) in edges:
         W = edges[(U, V)]
         if dist[U] != INF and dist[U] + W < dist[V]:
-            assert False
-            raise ValueError("Negative cycle detected")
+            assert False and "Negative cycle detected"
 
 
 if __name__ == "__main__":

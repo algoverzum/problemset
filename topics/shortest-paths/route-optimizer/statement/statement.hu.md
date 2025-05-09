@@ -1,7 +1,7 @@
 ## Útvonaltervező
-A Millennium Falcon a Tatooine-ról indul, és különböző bolygók között mozoghat adott útvonalakon keresztül. A bolygókat $1$-től $N$-ig számozzuk, a Tatooine az $1$-es. Minden útvonalnak van egy költsége (pl. üzemanyag). Néhány útvonalat a Lázadás támogat, így ezek negatív költségűek is lehetnek. Például egy útvonal mehet a Naboo-ról a Kamino-ra, aminek a költsége $5$. Előfordulhat, hogy visszafelé nem lehet menni. Az is lehet, hogy a visszafelé útvonal is elérhető, ám annak költsége $-2$.
+A Millennium Falcon a Tatooine-ról indul, és különböző bolygók között mozoghat adott útvonalakon keresztül. A bolygókat $1$-től $N$-ig számozzuk, a Tatooine az $1$-es. Minden útvonalhoz tartozik egy költség, mely az úrhajó üzemanyag fogyasztásából ered. Néhány útvonalat azonban a Lázadók Szövettsége támogat, így ezek negatív költségűek is lehetnek. Például egy útvonal mehet a Nabooról a Kaminora, aminek a költsége $5$. Előfordulhat, hogy visszafelé nem lehet menni. Az is lehet, hogy a visszafelé útvonal is elérhető, ám annak költsége más, pl. $-2$.
 
-Írj programot, amely kiszámítja a Millennium Falcon számára a legkisebb összköltségű útvonalakat a Tatooine-ról kiindulva! Az útvonalak gráfja negatív költségű kört nem tartalmaz.
+Írj programot, amely kiszámítja a Millennium Falcon számára a legkisebb összköltségű utakat a Tatooine-ról kiindulva az összes bolygó esetén! Az útvonalak gráfja negatív költségű irányított kört nem tartalmaz.
 
 ### Bemenet
 A bemenet első sorában két szám található $N, M$, a bolygók száma, és a lehetséges útvonalak száma.
@@ -35,4 +35,4 @@ A példához tartozó gráf:
 
 ![](tex/abra.png)
 
-Például a 4. bolygóra a 4. bolygóra több úton is eljuthatunk, de a legkisebb költségű út: $1\to 2\to 3\to 5\to 4$.
+Például a 4. bolygóra több úton is eljuthatunk, de a legkisebb költségű út: $1\to 2\to 3\to 5\to 4$.

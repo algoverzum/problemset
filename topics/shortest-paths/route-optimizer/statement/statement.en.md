@@ -1,7 +1,7 @@
 ## Route Optimizer
-The Millennium Falcon starts from Tatooine and can travel between various planets using specific routes. The planets are numbered from $1$ to $N$, with Tatooine being planet number $1$. Each route has a cost (e.g., fuel usage). Some routes are supported by the Rebellion, so their costs can be negative. For example, there might be a route from Naboo to Kamino with a cost of $5$. It’s possible that the return path is unavailable — or if it exists, it might have a different cost, such as $-2$.
+The Millennium Falcon starts from Tatooine and can travel between various planets using specific routes. The planets are numbered from $1$ to $N$, with Tatooine being planet number $1$. Each route has a cost, which comes from fuel usage. Some routes are supported by the Rebel Alliance, so their costs can be negative. For example, there might be a route from Naboo to Kamino with a cost of $5$. It’s possible that the return path is unavailable — or if it exists, it might have a different cost, such as $-2$.
 
-Write a program that computes the minimum total cost to reach each planet from Tatooine using the available routes! The graph of the routes does not contain any negative-cost cycles.
+Write a program that computes the minimum total cost to reach each planet from Tatooine using the available routes! The graph of the routes does not contain any directed negative-cost cycles.
 
 ### Input
 The first line of input contains two integers: $N$ — the number of planets — and $M$ — the number of available routes.

@@ -19,7 +19,7 @@ Constraint:
 * %d <= N <= %d
 * %d <= M <= %d
 * %d <= W <= %d
-* X in ["rand", "loopless", "rand2", "rand3"]
+* X in ["rand", "loopless", "rand2", "rand3", "break_dijkstra"]
 """ % (
     MINN,
     MAXN,
