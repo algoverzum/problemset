@@ -33,7 +33,14 @@ def run(N, Q, X):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
+
     coins = list(range(2, X + 1))
+    if X == 99999:
+        coins = list(range(X // 10, X + 1))
+    if X == 99998:
+        coins = list(range(7, X + 1, 7))
+    if X == 99997:
+        coins = list(range(64, X + 1, 64))
     shuffle(coins)
     if N == MAX_N + 1:
         N -= 1
@@ -41,7 +48,7 @@ def run(N, Q, X):
     coins = coins[:N]
     shuffle(coins)
     # this can make python TLE:
-    # coins.sort(key = lambda x: -x)
+    # coins.sort(reverse = True)
     print(N, Q)
     print(*coins)
     for _ in range(Q):

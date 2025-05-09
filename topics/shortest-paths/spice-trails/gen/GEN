@@ -4,6 +4,7 @@
 #ST: 0
 #STNAME: examples
 #COPY: statement/input0.txt
+#COPY: statement/input1.txt
 
 # Subtask 2: N <= 1000
 #ST: 100
