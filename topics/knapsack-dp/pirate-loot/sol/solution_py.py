@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # @check-accepted: *
+
 from sys import stdin
 
 input = stdin.readline

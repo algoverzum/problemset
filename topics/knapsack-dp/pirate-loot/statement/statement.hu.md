@@ -19,14 +19,15 @@ Egyetlen számot kell kiírnod: a legkisebb összértéket, amit a hajó rakomá
 * $1 \le T_i, W_i \le 1000$
 
 ### Példa bemenet
-    4 15
+    5 21
     1 2
     2 3
-    5 6
+    6 6
     10 4
+    7 5
 
 ### Példa kimenet
-    8
+    11
 
 ### A példa magyarázata
-Lehetséges, hogy a rakomány ládáinak súlya rendre $2+2+2+2+2+2+3=15$, és ekkor az értékük $1+1+1+1+1+1+2=8$. Igazolható, hogy ez a lehető legkisebb érték.
+Lehetséges, hogy a rakomány ládáinak súlya rendre $2+2+2+2+2+2+2+2+2+3=21$, és ekkor az értékük $1+1+1+1+1+1+1+1+1+2=11$. Igazolható, hogy ez a lehető legkisebb érték.

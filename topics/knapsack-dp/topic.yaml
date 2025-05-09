@@ -1,7 +1,7 @@
 id: knapsack-dp
 name: Knapsack-dp
 problems:
-  - problem_id: pyrate-loot
+  - problem_id: pirate-loot
     type: REQUIRED
   - problem_id: balanced-loading
     type: REQUIRED
