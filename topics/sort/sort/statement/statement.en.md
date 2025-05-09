@@ -2,11 +2,11 @@
 For geological research on our planet, we have taken rock samples and broken them down into elements, which we would like to sort into order based on their periodic table numbers for two groups of researchers. One group of researchers would like to receive them in ascending order and the other in descending order. Write a program that will print both types of ordering.
 
 ### Input
-The first line of the input is a single integer, the number of elements $N$.
+The first line of the input contains a single integer, the number of elements $N$.
 The second line of the input contains $N$ integers, the periodic table numbers of the elements: $A_1, A_2, \ldots, A_N$.
 
 ### Output
-In first line of the output, print $N$ numbers, the periodic table numbers of the elements in ascending order.
+In the first line of the output, print $N$ numbers, the periodic table numbers of the elements in ascending order.
 In the second line of the output, you must print $N$ numbers, the periodic table numbers of the elements in descending order.
 
 ### Constraints

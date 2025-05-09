@@ -20,6 +20,4 @@ Egyetlen számot kell kiírnod, a mérések medián értékét.
     3
 
 ### A példa magyarázata
-A számok rendezve:
-1 1 3 4 4 5
-A középső számok a 3 és a 4, ezek közül a kisebb a 3.
+A számok rendezve: 1 1 3 4 4 5. A középső számok a 3 és a 4, ezek közül a kisebb a 3.
