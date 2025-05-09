@@ -1,5 +1,5 @@
 ## Names List
-The crew roster on your spaceship was not kept up to date, the names are in the order they came on board and the system is becoming unintuitive to you. Arrange the roster in alphabetical ascending order.
+The crew list on your spaceship was not kept up to date, the names are in the order they came on board and the system is becoming unintuitive to you. Arrange the list in alphabetical ascending order.
 
 ### Input
 The first line of the input is a single integer: $N$, the crew size.
