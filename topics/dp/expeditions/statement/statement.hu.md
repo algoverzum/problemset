@@ -8,19 +8,40 @@ Segíts a Ligának meghozni a döntést!
 
 
 ### Bemenet
-A bemenetben egyetlen egész szám van: $N$ - 
+Az első sor két egész számot tartalmaz:
+$N$ : kérelmek száma 
+$M$ : szektorok száma a bolygón <br>
+A következő $N$ sor mindegyike három egész számot tartalmaz:
+$A$ : A kezdő szektor
+$B$ : A záró szektor
+$K$ : az expedícióért felajánlott kreditmennyiség<br>
+A bemenetek a $B$ érték szerint nemcsökkenő sorrendben vannak.
+
+
 
 ### Kimenet
-Egyetlen számot kell kiírnod, 
+Az első sorban az elérhető maximális kreditmennyiség szerepel.<br>
+A második sorban azoknak az engedélyeknek a sorszámai szerepelnek növekvő sorrendben, amelyeket elfogadtak.
+
+
 
 ### Korlátok
-* $1 \le N \le 100$
+* $1 \le N \le 1000$
+* $1 \le A,B \le 1000$
+* $1 \le K \le 1000$
 
 ### Példa bemenet
-    5
+    4 5
+    2 3 500
+    4 4 600
+    4 5 500
+    1 5 1000
+
 
 ### Példa kimenet
-    42
+    1100
+    1 2
 
 ### A példa magyarázata
+Az első és a második kérelmet fogadjuk el. Az első 500, a második 600 kreditet ad, ami összesen 1100.
 
