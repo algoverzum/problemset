@@ -20,4 +20,4 @@ A $C$ kulcsbetű egy kisbetű az angol ábécéből.
     19
 
 ### A példa magyarázata
-incomprehensibilities 21 betű hosszú. az 'i' karakter a 19. helyen fordul elő utoljára.
+`incomprehensibilities` 21 betű hosszú. Az `i` karakter a 19. helyen fordul elő utoljára.
