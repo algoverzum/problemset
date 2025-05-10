@@ -19,7 +19,7 @@ Constraint:
 * %d <= N <= %d
 * %d <= M <= %d
 * %d <= W <= %d
-* X in ["rand", "loopless", "rand2", "rand3", "break_dijkstra"]
+* X in ["rand", "loopless", "rand2", "rand3", "breakDijkstra", "spec"]
 """ % (
     MINN,
     MAXN,
@@ -126,6 +126,28 @@ def run(N, M, W, X):
         shuffle(tmp)
         for (U, V) in tmp:
             print(U, V, edges[(U, V)])
+    if X == "breakDijkstra":
+        edges = []
+        for j in range(N):
+            edges.append((2 * j, 2 * j + 2, 0))
+            edges.append((2 * j, 2 * j + 1, 2 ** (N - j - 1)))
+            edges.append((2 * j + 1, 2 * j + 2, -(2 ** (N - j))))
+        print(2 * N + 1, len(edges))
+        shuffle(edges)
+        for (U, V, W) in edges:
+            print(U + 1, V + 1, W)
+    if X == "spec":
+        edges = []
+        for j in range(N):
+            edges.append((2 * j, 2 * j + 2, 0))
+            edges.append((2 * j, 2 * j + 1, (N - j - 1) ** 2))
+            edges.append((2 * j + 1, 2 * j + 2, -((N - j) ** 2)))
+        for j in range(N - 1):
+            edges.append((2 * j + 1, 2 * j + 5, 0))
+        print(2 * N + 1, len(edges))
+        shuffle(edges)
+        for (U, V, W) in edges:
+            print(U + 1, V + 1, W)
 
 
 if __name__ == "__main__":

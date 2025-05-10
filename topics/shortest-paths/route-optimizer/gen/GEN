@@ -35,3 +35,8 @@
 500    2000	1000000	rand2	25
 1000   2000	1000000	rand3	26
 10     20	100	rand3	27
+5      100	1000000	breakDijkstra	28
+10     100	1000000	breakDijkstra	29
+19     100	1000000	breakDijkstra	30
+499   2000	1000000	spec	31
+#COPY: testcases/test1.txt
