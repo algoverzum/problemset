@@ -1,13 +1,40 @@
 #!/bin/bash
 
-if [ "$1" == "" ]; then
-    echo "usage: $(basename "$0") name"
+if [ "$#" -lt 1 ]; then
+    echo "usage: $(basename "$0") [-f] name"
     exit 0
 fi
 
-name=$1
-folder=`realpath "${0%.sh}"`
-fname=`basename "$0" .sh`
+force=false
+name=""
+
+for arg in "$@"; do
+    if [ "$arg" == "-f" ]; then
+        force=true
+    else
+        name="$arg"
+    fi
+done
+
+if [ "$name" == "" ]; then
+    echo "FATAL ERROR: Task name is required."
+    echo "usage: $(basename "$0") [-f] name"
+    exit 1
+fi
+
+folder=$(realpath "${0%.sh}")
+fname=$(basename "$0" .sh)
+
+existing_task=$(find "$folder/../../topics" -maxdepth 2 -type d -name "$name" 2>/dev/null)
+if [ "$existing_task" != "" ]; then
+    echo "WARNING: A task with the name \"$name\" already exists in the following location(s):"
+    echo "$existing_task"
+    if [ "$force" == false ]; then
+        echo "If you want to create the task anyway, please use the -f option."
+        exit 1
+    fi
+    echo "Continuing due to -f option..."
+fi
 
 echo "This script will create a new empty task of name \"$name\" into the current folder."
 if [ ! -f topic.yaml ]; then
@@ -42,5 +69,5 @@ chmod a+x "$name/gen/generator.py"
 ln -s "../statement/input0.txt" "$name/att/input0.txt"
 ln -s "../statement/output0.txt" "$name/att/output0.txt"
 
-sed -i.bak "s/^prerequisites:$/  - problem_id: $name\n    type: REQUIRED\nprerequisites:/" topic.yaml
+sed -i.bak "/^prerequisites:/i\  - problem_id: $name\n    type: REQUIRED" topic.yaml
 rm topic.yaml.bak
