@@ -6,9 +6,7 @@ def reverse():
     x = int(input())
     if x != 0:
         reverse()
-        print(x)
-        return
-    print(0)
+    print(x)
 
 
 reverse()

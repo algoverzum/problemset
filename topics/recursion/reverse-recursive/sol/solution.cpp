@@ -7,10 +7,8 @@ void reverse() {
     cin >> x;
     if (x != 0) {
         reverse();
-        cout << x << "\n";
-        return;
     }
-    cout << "0\n";
+    cout << x << "\n";
 }
 
 int main() { reverse(); }
