@@ -1,6 +1,7 @@
 #define CMS
 #include "testlib.h"
 #include <algorithm>
+#include <sstream>
 #include <vector>
 
 using namespace std;
@@ -11,58 +12,68 @@ struct Permit {
 int main(int argc, char *argv[]) {
     registerTestlibCmd(argc, argv);
 
-    int N = inf.readInt();
-    int M = inf.readInt();
+    int n = inf.readInt();
+    int m = inf.readInt();
     inf.readEoln();
     vector<Permit> permits(n + 2);
     for (int i = 1; i <= n; i++) {
-        cin >> permits[i].start >> permits[i].end >> permits[i].credits;
+        permits[i].start = inf.readInt();
+        permits[i].end = inf.readInt();
+        permits[i].credits = inf.readInt();
+        inf.readEoln();
     }
-
-    // Hivatalos megoldásból csak az első sor kell
     int opt_K = ans.readInt();
-    // ans.readEoln();
-    // vector<int> opt_pos(opt_K);
-    // for (int i = 0; i < opt_K; ++i) {
-    //   opt_pos[i] = ans.readInt(1, N);
-    // }
 
-    // Versenyző megoldása
-    int user_K = ouf.readInt();
+    int user_income = ouf.readInt();
     ouf.readEoln();
-    vector<int> user_pos(user_K);
-    int last = 0;
-    for (int i = 0; i < user_K; ++i) {
-        user_pos[i] = ouf.readInt(1, N);
-        if (user_pos[i] <= last) {
-            quitf(_wa, "Answers are not in increasing order!");
+
+    vector<int> user_idx;
+    string line = ouf.readLine();
+    if (!line.empty()) {
+        istringstream iss(line);
+        int x;
+        while (iss >> x) {
+            user_idx.push_back(x);
         }
-        last = user_pos[i];
     }
-    vector<int> cells(m + 1, 0);
-    int income = 0;
-    for (int exp : user_pos) {
-        for (int i = permits[exp].start; i <= permits[exp].end; i++) {
-            if (cells[i] == 1) {
-                quitf(_wa, "Someone already worked on the cell number %d ", i);
+    for (int i = 1; i < (int)user_idx.size(); i++) {
+        if (user_idx[i] <= user_idx[i - 1]) {
+            quitf(_wa,
+                  "Permit indices must be in strictly increasing order, but %d "
+                  "≥ %d",
+                  user_idx[i - 1], user_idx[i]);
+        }
+    }
+    vector<char> used(m + 1, 0);
+    int recomputed = 0;
+    for (int idx : user_idx) {
+        if (idx < 1 || idx > n)
+            quitf(_wa, "Permit index %d is out of range [1..%d]", idx, n);
+        for (int s = permits[idx].start; s <= permits[idx].end; s++) {
+            if (used[s]) {
+                quitf(_wa, "Sector %d is explored by more than one expedition",
+                      s);
             }
-            cells[i] = 1;
+            used[s] = 1;
         }
-        income += permits[exp].credits;
+        recomputed += permits[idx].credits;
     }
-    if (income != User_K) {
-        quitf(_wa, "The income from the list of expeditions you gave does not "
-                   "match the income you gave.");
-    }
-    if (user_K > opt_K) {
+    if (recomputed != user_income) {
         quitf(_wa,
-              "Solution is not optimal. your income: %d, best possible income: "
-              " %d ",
-              user_K, opt_K);
+              "Your list of permits actually yields %d credits, "
+              "but you claimed %d credits.",
+              recomputed, user_income);
     }
-    if (user_K < opt_K) {
+    if (user_income > opt_K) {
+        quitf(
+            _wa,
+            "Your solution (%d credits) exceeds judge’s optimal (%d credits)!",
+            user_income, opt_K);
+    }
+    if (user_income < opt_K) {
         quitf(_wa,
-              "Either offical solution broken or your answer is too high.");
+              "Your solution (%d credits) is worse than optimal (%d credits).",
+              user_income, opt_K);
     }
 
     quitf(_ok, "Correct Answer!");

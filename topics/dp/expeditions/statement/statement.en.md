@@ -29,18 +29,19 @@ The second line should contain the indices of the selected permit requests, list
 * $1 \le K \le 1000$
 
 ### Example input
-    4 5
-    2 3 500
-    4 4 600
-    4 5 500
-    1 5 1000
+    5 7
+    2 4 600
+    4 5 400
+    6 6 180
+    1 6 900
+    4 7 600
 
 
 ### Example output
-    1100
-    1 2
+    1200
+    1 5
 
 
 ### Explanation of the example
-We accept the first and second permit requests.
-The first provides 500 credits, and the second provides 600 credits, totaling 1100 credits.
+We accept the first and fifth permit requests.
+The first provides 600 credits, and the fifth provides 600 credits, totaling 1200 credits.
