@@ -35,13 +35,13 @@ def run(f, st):
     dist[1] = 0
 
     for _ in range(N - 1):
-        for (U, V) in edges:
+        for U, V in edges:
             W = edges[(U, V)]
             if dist[U] != INF and dist[U] + W < dist[V]:
                 dist[V] = dist[U] + W
 
     # Optional: check for negative cycles
-    for (U, V) in edges:
+    for U, V in edges:
         W = edges[(U, V)]
         if dist[U] != INF and dist[U] + W < dist[V]:
             assert False and "Negative cycle detected"
