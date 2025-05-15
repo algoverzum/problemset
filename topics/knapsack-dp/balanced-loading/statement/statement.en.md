@@ -2,9 +2,9 @@
 Han Solo and Chewbacca have been tasked by Jabba to load containers onto the Millennium Falcon in such a way that the difference between the total weight in the left and right cargo holds is minimized. Each container's weight is given in kilograms.
 
 ### Input
-The first line of the input contains the number of containers, $N$, where $2 \le N \le 1000$.
+The first line of the input contains the number of containers, $N$, where $2 \le N \le 100$.
 
-The second line contains $N$ integers, representing the weights of the containers in kilograms (each between 1 and 50).
+The second line contains $N$ integers, representing the weights of the containers in kilograms (each between $1$ and $100$).
 
 ### Output
 The first line should contain the minimum possible difference between the total weight of the two cargo holds.
@@ -16,8 +16,8 @@ The third line should list the number of containers placed in the right cargo ho
 If there are multiple optimal solutions, any of them may be given.
 
 ### Constraints
-* $2 \le N \le 1000$
-* $1 \le A_i \le 50$, where $A_i$ is the weight of the $i$-th container ($i = 1, 2, \ldots, N$)
+* $2 \le N \le 100$
+* $1 \le A_i \le 100$, where $A_i$ is the weight of the $i$-th container ($i = 1, 2, \ldots, N$)
 
 ### Example input
     5
