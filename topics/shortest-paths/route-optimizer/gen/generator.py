@@ -143,7 +143,7 @@ def run(N, M, W, X):
             edges.append((2 * j, 2 * j + 1, (N - j - 1) ** 2))
             edges.append((2 * j + 1, 2 * j + 2, -((N - j) ** 2)))
         for j in range(N - 1):
-            edges.append((2 * j + 1, 2 * j + 5, 0))
+            edges.append((2 * j + 1, 2 * j + 4, 0))
         print(2 * N + 1, len(edges))
         shuffle(edges)
         for U, V, W in edges:
