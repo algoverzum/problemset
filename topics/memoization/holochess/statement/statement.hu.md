@@ -14,7 +14,7 @@ Megjegyzés: Az érmének a táblán belül kell maradnia!
 
 Az alábbi ábra mind a négy lehetséges lépést mutatja:
 
-![példa](tex/abra.pdf)
+![](tex/abra.png)
 
 Az 1. játékos kezd. Utána a játékosok felváltva lépkednek. Az a játékos, aki nem tud lépni, elveszíti a játékot.
 
@@ -45,8 +45,8 @@ Minden egyes tesztesethez egy sort írj ki. Ha az első játékos a győztes, í
 ### A példa magyarázata
 Az első esetben az 1. játékos bármelyik kék pozícióba léphet. Függetlenül attól, hogy melyiket választja, a 2. játékosé az utolsó lépés, és megnyeri a játékot (lásd alább).
 
-![példa](tex/example25.pdf)
+![](tex/example25.png)
 
 A második esetben az 1. játékosnak 4 lehetséges lépése van. Ha az $(1,6)$-ra lép, akkor a 2. játékos kénytelen a $(2,4)$-re lépni. Innen az 1. játékos $(1,2)$-re lép és nyer (lásd alább).
 
-![példa](tex/example35.pdf)
+![](tex/example35.png)
