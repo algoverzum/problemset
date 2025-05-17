@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Minden városhoz rendeljük hozzá annak a bolygónak a nevét, ahol az a város van. Mit használnál ehhez?
+- cpp: Használjunk egy `map<string, string>`-et a város → bolygó hozzárendelés eltárolására.
+  py: Használjunk egy dictonary-t a város → bolygó hozzárendelés eltárolására.
+- cpp: Beolvasás közben rögtön feltölthetjük ezt a map-et, minden város beolvasásakor tegyük bele hozzá a legutoljára beolvasott bolygót. A kérdéseket így azonnal meg fogjuk tudni válaszolni, csak ki kell olvasni a map-ből a városhoz eltárolt értéket.
+  py: Beolvasás közben rögtön feltölthetjük ezt a dictionary-t, minden város beolvasásakor tegyük bele hozzá a legutoljára beolvasott bolygót. A kérdéseket így azonnal meg fogjuk tudni válaszolni, csak ki kell olvasni a dictinary-ből a városhoz eltárolt értéket.

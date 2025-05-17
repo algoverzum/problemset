@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Store for each city the name of the planet it is located on. What would you use for this?
+- cpp: Use a `map<string, string>` to store the city → planet mapping.
+  py: Use a dictionary to store the city → planet mapping.
+- cpp: While reading the input, we can fill this map immediately—each time we read a city, store it with the most recently read planet. This way, we can answer the questions right away by simply reading the stored value from the map.
+  py: While reading the input, we can fill this dictionary immediately—each time we read a city, store it with the most recently read planet. This way, we can answer the questions right away by simply reading the stored value from the dictionary.
