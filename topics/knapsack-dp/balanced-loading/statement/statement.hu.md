@@ -17,7 +17,7 @@ Ha több optimális megoldás is létezik, akkor bármelyik megadható.
 
 ### Korlátok
 * $2 \le N \le 100$
-* $1 \le A_i \le 100$, ahol $A_i$ az $i$-edik konténer súlya ($i = 1, 2, \ldots, N$)
+* $1 \le W_i \le 100$, ahol $W_i$ az $i$-edik konténer súlya ($i = 1, 2, \ldots, N$)
 
 ### Példa bemenet
     5

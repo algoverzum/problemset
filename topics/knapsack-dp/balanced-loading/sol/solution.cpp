@@ -6,58 +6,50 @@
 using namespace std;
 
 int main() {
-    int n;
+    int n, sum = 0;
     cin >> n;
-    vector<int> weights(n);
-    for (int i = 0; i < n; ++i) {
+    vector<int> weights(n + 1);
+    for (int i = 1; i <= n; i++) {
         cin >> weights[i];
+        sum += weights[i];
     }
 
-    int total = accumulate(weights.begin(), weights.end(), 0);
-    vector<bool> dp(total + 1, false);
-    vector<int> prev(total + 1, -1);
-
-    dp[0] = true;
-
-    for (int t = 0; t < n; ++t) {
-        for (int i = total; i >= weights[t]; --i) {
-            if (dp[i - weights[t]] && !dp[i]) {
-                dp[i] = true;
-                prev[i] = t;
-            }
+    int target = sum / 2;
+    vector<vector<bool>> dp(n + 1, vector<bool>(target + 1));
+    dp[0][0] = true;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 0; j <= target; j++) {
+            dp[i][j] =
+                dp[i - 1][j] || (j >= weights[i] && dp[i - 1][j - weights[i]]);
         }
     }
 
-    int left = total / 2;
-    while (left >= 0 && !dp[left]) {
+    int left = target;
+    while (!dp[n][left]) {
         --left;
     }
 
-    vector<bool> used(n, false);
-    int curr = left;
-    while (curr > 0) {
-        int task = prev[curr];
-        used[task] = true;
-        curr -= weights[task];
-    }
-
-    vector<int> left_cargo, right_cargo;
-    for (int i = 0; i < n; ++i) {
-        if (used[i]) {
-            left_cargo.push_back(i + 1);
-        } else {
-            right_cargo.push_back(i + 1);
+    vector<bool> left_cargo(n, false);
+    int left_cnt = 0;
+    int j = left;
+    for (int i = n; i > 0; i--) {
+        if (!dp[i - 1][j]) {
+            left_cargo[i] = true;
+            left_cnt++;
+            j -= weights[i];
         }
     }
 
-    cout << abs(total - 2 * left) << "\n";
-    cout << left_cargo.size();
-    for (int idx : left_cargo)
-        cout << " " << idx;
+    cout << sum - 2 * left << "\n";
+    cout << left_cnt;
+    for (int i = 1; i <= n; i++)
+        if (left_cargo[i])
+            cout << " " << i;
     cout << "\n";
-    cout << right_cargo.size();
-    for (int idx : right_cargo)
-        cout << " " << idx;
+    cout << n - left_cnt;
+    for (int i = 1; i <= n; i++)
+        if (!left_cargo[i])
+            cout << " " << i;
     cout << "\n";
 
     return 0;

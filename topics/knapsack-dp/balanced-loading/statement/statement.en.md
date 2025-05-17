@@ -17,7 +17,7 @@ If there are multiple optimal solutions, any of them may be given.
 
 ### Constraints
 * $2 \le N \le 100$
-* $1 \le A_i \le 100$, where $A_i$ is the weight of the $i$-th container ($i = 1, 2, \ldots, N$)
+* $1 \le W_i \le 100$, where $W_i$ is the weight of the $i$-th container ($i = 1, 2, \ldots, N$)
 
 ### Example input
     5

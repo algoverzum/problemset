@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- The containers must be selected so that the total weight on one side is as close as possible to half of the total weight.
+- 'Use dynamic programming: keep track of which total weights are achievable.'
+- '`dp[i][j]` should represent whether a total weight of `j` can be achieved using the first `i` containers (true/false).'
+- Based on the last row of the DP table, we can select the target weight (the one closest to half the total). How can we reconstruct which containers sum up to this amount?
+- Let `i=n` and `j` be the target weight. We know that `dp[i][j]` is true. If `dp[i-1][j]` is also true, then the `i`-th weight is not needed to achieve the target weight. But if `dp[i-1][j]` is false, then the `i`-th weight is definitely needed, and the next question is how `j-w[i]` weight can be achieved using the first `i-1` containers.
