@@ -1,0 +1,16 @@
+---
+id: game-dp
+name: Game DP
+problems:
+  - problem_id: holo-tower
+    type: REQUIRED
+prerequisites:
+  - combined-patterns
+dependents: []
+visualization:
+  image_filename: 12.svg
+  position:
+    x: 700
+    y: 400
+
+# Notes:

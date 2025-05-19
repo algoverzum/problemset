@@ -7,6 +7,8 @@ problems:
     type: REQUIRED
   - problem_id: coin-validation
     type: REQUIRED
+  - problem_id: imperial-inheritance
+    type: REQUIRED
 prerequisites:
 dependents:
 visualization:

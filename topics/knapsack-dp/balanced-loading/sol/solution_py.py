@@ -1,43 +1,32 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
-# although the partition problem is NP-complete,
-# there is a pseudo-polynomial time O(nS),
-# where S the sum of the input integers
+n = int(input())
+weights = [0] + list(map(int, input().split()))
+total_sum = sum(weights)
 
+target = total_sum // 2
+dp = [[False] * (target + 1) for _ in range(n + 1)]
+dp[0][0] = True
 
-def solv():
-    n = int(input())
-    weights = list(map(int, input().split()))
+for i in range(1, n + 1):
+    for j in range(target + 1):
+        dp[i][j] = dp[i - 1][j] or (j >= weights[i] and dp[i - 1][j - weights[i]])
 
-    total = sum(weights)
-    dp = [False] * (total // 2 + 1)
-    dp[0] = True
-    prev = [-1] * (total // 2 + 1)
+left = target
+while not dp[n][left]:
+    left -= 1
 
-    for t in range(n):
-        for i in range(total // 2, weights[t] - 1, -1):
-            if dp[i - weights[t]] and not dp[i]:
-                dp[i] = True
-                prev[i] = t
+used = [False] * (n + 1)
+j = left
+for i in range(n, 0, -1):
+    if j >= weights[i] and not dp[i - 1][j]:
+        used[i] = True
+        j -= weights[i]
 
-    for left in range(total // 2, -1, -1):
-        if dp[left]:
-            break
+left_cargo = [i for i in range(1, n + 1) if used[i]]
+right_cargo = [i for i in range(1, n + 1) if not used[i]]
 
-    used = [False] * n
-    curr = left
-    while curr > 0:
-        task = prev[curr]
-        used[task] = True
-        curr -= weights[task]
-
-    left_cargo = [i + 1 for i in range(n) if used[i]]
-    right_cargo = [i + 1 for i in range(n) if not used[i]]
-
-    print(abs(total - 2 * left))
-    print(len(left_cargo), *left_cargo)
-    print(len(right_cargo), *right_cargo)
-
-
-solv()
+print(total_sum - 2 * left)
+print(len(left_cargo), *left_cargo)
+print(len(right_cargo), *right_cargo)

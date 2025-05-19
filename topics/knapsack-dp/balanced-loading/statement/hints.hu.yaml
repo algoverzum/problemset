@@ -1,6 +1,6 @@
 ---
 - Úgy kell kiválasztani a konténereket, hogy az egyik oldal összsúlya a teljes súly feléhez a lehető legközelebb legyen.
-- Használj dinamikus programozást: tartsd nyilván, hogy mely összsúlyok érhetők el.
-- Legyen `dp[w] = igaz/hamis`, ahol `w` egy elérhető összsúly az eddig választott konténerekkel.
-- A dinamikus programozás során tárolhatod, hogy egy adott súly eléréséhez melyik konténert használtad utoljára.
-- A cél súly elérése után visszafelé követve ezekből rekonstruálhatod a bal oldali raktér konténereit.
+- 'Használj dinamikus programozást: tartsd nyilván, hogy mely összsúlyok érhetők el.'
+- '`dp[i][j]` jelentése legyen az, hogy az első `i` konténer felhasználásával a `j` összsúly elérhető-e (igaz/hamis).'
+- A dp táblázat utolsó sora alapján ki tudjuk választani a cél súlyt (a teljes súly feléhez a legközelebb). Hogy tudjuk a táblázat alapján rekonstruálni, hogy melyik konténerek összege adja ezt?
+- Legyen `i = n` és `j` pedig a cél súly. Tudjuk, hogy `dp[i][j]` igaz. Ha `dp[i-1][j]` is igaz, akkor valójában az `i`-edik súlyt nem kell használnunk a cél súly előállításakor. Viszont ha `dp[i-1][j]` hamis, akkor biztosan kell az `i`-edik súly, és utána az a kérdés, hogy `j-w[i]` miképp állítható elő az első `i-1` konténer segítségével.

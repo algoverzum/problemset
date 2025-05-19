@@ -2,9 +2,9 @@
 Han Solo és Chewbacca azt a megbízást kapták Jabbától, hogy rakjanak fel konténereket a Millennium Falconra úgy, hogy a bal és jobb oldali raktér összsúlyának különbsége a lehető legkisebb legyen. Minden konténer előre megadott súlyú (kg-ban).
 
 ### Bemenet
-A bemenet első sora tartalmazza a konténerek számát $N$-et, ahol $2 \le N \le 1000$.
+A bemenet első sora tartalmazza a konténerek számát $N$-et, ahol $2 \le N \le 100$.
 
-A második sorban $N$ egész szám szerepel, amelyek a konténerek súlyát adják meg kilogrammban (mindegyik 1 és 50 közötti érték).
+A második sorban $N$ egész szám szerepel, amelyek a konténerek súlyát adják meg kilogrammban (mindegyik $1$ és $100$ közötti érték).
 
 ### Kimenet
 Az első sorban a két raktér összsúlya közötti legkisebb különbséget kell kiírni.
@@ -16,8 +16,8 @@ A harmadik sorban a jobb oldali raktérbe került konténerek darabszámát, maj
 Ha több optimális megoldás is létezik, akkor bármelyik megadható.
 
 ### Korlátok
-* $2 \le N \le 1000$
-* $1 \le A_i \le 50$, ahol $A_i$ az $i$-edik konténer súlya ($i = 1, 2, \ldots, N$)
+* $2 \le N \le 100$
+* $1 \le W_i \le 100$, ahol $W_i$ az $i$-edik konténer súlya ($i = 1, 2, \ldots, N$)
 
 ### Példa bemenet
     5

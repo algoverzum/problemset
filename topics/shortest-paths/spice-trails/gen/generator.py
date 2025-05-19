@@ -50,7 +50,7 @@ def run(N, M, W, X):
                 if (U, V) not in edges:
                     edges[(U, V)] = randint(1, W)
         print(N, len(edges))
-        for (U, V) in edges:
+        for U, V in edges:
             print(U, V, edges[(U, V)])
     if X == "loopless":
         edges = {}
@@ -70,7 +70,7 @@ def run(N, M, W, X):
                 if (X[U], X[V]) not in edges:
                     edges[(X[U], X[V])] = randint(1, W)
         print(N, len(edges))
-        for (U, V) in edges:
+        for U, V in edges:
             print(U, V, edges[(U, V)])
     if X == "rand3":
         edges = {}
@@ -88,7 +88,7 @@ def run(N, M, W, X):
                 if (U, V) not in edges:
                     edges[(U, V)] = randint(2, W)
         print(N, len(edges))
-        for (U, V) in edges:
+        for U, V in edges:
             print(U, V, edges[(U, V)])
     if X == "rand2":
         edges = {}
@@ -109,10 +109,10 @@ def run(N, M, W, X):
                     edges[(U, V)] = randint(1, W)
         print(N, len(edges))
         tmp = []
-        for (U, V) in edges:
+        for U, V in edges:
             tmp.append((U, V))
         shuffle(tmp)
-        for (U, V) in tmp:
+        for U, V in tmp:
             print(U, V, edges[(U, V)])
 
 

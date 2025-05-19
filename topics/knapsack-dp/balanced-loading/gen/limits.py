@@ -1,7 +1,7 @@
 MINN = 2
-MAXN = 1000
+MAXN = 100
 MINW = 1
-MAXW = 50
+MAXW = 100
 
 subtasks = [
     {},  # 1-based

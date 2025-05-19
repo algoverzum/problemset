@@ -14,7 +14,7 @@ Note: The coin must remain inside the board.
 
 The figure below shows all four possible moves:
 
-![example](tex/abra.pdf)
+![](tex/abra.png)
 
 Beginning with player 1, the players alternate turns. The first player who is unable to make a move loses the game.
 
@@ -44,8 +44,8 @@ Print a new line for each test case. Print "First" if the first player is the wi
 ### Explanation of the example
 In the first testcase, the first player can move to any of the blue positions. Regardless of which one is chosen, the second has the last move and wins the game (see below).
 
-![example](tex/example25.pdf)
+![](tex/example25.png)
 
 In the second testcase, the first player has 4 possible moves. If he moves to $(1,6)$, then the second player is forced to move to $(2,4)$. From there the first player moves to $(1,2)$ and wins (see below).
 
-![example](tex/example35.pdf)
+![](tex/example35.png)

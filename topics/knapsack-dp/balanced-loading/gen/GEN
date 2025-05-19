@@ -5,7 +5,7 @@
 #STNAME: examples
 #COPY: statement/input0.txt
 
-# Subtask 2: 2 <= N <= 1000
+# Subtask 2: 2 <= N <= 100
 #ST: 100
 #STNAME: all
 #COPY: testcases/test1.txt
@@ -17,13 +17,13 @@
 12     rand	7
 13     rand	8
 14     rand	9
-1000   rand	10
-1000   rand	11
-1000   rand	12
-1000   1	13
-1000   2	14
-1000   3	15
-1000   10	16
-1000   5	17
-1000   7	18
-1000   spec	19
+100    rand	10
+100    rand	11
+100    rand	12
+100    1	13
+100    2	14
+100    3	15
+100    10	16
+100    5	17
+100    7	18
+100    spec	19

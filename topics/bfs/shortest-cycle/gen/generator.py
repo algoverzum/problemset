@@ -76,6 +76,7 @@ def run(A, B, C, D):
 
     # egyenes gráf
     last_node = -1
+
     # ahol last node azért kell, hogy amikor ezt meghívom mert egy nagy kört szeretnék akkor csak összekötöm a last_node-ot a gyökérrel
     def line_graph(edge_param):
         nonlocal last_node

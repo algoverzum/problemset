@@ -9,8 +9,8 @@ from inspect import signature
 usage = """Generator for "balanced-loading".
 
 Parameters:
-* A (minimum value)
-* B (maximum value)
+* A (N maximum value)
+* B (W maximum value, or "rand" or "spec")
 * S (seed)
 
 Constraint:
@@ -30,27 +30,27 @@ def run(A, B):
             break
         assert eval(row[2:]), row[2:]
 
-    if A > 100:
-        A -= randint(0, 25)
+    if A > 50:
+        A -= randint(0, 5)
     if B == "rand":
         X = []
         while len(X) < A:
-            X.append(randint(1, 50))
+            X.append(randint(1, 100))
         print(A)
         print(*X)
     elif B == "spec":
-        print(999)
-        X = [50] * 2 + [20] * 997
+        print(99)
+        X = [50] * 2 + [20] * 97
         print(*X)
     else:
         X = []
         while len(X) < A:
-            X.append(B * randint(1, 50 // B))
+            X.append(B * randint(1, 100 // B))
         if B == 1:
             if sum(X) % 2 == 1:
                 X[-1] -= 1
                 if X[-1] < 1:
-                    X[-1] += 1
+                    X[-1] += 2
         else:
             X[-1] -= 1
             if X[-1] < 1:
