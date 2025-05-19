@@ -43,4 +43,8 @@ For $N=2$ the first player will make the height bigger already.
 
 For $N=5$ the first player can place 4 or 5 holo-cubes and winning the game.
 
-For $N=14$ the first player can palce 5 holo-cubes. The second van not place 11-holo cubes, but can place 4 or 5. Now the first player can place 5 holo-cubes and win the game.
+For N=14: 
+- R2-D2 places 5 holo-cubes (height = 5)
+- C-3PO cannot place 11 cubes (would exceed 14), so places either 4 or 5
+- If C-3PO places 4, height becomes 9, and R2-D2 can place 5 to reach 14 exactly and win
+- If C-3PO places 5, height becomes 10, and R2-D2 can place 4 to reach 14 exactly and win
