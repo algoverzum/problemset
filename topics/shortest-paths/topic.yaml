@@ -5,6 +5,8 @@ problems:
     type: REQUIRED
   - problem_id: route-optimizer
     type: REQUIRED
+  - problem_id: republic-starmap
+    type: REQUIRED
 prerequisites:
 dependents:
 visualization:

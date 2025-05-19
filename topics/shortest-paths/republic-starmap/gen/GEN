@@ -1,0 +1,24 @@
+# N    K    P    T     S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+
+# Subtask 2: 1 <= N <= 100
+#ST: 100
+#STNAME: all
+5    3    0.8   norm   1
+10   5    0.8   norm   2
+10   5    0.2   norm   2
+100  50   0.3   norm   4
+100  50   0.4   norm   5
+100  50   0.5   norm   6
+100  50   0.6   norm   7
+100  50   0.7   norm   8
+100  50   0.8   norm   9
+100  50   0.9   norm   10
+100  20   0.7   spec   11
+100  40   0.8   spec   12
+100  60   0.6   spec   13
+100  80   0.8   spec   14
