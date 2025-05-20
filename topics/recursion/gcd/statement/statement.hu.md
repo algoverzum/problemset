@@ -6,7 +6,7 @@ A bölcs Yoda arra kér, hogy írj egy **rekurzív** függvényt, amely meghatá
 Indulj ki az előre készített sablon kódból! Ne változtass a főprogramon semmit, mert különben nem lesz elfogadva. A `gcd` függvény belsejét kell megírnod, ami paraméterként kapja az $A$ és $B$ értékét.
 
 ### Korlátok
-* $1 \le A,B \le 10^6$
+* $1 \le A,B \le 10^5$
 
 ### Példa
 Például 13 és 21 legnagyobb közös osztója 1, mivel 13 prím és $21=3 \cdot 7$.

@@ -6,7 +6,7 @@ The wise Yoda asks you to write a **recursive** function that determines the gre
 Start from the pre-made template code! Do not change anything in the main program, otherwise it will not be accepted. You must write the inside of the function `gcd`, which takes $A$ and $B$ as parameters.
 
 ### Constraints
-* $1 \le A,B \le 10^6$
+* $1 \le A,B \le 10^5$
 
 ### Example
 For example, the greatest common divisor of 13 and 21 is 1, since 13 is prime and $21=3 \cdot 7$. 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from sys import setrecursionlimit
 
-setrecursionlimit(10**7)
+setrecursionlimit(10**5)
 
 
 def gcd(a, b):
