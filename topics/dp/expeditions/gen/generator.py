@@ -41,7 +41,6 @@ def run(A, B, T):
     if T == 0:
         Endvalues = choices(range(1, B + 1), k=A)
         Endvalues.sort()
-        sorted(Endvalues)
         for i in range(A):
             start = randint(1, Endvalues[i])
             print(start, Endvalues[i], randint(1, MAXK))

@@ -1,3 +1,4 @@
+// @check-wrong-answer: all
 #include <algorithm>
 #include <iostream>
 #include <vector>

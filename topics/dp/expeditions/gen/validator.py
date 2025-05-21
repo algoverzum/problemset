@@ -17,11 +17,10 @@ def run(f, st):
 
     N, M = map(int, next(f).split())
     assert MINN <= N <= MAXN
-    assert MINM <= N <= MAXM
+    assert MINM <= M <= MAXM
     for i in range(N):
         a, b, k = map(int, next(f).split())
-        assert MINM <= b <= MAXM
-        assert MINM <= a <= b
+        assert MINM <= a <= b <= MAXM
         assert MINK <= k <= MAXK
 
     assert next(f, None) is None
