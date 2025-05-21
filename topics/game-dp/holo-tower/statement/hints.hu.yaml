@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Minden toronymagasságra határozzuk meg, hogy a soron következő játékos nyerni vagy veszíteni fog.
+- Például N, N-1, N-2 és N-3 magasságú torony esetén a soron következő játékos biztosan veszít, N-4 magasságnál pedig nyer... Másrészt ha a magasság N+1, N+2, ..., N+11, akkor igazából aki lépett az vesztett, így mondhatjuk, hogy a soron következő játékos nyert. Szokás nyerő illetve vesztő helyzeteknek nevezni ezeket.
+- Csökkenő sorrendben vizsgáljuk a magasságokat. Mikor tud nyerni a soron következő játékos, milyen helyre kell lépnie?
+- Ha tudunk egy olyan helyzetre lépni, ahonnan a másik játékos biztos veszít, akkor nyertünk. Ha csak olyan helyre léphetünk, ahonnan az ellenfél nyer, akkor pedig vesztettünk.
+- Tulajdonképpen egy dinamikus programozásos megoldásról van szó, dp[i] legyen igaz, ha az i magasság egy nyerő helyzet. Ha i>N, akkor dp[i] igaz. i=N..0-ra pedig `dp[i] = (nem dp[i+4]) vagy (nem dp[i+5]) vagy (nem dp[i+11])`

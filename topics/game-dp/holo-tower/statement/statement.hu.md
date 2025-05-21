@@ -41,8 +41,9 @@ $N=2$: az első játékos bármelyik lépése már túl magasra emeli a tornyot 
 
 $N=5$: az első játékos lerakhat 4 vagy 5 holo-kockát, és ezzel megnyeri a játékot.
 
-$N=14$: 
-- R2-D2 lerak 5 holo-kockát (magasság = 5)
-- C-3PO nem tud 11 kockát lerakni (meghaladná a 14-et), így 4 vagy 5 kockát kell leraknia
-- Ha C-3PO 4 kockát rak le, a magasság 9 lesz, és R2-D2 lerakhat 5 kockát, hogy pontosan 14-et érjen el és nyerjen
-- Ha C-3PO 5 kockát rak le, a magasság 10 lesz, és R2-D2 lerakhat 4 kockát, hogy pontosan 14-et érjen el és nyerjen
+$N=14$:
+
+* R2-D2 lerak 5 holo-kockát (magasság = 5)
+* C-3PO nem tud 11 kockát lerakni (meghaladná a 14-et), így 4 vagy 5 kockát kell leraknia
+* Ha C-3PO 4 kockát rak le, a magasság 9 lesz, és R2-D2 lerakhat 5 kockát, hogy pontosan 14-et érjen el és nyerjen
+* Ha C-3PO 5 kockát rak le, a magasság 10 lesz, és R2-D2 lerakhat 4 kockát, hogy pontosan 14-et érjen el és nyerjen
