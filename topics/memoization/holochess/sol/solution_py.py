@@ -1,26 +1,26 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
-memo = {}
+memo = [[0] * 101 for _ in range(101)]
 
 
-def solv(x, y):
-    if (x, y) in memo:
-        return memo[(x, y)]
-    for stepx, stepy in [(-2, -1), (-2, 1), (1, -2), (-1, -2)]:
-        if 0 < stepx + x and 0 < stepy + y:
-            ans = solv(stepx + x, stepy + y)
-            if ans == 2:
-                memo[(x, y)] = 1
-                return 1
-    memo[(x, y)] = 2
+def winner(x, y):
+    if x < 1 or x > 100 or y < 1 or y > 100:
+        return 1
+    if memo[x][y] != 0:
+        return memo[x][y]
+
+    moves = [(-2, -1), (-2, 1), (1, -2), (-1, -2)]
+    for stepx, stepy in moves:
+        if winner(x + stepx, y + stepy) == 2:
+            memo[x][y] = 1
+            return 1
+
+    memo[x][y] = 2
     return 2
 
 
-for t in range(int(input())):
+t = int(input())
+for _ in range(t):
     x, y = map(int, input().split())
-    ans = solv(x, y)
-    if ans == 2:
-        print("Second")
-    else:
-        print("First")
+    print("Second" if winner(x, y) == 2 else "First")

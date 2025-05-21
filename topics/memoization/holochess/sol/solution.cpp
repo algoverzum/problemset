@@ -1,30 +1,26 @@
 // @check-accepted: *
 #include <iostream>
-#include <map>
+#include <vector>
 
 using namespace std;
 
-map<pair<int, int>, int> memo;
+int memo[101][101];
 
-int solv(int x, int y) {
-    if (memo.find({x, y}) != memo.end()) {
-        return memo[{x, y}];
+int winner(int x, int y) {
+    if (x < 1 || x > 100 || y < 1 || y > 100)
+        return 1;
+    if (memo[x][y] != 0) {
+        return memo[x][y];
     }
 
-    int moves[4][2] = {{-2, -1}, {-2, 1}, {1, -2}, {-1, -2}};
-    for (auto &move : moves) {
-        int stepx = move[0], stepy = move[1];
-        if (x + stepx > 0 && y + stepy > 0) {
-            int ans = solv(x + stepx, y + stepy);
-            if (ans == 2) {
-                memo[{x, y}] = 1;
-                return 1;
-            }
+    vector<pair<int, int>> moves = {{-2, -1}, {-2, 1}, {1, -2}, {-1, -2}};
+    for (auto [stepx, stepy] : moves) {
+        if (winner(x + stepx, y + stepy) == 2) {
+            return memo[x][y] = 1;
         }
     }
 
-    memo[{x, y}] = 2;
-    return 2;
+    return memo[x][y] = 2;
 }
 
 int main() {
@@ -34,13 +30,10 @@ int main() {
     while (t--) {
         int x, y;
         cin >> x >> y;
-        int ans = solv(x, y);
-        if (ans == 2) {
+        if (winner(x, y) == 2) {
             cout << "Second\n";
         } else {
             cout << "First\n";
         }
     }
-
-    return 0;
 }

@@ -1,5 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
-- A feladat megoldható (de nem DP-vel) $10^{100} \times 10^{100}$-as táblára is.
+- Érdemes minden mezőről eldönteni, hogy az onnan kezdő játékos nyerni vagy veszteni fog.
+- Ha dinamikus programozással csinálnánk, akkor a kiszámítási sorrend kicsit kellemetlen, mert átlók szerint kell haladni. Sokkal kényelmesebb egy rekurzív függvényt írni, amiben memorizálást alkalmazunk.
+- Legyen egy winner(x, y) függvény, ami 1-et vagy 2-t ad vissza aszerint, hogy az (x,y) mezőről indulva a kezdőjátékos nyer vagy veszít.
+- Ha egy (x,y) mezőn vagyunk, akkor ha a négyféle lépéssel elérhető mezők közül van olyan, amire az onnan kezdő játékos veszít, akkor oda lépve nyerni tudunk. Ha nincs ilyen, akkor veszítünk erről a mezőről indulva.
+- 'Bónusz: a feladat megoldható (másként) $10^{100} \times 10^{100}$-as táblára is.'
