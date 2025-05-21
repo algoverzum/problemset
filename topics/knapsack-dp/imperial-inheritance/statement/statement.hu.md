@@ -1,5 +1,5 @@
 ## Birodalmi örökség
-A Galaktikus Birodalom uralkodója váratlanul eltűnt egy fekete lyuk peremén zajló diplomáciai küldetés során. Trónörökös nélkül, a Birodalmi Tanács úgy döntött, hogy a két törvényes örökös, Seran és Kaela, megosztva örökli a birodalom legértékesebb erőforrásait: a bolygókat.
+A Galaktikus Birodalom uralkodója váratlanul eltűnt egy fekete lyuk peremén zajló diplomáciai küldetés során. Trónörökös nélkül, a Birodalmi Tanács úgy döntött, hogy a két törvényes örökös, Seran és Kaela, megosztva örökli a birodalom legértékesebb erőforrásait: a bolygókat.<br>
 Minden bolygónak ismert az értéke, amit egy pozitív egész számmal jellemeznek. A testvérek igazságos örökségre törekednek, tehát olyan elosztást keresnek, ahol mindketten ugyanakkora összértékű bolygót birtokolnak.<br>
 Hamar rájöttek azonban, hogy ez nem mindig lehetséges – ezért elfogadják azt is, ha néhány bolygó egyelőre közös felügyelet alatt marad. Segíts a trónörökösöknek igazságosan szétosztani a bolygókat, hogy a közös felügyelet alatt maradó bolygók összértéke minimális legyen.
 
@@ -19,6 +19,7 @@ Több megfelelő megoldás is létezhet — bármelyik elfogadható.
 
 ### Korlátok
 * $1 \le N \le 300$
+* $\sum B_i \le 10,000$
 
 ### Példa bemenet
     7  

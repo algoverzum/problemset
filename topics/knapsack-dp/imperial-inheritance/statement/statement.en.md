@@ -1,6 +1,6 @@
 ## Imperial Inheritance
-The ruler of the Galactic Empire has unexpectedly vanished during a diplomatic mission near the edge of a black hole. With no heir to the throne, the Imperial Council has decided that the Empire’s two rightful successors, Seran and Kaela, will share the Empire’s most valuable resources: its planets.
-Each planet has a known value, represented by a positive integer. The siblings strive for a fair inheritance — that is, a division in which both receive planets with the same total value.
+The ruler of the Galactic Empire has unexpectedly vanished during a diplomatic mission near the edge of a black hole. With no heir to the throne, the Imperial Council has decided that the Empire’s two rightful successors, Seran and Kaela, will share the Empire’s most valuable resources: its planets.<br>
+Each planet has a known value, represented by a positive integer. The siblings strive for a fair inheritance — that is, a division in which both receive planets with the same total value.<br>
 However, they soon realize that this is not always possible, so they are willing to leave some planets under joint supervision for the time being. Help the heirs divide the planets fairly so that the total value of the jointly held planets is minimized.
 
 ### Input
@@ -15,7 +15,7 @@ Multiple valid solutions may exist — any of them is acceptable.
 
 ### Constraints
 * $1 \le N \le 300$
-
+* $\sum B_i \le 10,000$
 ### Example input
     7  
     16 3 11 38 1 4 2
