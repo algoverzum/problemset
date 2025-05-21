@@ -3,21 +3,6 @@
 #include <vector>
 using namespace std;
 
-string holoTowerWinner(int N) {
-    vector<bool> dp(N + 1, false);
-
-    for (int i = 1; i <= N; ++i) {
-        for (int move : {4, 5, 11}) {
-            if (i - move >= 0 && !dp[i - move]) {
-                dp[i] = true;
-                break;
-            }
-        }
-    }
-
-    return dp[N] ? "R2-D2" : "C-3PO";
-}
-
 int main() {
     int T;
     cin >> T;
@@ -25,7 +10,11 @@ int main() {
     while (T--) {
         int N;
         cin >> N;
-        cout << holoTowerWinner(N) << endl;
+        vector<bool> win(N + 12, true);
+        for (int i = N; i >= 0; i--) {
+            win[i] = !win[i + 4] || !win[i + 5] || !win[i + 11];
+        }
+        cout << (win[0] ? "R2-D2\n" : "C-3PO\n");
     }
 
     return 0;
