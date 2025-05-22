@@ -3,8 +3,8 @@
 #include <vector>
 using namespace std;
 
-vector<vector<int>> mountain(0);
-vector<vector<int>> memo(0);
+vector<vector<int>> mountain;
+vector<vector<int>> memo;
 vector<pair<int, int>> moves = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 
 int rec(int i, int j) {
