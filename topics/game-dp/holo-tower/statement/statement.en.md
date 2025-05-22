@@ -1,9 +1,9 @@
-## Holo Tower
+## Holo-Tower
 On the Millennium Falcon, R2-D2 and C-3PO are playing a game of **Holo-Tower**, a futuristic tower-building challenge.
 
 * R2-D2 always makes the first move.
 * On each turn, a droid can place **4, 5, or 11 holo-cubes** on top of the tower (increasing its height by 4, 5, or 11 cubes).
-* The droid who makes the tower exceed a height of **$N$ cubes loses** the game. Reaching exactly $N$ is allowed.
+* The droid who makes the tower **exceed a height of $N$ cubes loses** the game. Reaching exactly $N$ is allowed.
 
 Both droids play with perfect logic — always making the best possible move.
 Given the maximum allowed tower height $N$, determine who will win.
