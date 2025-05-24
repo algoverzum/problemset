@@ -38,7 +38,7 @@ If a planet cannot be reached within $i$ steps, print $-1$ in that position.
     3 2 7
 
 ### Explanation of example 1
-The diagram shows the graph on the left and step-by-step reachable planets on the right:
+The image below shows example 1 on the left side, and example 2 on the right side.
 
 ![](tex/abra.png)
 

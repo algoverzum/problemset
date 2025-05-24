@@ -1,11 +1,10 @@
 // @check-accepted: *
 #include <algorithm>
-#include <climits> // INT_MAX
 #include <iostream>
 #include <vector>
 using namespace std;
 
-const int INF = INT_MAX;
+const int INF = 1e9;
 
 int main() {
     int N, M;
