@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- The goal is to find the shortest paths in a graph that may contain negative edges but no negative cycles. Which algorithm works (or doesn't) in this case, and why?
+- Dijkstra's algorithm cannot be used, because with negative edges its key assumption fails—that the closest node cannot be reached with a shorter distance through other nodes. However, the Bellman–Ford algorithm (and the Floyd–Warshall algorithm) do work, because their dynamic programming principles remain valid even with negative edges.
+- We use the Bellman–Ford algorithm. A good way to implement it is to go through all edges *n–1* times and check in each case whether the destination node can be reached more cheaply than before. For an edge (u, v, w), we update `dist[v]` to `dist[u] + w` if that is smaller than the current `dist[v]`.

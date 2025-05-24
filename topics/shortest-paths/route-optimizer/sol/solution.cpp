@@ -1,4 +1,5 @@
 // @check-accepted: *
+#include <array>
 #include <climits>
 #include <iostream>
 #include <tuple>
@@ -14,12 +15,12 @@ int main() {
     int N, M;
     cin >> N >> M;
 
-    vector<tuple<int, int, int>> edges;
+    vector<array<int, 3>> edges;
 
     for (int i = 0; i < M; i++) {
         int U, V, W;
         cin >> U >> V >> W;
-        edges.emplace_back(U, V, W);
+        edges.push_back({U, V, W});
     }
 
     vector<int> dist(N + 1, INF);

@@ -1,15 +1,15 @@
 ## Útvonaltervező
-A Millennium Falcon a Tatooine-ról indul, és különböző bolygók között mozoghat adott útvonalakon keresztül. A bolygókat $1$-től $N$-ig számozzuk, a Tatooine az $1$-es. Minden útvonalhoz tartozik egy költség, mely az úrhajó üzemanyag fogyasztásából ered. Néhány útvonalat azonban a Lázadók Szövettsége támogat, így ezek negatív költségűek is lehetnek. Például egy útvonal mehet a Nabooról a Kaminora, aminek a költsége $5$. Előfordulhat, hogy visszafelé nem lehet menni. Az is lehet, hogy a visszafelé útvonal is elérhető, ám annak költsége más, pl. $-2$.
+A Millennium Falcon a Tatooine-ról indul, és különböző bolygók között mozoghat adott útvonalakon keresztül. A bolygókat $1$-től $N$-ig számozzuk, a Tatooine az $1$-es. Minden útvonalhoz tartozik egy költség, mely az úrhajó üzemanyag fogyasztásából ered. Néhány útvonalat azonban a Lázadók Szövetsége támogat, így ezek negatív költségűek is lehetnek. Például egy útvonal mehet a Naboo-ról a Kamino-ra, aminek a költsége $5$. Előfordulhat, hogy visszafelé nem lehet menni. Az is lehet, hogy a visszafelé útvonal is elérhető, ám annak költsége más, pl. $-2$.
 
 Írj programot, amely kiszámítja a Millennium Falcon számára a legkisebb összköltségű utakat a Tatooine-ról kiindulva az összes bolygó esetén! Az útvonalak gráfja negatív költségű irányított kört nem tartalmaz.
 
 ### Bemenet
-A bemenet első sorában két szám található $N, M$, a bolygók száma, és a lehetséges útvonalak száma.
+A bemenet első sorában két szám található: $N$ és $M$, a bolygók száma és a lehetséges útvonalak száma.
 
-Ezt $M$ sor követi, a $k$-adik sor három számot tartalmaz $U_k, V_k, W_k$, ahol $U_k$ az induló bolygó sorszáma, $V_k$ a célállomás sorszáma, $W_k$ útvonal költsége (lehet negatív is).
+A következő $M$ sor az útvonalakat írja le, a $k$-adik sor három számot tartalmaz: $U_k, V_k, W_k$, ahol $U_k$ az induló bolygó sorszáma, $V_k$ a célállomás sorszáma, és $W_k$ az útvonal költsége (lehet negatív is).
 
 ### Kimenet
-A program $N$ szóközzel elválasztott értéket írjon ki. A $j$-edik szám megadja, hogy a $j$-edik bolygó elérésének mi a minimális költsége. Ha nem lehet elérni így a $j$-edik bolygóra, akkor írj ki $X$-et.
+A program $N$ szóközzel elválasztott értéket írjon ki. A $j$-edik szám megadja, hogy a $j$-edik bolygó elérésének mi a minimális költsége. Ha nem lehet elérni így a $j$-edik bolygóra, akkor írj ki egy nagy `X` betűt.
 
 ### Korlátok
 * $2 \le N \le 1000$
