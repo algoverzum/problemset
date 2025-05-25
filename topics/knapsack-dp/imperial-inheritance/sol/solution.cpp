@@ -10,8 +10,8 @@ int main() {
     vector<int> v(n + 1);
     for (int i = 1; i <= n; i++)
         cin >> v[i];
-    vector<vector<int>> dp(n + 1, vector<int>(20001, INT_MAX)),
-        track(n + 1, vector<int>(20001));
+    vector<vector<int>> dp(n + 1, vector<int>(20001, INT_MAX));
+    vector<vector<int>> track(n + 1, vector<int>(20001));
     dp[0][10000] = 0;
     for (int i = 1; i <= n; i++) {
         for (int j = 0; j <= 20000; j++) {

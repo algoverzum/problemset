@@ -10,7 +10,7 @@ $N$ : kérelmek száma
 $M$ : szektorok száma a bolygón  
 A következő $N$ sor mindegyike három egész számot tartalmaz:  
 $A_i$ : A kezdő szektor, $B_i$ : A záró szektor, $K_i$ : az expedícióért felajánlott kreditmennyiség  
-A bemenetek a $B$ értékek szerint nemcsökkenő sorrendben vannak.
+
 
 ### Kimenet
 Az első sorba az elérhető maximális kreditmennyiséget írd ki.  
@@ -24,10 +24,11 @@ A második sorba azoknak az engedélyeknek a sorszámait írd növekvő sorrendb
 ### Példa bemenet
     5 7
     2 3 600
-    4 5 400
     6 6 180
-    1 6 900
+    3 4 900
+    1 6 990
     4 7 600
+
 
 ### Példa kimenet
     1200
