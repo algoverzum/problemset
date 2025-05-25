@@ -1,81 +1,50 @@
-// @check-accepted: *
-#include <array>
+#include <climits>
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
-const int INF = 1e9;
-
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
-    int N;
-    cin >> N;
-    vector<int> V(N);
-    int total = 0;
-    for (int i = 0; i < N; i++) {
-        cin >> V[i];
-        total += V[i];
-    }
-    int M = total, OFFSET = M;
-    // dp[d] = max total_assigned with difference d-OFFSET
-    vector<int> dp(2 * M + 1, -INF), ndp(2 * M + 1);
-    // to reconstruct:
-    // par[i][d] = 0,1,2 for leave/A/B
-    vector<int> par(N * (2 * M + 1));
-
-    dp[OFFSET] = 0;
-    for (int i = 0; i < N; i++) {
-        fill(ndp.begin(), ndp.end(), -INF);
-        int v = V[i];
-        for (int d = 0; d <= 2 * M; d++) {
-            if (dp[d] < 0)
-                continue;
-            // 1) leave unassigned
-            if (dp[d] > ndp[d]) {
-                ndp[d] = dp[d];
-                par[i * (2 * M + 1) + d] = 0;
-            }
-            // 2) to brother1 (difference +v)
-            if (d + v <= 2 * M && dp[d] + v > ndp[d + v]) {
-                ndp[d + v] = dp[d] + v;
-                par[i * (2 * M + 1) + d + v] = 1;
-            }
-            // 3) to brother2 (difference −v)
-            if (d - v >= 0 && dp[d] + v > ndp[d - v]) {
-                ndp[d - v] = dp[d] + v;
-                par[i * (2 * M + 1) + d - v] = 2;
+    int n;
+    cin >> n;
+    vector<int> v(n + 1);
+    for (int i = 1; i <= n; i++)
+        cin >> v[i];
+    vector<vector<int>> dp(n + 1, vector<int>(20001, INT_MAX)),
+        track(n + 1, vector<int>(20001));
+    dp[0][10000] = 0;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 0; j <= 20000; j++) {
+            if (dp[i - 1][j] < INT_MAX) {
+                if (dp[i - 1][j] < dp[i][j + v[i]]) {
+                    dp[i][j + v[i]] = dp[i - 1][j];
+                    track[i][j + v[i]] = 1;
+                }
+                if (dp[i - 1][j] < dp[i][j - v[i]]) {
+                    dp[i][j - v[i]] = dp[i - 1][j];
+                    track[i][j - v[i]] = -1;
+                }
+                if (dp[i - 1][j] + v[i] < dp[i][j]) {
+                    dp[i][j] = dp[i - 1][j] + v[i];
+                    track[i][j] = 0;
+                }
             }
         }
-        swap(dp, ndp);
     }
-
-    int best = dp[OFFSET];
-    int leftover = total - best;
-    cout << leftover << "\n";
-
-    // back‐track
-    vector<int> A, B;
-    int d = OFFSET;
-    for (int i = N - 1; i >= 0; i--) {
-        int choice = par[i * (2 * M + 1) + d];
-        if (choice == 1) {
-            A.push_back(i + 1);
-            d -= V[i];
-        } else if (choice == 2) {
-            B.push_back(i + 1);
-            d += V[i];
+    cout << dp[n][10000] << '\n';
+    vector<int> ans;
+    int x = 1e4;
+    for (int i = n; i; i--) {
+        if (track[i][x] == 1) {
+            cout << i << ' ';
+            x -= v[i];
+        } else if (track[i][x] == -1) {
+            ans.push_back(i);
+            x += v[i];
         }
-        // else 0: unassigned → d stays
     }
-    // output indices (any order)
-    for (int x : A)
-        cout << x << " ";
-    cout << "\n";
-    for (int x : B)
-        cout << x << " ";
-    cout << "\n";
-
-    return 0;
+    cout << '\n';
+    for (int i : ans)
+        cout << i << ' ';
+    cout << '\n';
 }

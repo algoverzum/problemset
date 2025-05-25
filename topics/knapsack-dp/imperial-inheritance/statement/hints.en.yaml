@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Let DP[i, j] represent the minimum total value that must be held jointly when distributing the first i planets, given that the first sibling receives j more total value than the other. The final solution is given by DP[N, 0]. We also need to compute DP values for negative j values — how do we handle that?
+- The value of j can range from -10000 to 10000. We can shift everything by 10000, so the second index of the DP table ranges from 0 to 20000, with 10000 representing the zero difference. Thus, the solution is given by DP[N, 10000].
+- Since we also need to reconstruct the distribution, we store — alongside the DP[i, j] values — in an equally sized table who received the last (i-th) planet in the optimal DP[i, j] configuration.
