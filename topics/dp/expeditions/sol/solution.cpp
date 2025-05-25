@@ -6,7 +6,7 @@
 using namespace std;
 
 struct Permit {
-    int start, end, credits;
+    int start, end, credits, id;
 };
 
 int main() {
@@ -16,8 +16,10 @@ int main() {
     vector<Permit> permits(n);
     for (int i = 0; i < n; i++) {
         cin >> permits[i].start >> permits[i].end >> permits[i].credits;
+        permits[i].id = i + 1;
     }
-
+    sort(permits.begin(), permits.end(),
+         [](const Permit &a, const Permit &b) { return a.end < b.end; });
     vector<int> dp(m + 2, 0);
     vector<int> choice(m + 2, -1);
     vector<int> previous(m + 2, -1);
@@ -31,7 +33,7 @@ int main() {
             int gain = dp[startSector - 1] + permits[permitIndex].credits;
             if (gain > dp[sector]) {
                 dp[sector] = gain;
-                choice[sector] = permitIndex;
+                choice[sector] = permits[permitIndex].id;
                 previous[sector] = startSector - 1;
             }
             permitIndex++;
@@ -44,7 +46,7 @@ int main() {
     int current = m;
     while (current > 0) {
         if (choice[current] != -1) {
-            selected.push_back(choice[current] + 1);
+            selected.push_back(choice[current]);
             current = previous[current];
         } else {
             current--;

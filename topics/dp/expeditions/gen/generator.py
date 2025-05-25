@@ -38,16 +38,19 @@ def run(A, B, T):
     # T==2 A csökkenő sorrendbe
     # T==3 konstans kredit/parcella mohó ellen.
     print(A, B)
+    permits = []
     if T == 0:
         Endvalues = choices(range(1, B + 1), k=A)
         Endvalues.sort()
         for i in range(A):
             start = randint(1, Endvalues[i])
-            print(start, Endvalues[i], randint(1, MAXK))
+            # print(start, Endvalues[i], randint(1, MAXK))
+            permits.append(f"{start} {Endvalues[i]} {randint(1, MAXK)}")
     elif T == 1:
         konstans = randint(1, B - 1)
         for i in range(A):
-            print(konstans, konstans, randint(1, MAXK))
+            # print(konstans, konstans, randint(1, MAXK))
+            permits.append(f"{konstans} {konstans} {randint(1, MAXK)}")
     elif T == 2:
         Endvalues = choices(range(B // 2, B + 1), k=A)
         Endvalues.sort()
@@ -56,13 +59,18 @@ def run(A, B, T):
             start = randint(max(1, lastA - (2000 // A)), lastA)
             lastA = start
             assert start <= Endvalues[i]
-            print(start, Endvalues[i], randint(1, MAXK))
+            # print(start, Endvalues[i], randint(1, MAXK))
+            permits.append(f"{start} {Endvalues[i]} {randint(1, MAXK)}")
     elif T == 3:
         Endvalues = choices(range(1, B + 1), k=A)
         Endvalues.sort()
         for i in range(A):
             start = randint(1, Endvalues[i])
-            print(start, Endvalues[i], Endvalues[i] - start + 1)
+            # print(start, Endvalues[i], Endvalues[i] - start + 1)
+            permits.append(f"{start} {Endvalues[i]} {Endvalues[i] - start + 1}")
+    shuffle(permits)
+    for line in permits:
+        print(line)
 
 
 if __name__ == "__main__":

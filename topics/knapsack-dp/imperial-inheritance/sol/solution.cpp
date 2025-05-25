@@ -22,7 +22,7 @@ int main() {
     // dp[d] = max total_assigned with difference d-OFFSET
     vector<int> dp(2 * M + 1, -INF), ndp(2 * M + 1);
     // to reconstruct:
-    // par[i][d] = 0,1,2 for leave/A/B
+    // par[d] = 0,1,2 for leave/A/B
     vector<int> par(N * (2 * M + 1));
 
     dp[OFFSET] = 0;
