@@ -1,4 +1,4 @@
 ---
-- We should have a counter that keeps track of the length of the current increasing segment.
+- Let's have a counter that keeps track of the length of the current increasing segment.
 - If the current height is greater than the previous one, we increment the counter by one; otherwise, we reset it to 1.
 - During the process, we need to keep track of the maximum value of this counter (which represents the segment length) and also where it ends; this will allow us to determine its starting point as well.
