@@ -22,7 +22,7 @@ Kettő egész számot kell kiírnod, a legnagyobb elem sorát, majd oszlopát. M
     2 3
 
 ### A példa magyarázata
-A táblázatban szereplő legnagyobb elem az alábbi:
-10 2 3 4
-0 0 **16** 4
+A táblázatban szereplő legnagyobb elem a második sor harmadik eleme:  
+10 2 3 4  
+0 0 **16** 4  
 7 7 7 7 
