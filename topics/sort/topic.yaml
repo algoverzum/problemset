@@ -12,6 +12,8 @@ problems:
     type: REQUIRED
   - problem_id: fleet-formation
     type: REQUIRED
+  - problem_id: intergalactic-contest
+    type: REQUIRED
 prerequisites:
   - array
 dependents: []
