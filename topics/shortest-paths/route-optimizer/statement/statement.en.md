@@ -6,10 +6,10 @@ Write a program that computes the minimum total cost to reach each planet from T
 ### Input
 The first line of input contains two integers: $N$ — the number of planets — and $M$ — the number of available routes.
 
-This is followed by $M$ lines. Each line contains three integers: $U_k$, $V_k$, and $W_k$, where $U_k$ is the starting planet, $V_k$ is the destination planet, and $W_k$ is the cost of the $k$-th route ($W_k$ can be negative).
+This is followed by $M$ lines describing the routes. Each line contains three integers: $U_k$, $V_k$, and $W_k$, where $U_k$ is the starting planet, $V_k$ is the destination planet, and $W_k$ is the cost of the $k$-th route ($W_k$ can be negative).
 
 ### Output
-The program should print $N$ space-separated values. The $j$-th number should indicate the minimum cost to reach planet $j$. If planet $j$ is not reachable from Tatooine, output $X$ instead.
+The program should print $N$ space-separated values. The $j$-th number should indicate the minimum cost to reach planet $j$. If planet $j$ is not reachable from Tatooine, output a capital `X` letter instead.
 
 ### Constraints
 * $2 \le N \le 1000$

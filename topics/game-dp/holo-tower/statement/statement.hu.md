@@ -1,4 +1,4 @@
-## Holo-Torony
+## Holo-torony
 A Millennium Falcon fedélzetén R2-D2 és C-3PO egy futurisztikus toronyépítő játékot játszanak, a **Holo-tornyot**.
 
 * mindig R2-D2 kezdi a játékot.

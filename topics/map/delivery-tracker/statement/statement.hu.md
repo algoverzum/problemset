@@ -15,7 +15,7 @@ Ezt $N$ sor követi, az $i$-edik sorban három számmal $X_i, Y_i, P_i$, ahol $X
 
 ### Kimenet
 Három számot kell kiírnod egy sorban ($X, Y, P$): a koordinátáit annak a helynek ahova a legtöbb csomagot kiszállították és az oda összesen kiszállított csomagok számát.
-Ha több pont is ugyanennyi csomagot kapott, bármelyik közülük kiírható.
+Ha több pont is ugyanennyi csomagot kapott, bármelyik helyes megoldásnak számít.
 
 ### Korlátok
 * $1 \le N \le 10^5$

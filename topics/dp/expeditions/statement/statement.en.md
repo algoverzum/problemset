@@ -12,7 +12,7 @@ $N$ : the number of permit requests
 $M$ : the number of sectors on the planet  
 Each of the next $N$ lines contains three integers:  
 $A_i$ : starting sector, $B_i$ : ending sector, $K_i$ : the amount of credits offered for the expedition  
-The input permit requests are given in non-decreasing order of their $B$ values.
+
 
 ### Output
 The first line should contain the maximum total number of credits achievable.  
@@ -26,10 +26,11 @@ The second line should contain the indices of the selected permit requests, list
 ### Example input
     5 7
     2 3 600
-    4 5 400
     6 6 180
-    1 6 900
+    3 4 900
+    1 6 990
     4 7 600
+
 
 ### Example output
     1200

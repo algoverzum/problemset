@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- A legrövidebb utakat kell meghatározni egy olyan gráfban, amiben lehetnek negatív élek, de nem lehetnek negatív körök. Melyik algoritmus működik illetve nem működik ebben az esetben, és miért?
+- A Dijkstra algoritmus nem használható, mert negatív élek esetén nem teljesül az az alapfeltevése, hogy a legközelebbi csúcsba más csúcsokon keresztül nem vezethet rövidebb út. A Bellman-Ford algoritmus (és a Floyd-Warshall algoritmus) viszont működik, a dinamikus programozásos alapelve helyes negatív élek esetén is.
+- Használjuk a Bellman-Ford algoritmust. Úgy érdemes ezt leprogramozni, hogy n-1-szer átnézzük az összes élt, és mindenhol megnézzük, lehet-e olcsóbban eljutni a célcsúcsba, mint eddig. Tehát egy (u,v,w) él esetén frissítjük a `dist[v]` értékét `dist[u] + w`-re, ha ez kisebb a jelenlegi `dist[v]`-nél.

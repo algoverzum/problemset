@@ -2,15 +2,8 @@
 # @check-accepted: *
 
 n = int(input())
-mountain = []
-memo = []
-empty = []
-for _ in range(n + 2):
-    empty.append(-1)
-for _ in range(n + 2):
-    mountain.append(empty)
-    memo.append(empty)
-
+mountain = [[-1] * (n + 2) for _ in range(n + 2)]
+memo = [[-1] * (n + 2) for _ in range(n + 2)]
 
 for i in range(1, n + 1):
     line = input().split()

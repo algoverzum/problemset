@@ -5,7 +5,7 @@ import sys
 
 input = sys.stdin.readline
 
-INF = float("inf")
+INF = 10**9
 
 
 def solv():

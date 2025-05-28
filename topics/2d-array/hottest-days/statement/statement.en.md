@@ -1,5 +1,5 @@
 ## Hottest Days
-Given the daily highest recorded temperature for each of the past $M$ days in $N$ cities. Let $H$ denote the maximum temperature that occurred. Determine, for each city, how many days had a temperature of $H$ degrees.
+You are given the daily highest recorded temperature for each of the past $M$ days in $N$ cities. Let $H$ denote the maximum temperature that occurred. Determine, for each city, how many days had a temperature of $H$ degrees.
 
 ### Input
 The first line of the input contains two integers: $N$ and $M$ - the number of cities and the number of days. The following $N$ lines each contain $M$ integers separated by spaces. The $j$-th number in the $i$-th row, $T_{i,j}$, represents the maximum daily temperature on the $j$-th day in the $i$-th city.

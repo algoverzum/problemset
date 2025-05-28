@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- The first line of the output is given by the edges starting from node 0. How can we then compute the second line, i.e., the minimum cost of paths with at most two edges?
+- Go through the edges. If there is an edge (u, v, w), and node u was reachable in one step with cost x, then node v will be reachable in two steps with cost x + w. Of course, if there are multiple ways to reach v, we take the minimum cost, and it's also possible that it was already reachable in one step.
+- This is essentially a dynamic programming solution. Let DP[i, j] represent the minimum cost to reach node j using at most i edges. We initialize DP[0, 0] = 0, and DP[0, j] = ∞ for all j ≠ 0. How do we compute row i based on row i-1?
+- DP[i, j] = min{DP[i-1, j], DP[i-1, k] + w(k, j) | for all k such that there is an edge (k, j) with weight w(k, j)}
+- In practice, it's easy to implement this by first copying the previous row, then iterating through the edges and checking whether any edge provides a shorter path to its destination node. The algorithm is called Bellman-Ford algorithm.

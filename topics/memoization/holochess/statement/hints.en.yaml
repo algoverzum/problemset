@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Let's determine for each cell whether the starting player from that cell will win or lose.
+- If we used dynamic programming, the computation order would be a bit inconvenient because we would need to proceed diagonally. It's much more convenient to write a recursive function with memoization.
+- Let there be a function `winner(x, y)` that returns 1 or 2 depending on whether the starting player wins or loses from cell (x, y).
+- If we're on cell (x, y), and among the four possible moves there is at least one that leads to a cell where the starting player would lose, then we can move there and win. If there is no such move, then we lose starting from this cell.
+- 'Bonus: the problem can also be solved (differently) for a $10^{100} \times 10^{100}$ board.'

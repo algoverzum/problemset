@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- A kimenet első sorát megadják a 0-ás csúcsból kiinduló élek. Hogy kaphatjuk meg ezután a második sort, azaz a legfeljebb két élből álló útvonalak minimális költségét?
+- Nézzük végig az éleket. Ha van egy (u,v,w) él, és az u csúcs elérhető volt egy lépésben x költséggel, akkor a v csúcs elérhető lesz két lépésben x+w költséggel. Természetesen ha a v csúcs többféleképpen is elérhető, akkor a minimális költséget kell venni, és az is lehet, hogy egy lépésben is elérhető volt már.
+- Tulajdonképpen egy dinamikus programozásos megoldásról van szó. DP[i,j] jelentse azt, hogy legfeljebb i él használatával minimum mekkora költséggel lehet eljutni a j csúcsba. DP[0,0]=0, és DP[0,j]=∞. Hogy számoljuk ki az i-edik sort az i-1-edik sor alapján?
+- DP[i,j] = min{DP[i-1,j], DP[i-1,k]+w(k,j) | minden k-ra, amire van (k,j) él, és ennek súlya w(k,j)}
+- A gyakorlatban úgy könnyű leprogramozni, hogy ha először lemásoljuk az előző sort, majd végigmegyünk az éleken, és megnézzük melyik él hoz be rövidebb útvonalat a végpontjába. Az algoritmus neve Bellman-Ford algoritmus.

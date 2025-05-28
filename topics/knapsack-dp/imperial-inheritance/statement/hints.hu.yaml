@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- DP[i,j] jelentse azt, hogy az első i bolygó elosztásakor minimum mekkora összértéket kell a közösben hagyniuk, feltéve, hogy az első testvér j-vel több összértéket kap a másiknál. A megoldást DP[N,0] adja meg. Negatív j értékekre is kell DP értékeket számolni, ezt hogy oldjuk meg?
+- j értéke -10000 és 10000 között lehet. Mindent eltolhatunk 10000-rel, így 0 és 20000 között lesz a DP tömb második indexe, és a 10000 jelenti majd a 0-t. Így a megoldást DP[N, 10000] fogja megadni.
+- Mivel elő kell állítanunk a felosztást is, ezért a DP[i,j] értékek mellé még egy ugyanekkora méretű táblázatba tároljuk el azt is, hogy az optimális DP[i,j] értéknél ki kapta az utolsó (i-edik) bolygót.

@@ -14,9 +14,15 @@ def usage():
 def run(f, st):
     for k, v in subtasks[st].items():
         globals()[k] = v
-
+    currentsum = 0
     N = int(next(f))
-    assert MIN <= N <= MAX
+    assert MINN <= N <= MAXN
+    numbers = list(map(int, next(f).split()))
+    assert len(numbers) == N
+    for w in numbers:
+        assert MINV <= w <= MAXV
+        currentsum += w
+        assert currentsum <= 10000
 
     assert next(f, None) is None
 

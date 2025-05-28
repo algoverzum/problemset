@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- For every tower height, determine whether the next player will win or lose.
+- For example, with towers of height N, N-1, N-2, and N-3, the next player will surely lose, but at height N-4, they can win... On the other hand, for heights N+1, N+2, ..., N+11, the player who just moved actually lost, so we can say that the next player wins. These are commonly referred to as winning and losing positions.
+- We examine the heights in decreasing order. When can the next player win — what kind of position must they move to?
+- If we can move to a position from which the other player will definitely lose, then we've won. If we can only move to positions from which the opponent will win, then we've lost.
+- 'This is essentially a dynamic programming solution: let `dp[i]` be true if height `i` is a winning position. If `i > N`, then `dp[i]` is true. For `i = N..0`, we have: `dp[i] = (not dp[i+4]) or (not dp[i+5]) or (not dp[i+11])`'

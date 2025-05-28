@@ -9,28 +9,71 @@ from inspect import signature
 usage = """Generator for "imperial-inheritance".
 
 Parameters:
-* A (minimum value)
+* A (N value)
 * B (maximum value)
+* Type (type)
 * S (seed)
 
 Constraint:
 * %d <= A <= %d
 * %d <= B <= %d
+* %d <= Type <= %d
 """ % (
-    MIN,
-    MAX,
-    MIN,
-    MAX,
+    MINN,
+    MAXN,
+    MINV,
+    MAXV,
+    0,
+    4,
 )
 
 
-def run(A, B):
+def run(A, B, Type):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    numbers = []
+    current_sum = 0
+    # full random type
+    if Type == 0:
+        for i in range(A):
+            val = randint(1, B)
+            current_sum += val
+            if current_sum > 10000:
+                val = val - (current_sum - 10000)
+                numbers.append(val)
+                break
+            numbers.append(val)
+
+    # not partitionable using no the power of 2 trick
+    elif Type == 1:
+        for _ in range(A):
+            next_val = current_sum + randint(1, 10)
+            numbers.append(next_val)
+            current_sum += next_val
+            if current_sum > 5000:
+                break
+    # power of 2 edgecase
+    elif Type == 2:
+        B = 10000
+        A = 14
+        for i in range(13):
+            numbers.append(pow(2, i))
+    # very small equal partition. again trickery with power of 2.
+    elif Type == 3:
+        numbers.append(1)
+        numbers.append(2)
+        numbers.append(3)
+        for i in range(3, 13):
+            numbers.append(pow(2, i))
+    # lot of small cases
+    elif Type == 4:
+        for i in range(A):
+            numbers.append(randint(1, 33))
+    print(len(numbers))
+    print(*numbers)
 
 
 if __name__ == "__main__":
