@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Még a kérdések érkezése előtt határozzuk meg minden lehetséges összegre 0-tól 100000-ig sorban, hogy kifizethető-e. Tároljuk el ezeket egy `vector<bool>`-ban. Mit mondhatunk, mikor fizethető ki egy X összeg? Hogy tudjuk felhasználni azt, hogy a kisebb összegekről már tudjuk, hogy kifizethetőek-e?
+  py: Még a kérdések érkezése előtt határozzuk meg minden lehetséges összegre 0-tól 100000-ig sorban, hogy kifizethető-e. Tároljuk el ezeket egy igaz/hamis listában. Mit mondhatunk, mikor fizethető ki egy X összeg? Hogy tudjuk felhasználni azt, hogy a kisebb összegekről már tudjuk, hogy kifizethetőek-e?
+- Akkor fizethető ki az X összeg, ha $X-C_1$ vagy $X-C_2$ vagy $X-C_3$ ... kifizethető.
+- Tulajdonképpen egy dinamikus programozásos megoldásról van szó, amelyben `dp[i]` igaz vagy hamis attól függően, hogy kifizethető-e az i összeg. Kezdetben `dp[0]` igaz, minden más hamis. Amikor `dp[i]`-t számoljuk, akkor menjünk végig az érméken (j=1..n), és ha `dp[i-c[j]]` igaz, akkor `dp[i]`-t is igazra kell állítanunk. Figyeljünk arra, hogy ne mehessen negatívba az `i-c[j]`.
+- cpp: A kérdések megválaszolásához csak ki kell olvasni a dp vectorból a megfelelő értéket.
+  py: A kérdések megválaszolásához csak ki kell olvasni a dp listából a megfelelő értéket.

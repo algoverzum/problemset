@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: Before the questions arrive, we determine for every possible amount from 0 to 100000 whether it can be paid. We store this in a `vector<bool>`. When is an amount X payable? How can we use the fact that we already know which smaller amounts are payable?
+  py: Before the questions arrive, we determine for every possible amount from 0 to 100000 whether it can be paid. We store this in a true/false list. When is an amount X payable? How can we use the fact that we already know which smaller amounts are payable?
+- An amount X is payable if $X - C_1$, or $X - C_2$, or $X - C_3$, etc., is payable.
+- This is essentially a dynamic programming solution where `dp[i]` is true or false depending on whether amount i can be paid. Initially, `dp[0]` is true, all others are false. When computing `dp[i]`, go through all the coins (j = 1..n), and if `dp[i - c[j]]` is true, then set `dp[i]` to true as well. Make sure that `i - c[j]` does not go negative.
+- cpp: To answer the questions, we just need to read the corresponding value from the dp vector.
+  py: To answer the questions, we just need to read the corresponding value from the dp list.
