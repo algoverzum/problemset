@@ -1,0 +1,6 @@
+5
+oriontech 12000
+aerodyne 8000
+cosmotek 12000
+zenicorp 9000
+novastar 8000

@@ -14,6 +14,8 @@ problems:
     type: REQUIRED
   - problem_id: intergalactic-contest
     type: REQUIRED
+  - problem_id: terraform-bids
+    type: REQUIRED
 prerequisites:
   - array
 dependents: []
