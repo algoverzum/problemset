@@ -17,8 +17,8 @@ Azonos ajánlat esetén a név szerinti ábécérend dönt.
 
 ### Korlátok
 * $1 \le N \le 100\ 000$  
-* $1 \le $B_i$ \le 100\ 000$  
-* $A_i$ legfeljebb 10 kisbetűs angol karakterből álló szó
+* $1 \le $B_i$ \le 100\ 000$  minden $i=1 \dots N$ esetén
+* $A_i$ minden $i=1 \dots N$ esetén legfeljebb 10 kisbetűs angol karakterből álló szó
 
 ### Példa bemenet
     5
