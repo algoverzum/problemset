@@ -10,7 +10,8 @@ A kimenet első sorába egyetlen egész számot kell kiírnod, a leghosszabb út
 A kimenet második sorába kettő egész számot kell kiírnod, a leghosszabb expedíció kezdőpontját.
 
 ### Korlátok
-* $1 \le N \le 100$
+* $1 \le N \le 30$
+* $1 \le A_{i,j} \le 30$
 
 ### Példa bemenet
     6

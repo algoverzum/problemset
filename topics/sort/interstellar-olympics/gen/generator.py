@@ -9,28 +9,33 @@ from inspect import signature
 usage = """Generator for "interstellar-olympics".
 
 Parameters:
-* A (minimum value)
-* B (maximum value)
+* N (value of n)
+* M (maximum value of medal count)
 * S (seed)
 
 Constraint:
-* %d <= A <= %d
-* %d <= B <= %d
+* %d <= N <= %d
+* %d <= M <= %d
 """ % (
-    MIN,
-    MAX,
-    MIN,
-    MAX,
+    MIN_N,
+    MAX_N,
+    MIN_M,
+    MAX_M,
 )
 
 
-def run(A, B):
+def run(N, M):
     for row in reversed(usage.split("\n")[:-1]):
         if row[0] != "*":
             break
         assert eval(row[2:]), row[2:]
 
-    print(randint(A, B))
+    print(N)
+    for _ in range(N):
+        print(randint(1, M), end=" ")
+        print(randint(1, M), end=" ")
+        print(randint(1, M), end=" ")
+        print()
 
 
 if __name__ == "__main__":

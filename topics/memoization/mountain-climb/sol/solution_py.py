@@ -38,11 +38,6 @@ maxi = -1
 maxj = -1
 
 for i in range(1, n + 1):
-    for j in range(1, n + 1):
-        print(memo[i][j], end=" ")
-    print()
-
-for i in range(1, n + 1):
     if maxlength < memo[i][1]:
         maxlength = memo[i][1]
         maxi = i

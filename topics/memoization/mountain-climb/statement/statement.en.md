@@ -10,7 +10,8 @@ In the first line of the output, print a single integer, the length of the longe
 In the second line of the output, print two integers, the starting point of the longest expedition.
 
 ### Constraints
-* $1 \le N \le 100$
+* $1 \le N \le 30$
+* $1 \le A_{i,j} \le 30$
 
 ### Example input
     6
