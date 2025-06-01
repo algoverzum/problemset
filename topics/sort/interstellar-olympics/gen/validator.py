@@ -20,6 +20,7 @@ def run(f, st):
 
     for _ in range(N):
         line = [int(x) for x in next(f).split()]
+        assert len(line) == 3
         assert MIN_M <= line[0] <= MAX_M
         assert MIN_M <= line[1] <= MAX_M
         assert MIN_M <= line[2] <= MAX_M

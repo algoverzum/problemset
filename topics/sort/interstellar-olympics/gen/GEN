@@ -1,4 +1,4 @@
-# A     B       S
+# N     M	R       S
 
 # Subtask 1: Examples
 #ST: 0
@@ -6,15 +6,28 @@
 #COPY: statement/input0.txt
 
 # Subtask 2: 1 <= N <= 100
-#ST: 100
+#ST: 50
+#STNAME: small
+10     1      rand1	1
+10     5      rand1	2
+10     10     rand1	3
+10     10     rand1	44
+10     10     rand1	5
+10     10     rand1	66
+100    1000   rand1	7
+100    1000   rand1	8
+100    1000   rand1	9
+100    1000   rand1	10
+100    1000   rand2	11
+100    1000   rand2	12
+
+# Subtask 3: 1 <= N <= 100000
+#ST: 50
 #STNAME: all
-10     1      1
-10     5      2
-10     10     3
-10     10     44
-10     10     5
-10     10     66
-100    1000   7
-100    1000   8
-100    1000   9
-100    1000   10
+10000  1000000	rand1	13
+10000  1000000	rand1	14
+10000  1000000	rand1	15
+10000  1000000	rand1	16
+10000  1000000	rand2	17
+10000  1000000	rand2	18
+10000  1000000	rand2	19
