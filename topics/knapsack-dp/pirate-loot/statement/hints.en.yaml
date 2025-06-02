@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Use a `dp` array where `dp[i]` stores the minimum value that can be achieved for a cargo weight of `i`.
+- Set `dp[0] = 0` (a cargo with weight 0 has a value of 0), and initialize all other values to infinity.
+- Iterate through each crate and update the `dp` values based on their weights and values.
+- $dp[i] = \min(dp[i - w[j]] + t[j], \text{for } j = 1..n)$. Be careful to avoid negative indexing.
+- The answer is the value of `dp[s]`, where `s` is the total cargo weight.

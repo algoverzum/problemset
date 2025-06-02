@@ -2,5 +2,5 @@
 - Használj egy `dp` tömböt, ahol `dp[i]` a legkisebb értéket tárolja, amit elérhetünk, ha a rakomány súlya `i`.
 - Állítsd be `dp[0] = 0`-t (0 súlyú rakománynak 0 értéke van), és az összes többi értéket végtelenre.
 - Minden egyes ládát végig kell iterálni, és frissíteni a `dp` értékeket a súlyok és értékek alapján.
-- $dp[i] = min(dp[i - w[j]] + t[j], j=1..n)$
+- $dp[i] = min(dp[i - w[j]] + t[j], j=1..n)$. A negatív indexelés elkerülésére figyeljünk.
 - A válasz a `dp[s]` értéke, ahol `s` a rakomány összsúlya.
