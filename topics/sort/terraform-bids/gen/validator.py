@@ -4,6 +4,7 @@ from limits import *
 
 import sys
 import os
+import string
 
 
 def usage():
@@ -20,6 +21,7 @@ def run(f, st):
     for _ in range(N):
         w, v = next(f).split()
         assert 1 <= len(w) <= 10
+        assert all(c in string.ascii_lowercase for c in w)
         assert MIN <= int(v) <= MAX
     assert next(f, None) is None
 

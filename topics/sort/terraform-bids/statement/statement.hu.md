@@ -36,7 +36,7 @@ Azonos ajánlat esetén a név szerinti ábécérend dönt.
     oriontech
 
 ### A példa magyarázata
-Az aerodyne és a novastar cégek egyaránt 8000-es ajánlatot tettek. Mivel az „a” betű előrébb áll az ábécében, az aerodyne kerül az első helyre, míg a novastar a másodikra.  
-Harmadik helyen szerepel a zenicorp 9000-es ajánlatával.  
-A 12000-es ajánlatot adó cosmotek és oriontech közül a cosmotek áll előrébb, mert a „c” betű az „o” betűnél előbbre van az ábécében.
+Az `aerodyne` és a `novastar` cégek egyaránt 8000-es ajánlatot tettek. Mivel az `a` betű előrébb áll az ábécében, az `aerodyne` kerül az első helyre, míg a `novastar` a másodikra.  
+Harmadik helyen szerepel a `zenicorp` 9000-es ajánlatával.  
+A 12000-es ajánlatot adó `cosmotek` és `oriontech` közül a cosmotek áll előrébb, mert a `c` betű az `o` betűnél előbbre van az ábécében.
 

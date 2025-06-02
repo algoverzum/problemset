@@ -21,8 +21,8 @@ int main() {
 
     sort(offers.begin(), offers.end());
 
-    for (const auto &offer : offers) {
-        cout << offer.second << '\n';
+    for (const auto &[_, companyName] : offers) {
+        cout << companyName << '\n';
     }
 
     return 0;

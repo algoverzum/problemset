@@ -39,8 +39,8 @@ If multiple companies have the same bid, they should be ordered alphabetically b
     oriontech
 
 ### Explanation of the example
-Both aerodyne and novastar submitted bids of 8000. Since the letter 'a' comes before 'n' in the alphabet, aerodyne is placed first, followed by novastar.  
-The company zenicorp comes third with a bid of 9000.  
-Among the companies bidding 12000, cosmotek is ranked before oriontech because the letter 'c' appears earlier in the alphabet than 'o'.
+Both `aerodyne` and `novastar` submitted bids of 8000. Since the letter `a` comes before `n` in the alphabet, `aerodyne` is placed first, followed by `novastar`.  
+The company `zenicorp` comes third with a bid of 9000.  
+Among the companies bidding 12000, `cosmotek` is ranked before `oriontech` because the letter `c` appears earlier in the alphabet than `o`.
 
 
