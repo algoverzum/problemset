@@ -14,7 +14,7 @@ $A_i$ : A kezdő szektor, $B_i$ : A záró szektor, $K_i$ : az expedícióért f
 
 ### Kimenet
 Az első sorba az elérhető maximális kreditmennyiséget írd ki.  
-A második sorba azoknak az engedélyeknek a sorszámait írd növekvő sorrendben, amelyeket elfogadtak.
+A második sorba azoknak az engedélyeknek a sorszámait írd növekvő sorrendben, amelyeket elfogadtak. Több lehetséges megoldás esetén bármelyiket kiírhatod.
 
 ### Korlátok
 * $1 \le N, M \le 1000$

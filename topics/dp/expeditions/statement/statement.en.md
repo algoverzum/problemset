@@ -16,7 +16,7 @@ $A_i$ : starting sector, $B_i$ : ending sector, $K_i$ : the amount of credits of
 
 ### Output
 The first line should contain the maximum total number of credits achievable.  
-The second line should contain the indices of the selected permit requests, listed in increasing order.
+The second line should contain the indices of the selected permit requests, listed in increasing order. If multiple suolutions exist, print any one of them.
 
 ### Constraints
 * $1 \le N, M \le 1000$
