@@ -16,8 +16,8 @@ A cégeket az ajánlatuk szerint növekvő sorrendben kell kiírni.
 Azonos ajánlat esetén a név szerinti ábécérend dönt.
 
 ### Korlátok
-* $1 \le N \le 100\ 000$  
-* $1 \le $B_i$ \le 100\ 000$  minden $i=1 \dots N$ esetén
+* $1 \le N \le 100\,000$  
+* $1 \le B_i \le 100\,000$  minden $i=1 \dots N$ esetén
 * $A_i$ minden $i=1 \dots N$ esetén legfeljebb 10 kisbetűs angol karakterből álló szó
 
 ### Példa bemenet
@@ -39,4 +39,3 @@ Azonos ajánlat esetén a név szerinti ábécérend dönt.
 Az `aerodyne` és a `novastar` cégek egyaránt 8000-es ajánlatot tettek. Mivel az `a` betű előrébb áll az ábécében, az `aerodyne` kerül az első helyre, míg a `novastar` a másodikra.  
 Harmadik helyen szerepel a `zenicorp` 9000-es ajánlatával.  
 A 12000-es ajánlatot adó `cosmotek` és `oriontech` közül a cosmotek áll előrébb, mert a `c` betű az `o` betűnél előbbre van az ábécében.
-
