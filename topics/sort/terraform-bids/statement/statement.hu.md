@@ -1,13 +1,13 @@
 ## Terraformálási ajánlatok
 Az Ereus Kolónia új terraformáló állomásokat kíván építeni különböző bolygókon és holdakon. Ennek érdekében a Kolóniai Tanács nyilvános licitet hirdetett meg vállalatok számára.
 
-Minden pályázó vállalat megadta a nevét, valamint a kivitelezéshez szükséges becsült költséget. A Tanács a beérkezett ajánlatokat növekvő költségsorrendben kívánja rendezni. Ha több cég azonos költséget adott meg, akkor ábécérendben kell eldönteni közöttük a sorrendet.
+Minden pályázó vállalat megadta a nevét, valamint a kivitelezéshez szükséges becsült költséget. A Tanács a beérkezett ajánlatokat költség szerint növekvő sorrendbe kívánja rendezni. Ha több cég azonos költséget adott meg, akkor  közöttük a vállalatok nevét ábécé sorrendbe kell rendezni.
 
 ### Bemenet
 A bemenet első sorában egy egész szám szerepel: $N$ – az ajánlatok száma.  
-A következő $N$ sor mindegyike két adatot tartalmaz:  
-egy legfeljebb 10 karakter hosszú szót $A_i$ – a cég neve,  
-és egy pozitív egész számot $B_i$ – az adott cég árajánlata.
+A következő $N$ sor mindegyikében két adat van:  
+* egy legfeljebb 10 karakter hosszú $C_i$ szó – a cég neve,  
+* és egy $B_i$ pozitív egész szám – az adott cég árajánlata.
 
 
 ### Kimenet
@@ -18,7 +18,7 @@ Azonos ajánlat esetén a név szerinti ábécérend dönt.
 ### Korlátok
 * $1 \le N \le 100\,000$  
 * $1 \le B_i \le 100\,000$  minden $i=1 \dots N$ esetén
-* $A_i$ minden $i=1 \dots N$ esetén legfeljebb 10 kisbetűs angol karakterből álló szó
+* $C_i$ minden $i=1 \dots N$ esetén legfeljebb 10 kisbetűs angol karakterből álló szó
 
 ### Példa bemenet
     5

@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Használjuk a sort függvényt a rendezéshez, viszont azt kellene elérni, hogy együtt mozogjon a költség és a név, valamint hogy a költség számítson elsődlegesen.
+- cpp: Ha (költség, név) párokat rendezünk, akkor két ilyen elem összehasonlításakor először a költséget veszi figyelembe, és ha egyenlők, akkor pedig a nevet, tehát pont az történik, amit szeretnénk. Használjunk tehát egy `vector<pair<int, string>>` -et az ajánlatok tárolására.
+  py: Ha (költség, név) párokat rendezünk, akkor két ilyen elem összehasonlításakor először a költséget veszi figyelembe, és ha egyenlők, akkor pedig a nevet, tehát pont az történik, amit szeretnénk. Használjunk egy tuple -ökből álló listát az ajánlatok tárolására.
+- Miután rendeztük a (költség, név) párokat, csak végig kell menni rajtuk és kiírni a neveket.

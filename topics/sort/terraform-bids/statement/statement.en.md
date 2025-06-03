@@ -6,7 +6,7 @@ Each participating company submitted its name and an estimated cost of implement
 ### Input
 The first line of the input contains a single integer $N$ – the number of offers.  
 Each of the following $N$ lines contains two values:  
-a word of at most 10 characters $A_i$ – the name of the company,  
+a word of at most 10 characters $C_i$ – the name of the company,  
 and a positive integer $B_i$ – the company's bid.
 
 
@@ -19,7 +19,7 @@ If multiple companies have the same bid, they should be ordered alphabetically b
 ### Constraints
 * $1 \le N \le 100\,000$  
 * $1 \le B_i \le 100\,000$ for all $i=1 \dots N$
-* $A_i$ for all $i=1 \dots N$ consists of lowercase English letters and has at most 10 characters
+* $C_i$ consists of lowercase English letters and has at most 10 characters ($for all $i=1 \dots N$)
 
 
 

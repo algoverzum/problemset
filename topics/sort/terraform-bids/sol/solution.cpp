@@ -13,16 +13,16 @@ int main() {
     vector<pair<int, string>> offers;
 
     for (int i = 0; i < offerCount; i++) {
-        string companyName;
-        int cost;
-        cin >> companyName >> cost;
-        offers.emplace_back(cost, companyName);
+        string company;
+        int bid;
+        cin >> company >> bid;
+        offers.emplace_back(bid, company);
     }
 
     sort(offers.begin(), offers.end());
 
-    for (const auto &[_, companyName] : offers) {
-        cout << companyName << '\n';
+    for (auto [bid, company] : offers) {
+        cout << company << '\n';
     }
 
     return 0;
