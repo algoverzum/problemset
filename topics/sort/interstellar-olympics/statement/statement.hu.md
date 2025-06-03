@@ -39,4 +39,4 @@ A kimenetbe egyetlen sorba kell kiírnod $N$ számot, a bolygók sorszámait az 
     1 3 2 5 4
 
 ### A példa magyarázata
-Az arany medálok szerint sorba rendezhető az első, negyedik és ötödik sor. A második és harmadik sor között az ezüst érmek száma dönt.
+Az 1. bolygónak van a legtöbb aranyérme (négy), a második legtöbb (három) holtversenyben a 2. és 3. bolygónak, köztük az ezüstérmek száma dönt a 3. bolygó javára. Majd az 5. bolygó jön két aranyéremmel, és végül a 4. bolygó egy aranyéremmel, hiába van sok érme összesen.

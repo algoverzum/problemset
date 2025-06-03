@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- 'Számnégyeseket kell rendeznünk: (arany, ezüst, bronz, sorszám). Viszont az arany, ezüst, bronz szerint pont csökkenő sorrendbe, aztán a sorszám szerint növekvőbe. Egy kis trükkel elérhetjük a célunkat: mit csináljunk az éremszámokkal, hogy megforduljon a sorrendjük?'
+- Minden érem számát szorozzuk meg -1 -gyel, míg az országok sorszáma maradjon pozitív. Így a sort függvény pont a megfelelő sorrendet fogja előállítani. Milyen típust használjunk a számnégyesek tárolására, hogy együtt mozogjanak a rendezéskor?
+- cpp: Használjunk egy `vector< array<int, 4> >` tárolót. Az `array<int, 4>` egy számnégyes, ugyanúgy `[]`-ek közé írt indexszel lehet elérni az elemeit mint egy vectornak, csak fixen 4 elemű és nincs semmi járulékos adat. Lexikografikus sorrendben hasonlítja őket össze a `<` operátor.
+  py: Használjunk egy tuple-ökből álló listát.

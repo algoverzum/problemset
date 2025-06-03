@@ -1,29 +1,23 @@
 // @check-accepted: *
 #include <algorithm>
+#include <array>
 #include <iostream>
-#include <tuple>
 #include <vector>
+
+using namespace std;
 
 int main() {
     int n;
-    std::cin >> n;
-
-    std::vector<std::tuple<int, int, int, int>> medals;
-
-    for (int i = 0; i < n; ++i) {
+    cin >> n;
+    vector<array<int, 4>> medals(n);
+    for (int i = 0; i < n; i++) {
         int gold, silver, bronze;
-        std::cin >> gold >> silver >> bronze;
-
-        medals.emplace_back(-gold, -silver, -bronze, i + 1);
+        cin >> gold >> silver >> bronze;
+        medals[i] = {-gold, -silver, -bronze, i + 1};
     }
-
-    std::sort(medals.begin(), medals.end());
-
-    for (const auto &m : medals) {
-        std::cout << std::get<3>(m) << " ";
+    sort(medals.begin(), medals.end());
+    for (auto m : medals) {
+        cout << m[3] << " ";
     }
-
-    std::cout << std::endl;
-
-    return 0;
+    cout << "\n";
 }

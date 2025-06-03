@@ -10,5 +10,4 @@ for i in range(n):
 
 medals.sort()
 
-for line in medals:
-    print(line[3], end=" ")
+print(*[line[3] for line in medals])

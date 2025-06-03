@@ -39,4 +39,4 @@ Print a single line containing $N$ integers — the indices of the planets sorte
     1 3 2 5 4
 
 ### Explanation of the example
-The first, fourth and fifth rows can be sorted by the number of gold medals. The second and third rows are decided by the number of silver medals.
+Planet 1 has the most gold medals (four). The second highest number (three) is tied between planets 2 and 3, but the number of silver medals breaks the tie in favor of planet 3. Then comes planet 5 with two gold medals, and finally planet 4 with one gold medal — despite having many medals in total.
