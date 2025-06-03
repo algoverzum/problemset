@@ -1,5 +1,4 @@
 // @check-accepted: *
-// elvileg ez sem kéne, hogy időlimites legyen, nem?
 
 #include <algorithm>
 #include <iostream>

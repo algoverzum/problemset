@@ -21,7 +21,7 @@ Constraint:
     MIN,
     MAX,
     0,
-    1,
+    2,
 )
 
 
@@ -44,7 +44,6 @@ def run(A, B):
             words.add(random_string)
             bid = randint(1, MAX)
             print(random_string, bid)
-        next
     # clustered
     elif B == 1:
         num_clusters = randint(1, 10)
@@ -62,6 +61,19 @@ def run(A, B):
             bid = max(1, min(MAX, bid))
 
             print(random_string, bid)
+    elif B == 2:
+        # multiple first values
+        val = randint(1, MAX)
+        for i in range(A):
+            length = randint(1, 10)
+            random_string = "".join(choices(string.ascii_lowercase, k=length))
+            while random_string in words:
+                length = randint(1, 10)
+                random_string = "".join(choices(string.ascii_lowercase, k=length))
+            words.add(random_string)
+            print(random_string, val)
+            if random() < 0.5:
+                val = randint(1, MAX)
 
 
 if __name__ == "__main__":
