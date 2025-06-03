@@ -1,4 +1,8 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    Store the data in a `map<pair<int, int>, long long>`, where the key is made up of the delivery coordinates, and the value is the number of packages delivered there.
+  py: |
+    Store the data in a dictionary (`{}`), where the key is a tuple of delivery coordinates, and the value is the number of packages delivered there.
+- cpp: As you read each line, increase the value in the `map` for the corresponding coordinates by the number of delivered packages (`deliveries[{x, y}] += p;`).
+  py: As you read each line, increase the value in the `dictionary` for the corresponding coordinates by the number of delivered packages. Be careful to avoid errors if a key is not yet in the dictionary — this can be handled using the `.get()` method (`deliveries[(x, y)] = deliveries.get((x, y), 0) + p`).
+- A standard maximum search remains. First find the maximum value, then find a key (coordinate) associated with it.
