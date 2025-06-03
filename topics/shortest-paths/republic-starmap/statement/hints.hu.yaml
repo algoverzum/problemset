@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Hogy oldanád meg a feladatot, ha K=1?
+- Azt kellene akkor megnézni, hogy bármely (i,j) csúcspárra c(i,1)+c(1,j) kisebb-e, mint c(i,j), ahol a c(i,j) jelöli az i --> j él hosszát, és végtelennek tekintjük azokat, ahol nincs él.
+- És ha K=2, akkor ehhez mit tennél még hozzá? Ha alapból megvan már K=1-re az eredmény, tehát egy `d` táblázat, amiben `d[i][j]` a legrövidebb lehetséges útvonal, amiben esetleg átmehetünk az 1-esen, akkor mit vizsgáljunk még meg?
+- Minden (i,j) csúcspárra vizsgáljuk meg, hogy `d[i][2]+d[2][j]` kisebb-e, mint `d[i][j]`. És ezt lehet folytatni, nagyobb K-ra is, szép sorban hozzáadva a közbülső csúcsokat.
+- Tulajdonképpen egy dinamikus programozásos megoldásról van szó, ahol a k-adik lépésben kiszámoljuk azon legrövidebb utak hosszát, amelyek az 1, 2, ..., k csúcsokon mehetnek keresztül, mégpedig úgy, hogy minden csúcspárra megnézzük, hogy d[i][j]-nél kisebb-e d[i][k]+d[k][j].
+- 'Összefoglalva, három egymásba ágyazott for ciklussal meg lehet csinálni. k=1..K, azon belül i=1..n majd j=1..n: d[i][j]=min(d[i][j],d[i][k]+d[k][j]).'

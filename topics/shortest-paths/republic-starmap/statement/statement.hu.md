@@ -38,8 +38,9 @@ A következő $N$ sor mindegyike $N$ egész számot tartalmaz. Az $i$-edik sor $
 ![](tex/abra.png)
 
 A kimenet egy $N \times N$ mátrix. Minden $(i, j)$ pozícióban az $i$-edik bolygóról a $j$-edik bolygóra vezető legrövidebb távolság szerepel, kizárólag a Köztársaság által irányított bolygókon ($1$-től $K$-ig) keresztül haladva. Ha nincs ilyen útvonal, akkor $-1$ szerepel. Például:
-- Az $1$-es bolygóról a $3$-as bolygóra vezető legrövidebb út: $1 \to 2 \to 3$, amelynek teljes hossza $4$.
-- Nincs útvonal a $2$-es bolygóról az $1$-es bolygóra, így az adott helyen $-1$ szerepel.
-- A $2$-es bolygóról a $3$-as bolygóra vezető legrövidebb út egy közvetlen útvonal, amelynek hossza $1$.
-- A $4$-es bolygóról a $3$-as bolygóra vezető legrövidebb út Köztársasági bolygókon keresztül halad: $4 \to 2 \to 3$, amelynek teljes hossza $1 + 1 = 2$.
-- Az $5$-ös bolygó nem érhető el Köztársaság által irányított bolygókról, mivel csak a $4$-es bolygón keresztül vezet oda út.
+
+* Az $1$-es bolygóról a $3$-as bolygóra vezető legrövidebb út: $1 \to 2 \to 3$, amelynek teljes hossza $4$.  
+* Nincs útvonal a $2$-es bolygóról az $1$-es bolygóra, így az adott helyen $-1$ szerepel.  
+* A $2$-es bolygóról a $3$-as bolygóra vezető legrövidebb út egy közvetlen útvonal, amelynek hossza $1$.  
+* A $4$-es bolygóról a $3$-as bolygóra vezető legrövidebb út Köztársasági bolygókon keresztül halad: $4 \to 2 \to 3$, amelynek teljes hossza $1 + 1 = 2$.  
+* Az $5$-ös bolygó nem érhető el Köztársaság által irányított bolygókról, mivel csak a $4$-es bolygón keresztül vezet oda út.  
