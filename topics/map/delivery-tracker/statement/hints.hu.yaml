@@ -1,9 +1,8 @@
 ---
 - cpp: |
-    Az adatokat egy `map<pair, int>`-ben tároljuk, ahol a kulcs a kézbesítés koordinátája, az érték pedig az oda kivitt csomagok száma.
+    Az adatokat egy `map<pair<int, int>, long long>`-ban tároljuk, ahol a kulcs a kézbesítés koordinátáiból áll, az érték pedig az oda kivitt csomagok száma.
   py: |
-    Az azonosítókat egy dictionary-ben (`{}`) tároljuk, ahol a kulcs a kézbesítés koordinátája, az érték pedig az oda kivitt csomagok száma.
-- cpp: Ahogy olvassuk be sorokat, mindig növeljük meg a koordinátákhoz tartozó értéket a `map`-ben a kivitt csomagok számával.
-  py: Ahogy olvassuk be sorokat, mindig növeljük meg a koordinátákhoz tartozó értéket a `dictionary`-ben a kivitt csomagok számával. Vigyázni kell arra, hogy ha valamilyen kulcs nincs még benne, akkor ne legyen hiba, ez például a `.get()` függvénnyel ez elkerülhető.
-- Ami marad egy szokásos maximumkiválasztás.
-- Először határozzuk meg a maximum értékét, majd utána keressük ki egy hozzá tartozó kulcsot (koordinátát).
+    Az azonosítókat egy dictionary-ben (`{}`) tároljuk, ahol a kulcs a kézbesítés koordinátáiból álló tuple, az érték pedig az oda kivitt csomagok száma.
+- cpp: Ahogy olvassuk be sorokat, mindig növeljük meg a koordinátákhoz tartozó értéket a `map`-ben a kivitt csomagok számával (`deliveries[{x, y}] += p;`).
+  py: Ahogy olvassuk be sorokat, mindig növeljük meg a koordinátákhoz tartozó értéket a `dictionary`-ben a kivitt csomagok számával. Vigyázni kell arra, hogy ha valamilyen kulcs nincs még benne, akkor ne legyen hiba, ez például a `.get()` függvénnyel ez elkerülhető (`deliveries[(x, y)] = deliveries.get((x, y), 0) + p`).
+- Egy szokásos maximumkiválasztás marad hátra. Először határozzuk meg a maximum értékét, majd utána keressünk ki egy hozzá tartozó kulcsot (koordinátát).

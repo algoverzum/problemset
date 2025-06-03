@@ -14,7 +14,7 @@ A bemenetben első sorában egyetlen egész szám van: $N$ - a kiszállított cs
 Ezt $N$ sor követi, az $i$-edik sorban három számmal $X_i, Y_i, P_i$, ahol $X_i$ és $Y_i$ a kiszállítás koordinátái (egész számok), illetve $P_i$ a csomagok száma.
 
 ### Kimenet
-Három számot kell kiírnod egy sorban ($X, Y, P$): a koordinátáit annak a helynek ahova a legtöbb csomagot kiszállították és az oda összesen kiszállított csomagok számát.
+A kimeneten három szám legyen egy sorban: $X, Y, P$ – a koordinátái annak a helynek ahova a legtöbb csomagot kiszállították, valamint az oda összesen kiszállított csomagok száma.
 Ha több pont is ugyanennyi csomagot kapott, bármelyik helyes megoldásnak számít.
 
 ### Korlátok
