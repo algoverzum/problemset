@@ -46,5 +46,24 @@ for i in [1, n]:
             maxlength = memo[i][j]
             maxi, maxj = i, j
 
+xxx = set()
+for i in range(1, n + 1):
+    for j in [1, n]:
+        if memo[i][j] == maxlength:
+            xxx.add((i, j))
+for i in [1, n]:
+    for j in range(1, n + 1):
+        if memo[i][j] == maxlength:
+            xxx.add((i, j))
+
+if len(xxx) > 1:
+    import random
+
+    random.seed(1)
+    xxx = list(xxx)
+    random.shuffle(xxx)
+    maxi, maxj = xxx[0]
+    # maxlength -= 1
+
 print(maxlength)
 print(maxi, maxj)

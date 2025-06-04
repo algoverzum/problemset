@@ -1,13 +1,13 @@
-# A     B       S
+# N	B	R	C	S
 
 # Subtask 1: Examples
 #ST: 0
 #STNAME: examples
 #COPY: statement/input0.txt
 
-# Subtask 2: 1 <= N <= 100
-#ST: 80
-#STNAME: all
+# Subtask 2: 1 <= N <= 30
+#ST: 20
+#STNAME: small
 5      3      2      0      1
 8      4      3      0      2
 8      5      0      0      3
@@ -18,5 +18,16 @@
 30     10     0      10     8
 30     10     0      15     9
 30     10     15     0      10
-#COPY: statement/input1.txt
-#COPY: statement/input2.txt
+#COPY: gen/input1.txt
+#COPY: gen/input2.txt
+
+# Subtask 3: 1 <= N <= 500
+#ST: 80
+#STNAME: all
+100	 20	1	1      13
+500	 20	1	1      14
+500	 20	1	1      15
+100	 30	3	1      16
+500	 30	3	1      17
+100	 40	3	1      16
+500	 40	3	1      17
