@@ -18,7 +18,8 @@ Azonos ajánlat esetén a név szerinti ábécérend dönt.
 ### Korlátok
 * $1 \le N \le 100\,000$  
 * $1 \le B_i \le 100\,000$  minden $i=1 \dots N$ esetén
-* $C_i$ minden $i=1 \dots N$ esetén legfeljebb 10 kisbetűs angol karakterből álló szó
+* $C_i$ minden $i=1 \dots N$ esetén legfeljebb 10 kisbetűs angol karakterből álló szó.  
+Minden cég neve csak egyszer szerepelhet.
 
 ### Példa bemenet
     5
