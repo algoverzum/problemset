@@ -19,8 +19,8 @@ If multiple companies have the same bid, they should be ordered alphabetically b
 ### Constraints
 * $1 \le N \le 100\,000$  
 * $1 \le B_i \le 100\,000$ for all $i=1 \dots N$
-* $C_i$ consists of lowercase English letters and has at most 10 characters ($for all $i=1 \dots N$)
-
+* $C_i$ consists of lowercase English letters and has at most 10 characters ($for all $i=1 \dots N$)  
+Every company's name is unique.
 
 
 ### Example input
