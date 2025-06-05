@@ -38,9 +38,9 @@ If a planet cannot be reached within $i$ steps, print $-1$ in that position.
     3 2 7
 
 ### Explanation of example 1
-The image below shows example 1 on the left side, and example 2 on the right side.
+The image below shows example 1.
 
-![](tex/abra.png)
+![](tex/abra1.png)
 
 1 step: Planets 1 and 2 are reachable from planet 0 for 5 and 2 spice respectively.
 2 steps: Planet 1 becomes reachable for 3 spice (via planet 2), and planet 3 can be reached for 9.
@@ -58,3 +58,7 @@ The image below shows example 1 on the left side, and example 2 on the right sid
     2 -1 -1
     2 5 -1
     2 5 9
+
+The image below shows example 2.
+
+![](tex/abra2.png)

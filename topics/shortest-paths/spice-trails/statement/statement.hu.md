@@ -35,9 +35,9 @@ A program $N-1$ sort írjon ki, minden sorban $N-1$ szóközzel elválasztott sz
     3 2 7
 
 ### Az 1. példa magyarázata
-Az első példa a bal oldalon, a második a jobb oldalon látható:
+Az első példa:
 
-![](tex/abra.png)
+![](tex/abra1.png)
 
 1 lépésben csak az 1. és a 2. bolygóra lehet eljutni, 5 illetve 2 fűszerért.
 2 lépésben az 1. bolygóra már 3 fűszerért is el lehet jutni, és a 3. bolygóra 9-ért.
@@ -55,3 +55,7 @@ Az első példa a bal oldalon, a második a jobb oldalon látható:
     2 -1 -1
     2 5 -1
     2 5 9
+    
+Az második példa:
+
+![](tex/abra2.png)
