@@ -24,6 +24,8 @@ Constraint:
     2,
 )
 
+WORD_LEN = 10
+
 
 def run(A, B):
     for row in reversed(usage.split("\n")[:-1]):
@@ -35,11 +37,11 @@ def run(A, B):
     # full random
     if B == 0:
         for i in range(A):
-            length = randint(1, 10)
+            length = randint(1, WORD_LEN)
 
             random_string = "".join(choices(string.ascii_lowercase, k=length))
             while random_string in words:
-                length = randint(1, 10)
+                length = randint(1, WORD_LEN)
                 random_string = "".join(choices(string.ascii_lowercase, k=length))
             words.add(random_string)
             bid = randint(1, MAX)
@@ -50,10 +52,10 @@ def run(A, B):
         cluster_centers = [randint(1, MAX) for _ in range(num_clusters)]
 
         for _ in range(A):
-            length = randint(1, 10)
+            length = randint(1, WORD_LEN)
             random_string = "".join(choices(string.ascii_lowercase, k=length))
             while random_string in words:
-                length = randint(1, 10)
+                length = randint(1, WORD_LEN)
                 random_string = "".join(choices(string.ascii_lowercase, k=length))
             words.add(random_string)
             center = choice(cluster_centers)
@@ -65,10 +67,10 @@ def run(A, B):
         # multiple first values
         val = randint(1, MAX)
         for i in range(A):
-            length = randint(1, 10)
+            length = randint(1, WORD_LEN)
             random_string = "".join(choices(string.ascii_lowercase, k=length))
             while random_string in words:
-                length = randint(1, 10)
+                length = randint(1, WORD_LEN)
                 random_string = "".join(choices(string.ascii_lowercase, k=length))
             words.add(random_string)
             print(random_string, val)
