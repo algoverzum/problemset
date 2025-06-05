@@ -1,5 +1,5 @@
 ## Csillagközi olimpia
-A Tejútrendszerben éppen most értek véget az olimpiai játékok. Az eseményt követően feljegyeztük, hogy az egyes bolygók hány arany-, ezüst- és bronzérmet szereztek. Az adatokat egy táblázatba rendeztük, ahol az $i$-edik sor az $i$-edik sorszámú bolygó eredményeit tartalmazza.  
+A Tejútrendszerben éppen most értek véget az olimpiai játékok, amin $N$ bolygó sportolói vettek részt. Az eseményt követően feljegyeztük, hogy az egyes bolygók hány arany-, ezüst- és bronzérmet szereztek. Az adatokat egy táblázatba rendeztük, ahol az $i$-edik sor az $i$-edik sorszámú bolygó eredményeit tartalmazza ($1 \le i \le N$).  
 A bolygókat az alábbi szabályok alapján szeretnénk sorrendbe állítani az éremeredményeik szerint:
 
 * Az a bolygó kerül előrébb, amelyik több aranyérmet szerzett.

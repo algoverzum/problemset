@@ -1,5 +1,5 @@
 ## Interstellar Olympics
-The Olympic Games have just ended in the Milky Way. After the event, we recorded how many gold, silver, and bronze medals each planet won. The data was organized into a table, where the $i$-th row contains the results of the planet with index $i$.  
+The Olympic Games have just ended in the Milky Way with the participation of $N$ planets. After the event, we recorded how many gold, silver, and bronze medals each planet won. The data was organized into a table, where the $i$-th row contains the results of the planet with index $i$ ($1 \le i \le N$).  
 We want to sort the planets based on their medal results according to the following rules:
 
 * A planet ranks higher if it has more gold medals.
