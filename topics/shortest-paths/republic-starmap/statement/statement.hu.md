@@ -1,6 +1,6 @@
 ## Köztársasági csillagtérkép
 
-A galaxis két frakcióra osztott: a Köztársaságra és a Szeparatistákra. $N$ bolygó található a galaxisban, amelyeket $1$-től $N$-ig sorszámoznk. A Köztársaság az első $K$ bolygót tartja irányítása alatt (tehát az $1, 2, \ldots K$ sorszámúakat), míg a többit a Szeparatisták uralják ($K+1, K+2, \ldots, N$ sorszámú bolygók). A Köztársaság biztosítani szeretné a hatékony kommunikációt és közlekedést az összes bolygó között (beleértve a szeparatista bolygókat is, mert időnként diplomáciai ügyekben oda kell utazniuk), de csak olyan útvonalakat használhatnak, amelyek kizárólag Köztársaság által irányított bolygókon haladnak át.
+A galaxis két frakcióra osztott: a Köztársaságra és a Szeparatistákra. $N$ bolygó található a galaxisban, amelyeket $1$-től $N$-ig sorszámozunk. A Köztársaság az első $K$ bolygót tartja irányítása alatt (tehát az $1, 2, \ldots, K$ sorszámúakat), míg a többit a Szeparatisták uralják ($K+1, K+2, \ldots, N$ sorszámú bolygók). A Köztársaság biztosítani szeretné a hatékony kommunikációt és közlekedést az összes bolygó között (beleértve a szeparatista bolygókat is, mert időnként diplomáciai ügyekben oda kell utazniuk), de csak olyan útvonalakat használhatnak, amelyek kizárólag Köztársaság által irányított bolygókon haladnak át.
 
 A galaxis közlekedési hálózata egy **irányított gráffal** modellezhető, azaz a távolság bolygó $A$ és bolygó $B$ között nem feltétlenül egyenlő a bolygó $B$ és bolygó $A$ közötti távolsággal, vagy előfordulhat, hogy egy irányban van útvonal, de a másik irányban nincs.
 
