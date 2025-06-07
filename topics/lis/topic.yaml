@@ -1,0 +1,10 @@
+---
+id: lis
+name: Lis
+problems:
+  - problem_id: klingon-trial
+    type: REQUIRED
+prerequisites:
+dependents:
+visualization:
+# Notes:

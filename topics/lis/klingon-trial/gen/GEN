@@ -1,0 +1,22 @@
+# N     T	R       S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+
+# Subtask 2: 1 <= N <= 1000
+#ST: 100
+#STNAME: all
+5      10	rand     1
+10     10	rand     2
+10     100	rand	 3
+50     100	rand	 4
+100    10     	rand	 5
+200    100    	rand	 6
+1000   100	rand	 7
+1000   100000	rand	 8
+1000   1000000000 rand	 9
+1000   10000	rand2	 10
+1000   1000000	rand2	 11
+1000   1000000000 rand2	 12
