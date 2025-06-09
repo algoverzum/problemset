@@ -2,6 +2,8 @@
 id: dp
 name: DP
 problems:
+  - problem_id: expeditions
+    type: REQUIRED
   - problem_id: binarygrid
     type: EXTRA
 prerequisites: []
