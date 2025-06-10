@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Let's use dynamic programming. What should the DP values be that we compute?
+- Let dp[i] represent the maximum revenue we can achieve by selling sectors 1 through i. Set dp[0] = 0. How do we compute dp[i] if dp[0..i-1] are already known?
+- Let dp[i] initially be dp[i-1], since we might not use the i-th sector. On the other hand, go through all requests that end at the i-th sector and check whether we can achieve a higher revenue by using that request (and also selling the sectors before its start — which is already given by a dp value).
+- 'In formula: `dp[i] = max{dp[i-1], dp[a[j]-1] + k[j] where j=1..n and b[j]==i}` We compute this for i = 1 to m, and the solution is given by dp[m].'

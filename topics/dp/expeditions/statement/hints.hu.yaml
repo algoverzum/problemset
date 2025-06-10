@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Használjunk dinamikus programozást! Mik legyenek a DP értékek, amiket kiszámolunk?
+- dp[i] jelentse azt, hogy az 1..i szektorok értékesítésével mekkora maximális bevételre tehetünk szert. dp[0]=0. Hogyan számoljuk ki dp[i]-t, ha már ismert dp[0..i-1] ?
+- dp[i] legyen kezdetben dp[i-1], mivel lehet, hogy az i-edik szektort nem használjuk fel. Másrészt, nézzük végig azokat a kérelmeket, amik az i-edik szektoron végződnek, és vizsgáljuk meg, hogy nagyobb bevételünk lehet-e, ha felhasználjuk ezt a kérelmet (és a kezdete előtt lévő szektorokat értékesítjük még - ezt már egy dp érték megadja).
+- 'Képlettel: `dp[i]=max{dp[i-1], dp[a[j]-1]+k[j] ahol j=1..n és b[j]==i}` Ezt számoljuk i=1..m-ig, a megoldást a dp[m] adja meg.'
