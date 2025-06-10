@@ -5,57 +5,42 @@
 
 using namespace std;
 
-struct Permit {
-    int start, end, credits, id;
-};
-
 int main() {
     int n, m;
     cin >> n >> m;
-
-    vector<Permit> permits(n);
-    for (int i = 0; i < n; i++) {
-        cin >> permits[i].start >> permits[i].end >> permits[i].credits;
-        permits[i].id = i + 1;
+    vector<array<int, 3>> request(n);
+    vector<vector<int>> ends_at(m + 1);
+    int idx = 0;
+    for (auto &[start, end, credit] : request) {
+        cin >> start >> end >> credit;
+        ends_at[end].push_back(idx++);
     }
-    sort(permits.begin(), permits.end(),
-         [](const Permit &a, const Permit &b) { return a.end < b.end; });
-    vector<int> dp(m + 2, 0);
-    vector<int> choice(m + 2, -1);
-    vector<int> previous(m + 2, -1);
 
-    int permitIndex = 0;
-    for (int sector = 1; sector <= m; sector++) {
-        dp[sector] = dp[sector - 1];
-        previous[sector] = sector - 1;
-        while (permitIndex < n && permits[permitIndex].end == sector) {
-            int startSector = permits[permitIndex].start;
-            int gain = dp[startSector - 1] + permits[permitIndex].credits;
-            if (gain > dp[sector]) {
-                dp[sector] = gain;
-                choice[sector] = permits[permitIndex].id;
-                previous[sector] = startSector - 1;
+    vector<int> dp(m + 1, 0);
+    vector<int> last(m + 1, -1);
+    for (int i = 1; i <= m; i++) {
+        dp[i] = dp[i - 1];
+        last[i] = last[i - 1];
+        for (int j : ends_at[i]) {
+            auto &[start, end, credit] = request[j];
+            if (dp[i] < dp[start - 1] + credit) {
+                dp[i] = dp[start - 1] + credit;
+                last[i] = j;
             }
-            permitIndex++;
         }
     }
 
-    cout << dp[m] << '\n';
+    cout << dp.back() << "\n";
+    vector<int> ans;
+    int cur = last.back();
+    while (cur >= 0) {
+        ans.push_back(cur);
+        cur = last[request[cur][0] - 1];
+    }
 
-    vector<int> selected;
-    int current = m;
-    while (current > 0) {
-        if (choice[current] != -1) {
-            selected.push_back(choice[current]);
-            current = previous[current];
-        } else {
-            current--;
-        }
-    }
-    sort(selected.begin(), selected.end());
-    for (int id : selected) {
-        cout << id << " ";
-    }
-    cout << '\n';
+    sort(ans.begin(), ans.end());
+    for (int &idx : ans)
+        cout << idx + 1 << " ";
+
     return 0;
 }
