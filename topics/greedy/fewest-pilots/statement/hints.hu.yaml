@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Ha több pilóta is van, aki 0-nál kezdi, akkor melyiket érdemes közülük választani? És ő melyik pilótának adja át?
+- A 0-nál kezdők közül a legtovább repülő pilótát válasszuk, majd azok közül, akik tőle át tudják venni, szintén a legtovább repülő pilótát, és így tovább (mohó módszer). Ezt a lépést ismételve a pilóták darabszáma minimális lesz - be tudod ezt bizonyítani? És hogy programoznád le?
+- cpp: Rendezzük a pilótákat kezdési távolság szerint. Ehhez számhármasokat kell rendezni, mert a kezdési és befejezési idő mellett az eredeti sorszám is kell. Minden pilótát egy `array<int, 3>` reprezentáljon, és ezeket tároljuk egy vectorban.
+  py: Rendezzük a pilótákat kezdési távolság szerint. Ehhez számhármasokat kell rendezni, mert a kezdési és befejezési idő mellett az eredeti sorszám is kell. Minden pilótát egy tuple reprezentáljon, és ezeket tároljuk egy listában.
+- 'Legyen egy változónk, ami azt tárolja, hogy `meddig` jutottunk el eddig - kezdetben legyen 0. Haladjuk sorban a pilótákon és jegyezzük meg, hogy melyikük repül a legtovább, egészen addig, amíg valamelyik pilótának a kezdési távolsága már nagyobb lesz, mint a `meddig` érték. Ekkor a korábbiak közül megjegyzettet bevesszük a megoldásba, de figyeljünk arra az esetre is, ha nem tudjuk megoldani a kazetta átadását.'
+- 'Tipp: vegyünk fel egy extra pilótát, ami K-tól K+1-ig repül és akkor a végére sem kell semmilyen speciális logika'

@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- If there are multiple pilots who can start at position 0, which one should we choose? And to which pilot should they hand off the package?
+- Among the pilots who can start at 0, we choose the one who can fly the farthest. Then, among those who can take over from them, we again choose the one who can fly the farthest, and so on (greedy strategy). Repeating this step results in the minimal number of pilots – can you prove that? And how would you implement it?
+- cpp: Sort the pilots by their start distance. We need to sort triplets because we also need to keep the original index in addition to the start and end distances. Each pilot should be represented by an `array<int, 3>`, and we store them in a vector.
+  py: Sort the pilots by their start distance. We need to sort triplets because we also need to keep the original index in addition to the start and end distances. Each pilot should be represented by a tuple, and we store them in a list.
+- 'Let’s have a variable that tracks how far we’ve `reached` so far – initially set it to 0. Iterate through the pilots and remember the one who flies the farthest, until we reach a pilot whose starting distance is greater than our current `reached`. At that point, we add the previously remembered pilot to the solution. Be careful to handle the case where it’s impossible to continue transferring the package.'
+- 'Tip: add an extra pilot that flies from K to K+1, so you don’t need any special logic for the final handoff.'

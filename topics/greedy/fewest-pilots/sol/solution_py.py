@@ -9,24 +9,25 @@ for i in range(n):
     pilots.append((s, e, i + 1))
 
 pilots.sort()
-res = []
+
+ans = []
 reached = 0
-cur_end = 0
-last = -1
-i = 0
-while i < n + 1:
-    start, end, index = pilots[i]
+best = 0
+best_end = 0
+
+for start, end, index in pilots:
     if start <= reached:
-        i += 1
-        if cur_end < end:
-            last = index
-            cur_end = end
+        if end > best_end:
+            best_end = end
+            best = index
     else:
-        res.append(last)
-        reached = cur_end
-        if start > cur_end:
+        if start > best_end:
             print(0)
             exit()
+        reached = best_end
+        ans.append(best)
+        best_end = end
+        best = index
 
-print(len(res))
-print(*res)
+print(len(ans))
+print(*ans)
