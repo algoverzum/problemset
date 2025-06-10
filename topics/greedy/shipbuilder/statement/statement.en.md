@@ -4,14 +4,12 @@ You are given a list of $N$ orders, where each order has a deadline. The deadlin
 Determine the maximum number of spaceships you can build on time and output the indices of the orders you complete.
 
 ### Input
-The first line of the input contains a single integer:
-$N$ — the number of orders.<br>
+The first line of the input contains a single integer: $N$ — the number of orders.<br>
 The second line of the input contains $N$ integers: $H_1, H_2, \ldots, H_N$, where $H_i$ is the deadline of the $i$-th order. The deadlines are given in increasing order.
 
 ### Output
-The first line of the output should contain a single integer:
-$S$ — the number of orders you completed on time.<br>
-The second line should contain $S$ integers in increasing order: the 1-based indices of the orders you completed.
+The first line of the output should contain a single integer: $S$ — the number of orders you can complete on time.<br>
+The second line should contain $S$ integers in increasing order: the 1-based indices of the orders you can complete.
 
 ### Constraints
 * $1 \le N \le 100\,000$

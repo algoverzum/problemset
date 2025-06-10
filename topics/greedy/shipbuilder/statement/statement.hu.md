@@ -8,8 +8,8 @@ A bemenet első sorában egyetlen egész szám van: $N$ a megbízások darabszá
 A bemenet második sorában $N$ db egész szám szerepel: $H_1, H_2, \ldots, H_N$, ahol $H_i$ az $i$-edik megrendelés határideje. A határidők növekvő sorrendben vannak megadva.
 
 ### Kimenet
-A kimenet első sorába egyetlen számot kell kiírnod, $S$-et a megbízások számát, amelyeket sikeresen el tudtál végezni határidőre.<br>
-A második sorban $S$ db szám szerepeljen növekvő sorrendben: azoknak a megrendeléseknek a sorszámai, amelyeket teljesítettél.
+A kimenet első sorába egyetlen számot kell kiírnod, a megbízások $S$ számát, amennyit sikeresen el tudsz végezni határidőre.<br>
+A második sorban $S$ darab szám szerepeljen növekvő sorrendben: azoknak a megrendeléseknek a sorszámai, amelyeket teljesíteni tudsz.
 
 ### Korlátok
 * $1 \le N \le 100\,000$

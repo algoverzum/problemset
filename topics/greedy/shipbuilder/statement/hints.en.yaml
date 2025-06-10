@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Which order should you complete first? Why?
+- 'The one with the earliest deadline, because afterward we can still choose another job with a later deadline, but the reverse is not necessarily true. (A more precise justification: consider an optimal solution; whatever the first order is, it can be replaced by the one that finishes earliest.)'
+- Iterate through the deadlines (the given order is already sorted), and keep a variable `day` that tracks the next available day (initially 1). If the current job’s deadline is less than `day`, skip it; otherwise, include it in the solution and increment `day` by 1.

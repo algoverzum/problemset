@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Melyik megbízást érdemes először teljesíteni? Miért?
+- 'Amelyiknek a legkorábbi a határideje, mert utána választhatunk másik munkát, aminek később van a határideje, de fordítva ez nem feltétlenül teljesül. (Precízebb indoklás: tekintsünk egy optimális megoldást, ebben bármi is az első megbízás, az lecserélhető a legkorábban befejeződőra.)'
+- Menjünk végig a határidőkön (a megadott sorrend pont jó), és mindig legyen egy `nap` változónk, ami a következő szabad napot jegyzi meg (kezdetben 1). Ha az aktuális munka határideje kisebb, mint a `nap`, akkor kihagyjuk, egyébként viszont bevehetjük a megoldásba, és növeljük eggyel a napot.

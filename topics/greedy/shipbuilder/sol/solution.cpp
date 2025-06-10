@@ -21,8 +21,8 @@ int main() {
     }
 
     cout << result.size() << "\n";
-    for (int i = 0; i < result.size(); i++) {
-        cout << result[i] << " ";
+    for (int i : result) {
+        cout << i << " ";
     }
     cout << "\n";
 
