@@ -1,18 +1,15 @@
 ## Sky Spy
 The Rebels have successfully hacked one of the Empire's geostationary spy satellites. This satellite orbits directly above the infamous Mos Eisley spaceport, allowing the Rebels to take photographs of the docked spaceships without the Empire's knowledge.
 
-Rebel intelligence has obtained information that $N$ spaceships will arrive at different times. Each ship has precisely indicated the time interval during which it will be present at the spaceport. The spy satellite is capable of taking high-resolution photographs, but to avoid detection, we want to take as few photos as possible — while ensuring that each of the $N$ spaceships appears in at least one photograph.
+Rebel intelligence has obtained information that $N$ spaceships will appear, each within a specific time interval. The goal is to take as few pictures as possible with the spy satellite — in such a way that each of the $N$ spaceships appears in at least one photo. The $i$-th spaceship arrives at time $A_i$ and departs at time $B_i$. A photo taken at time $T$ will include the $i$-th spaceship if and only if $A_i \le T < B_i$.
 
 Determine the minimum number of distinct time points when the satellite must be activated to observe the spaceport so that every spaceship is captured at least once while it is actually present.
 
 ### Input
-The first line of the input contains the number of incoming spaceships: $N$.
-
-Each of the following $N$ lines contains two integers. In the $i$-th line, you are given $A_i$ and $B_i$: $A_i$ is the arrival and $B_i$ is the departure time of the $i$-th spaceship. If a photo is taken at time $T$ and $A_i \le T < B_i$, then the $i$-th spaceship will appear in the photograph.
+The first line of the input contains $N$ — the number of incoming spaceships. Each of the following $N$ lines contains two integers. In the $i$-th line, you are given $A_i$ and $B_i$: $A_i$ is the arrival and $B_i$ is the departure time of the $i$-th spaceship.
 
 ### Output
-The output should contain a single integer: the number of photographs $K$ to be taken.
-
+The output should contain a single integer: the number of photographs $K$ to be taken.  
 The second line should contain exactly $K$ integers, separated by spaces, representing the time points (in any order) at which the photographs should be taken.
 If there are multiple solutions, any of them is acceptable.
 

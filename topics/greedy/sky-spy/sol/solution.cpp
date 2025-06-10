@@ -11,25 +11,20 @@ int main() {
 
     vector<pair<int, int>> intervals(N);
     for (int i = 0; i < N; ++i) {
-        cin >> intervals[i].first >> intervals[i].second;
+        // The first is the departure because we want to sort them according to
+        // that.
+        cin >> intervals[i].second >> intervals[i].first;
     }
 
-    // Sort intervals by their end time (second element of the pair)
-    sort(intervals.begin(), intervals.end(),
-         [](const pair<int, int> &a, const pair<int, int> &b) {
-             return a.second < b.second;
-         });
+    sort(intervals.begin(), intervals.end());
 
     vector<int> photos;
-    int last_photo_time = -1;
+    int last_photo = -1;
 
-    for (const auto &interval : intervals) {
-        int start = interval.first;
-        int end = interval.second;
-
-        if (last_photo_time < start) {
-            last_photo_time = end - 1;
-            photos.push_back(last_photo_time);
+    for (auto [end, start] : intervals) {
+        if (last_photo < start) {
+            last_photo = end - 1;
+            photos.push_back(last_photo);
         }
     }
 

@@ -1,4 +1,8 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- When should the first photo be taken?
+- It's worth taking the first photo as late as possible. What is the latest possible moment we can wait before taking the first photo? (This is a greedy choice.)
+- Exactly right before the first departing spaceship leaves. And what should we do after that?
+- Repeat the same process for the ships that have not yet been photographed. Try to prove why a sequence of such choices gives us the optimal solution! How would you implement this?
+- The spaceships should be sorted by their departure times.
+- cpp: We can use the `pair<int, int>` type such that `.first` is the departure time and `.second` is the arrival time.
+- py: 'A list of number pairs called `intervals` can be sorted by the second element of the pair using: `intervals.sort(key=lambda x: x[1])`'

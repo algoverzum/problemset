@@ -1,4 +1,8 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Mikor készüljön az első fénykép?
+- Érdemes minél később készíteni az első fényképet. Mi a legkésőbbi időpont amikor már nem lehet tovább halasztani az első kép elkészítését? (Ez egy mohó döntés.)
+- Pont mielőtt az elsőként távozó űrhajó elmegy. És ezután mit csináljunk?
+- Ugyanezt ismételjük azokkal az űrhajókkal, akik még nem voltak lefényképezve. Gondold végig, hogy ilyen választások sorozatával miért kapjuk meg az optimális megoldást! Hogy érdemes leprogramozni?
+- Az űrhajókat a távozás szerint érdemes sorba rendezni.
+- cpp: Használhatjuk a `pair<int, int>` típust úgy, hogy a `.first` a távozási időpont és a `.second` az érkezési időpont.
+  py: 'Egy számpárokból álló `intervals` lista rendezése a számpárok második tagja szerint: `intervals.sort(key=lambda x: x[1])`'
