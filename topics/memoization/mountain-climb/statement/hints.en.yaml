@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Compute for each cell the maximum number of steps that can be taken starting from it.
+- If we started from every cell and walked as far as possible, the solution would require $O(N^4)$ operations, which exceeds the time limit. How can we speed this up? We're actually recomputing many values multiple times...
+- If we already know the maximum steps from each adjacent cell that is exactly one unit higher, then the value for the current cell is the maximum of those values plus one. This is a dynamic programming idea, but computing in row-major order causes problems — the correct order is tricky. We might consider sorting the cells in descending order of height, but it's much simpler to use recursion with memoization.
+- So, let's define a recursive function that computes the maximum number of steps from a given cell. We use a global 2D array to memoize previously computed values. If we call the function on a cell we've already computed, we just return the result. Otherwise, we look at the neighbors, recursively call the function on cells that are exactly one unit higher, take the maximum of the results, add one, and store the result before returning.
+- Call this function from all edge cells and select the one that gives the highest value.

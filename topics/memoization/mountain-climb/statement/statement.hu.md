@@ -8,7 +8,7 @@ A küldetésed az, hogy megtaláld a lehető leghosszabb mászási útvonalat a 
 * Emelkedés szabálya: Csak akkor léphetsz egy szomszédos cellába, ha annak a magassága pontosan eggyel nagyobb, mint a jelenlegi celláé (például egy $H$ magasságú oszlopról csak egy $H+1$ magasságú szomszédba mehetsz).
 * Az út vége: Az emelkedést addig kell folytatni, ameddig csak lehet. Az adott út véget ér, ha olyan cellába jutsz, ahonnan az emelkedés szabálya szerint már nem lehet továbbmenni.
 
-Feladat: Írj egy programot, amely meghatározza, hogy egy felfedező egyetlen mászás során maximum hány lépést tehet meg! Az összes fenti szabályt be kell tartania. Ha nincs ilyen érvényes útvonal, akkor az eredmény 0 lépés.
+Feladat: Írj egy programot, amely meghatározza, hogy egy felfedező egyetlen mászás során maximum hány lépést tehet meg, és ehhez hol kezdje a mászást! Az összes fenti szabályt be kell tartania. Ha nincs ilyen érvényes útvonal, akkor az eredmény 0 lépés (és bárhol kezdheti a szélén).
 
 ### Bemenet
 Az első sor egyetlen egész számot tartalmaz: $N$ — a rács méretét.  

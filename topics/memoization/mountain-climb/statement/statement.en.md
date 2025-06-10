@@ -8,7 +8,7 @@ Your mission is to find the longest possible climbing path by adhering to the fo
 * Ascending Rule: You can only move to an adjacent area if its height is exactly one unit greater than the height of your current area (e.g., from a stack of $H$ cubes to an adjacent stack of $H+1$ cubes).
 * Path End: You must continue this upward climb as long as possible. The expedition for a particular path ends when you reach an area from which no further moves can be made according to the Ascending Rule.
 
-Goal: Write a program that determines the maximum number of steps an explorer can take in a single expedition. Remember, the path must start on the border and follow all the rules above. If no such valid path can be started, the longest distance is 0 steps.
+Goal: Write a program that determines the maximum number of steps an explorer can take in a single expedition, and the starting position of such expedition. Remember, the path must start on the border and follow all the rules above. If no such valid path can be started, the longest distance is 0 steps (and the starting position can be any cell on the side).
 
 ### Input
 The first line of the input contains a single integer $N$: the size of the square grid.  

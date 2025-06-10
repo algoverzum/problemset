@@ -30,25 +30,21 @@ int main() {
             cin >> mountain[i][j];
         }
     }
+    int maxlen = -1;
+    int maxi = -1;
+    int maxj = -1;
     memo.assign(n + 2, vector<int>(n + 2, -1));
     for (int i = 1; i < n + 1; i++) {
         for (int j = 1; j < n + 1; j++) {
-            rec(i, j);
+            if (i != 1 && i != n && j != 1 && j != n)
+                continue;
+            if (maxlen < rec(i, j)) {
+                maxlen = rec(i, j);
+                maxi = i;
+                maxj = j;
+            }
         }
     }
-    int maxlength = -1;
-    int maxi = -1;
-    int maxj = -1;
-    for (int i = 1; i < n + 1; i++) {
-        for (int j = 1; j < n + 1; j++) {
-            if (i == 1 || i == n || j == 1 || j == n)
-                if (maxlength < memo[i][j]) {
-                    maxlength = memo[i][j];
-                    maxi = i;
-                    maxj = j;
-                }
-        }
-    }
-    cout << maxlength << "\n";
+    cout << maxlen << "\n";
     cout << maxi << " " << maxj << "\n";
 }

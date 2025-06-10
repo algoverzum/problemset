@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Minden cellára számítsuk ki, hogy mennyi a legtöbb lépés, amelyet onnan indulva megtehetünk.
+- Ha minden cellából elindulnánk, és mennénk amíg tudunk, az a megoldás $O(N^4)$ műveletigényű lenne, ami nem fér bele az időlimitbe. Hogy lehet ezt felgyorsítani? Tulajdonképpen elég sok értéket sokszor kiszámítunk újra...
+- Ha egy cellával szomszédos minden eggyel magasabb cellára már ismert az onnan megtehető legtöbb lépés, akkor ezek maximuma + 1 lesz erre a cellára. Ez tehát egy dinamikus programozásos gondolat, viszont a kiszámítási sorrend problémákat vet fel, nem mehetünk sorfolytonosan. Felmerül, hogy magasság szerint csökkenő sorrendbe rendezzük a mezőket, de sokkal egyszerűbb, ha használjuk a rekurzió+memorizáció erejét.
+- Legyen tehát egy rekurzív függvényünk, ami kiszámolja egy cellára az onnan megtehető maximális lépések számát. Jegyezzük meg egy globális 2D tömbben a már kiszámolt értékeket. Ha egy olyan cellára hívjuk meg a függvényt, amire már kiszámoltuk, akkor csak visszadjuk. Egyébként végignézzük a szomszédokat, és az eggyel magasabb cellákra meghívjuk a függvényt, a visszakapott értékek maximuma +1 lesz a válasz, és ne felejtsük el ezt eltárolni.
+- Ezt a függvényt hívjuk meg a szélső mezőkből és válasszuk ki azt, ahol a legnagyobb értéket adja.

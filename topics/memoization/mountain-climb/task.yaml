@@ -6,7 +6,7 @@ title_translations:
   hu: Hegymászás
 
 # Technical info
-memory_limit: 256
+memory_limit: 512
 time_limit: 1.0
 infile: ""
 outfile: ""
