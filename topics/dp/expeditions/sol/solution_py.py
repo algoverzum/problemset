@@ -2,38 +2,33 @@
 # @check-accepted: *
 
 n, m = map(int, input().split())
-permits = []
+start = [0] * n
+end = [0] * n
+credit = [0] * n
+ends_at = [[] for _ in range(m + 1)]
+
 for i in range(n):
-    a, b, k = map(int, input().split())
-    permits.append((a, b, k, i + 1))
+    start[i], end[i], credit[i] = map(int, input().split())
+    ends_at[end[i]].append(i)
 
-permits.sort(key=lambda x: x[1])
-dp = [0] * (m + 2)
-choice = [-1] * (m + 2)
-previous = [-1] * (m + 2)
-permit_index = 0
-for sector in range(1, m + 1):
-    dp[sector] = dp[sector - 1]
-    previous[sector] = sector - 1
-    while permit_index < n and permits[permit_index][1] == sector:
-        start_sector = permits[permit_index][0]
-        credits = permits[permit_index][2]
-        gain = dp[start_sector - 1] + credits
-        if gain > dp[sector]:
-            dp[sector] = gain
-            choice[sector] = permits[permit_index][3]
-            previous[sector] = start_sector - 1
-        permit_index += 1
+dp = [0] * (m + 1)
+last = [-1] * (m + 1)
 
-print(dp[m])
-selected = []
-current = m
-while current > 0:
-    if choice[current] != -1:
-        selected.append(choice[current])
-        current = previous[current]
-    else:
-        current -= 1
+for i in range(1, m + 1):
+    dp[i] = dp[i - 1]
+    last[i] = last[i - 1]
+    for j in ends_at[i]:
+        if dp[i] < dp[start[j] - 1] + credit[j]:
+            dp[i] = dp[start[j] - 1] + credit[j]
+            last[i] = j
 
-selected.sort()
-print(*selected)
+print(dp[-1])
+
+ans = []
+cur = last[-1]
+while cur >= 0:
+    ans.append(cur)
+    cur = last[start[cur] - 1]
+
+ans.sort()
+print(*[idx + 1 for idx in ans])

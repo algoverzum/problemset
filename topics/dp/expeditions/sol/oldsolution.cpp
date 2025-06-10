@@ -52,7 +52,7 @@ int main() {
             current--;
         }
     }
-    sort(selected.begin(), selected.end());
+
     for (int id : selected) {
         cout << id << " ";
     }

@@ -36,14 +36,6 @@ int main(int argc, char *argv[]) {
             user_idx.push_back(x);
         }
     }
-    for (int i = 1; i < (int)user_idx.size(); i++) {
-        if (user_idx[i] <= user_idx[i - 1]) {
-            quitf(_wa,
-                  "Permit indices must be in strictly increasing order, but %d "
-                  "≥ %d",
-                  user_idx[i - 1], user_idx[i]);
-        }
-    }
     vector<char> used(m + 1, 0);
     int recomputed = 0;
     for (int idx : user_idx) {

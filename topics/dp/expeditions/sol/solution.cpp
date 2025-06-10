@@ -8,12 +8,11 @@ using namespace std;
 int main() {
     int n, m;
     cin >> n >> m;
-    vector<array<int, 3>> request(n);
+    vector<int> start(n), end(n), credit(n);
     vector<vector<int>> ends_at(m + 1);
-    int idx = 0;
-    for (auto &[start, end, credit] : request) {
-        cin >> start >> end >> credit;
-        ends_at[end].push_back(idx++);
+    for (int i = 0; i < n; i++) {
+        cin >> start[i] >> end[i] >> credit[i];
+        ends_at[end[i]].push_back(i);
     }
 
     vector<int> dp(m + 1, 0);
@@ -22,9 +21,8 @@ int main() {
         dp[i] = dp[i - 1];
         last[i] = last[i - 1];
         for (int j : ends_at[i]) {
-            auto &[start, end, credit] = request[j];
-            if (dp[i] < dp[start - 1] + credit) {
-                dp[i] = dp[start - 1] + credit;
+            if (dp[i] < dp[start[j] - 1] + credit[j]) {
+                dp[i] = dp[start[j] - 1] + credit[j];
                 last[i] = j;
             }
         }
@@ -35,12 +33,13 @@ int main() {
     int cur = last.back();
     while (cur >= 0) {
         ans.push_back(cur);
-        cur = last[request[cur][0] - 1];
+        cur = last[start[cur] - 1];
     }
 
     sort(ans.begin(), ans.end());
-    for (int &idx : ans)
+    for (int idx : ans)
         cout << idx + 1 << " ";
+    cout << "\n";
 
     return 0;
 }
