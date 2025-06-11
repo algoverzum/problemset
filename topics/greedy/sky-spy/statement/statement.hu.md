@@ -1,9 +1,9 @@
 ## Kémműhold
 A Birodalom egyik geostacionárius kémműholdját sikerült a Lázadóknak meghekkelniük. Ez közvetlenül a hírhedt Mos Eisley űrkikötő felett kering, és most a Birodalom tudta nélkül készíthetnek felvételeket az ott parkoló űrhajókról.
 
-A Lázadók hírszerzése megszerezte az információt, hogy $N$ űrhajó fog megjelenni egy-egy meghatározott időintervallumban. A kémműholddal a lehető legkevesebb képet szeretnének készíteni – úgy, hogy mind az $N$ űrhajó szerepeljen legalább egy felvételen. Az $i$-edik űrhajó $A_i$ időpontban érkezik és $B_i$ távozás időpontban távozik. Egy $T$ időpontban készített fényképen akkor és csak akkor lesz rajta az $i$-edik űrhajó, ha $A_i \le T < B_i$.
+A Lázadók hírszerzése megszerezte az információt, hogy $N$ űrhajó fog megjelenni egy-egy meghatározott időintervallumban. A kémműholddal a lehető legkevesebb képet szeretnének készíteni – úgy, hogy mind az $N$ űrhajó szerepeljen legalább egy felvételen. Az $i$-edik űrhajó $A_i$ időpontban érkezik és $B_i$ időpontban távozik. Egy $T$ időpontban készített fényképen akkor és csak akkor lesz rajta az $i$-edik űrhajó, ha $A_i \le T < B_i$.
 
-Határozd meg, hány időpillanatban kell aktiválni a műholdat az űrkikötő megfigyelésére, úgy, hogy minden űrhajó legalább egy alkalommal megfigyelésre kerüljön, amikor valóban ott tartózkodik.
+Határozd meg, hogy mely időpillanatokban kell aktiválni a műholdat az űrkikötő megfigyelésére, úgy, hogy minden űrhajó legalább egy alkalommal megfigyelésre kerüljön, amikor valóban ott tartózkodik!
 
 ### Bemenet
 A bemenet első sorában az érkező űrhajók $N$ száma van. A következő $N$ sor mindegyikében két egész szám van, az $i$-edik sorban $A_i$ és $B_i$, ahol $A_i$ az $i$-edik űrhajó érkezési és $B_i$ a távozási időpontja.
