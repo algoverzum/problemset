@@ -46,6 +46,14 @@ def run(A, B, C, D):
                 X = randint(1, B)
                 Y = randint(max(1, X - C), min(B, X + C))
             print(min(X, Y), max(X, Y))
+    elif D == "disjoint":
+        print(A)
+        X = 0
+        for i in range(A):
+            X += randint(1, C)
+            print(X, end=" ")
+            X += randint(1, C)
+            print(X)
     else:
         assert D < A
         DD = set()
