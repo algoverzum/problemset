@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- A beolvasás után menjünk végig a kódokon egy for ciklussal, és az aktuális elemre mindig számoljuk meg, hogy hányszor szerepel — ezt hogy kell csinálni?
+- 'Egy belső for ciklussal kell csinálni a megszámlálást a szokásos módon: legyen egy számlálónk, ami kezdetben 0, menjünk végig az elemeken és növeljük a számlálót, ha megegyezik az aktuális elemmel).'
+- Ha a számláló értéke 1, akkor rögtön ki is írhatjuk az elemet a kimenetre, így jó sorrendben lesznek.

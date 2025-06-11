@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- After reading the input, go through the codes with a for loop, and for each current element, count how many times it appears — how should this be done?
+- 'Use an inner for loop to count in the usual way: have a counter starting at 0, go through the elements and increment the counter if it matches the current element.'
+- If the counter is 1, we can immediately print the element to the output — this way, they will appear in the correct order.

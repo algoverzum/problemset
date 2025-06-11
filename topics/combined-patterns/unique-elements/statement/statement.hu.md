@@ -1,23 +1,27 @@
 ## Egyedi elemek
-Egy raktárban tárolt árucikkek közül szeretnénk megállapítani, hogy miből maradt már csak egy darab, mivel ezeket akciósan szeretnénk eladni a vásárlóknak. Készíts egy programot, ami képes $N$ db árucikk kódjából megállapítani, hogy melyikek szerepelnek csak egyszer a sorban. Az egyszer szereplő elemeket a bemenetben való előfordulás sorrendjében írd ki.
+Egy raktárban tárolt árucikkek közül szeretnénk megállapítani, hogy melyikből maradt már csak egy darab, mivel ezeket akciósan szeretnénk eladni a vásárlóknak.
+Készíts egy programot, amely $N$ darab árucikk kódja alapján megállapítja, hogy mely kódok szerepelnek **pontosan egyszer** a listában. Az ilyen kódokat a **bemenetben való előfordulás sorrendjében** kell kiírni.
 
 ### Bemenet
-A bemenet első sorában egy egész szám van, az árucikkek száma: $N$
-A bemenet második sorában $N$ darab egész szám van, az árucikkeket jelölő kódok: $A_1, A_2, \ldots, A_N$
+A bemenet első sorában egy egész szám szerepel, az árucikkek száma: $N$.
+A bemenet második sorában $N$ darab egész szám található: $A_1, A_2, \ldots, A_N$ az egyes árucikkek kódjai.
 
 ### Kimenet
-A kimenet első sorába azon árucikkek kódját kell kiírnod, amelyek csak egyszer szerepelnek a kódok listájában. Ezeket szóközökkel elválasztva, a bemenetben való előfordulásukkal azonos sorrendben írd ki. Ha nincs egy ilyen elem sem, akkor maradjon üresen a kimenet.
+A kimenet első sorába kell kiírni azokat az árucikk-kódokat, amelyek **csak egyszer** fordulnak elő a bemenetben.
+A kódokat szóközzel elválasztva, az eredeti bemeneti sorrendjükben kell megjeleníteni.
+Ha nincs egyetlen ilyen kód sem, a kimenet maradjon üres.
 
 ### Korlátok
 * $1 \le N \le 1\,000$
 * $1 \le A_i \le 10\,000$
 
 ### Példa bemenet
-    6
-    2 1 3 3 2 3
+    7
+    4 2 1 3 3 2 3
 
 ### Példa kimenet
-    1
+    4 1
 
 ### A példa magyarázata
-Az 1-es kódú árucikk csak egy alkalommal jelenik meg a sorban, így ezt kiírjuk, míg a 2-es és a 3-as kódú árucikkek többször is szerepelnek a sorban, így ezeket nem írjuk ki.
+A `4` és az `1` kódú árucikkek csak egyszer szerepelnek a listában, így ezek megjelennek a kimenetben.
+A `2` és `3` kódok többször is előfordulnak, ezért ezeket nem írjuk ki.

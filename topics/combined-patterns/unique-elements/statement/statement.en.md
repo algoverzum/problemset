@@ -1,23 +1,25 @@
 ## Unique Elements
-We want to find out which of the items in a warehouse only have one item left, because we want to sell them to customers at a discount. Create a program that can determine from the code of $N$ items which ones are only in the sequence once and write them in the order that they appear in.
+We want to identify which items in a warehouse have only one unit remaining, so we can offer them to customers at a discount.
+Write a program that determines, from a list of $N$ item codes, which ones appear **exactly once**, and prints them **in the order they appear in the input**.
 
 ### Input
-The first line of the input is a single integer, the number of items: $N$
-The second line of the input contains $N$ integers, the codes of each item: $A_1, A_2, \ldots, A_N$
+The first line of the input contains a single integer $N$ — the number of items.
+The second line of the input contains $N$ integers, the codes of each item: $A_1, A_2, \ldots, A_N$.
 
 ### Output
 In the first line of the output, you must print the codes of the items that appear only once in the list of codes. You must print them in the order of occurrence, separated by spaces.
 
 ### Constraints
-* $1 \le N \le 1000$
-* $1 \le A_i \le 10000$
+* $1 \le N \le 1\,000$
+* $1 \le A_i \le 10\,000$
 
 ### Example input
-    6
-    1 2 2 3 3 3
+    7
+    4 2 1 3 3 2 3
 
 ### Example output
-    1
+    4 1
 
 ### Explanation of the example
-The item code 1 appears only once in the sequence, so it is printed, while the item codes 2 and 3 appear several times in the sequence, so they are not printed.
+The item codes `4` and `1` each appear only once in the list, so they are printed.
+Item codes `2` and `3` appear multiple times and are therefore excluded.
