@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Ha minden pozícióról elindulunk és vizsgáljuk, hogy meddig tart az egyezés, az egy $O(n^3)$ megoldás (ahol $n$ a rövidebb string hosszát jelöli). Ez túl lassú $n=2500$ esetén. Próbáljunk meg egy olyan megoldást kitalálni, amiben a kiszámolt részeredményeket fel tudjuk használni a továbbiakban.
+- Használjunk dinamikus programozást. dp[i][j] jelölje az A[i]-ben és B[j]-ben **végződő** leghosszabb közös substring hosszát. Hogy számoljuk ki ezeket az értékeket?
+- Ha A[i] ≠ B[j], akkor dp[i][j]=0. És ha megegyezik ez a két karakter?
+- Ha A[i] = B[j], akkor dp[i][j]=dp[i-1][j-1] + 1. Érdemes úgy csinálni, hogy i=1-től és j=1-től kezdjük a dp táblázat kitöltését, és akkor lehet a 0-adik sorra és oszlopra támaszkodni. Ehhez például az A és B string elejére tehetünk egy-egy karaktert, hogy eltoljuk az indexelést 1-gyel.
+- A végső megoldás a legnagyobb dp[i][j] érték lesz.

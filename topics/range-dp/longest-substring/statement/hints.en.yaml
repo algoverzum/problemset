@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- If we start from every position and check how long the match lasts, that's an $O(n^3)$ solution (where $n$ is the length of the shorter string). This is too slow for $n = 2500$. Let's try to come up with a solution where we can reuse computed partial results.
+- Let's use dynamic programming. Let dp[i][j] denote the length of the longest common substring **ending at** A[i] and B[j]. How do we compute these values?
+- If A[i] ≠ B[j], then dp[i][j] = 0. And what if these two characters are equal?
+- If A[i] = B[j], then dp[i][j] = dp[i-1][j-1] + 1. It's a good idea to start filling the dp table from i = 1 and j = 1, so we can rely on the 0th row and column. To do this, we can prepend a character to the beginning of strings A and B to shift the indexing by 1.
+- The final solution will be the largest value of dp[i][j].
