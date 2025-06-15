@@ -1,4 +1,4 @@
-## Longest Substring
+## Longest Common Substring
 The starship Enterprise received the same message twice ($A$, $B$), but both instances were corrupted during transmission. Your task is to determine the length of the longest contiguous common substring between the two messages. This will help assess the extent of the corruption.
 
 ### Input

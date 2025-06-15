@@ -1,4 +1,4 @@
-## Leghosszabb substring
+## Leghosszabb közös substring
 Az Enterprise kétszer is megkapta ugyanazt az üzenetet ($A$, $B$), de mindkét alkalommal az eredeti üzenet torzult. A feladat az, hogy meghatározzuk a leghosszabb összefüggő közös rész (substring) hosszát. Ez az információ segíthet az üzenetekben keletkezett hibák mértékének felmérésében.
 
 ### Bemenet

@@ -1,9 +1,9 @@
 ---
 # General info
 name: longest-substring
-title: Longest Substring
+title: Longest Common Substring
 title_translations:
-  hu: Leghosszabb substring
+  hu: Leghosszabb közös substring
 
 # Technical info
 memory_limit: 256
