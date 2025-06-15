@@ -1,18 +1,14 @@
-## Klingon Próba
-Egy fiatal klingon harcos arra törekszik, hogy helyet szerezzen magának a Nagytanácsban. A Felemelkedés Szertartásának részeként egy sor harci próbán kell átesnie — mindegyikhez tartozik egy tiszteletérték, amely a próba nehézségét és presztízsét jelzi.
+## Klingon próba
+Egy fiatal klingon harcos arra törekszik, hogy kivívja helyét a Nagytanácsban. A Felemelkedés Szertartásának részeként egy sor harci próbán kell átesnie, amelyek mindegyikéhez egy tiszteletérték tartozik — ez jelzi a próba nehézségét.
 
-Ezeket a próbákat **rögzített sorrendben** kell teljesíteni, ahogyan azt az ősi hagyomány megköveteli.
+A próbák rögzített sorrendben követik egymást. Néhányat kihagyhat, de csak előre haladhat — ha egy próbát kihagyott, ahhoz már nem térhet vissza. A célja, hogy egyre nehezebb, szigorúan növekvő tiszteletértékű próbákból álló sorozatot teljesítsen, és ebből a lehető legtöbbet.
 
-A harcos célja, hogy kiválasszon egy szigorúan növekvő sorrendű részsorozatot — olyat, amely a lehető legnagyobb tiszteletet hozza számára bajtársai körében.
-
-Ha szükséges, kihagyhat néhány próbát, de a sorrendden nem változtathat, nem térhet vissza egy korábbi próbához, ha azt már kihagyta.
-
-A te feladatod, hogy segíts megtalálni a harcos számára a leghosszabb növekvő tiszteletértékű próbasorozatot — vagyis a leghosszabb láncot egyre nagyobb presztízsű próbákból, amelyeket teljesíthet az adott sorrenden belül.
+A feladatod: határozd meg, hogy legfeljebb hány próbát tud így teljesíteni — azaz mi a próbák nehézségi értékeiből képzett leghosszabb szigorúan növekvő részsorozat hossza.
 
 ### Bemenet
-Az első sor egy egész számot tartalmaz: $N$ – az elérhető próbák száma.
+Az első sorban egy egész szám van: $N$ – az elérhető próbák száma.
 
-A második sor $N$ egész számot tartalmaz: $T_1, T_2, \ldots, T_N$ – a próbák tiszteletértékei az adott sorrendben.
+A második sorban $N$ egész szám szerepel: $T_1, T_2, \ldots, T_N$ – a próbák tiszteletértékei az adott sorrendben.
 
 ### Kimenet
 Egyetlen számot kell kiírnod, a leghosszabb növekvő nehézségű próbasorozat hosszát.
@@ -29,8 +25,8 @@ Egyetlen számot kell kiírnod, a leghosszabb növekvő nehézségű próbasoroz
     5
 
 ### A példa magyarázata
-Egy lehetséges leghosszabb növekvő sorozat: $3, 4, 5, 7, 9$
+Egy lehetséges leghosszabb növekvő sorozat: $3, 4, 5, 7, 9$.
 
-Egy másik érvényes sorozat: $3, 4, 6, 7, 9$
+Egy másik érvényes sorozat: $3, 4, 6, 7, 9$.
 
-Mindkettő hossza: 5
+Mindkettő hossza 5.

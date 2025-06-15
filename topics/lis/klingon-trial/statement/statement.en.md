@@ -1,17 +1,13 @@
 ## Klingon Trial
-A young Klingon warrior seeks to earn a seat on the High Council. As part of his Rite of Ascension, he must face a series of battle trials — each with an assigned honor rating representing its difficulty and prestige.
+A young Klingon warrior seeks to earn a seat on the High Council. As part of his Rite of Ascension, he must face a series of battle trials — each with an assigned honor rating representing its difficulty.
 
-These trials are presented in a fixed order, dictated by ancient tradition.
+The trials are given in a fixed order. He may skip some, but must fight in order without going back. His goal is to complete a strictly increasing sequence of trials — choosing battles with rising honor ratings — to gain the greatest respect.
 
-The warrior's goal is to select a **strictly increasing sequence** of trials to complete — one that will earn him the **greatest possible respect** among his peers.
-
-He may skip some trials if necessary, but he cannot fight them out of order, and cannot return to an earlier trial once it has passed.
-
-Your task is to help him find the Longest Increasing Sequence of battle trials by their honor ratings — the longest chain of increasingly prestigious battles he can complete in the given order.
+Your task is to find the length of the longest increasing subsequence of trial difficulties.
 
 ### Input
-The first line of the input contains $N$ - the number of available trials.  
-The second line contains $N$ integers $T_1, T_2, \ldots, T_N$, the difficulty of the trials in the given order. 
+The first line of the input contains $N$ — the number of trials.  
+The second line contains $N$ integers $T_1, T_2, \ldots, T_N$ — the difficulty of the trials in the given order. 
 
 ### Output
 Print a single number, the length of the longest chain of increasingly difficult trials available.
@@ -28,8 +24,8 @@ Print a single number, the length of the longest chain of increasingly difficult
     5
 
 ### Explanation of the example
-One possible longest increasing subsequence is: $3, 4, 5, 7, 9$
+One possible longest increasing subsequence is: $3, 4, 5, 7, 9$.
 
-Another valid one is: $3, 4, 6, 7, 9$
+Another valid one is: $3, 4, 6, 7, 9$.
 
 Both have length 5.

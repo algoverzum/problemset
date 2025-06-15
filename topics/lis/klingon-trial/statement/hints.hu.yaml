@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Számoljuk ki sorban i=1,2,...,n -re, hogy ha az i-edik elemet bevesszük, akkor legfeljebb hány elemet választhatunk ki addig. Vagyis az i-edik elemnél végződő leghosszabb növekvő részsorozat hosszát.
+- Ezt dinamikus programozással tudjuk megtenni. Az aktuális elem előtt közvetlenül egy nála korábbi, kisebb elemnek kell a részsorozatban szerepelnie, és végig tudjuk nézni, hogy azokra az elemekre mekkora az ott végződő leghosszabb növekvő részsorozat hossza. Nyilván a leghosszabbat kell közülük választani.
+- Ha dp[i] jelöli az i-edik elemben végződő leghosszabb növekvő részsorozat hosszát, akkor `dp[i] = 1 + max{dp[j] | t[j] < t[i], j=1..i-1}`. A végső megoldás a legnagyobb érték lesz dp[1], dp[2], ..., dp[n] közül, mivel bárhol végződhet a leghosszabb növekvő részsorozat.

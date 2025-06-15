@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Let's compute, for i = 1, 2, ..., n, the maximum number of elements we can choose if we include the i-th element. That is, the length of the longest increasing subsequence ending at the i-th element.
+- We can do this using dynamic programming. The element right before the current one in the subsequence must be a smaller, earlier element. We can go through those and check the length of the longest increasing subsequence ending there. Naturally, we choose the longest among them.
+- If dp[i] denotes the length of the longest increasing subsequence ending at the i-th element, then `dp[i] = 1 + max{dp[j] | t[j] < t[i], j = 1..i-1}`. The final solution is the maximum of dp[1], dp[2], ..., dp[n], since the longest increasing subsequence can end anywhere.

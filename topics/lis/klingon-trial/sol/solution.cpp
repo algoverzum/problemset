@@ -1,5 +1,6 @@
 // @check-accepted: *
 
+#include <algorithm>
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -22,12 +23,7 @@ int main() {
         }
     }
 
-    int max_length = dp[0];
-    for (int i = 1; i < n; ++i) {
-        max_length = max(max_length, dp[i]);
-    }
-
-    cout << max_length << endl;
+    cout << *max_element(dp.begin(), dp.end()) << endl;
 
     return 0;
 }

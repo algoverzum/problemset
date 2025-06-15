@@ -30,7 +30,26 @@ def run(N, T, R):
             break
         assert eval(row[2:]), row[2:]
 
-    if R == "rand":
+    if R == "inc":
+        print(N)
+        print(*range(1, N + 1))
+    elif R == "dec":
+        print(N)
+        print(*range(N, 0, -1))
+    elif R == "spec":
+        N1 = randint(1, N)
+        N2 = N - N1
+        T1 = sorted([randint(1, T) for i in range(N1)], reverse=True)
+        T2 = sorted([randint(1, T) for i in range(N2)], reverse=True)
+        T = []
+        while len(T) < N:
+            if len(T2) == 0 or len(T1) > 0 and randint(1, N) <= N1:
+                T.append(T1.pop())
+            else:
+                T.append(T2.pop())
+        print(N)
+        print(*T)
+    elif R == "rand":
         if N >= 100:
             N -= randint(0, 10)
         T = [randint(1, T) for i in range(N)]

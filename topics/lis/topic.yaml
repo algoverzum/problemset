@@ -1,9 +1,9 @@
 ---
 id: lis
-name: Lis
+name: Longest Increasing Subsequence
 problems:
   - problem_id: klingon-trial
-    type: REQUIRED
+    type: ENTRY
 prerequisites:
 dependents:
 visualization:
