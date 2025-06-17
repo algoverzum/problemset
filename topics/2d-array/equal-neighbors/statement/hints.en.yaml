@@ -1,0 +1,13 @@
+---
+- It's a good idea to add a 0th and (n+1)th row, and a 0th and (m+1)th column filled with zeros around the number grid. This way, every cell will have all 4 neighbors.
+- Loop through the cells from i = 1 to n and inside that from j = 1 to m, and if the current cell is equal to the one to its left, right, above, or below, increase a counter.
+- cpp: |
+    ```
+    if (s[i][j] == s[i - 1][j] || s[i][j] == s[i + 1][j] ||
+        s[i][j] == s[i][j - 1] || s[i][j] == s[i][j + 1]) { ... }
+    ```
+  py: |
+    ```
+    if (s[i][j] == s[i - 1][j] or s[i][j] == s[i + 1][j] or
+        s[i][j] == s[i][j - 1] or s[i][j] == s[i][j + 1]): ...
+    ```

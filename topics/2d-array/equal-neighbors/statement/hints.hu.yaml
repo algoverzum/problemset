@@ -1,0 +1,13 @@
+---
+- A számtáblázat köré érdemes tenni 0. és n+1. sort, illetve 0. és m+1. oszlopot, amiben csupa 0-k vannak, mivel akkor minden mezőnek meglesz mind a 4 szomszédja.
+- Menjünk végig i=1-től n-ig, azon belül j=1-től m-ig a mezőkön, és ha az adott mező a tőle balra, jobbra, felette vagy alatta lévő mezővel egyenlő, akkor növeljünk egy számlálót.
+- cpp: |
+    ```
+    if (s[i][j] == s[i - 1][j] || s[i][j] == s[i + 1][j] ||
+        s[i][j] == s[i][j - 1] || s[i][j] == s[i][j + 1]) { ... }
+    ```
+  py: |
+    ```
+    if (s[i][j] == s[i - 1][j] or s[i][j] == s[i + 1][j] or
+        s[i][j] == s[i][j - 1] or s[i][j] == s[i][j + 1]): ...
+    ```

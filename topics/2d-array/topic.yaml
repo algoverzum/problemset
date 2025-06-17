@@ -10,6 +10,8 @@ problems:
     type: REQUIRED
   - problem_id: hottest-days
     type: REQUIRED
+  - problem_id: equal-neighbors
+    type: REQUIRED
   - problem_id: more-oxygen
     type: COMPLETION
   - problem_id: better-spaceship
