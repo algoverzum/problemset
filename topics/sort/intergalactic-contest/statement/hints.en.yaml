@@ -1,4 +1,15 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    The first step is to read the data and store it in a format that’s easy to work with. Since each team has three values (number of solved problems, penalty points, and the original ID), the best choice is to use a vector of `array<int, 3>` triplets: `vector<array<int, 3>> teams;`
+  py: |
+    The first step is to read the data and store it in a format that’s easy to work with. Since each team has three values (number of solved problems, penalty points, and the original ID), the best choice is to use a list of tuples: `teams` = $[(A_1, B_1, 1), (A_2, B_2, 2), \ldots, (A_N, B_N, N)]$
+- This can be created using a for loop, appending the read values (and the line number as an ID) to an empty list.
+- |
+  There's still a small issue:
+  * $\bullet$ More $A_i$ is better
+  * $\bullet$ Less $B_i$ is better
+
+  The `sort()` function sorts all parameters in the same order. How can we fix this?
+- By inserting $(-A_i, B_i, i)$ into the list instead of $(A_i, B_i, i)$ during input, so that `sort()` will order them the way we want.
+- cpp: For output, we need the third value of the triplets.
+  py: For output, we need the third value of the tuples. We can use the `end=' '` parameter in the `print()` function.

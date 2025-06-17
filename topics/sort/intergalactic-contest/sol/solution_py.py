@@ -2,13 +2,12 @@
 # @check-accepted: *
 
 n = int(input())
-l = []
+teams = []
 
 for i in range(1, n + 1):
-    item = list(map(int, input().split()))
-    item.append(i)
-    l.append(tuple(item))
+    line = input().split()
+    teams.append((-int(line[0]), int(line[1]), i))
 
-l.sort(key=lambda x: (-x[0], x[1]))
+teams.sort()
 
-print(*[x[2] for x in l])
+print(*[x[2] for x in teams])
