@@ -8,19 +8,14 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    vector<tuple<int, int, int>> v;
+    vector<array<int, 3>> teams(n);
     for (int i = 1; i <= n; i++) {
         int a, b;
         cin >> a >> b;
-        v.push_back({a, b, i});
+        teams.push_back({-a, b, i});
     }
-    sort(v.begin(), v.end(),
-         [](const tuple<int, int, int> &a, const tuple<int, int, int> &b) {
-             if (get<0>(a) != get<0>(b))
-                 return get<0>(a) > get<0>(b);
-             return get<1>(a) < get<1>(b);
-         });
-    for (const auto &[a, b, index] : v) {
+    sort(teams.begin(), teams.end());
+    for (auto [a, b, index] : teams) {
         cout << index << " ";
     }
     cout << "\n";

@@ -1,4 +1,15 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- cpp: |
+    Az első lépés, hogy beolvasd az adatokat és tárold őket egy könnyen kezelhető formában. Mivel minden csapathoz három adat tartozik (megoldott feladatok, büntetőpontok és az eredeti azonosító), a legjobb egy vectort használni, amiben további `array<int, 3>` típusú számhármasok vannak: `vector<array<int, 3>> teams;`
+  py: |
+    Az első lépés, hogy beolvasd az adatokat és tárold őket egy könnyen kezelhető formában. Mivel minden csapathoz három adat tartozik (megoldott feladatok, büntetőpontok és az eredeti azonosító), a legjobb egy listát használni, amiben további tuple-ök vannak: `csapatok` = $[(A_1, B_1, 1), (A_2, B_2, 2), \ldots, (A_N, B_N, N)]$
+- Ezt egy for ciklussal hozzuk létre, az üres listához hozzáadva a beolvasott értékeket (és a sorszámot, mint azonosítót).
+- |
+  Még van egy apró probléma:
+  * $\bullet$ $A_i$-ból a **több** a jobb
+  * $\bullet$ $B_i$-ből a **kevesebb** a jobb
+
+  A `sort()` függvény mindkét paraméter szerint azonosan rendez. Hogyan lehetne ezt a problémát áthidalni?
+- Úgy, hogy $(A_i, B_i, i)$ helyett $(-A_i, B_i, i)$ kerüljön beolvasásnál a listába, így a `sort()` pont úgy rendez, ahogy akartuk.
+- cpp: Kiírásnál a számhármasok harmadik értékeire lesz szükség.
+  py: Kiírásnál a tuple-ök harmadik értékeire lesz szükség. Használhatjuk a `print()`-nél az `end=' '` paramétert.
