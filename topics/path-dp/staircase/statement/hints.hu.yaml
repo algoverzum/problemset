@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Számoljuk ki sorban minden lépcsőfokra, hogy hányféleképpen lehet oda feljutni (dinamikus programozás).
+- Az i. lépcsőfokra az i-1., i-2., ..., i-k. lépcsőfok valamelyikéről léphetünk.
+- dp[i] = dp[i-1] + dp[i-2] + ... + dp[i-k]. Csak figyelni kell arra, hogy elkerüljük a negatív indexelést. A számítás indítható azzal, hogy dp[0]=1, az összes többi érték a képletből adódik.

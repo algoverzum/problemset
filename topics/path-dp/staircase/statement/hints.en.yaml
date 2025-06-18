@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Let's compute how many ways we can reach each step in order (dynamic programming).
+- To reach step `i`, we can come from step `i-1`, `i-2`, ..., or `i-k`.
+- dp[i] = dp[i-1] + dp[i-2] + ... + dp[i-k]. We just need to be careful to avoid negative indexing. The calculation can start with dp[0] = 1, and all other values follow from the formula.

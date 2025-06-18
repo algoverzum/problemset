@@ -2,10 +2,10 @@
 The entrance to the Jedi Temple has a staircase with $N$ steps. A young padawan can jump up to $K$ steps at a time using the Force.
 He goes up to the Temple once each day for training.
 
-Create a program that calculates how many days the padawan can climb the stairs in different ways!
+Write a program that calculates how many days the padawan can climb the stairs in different ways!
 
 ### Input
-The input consists of two integers in a single line: $N, K$, which represent the number of steps and the maximum jump size.
+The input consists of two integers in a single line: $N, K$ - the number of steps and the maximum jump size.
 
 ### Output
 You need to output a single number that gives you the total number of different jumps up to the temple.

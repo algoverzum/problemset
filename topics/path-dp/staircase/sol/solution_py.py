@@ -3,8 +3,8 @@
 
 n, k = [int(x) for x in input().split()]
 
-res = [1]
+dp = [1]
 for i in range(n):
-    res.append(sum(res[-k:]))
+    dp.append(sum(dp[-k:]))
 
-print(res[-1])
+print(dp[-1])
