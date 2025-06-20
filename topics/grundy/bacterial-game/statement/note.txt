@@ -1,0 +1,5 @@
+source:
+https://github.com/google/coding-competitions-archive/tree/main/codejam/2019/round_1c/bacterial_tactics
+
+community archive:
+https://zibada.guru/gcj/

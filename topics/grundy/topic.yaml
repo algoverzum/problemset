@@ -1,0 +1,13 @@
+---
+id: grundy
+name: Grundy
+problems:
+  - problem_id: bacterial-game
+    type: REQUIRED
+prerequisites: []
+dependents: []
+visualization:
+  image_filename: 19.svg
+  position:
+    x: 1550
+    y: 450
