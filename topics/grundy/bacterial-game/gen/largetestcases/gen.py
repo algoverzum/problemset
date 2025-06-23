@@ -1,4 +1,4 @@
-f = open("large.in")
+f = open("alllarge.txt")
 t = int(f.readline())
 for case in range(1, t + 1):
     r, c = map(int, f.readline().split())
