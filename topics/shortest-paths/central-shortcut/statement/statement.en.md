@@ -1,7 +1,7 @@
 ## Central Shortcut
 In the Galactic Republic, there are $N$ planets numbered from $1$ to $N$. Planet $1$ is Coruscant, the capital of the Republic and center of political activity. Due to increasing separatist threats, the Republic has instituted new travel regulations for security purposes.
 
-Under these new regulations, travel between planets is restricted to only two options:
+Under these new regulations, travel between planets is restricted to two options:
 1. Direct travel between neighboring planets (planets with a direct route between them)
 2. Travel via Coruscant (planet $1$) as a central hub
 
