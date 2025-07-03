@@ -1,9 +1,9 @@
-## Money Box
-Tamara pénzt gyűjt az eredetileg üres ládájába. Az első napon 1 érmét tesz bele, a második napon 2 érmét, és így tovább, minden nap eggyel többet, mint előző nap. Azt szeretné tudni, hány nap múlva lesz legalább $N$ érme a  ládában?
+## Persely
+Tamara pénzt gyűjt az eredetileg üres ládájába. Az első napon 1 érmét tesz bele, a második napon 2 érmét, és így tovább, minden nap eggyel többet, mint előző nap. Azt szeretné tudni, hány nap múlva lesz legalább $N$ érme a ládában?
 
 
 ### Bemenet
-A bemenet első sorában $N$ található – a kívánt számú érme. 
+A bemenet első sorában $N$ található – a kívánt érmék száma. 
 
 ### Kimenet
 Írd ki a legkisebb egész $K$ számot, amelyre igaz, hogy $K$ nap múlva legalább $N$ érméje lesz.
