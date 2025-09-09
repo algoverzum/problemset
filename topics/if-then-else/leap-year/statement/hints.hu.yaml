@@ -1,0 +1,4 @@
+---
+- Ellenőrizd, hogy osztható-e 4-gyel.
+- Ha igen, nézd meg, hogy osztható-e 100-zal is.
+- Ha osztható 100-zal, akkor csak akkor szökőév, ha 400-zal is osztható.

@@ -18,6 +18,8 @@ problems:
     type: COMPLETION
   - problem_id: odd-sum
     type: REQUIRED
+  - problem_id: leap-year
+    type: REQUIRED
 prerequisites:
   - input-variables
 dependents:
