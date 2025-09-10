@@ -3,7 +3,7 @@
 name: leap-year
 title: Leap Year
 title_translations:
-  hu: Leap Year
+  hu: Szökőév
 
 # Technical info
 memory_limit: 256
