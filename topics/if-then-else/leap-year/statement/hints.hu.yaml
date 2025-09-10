@@ -1,4 +1,11 @@
 ---
 - Ellenőrizd, hogy osztható-e 4-gyel.
-- Ha igen, nézd meg, hogy osztható-e 100-zal is.
+  Ha nem, akkor biztosan nem szökőév.
+- Ezt a
+  ```year % 4 != 0```
+  feltétel vizsgálja.
+- Ha osztható 4-gyel, akkor nézd meg, hogy osztható-e 100-zal is.
+  Ha nem, akkor biztosan szökőév.
 - Ha osztható 100-zal, akkor csak akkor szökőév, ha 400-zal is osztható.
+- Abból, hogy egy szám osztható 4-gyel és 100-zal is, következik-e, hogy osztható 400-zal is?
+- Nem! Példa: 100 osztható 4-gyel és 100-zal is, de nem osztható 400-zal.
