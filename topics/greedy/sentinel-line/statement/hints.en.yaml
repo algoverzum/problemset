@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Where should we place the **first** generator? (Here, "first" means the leftmost one.)
+- The first generator must cover the first station, but within its range it's best to push it as far as possible to also cover as many other stations as possible. (It's not hard to reason that we can only gain by moving it further, as long as we stay within the H radius.)
+- So, choose the last station that is at most H distance from the first, and place a generator there. How would you continue from here?
+- Next, check which station is the first uncovered one, and from there we can apply the same logic as at the beginning. Place the next generator at a station that is still within range of this first uncovered station, and among these options choose the latest possible one.
+- Repeat this logic iteratively. Think carefully about how to implement it so that the code becomes short and elegant.

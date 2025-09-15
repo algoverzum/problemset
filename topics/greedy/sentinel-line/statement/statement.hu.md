@@ -1,23 +1,21 @@
 ## Védelmi vonal
-A Föderáció a Romaulán határon egy egyenes mentén $N$ megfigyelő állomást üzemeltet. A biztonságuk fokozása érdekében új nagy teljesítményű álcázó védőrendszer telepítését határozták el a régiek helyére. Egy új álca-generátor $H$ sugarú lefedettséget biztosít, elrejtve minden állomást a hatósugáron belül a kíváncsi szemek elől (pl. Romaulán Tal Shiar vagy a Klingon Hírszerzés).
+A Föderáció egy egyenes határvonal mentén $N$ megfigyelő állomást üzemeltet. Most álcázó generátorokat szeretnénk telepíteni, amelyek $H$ sugarú körben elrejtik az állomásokat. Az álcázó generátorokat **csak a megfigyelő állomások helyére lehet telepíteni**.
 
-Minden régi álca-generátort kidobunk, de nem kell mindegyik helyére újat vennünk, viszont csak valamelyik megfigyelő állomás helyén lehet beépíteni őket.
+A feladat: válaszd ki a szükséges állomásokat úgy, hogy **minimális számú álcázó generátor** lefedje az összes állomást.
 
-Például, ha az állomások a $0, 10, 30, 40, 60, 85, 100$ koordinátájú pontokban vannak, és az új generátorok $20$ sugarú körön belül álcáznak mindent, akkor elég hármat telepíteni, például a $10$, $60$ és $100$ állomásoknál. (Csak állomások lehetnek a körök középpontjai, és van több más lehetőség is.)
+Például, ha az állomások koordinátái $0, 10, 30, 40, 60, 85, 100$, és a generátorok $20$ egység sugarúak, akkor elég három generátor: a 10., 60. és 100. koordinátánál (de több megoldás is lehetséges).
 
 ![](tex/abra.png)
 
-Készíts egy programot, amely meghatározza a szükséges új álca-generátorok minimális számát és kijelöli, mely pontokra kell ezeket telepíteni, hogy minden megfigyelő állomás az egyik álcázó mező védelmén belül helyezkedjen el.
-
 ### Bemenet
-A bemenet első sorában két szám van: $N, H$ - a megfigyelő állomások száma és az új álca-generátorok sugara.
+A bemenet első sorában két szám van: $N, H$ - a megfigyelő állomások száma és a generátorok sugara.
 
-A második sorban $N$ szám következik $A_1, A_2, \ldots, A_N$ - a megfigyelő állomások távolságai az elsőtől ($A_i < A_{i+1}$).
+A második sorban $N$ szám szerepel: $A_1, A_2, \ldots, A_N$ - a megfigyelő állomások távolságai az elsőtől ($A_1 = 0, A_i < A_{i+1} (1 \le i \le N-1$).
 
 ### Kimenet
-A kimenet első sorába egyetlen számot kell kiírnod $M$-et, a szükséges új álca-generátorok minimális számát.
+A kimenet első sorában egyetlen szám legyen: $M$, a szükséges generátorok minimális száma.
 
-A második sor pontosan $M$ egész számot tartalmazzon, sorrendben azon megfigyelő állomások sorszámait, ahova új álca-generátort kell telepíteni, hogy minden megfigyelő állomás hatótávolságon belül legyen!
+A második sor pontosan $M$ egész számot tartalmazzon, sorrendben azon megfigyelő állomások sorszámait, ahova generátort kell telepíteni.
 
 Több megoldás esetén bármelyik megadható.
 
@@ -35,4 +33,5 @@ Több megoldás esetén bármelyik megadható.
     2 5 7
 
 ### A példa magyarázata
-Egy lehetséges megoldás a 2., 5. és 7. állomásokat használni. Van másik megoldás is, például lehet használni helyettük az 1., 4. és 6. állomásokat.
+Az álcázó generátorokat a 2., 5. és 7. állomásokhoz telepítve minden állomás lefedett. Más kombinációk is lehetségesek, pl. 1., 4., 6. állomások.
+

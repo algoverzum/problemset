@@ -1,25 +1,23 @@
 ## Sentinel Line
-The Federation operates $N$ observation stations along a straight line on the Romulan border. To enhance their security, they have decided to install new high-performance cloaking generators to replace the old ones. A new cloaking generator provides coverage within a radius of $H$, concealing all stations within this range from prying eyes (e.g., Romulan Tal Shiar or Klingon Intelligence).
+The Federation operates $N$ observation stations along a straight border line. We want to install cloaking generators that hide stations within a radius of $H$. Cloaking generators **can only be placed at the locations of observation stations**.
 
-All old cloaking generators will be discarded, but it is not necessary to replace each one. However, new generators can only be installed at the location of an observation station.
+Task: select stations to install generators so that **all stations are covered with the minimal number of generators**.
 
-For example, if the stations are located at the points with coordinates $0, 10, 30, 40, 60, 85, 100$, and the new generators cloak everything within a radius of $20$, then it is enough to install three of them, for instance at the $10$, $60$, and $100$ stations. (Only stations can be the centers of the circles, and there are several other possible solutions as well.)
+For example, if the station coordinates are $0, 10, 30, 40, 60, 85, 100$, and generators have a radius of $20$, then three generators are enough: at positions 10, 60, and 100 (other solutions are also possible).
 
 ![](tex/abra.png)
 
-Write a program that determines the minimum number of new cloaking generators required and specifies the stations where they should be installed so that every observation station falls within the range of at least one new cloaking field.
-
 ### Input
-The first line of the input contains two integers: $N, H$ - the number of observation stations and the radius of a new cloaking generator.
+The first line contains two numbers: $N$ and $H$ — the number of observation stations and the generator radius.
 
-The second line contains $N$ integers $A_1, A_2, \ldots, A_N$ - the distances of the observation stations from the first one ($A_i < A_{i+1}$).
+The second line contains $N$ numbers: $A\_1, A\_2, \ldots, A\_N$ — the distances of the observation stations from the first one ($A\_1 = 0$, $A\_i < A\_{i+1}$ for $1 \le i \le N-1$).
 
 ### Output
-The first line of the output should contain a single integer $M$ - the minimum number of new cloaking generators required.
+The first line should contain a single number: $M$ — the minimal number of generators required.
 
-The second line should contain exactly $M$ integers in order, the indices of the observation stations where new cloaking generators should be installed, so that all observation stations are within range of at least one!
+The second line should contain exactly $M$ integers, in order, representing the indices of the observation stations where generators should be installed.
 
-If multiple solutions exist, any of them may be given.
+If multiple solutions exist, any of them is acceptable.
 
 ### Constraints
 * $1 \le N \le 10^5$
@@ -35,4 +33,4 @@ If multiple solutions exist, any of them may be given.
     2 5 7
 
 ### Explanation of the example
-One possible solution is to use stations 2, 5, and 7. Another valid option could be to use stations 1, 4, and 6 instead.
+Installing cloaking generators at stations 2, 5, and 7 covers all stations. Other combinations are also possible, e.g., stations 1, 4, and 6.

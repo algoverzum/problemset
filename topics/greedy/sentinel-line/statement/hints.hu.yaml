@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Hova érdemes tenni az **első** generátort? (Itt az első a legbaloldalabbit jelenti.)
+- Az első generátornak le kell fednie az első állomást, viszont a hatósugáron belül minél távolabb érdemes tolni, hogy még több másik állomást is lefedjen. (Nem nehéz végiggondolni, hogy csak jobban járhatunk, hogy ha távolabb toljuk, amíg belül vagyunk a H hatótávon).
+- Válasszuk tehát az utolsó olyan állomást, ami még legfeljebb H távolságra van az elsőtől, és oda tegyünk egy generátort. Ezután hogy folytatnád?
+- Nézzük meg, hogy melyik állomás lesz az első lefedetlen, és innentől kezdve ugyanazt elmondhatjuk, mint az elején. Olyan helyre kell tenni a következő generátort, ami ehhez az első lefedetlen állomáshoz képest még hatósutáron belül van, ezen lehetőségek közül pedig a legkésőbbire.
+- Ugyanezt a logikát kell ismételni. Gondold át alaposan, hogyan érdemes leprogramozni, hogy szép rövid megoldás szülessen.
