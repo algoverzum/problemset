@@ -12,6 +12,8 @@ problems:
     type: REQUIRED
   - problem_id: sky-spy
     type: REQUIRED
+  - problem_id: dices
+    type: REQUIRED
 prerequisites:
   - combined-patterns
 dependents: []

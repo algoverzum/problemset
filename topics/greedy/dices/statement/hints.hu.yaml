@@ -1,0 +1,4 @@
+---
+- Vegyük észre, hogy ha például egy 6 oldalú kockával választjuk a 2-est, és egy 4 oldalú kockával választjuk a 3-ast, akkor ugyanezt fordítva is megtehettük volna: a 2-est a 4 oldalú kocka adja, a 3-ast pedig a 6 oldalú.
+- Azaz feltételezhetjük, hogy a kockákat az oldalszámuk szerinti növekvő sorrendben rendeztük. A legkisebb kockával hozzuk létre az 1-est, a következővel a 2-est, és így tovább.
+- Ezt a módszert moho (greedy) algoritmusnak nevezzük.
