@@ -18,6 +18,8 @@ problems:
     type: REQUIRED
   - problem_id: interstellar-olympics
     type: REQUIRED
+  - problem_id: turbo-sort
+    type: REQUIRED
 prerequisites:
   - array
 dependents: []

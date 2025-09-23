@@ -1,0 +1,21 @@
+---
+- cpp: Rendezés...
+  py: Rendezéshez használjuk a lista.sort() vagy a sorted(lista) parancsokat.
+- py: Ha a megoldasod túl lassú, akkor mit lehet csinálni?
+- py: |
+    Függvényként megírni, a lokális változók használata globálisak helyett gyorsabb...
+    ```
+    def main():
+        ide jön a programod
+
+    main()
+    ```
+- py: használj lista generátort, az gyorsabb, pl.
+    ```
+    nums = [int(input()) for i in range(t)]
+    ```
+- gyorsabb IO
+    ```
+    import sys
+    input = sys.stdin.readline
+    ```
