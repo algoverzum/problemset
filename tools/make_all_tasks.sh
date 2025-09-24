@@ -11,7 +11,7 @@ do
             if [ -d "$subdir" ]; then
                 cd "$subdir"
                 echo "$subdir"
-                task-maker-rust 
+                sudo task-maker-rust 
                 cd ..
             fi
         done
