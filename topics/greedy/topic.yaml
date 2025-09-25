@@ -14,6 +14,8 @@ problems:
     type: REQUIRED
   - problem_id: dices
     type: REQUIRED
+  - problem_id: houses
+    type: REQUIRED
 prerequisites:
   - combined-patterns
 dependents: []
