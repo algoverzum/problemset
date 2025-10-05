@@ -1,0 +1,3 @@
+---
+- cpp: A bemenő adatok egészek, így az osztás (`/`) egészhányadost ad, és lekérdezhető a maradék is (`%`).
+  py: A bemenő adatok egészek, így az osztás (`//`) egészhányadost ad, és lekérdezhető a maradék is (`%`).

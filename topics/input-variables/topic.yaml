@@ -1,24 +1,26 @@
 id: input-variables
 name: Input and Variables
 problems:
-- problem_id: global-warming
-  type: ENTRY
-- problem_id: total-fruits
-  type: REQUIRED
-- problem_id: garden
-  type: REQUIRED
-- problem_id: fruit-sharing
-  type: REQUIRED
-- problem_id: tens-digit
-  type: OPTIONAL
-- problem_id: pingpong-match-length
-  type: COMPLETION
-- problem_id: duration
-  type: EXTRA
+  - problem_id: global-warming
+    type: ENTRY
+  - problem_id: total-fruits
+    type: REQUIRED
+  - problem_id: garden
+    type: REQUIRED
+  - problem_id: fruit-sharing
+    type: REQUIRED
+  - problem_id: tens-digit
+    type: OPTIONAL
+  - problem_id: pingpong-match-length
+    type: COMPLETION
+  - problem_id: duration
+    type: EXTRA
+  - problem_id: rolling-cigarette
+    type: REQUIRED
 prerequisites:
- - output-operators
+  - output-operators
 dependents:
- - if-then-else
+  - if-then-else
 visualization:
   image_filename: 2.svg
   position:

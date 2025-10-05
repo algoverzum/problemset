@@ -1,0 +1,2 @@
+---
+- To form a valid triangle, the triangle inequality must hold for all three sides: $A + B > C$, $A + C > B$, $B + C > A$.

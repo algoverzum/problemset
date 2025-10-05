@@ -1,0 +1,7 @@
+- |
+  The tens digit is the second from the back. Idea: remove the last digit, then take the last digit of the result.
+- The elimination of the last digit can be done with one of the basic operations. To read out the last digit, you need an operation that is not a basic operation, but appeared previously.
+- cpp: The last digit of a number n can be removed with the statement `n = n / 10;`. And to get the last digit, you need to take a remainder, what kind of remainder?
+  py: The last digit of a number n can be removed with the statement `n = n // 10`. And to get the last digit, you need to take a remainder, what kind of remainder?
+- The last digit of a number n can be obtained by the operation `n % 10`.
+- If you already have the second-to-last digit, you only need its parity, which is given by `n % 2`.

@@ -20,6 +20,12 @@ problems:
     type: REQUIRED
   - problem_id: leap-year
     type: REQUIRED
+  - problem_id: tens-digit-parity
+    type: REQUIRED
+  - problem_id: rock-paper-scissors
+    type: REQUIRED
+  - problem_id: triangle
+    type: REQUIRED
 prerequisites:
   - input-variables
 dependents:
