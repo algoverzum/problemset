@@ -6,7 +6,7 @@ A bemenet első sorában egy egész szám van: $A$.
 A bemenet második sorában egy egész szám van: $B$.
 
 ### Kimenet
-A kimenet első sorában az A és B közötti összes 7-tel osztható egész számot kell kiírnod, növekvő sorrendben, külön sorokba.
+A kimenetre az A és B közötti összes 7-tel osztható egész számot kell kiírnod, növekvő sorrendben, külön sorokba.
 
 ### Korlátok
 * $1 \le A \le B \le 1000$
