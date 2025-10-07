@@ -18,3 +18,7 @@
 1      1000   8
 1      1000   9
 1      1000   10
+#COPY: gen/testcases/input1.txt
+#COPY: gen/testcases/input2.txt
+#COPY: gen/testcases/input3.txt
+#COPY: gen/testcases/input4.txt
