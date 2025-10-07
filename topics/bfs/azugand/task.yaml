@@ -25,7 +25,7 @@ outfile: ''
 difficulty: null
 syllabuslevel: 5
 num_processes: null
-user_io: null
+user_io: std_io
 score_mode: max_subtask
 token_mode: disabled
 public_testcases: all
