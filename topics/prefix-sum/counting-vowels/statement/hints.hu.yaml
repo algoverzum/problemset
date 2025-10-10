@@ -1,0 +1,6 @@
+---
+- Ha minden $i,j$-re egy for ciklussal végignézzük a betűket, az túl lassú.
+- Tároljuk el egy `prefix` tömbben azt, hogy egy adott karakter előtt hány mássalhangzó van?
+- azaz `prefix[i]` megadja, hogy `S[i]` előtt hány mássalhangzó van.
+- Ezt a `prefix` tömbböt létrehozhatjuk mialatt `S` betűin végigmegyünk.
+- Egy `i, j` kérdésre a válasz `prefix[j] - prefix[i-1]`

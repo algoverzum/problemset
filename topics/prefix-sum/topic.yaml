@@ -6,6 +6,8 @@ problems:
     type: ENTRY
   - problem_id: heroes
     type: REQUIRED
+  - problem_id: counting-vowels
+    type: REQUIRED
 prerequisites:
   - dummy-topic
   # - 2d-array
