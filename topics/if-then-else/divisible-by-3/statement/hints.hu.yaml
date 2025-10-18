@@ -1,0 +1,5 @@
+---
+- Az `N % 3` utasítással kaphatjuk meg az $N$ szám 3-mal való osztási maradékát. Ha `N % 3` értéke 0 akkor $N$ osztható hárommal, különben nem.
+- cpp: Mit csinál az `if (N % 3 == 0) { cout << 1; }` kódrészlet? Mi legyen az `else` ágban?
+  py: |
+    Mit csinál az `if N % 3 == 0: print(1)` kódrészlet? Mi legyen az `else` ágban?

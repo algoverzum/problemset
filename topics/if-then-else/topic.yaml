@@ -26,6 +26,10 @@ problems:
     type: REQUIRED
   - problem_id: triangle
     type: REQUIRED
+  - problem_id: sign
+    type: REQUIRED
+  - problem_id: divisible-by-3
+    type: REQUIRED
 prerequisites:
   - input-variables
 dependents:
