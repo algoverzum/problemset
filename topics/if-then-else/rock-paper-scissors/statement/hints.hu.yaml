@@ -1,5 +1,11 @@
 ---
-- Összesen hány lehetőség van?
-- 9
-- Összesen lényegesen különböző eset van?
-- 3 (1, 2, 0)
+- cpp: A bemenetet két string típusú változóba kell beolvasnunk, hiszen szövegekről van szó. Az == operátorral tudjuk megvizsgálni, hogy megegyezik-e egy adott szóval, a szót dupla idézőjelek közé írva, pl. `if (tipp1 == "papir")`.
+  py: Két sor szöveget kell beolvasnunk. Egy sor szöveget az `tipp1 = input()` paranccsal tudunk beolvasni. Az == operátorral tudjuk megvizsgálni, hogy megegyezik-e egy adott szóval, a szót idézőjelek közé írva, pl. `if tipp1 == "papir"`.
+- Egy összetett if utasítást érdemes írni, aszerint, hogy mi lett az eredmény. Hogy tudod egy feltételben megfogalmazni azt, hogy az első játékos nyert?
+- cpp: Használj logikai és (`&&`) és vagy (`||`) műveleteket.
+  py: Használj logikai és (`and`) és vagy (`or`) műveleteket.
+- cpp: |
+    `if (tipp1 == "ollo" && tipp2 == "papir" || tipp1 == "ko" && tipp2 == "ollo" || tipp1 == "papir" && tipp2 == "ko")`
+  py: |
+      `if tipp1 == "ollo" and tipp2 == "papir" or tipp1 == "ko" and tipp2 == "ollo" or tipp1 == "papir" and tipp2 == "ko":`
+- Döntetlen pedig akkor van, ha a két tipp megegyezik. Egyébként a második játékos nyer.
