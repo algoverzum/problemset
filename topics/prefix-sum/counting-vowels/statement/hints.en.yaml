@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- If we check every letter with a for loop for all $i,j$, it will be too slow, since we perform around $10^10$ operations in worst case.
+- Let's store in a `prefix` array how many vowels there are before a given character, that is, `prefix[i]` gives the number of vowels before `S[i]`. Note that if the length of `S` is `n`, then the `prefix` array should have `n+1` elements, indexed from 0 to `n`, and the `n`th element will be the total number of vowels in `S`.
+- We can create this `prefix` array while iterating through the letters of `S`. How can we use this to answer the queries?
+- For a query `i, j`, the answer is `prefix[j] - prefix[i-1]`.

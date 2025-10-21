@@ -1,6 +1,6 @@
 ## Counting Vowels
 You are given a string $S$ consisting of lowercase English letters.
-You are also given $Q$ queries (intervals), each containing two integers: $i$ and $j$ ($1 \leq i \leq j \leq |S|$).
+You are also given $Q$ queries (intervals), each containing two integers: $i$ and $j$ ($1 \leq i \leq j \leq |S|$). Here $|S|$ denotres the length of string $S$.
 
 For each query, determine how many vowels are in the substring of $S$ between the $i$-th and $j$-th characters (inclusive).
 
@@ -18,11 +18,8 @@ For each query, print a single line containing the number of vowels in the given
 
 ### Constraints
 * $1 \le |S| \le 10^5$
-
 * $S$ consists of lowercase English letters
-
 * $1 \le Q \le 10^5$
-
 * $1 \leq i \leq j \leq |S|$ for every query
 
 ### Example input

@@ -1,8 +1,8 @@
 ## Magánhangzók számlálása
-Adott egy $S$ sztring, amely kisbetűs angol betűket tartalmaz.
-Továbbá adott $Q$ darab kérdés (intervallum), mindegyik két egész számot tartalmaz: $i$ és $j$ ($1 \leq i \leq j \leq |S|$).
+Adott egy $S$ string, amely csak angol kisbetűket tartalmaz.
+Továbbá adott $Q$ darab kérdés (intervallum), mindegyik két egész számot tartalmaz: $i$ és $j$ ($1 \leq i \leq j \leq |S|$). Itt $|S|$ az $S$ string hosszát jelöli.
 
-Minden kérdésre meg kell határozni, hogy az $S$ sztring $i$-edik és $j$-edik karakterei között (beleértve mindkettőt) hány magánhangzó található.
+Minden kérdésre meg kell határozni, hogy az $S$ string $i$-edik és $j$-edik karakterei között (beleértve mindkettőt) hány magánhangzó található.
 
 A magánhangzók: a, e, i, o, u.
 
