@@ -1,0 +1,4 @@
+---
+- Az utolsó számjegyet az `n` 10-zel osztásának a maradéka adja.
+- while() ciklust használva csak annyiszor hajtódik végre a ciklus, ahány jegyű a szám.
+- cpp: az `n` int típusa helyett `long int`, vagy `long long int` használatával némileg növelhető a számjegyek száma (<20 számjegy).

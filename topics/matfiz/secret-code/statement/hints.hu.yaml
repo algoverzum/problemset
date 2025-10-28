@@ -1,0 +1,4 @@
+---
+- Meg kell határozni, hogy adott n esetén mekkora legnagyobb szám, ameddig vizsgálni kell a számokat.
+- Csak az első ilyen tulajdonságú szám kell, érdemes bevezetni ennek "figyelésére" egy logikai típusú változót.
+- Ha nincs ilyen, akkor a darabszám 0

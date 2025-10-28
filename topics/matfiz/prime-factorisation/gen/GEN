@@ -1,0 +1,22 @@
+# A     B       S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+
+# Subtask 2: 1 <= N <= 10^5
+#ST: 100
+#STNAME: all
+10     10     1
+100    100    2
+1      100    3
+1      100    44
+1      2000   5
+1      10000  66
+1      100000 7
+1      100000 8
+1      100000 9
+1      100000 10
+100000 100000 11
+99991  99991  12

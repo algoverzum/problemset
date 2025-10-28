@@ -1,0 +1,6 @@
+---
+- TODO
+- cpp: Két ciklusra van szükség, az első (külső) ciklus az aktuális sort adja meg és hány csillagot kell kiírni az adott sorban. A belső ciklus az adott sorban kiírandó csillag sorszámát adja meg.
+  py: A csillag-háromszög felső részéhez egy for ciklus kell, a ciklus változó az aktuális sorban szereplő csillagok számát adja meg.
+- cpp: A csillag-háromszög alsó részét egy újabb for ciklus párral tudjuk kirajzolni, de a külső ciklus csökkenő lesz, hiszen most egyre kevesebb csillagot kell kiírni.
+  py: A csillag-háromszög alsó részét egy újabb for ciklussal tudjuk kirajzolni, de a ciklus csökkenő lesz, hiszen most egyre kevesebb csillagot kell kiírni.

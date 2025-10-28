@@ -1,0 +1,16 @@
+---
+# General info
+name: stars
+title: Stars
+title_translations:
+  hu: Csillagok
+
+# Technical info
+memory_limit: 256
+time_limit: 1.0
+infile: ""
+outfile: ""
+
+# Other stuff
+score_mode: max_subtask
+feedback_level: full

@@ -1,0 +1,5 @@
+---
+- Az egész típusú `i` legyen az a változó, amellyel osztva a beolvasott számot, vizsgáljuk, hogy osztható-e vele.
+- az `i` kezdeti értéke: 2.
+- ha `i` osztó, akkor elosztjuk `n`-et `i`-vel (egészosztás)
+- Ha `n` még nem 1, akkor kiírjuk az `i*`-ot, egyébként `i`-t.

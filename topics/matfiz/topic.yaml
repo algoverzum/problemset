@@ -1,0 +1,26 @@
+---
+id: matfiz.org
+name: matfiz
+problems:
+  - problem_id: even-digits-sum
+    type: REQUIRED
+  - problem_id: perfect-number
+    type: REQUIRED
+  - problem_id: stars
+    type: REQUIRED
+  - problem_id: lnko
+    type: REQUIRED
+  - problem_id: prime-factorisation
+    type: REQUIRED
+  - problem_id: secret-code
+    type: REQUIRED
+prerequisites: []
+dependents: []
+visualization:
+  image_filename: 19.svg
+  position:
+    x: 1500
+    y: 400
+
+# Notes:
+# This topic was added temporarily, consider changing or removing it.
