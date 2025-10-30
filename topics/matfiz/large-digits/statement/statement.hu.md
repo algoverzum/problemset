@@ -1,6 +1,6 @@
 ## Nagy jegyek
 Egy $n$ egész szám esetén legyen $S(n)$ az $n$ számjegyeinek összege. Például $S
-(123)=1+2+3=$.
+(123)=1+2+3=6$.
 
 Adott két háromjegyű egész szám, $A$ és $B$, határozd meg az $S(A)$ és $S(B)$ közül a nagyobbat.
 
