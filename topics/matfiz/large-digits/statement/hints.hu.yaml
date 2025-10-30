@@ -1,0 +1,5 @@
+---
+- Milyen művelettel tudod megkapni egy háromjegyű számból az első, középső, utolsó jegyét?
+- cpp: Mit csinálnak ezek? `a / 100, (a / 10) % 10, a % 10`
+  py: Mit csinálnak ezek? `a // 100, (a // 10) % 10, a % 10`
+- Add össze ezeket mindkét számra, majd `if`-fel nézd meg, hogy melyik nagyobb: írd ki azt.

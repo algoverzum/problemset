@@ -1,9 +1,9 @@
 ---
 # General info
-name: lnko
-title: Greatest common divisor
+name: large-digits
+title: Large Digits
 title_translations:
-  hu: Legnagyobb közös osztó
+  hu: Nagy jegyek
 
 # Technical info
 memory_limit: 256

@@ -1,9 +1,9 @@
 ---
 # General info
-name: lnko
-title: Greatest common divisor
+name: buying-sweets
+title: Buying Sweets
 title_translations:
-  hu: Legnagyobb közös osztó
+  hu: Édesség vásárlás
 
 # Technical info
 memory_limit: 256

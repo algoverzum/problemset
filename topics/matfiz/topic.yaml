@@ -14,6 +14,10 @@ problems:
     type: REQUIRED
   - problem_id: secret-code
     type: REQUIRED
+  - problem_id: large-digits
+    type: REQUIRED
+  - problem_id: buying-sweets
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:
