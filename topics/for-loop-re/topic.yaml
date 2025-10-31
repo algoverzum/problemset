@@ -14,6 +14,10 @@ problems:
     type: REQUIRED
   - problem_id: multiplication-table
     type: COMPLETION
+  - problem_id: arrowhead
+    type: REQUIRED
+  - problem_id: chinese-remainder
+    type: REQUIRED
 prerequisites:
   - for-loop
 dependents: []

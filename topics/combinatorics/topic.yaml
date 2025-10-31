@@ -1,0 +1,16 @@
+---
+id: combinatorics
+name: Kombinatorika
+problems:
+  - problem_id: islands
+    type: REQUIRED
+prerequisites: []
+dependents: []
+visualization:
+  image_filename: 19.svg
+  position:
+    x: 1500
+    y: 400
+
+# Notes:
+# This topic was added temporarily, consider changing or removing it.

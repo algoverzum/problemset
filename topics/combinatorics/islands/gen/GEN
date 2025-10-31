@@ -1,0 +1,30 @@
+# A     B       S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+#COPY: statement/input1.txt
+
+# Subtask 2: 1 <= N <= 2000
+#ST: 50
+#STNAME: small
+#COPY: testcases/in.1
+#COPY: testcases/in.2
+#COPY: testcases/in.3
+#COPY: testcases/in.4
+#COPY: testcases/in.5
+#COPY: testcases/in.6
+#COPY: testcases/in.7
+#COPY: testcases/in.8
+#COPY: testcases/in.9
+#COPY: testcases/in.10
+#COPY: testcases/in.11
+#COPY: testcases/in.12
+#COPY: testcases/in.13
+
+# Subtask 2: 1 <= N <= 20000
+#ST: 50
+#STNAME: all
+#COPY: testcases/in.14
+#COPY: testcases/in.15

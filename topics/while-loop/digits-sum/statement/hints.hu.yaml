@@ -1,0 +1,7 @@
+---
+- Az utolsó számjegyet az `n` 10-zel osztásának a maradéka adja.
+- Azaz `n % 10`
+- cpp: n / 10 levágja az n szám utolsó jegyét
+  py: n // 10 levágja az n szám utolsó jegyét
+- while ciklust használjunk, aminek a belsejében mindig az utolsó jegy értékét hozzáadjuk a ciklus előtt létrehozott változóhoz, és levágjuk az utolsó jegyet.
+- A while ciklust addig ismételjük, amíg `n > 0`
