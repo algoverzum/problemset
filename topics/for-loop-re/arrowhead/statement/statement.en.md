@@ -6,7 +6,7 @@ The pattern first contains an increasing number of stars from $1$ up to $N$ in e
 The input consists of a single integer $N$, the number of stars in the middle line. 
 
 ### Output
-Print the star pattern (arrowhead) as shown in the examples.
+Print the star pattern (arrowhead) as shown in the example.
 
 ### Constraints
 * $1 \le N \le 40$

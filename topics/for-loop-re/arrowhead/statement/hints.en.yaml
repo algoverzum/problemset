@@ -1,4 +1,13 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Read the value of $N$ into a variable. Use a `for` loop to go through the first $N$ lines, and print each line as you go.
+- cpp: |
+    The loop can look like this: `for (int i = 1; i <= N; i++) { ... }`
+  py: |
+    The loop can look like this: `for i in range(1, N+1):`
+- cpp: Inside the loop, use another `for` loop to print each line (`for (int j = 1; j <= i; j++) { ... }`).
+  py: Inside the loop, print $i$ asterisks (`*`) in one line, which can be done by multiplying a string.
+- The lower part of the arrowhead can be printed in the same way.
+- cpp: |
+    The outer loop can look like this: `for (int i = N-1; i > 0; i--) { ... }`
+  py: |
+    The loop can look like this: `for i in range(N-1, 0, -1):`

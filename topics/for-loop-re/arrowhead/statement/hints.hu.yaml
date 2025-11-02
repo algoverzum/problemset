@@ -4,10 +4,10 @@
     A ciklus így nézhet ki: `for (int i = 1; i <= N; i++) { ... }`
   py: |
     A ciklus így nézhet ki: `for i in range(1, N+1):`
-- cpp: A cikluson belül egy másik `for` ciklussal csináljuk egy-egy sor kiírását.
+- cpp: A cikluson belül egy másik `for` ciklussal csináljuk egy-egy sor kiírását (`for (int j = 1; j <= i; j++) { ... }`).
   py: A cikluson belül egy sorba kell kiírni $i$ darab `*`-ot, amit egy stringként megkaphatunk szorzással.
 - A nyílhegy alját ugyanígy kiírhatjuk.
 - cpp: |
-    A ciklus így nézhet ki: `for (int i = N-1; i > 0; i--) { ... }`
+    A külső ciklus így nézhet ki: `for (int i = N-1; i > 0; i--) { ... }`
   py: |
     A ciklus így nézhet ki: `for i in range(N-1, 0, -1):`
