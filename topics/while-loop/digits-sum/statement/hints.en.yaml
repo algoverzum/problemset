@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- The last digit is given by the remainder when dividing `n` by 10.
+- That is, `n % 10`
+- cpp: n / 10 removes the last digit of n
+  py: n // 10 removes the last digit of n
+- Use a while loop, and inside the loop always add the value of the last digit to a variable created before the loop, then remove the last digit.
+- Repeat the while loop as long as `n > 0`
