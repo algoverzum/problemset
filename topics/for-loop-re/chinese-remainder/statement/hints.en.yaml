@@ -1,4 +1,9 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- You just need to check the numbers from 1 to 9999.
+- cpp: |
+    The loop can look like this: `for (int i = 1; i < 10000; i++) { ... }`
+  py: |
+    The loop can look like this: `for i in range(1,10000):`
+- Inside the loop, you need to check whether i % 5 == A and i % 7 == B and i % 11 == C hold true.
+- The loop can be stopped using the `break` statement.
+- It can be proven that under the problem’s conditions, we never need to print -1.

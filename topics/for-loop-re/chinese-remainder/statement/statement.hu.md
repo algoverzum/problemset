@@ -27,7 +27,7 @@ A bemenet harmadik sorában egyetlen egész szám van: $C$, a titkos kód 11-es 
 
 ### 1. Példa magyarázat
 88 % 5 = 3, mert $88 = 17\cdot 5 + 3$.
-88 % 7 = 7, mert $88 = 12\cdot 7 + 4$.
+88 % 7 = 4, mert $88 = 12\cdot 7 + 4$.
 88 % 11 = 0, mert $88 = 8\cdot 11 + 0$.
 Igazolható, hogy ez a legkisebb pozitív megoldás.
 

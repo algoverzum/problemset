@@ -7,7 +7,7 @@ int main() {
 
     cin >> a >> b >> c;
     for (int i = 1; i < 10000; i++) {
-        if (i % 5 == a and i % 7 == b and i % 11 == c) {
+        if (i % 5 == a && i % 7 == b && i % 11 == c) {
             ans = i;
             break;
         }

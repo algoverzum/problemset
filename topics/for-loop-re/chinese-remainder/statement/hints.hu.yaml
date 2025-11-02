@@ -4,5 +4,6 @@
     A ciklus így nézhet ki: `for (int i = 1; i < 10000; i++) { ... }`
   py: |
     A ciklus így nézhet ki: `for i in range(1,10000):`
-- A ciklus során kell megviszgálni, hogy i % 5 == A és i % 7 == B és i % 11 == C teljesül-e.
+- A ciklus során kell megvizsgálni, hogy i % 5 == A és i % 7 == B és i % 11 == C teljesül-e.
+- A ciklust meg lehet állítani a `break` utasítással.
 - Igazolható, hogy -1-et sohasem kell a feladat feltételei mellett kiírnunk.
