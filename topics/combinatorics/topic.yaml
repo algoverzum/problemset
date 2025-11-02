@@ -4,7 +4,7 @@ name: Kombinatorika
 problems:
   - problem_id: islands
     type: REQUIRED
-prerequisites: []
+prerequisites: [knapsack-dp, num-theo]
 dependents: []
 visualization:
   image_filename: 19.svg

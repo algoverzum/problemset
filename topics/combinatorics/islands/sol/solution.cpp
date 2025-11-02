@@ -1,63 +1,77 @@
-// @check-accepted: *
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<vector<int>> elek;
-vector<int> db;
-vector<vector<long long int>> pas;
-vector<long long int> fele;
+const int MOD = 1'000'000'007;
 
-void darab(int a) {
-    int sum = 0;
-    for (int i : elek[a]) {
-        darab(i);
-        sum += (db[i] % 1000000007);
+long long mod_pow(long long a, long long e, long long m = MOD) {
+    long long r = 1;
+    while (e > 0) {
+        if (e & 1)
+            r = (r * a) % m;
+        a = (a * a) % m;
+        e >>= 1;
     }
-    sum++;
-    db[a] = (sum % 1000000007);
+    return r;
 }
 
-void megold(int a) {
-    long long int sum = 1;
-    int db1 = db[a] - 1;
-    for (int i : elek[a]) {
-        megold(i);
-        sum = (sum * fele[i] % 1000000007);
-        sum = ((sum * pas[db1][db[i]]) % 1000000007);
-        db1 -= db[i];
+int n;
+vector<vector<int>> children;
+vector<int> subtree_size;
+vector<long long> ways;
+vector<long long> fact, invfact;
+
+int dfs_size(int u) {
+    int sum = 1;
+    for (int v : children[u])
+        sum += dfs_size(v);
+    return subtree_size[u] = sum;
+}
+
+long long dfs_ways(int u) {
+    // ways[u] = ( (sum)! / Π (size[v])! ) * Π ways[v],
+    // ahol sum = Σ size[v] a gyerekekre
+    long long prod = 1;
+    int sum_sizes = 0;
+    for (int v : children[u]) {
+        prod = (prod * dfs_ways(v)) % MOD;
+        prod =
+            (prod * invfact[subtree_size[v]]) % MOD; // osztás fact(size[v])-val
+        sum_sizes += subtree_size[v];
     }
-    fele[a] = sum;
+    return ways[u] = fact[sum_sizes] * prod % MOD;
 }
 
 int main() {
-    cin.sync_with_stdio(false);
-    cout.sync_with_stdio(false);
-    int n;
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
     cin >> n;
-    elek.resize(n + 1);
-    for (int i = 1; i <= n; i++) {
-        int db;
-        cin >> db;
-        for (int j = 1; j <= db; j++) {
-            int a;
-            cin >> a;
-            elek[i].push_back(a);
+    children.resize(n + 1);
+    for (int u = 1; u <= n; ++u) {
+        int k;
+        cin >> k;
+        children[u].reserve(k);
+        for (int j = 0; j < k; ++j) {
+            int v;
+            cin >> v;
+            children[u].push_back(v);
         }
     }
-    db.resize(n + 1);
-    pas.resize(n);
-    pas[0].push_back(1);
-    for (int i = 1; i <= n - 1; i++) {
-        pas[i].resize(i + 1, 0);
-        pas[i][0] = 1;
-        for (int j = 1; j < i; j++) {
-            pas[i][j] = (pas[i - 1][j - 1] + pas[i - 1][j]) % 1000000007;
-        }
-        pas[i][i] = 1;
-    }
-    darab(1);
-    fele.resize(n + 1);
-    megold(1);
-    cout << fele[1] << '\n';
+
+    // Előfeldolgozás: fact, invfact
+    fact.resize(n + 1);
+    invfact.resize(n + 1);
+    fact[0] = 1;
+    for (int i = 1; i <= n; ++i)
+        fact[i] = fact[i - 1] * i % MOD;
+    invfact[n] = mod_pow(fact[n], MOD - 2);
+    for (int i = n; i >= 1; --i)
+        invfact[i - 1] = invfact[i] * i % MOD;
+
+    subtree_size.assign(n + 1, 0);
+    ways.assign(n + 1, 0);
+
+    dfs_size(1);
+    cout << dfs_ways(1) % MOD << '\n';
     return 0;
 }

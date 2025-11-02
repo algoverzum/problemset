@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Compute recursively, for each subtree, how many possible orders there are in which the vertices of that subtree could have been discovered. If the subtree consists of only one vertex (a leaf), this number is 1. If this number is already known for all children of the subtree’s root, how do we combine them?
+- 'In any subtree, the root is always discovered first, and then discoveries happen within the children’s subtrees in some order. Suppose the root has 3 children, denoted A, B, and C, and the sizes of their subtrees are 4, 3, and 1, respectively. The overall discovery order within the subtree can be represented as a sequence consisting of 4 A’s, 3 B’s, and 1 C, e.g., BAACBABA. In how many ways can this happen?'
+- We can arrange 4 A’s, 3 B’s, and 1 C in $8! / (4! \cdot 3! \cdot 1!)$ different ways, so that’s how many ways we can interleave the discoveries from the different subtrees. This must then be multiplied by the number of possible discovery orders within each subtree A, B, and C — for example, the 4 A’s actually represent 4 distinct vertices, and the number of possible internal arrangements equals the number of ways subtree A itself can be discovered (which we computed recursively).

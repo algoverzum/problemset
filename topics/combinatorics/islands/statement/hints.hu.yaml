@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Számoljuk ki rekurzívan, az egyes részfákra, hogy hányféle sorrendben fedezhették fel a részfa csúcsait. Ha csak egy csúcsból áll a részfa (levél csúcs), akkor ez a szám 1. Ha a részfa gyökerének összes gyerekére ismert már ez a szám, akkor hogyan kombináljuk őket össze?
+- 'Egy részfának mindig a gyökerét fedezik fel először, azután a gyerekei részfáiban valamilyen sorrendben történnek felfedezések. Tegyük fel, hogy a gyökérnek 3 gyereke van, jelöljük őket A, B, C-vel és A részfája 4 méretű, B részfája 3 méretű, C részfája 1 méretű. A részfákban történő felfedezések sorrendjét leírhatjuk egy 4 A, 3 B és 1 C betűből álló sorozattal, pl: BAACBABA. Hányféleképpen alakulhat ez?'
+- 4 A, 3 B és 1 C betűt $8! / (4! \cdot 3! \cdot 1!)$ féleképpen lehet sorbarakni, tehát ennyiféleképpen kombinálhatjuk a részfákban történő felfedezéseket. Ezt még meg kell szorozni azzal, hogy az A, B és C részfán belül hányféle lehet a sorrend, tehát például a 4 A betű valójában 4 különböző csúcsot jelöl, és ezek lehetséges kiosztása pont annyi, ahányféleképpen az A részfát fel tudjuk fedezni (amit rekurzívan kiszámoltunk rá).
