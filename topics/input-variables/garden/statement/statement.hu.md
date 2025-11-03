@@ -1,7 +1,9 @@
 ## Kert
 A barátomnak, Csitotinak van egy téglalap alakú kertje, amelynek két oldala $A$ és $B$ méter hosszú. Két dolgot szeretne csinálni:
- - Kerítést húz a kert köré. Ehhez olyan hosszú új drótkerítést kell vásárolnia, amennyi a kert négy oldalának teljes hossza.
- - A kert minden 1 m × 1 m méretű négyzetébe ültet egy-egy csirimori fát, ha úgy képzeljük el, hogy a teljes kertet négyzetekre osztjuk (lásd az alábbi képet).
+
+* Kerítést húz a kert köré. Ehhez olyan hosszú új drótkerítést kell vásárolnia, amennyi a kert négy oldalának teljes hossza.
+
+* A kert minden 1 m × 1 m méretű négyzetébe ültet egy-egy csirimori fát, ha úgy képzeljük el, hogy a teljes kertet négyzetekre osztjuk (lásd az alábbi képet).
 
 Mekkora a drótkerítés teljes hossza, amelyet meg kell vásárolnia?
 

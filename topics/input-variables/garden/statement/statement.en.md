@@ -1,7 +1,9 @@
 ## Garden
 My friend, Chitoti has a garden that has a rectangular shape, where the two sides of the rectangle are $A$ and $B$ meters long. She wants to do two things:
- - Put a fence around the garden. For this, she needs to buy new wire fence as long as the total length of the four sides of the garden.
- - Plant a chirimori tree in each 1m by 1m sized square of the garden, if we imagine partitioning the complete garden to squares (see image below).
+
+* Put a fence around the garden. For this, she needs to buy new wire fence as long as the total length of the four sides of the garden.
+
+* Plant a chirimori tree in each 1m by 1m sized square of the garden, if we imagine partitioning the complete garden to squares (see image below).
 
 What is the total length of the wire fence that she needs to buy?
 
