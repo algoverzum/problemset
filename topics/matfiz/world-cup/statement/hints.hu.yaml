@@ -1,0 +1,4 @@
+---
+- Hogy lehet ellenőrizni azt, hogy `Y` 4-gyel osztva 2 maradékot ad?||
+- Y % 4 == 2
+- Amíg ez nem teljesül, adjunk hozzá `Y`-hoz egyet. (Használjunk `while` ciklust.)

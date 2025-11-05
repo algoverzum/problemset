@@ -18,6 +18,10 @@ problems:
     type: REQUIRED
   - problem_id: buying-sweets
     type: REQUIRED
+  - problem_id: world-cup
+    type: REQUIRED
+  - problem_id: go-to-jail
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

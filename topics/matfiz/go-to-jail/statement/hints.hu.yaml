@@ -1,0 +1,8 @@
+---
+- Csinálj két listát, amikbe beolvasod a dobásokat (pl. legyen `elso` és `masodik`).
+- Csinálj egy for ciklust, amiben teszteled, hogy a mostani, az előző, és a kettővel előző dobáspár "duplázás" volt-e. Figyelj az indexekre.
+- A `for` ciklust `i=2`-től indítsd, `N-1`-ig, és azt teszteld, hogy az i., i-1., és i-2. helyen megegyezik-e a két lista.
+- cpp: elso[i] == masodik[i] && elso[i-1] == masodik[i-1] && elso[i-2] == masodik[i-2]
+  py: elso[i] == masodik[i] and elso[i-1] == masodik[i-1] and elso[i-2] == masodik[i-2]
+- cpp: Egy változónak az elején legyen `false` az értéke, de ha az előző feltétel teljesül, akkor állítsd át `true`-ra.
+  py: Egy változónak az elején legyen `False` az értéke, de ha az előző feltétel teljesül, akkor állítsd át `True`-ra.
