@@ -6,9 +6,12 @@ Először egy tortát vettem $A$ euroért egy cukrászdában. Majd egy fánkbolt
 Mennyi pénzem maradt a vásárlás után?
 
 ### Bemenet
-A bemenet három sorban tartalmazza az $X,A,B$ egész számokat:
+A bemenet három sorban tartalmazza az $X, A, B$ egész számokat:
+
 $X$
+
 $A$
+
 $B$
 
 ### Kimenet

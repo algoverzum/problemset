@@ -22,6 +22,20 @@ problems:
     type: REQUIRED
   - problem_id: go-to-jail
     type: REQUIRED
+  - problem_id: torok-szultan1
+    type: REQUIRED
+  - problem_id: torok-szultan2
+    type: REQUIRED
+  - problem_id: torok-szultan3
+    type: REQUIRED
+  - problem_id: prim-szita
+    type: REQUIRED
+  - problem_id: konverzio1
+    type: REQUIRED
+  - problem_id: konverzio2
+    type: REQUIRED
+  - problem_id: szamok-magyarul
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

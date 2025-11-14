@@ -20,6 +20,8 @@ problems:
     type: REQUIRED
   - problem_id: last-one-out
     type: REQUIRED
+  - problem_id: turkish-sultan
+    type: REQUIRED
 prerequisites:
   - sum-count
 dependents:
