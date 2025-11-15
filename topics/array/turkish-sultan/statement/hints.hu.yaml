@@ -1,8 +1,8 @@
 ---
-- cpp: A cellákat tárold logikusan egy `vector<bool>` tömbben. Kezdetben minden elem `false` (zárt).
-  py: A cellákat tárold logikusan egy listában. Kezdetben minden elem `False` (zárt).
-- Külső ciklus: $i$ a szolgákon megy 1-től $N$-ig.
-- Belső ciklus: minden $i$-re menj végig az $j = i, i+i, i+2*i, \ldots \le N$ indexeken
+- cpp: A cellákat tárolhatod egy `vector<bool>` tömbben. Kezdetben minden eleme lehet `false` (zárt) (de használhatsz `1-0`-t is a zár állapotára).
+  py: A cellákat tárolhatod egy listában. Kezdetben minden eleme lehet `False` (zárt) (de használhatsz `1-0`-t is a zár állapotára).
+- Külső ciklus: a szolgákon megy végig `i = 1`-től `N`-ig.
+- Belső ciklus: minden `i`-re menj végig a `j = i, i+i, i+2*i, ...  <= N` indexeken, ezen cellák ajtajai változnak meg.
 - cpp: Egy cella "állapotát" úgy váltod meg, hogy `state[k] = !state[k]`
   py: Egy cella "állapotát" úgy váltod meg, hogy `state[k] = not state[k]`
 - A feladatnak van matekos megoldása is, az input tabra 100-at írva futtasad le a kész programodat. Mit látunk? Ez nem véletlen!
