@@ -1,0 +1,37 @@
+# N     A	B       S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+#COPY: statement/input1.txt
+
+# Subtask 2: N <= 10, 1 <= C <= 10
+#ST: 20
+#STNAME: non-zero
+10      1	1      2
+10      1	10     3
+10      1	10     4
+10      1      	10     5
+10      5	10     6
+
+# Subtask 3: N <= 1000, C <= 100
+#ST: 30
+#STNAME: mid
+10	0	0	7
+10	0	5	8
+100     0	10	9
+100     0	100	10
+1000    0	50	11
+1000    0	100	12
+
+# Subtask 4: no limits
+#ST: 50
+#STNAME: no-limits
+10000   0	0	13
+100000	0     	10	14
+100000  0	100	15
+100000  0	1000	16
+100000  0	10000	17
+100000  0	10000	18
+100000  1000	10000	19

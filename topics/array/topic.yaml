@@ -22,6 +22,8 @@ problems:
     type: REQUIRED
   - problem_id: turkish-sultan
     type: REQUIRED
+  - problem_id: pp26-icecubes
+    type: REQUIRED
 prerequisites:
   - sum-count
 dependents:

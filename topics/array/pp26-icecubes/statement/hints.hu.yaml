@@ -1,0 +1,3 @@
+---
+- Ha egy rekeszben legalább 1 jégkocka van, a pincér eltávolít 1-et. Ha 0 van benne, akkor 0 marad.
+- A hűtőben maradó összes jégkocka pedig ezeknek a maradék értékeknek az összege.
