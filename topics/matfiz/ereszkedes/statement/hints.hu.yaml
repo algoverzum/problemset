@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Olvasd be a sebesség és a magasság értékeket!
+- |
+  A ciklus feltételében: **sebesség > 1 és magasság != 0**.
+- A csökkentéseket a **kiírás után** végezd el!

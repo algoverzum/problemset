@@ -30,4 +30,4 @@ A kimenetben egyetlen szám van: **hány lépésben száll fel a repülő!**
     60
 
 ### A példa magyarázata
-A sebesség 2-vel, a magasság 4-gyel nő, azaz $882 1205$, majd $884 1209$, stb. lesz. $60$ lépésben lesz a $880$-ból $1000$. Elég, ha az egyik felső korlátot eléri a gép.
+A sebesség 2-vel, a magasság 4-gyel nő, azaz $882$ $1205$, majd $884$ $1209$, stb. lesz. $60$ lépésben lesz a $880$-ból $1000$. Elég, ha az egyik felső korlátot eléri a gép.
