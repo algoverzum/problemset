@@ -40,6 +40,10 @@ problems:
     type: REQUIRED
   - problem_id: repulo
     type: REQUIRED
+  - problem_id: ereszkedes
+    type: REQUIRED
+  - problem_id: raktarkeszlet-csokkenese
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

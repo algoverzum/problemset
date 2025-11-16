@@ -1,0 +1,10 @@
+---
+- Minden új bináris számjegy esetén a decimális szám előző értékét megszorozzuk 2-vel.
+- Ezután hozzáadjuk a megfelelő bináris számjegyet.
+- 1101 esetén
+  ```
+  2*0+1 -> 1
+  2*1+1 -> 3
+  2*3+0 -> 6
+  2*6+1 -> 13
+  ```

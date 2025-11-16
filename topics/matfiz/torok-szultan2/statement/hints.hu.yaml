@@ -1,0 +1,4 @@
+---
+- Az ajtókat logika típusú vectorban tárold. Kezdeti érték false legyen, ami az ajtók bezárt voltát mutatja.
+- Az ajtók állapotának megváltoztatása a `not` művelettel történhet.
+- Gyorsabb lesz az algoritmus, ha a belső ciklus nem 1-el, hanem az aktuális szolga sorszámától indul, hiszen az előzőek úgyis kimaradnak, és nem egyesével, hanem a szolga értékével nő.

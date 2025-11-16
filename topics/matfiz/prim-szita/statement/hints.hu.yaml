@@ -1,0 +1,5 @@
+---
+- cpp: Bool típusú vectorban tároljuk, hogy a megadott indexnek megfelelő szám prím-e. Legyen `true` értékű ha prím.
+  py: Egy listában tároljuk, hogy a megadott indexnek megfelelő szám prím-e. Legyen True értékű ha prím.
+- cpp: 2-től indulva, végig megyünk a tömb elemeit, ha a sorszáma prímszám (a hozzá tartozó érték `true`), akkor a többszöreseit hamisra (`false`) változtatjuk.
+  py: 2-től indulva, végig megyünk a lista elemeit, ha a sorszáma prímszám (a hozzá tartozó érték `True`), akkor a többszöreseit hamisra (`False`) változtatjuk.

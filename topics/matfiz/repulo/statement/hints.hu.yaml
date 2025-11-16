@@ -1,0 +1,4 @@
+---
+- Deklaráld a két konstanst a megadott értékekkel!
+- A beolvasás után hozz létre egy **számlálót**, amit `0`-ra állítasz.
+- A ciklus feltétele `sebesség < S` és `magasság <= M`.

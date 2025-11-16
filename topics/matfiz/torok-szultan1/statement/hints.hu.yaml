@@ -1,0 +1,4 @@
+---
+- Tulajdonképpen egy oszthatósági feladatról van szó, azokat az ajtókat kell vizsgálni, amelyeknek osztója a szolga sorszáma.
+- Minden szolga esetén ugyanaz a feladat: azokat az ajtókat vizsgálja, amelyeknek az ő sorszáma osztója.
+- A program olvashatóságát javíthatja, ha definiálunk szimbólumokat `NYIT`(=1), `ZAR`(=0).

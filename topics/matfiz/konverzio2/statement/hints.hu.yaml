@@ -1,0 +1,5 @@
+---
+- Addig kell 2-vel osztani a decimális számot, amíg 0 nem lesz a hányados.
+- Az egyes osztások maradékai adják a bináris számjegyeit - fordított sorrendben.
+- cpp: Az egyes számjegyeit sorban beleírjuk a bináris számot tartalmazó vectorba.
+  py: Az egyes számjegyeit sorban beleírjuk a bináris számot tartalmazó listába.

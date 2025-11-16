@@ -1,0 +1,30 @@
+# A	B	S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+
+# Subtask 2: all
+#ST: 100
+#STNAME: all
+#COPY: gen/input1.txt
+#COPY: gen/input2.txt
+#COPY: gen/input3.txt
+#COPY: gen/input4.txt
+#COPY: gen/input5.txt
+#COPY: gen/input6.txt
+#COPY: gen/input7.txt
+#COPY: gen/input8.txt
+#COPY: gen/input9.txt
+1000   2000	1
+1000   2000	2
+1000   2000	3
+1000   2000	4
+1000   2000	5
+1000   2000	6
+1000   2000	7
+1000   2000	8
+1000   2000	9
+1000   2000	10
+1000   2000	11

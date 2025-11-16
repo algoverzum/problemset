@@ -1,0 +1,5 @@
+---
+- A beolvasás után kell egy ciklus megfelelő feltétellel.
+- |
+  A feltétel: **amíg a változód, amit csökkentesz, nem 0**.
+- A kiírásnál figyelj, hogy **ne legyen sortörés**, és a számlálót is csökkentsd!

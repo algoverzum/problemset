@@ -1,0 +1,20 @@
+## Sieve of Eratosthenes
+TODO
+
+### Input
+The first line of the input contains $N$ - the 
+
+### Output
+Print a single number, the
+
+### Constraints
+* $1 \le N \le 1000$
+
+### Example input
+    5
+
+### Example output
+    42
+
+### Explanation of the example
+

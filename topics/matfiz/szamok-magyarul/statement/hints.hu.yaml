@@ -1,0 +1,8 @@
+---
+- cpp: Az `n` egész tizes részét az `n/10` művelettel, az egyes részét a maradék művelettel kaphatjuk meg.
+  py: Az `n` egész tizes részét az `n//10` művelettel, az egyes részét a maradék művelettel kaphatjuk meg.
+- 10 és 20 kivétel.
+- cpp: A tizeseket és egyeseket (mint szavak) külön sztring vectorban tároljuk.
+  py: A tizeseket és egyeseket (mint szavak) külön sztring listában tároljuk.
+- cpp: A két vectort a megfelelő számjegyekkel megindexeljük.
+  py: A két listát a megfelelő számjegyekkel megindexeljük.
