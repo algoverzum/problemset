@@ -44,6 +44,12 @@ problems:
     type: REQUIRED
   - problem_id: raktarkeszlet-csokkenese
     type: REQUIRED
+  - problem_id: ketteosztas
+    type: REQUIRED
+  - problem_id: k-ismetles
+    type: REQUIRED
+  - problem_id: spicy-mix
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

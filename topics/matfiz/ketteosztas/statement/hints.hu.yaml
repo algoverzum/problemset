@@ -1,0 +1,4 @@
+---
+- Figyeld az összes szám összegének paritását.
+- Ha az összes szám összege páratlan, akkor biztos nem lehet megoldani. Akárhogy bontjuk ketté, az egyik részben páros lesz az összeg, a másikban páratlan. Ha páros az összeg, akkor mindig meg lehet csinálni?
+- Páros összeg esetén igazából bármilyen felosztás jó, ha az egyik rész páros összegű, a másik is az lesz, és ha páratlan, akkor is.

@@ -2,7 +2,7 @@
 # @check-accepted: *
 
 N = int(input())
-C = list(map(int, input().split()))
+C = [int(x) for x in input().split()]
 
 cubes = 0
 for container in C:

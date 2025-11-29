@@ -1,0 +1,3 @@
+---
+- Mivel `n, m <= 1000`, ezért belefér az időbe, hogy az összes esetet kipróbáljuk (legfeljebb `1000*1000 = 1 millió` eset).
+- Miután beolvastuk az `A` és `B` dobozokban található fűszerek csípősség értékeit, egy dupla for ciklussal menjünk rajtuk végig és számoljuk, hogy hány esetben igaz az, hogy `a[i]+b[j] <= k`

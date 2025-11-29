@@ -1,0 +1,25 @@
+# minK	maxK	lenS	S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+#COPY: statement/input1.txt
+
+# Subtask 2: 1 <= k <= 1000
+#ST: 100
+#STNAME: all
+1	 1	10	1
+2     	 2     	10	2
+3	 3      20     	3
+2	 10	-1	10
+4      	 1000	1000	4
+4      	 1000	1000	5
+4      	 1000	1000	6
+4      	 1000	1000	7
+4      	 1000	1000	8
+4      	 1000	1000	9
+2	 10	-1	10
+2	 10	-2	11
+2	 100	-2	12
+2	 10	-2	13

@@ -1,0 +1,4 @@
+---
+- cpp: Ahhoz, hogy megoldható legyen a feladat, minden betűből annyi kell legyen, amennyi osztható `k`-val. Egy hisztogramban megszámolhatjuk, hogy melyik betűből mennyi van.
+  py: Végigmehetünk az ábécé ("abcdefghijklmnopqrstuvwxyz") betűin és a `.count` függvénnyel megszámolhatjuk, hogy hány ilyen betű van.
+- Ha van olyan betű aminek a darabszáma nem osztható `k`-val, akkor írjuk ki, hogy `NO`. Különben pedig, hogy `YES`.

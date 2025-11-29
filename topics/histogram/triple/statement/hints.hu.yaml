@@ -1,0 +1,3 @@
+---
+- Minden számra tartsuk nyilván, hogy az hányszor szerepel, ehhez használjunk hisztogramot (azaz számlálók listáját, amiben kezdetben minden érték 0). Amikor jön egy szám, a hozzá tartozó számlálót növeljük meg.
+- A végén nézzük végig a számokat 1-től `n`-ig, és ha valamelyikhez tartozó számláló legalább 3, akkor az lesz a válasz. (Célszerű csinálni egy answer változót, ami kezdetben -1, és átállítjuk, ha találunk ilyen számot, így a végén csak azt kell kiírni, illetve az első találatnál megállni.)

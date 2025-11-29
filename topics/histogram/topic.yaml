@@ -12,6 +12,8 @@ problems:
     type: REQUIRED
   - problem_id: droids
     type: REQUIRED
+  - problem_id: triple
+    type: REQUIRED
 prerequisites:
   - array
   - for-loop
