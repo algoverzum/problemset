@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # @check-accepted: *
-from sys import stdin
+from sys import stdin, stdout
 
 input = stdin.readline
+print = stdout.write
 
 
 def solv():
@@ -30,24 +31,24 @@ def solv():
             else:
                 cells[row][col] += best
 
-    print(cells[0][0])
+    print(str(cells[0][0]) + "\n")
 
     if cells[0][0] != -1:
-        row = col = 0
+        x = y = 0
         for i in range(N + M - 2):
-            if row == N - 1:
-                col += 1
-                print("R", end="")
-            elif col == M - 1:
-                row += 1
-                print("D", end="")
+            if y == N - 1:
+                x += 1
+                print("R")
+            elif x == M - 1:
+                y += 1
+                print("D")
             else:
-                if cells[row][col + 1] > cells[row + 1][col]:
-                    col += 1
-                    print("R", end="")
+                if cells[y][x + 1] > cells[y + 1][x]:
+                    x += 1
+                    print("R")
                 else:
-                    row += 1
-                    print("D", end="")
+                    y += 1
+                    print("D")
 
 
 solv()

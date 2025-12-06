@@ -2,7 +2,7 @@
 Rudolf egy új, különleges csípős ételt készít. A recept szerint pontosan két fűszert kell összekevernie:
 
 * egyet az $A$ dobozból,
-*egyet a $B$ dobozból.
+* egyet a $B$ dobozból.
 
 Minden fűszernek van egy csípősségértéke, amely azt jelzi, mennyire égeti a nyelvet.
 
