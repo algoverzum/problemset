@@ -14,17 +14,10 @@ Print a single number, the number of celestial bodies in the solar system.
 
 ### Example input
     8
-    0
-    0
-    1
-    2
-    95
-    146
-    27
-    14
+    0 0 1 2 9 14 3 14
 
 ### Example output
-    294
+    52
 
 ### Explanation of the example
-The total number of moons is 285 and if we add 8 planets and one star, we get 294 celestial bodies.
+The total number of moons is 43 and if we add 8 planets and one star, we get 52 celestial bodies.
