@@ -1,0 +1,5 @@
+---
+- cpp: Azt számoljuk meg, hogy hányszor kezdődik egy szó, azaz szóköz után, nem szóköz következik.
+  py: Használjuk a `split()` függvényt.
+- cpp: Mivel a szomszédos karaktereket hasonlítjuk össze, vigyázni kell, hogy sztringen kívülre ne hivatkozzunk (`hossz-1`).
+- cpp: Ha a mondat előtt nincs szóköz, akkor ezt az esetet külön kell vizsgálni (mondat[0]!=' ').

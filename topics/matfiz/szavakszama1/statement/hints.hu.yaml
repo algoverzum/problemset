@@ -1,0 +1,4 @@
+---
+- cpp: Mivel a mondat több szóból is állhat, ezért `getline()` segítségével olvassuk be.
+- A legegyszerűbb megoldás (az adott feltételek mellett), ha a szóközöket számoljuk meg.
+- Milyen összefüggés van a szavak száma és a szóközök száma között?

@@ -1,0 +1,8 @@
+---
+- cpp: Iterate over the letters of the word and check if the letter at the same position from the end matches.
+  py: We could check the letters one by one with a loop, but in Python, there is a simpler solution. How can we reverse a string?
+- cpp: |
+    Note that we use 0-based indexing. If the word length is `n`, the `i`-th letter from the end is at position `(n - i - 1)`.
+  py: |
+    To reverse a string, we can use the `[::-1]` syntax. For example: `s[::-1]`.
+- cpp: If there is no match at any point, we can immediately print "NO" and stop the program to prevent printing multiple times. We can do this with the `return 0;` statement. After the loop, we can print "YES" unconditionally since the execution wouldn't have reached that point otherwise.

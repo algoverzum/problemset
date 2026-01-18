@@ -1,0 +1,5 @@
+---
+- Először '@' karaktert kell megkeresnünk, hiszen az választja el a postafiókot és a postahivatalt.
+- Közben a kezdetben üres postafiok (`postafiok=""`) sztringhez hozzáfűzzük a cim aktuális karakterét (`cim[i]`).
+- cpp: A továbblépéshez a '@' karaktert átlépjük és a postahivatal sztringbe gyűjtjük a cim további karaktereit, amíg a cim sztring végéhez nem érünk (`cim.size()`).
+  py: A továbblépéshez a '@' karaktert átlépjük és a postahivatal sztringbe gyűjtjük a cim további karaktereit, amíg a cim sztring végéhez nem érünk (`len(cim)`).

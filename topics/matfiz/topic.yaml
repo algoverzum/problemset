@@ -50,6 +50,22 @@ problems:
     type: REQUIRED
   - problem_id: spicy-mix
     type: REQUIRED
+  - problem_id: postafiok
+    type: REQUIRED
+  - problem_id: szavakszama1
+    type: REQUIRED
+  - problem_id: szavakszama2
+    type: REQUIRED
+  - problem_id: szokoztelenul
+    type: REQUIRED
+  - problem_id: tukorszo2
+    type: REQUIRED
+  - problem_id: tukorszo3
+    type: REQUIRED
+  - problem_id: jegyosszeg2
+    type: REQUIRED
+  - problem_id: egyesszamok
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

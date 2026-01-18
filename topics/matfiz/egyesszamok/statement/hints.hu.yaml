@@ -1,0 +1,4 @@
+---
+- cpp: az `int` típus legfeljebb 9 számjegyet tartalmazhat (`long long` 19 számjegy). Ezért az első esetben `string` típussal kell összeadni a számokat, utána már egyszerűbb `int` típussal dolgozni a további számjegyösszeg meghatározásánál.
+  py: Az előző feladat megoldását használjuk fel.
+- A szám 9-ces maradékát használva egyszerűbben is megoldható a feladat.

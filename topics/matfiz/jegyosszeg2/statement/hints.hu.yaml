@@ -1,0 +1,5 @@
+---
+- cpp: az `int` típus legfeljebb 9 számjegyet tartalmazhat (`long long` 19 számjegy), ezért sztringként olvasd be a számot.
+  py: Sztringként olvasd be a számot.
+- cpp: A számjegy karaktereket át kell alakítani számokká. A karakterek ASCII kódja eltér a karakerekhez kötődő számértéktől. Pl. '0' codja 48. Tehát, ha az adott karakterből (kódjából) kivonjuk a '0' kódját, akkor megfelelő számértéket kapjuk meg. '5'-'0'=53-48=5
+  py: A számjegy karaktereket az `int` átalakítja számokká.

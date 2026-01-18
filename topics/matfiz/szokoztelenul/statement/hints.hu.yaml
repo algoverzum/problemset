@@ -1,0 +1,3 @@
+---
+- cpp: Egy üres sztringbe (`string szokoznelkul=""`) csak azokat a karaktereket másoljuk bele, amelyek nem szóközök.
+  py: Egy üres sztringbe (`szokoznelkul=""`) csak azokat a karaktereket másoljuk bele, amelyek nem szóközök. Vagy rögtön ki is írhatjuk azokat.

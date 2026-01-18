@@ -1,0 +1,5 @@
+---
+- cpp: Először a szóközöket és egyéb nem betű karaktereket távolítsd el a beolvasott mondatból. Az `isalpha()` függvény igaz értéket ad vissza, ha a vizsgált karakter betű az angol ábécéből, a `tolower()` függvény kisbetűsíti az adott betűt. (Hasonlóképpen a `toupper()` nagybetűsít - az angol abécé betűire alkalmazva.)
+  py: A `.lower()` eltünteti a nagybetűket. A `.replace()` segítségével eltüntethetjük a szóközöket, pontokat, vesszőket.
+- cpp: A kapott sztringről most úgy állapítsd meg, hogy palindrom-e, hogy az elejéről és végéről indulva addig vizsgáljuk a karaktereket, amíg nem találunk különbséget, vagy a sztring közepéig nem értek.
+  py: Ezután a korábbi megoldás használható.
