@@ -66,6 +66,10 @@ problems:
     type: REQUIRED
   - problem_id: egyesszamok
     type: REQUIRED
+  - problem_id: anagramma
+    type: REQUIRED
+  - problem_id: konverzio
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

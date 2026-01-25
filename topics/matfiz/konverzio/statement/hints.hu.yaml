@@ -1,0 +1,5 @@
+---
+- Addig kell 2-vel osztani a decimális számot, amíg 0 nem lesz a hányados.
+- Az egyes osztások maradékai adják a bináris számjegyeit, fordított sorrendben.
+- Az egyes számjegyeit sorban beleírjuk a bináris számot tartalmazó vectorba.
+- A függvény sztringként adja vissza a bináris számot.
