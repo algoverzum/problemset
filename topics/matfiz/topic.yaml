@@ -70,6 +70,10 @@ problems:
     type: REQUIRED
   - problem_id: konverzio
     type: REQUIRED
+  - problem_id: ermekombinacio
+    type: REQUIRED
+  - problem_id: harcosok
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

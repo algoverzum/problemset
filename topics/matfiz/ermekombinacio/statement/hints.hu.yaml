@@ -1,0 +1,5 @@
+---
+- $K$ értékű érmékből legfeljebb hányat éri meg használni?
+- 2 db $K$ értékű érme kiváltható $K$ db 2 értékű érmével.
+- A páros számokat mindig ki lehet fizetni.
+- A páratlanokat csak akkor, ha $K$ páratlan és a szám nála nagyobb-egyenlő.

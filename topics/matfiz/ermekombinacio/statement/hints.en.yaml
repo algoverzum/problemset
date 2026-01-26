@@ -1,0 +1,5 @@
+---
+- What is the maximum number of coins of value $K$ that is worth using?
+- Two coins of value $K$ can be replaced by $K$ coins of value 2.
+- Even amounts can always be paid.
+- Odd amounts can be paid only if $K$ is odd and the amount is greater than or equal to $K$.
