@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
+
 # Define a function called anagramma here.
-
-
-def anagramma(S1, S2):
-
-    return
 
 
 # Do not change anything below.

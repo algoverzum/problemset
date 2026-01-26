@@ -3,8 +3,6 @@ using namespace std;
 
 // Define a function called anagramma here.
 
-bool anagramma(string s1, string s2) { return true; }
-
 // Do not change anything below.
 int main() {
     string a, b;

@@ -1,23 +1,14 @@
 // @check-accepted: *
+#include <algorithm>
 #include <iostream>
-#include <vector>
 using namespace std;
 
 // Define a function called anagramma here.
 
 bool anagramma(string s1, string s2) {
-    if (s1.size() != s2.size())
-        return false;
-    vector<int> db(26);
-    for (char c : s1)
-        db[c - 'a']++;
-    for (char c : s2)
-        db[c - 'a']--;
-    for (int i = 0; i < 26; i++) {
-        if (db[i] != 0)
-            return false;
-    }
-    return true;
+    sort(s1.begin(), s1.end());
+    sort(s2.begin(), s2.end());
+    return s1 == s2;
 }
 
 // Do not change anything below.
@@ -25,8 +16,8 @@ int main() {
     string a, b;
     cin >> a >> b;
     if (anagramma(a, b))
-        cout << 1 << '\n';
+        cout << "1\n";
     else
-        cout << 0 << '\n';
+        cout << "0\n";
     return 0;
 }
