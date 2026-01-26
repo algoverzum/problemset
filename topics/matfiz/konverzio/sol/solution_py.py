@@ -4,11 +4,7 @@
 
 
 def dec2bin(N):
-    bin = ""
-    while N:
-        bin = str(N % 2) + bin
-        N //= 2
-    return bin
+    return "" if N == 0 else dec2bin(N // 2) + str(N % 2)
 
 
 # Do not change anything below.
