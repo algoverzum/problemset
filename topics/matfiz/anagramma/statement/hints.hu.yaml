@@ -1,5 +1,4 @@
 ---
-- Ha a két szó nem azonos hosszúságú, akkor biztosan nem anagrammák.
 - Rendezzük a két string betűit `abc` sorrendbe.
 - cpp: Egy s string betűit a `sort(s.begin(), s.end()) hívással lehet sorbarendezni.
   py: Egy s string esetén a sorted(s) visszaad egy listát, amiben az s betűi rendezett sorrendben vannak.

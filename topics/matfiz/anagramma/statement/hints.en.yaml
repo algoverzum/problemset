@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Sort the letters of the two strings in `abc` order.
+- cpp: The letters of a string s can be sorted with the call `sort(s.begin(), s.end())`.
+  py: For a string s, `sorted(s)` returns a list in which the letters of s are in sorted order.
+- cpp: The two sorted strings are identical if and only if the two words are anagrams. We can check whether they are equal using the `==` operator.
+  py: The two sorted lists are identical if and only if the two words are anagrams. We can check whether they are equal using the `==` operator.
