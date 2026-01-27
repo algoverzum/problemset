@@ -7,10 +7,10 @@ int main() {
     cin >> n >> k;
     if (n % 2 == 0) {
         cout << "YES\n";
-    } else if (k % 2 == 0 && n % 2 == 1) {
-        cout << "NO\n";
-    } else {
+    } else if (k % 2 == 1 && n >= k) {
         cout << "YES\n";
+    } else {
+        cout << "NO\n";
     }
     return 0;
 }

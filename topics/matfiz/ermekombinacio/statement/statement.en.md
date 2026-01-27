@@ -12,7 +12,7 @@ The second line of the input contains a single integer $K$, the value of the oth
 Print `YES` if the amount of $N$ petaks can be paid exactly using the given coins. Otherwise, print `NO`.
 
 ### Constraints
-* $1 \le K \le N \le 10^{18}$
+* $1 \le N, K \le 10^{18}$
 * $K \not= 2$
 
 ### Example 1 input
@@ -43,15 +43,11 @@ Alternatively, you can use six coins of value $K = 1$.
 ### Example 3 output
     NO
 
-### Explanation of Example 3
-In the third test case, there is no way to represent 7 petaks using the given coins.
 
 ### Example 4 input
-    8
-    8
+    5
+    7
 
 ### Example 4 output
-    YES
+    NO
 
-### Explanation of Example 4
-In the fourth test case, you can use one coin with value $K = 8$.

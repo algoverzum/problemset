@@ -17,7 +17,8 @@ def run(f, st):
 
     N = int(next(f))
     K = int(next(f))
-    assert MIN <= K <= N <= MAX
+    assert MIN <= N <= MAX
+    assert MIN <= K <= MAX
     assert K != 2
 
     assert next(f, None) is None

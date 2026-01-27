@@ -33,14 +33,14 @@ def run(A, B):
     if A > B:
         A, B = B, A
     N = randint(A, B)
-    K = randint(A, N)
+    K = randint(A, B)
     while K == 2:
-        K = randint(A, N)
+        K = randint(A, B)
     if randint(0, 1) == 1:
         for i in range(10):
             K = randint(A, K)
     while K == 2:
-        K = randint(A, K)
+        K = randint(A, B)
     print(N)
     print(K)
 
