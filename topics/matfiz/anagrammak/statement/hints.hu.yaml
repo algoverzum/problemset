@@ -1,0 +1,6 @@
+---
+- Ha a két szó nem azonos hosszúságú, akkor biztosan nem anagrammák.
+- cpp: Hisztogrammal megszámoljuk az egyes betűk előfordulásainak a számát. Az egyik szónál, egy betű előfordulása esetén eggyel növeljük a hozzátartozó tömbelemet, ha a másik szónál ugyanez a betű előfordul, akkor csökkentjük ugyanezt a tömbelemet.
+  py: Rendezzük a két sztring betűit `abc` sorrendben.
+- cpp: A histogram tömb minden eleme pontosan akkor marad 0, ha a két szó anagramma.
+  py: A két rendezett lista pontosan akkor azonos ha a két szó anagramma.

@@ -74,6 +74,10 @@ problems:
     type: REQUIRED
   - problem_id: harcosok
     type: REQUIRED
+  - problem_id: anagrammak
+    type: REQUIRED
+  - problem_id: dec2bin
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:
