@@ -1,5 +1,6 @@
 ---
 - Az utolsó jegy 0 vagy 1 attól függően, hogy a szám páros vagy páratlan.
 - Ha levágjuk az utolsó jegyet a kettes számrendszerben, akkor melyik szám kettes számrendszerbeli alakját kapjuk?
-- Az N/2 kettes számrendszerbeli alakját. Tehát a megoldás úgy néz ki, hogy [N/2 kettes számrendszerbeli alakja][0/1 az N paritásától függően]. Például N=13-ra az N/2=6 kettes számrendszerben 110, és a 13 páratlan, így a 13 kettes számrendszerben 1101.
+- cpp: Az N/2 kettes számrendszerbeli alakját. Tehát a megoldás úgy néz ki, hogy [N/2 kettes számrendszerbeli alakja][0/1 az N paritásától függően]. Például N=13-ra az N/2=6 kettes számrendszerben 110, és a 13 páratlan, így a 13 kettes számrendszerben 1101.
+  py: Az N//2 kettes számrendszerbeli alakját. Tehát a megoldás úgy néz ki, hogy [N//2 kettes számrendszerbeli alakja][0/1 az N paritásától függően]. Például N=13-ra az N//2=6 kettes számrendszerben 110, és a 13 páratlan, így a 13 kettes számrendszerben 1101.
 - Lehet rekurzív függvénnyel csinálni, vagy ciklussal is, 2-vel osztogatva a számot és mindig az elejére illeszteni a jegyet.

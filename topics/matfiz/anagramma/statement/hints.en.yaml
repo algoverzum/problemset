@@ -1,4 +1,7 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- If the two words are not the same length, then they are definitely not anagrams.
+- Sort the letters of the two strings in alphabetical (`abc`) order.
+- cpp: The letters of a string `s` can be sorted using the call `sort(s.begin(), s.end())`.
+  py: For a string `s`, `sorted(s)` returns a list containing the letters of `s` in sorted order.
+- cpp: The two sorted strings are identical if and only if the two words are anagrams. We can use the `==` operator to check whether they are equal.
+  py: The two sorted lists are identical if and only if the two words are anagrams. We can use the `==` operator to check whether they are equal.

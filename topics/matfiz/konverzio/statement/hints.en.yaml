@@ -1,4 +1,6 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- The last digit is 0 or 1 depending on whether the number is even or odd.
+- If we remove the last digit in the binary (base-2) representation, which number's binary representation do we get?
+- cpp: The binary representation of N/2. So the solution looks like [binary representation of N/2][0 or 1 depending on the parity of N]. For example, if N=13, then N/2=6, whose binary representation is 110, and since 13 is odd, the binary representation of 13 is 1101.
+  py: The binary representation of N//2. So the solution looks like [binary representation of N//2][0 or 1 depending on the parity of N]. For example, if N=13, then N//2=6, whose binary representation is 110, and since 13 is odd, the binary representation of 13 is 1101.
+- This can be done using a recursive function, or with a loop by repeatedly dividing the number by 2 and always prepending the digit.
