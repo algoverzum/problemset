@@ -1,0 +1,4 @@
+---
+- Mindenkinek annyi aranya lesz a végén, mint a leggazdagabb embernek.
+- Válasszuk ki a maximumot a sorozatból.
+- Összegezzük minden elemre a maximumtól való különbséget. Ezt akár úgy is kiszámolhatjuk, hogy a maximum `n`-szerese mínusz a sorozat összege.

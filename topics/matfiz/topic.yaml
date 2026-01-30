@@ -78,6 +78,14 @@ problems:
     type: REQUIRED
   - problem_id: dec2bin
     type: REQUIRED
+  - problem_id: tukorerdo
+    type: REQUIRED
+  - problem_id: egyensuly
+    type: REQUIRED
+  - problem_id: varazslo
+    type: REQUIRED
+  - problem_id: x-tulsuly
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

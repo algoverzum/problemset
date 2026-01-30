@@ -1,0 +1,8 @@
+---
+- Hogyan lehetne kinyerni a stringből az összeadandő számokat?
+- cpp: A számok a stringnek minden páratlanadik eleme (a páros indexűek), mert mindegyik szám csak 1 számjegyű.
+  py: A számok a stringnek minden páratlanadik eleme (a páros indexűek), mert mindegyik szám csak 1 számjegyű. De használhatjuk a split függvényt is a '+' -oknál szétválasztásra.
+- cpp: A számokat gyűjtsük ki egy char típusú vectorba. A beépített sort függvény a karaktereket is össze tudja hasonlítani, így jól fogja rendezni.
+  py: A számokat tegyük egy listába, és akár maradhatnak szöveg típusúak is.
+- cpp: Rendezzük a vectort és ennek az elemeit írjuk ki sorban '+'-szal elválasztva.
+  py: Ezután rendezzük a listát és ennek az elemeit írjuk ki sorban '+'-al elválasztva.

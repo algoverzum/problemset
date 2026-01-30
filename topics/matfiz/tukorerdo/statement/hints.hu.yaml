@@ -1,0 +1,12 @@
+---
+- cpp: Ha `s` és `t` nem azonos betűből áll, akkor rögtön kiírhatjuk a `NO` választ.
+  py: Legyen a két string `s` és `t`. Vegyük az `s` string megfordítottját és vizsgáljuk meg, hogy megegyezik-e `t`-vel!
+- cpp: Menjünk végig az `s` szó betűin, és vizsgáljuk meg mindig, hogy egyezik-e hátulról az ugyanannyiadik betűvel `t`-ben.
+  py: |
+    A `t` string megfordítottját így kaphatjuk meg Pythonban: `t[::-1]`.
+- cpp: |
+    Figyelj arra, hogy 0-tól indexelünk. Ha a szó hossza `n`, akkor a `i`-edik betű hátulról az `(n - i - 1)`-edik helyen van.
+  py: Két string-et összehasonlítani az `==`-vel lehet.
+- cpp: Ha valahol nincs egyezés, akkor rögtön kiírhatjuk a `NO` választ, viszont véget kell vetni a programnak, nehogy többször is kiírjuk. Ezt a `return 0;` utasítással tehetjük meg. A ciklus után pedig feltétel nélkül kiírhatjuk, hogy `YES`, mivel egyébként nem jutott volna el odáig a végrehajtás.
+  py: |
+    if `s == t[::-1]`: ...

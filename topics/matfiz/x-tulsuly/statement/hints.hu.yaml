@@ -1,0 +1,7 @@
+---
+- Nézzetek meg pár példát, hogy hányat kell lecserélni.
+- Mi van, ha 3 db 'x' betű van a stringben, és a string 10 hosszú?
+- Mi van, ha `n` db 'x' betű van a stringben, és a string `m` hosszú?
+- Ha `n` db 'x' betű van, akkor `2n-1` lehet a megmaradó string hossza legfeljebb, ha ez több, mint `m`, akkor nem kell semmit elvenni, egyébként `m-(2n-1)`.
+- cpp: Egy `for` ciklussal menjünk végig a betűkön és közben megszámoljuk az 'x'-eket.
+  py: Az 'x' betűk megszámlálására használhatjuk a count függvényt.

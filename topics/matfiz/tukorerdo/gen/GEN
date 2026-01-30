@@ -1,0 +1,34 @@
+# A       S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+#COPY: statement/input1.txt
+#COPY: statement/input2.txt
+
+# Subtask 2: all
+#ST: 100
+#STNAME: all
+2      1
+1      21
+2      14
+3      16
+3      17
+4      18
+4      19
+4      20
+10     2
+30     3
+40     4
+100    5
+100    6
+100    7
+99     8
+99     9
+99     10
+100    111
+100    12
+100    13
+#COPY: gen/test1.txt
+#COPY: gen/test2.txt

@@ -1,0 +1,4 @@
+---
+- Since we cannot take gold away, everyone will end up with the same amount of gold as the richest person.
+- Find the maximum value in the sequence.
+- Sum the differences between the maximum and each element. This can also be computed as the maximum multiplied by `n` minus the sum of the sequence.

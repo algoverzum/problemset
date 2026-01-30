@@ -1,0 +1,8 @@
+---
+- How can we extract the numbers to be added from the string?
+- cpp: The numbers are located at every other position of the string (the even indices), since each number consists of only one digit.
+  py: The numbers are also at every other position (the even indices), since each number has only one digit. Alternatively, we can use the split function to separate the string at the '+' characters.
+- cpp: Collect the numbers into a vector<char>. The built-in sort function can compare characters as well, so it will sort them correctly.
+  py: Put the numbers into a list; they can remain as strings.
+- cpp: Sort the vector and print its elements in order, separated by '+'.
+  py: Then sort the list and print its elements in order, separated by '+'.

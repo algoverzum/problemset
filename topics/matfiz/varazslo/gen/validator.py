@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+
+from limits import *
+
+import sys
+import os
+
+
+def usage():
+    print("Usage: %s file_input.txt [subtask_number]" % sys.argv[0], file=sys.stderr)
+    exit(1)
+
+
+def run(f, st):
+    for k, v in subtasks[st].items():
+        globals()[k] = v
+
+    S = next(f).strip()
+    assert MIN <= len(S) <= MAX
+    for i in range(1, len(S), 2):
+        assert S[i] == "+"
+    for i in range(0, len(S), 2):
+        assert S[i] in "123"
+
+    assert next(f, None) is None
+
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        usage()
+
+    # Di default, ignora i subtask
+    st = 0
+
+    if len(sys.argv) == 3:
+        st = int(sys.argv[2])
+
+    f = open(sys.argv[1])
+    run(f, st)

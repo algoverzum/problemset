@@ -1,0 +1,7 @@
+---
+- Check a few examples to see how many characters need to be removed.
+- What if there are 3 'x' letters in the string and the string length is 10?
+- What if there are `n` 'x' letters in the string and the string length is `m`?
+- If there are n 'x' letters, then the remaining string can have at most length `2n-1`. If this is greater than `m`, nothing needs to be removed; otherwise, remove `m-(2n-1)` characters.
+- cpp: Use a for loop to go through the letters and count the 'x' characters.
+  py: You can use the count function to count the 'x' characters.
