@@ -2,8 +2,7 @@
 Given an array $a$ containing $n$ numbers, output the smallest number that appears at least three times in the array, or output $-1$ if no such number exists.
 
 ### Input
-The first line of the input contains a single integer: $
-n$ - the length of the array.  
+The first line of the input contains a single integer: $n$ - the length of the array.  
 The second line contains $n$ integers $a_1, a_2, \ldots, a_n$ ($1\le a_i\le n$ - the elements of the array.
 
 ### Output

@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- Look at the parity (odd or even) of the sum of all numbers.
+- If the total sum is odd, then it's definitely impossible to solve. No matter how we split it into two parts, one part will have an even sum and the other an odd sum.
+- If the total sum is even, can it always be done?
+- In fact, when the total sum is even, any partition works. If one part has an even sum, the other will too; and if one part is odd, the other will be odd as well.
