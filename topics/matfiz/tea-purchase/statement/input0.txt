@@ -1,0 +1,13 @@
+6
+Lipton
+200
+Teekanne
+100
+Lipton
+600
+Lipton
+800
+Pickwick
+200
+Greenfield
+800

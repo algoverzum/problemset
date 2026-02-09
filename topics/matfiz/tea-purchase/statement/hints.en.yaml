@@ -1,0 +1,4 @@
+---
+- It is not necessary to use a list; during input reading, you can check if the new value is larger than the maximum so far.
+- You need to store the current maximum value and its index.
+- Initially, the maximum value and its index can be -1.

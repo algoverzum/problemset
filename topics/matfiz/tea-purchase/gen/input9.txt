@@ -1,0 +1,17 @@
+8
+Lipton
+1500
+Teekanne
+1200
+Pickwick
+1500
+Greenfield
+1800
+Twinings
+900
+AhmadTea
+1600
+Basilur
+1700
+Dilmah
+1400

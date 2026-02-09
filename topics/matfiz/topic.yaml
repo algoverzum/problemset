@@ -94,6 +94,8 @@ problems:
     type: REQUIRED
   - problem_id: precipitation-stats
     type: REQUIRED
+  - problem_id: tea-purchase
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

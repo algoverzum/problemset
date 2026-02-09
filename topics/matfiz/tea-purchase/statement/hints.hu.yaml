@@ -1,0 +1,4 @@
+---
+- Nem szükséges listát használnod, a beolvasás közben tudod figyelni, hogy az új értéke az nagyobb-e, mint az eddig legnagyobb.
+- Az aktuális legnagyobb értékét és indexét kell tárolnod.
+- Kezdetben a legnagyobb érték és indexe lehet -1.
