@@ -1,0 +1,4 @@
+---
+- Tegyük fel, hogy az első hét a legcsapadékosabb!
+- A külső ciklusban `1`-től `N`-ig megyünk, a belsőben `0`-tól `<7`-ig.
+- A belső ciklus lefutása után nézzük meg, hogy `heti_sum > max_osszeg`. Egyenlőség esetén nem cserélünk, így a legkisebb sorszám marad.

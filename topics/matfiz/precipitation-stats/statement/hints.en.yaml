@@ -1,0 +1,4 @@
+---
+- Assume that the first week is the wettest!
+- In the outer loop, go from `1` to `N`, and in the inner loop from `0` to `<7`.
+- After the inner loop finishes, check if `weekly_sum > max_sum`. In case of equality, do not swap, so the smallest serial number remains.
