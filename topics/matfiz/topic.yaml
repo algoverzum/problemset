@@ -88,6 +88,8 @@ problems:
     type: REQUIRED
   - problem_id: yukkai-jegyek
     type: REQUIRED
+  - problem_id: konyvtar
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

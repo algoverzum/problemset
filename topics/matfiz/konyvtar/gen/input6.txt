@@ -1,0 +1,6 @@
+5
+Computer_Architecture 1985
+Operating_Systems 1985
+Digital_Logic 1990
+Artificial_Neural_Networks 1991
+Cryptography 1991

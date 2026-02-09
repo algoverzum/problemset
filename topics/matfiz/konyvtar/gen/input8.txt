@@ -1,0 +1,7 @@
+6
+Database_Design 2020
+Distributed_Computing 2000
+Web_Security 2000
+AI_Fundamentals 1990
+Data_Analytics 1990
+Network_Protocols 2020

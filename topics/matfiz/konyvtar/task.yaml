@@ -1,0 +1,17 @@
+---
+# General info
+name: konyvtar
+title: Library Catalog Sorting
+title_translations:
+  hu: Könyvtári katalógus rendezése
+
+# Technical info
+memory_limit: 1024
+time_limit: 2.0
+infile: ""
+outfile: ""
+
+# Other stuff
+score_mode: max_subtask
+feedback_level: full
+

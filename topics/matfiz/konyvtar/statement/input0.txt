@@ -1,0 +1,6 @@
+5
+Algoritmusok 2010
+Adatszerkezetek 2010
+Python_kezdoknek 2018
+Mesterseges_intelligencia 2020
+Programozas_alapjai 2010
