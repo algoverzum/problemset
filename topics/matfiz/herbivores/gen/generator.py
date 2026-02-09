@@ -91,9 +91,7 @@ def run(n_pairs):
                 pairs.add((eater, eaten))
 
     output_lines = []
-    output_lines.append(
-        str(len(pairs))
-    )
+    output_lines.append(str(len(pairs)))
 
     pair_list = list(pairs)
     shuffle(pair_list)
@@ -101,6 +99,7 @@ def run(n_pairs):
     print(len(pair_list))
     for p1, p2 in pair_list:
         print(f"{p1} {p2}")
+
 
 if __name__ == "__main__":
     num_args = len(signature(run).parameters) + 2

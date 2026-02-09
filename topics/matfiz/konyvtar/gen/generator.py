@@ -15,6 +15,7 @@ Constraint:
 * 1 <= N <= 1000
 """
 
+
 def run(N):
     print(N)
     titles = set()
@@ -27,6 +28,7 @@ def run(N):
         titles.add(title)
         year = randint(1000, 2024)
         print(f"{title} {year}")
+
 
 if __name__ == "__main__":
     num_args = len(signature(run).parameters) + 2

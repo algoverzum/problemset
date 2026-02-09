@@ -38,6 +38,7 @@ def run(N, F):
         score = randint(min_score, max_score)
         print(f"{name} {score}")
 
+
 if __name__ == "__main__":
     num_args = len(signature(run).parameters) + 2
     if len(argv) != num_args:

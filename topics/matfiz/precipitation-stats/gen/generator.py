@@ -26,6 +26,7 @@ def run(N):
         week = [randint(0, 1000) for _ in range(7)]
         print(" ".join(map(str, week)))
 
+
 if __name__ == "__main__":
     num_args = len(signature(run).parameters) + 2
     if len(argv) != num_args:

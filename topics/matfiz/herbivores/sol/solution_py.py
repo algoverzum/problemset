@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
+
 def main():
     N = int(input())
     data = []
