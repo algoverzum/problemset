@@ -10,8 +10,8 @@ Az első sorban egy egész szám szerepel, $N$ &ndash; a könyvek száma.
 Ezután $N$ sor következik, mindegyikben egy könyv adatai: a könyv címe és a kiadási éve. A könyvcím szóköz nélküli szöveg, a kiadási év pedig egy egész szám.
 
 ### Korlátok
-$1 \le N \le 1000$
-$1000 \le év \le 2024$
+- $1 \le N \le 1000$
+- $1000 \le év \le 2024$
 
 ### Kimenet
 A könyvek rendezve a megadott sorrendben.

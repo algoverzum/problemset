@@ -10,8 +10,8 @@ The first line contains an integer, $N$ &ndash; the number of books.
 Then $N$ lines follow, each containing the data of a book: the book's title and its publication year. The book title is text without spaces, and the publication year is an integer.
 
 ### Constraints
-$1 \le N \le 1000$
-$1000 \le year \le 2024$
+- $1 \le N \le 1000$
+- $1000 \le year \le 2024$
 
 ### Output
 The books sorted in the specified order.
