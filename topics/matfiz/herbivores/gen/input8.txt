@@ -1,0 +1,4 @@
+3
+lion zebra
+zebra grass
+grass leaf

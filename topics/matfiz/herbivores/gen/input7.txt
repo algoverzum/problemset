@@ -1,0 +1,5 @@
+4
+fox chicken
+chicken corn
+cow grass
+goat grass

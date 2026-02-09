@@ -90,6 +90,8 @@ problems:
     type: REQUIRED
   - problem_id: konyvtar
     type: REQUIRED
+  - problem_id: herbivores
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

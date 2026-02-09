@@ -1,0 +1,6 @@
+5
+wolf deer
+wolf rabbit
+rabbit grass
+cow grass
+sheep grass

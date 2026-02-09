@@ -1,0 +1,6 @@
+---
+- Beolvasáskor minden bal oldali elemet beteszünk egy set-be, ezek az állatok, amelyek esznek valamit. Az adatokat egy mátrixban tároljuk.
+- cpp: Nem szabad menet közben törölni a set-ből, mert későbbi ellenőrzéseknél már „eltűnne” egy állat, és nem derülne ki róla, hogy állat volt. Ezért kell egy másik set. `set<string> only_plants = eaters;`
+  py: Nem szabad menet közben törölni a set-ből, mert későbbi ellenőrzéseknél már „eltűnne” egy állat, és nem derülne ki róla, hogy állat volt. Ezért kell egy másik set. `only_plants = eaters.copy()`
+- cpp: Végigmegyünk a párokon, ha egy állat olyan lényt eszik, aki maga is eszik, azaz szerepel a set-ben, kivesszük a set-ből (`only_plants`).
+  py: Végigmegyünk a párokon, ha egy állat olyan lényt eszik, aki maga is eszik, azaz szerepel a set-ben, kivesszük a set-ből (`only_plants.discard(eater)`).

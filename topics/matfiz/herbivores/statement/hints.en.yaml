@@ -1,0 +1,6 @@
+---
+- During input reading, insert every left-side element into a set; these are the animals that eat something. Store the data in a matrix.
+- cpp: You must not delete from the set on the fly, because an animal would "disappear" for later checks, and it wouldn't be identified as an animal. Therefore, another set is needed. `set<string> only_plants = eaters;`
+  py: You must not delete from the set on the fly, because an animal would "disappear" for later checks, and it wouldn't be identified as an animal. Therefore, another set is needed. `only_plants = eaters.copy()`
+- cpp: Iterate through the pairs; if an animal eats a creature that itself eats (i.e., appears in the set), remove it from the set (`only_plants`).
+  py: Iterate through the pairs; if an animal eats a creature that itself eats (i.e., appears in the set), remove it from the set (`only_plants.discard(eater)`).
