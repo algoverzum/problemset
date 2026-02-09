@@ -1,0 +1,5 @@
+Megbuktak: 3
+Legjobb: Ava (90)
+Legrosszabb: Lucas (10)
+Rendezett pontok: 10 48 48 90
+Átmentek: Ava

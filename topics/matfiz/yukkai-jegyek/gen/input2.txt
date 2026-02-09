@@ -1,0 +1,7 @@
+6
+Thomas 40
+Liam 95
+Olivia 67
+Sophia 22
+James 50
+Henry 77

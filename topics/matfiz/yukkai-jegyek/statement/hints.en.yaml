@@ -1,0 +1,5 @@
+---
+- Use two vectors; store the names in one and the scores in the other!
+- Determine the number of students who failed! (You need to count those with scores below 50!)
+- Find the best and worst student using a loop (finding minimum and maximum values)!
+- Sort the scores using the method you learned, then you can find the names of the students who passed using a loop!

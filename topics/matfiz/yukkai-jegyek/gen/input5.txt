@@ -1,0 +1,8 @@
+7
+Logan 0
+Oliver 10
+Ethan 20
+Mason 30
+Elijah 40
+Charlotte 50
+Amelia 60

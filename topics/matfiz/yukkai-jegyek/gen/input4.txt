@@ -1,0 +1,6 @@
+5
+Benjamin 100
+Mia 100
+Ella 55
+Grace 44
+Jack 12

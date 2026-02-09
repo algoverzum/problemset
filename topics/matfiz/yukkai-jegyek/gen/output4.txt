@@ -1,0 +1,5 @@
+Megbuktak: 2
+Legjobb: Benjamin (100)
+Legrosszabb: Jack (12)
+Rendezett pontok: 12 44 55 100 100
+Átmentek: Benjamin Mia Ella

@@ -1,0 +1,5 @@
+Megbuktak: 2
+Legjobb: cili (90)
+Legrosszabb: emil (30)
+Rendezett pontok: 30 45 50 60 90
+Átmentek: anna cili dani

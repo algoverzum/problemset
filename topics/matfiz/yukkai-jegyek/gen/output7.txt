@@ -1,0 +1,5 @@
+Megbuktak: 7
+Legjobb: Leo (100)
+Legrosszabb: Matthew (30)
+Rendezett pontok: 30 30 30 30 30 30 30 100
+Átmentek: Leo

@@ -86,6 +86,8 @@ problems:
     type: REQUIRED
   - problem_id: x-tulsuly
     type: REQUIRED
+  - problem_id: yukkai-jegyek
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

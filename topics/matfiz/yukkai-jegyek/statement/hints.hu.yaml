@@ -1,0 +1,5 @@
+---
+- Használj két vektort (listát), az egyikbe a neveket, a másikba a pontokat gyűjtsd!
+- Határozd meg a bukottak számát! (Az 50 pont alattiakat kell megszámolnod!)
+- "A legjobb és legrosszabb diákot keresd meg egy ciklus segítségével: szélsőérték keresése!"
+- Rendezd a pontokat a tanult módon, majd az átment diákok neveit keresheted ciklussal!

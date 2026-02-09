@@ -1,0 +1,6 @@
+5
+anna 60
+bela 45
+cili 90
+dani 50
+emil 30
