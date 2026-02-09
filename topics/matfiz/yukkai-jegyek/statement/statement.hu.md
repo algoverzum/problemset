@@ -12,7 +12,7 @@ Segíts a tanárnőnek kiszámolni ezeket az értékeket!
 ### Bemenet
 A bemenet első sora egy egész számot tartalmaz: $N$: a diákok száma ($1 \le N \le 100$).
 
-A következő $N$ sor mindegyike két adatot tartalmaz: $név pont$, ahol $név$ egy szó, az angol ábécé betűiből, és $pont$ egy egész szám ($0 \le pont \le 100$).
+A következő $N$ sor mindegyike két adatot tartalmaz: $név\ pont$, ahol $név$ egy szó, az angol ábécé betűiből, és $pont$ egy egész szám ($0 \le pont \le 100$).
 
 ### Kimenet
 Írj ki öt sort az alábbi formátumban:

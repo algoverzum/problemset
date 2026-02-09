@@ -11,7 +11,7 @@ Help the teacher calculate these values!
 ### Input
 The first line of the input contains an integer: $N$: the number of students ($1 \le N \le 100$).
 
-Each of the next $N$ lines contains two pieces of data: $name score$, where $name$ is a word consisting only of English letters, and $score$ is an integer ($0 \le score \le 100$).
+Each of the next $N$ lines contains two pieces of data: $name\ score$, where $name$ is a word consisting only of English letters, and $score$ is an integer ($0 \le score \le 100$).
 
 ### Output
 Print lines in the following format:
