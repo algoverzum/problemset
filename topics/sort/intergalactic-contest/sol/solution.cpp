@@ -1,7 +1,7 @@
 // @check-accepted: *
 #include <algorithm>
+#include <array>
 #include <iostream>
-#include <tuple>
 #include <vector>
 using namespace std;
 
