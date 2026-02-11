@@ -54,6 +54,7 @@ sed "s/__TASK_NAME__/$name/g;s/__TASK_TITLE__/$up/g" "$folder/task.yaml" > "$nam
 grep -v "NOTE" "$folder/t.cpp" > "$name/sol/solution.cpp"
 grep -v "NOTE" "$folder/t.py" > "$name/sol/solution_py.py"
 cp "$folder/statement.tex" "$name/statement/"
+cp "$folder/statement.pdf" "$name/statement/"
 sed "s/__TASK_TITLE__/$up/g" "$folder/statement.en.md" > "$name/statement/statement.en.md"
 cp "$folder/hints.en.yaml" "$name/statement/"
 sed "s/__TASK_TITLE__/$up/g" "$folder/statement.hu.md" > "$name/statement/statement.hu.md"
