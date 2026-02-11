@@ -17,7 +17,7 @@ A következő sor(ok)ba pedig a felújítás sorszámát! Ha több azonos legrö
 ### Korlátok
 
 - $1 \le N \le 100000$
-- $1 \le M \\e 100$
+- $1 \le M \le 100$
 - $0 \le K_i \le V_i \le N$
 
 ### Példa bemenet
