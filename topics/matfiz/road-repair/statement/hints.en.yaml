@@ -1,0 +1,7 @@
+---
+- cpp: Declare a vector of `M` elements in which you store the differences!
+  py: Declare a list of `M` elements in which you store the differences!
+- cpp: Find the smallest element of this vector, the length of the shortest renovation!
+  py: Find the smallest element of this list, the length of the shortest renovation!
+- cpp: Print the minimum, then iterate through the vector with a loop, and for whichever element matches the minimum, print its index (+1)!
+  py: Print the minimum, then iterate through the list with a loop, and for whichever element matches the minimum, print its index (+1)!

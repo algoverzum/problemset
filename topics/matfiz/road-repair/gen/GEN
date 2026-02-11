@@ -1,0 +1,25 @@
+# N    M    TIES    S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+
+# Subtask 2: 1 <= N <= 100
+#ST: 100
+#STNAME: all
+#COPY: gen/input1.txt
+#COPY: gen/input2.txt
+#COPY: gen/input3.txt
+#COPY: gen/input4.txt
+#COPY: gen/input5.txt
+#COPY: gen/input6.txt
+#COPY: gen/input7.txt
+#COPY: gen/input8.txt
+#COPY: gen/input9.txt
+500    10   0    0
+500    100  0    1
+500    100  1    2
+100000 100  0    3
+100000 100  1    4
+100000 100  1    5

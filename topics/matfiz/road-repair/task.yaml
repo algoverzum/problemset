@@ -1,0 +1,16 @@
+---
+# General info
+name: road-repair
+title: Shortest Road Repair
+title_translations:
+  hu: Legrövidebb útfelújítás
+
+# Technical info
+memory_limit: 32
+time_limit: 0.1
+infile: ""
+outfile: ""
+
+# Other stuff
+score_mode: max_subtask
+feedback_level: full

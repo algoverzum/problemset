@@ -1,0 +1,7 @@
+---
+- cpp: Deklarálj egy `M` elemű vektort, amiben a különbségeket tárolod!
+  py: Deklarálj egy `M` elemű listát, amiben a különbségeket tárolod!
+- cpp: Ennek a vektornak keresd meg a legkisebb elemét, a legrövidebb felújítás hosszát!
+  py: Ennek a listának keresd meg a legkisebb elemét, a legrövidebb felújítás hosszát!
+- cpp: Írasd ki a minimumot, majd egy ciklussal menj végig a vektoron, és amelyik elem megegyezik a minimummal, annak a sorszámát (+1) írasd ki!
+  py: Írasd ki a minimumot, majd egy ciklussal menj végig a listán, és amelyik elem megegyezik a minimummal, annak a sorszámát (+1) írasd ki!

@@ -96,6 +96,8 @@ problems:
     type: REQUIRED
   - problem_id: tea-purchase
     type: REQUIRED
+  - problem_id: road-repair
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:
