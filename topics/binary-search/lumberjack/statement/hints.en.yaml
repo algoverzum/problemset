@@ -1,0 +1,5 @@
+---
+- We can easily compute how much wood we collect for a given cutting height $H$ (iterate through the numbers, subtract $H$ from each value greater than $H$, and sum the results). Using this, how can we determine the solution?
+- We are looking for the smallest $H$ value for which the total amount of cut wood reaches at least $M$. Trying all possible $H$ values one by one would be too slow. How could we speed this up?
+- cpp: Use binary search on the answer! Be careful: during summation the result can be large, so use `long long`! If we set $H=0$, the task is definitely solvable; if $H=10^9$, it is definitely not — these are good initial bounds for starting the binary search.
+  py: Use binary search on the answer! If we set $H=0$, the task is definitely solvable; if $H=10^9$, it is definitely not — these are good initial bounds for starting the binary search.

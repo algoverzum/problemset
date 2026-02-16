@@ -4,6 +4,8 @@ name: Binary Search
 problems:
   - problem_id: problemsetting
     type: EXTRA
+  - problem_id: lumberjack
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

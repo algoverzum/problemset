@@ -1,0 +1,5 @@
+---
+- Könnyen ki tudjuk számítani, hogy egy adott $H$ magasságra állítva a fűrészt mennyi fát tudunk gyűjteni (végigmegyünk a számokon és mindegyik $H$-nál nagyobból kivonunk $H$-t és összeadjuk őket). Ennek segítségével hogy lehet meghatározni a megoldást?
+- A legkisebb olyan $H$ értéket keressük, amire a kivágott fák összege eléri az $M$-et. Ha egyesével próbálgatnánk ki a lehetséges $H$ értékeket, az túl lassú. Hogy lehetne gyorsítani?
+- cpp: Használjunk bináris keresést a válaszra! Vigyázz arra, hogy az összeadás közben az eredmény akár nagy is lehet, használj `long long`-ot! Ha $H$-t 0-ra állítjuk, akkor biztos megoldható a feladat, $H=10^9$ esetén pedig biztos nem, ezek jó kezdőértékek a bináris keresés indításához.
+  py: Használjunk bináris keresést a válaszra! Ha $H$-t 0-ra állítjuk, akkor biztos megoldható a feladat, $H=10^9$ esetén pedig biztos nem, ezek jó kezdőértékek a bináris keresés indításához.
