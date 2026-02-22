@@ -10,9 +10,7 @@ His right pocket contains $m$ coins: their values are $c_1, c_2, \dots, c_m$.
 He wants to choose exactly **one** coin from his left pocket and **one** coin from his right pocket.  
 Help Tom determine how many ways he can choose the indices $f$ and $s$ such that:
 
-\[
-b_f + c_s \le k
-\]
+$$b_f + c_s \le k$$
 
 ### Input
 The first line: an integer $t$ &ndash; the number of test cases.
@@ -24,12 +22,11 @@ The second line of each test case contains $n$ integers, where $b_1, \dots, b_n$
 The third line of each test case contains $m$ integers: the coins in the right pocket, $c_1, \dots, c_m$.
 
 ### Output
-For each test case, print a single line:  
-the **number of valid index pairs** for the two chosen coins where the condition is met:
-\[b[i] + c[j] \le k \].
+For each test case, print a single line: the **number of valid index pairs** for the two chosen coins where the condition is met:
+
+$$b[i] + c[j] \le k$$
 
 That is, print how many ways Tom can select two coins, taking one from each pocket, such that their sum does not exceed $k$.
-
 
 ### Constraints
 - $1 \le t \le 100$

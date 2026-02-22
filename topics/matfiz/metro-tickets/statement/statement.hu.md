@@ -10,9 +10,7 @@ A jobb zsebében $m$ érme van: értékeik $c_1, c_2, \dots, c_m$.
 Pontosan **egy** érmét akar választani a bal zsebéből és **egy** érmét a jobb zsebéből.  
 Segíts Tomnak meghatározni, hogy hányféleképpen lehet úgy kiválasztani az $f$ és $s$ indexeket, hogy:
 
-\[
-b_f + c_s \le k
-\]
+$$b_f + c_s \le k$$
 
 ### Bemenet
 Az első sor: egy egész szám $t$ &ndash; a tesztesetek száma.
@@ -26,7 +24,7 @@ Minden teszteset harmadik sora $m$ db egész számot tartalmaz: a jobb zseb érm
 ### Kimenet
 Minden tesztesethez egy sort kell kiírni:  
 a két választott érmére vonatkozó **érvényes indexpárok száma**, ahol a feltétel teljesül:
-\[b[i] + c[j] \le k \].
+$$b[i] + c[j] \le k$$
 
 Azaz, hányféleképpen választhat ki két érmét Tom úgy, hogy mindkét zsebéből kivesz egyet és az érmék összege nem haladja meg $k$ értékét.
 
