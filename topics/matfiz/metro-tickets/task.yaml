@@ -1,0 +1,16 @@
+---
+# General info
+name: metro-tickets
+title: Tom and the Metro Tickets
+title_translations:
+  hu: Tom és a metrójegyek
+
+# Technical info
+memory_limit: 256
+time_limit: 1.0
+infile: ""
+outfile: ""
+
+# Other stuff
+score_mode: max_subtask
+feedback_level: full

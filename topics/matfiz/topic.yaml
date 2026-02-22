@@ -98,6 +98,8 @@ problems:
     type: REQUIRED
   - problem_id: road-repair
     type: REQUIRED
+  - problem_id: metro-tickets
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:
