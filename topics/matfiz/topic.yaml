@@ -92,7 +92,7 @@ problems:
     type: REQUIRED
   - problem_id: herbivores
     type: REQUIRED
-  - problem_id: precipitation-stats
+  - problem_id: rainiest-week
     type: REQUIRED
   - problem_id: tea-purchase
     type: REQUIRED

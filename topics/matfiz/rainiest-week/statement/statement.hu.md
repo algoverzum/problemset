@@ -1,4 +1,4 @@
-## Csapadék statisztika
+## Legcsapadékosabb hét
 
 Az elmúlt $N$ hétben minden nap megmértük a lehullott csapadék mennyiségét, milliméterben. Írj programot, amely megadja a legcsapadékosabb hetet!
 

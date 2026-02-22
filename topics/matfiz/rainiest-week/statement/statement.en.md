@@ -1,4 +1,4 @@
-## Precipitation Statistics
+## Rainiest Week
 
 For the past $N$ weeks, we measured the amount of precipitation that fell every day, in millimeters. Write a program that determines the wettest week!
 

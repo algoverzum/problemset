@@ -1,9 +1,9 @@
 ---
 # General info
-name: precipitation-stats
-title: Precipitation Statistics
+name: rainiest-week
+title: Rainiest Week
 title_translations:
-  hu: Csapadék statisztika
+  hu: Legcsapadékosabb hét
 
 # Technical info
 memory_limit: 256

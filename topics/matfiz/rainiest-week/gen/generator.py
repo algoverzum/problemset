@@ -6,7 +6,7 @@ import os
 from random import random, randint, choice, sample, shuffle, seed
 from inspect import signature
 
-usage = """Generator for "precipitation-stats".
+usage = """Generator for "rainiest-week".
 
 Parameters:
 * N (number of rows)
