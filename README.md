@@ -1,4 +1,9 @@
-# planets-problemset
+# Algoverzum Problemset
+
+An open problemset for teaching programming — from absolute basics to advanced competitive programming.
+Jointly maintained and used by [MATFIN Foundation](https://matfin.org/en) and [Algo Pro Club](https://algopro.hu/en).
+
+![License: CC-BY-SA 4.0](https://img.shields.io/badge/License-CC--BY--SA%204.0-lightgrey.svg)
 
 ### Autoformating and precommit setup guide
 
