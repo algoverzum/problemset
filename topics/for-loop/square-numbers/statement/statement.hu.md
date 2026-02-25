@@ -20,4 +20,4 @@ $N$ számot kell kiírnod külön sorokban, az első $N$ négyzetszámot.
     16
 
 ### A példa magyarázata
-A négyzetszámok: $1 \cdot 1 = 1, 2 \cdot 2 = 4, 3 \cdot 3=9, \ldots $. A példában $N=4$, szóval $4 \cdot 4 = 16$-ig kell kiírnunk őket.
+A négyzetszámok: $1 \cdot 1 = 1$, $2 \cdot 2 = 4$, $3 \cdot 3=9$, ... A példában $N=4$, szóval $4 \cdot 4 = 16$-ig kell kiírnunk őket.
