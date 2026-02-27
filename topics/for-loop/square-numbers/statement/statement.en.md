@@ -20,4 +20,4 @@ Print $N$ numbers in separate lines, the first $N$ square numbers.
     16
 
 ### Explanation of the example
-The square numbers are $1 \cdot 1 = 1, 2 \cdot 2 = 4, 3 \cdot 3=9, \ldots $. $N=4$ in the example, so we need to print them until $4 \cdot 4 = 16$.
+The square numbers are $1 \cdot 1 = 1$, $2 \cdot 2 = 4$, $3 \cdot 3=9$, ...  $N=4$ in the example, so we need to print them until $4 \cdot 4 = 16$.
