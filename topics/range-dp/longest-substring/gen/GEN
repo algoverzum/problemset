@@ -21,6 +21,7 @@
 #COPY: testcases/null.txt
 #COPY: testcases/front.txt
 #COPY: testcases/back.txt
+#COPY: testcases/abcabx.txt
 100    100    spec	14
 100    100    spec	15
 100    100    spec	16
