@@ -1,0 +1,17 @@
+---
+id: geometry
+name: Geometry
+problems:
+  - problem_id: closed-polygon
+    type: REQUIRED
+prerequisites:
+  - sort
+  - functions
+dependents: []
+visualization:
+  image_filename: 12.svg
+  position:
+    x: 1200
+    y: -1500
+
+# Notes:
