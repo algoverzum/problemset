@@ -1,5 +1,5 @@
 ## Zárt Poligon
-Adott a síkon $N$ pont, mindegyik az $(x,y)$ koordinátáival megadva. A pontok nem esnek egy egyenesre (ez garantálja, hogy lesz megoldás).
+Adott a síkon $N$ pont, mindegyik az $(x,y)$ koordinátáival megadva. Nincs minden pont egy egyenesen (ez garantálja, hogy lesz megoldás).
 
 Egy zárt poligont úgy adhatunk meg, hogy felsoroljuk a pontok sorszámait egy sorrendben. A felsorolásban egymást követő pontokat egyenes szakasz köti össze, továbbá az utolsó pontot az elsővel is összekötjük.
 
@@ -19,7 +19,7 @@ A következő $N$ sor mindegyike egy pont $(x_i,y_i)$ két egész koordinátáj�
 ### Korlátok
 * $3 \le N \le 1000$
 * $-10^8 \le x_i,y_i \le 10^8$ minden $i = 1..N$ esetén
-* A pontok nincsenek egy egyenesen.
+* Az összes pont nincs egy egyenesen.
 
 ### Példa bemenet
     6
