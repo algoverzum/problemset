@@ -17,7 +17,7 @@ Each of the next $N$ lines contains two integers, the coordinates $(x_i, y_i)$ o
 Print a permutation of the point indices that describes a closed, non-self-intersecting polygon. If multiple solutions exist, you may output any of them.
 
 ### Constraints
-* $3 \le N \le 10^5$
+* $3 \le N \le 1000$
 * $-10^8 \le x_i, y_i \le 10^8$ for each $i = 1..N$
 * The points are not collinear.
 
