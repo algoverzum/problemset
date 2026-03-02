@@ -1,0 +1,45 @@
+# N     maxX	type       S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+
+# Subtask 2: small 
+#ST: 50
+#STNAME: small
+#COPY: testcases/test1.txt
+#COPY: testcases/test2.txt
+#COPY: testcases/test3.txt
+#COPY: testcases/test4.txt
+#COPY: testcases/test5.txt
+#COPY: testcases/test6.txt
+#COPY: testcases/test7.txt
+#COPY: testcases/test8.txt
+#COPY: testcases/test9.txt
+#COPY: testcases/test10.txt
+#COPY: testcases/test11.txt
+#COPY: testcases/test12.txt
+#COPY: testcases/test13.txt
+#COPY: testcases/test14.txt
+
+# Subtask 3: all 
+#ST: 50
+#STNAME: all
+#COPY: testcases/test15.txt
+5      10	  rand    1
+10     100    	  rand	  2
+10     100	  rand	  3
+100    100	  rand	  4
+1000   100	  rand	  5
+1000   100	  rand	  6
+1000   1000	  rand	  7
+1000   100000	  rand	  8
+1000   100000000  rand	  9
+1000   100000000  rand	  10
+1000   100000000  line	  11
+1000   100000000  line	  12
+1000   100000000  2lines  13
+1000   100000000  2lines  14
+1000   100000000  5lines  15
+1000   100000000  5lines  16
