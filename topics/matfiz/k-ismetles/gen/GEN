@@ -23,3 +23,5 @@
 2	 10	-2	11
 2	 100	-2	12
 2	 10	-2	13
+#COPY: gen/test1.txt
+#COPY: gen/test2.txt
