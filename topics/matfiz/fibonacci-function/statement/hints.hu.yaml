@@ -1,0 +1,4 @@
+---
+- cpp: 'A Fibonacci sorozat elemei nagyon növekednek, ezért használjunk `long long` típust.'
+- cpp: 'A függvénynek a vectort referencia szerint adjuk át (`&`).'
+- cpp: 'A függvény visszatérési értéke void legyen, hiszen a referencia szerinti átadás miatt a visszaadott értékek a vector elemeiben adódnak vissza.'
