@@ -51,13 +51,13 @@ int main() {
     }
 
     cout << abs(total - 2 * left) << "\n";
-    cout << left_cargo.size();
+    cout << left_cargo.size() << " ";
     for (int idx : left_cargo)
-        cout << " " << idx;
+        cout << idx << " ";
     cout << "\n";
-    cout << right_cargo.size();
+    cout << right_cargo.size() << " ";
     for (int idx : right_cargo)
-        cout << " " << idx;
+        cout << idx << " ";
     cout << "\n";
 
     return 0;

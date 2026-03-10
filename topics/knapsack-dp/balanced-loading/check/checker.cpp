@@ -21,13 +21,13 @@ int main(int argc, char *argv[]) {
     int user_sol = ouf.readInt();
     if (user_sol < 0)
         user_sol *= -1;
-    ouf.readEoln();
+    ouf.seekEoln();
     int left = ouf.readInt();
     vector<int> left_cargo(left);
     for (int i = 0; i < left; ++i) {
         left_cargo[i] = ouf.readInt(1, N);
     }
-    ouf.readEoln();
+    ouf.seekEoln();
     int right = ouf.readInt();
     vector<int> right_cargo(right);
     for (int i = 0; i < right; ++i) {
