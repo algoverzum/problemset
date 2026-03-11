@@ -1,0 +1,4 @@
+---
+- cpp: 'The elements of the Fibonacci sequence grow very large, so use the `long long` data type.'
+- cpp: 'Pass the vector to the function by reference (`&`).'
+- cpp: 'The return type of the function should be `void`, since, due to passing by reference, the output values are returned directly via the elements of the vector.'
