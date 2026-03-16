@@ -100,6 +100,8 @@ problems:
     type: REQUIRED
   - problem_id: metro-tickets
     type: REQUIRED
+  - problem_id: fibonacci-function
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:
