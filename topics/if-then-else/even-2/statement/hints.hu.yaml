@@ -1,0 +1,2 @@
+---
+- Ha legalább az egyik páros, az azt jelenti, hogy mindkét szám párosságát vizsgálni kell, és ha az or (megengedő vagy) művelettel összekapcsolva igaz értéket kapunk, akkor legalább az egyik páros.
