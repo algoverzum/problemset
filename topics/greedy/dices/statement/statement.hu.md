@@ -37,18 +37,6 @@ Az összes kockát felhasználhatjuk, hogy létrehozzuk az $1,2,3,4$ sorozatot.
     5
 
 ### 2. Példa magyarázata
-Az összes kockát felhasználhatjuk, hogy létrehozzuk az $1,2,3,4$ sorozatot.
-
-### Példa bemenet 2
-
-6
-5 4 5 4 4 4
-
-### Példa kimenet 2
-
-5
-
-### Magyarázat a 2. példához
 Mivel egyik kocka sem tud 5-nél nagyobb számot mutatni, nem lehet 5-nél hosszabb sorozatot alkotni. Többféle módon is létrehozható pontosan 5 hosszú sorozat. Például: válasszuk a 4-et és az 5-öt a két $D_5$-ből, majd az 1, 2 és 3 számokat három $D_4$-ből, így megkapjuk az $1,2,3,4,5$ sorozatot.
 
 ### 3. Példa bemenet
