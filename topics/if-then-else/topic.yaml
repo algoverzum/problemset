@@ -30,12 +30,6 @@ problems:
     type: REQUIRED
   - problem_id: divisible-by-3
     type: REQUIRED
-  - problem_id: even-1
-    type: REQUIRED
-  - problem_id: even-2
-    type: REQUIRED
-  - problem_id: prefix-sign-1
-    type: REQUIRED
 prerequisites:
   - input-variables
 dependents:

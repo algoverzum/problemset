@@ -100,6 +100,12 @@ problems:
     type: REQUIRED
   - problem_id: metro-tickets
     type: REQUIRED
+  - problem_id: paros-1
+    type: REQUIRED
+  - problem_id: paros-2
+    type: REQUIRED
+  - problem_id: elojel-1
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

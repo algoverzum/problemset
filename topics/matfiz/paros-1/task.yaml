@@ -1,9 +1,9 @@
 ---
 # General info
-name: even-1
-title: Even 1
+name: paros-1
+title: Paros 1
 title_translations:
-  hu: Páros 1
+  hu: Paros 1
 
 # Technical info
 memory_limit: 256
