@@ -1,0 +1,4 @@
+---
+- Minden oszlop esetében meg kell keresni a legnagyobb elemet, ez lesz a megoldás!
+- Ha egy oszlopban megvan a legnagyobb elem és annak indexe, azt ki kell íratni!
+- Figyelni kell, hogy 1-től kezdődik a számozás, így +1 kell a végére!

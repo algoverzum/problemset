@@ -1,0 +1,4 @@
+---
+- Minden sorban, soronként meg kell számolni, hány olyan roller van, amelynek töltöttsége $L$ alatt van. Ezeket tárolhatjuk egy külön vektorban.
+- Ezek között kell megkeresni a maximumot (maxLow), a legtöbb $L$ alatti töltöttségű roller számát és kiíratni azt.
+- Ha nincs $L$ alatti töltöttségű roller, akkor akkor ki kell íratni a NINCS szót, egyébként ki kell íratni azokat a városokat, ahol pontosan ennyi ilyen roller van!

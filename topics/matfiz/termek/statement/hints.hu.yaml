@@ -1,0 +1,4 @@
+---
+- Vegyük észre, hogy mivel minden teremnek azonos a kapacitása, és minden szinten ugyannyi terem van, így elég soronként összeadni a számokat és a legkisebbet kiválasztani! Azaz nem kell százalékot számítani!
+- Szintenként adjuk össze a termek foglaltsági adatait, majd keressük meg a legkisebbet értéket!
+- Ha megvan a keresett szint, egy vektorba tegyük bele a foglaltsági adatokat, rendezzük le, és írassuk ki!

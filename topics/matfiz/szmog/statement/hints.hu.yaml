@@ -1,0 +1,4 @@
+---
+- Mivel egy héten mindig 7 nap van, így deklarálni kellene egy Nx7-es mátrixot. C++-ban lehetne vector<vector<int>> weeks(N, vector<int>(7)) is.
+- Két for ciklust érdemes használni. A belső előtt egy változót kell nullázni, abban tároljuk az egyes sorok összegét. A belső után meg kell nézni, hogy az összeg nagyobb-e, mint az eddigi legnagyobb. Ha igen, tárolni kell az összeget, mint eddigi legnagyobbat és a hét sorszámát (+1).
+- Mivel az utolsó hét kell, így a hasonlításkor `>=` kell, nem pedig `>`.
