@@ -100,6 +100,20 @@ problems:
     type: REQUIRED
   - problem_id: metro-tickets
     type: REQUIRED
+  - problem_id: paros-1
+    type: REQUIRED
+  - problem_id: paros-2
+    type: REQUIRED
+  - problem_id: elojel-1
+    type: REQUIRED
+  - problem_id: termek
+    type: REQUIRED
+  - problem_id: szmog
+    type: REQUIRED
+  - problem_id: eroller
+    type: REQUIRED
+  - problem_id: allatok
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

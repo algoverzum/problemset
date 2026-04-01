@@ -1,0 +1,16 @@
+---
+# General info
+name: paros-2
+title: Paros 2
+title_translations:
+  hu: Paros 2
+
+# Technical info
+memory_limit: 256
+time_limit: 1.0
+infile: ""
+outfile: ""
+
+# Other stuff
+score_mode: max_subtask
+feedback_level: full
