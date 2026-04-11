@@ -1,9 +1,9 @@
 ## Űrhajó adatbázis
 A Csillagflotta megbízott téged, hogy kezeld az adatbázisában a *titkos* csillaghajó lajstromkódokat. A feladatod a Csillagflotta Parancsnokságtól beérkező parancsok kezelése, amelyek a következő három típusba tartoznak:
 
-* $1 x$ - Regisztrálj egy új csillaghajót $x$ lajstromkóddal a Csillagflotta adatbázisában. (Ha a csillaghajó már így is az adatbázisban van. Hagyjuk a parancsot figyelmen kívül.)
-* $2 x$ - Egy $x$ lajstromkódú csillaghajó leselejtezése az adatbázisból. (Ha nincs ilyen csillaghajó, a parancsot figyelmen kívül hagyjuk.)
-* $3 x$ - Egy csillaghajó létezésének ellenőrzése az adatbázisban. Ha a $x$ lajstromkód megtalálható, **1**, ellenkező esetben **0**.
+* $1$ $x$ - Regisztrálj egy új csillaghajót $x$ lajstromkóddal a Csillagflotta adatbázisában. (Ha a csillaghajó már így is az adatbázisban van. Hagyjuk a parancsot figyelmen kívül.)
+* $2$ $x$ - Egy $x$ lajstromkódú csillaghajó leselejtezése az adatbázisból. (Ha nincs ilyen csillaghajó, a parancsot figyelmen kívül hagyjuk.)
+* $3$ $x$ - Egy csillaghajó létezésének ellenőrzése az adatbázisban. Ha a $x$ lajstromkód megtalálható, **1**, ellenkező esetben **0**.
 
 Az a feladatod, hogy hatékonyan hajtsd végre ezeket a parancsokat, biztosítva, hogy a Csillagflotta adatbázisa pontos és naprakész maradjon. (Kezdetben az adatbázis üres, nincs regisztrált hajó.)
 

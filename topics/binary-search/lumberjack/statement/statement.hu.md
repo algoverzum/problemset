@@ -5,7 +5,7 @@ A cél a lehető legnagyobb egész $H$ érték meghatározása úgy, hogy a lev�
 
 ### Bemenet
 Az első sor: $N$ (fák száma) és $M$ (szükséges famennyiség).  
-A második sor: $N$ darab pozitív egész szám $A_1, A_2, \ldots, A_n$- a fák magasságai.
+A második sor: $N$ darab pozitív egész szám $A_1, A_2, \ldots, A_n$ - a fák magasságai.
 
 ### Kimenet
 A maximális egész $H$ vágási magasság, amivel a levágott fa öszhossza legalább $M$ méter.
@@ -13,7 +13,7 @@ A maximális egész $H$ vágási magasság, amivel a levágott fa öszhossza leg
 ### Korlátok
 * $1 \le N \le 10^5$
 * $1 \le M \le 2\cdot 10^{9}$
-* $1 \le \A_i \le 10^9$ minden $i=1, 2, \ldots, N$ esetén
+* $1 \le A_i \le 10^9$ minden $i=1, 2, \ldots, N$ esetén
 * $A_1 + A_2 + \ldots + A_n \ge M$
 
 ### 1. Példa bemenet

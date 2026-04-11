@@ -1,9 +1,9 @@
 ## Starship Database
 The Starfleet has assigned you to manage a list of classified starship registry codes in the Starfleet Secure Database. Your mission is to handle incoming orders from Starfleet Command, which will be of the following three types:
 
-* $1 x$ - Register a new starship with registry code $x$ in the Starfleet Secure Database. (If the starship is already in the database, ignore the command.)
-* $2 x$ - Decommission a starship with registry code $x$ from the database. (If no such starship exists, ignore the command.)
-* $3 x$ - Verify a starship's existence in the database. If registry code $x$ is found, respond with **1**; otherwise, respond with **0**.
+* $1$ $x$ - Register a new starship with registry code $x$ in the Starfleet Secure Database. (If the starship is already in the database, ignore the command.)
+* $2$ $x$ - Decommission a starship with registry code $x$ from the database. (If no such starship exists, ignore the command.)
+* $3$ $x$ - Verify a starship's existence in the database. If registry code $x$ is found, respond with **1**; otherwise, respond with **0**.
 
 Your job as captain is to execute these commands efficiently, ensuring the Starfleet database remains accurate and up to date. (In the beggining the database is empty, no ship is registered.)
 
