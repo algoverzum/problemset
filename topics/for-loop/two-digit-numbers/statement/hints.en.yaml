@@ -1,4 +1,5 @@
-- We should go through the numbers from $i=10$ to 99 with a `for` loop. How do you think we can set the start and end of the loop? 
+---
+- We should go through the numbers from $i=10$ to 99 with a `for` loop. How do you think we can set the start and end of the loop?
 - cpp: |
     The headline of the loop should look like this: `for (int i = 10; i <= 99; i++) { ... }`
   py: |

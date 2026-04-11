@@ -2,10 +2,11 @@
 #include <vector>
 using namespace std;
 
-long long collected_wood(const vector<long long>& A, long long H) {
+long long collected_wood(const vector<long long> &A, long long H) {
     long long total = 0;
     for (long long h : A) {
-        if (h > H) total += (h - H);
+        if (h > H)
+            total += (h - H);
     }
     return total;
 }
@@ -21,7 +22,8 @@ int main() {
     long long maxH = 0;
     for (long long &x : A) {
         cin >> x;
-        if (x > maxH) maxH = x;
+        if (x > maxH)
+            maxH = x;
     }
 
     long long best = 0;

@@ -2,10 +2,12 @@
 # @check-accepted: *
 
 import sys
+
 input = sys.stdin.readline
 
 N, M = map(int, input().split())
 A = list(map(int, input().split()))
+
 
 def collected_wood(H):
     total = 0
@@ -13,6 +15,7 @@ def collected_wood(H):
         if a > H:
             total += a - H
     return total
+
 
 lo = 0
 hi = 10**9

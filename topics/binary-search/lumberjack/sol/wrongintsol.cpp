@@ -11,7 +11,8 @@ using namespace std;
 int collected_wood(const vector<int> &A, int H) {
     int total = 0;
     for (int h : A) {
-        if (h > H) total += (h - H);
+        if (h > H)
+            total += (h - H);
     }
     return total;
 }
@@ -24,7 +25,8 @@ int main() {
     cin >> N >> M;
 
     vector<int> A(N);
-    for (int &x : A) cin >> x;
+    for (int &x : A)
+        cin >> x;
 
     int lo = 0;
     int hi = 1000000000;

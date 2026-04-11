@@ -1,3 +1,4 @@
+---
 - |
   The tens digit is the second from the back. Idea: remove the last digit, then take the last digit of the result.
 - The elimination of the last digit can be done with one of the basic operations. To read out the last digit, you need an operation that is not a basic operation, but appeared previously.

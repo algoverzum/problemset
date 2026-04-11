@@ -30,12 +30,13 @@ def run(N, A):
             break
         assert eval(row[2:]), row[2:]
 
-    N = randint (3*N//4, N)
-    if N < 1: N = 1
+    N = randint(3 * N // 4, N)
+    if N < 1:
+        N = 1
 
-    X = [randint(1,A) for i in range(N)]
-    M = randint(1,min(sum(X),MAXM))
-    
+    X = [randint(1, A) for i in range(N)]
+    M = randint(1, min(sum(X), MAXM))
+
     print(N, M)
     print(*X)
 

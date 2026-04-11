@@ -1,14 +1,15 @@
+---
 - cpp: |
     Hozzunk létre három változót a számok tárolására, így:
 
         int a, b, c;
-    
+
     Olvassuk be a három értéket a bemenetről a `cin` és a `>>` operátor segítségével.
   py: |
     Egy szám beolvasása így történhet:
 
         a = int(input())
-    
+
     További két számot kell beolvasnunk két másik változóba (`b` és `c`).
 - cpp: |
     A beolvasás operátorokat láncolni is lehet: `cin >> a >> b >> c;`

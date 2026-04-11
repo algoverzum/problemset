@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 
+
 def factorial(n):
     # Write your code here
+    return
+
 
 # Do not change anything below.
 for i in range(1, 16):
