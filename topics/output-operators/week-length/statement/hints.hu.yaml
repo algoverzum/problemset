@@ -1,3 +1,4 @@
+---
 - cpp: 'A válasz kiszámításához használjunk szorzást. Emlékeztető: a szorzás jele `*`, az eredmény kiírására használhatod a `cout <<` parancsot, és sose felejtsd el a `;` -t az utasítás végén.'
   py: 'A válasz kiszámításához használjunk szorzást. Emlékeztető: a szorzás jele `*` és az eredmény kiírására a `print()` parancsot használhatod.'
 - Egy percben 60 másodperc van, egy órában 60 * 60, a nap hossza ennek 24-szerese...

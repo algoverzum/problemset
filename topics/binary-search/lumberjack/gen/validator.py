@@ -15,11 +15,11 @@ def run(f, st):
     for k, v in subtasks[st].items():
         globals()[k] = v
 
-    N, M = map(int,next(f).split())
+    N, M = map(int, next(f).split())
     assert MIN <= N <= MAXN
     assert MIN <= M <= MAXM
 
-    A = list(map(int,next(f).split()))
+    A = list(map(int, next(f).split()))
     for a in A:
         assert MIN <= a <= MAXA
     assert sum(A) >= M

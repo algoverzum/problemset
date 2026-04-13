@@ -1,4 +1,5 @@
-- Read the value of $N$ into a variable. Let's go over the $N$ lines with a `for` loop and always print the current line.
+---
+- Read the value of `N` into a variable. Let's go over the `N` lines with a `for` loop and always print the current line.
 - cpp: |
     The loop can look like this: `for (int i = 0; i < N; i++) { ... }`
   py: |

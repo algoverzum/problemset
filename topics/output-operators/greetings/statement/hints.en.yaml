@@ -6,5 +6,5 @@
       cout << "Tutu Goro\n";
       cout << "Tutu Nini\n";
   py: |
-      print("Tutu Goro") 
+      print("Tutu Goro")
       print("Tutu Nini")

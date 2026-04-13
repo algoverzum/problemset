@@ -12,7 +12,7 @@
     Az alábbi utasítással tudunk egy egész számot beolvasni egy `t` nevű változóba:
 
         t = int(input())
-    
+
     Emlékeztető: a `print()` utasítással lehet kiírni valamit. A változókkal ugyanúgy tudsz matematikai műveleteket leírni, mint konkrét számokkal.
 
 - Például, ha a `t` -nél 1-gyel nagyobb számot akarjuk megkapni, akkor írhatjuk azt, hogy `t + 1`.

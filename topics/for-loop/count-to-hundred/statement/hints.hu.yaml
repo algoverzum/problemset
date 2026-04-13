@@ -1,4 +1,4 @@
-- Menjünk végig $i=1$-től 100-ig a számokon `for` ciklussal!
+- Menjünk végig `i=1`-től `100`-ig a számokon `for` ciklussal!
 - cpp: |
     Ezt megtehetjük így: `for (int i = 1; i <= 100; i++) { ... }`
   py: |
@@ -6,4 +6,4 @@
 - cpp: |
     A `for` cikluson belül az $i$ értékét és egy sortörést kell kiírni: `cout << i << "\n";`
   py: |
-    A `for` cikluson belül az $i$ értékét kell kiírni: `print(i)`
+    A `for` cikluson belül az `i` értékét kell kiírni: `print(i)`

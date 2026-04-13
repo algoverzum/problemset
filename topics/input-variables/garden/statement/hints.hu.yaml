@@ -1,6 +1,6 @@
 - cpp: |
     A kert két oldalát olvassuk be két változóba:
-        
+
         int a, b;
         cin >> a >> b;
   py: |
@@ -12,7 +12,7 @@
 - A fenti változók segítségével a kerítés hossza `2 * (a + b)`. A fák száma `a * b`.
 - cpp: |
         cout << 2 * (a + b) << "\n";
-        cout << a * b; 
+        cout << a * b;
   py: |
         print(2 * (a + b))
         print(a * b)

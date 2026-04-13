@@ -1,3 +1,4 @@
+---
 - Írj egy `for` ciklust $i=1$-től $N$-ig. Benne aztán az $i$ értékétől függően más-más dolgokat kell kiírni. Ezt milyen utasítással tudod csinálni?
 - |
   `if` utasítást kell tenni a `for` ciklusba! Milyen operátorral tudod megvizsgálni az oszthatóságot? Melyik esettel érdemes kezdeni?
@@ -15,4 +16,3 @@
         elif i % 3 == 0: print( ... )
         elif ...: print(...)
         else: ...
-
