@@ -1,18 +1,20 @@
 ## Republic Starmap
 
-The galaxy is divided into two factions: the Republic and the Separatists. The Republic controls the first $K$ planets, while the Separatists control the rest. The Republic wants to ensure efficient communication and transportation between all planets (including the separatist ones, because they have to travel there sometimes for diplomatic reasons), but they can only use routes that pass through Republic-controlled planets.
+There are $N$ planets in the galaxy, numbered from $1$ to $N$. The first $K$ planets are controlled by the Republic, so these are the Republic planets. The remaining planets do not belong to the Republic.
 
-The galaxy's transportation network is represented as a **directed graph**. This means that the distance from planet $A$ to planet $B$ may not be the same as the distance from planet $B$ to planet $A$, or there may be a route in one direction but not the other.
+There are directed routes between the planets. This means there may be a route from planet $A$ to planet $B$ even if there is no route back, or the distances in the two directions may be different.
 
-Your task is to calculate the shortest paths between all planets using only routes that pass through Republic-controlled planets. (A route $P_1 \to P_2 \to \dots \to P_q$ is valid, if planets $P_2, P_3, \dots, P_{q-1}$ are controlled by the Republic.)
+Your task is to find the length of the shortest path for every pair of planets, under the rule that along the way you may only pass through Republic planets.
+
+More precisely, a path $P_1 \to P_2 \to \dots \to P_q$ is allowed if all intermediate planets, that is $P_2, P_3, \dots, P_{q-1}$, belong to the Republic. The starting planet and the ending planet can be any planets.
 
 ### Input
-The first line of the input contains two integers $N$ and $K$ ($1 \le K \le N \le 100$) — the total number of planets and the number of Republic-controlled planets, respectively.
+The first line of the input contains two integers $N$ and $K$ ($1 \le K \le N \le 100$). Here $N$ is the number of planets, and $K$ is the number of Republic planets.
 
-The next $N$ lines each contain $N$ integers. The $j$-th integer in the $i$-th line represents the distance from planet $i$ to planet $j$. If there is no direct route from planet $i$ to planet $j$, the distance is represented as $-1$.
+The next $N$ lines each contain $N$ integers. The $j$-th number in the $i$-th line is the length of the direct route from planet $i$ to planet $j$. If there is no direct route, this value is $-1$.
 
 ### Output
-Print an $N \times N$ matrix, where the value in the $i$-th row and $j$-th column represents the shortest distance from planet $i$ to planet $j$ using only Republic-controlled planets. If no such path exists between two planets, output $-1$ for that entry.
+Print an $N \times N$ matrix. The value in row $i$ and column $j$ should be the length of the shortest allowed path from planet $i$ to planet $j$. If there is no such path, print $-1$ in that position.
 
 ### Constraints
 * $1 \le K \le N \le 100$
@@ -37,9 +39,9 @@ Print an $N \times N$ matrix, where the value in the $i$-th row and $j$-th colum
 ### Explanation of the example
 ![](tex/abra.png)
 
-The output is an $N \times N$ matrix. Each entry $(i, j)$ contains the shortest distance from planet $i$ to planet $j$ using only Republic-controlled planets ($1$ to $K$) as intermediate stops. If no such path exists, the entry is $-1$. For example:
-- The shortest path from planet $1$ to planet $3$ is $1 \to 2 \to 3$, with a total distance of $4$.
-- There is no path from planet $2$ to planet $1$, so the output is $-1$ in that position.
-- The shortest path from planet $2$ to planet $3$ is a direct route with a distance of $1$.
-- The shortest path from planet $4$ to planet $3$ goes through Republic planets: $4 \to 2 \to 3$ with total distance $1 + 1 = 2$.
-- Planet $5$ can not be reached from Republic-controlled planets, because it is only reachable from planet $4$.
+Each value in the output matrix is the length of a shortest allowed path. Here the intermediate planets may only be planets $1$ to $K$, that is, the Republic planets. If there is no such path, the value is $-1$. For example:
+- The shortest allowed path from planet $1$ to planet $3$ is $1 \to 2 \to 3$, so the answer is $4$.
+- There is no allowed path from planet $2$ to planet $1$, so that value is $-1$.
+- There is a direct route from planet $2$ to planet $3$, so that value is $1$.
+- The shortest allowed path from planet $4$ to planet $3$ is $4 \to 2 \to 3$, so the answer is $2$.
+- There is no allowed path to planet $5$ if we may only pass through Republic planets.
