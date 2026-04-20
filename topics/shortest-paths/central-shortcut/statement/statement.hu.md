@@ -2,8 +2,8 @@
 
 A Galaktikus Köztársaságban $N$ bolygó található, amelyeket $1$-től $N$-ig számoztak meg. Az $1.$ bolygó Coruscant, a Köztársaság fővárosa és politikai központja. Az egyre növekvő szeparatista fenyegetés miatt a Köztársaság új utazási szabályokat vezetett be a biztonság érdekében.
 
-Az új szabályozás szerint a bolygók közötti utazás csak kétféleképpen lehetséges:
-1. Közvetlen utazás szomszédos bolygók között (azaz ahol közvetlen út van a két bolygó között)
+Az új szabályozás szerint a bolygók közötti utazás csak kétféleképpen lehetséges:  
+1. Közvetlen utazás szomszédos bolygók között (azaz ahol közvetlen út van a két bolygó között)  
 2. Utazás Coruscanton (az $1.$ bolygón) keresztül, mint központi csomóponton
 
 Ez azt jelenti, hogy ha két bolygó között nincs közvetlen kapcsolat, akkor csak olyan útvonal engedélyezett, amely kizárólag Coruscanton keresztül vezet, és más bolygón nem halad át.
@@ -44,8 +44,9 @@ Egy $N \times N$-es mátrixot írj ki ($N$ sor, mindegyikben $N$ szóközzel elv
 A kimenet egy $N \times N$-es mátrix, ahol az $(i, j)$ elem az $i$ bolygóról a $j$ bolygóra vezető legrövidebb utat tartalmazza, amely lehet közvetlen vagy Coruscanton (az $1.$ bolygón) keresztüli út.
 
 Például:
-- Az $1$-es bolygóról a $3$-asra: közvetlen út, hossza $7$
-- A $2$-es bolygóról a $4$-esre: nincs közvetlen út, ezért Coruscanton keresztül kell menni: $2 \to 1 \to 4$, összesen $4 + 3 = 7$
-- A $3$-as bolygóról a $2$-esre: nincs közvetlen út, és Coruscanton keresztül sem lehet eljutni (mivel $3 \to 1$ nincs), ezért $-1$
-- A $4$-es bolygóról a $3$-asra: nincs közvetlen út, ezért Coruscanton keresztül: $4 \to 1 \to 3$, összesen $2 + 7 = 9$
+
+* Az $1$-es bolygóról a $3$-asra: közvetlen út, hossza $7$
+* A $2$-es bolygóról a $4$-esre: nincs közvetlen út, ezért Coruscanton keresztül kell menni: $2 \to 1 \to 4$, összesen $4 + 3 = 7$
+* A $3$-as bolygóról a $2$-esre: nincs közvetlen út, és Coruscanton keresztül sem lehet eljutni (mivel $3 \to 1$ nincs), ezért $-1$
+* A $4$-es bolygóról a $3$-asra: nincs közvetlen út, ezért Coruscanton keresztül: $4 \to 1 \to 3$, összesen $2 + 7 = 9$
 

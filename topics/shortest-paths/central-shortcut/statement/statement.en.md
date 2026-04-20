@@ -1,8 +1,8 @@
 ## Central Shortcut
 In the Galactic Republic, there are $N$ planets numbered from $1$ to $N$. Planet $1$ is Coruscant, the capital of the Republic and center of political activity. Due to increasing separatist threats, the Republic has instituted new travel regulations for security purposes.
 
-Under these new regulations, travel between planets is restricted to two options:
-1. Direct travel between neighboring planets (planets with a direct route between them)
+Under these new regulations, travel between planets is restricted to two options:  
+1. Direct travel between neighboring planets (planets with a direct route between them)  
 2. Travel via Coruscant (planet $1$) as a central hub
 
 This means that for any two planets that are not directly connected, the only valid path between them must pass through Coruscant, and must not pass through any other planet.
@@ -43,8 +43,9 @@ Print an $N \times N$ matrix ($N$ rows with $N$ space separated integers in each
 The output is an $N \times N$ matrix where each entry $(i, j)$ contains the shortest distance from planet $i$ to planet $j$ using either a direct route or a route through Coruscant (planet $1$).
 
 For example:
-- From planet $1$ to planet $3$: Direct route with distance $7$
-- From planet $2$ to planet $4$: No direct route exists, so we must go through Coruscant: $2 \to 1 \to 4$ with a total distance of $4 + 3 = 7$
-- From planet $3$ to planet $2$: No direct route exists and no path through Coruscant (since planet 3 cannot reach Coruscant directly), so the value is $-1$
-- From planet 4 to planet 3: No direct route exists, so we must go through Coruscant: $4 \to 1 \to 3$ with a total distance of $2 + 7 = 9$
+
+* From planet $1$ to planet $3$: Direct route with distance $7$
+* From planet $2$ to planet $4$: No direct route exists, so we must go through Coruscant: $2 \to 1 \to 4$ with a total distance of $4 + 3 = 7$
+* From planet $3$ to planet $2$: No direct route exists and no path through Coruscant (since planet 3 cannot reach Coruscant directly), so the value is $-1$
+* From planet 4 to planet 3: No direct route exists, so we must go through Coruscant: $4 \to 1 \to 3$ with a total distance of $2 + 7 = 9$
 
