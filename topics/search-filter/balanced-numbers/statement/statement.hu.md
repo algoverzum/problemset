@@ -24,4 +24,4 @@ A második sorba azokat a számokat kell kiírnod szóközzel elválasztva, amel
     4 8
 
 ### A példa magyarázata
-Mivel $\frac{1+7}{2}=4$ és $\frac{10+8}{2}=8$, erre a két számra teljesül a feltétel. Másra nem, például  $\frac{4+11}{2}\not=7$.
+Mivel $\frac{1+7}{2}=4$ és $\frac{10+6}{2}=8$, erre a két számra teljesül a feltétel. Másra nem, például  $\frac{4+11}{2}\not=7$.
