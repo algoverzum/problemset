@@ -28,3 +28,5 @@
 100	 1000	500	1000   	18
 100	 1000	400	1000	19
 100	 1000	300	1000   	20
+#COPY: gen/extratest0.txt
+#COPY: gen/extratest1.txt
