@@ -2,10 +2,10 @@
 Árminnak van egy $A$ méretű gömböce, valamint adott $N$ további gömböc is.
 
 * Egy gömböc csak nála kisebb gömböcöt tud elnyelni.
-* Ha egy $X$ méretű gömböcöt elnyel, akkor a mérete $X$-el nő. ()
+* Ha egy $X$ méretű gömböcöt elnyel, akkor a mérete $X$-szel nő.
 * A gömböcök tetszőleges sorrendben nyelhetők el.
 
-Egy művelet során az alábbiak közül egyet végezhetünk el:
+Egy művelet során az alábbi két lépés közül egyet végezhetünk el:
 
 * hozzáadunk egy tetszőleges pozitív egész méretű új gömböcöt;
 * eltávolítunk egy meglévő gömböcöt.
@@ -13,8 +13,8 @@ Egy művelet során az alábbiak közül egyet végezhetünk el:
 Határozzuk meg a minimális műveletszámot, amely szükséges ahhoz, hogy Ármin gömböce végül az összes többi gömböcöt el tudja nyelni.
 
 ### Bemenet
-A bemenetben első sora két egész számot tartalmaz: Ármin gömböcének méretét ($A$) és a többi gömböc számát ($N$).  
-A második sor $N$ darab egész számot tartalmaz $M_1, M_2, \ldots, M_N$, amelyek a többi gömböc méretét adják meg.  
+A bemenet első sora két egész számot tartalmaz: Ármin gömböcének méretét ($A$) és a többi gömböc számát ($N$).  
+A második sor $N$ darab egész számot tartalmaz: $M_1, M_2, \ldots, M_N$, amelyek a többi gömböc méretét adják meg.  
 Minden megadott méret egész szám.
 
 ### Kimenet

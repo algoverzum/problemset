@@ -1,14 +1,13 @@
 ---
-- Ha egy gömböcöt kidobunk, akkor minden nagyobbat is ki kell dobnunk. (Amikor a nagyobbat elnyelne, akkor a kisebbet is el tudná.)
-- Ha új gömböcöt adsz hozzá, mi a legnagyobb hasznos méret, amit választhatsz?
-- Egy hozzáadott gömböc optimális mérete mindig $A-1$ (ahol $A$ Ármin gömböcének jelenlegi mérete), mert ezt még el tudod nyelni, és a lehető legnagyobb mértékben növeli a méretét.
+- Egy gömböcöt csak akkor érdemes kidobni, ha minden nagyobbat is kidobunk (hiszen amikor egy nagyobbat elnyel, akkor a kisebbet is el tudná). Tehát az optimális megoldásban egy adott méretig az összes gömböcöt el fogja nyelni, felette pedig egyet sem.
 - |
   Érdemes a gömböcöket méret szerint növekvő sorrendbe rendezni.<br>
   Ha egy gömböc elnyelhető, akkor mindig érdemes azonnal elnyelni.<br>
-  Amikor elakadsz, mit tehetünk?
+  Amikor elakadsz, mit lehet tenni?
+- Ha új gömböcöt adsz hozzá, annak az optimális mérete mindig $A-1$ (ahol $A$ Ármin gömböcének jelenlegi mérete), mert ezt még el tudod nyelni, és a lehető legnagyobb mértékben növeli a méretét.
 - |
   Ha a jelenlegi méreted $A$, és a következő gömböc mérete $M \geq A$, akkor két lehetőséged van:<br>
   1. új gömböcöket hozzáadni, hogy megnőjön úgy, hogy már el tudja nyelni $M$-et (while ciklussal).<br>
   2. a hátralévő összes gömböc eltávolítása.
-- Tehát egyesével növekvő sorrendben elnyeljük a gömböcöket. Tartsd nyilván, hogy hány műveletet végeztél eddig. Így ki tudod számolni, hogy mennyibe kerülne az összes többi gömböcöt eltávolítani. Ezen műveletszámok minimuma adja a megoldást.
+- Tehát egyesével növekvő sorrendben érdemes elnyelni a gömböcöket. Tartsd nyilván, hogy hány műveletet végeztél eddig. Minden gömböc elnyelése előtt az eddigi műveletek száma + a maradék gömböcök száma nyújt egy lehetséges összműveletszámot. Ezen műveletszámok minimuma adja a megoldást.
 - Ha $A=1$ akkor nem tud semmit sem lenyelni, azaz mindent ki kell dobni.

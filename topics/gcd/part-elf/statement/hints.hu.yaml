@@ -1,5 +1,5 @@
 ---
-- Először egyszerűsítsd a törtet ($P/Q$) a számláló és a nevező legnagyobb közös osztójával (gcd).
+- Először egyszerűsítsük a törtet ($P/Q$) a számláló és a nevező legnagyobb közös osztójával (amit a `gcd` függvény segítségével megkaphatunk).
 - Egyszerűsítés után egy érvényes tünde-arány nevezője mindig a 2 hatványa. Ha a nevező nem 2-hatvány, akkor a megadott arány nem állhat elő, ezért a válasz "impossible". (Kezdetben minden ős vagy $0/1$ (ember), vagy $1/1$ (tünde). Ha két ős aránya $A/2^n$ és $B/2^{n+m}$, akkor a gyermek aránya $\frac{A\cdot 2^m+B}{2^{n+m+1}}$, ami egyszerűsítés után is $C/2^k$ alakú marad.)
-- Tegyük fel, hogy az egyszerűsített törtben $Q$ 2-hatvány. A feladat már csak az, hogy meghatározd, milyen közel lehetett a legközelebbi teljes tünde ($1/1$) felmenő.
+- Tegyük fel, hogy az egyszerűsített törtben $Q$ 2-hatvány. A feladat már csak az, hogy meghatározzuk, milyen közel lehetett a legközelebbi teljes tünde ($1/1$) felmenő.
 - Ha visszafelé haladunk a családfában, egy $P/Q$ arányú személynek lehet olyan szülője, amelynek tünde-aránya legfeljebb $2P/Q$ ($2P/Q$ és $0/Q$ gyereke $P/Q$). Tehát minden generációval visszafelé haladva legfeljebb megduplázható a számláló. Ahhoz, hogy eljussunk egy teljes tündéhez ($Q/Q$), a lehető leggyorsabban mindig ezt a maximális növekedést érdemes választani. Ezért addig duplázd $P$-t, amíg el nem éri vagy meg nem haladja $Q$-t. A szükséges duplázások száma lesz a minimális generációszám.

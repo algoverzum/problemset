@@ -1,10 +1,11 @@
 ---
-- If we remove a mote, then we should also remove every larger mote. (If we could eventually absorb a larger mote, then we could absorb the smaller one as well.)
-- If you add a new mote, what is the largest useful size you can choose?
-- The optimal size of an added mote is always $A-1$ (where $A$ is Armin's current size), because it can still be absorbed and it increases Armin's size by the largest possible amount.
-- It is worth sorting the motes in increasing order. If a mote can be absorbed, it is always optimal to absorb it immediately. What can we do when we get stuck?
+- It only makes sense to remove a mote if we also remove all larger ones (since if it could absorb a larger one, it would be able to absorb the smaller one too). Therefore, in the optimal solution, we will absorb all motes up to a certain size, and none above it.
 - |
-  If your current size is $A$ and the next mote has size $M \geq A$, then there are two possibilities:<br>1. Add new motes until your size becomes large enough to absorb $M$ (using a while loop).<br>2. Remove all remaining motes.
-- Therefore, we absorb the motes one by one in increasing order. Keep track of how many operations have been performed so far.
-- This allows you to compute the cost of removing all remaining motes at any point. The minimum among these costs is the answer.
+  Let us sort the motes in ascending order by size.
+  If a mote can be absorbed, it is always worth absorbing it immediately.
+  What can we do when we get stuck?
+- If you add a new mote, its optimal size is always $A-1$ (where $A$ is the current size of Armin's mote), because you can still absorb this, and it increases its size by the maximum possible amount.
+- |
+  If your current size is $A$ and the next mote's size is $M \geq A$, you have two options: <br>1. Add new motes until your size becomes large enough to absorb $M$ (using a while loop).<br>2. Remove all remaining motes.
+- Let us absorb the motes one by one in ascending order. Keep track of how many operations you have performed so far. Before absorbing each mote, the number of operations done so far + the number of remaining motes provides a possible total number of operations. The minimum of these operation counts gives the solution.
 - If $A=1$, then Armin cannot absorb any added mote, so all other motes must be removed.

@@ -14,7 +14,7 @@ Determine the minimum number of operations required so that Armin's mote can eve
 
 ### Input
 The first line of the input contains two integers: the size of Armin's mote ($A$) and the number of other motes ($N$).  
-The second line contains $N$ integers $M_1, M_2, \ldots, M_N$, representing the sizes of the other motes.  
+The second line contains $N$ integers: $M_1, M_2, \ldots, M_N$, representing the sizes of the other motes.  
 All given sizes are integers.
 
 ### Output
