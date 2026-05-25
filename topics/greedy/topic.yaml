@@ -16,6 +16,8 @@ problems:
     type: REQUIRED
   - problem_id: houses
     type: REQUIRED
+  - problem_id: osmos
+    type: REQUIRED
 prerequisites:
   - combined-patterns
 dependents: []

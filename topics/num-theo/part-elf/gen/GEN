@@ -1,0 +1,58 @@
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+#COPY: statement/input1.txt
+#COPY: statement/input2.txt
+#COPY: statement/input3.txt
+#COPY: statement/input4.txt
+
+# Subtask 2: P<Q<=1000
+#ST: 50
+#STNAME: small
+#COPY: gen/smalltestcases/input1.txt
+#COPY: gen/smalltestcases/input2.txt
+#COPY: gen/smalltestcases/input3.txt
+#COPY: gen/smalltestcases/input4.txt
+#COPY: gen/smalltestcases/input5.txt
+#COPY: gen/smalltestcases/input6.txt
+#COPY: gen/smalltestcases/input7.txt
+#COPY: gen/smalltestcases/input8.txt
+#COPY: gen/smalltestcases/input9.txt
+#COPY: gen/smalltestcases/input10.txt
+#COPY: gen/smalltestcases/input11.txt
+#COPY: gen/smalltestcases/input12.txt
+#COPY: gen/smalltestcases/input13.txt
+#COPY: gen/smalltestcases/input14.txt
+#COPY: gen/smalltestcases/input15.txt
+#COPY: gen/smalltestcases/input86.txt
+#COPY: gen/smalltestcases/input87.txt
+#COPY: gen/smalltestcases/input88.txt
+#COPY: gen/smalltestcases/input91.txt
+#COPY: gen/smalltestcases/input97.txt
+
+# Subtask 2: P<Q<=10**12
+#ST: 50
+#STNAME: all
+#COPY: gen/largetestcases/input1.txt
+#COPY: gen/largetestcases/input2.txt
+#COPY: gen/largetestcases/input3.txt
+#COPY: gen/largetestcases/input4.txt
+#COPY: gen/largetestcases/input5.txt
+#COPY: gen/largetestcases/input6.txt
+#COPY: gen/largetestcases/input7.txt
+#COPY: gen/largetestcases/input8.txt
+#COPY: gen/largetestcases/input9.txt
+#COPY: gen/largetestcases/input10.txt
+#COPY: gen/largetestcases/input11.txt
+#COPY: gen/largetestcases/input12.txt
+#COPY: gen/largetestcases/input13.txt
+#COPY: gen/largetestcases/input14.txt
+#COPY: gen/largetestcases/input15.txt
+#COPY: gen/largetestcases/input94.txt
+#COPY: gen/largetestcases/input95.txt
+#COPY: gen/largetestcases/input96.txt
+#COPY: gen/largetestcases/input97.txt
+#COPY: gen/largetestcases/input98.txt
+#COPY: gen/largetestcases/input99.txt
+#COPY: gen/largetestcases/input100.txt
