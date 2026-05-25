@@ -4,6 +4,8 @@ name: Number Theory
 problems:
   - problem_id: maximize-gcd
     type: EXTRA
+  - problem_id: part-elf
+    type: EXTRA
 prerequisites:
   - combined-patterns
 dependents: []
