@@ -1,0 +1,21 @@
+---
+- cpp: |
+    Store the constructor parameter in the data member: `this->radius = radius;`
+  py: |
+    Store the radius in the `self.radius` attribute: `self.radius = radius`
+- cpp: |
+    The `get_radius()` function should return the `radius` data member: `return radius;`
+  py: |
+    The `get_radius()` method should simply return the value of `self.radius`.
+- cpp: |
+    The `set_radius()` function should update the `radius` data member: `this->radius = radius;`
+  py: |
+    The `set_radius(radius)` method should update the `self.radius` attribute.
+- |
+  The area of a circle is: `3.14 * radius * radius`
+- |
+  The perimeter (circumference) of a circle is: `2 * 3.14 * radius`
+- cpp: |
+    The return type of `bigger()` is `Circle*`. Return the address of the object with the larger radius: `return this;` or `return c;`
+  py: |
+    In the `bigger()` method, compare the values of `self.radius` and `c.radius`. If `self` has a radius greater than or equal to `c`, return the `self` object; otherwise return the `c` object.

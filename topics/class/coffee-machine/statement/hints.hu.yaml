@@ -1,0 +1,37 @@
+---
+- cpp: |
+    A konstruktorban állítsd be a márkát, és inicializáld az adattagokat:
+    `is_on = false;`
+    `water_ml = 0;`
+    `coffee_g = 0;`
+  py: |
+    A konstruktorban mentsd el a márkát, és állítsd be:
+    `self.__is_on = False`
+    `self.__water_ml = 0`
+    `self.__coffee_g = 0`
+- cpp: |
+    A `set_electricity()` függvény a kapott értéket mentse el az `is_on` adattagba.
+  py: |
+    A `set_electricity()` metódus a kapott értéket mentse el a `__is_on` adattagba.
+- cpp: |
+    A `set_water()` függvény ne felülírja, hanem növelje a vízmennyiséget:
+    `water_ml += amount;`
+  py: |
+    A `set_water()` metódus ne felülírja, hanem növelje a vízmennyiséget:
+    `self.__water_ml += amount`
+- cpp: |
+    A `set_coffee()` függvény ne felülírja, hanem növelje a kávémennyiséget.
+  py: |
+    A `set_coffee()` metódus ne felülírja, hanem növelje a kávémennyiséget.
+- Kávét csak akkor lehet főzni, ha a gép be van kapcsolva, van legalább 50 ml víz és legalább 15 g kávé.
+- Sikeres kávéfőzéskor vonj le 50 ml vizet és 15 g kávét a készletből.
+- cpp: |
+    A `brew_coffee()` visszatérési típusa `bool`.
+    Siker esetén `true`, egyébként `false` értéket adj vissza.
+  py: |
+    A `brew_coffee()` siker esetén `True`, egyébként `False` értékkel térjen vissza.
+- A `get_status()` egyetlen szöveget adjon vissza, amely tartalmazza a márkát, a bekapcsolt állapotot (0 vagy 1), a víz mennyiségét és a kávé mennyiségét.
+- cpp: |
+    A logikai értékből készíthetsz 0/1-et: `(int)is_on`
+  py: |
+    A logikai értékből készíthetsz 0/1-et: `int(self.__is_on)`

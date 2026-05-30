@@ -1,0 +1,87 @@
+// @check-accepted: *
+#include <iostream>
+#include <string>
+using namespace std;
+
+class CoffeeMachine {
+  private:
+    bool is_on;
+    int water_ml;
+    int coffee_g;
+
+  public:
+    string brand;
+
+    CoffeeMachine(string brand) {
+        this->brand = brand;
+        is_on = false;
+        water_ml = 0;
+        coffee_g = 0;
+    }
+
+    void set_electricity(bool state) { is_on = state; }
+
+    void set_water(int amount) { water_ml += amount; }
+
+    void set_coffee(int amount) { coffee_g += amount; }
+
+    bool brew_coffee() {
+        if (is_on && water_ml >= 50 && coffee_g >= 15) {
+            water_ml -= 50;
+            coffee_g -= 15;
+            return true;
+        }
+        return false;
+    }
+
+    string get_status() {
+        return brand + " " + to_string((int)is_on) + " " + to_string(water_ml) +
+               " " + to_string(coffee_g);
+    }
+};
+
+// Do not change anything below.
+int main() {
+    string name;
+    cin >> name;
+
+    CoffeeMachine CM(name);
+    bool ok = true;
+
+    try {
+        int cur;
+        cin >> cur;
+
+        while (cur != 0) {
+            if (cur == 2) {
+                int on;
+                cin >> on;
+                if (on == 1)
+                    CM.set_electricity(true);
+                else
+                    CM.set_electricity(false);
+            } else if (cur == 3) {
+                int water;
+                cin >> water;
+                CM.set_water(water);
+            } else if (cur == 4) {
+                int coffee;
+                cin >> coffee;
+                CM.set_coffee(coffee);
+            } else if (cur == 5) {
+                CM.brew_coffee();
+            } else if (cur == 6) {
+                cout << CM.get_status() << '\n';
+            }
+            cin >> cur;
+        }
+    } catch (...) {
+        ok = false;
+    }
+
+    if (ok)
+        cout << "OK\n";
+    else
+        cout << "HIBA\n";
+    return 0;
+}

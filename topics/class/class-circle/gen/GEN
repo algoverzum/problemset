@@ -1,0 +1,22 @@
+# R	S
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+
+# Subtask 2: 1 <= N <= 10^6
+#ST: 100
+#STNAME: all
+10     1
+10     2
+10     3
+10     44
+10     5
+100    66
+100    7
+100    8
+100    9
+100    10
+1000000 11
+1000000 12

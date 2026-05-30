@@ -1,0 +1,17 @@
+---
+id: class
+name: Class
+problems:
+  - problem_id: class-circle
+    type: REQUIRED
+  - problem_id: coffee-machine
+    type: REQUIRED
+prerequisites: []
+dependents: []
+visualization:
+  image_filename: 12.svg
+  position:
+    x: 1200
+    y: 350
+
+# Notes:
