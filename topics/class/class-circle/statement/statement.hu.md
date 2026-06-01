@@ -13,7 +13,7 @@ Elvárások:
 * A `bigger()` metódus adja vissza azt a Circle objektumot, amelyiknek nagyobb a sugara. Ha a sugarak egyenlők, bármelyik objektum visszaadható.
 
 ### Sablon
-Indulj ki az előre készített sablon kódból! Ne változtass a főprogramon semmit, mert különben nem lesz elfogadva. A `Circle` osztáy függvény metódusait kell megírnod.
+Indulj ki az előre készített sablon kódból! Ne változtass a főprogramon semmit, mert különben nem lesz elfogadva. A `Circle` osztály metódusait kell megírnod.
 
 ### Korlátok
 * $1 \le r \le 10^6$

@@ -10,41 +10,41 @@ class CoffeeMachine {
     int coffee_g;
 
   public:
+    // Initializes this CoffeeMachine with brand.
+    // Sets is_on to False, water_ml to 0, and coffee_g to 0.
     CoffeeMachine(string brand) {
-        // Initializes self with brand.
-        // Sets is_on to False, water_ml to 0, and coffee_g to 0.
         // Write your code here
     }
 
+    // Changes the power status (is_on) of self to state.
     void set_electricity(bool state) {
-        // state is a boolean (True/False).
-        // Changes the power status (is_on) of self to state.
         // Write your code here
     }
 
+    // Adds the given amount to the machine's water level (water_ml).
     void add_water(int amount) {
-        // Adds the given amount to the machine's water level (water_ml).
         // Write your code here
     }
 
+    // Adds the given amount to the machine's coffee level (coffee_g).
     void add_coffee(int amount) {
-        // Adds the given amount to the machine's coffee level (coffee_g).
         // Write your code here
     }
 
+    // Checks if the machine is on (is_on is true),
+    // has at least 50 ml water, and at least 15 g coffee.
+    // If all conditions are met, deducts 50 from water and 15 from coffee,
+    // then returns true. Otherwise, returns false.
     bool brew_coffee() {
-        // Checks if the machine is on (is_on is True),
-        // has at least 50 ml water, and at least 15 g coffee.
-        // If all conditions are met, deducts 50 from water and 15 from coffee,
-        // then returns True. Otherwise, returns False.
         // Write your code here
     }
 
+    // Returns a formatted string with the machine's brand,
+    // power status (ON/OFF), current water in ml, and coffee level in g.
+    // Example: "ABC ON 100ml 5g" if the brand is ABC, the machine is turned
+    // on, contains 100 ml of water, and 5 g of coffee Write your code here
     string get_status() {
-        // Returns a formatted string with the machine's brand,
-        // power status (ON/OFF), current water in ml, and coffee level in g.
-        // Example: "ABC ON 100ml 5g" if the brand is ABC, the machine is turned
-        // on, contains 100 ml of water, and 5 g of coffee Write your code here
+        // Write your code here
     }
 };
 
