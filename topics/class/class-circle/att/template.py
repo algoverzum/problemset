@@ -46,7 +46,7 @@ if abs(C1.get_perimeter() - 2 * R1 * 3.14) > 0.01:
 if C1.bigger(C2).get_radius() != max(R1, R2):
     ok = False
 C1.set_radius(13)
-if C1.radius != 13:
+if C1.get_radius() != 13:
     ok = False
 
 if ok:
