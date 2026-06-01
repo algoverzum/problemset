@@ -6,7 +6,7 @@ class CoffeeMachine:
     def __init__(self, brand):
         """Initializes self with brand.
         Sets __is_on to False, __water_ml to 0, and __coffee_g to 0."""
-        self.brand = brand
+        self.__brand = brand
         self.__is_on = False
         self.__water_ml = 0
         self.__coffee_g = 0
@@ -41,7 +41,7 @@ class CoffeeMachine:
         """Returns a formatted string with the machine's brand,
         power status, current water, and coffee levels."""
         status = "ON" if self.__is_on else "OFF"
-        return f"{self.brand} {status} {self.__water_ml}ml {self.__coffee_g}g"
+        return f"{self.__brand} {status} {self.__water_ml}ml {self.__coffee_g}g"
 
 
 # Do not change anything below.

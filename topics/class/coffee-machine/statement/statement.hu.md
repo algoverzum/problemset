@@ -4,7 +4,7 @@ Készíts egy CoffeeMachine nevű osztályt, amely egy kávégép működését 
 Adattagok (Változók):  
 A gépnek négy tulajdonsággal kell rendelkeznie. A belső állapotot leíró változókat privátként hozd létre (Pythonban használd a dupla alulvonás `__` előtagot), hogy kívülről ne lehessen őket közvetlenül módosítani!
 
-* `brand`: A gép márkája (szöveg, lehet publikus).
+* `brand`: A gép márkája (string).
 * `is_on`: Jelzi, hogy a gép kap-e áramot (logikai érték, induláskor False).
 * `water_ml`: A tartályban lévő víz mennyisége milliliterben (egész szám, induláskor 0).
 * `coffee_g`: A betöltött kávé mennyisége grammban (egész szám, induláskor 0).
@@ -15,7 +15,7 @@ Metódusok (Függvények):
 * A konstruktor. Állítsa be a gép márkáját a paraméter alapján, a többi privát változót pedig állítsa alaphelyzetbe (`False`/`false` és `0`).
 * `set_electricity()`: Vár egy logikai (igaz/hamis) paramétert. Beállítja a gép áramellátását (`is_on`) a megadott értékre.
 * `add_water()`: Vár egy szám paramétert. Hozzáadja a megadott mennyiséget a gép jelenlegi vízkészletéhez.
-* `add_coffee(self, amount)`: Vár egy szám paramétert. Hozzáadja a megadott mennyiséget a gép jelenlegi kávékészletéhez.
+* `add_coffee()`: Vár egy szám paramétert. Hozzáadja a megadott mennyiséget a gép jelenlegi kávékészletéhez.
 * `brew_coffee()`: Ez végzi a kávéfőzést. Ellenőrizze, hogy a gép be van-e kapcsolva, van-e benne legalább 50 ml víz és legalább 15 g kávé.  
   Ha minden feltétel teljesül, vonjon le 50 vizet és 15 kávét, majd térjen vissza `igaz` értékkel.  
   Ha bármelyik feltétel hiányzik, ne vonjon le semmit, és térjen vissza `hamis` értékkel.

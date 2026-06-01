@@ -5,13 +5,12 @@ using namespace std;
 
 class CoffeeMachine {
   private:
+    string brand;
     bool is_on;
     int water_ml;
     int coffee_g;
 
   public:
-    string brand;
-
     CoffeeMachine(string cur_brand) {
         brand = cur_brand;
         is_on = false;

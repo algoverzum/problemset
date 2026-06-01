@@ -4,7 +4,7 @@ Create a class called `CoffeeMachine` that simulates the operation of a coffee m
 Data Members (Variables)  
 The machine should have four attributes. The variables describing the internal state should be private (in Python, use the double underscore `__` prefix) so they cannot be modified directly from outside the class.
 
-* `brand`: The brand of the machine (string, may be public).
+* `brand`: The brand of the machine (string).
 * `is_on`: Indicates whether the machine has power (boolean, initially `False`).
 * `water_ml`: The amount of water in the tank in milliliters (integer, initially `0`).
 * `coffee_g`: The amount of coffee loaded into the machine in grams (integer, initially `0`).
