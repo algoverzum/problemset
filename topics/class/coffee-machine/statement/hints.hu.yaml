@@ -14,13 +14,13 @@
   py: |
     A `set_electricity()` metódus a kapott értéket mentse el a `__is_on` adattagba.
 - cpp: |
-    A `add_water()` függvény növelje a vízmennyiséget: `water_ml += amount;`
+    Az `add_water()` függvény növelje a vízmennyiséget: `water_ml += amount;`
   py: |
-    A `add_water()` metódus növelje a vízmennyiséget: `self.__water_ml += amount`
+    Az `add_water()` metódus növelje a vízmennyiséget: `self.__water_ml += amount`
 - cpp: |
-    A `add_coffee()` függvény növelje a kávémennyiséget.
+    Az `add_coffee()` függvény növelje a kávémennyiséget.
   py: |
-    A `add_coffee()` metódus növelje a kávémennyiséget.
+    Az `add_coffee()` metódus növelje a kávémennyiséget.
 - Kávét csak akkor lehet főzni, ha a gép be van kapcsolva, van legalább 50 ml víz és legalább 15 g kávé.
 - Sikeres kávéfőzéskor vonj le 50 ml vizet és 15 g kávét a készletből.
 - cpp: |

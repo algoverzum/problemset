@@ -7,33 +7,33 @@ class Circle {
     int radius;
 
   public:
+    // Initialize this circle object with r radius
     Circle(int r) {
-        // Initialize this with radius
         // Write your code here
     }
 
+    // Returns the radius of this circle
     int get_radius() {
-        // Returns the radius of this
         // Write your code here
     }
 
+    // Changes the radius of this circle to r
     void set_radius(int r) {
-        // Changes the radius of this to r
         // Write your code here
     }
 
+    // Returns the area of this circle using pi = 3.14
     double get_area() {
-        // Returns the area of this using pi = 3.14
         // Write your code here
     }
 
+    // Returns the perimeter of this circle using pi = 3.14
     double get_perimeter() {
-        // Returns the perimeter of this using pi = 3.14
         // Write your code here
     }
 
+    // Returns the Circle object with the bigger radius, this or c
     Circle bigger(Circle c) {
-        // Returns this or c, the Circle object with the bigger radius
         // Write your code here
     }
 };
