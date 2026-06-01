@@ -16,12 +16,12 @@ class CoffeeMachine:
         Changes the power status (__is_on) of self to state."""
         self.__is_on = state
 
-    def set_water(self, amount):
+    def add_water(self, amount):
         """amount is a number.
         Adds the given amount to the machine's water level (__water_ml)."""
         self.__water_ml += amount
 
-    def set_coffee(self, amount):
+    def add_coffee(self, amount):
         """amount is a number.
         Adds the given amount to the machine's coffee level (__coffee_g)."""
         self.__coffee_g += amount
@@ -57,10 +57,10 @@ while cur != 0:
             CM.set_electricity(False)
     elif cur == 3:
         water = int(input())
-        CM.set_water(water)
+        CM.add_water(water)
     elif cur == 4:
         coffee = int(input())
-        CM.set_coffee(coffee)
+        CM.add_coffee(coffee)
     elif cur == 5:
         CM.brew_coffee()
     elif cur == 6:

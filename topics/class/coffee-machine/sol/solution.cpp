@@ -21,9 +21,9 @@ class CoffeeMachine {
 
     void set_electricity(bool state) { is_on = state; }
 
-    void set_water(int amount) { water_ml += amount; }
+    void add_water(int amount) { water_ml += amount; }
 
-    void set_coffee(int amount) { coffee_g += amount; }
+    void add_coffee(int amount) { coffee_g += amount; }
 
     bool brew_coffee() {
         if (is_on && water_ml >= 50 && coffee_g >= 15) {
@@ -61,11 +61,11 @@ int main() {
         } else if (cur == 3) {
             int water;
             cin >> water;
-            CM.set_water(water);
+            CM.add_water(water);
         } else if (cur == 4) {
             int coffee;
             cin >> coffee;
-            CM.set_coffee(coffee);
+            CM.add_coffee(coffee);
         } else if (cur == 5) {
             CM.brew_coffee();
         } else if (cur == 6) {

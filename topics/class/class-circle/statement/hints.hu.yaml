@@ -1,19 +1,19 @@
 ---
 - cpp: |
-       A konstruktorban mentsd el a paramétert az adattagba: `this->radius = radius;`
+       A konstruktorban mentsd el a paramétert az adattagba: `radius = r;`
   py: |
       A konstruktorban mentsd el a sugarat a `self.radius` adattagba: `self.radius = radius`
 - cpp: |
        A `get_radius()` függvény adja vissza a radius adattagot: `return radius;`
   py: A `get_radius()` metódus egyszerűen adja vissza a self.radius értékét.
 - cpp: |
-       A `set_radius()` függvény módosítsa a radius adattagot: `this->radius = radius;`
+       A `set_radius()` függvény módosítsa a radius adattagot: `radius = r;`
   py: A `set_radius(radius)` metódus módosítsa a `self.radius` adattagot.
 - |
   A kör területe: `3.14 * radius * radius`
 - |
   A kör kerülete: `2 * 3.14 * radius`
 - cpp: |
-       A `bigger()` függvény visszatérési típusa `Circle*`. A nagyobb sugarú objektum címét kell visszaadni: `return this;` vagy `return c;`
+       A `bigger()` függvény visszatérési típusa `Circle`. A nagyobb sugarú objektum címét kell visszaadni: `return *this;` vagy `return c;`
   py: |
       A `bigger()` metódusban hasonlítsd össze: `self.radius` és `c.radius` értélét. Ha a `self` sugara nagyobb vagy egyenlő, térj vissza a `self` objektummal, különben a `c` objektummal.

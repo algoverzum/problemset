@@ -14,15 +14,13 @@
   py: |
     A `set_electricity()` metódus a kapott értéket mentse el a `__is_on` adattagba.
 - cpp: |
-    A `set_water()` függvény ne felülírja, hanem növelje a vízmennyiséget:
-    `water_ml += amount;`
+    A `add_water()` függvény növelje a vízmennyiséget: `water_ml += amount;`
   py: |
-    A `set_water()` metódus ne felülírja, hanem növelje a vízmennyiséget:
-    `self.__water_ml += amount`
+    A `add_water()` metódus növelje a vízmennyiséget: `self.__water_ml += amount`
 - cpp: |
-    A `set_coffee()` függvény ne felülírja, hanem növelje a kávémennyiséget.
+    A `add_coffee()` függvény növelje a kávémennyiséget.
   py: |
-    A `set_coffee()` metódus ne felülírja, hanem növelje a kávémennyiséget.
+    A `add_coffee()` metódus növelje a kávémennyiséget.
 - Kávét csak akkor lehet főzni, ha a gép be van kapcsolva, van legalább 50 ml víz és legalább 15 g kávé.
 - Sikeres kávéfőzéskor vonj le 50 ml vizet és 15 g kávét a készletből.
 - cpp: |
@@ -30,8 +28,9 @@
     Siker esetén `true`, egyébként `false` értéket adj vissza.
   py: |
     A `brew_coffee()` siker esetén `True`, egyébként `False` értékkel térjen vissza.
-- A `get_status()` egyetlen szöveget adjon vissza, amely tartalmazza a márkát, a bekapcsolt állapotot (0 vagy 1), a víz mennyiségét és a kávé mennyiségét.
+- |
+  A `get_status()` egyetlen stringet adjon vissza, amely tartalmazza a márkát, a bekapcsolt állapotot ("ON" vagy "OFF"), a víz mennyiségét (ml) és a kávé mennyiségét (g). Pl.: "ABC ON 100ml 5g"-t ha a márkája ABC, be van kapcsolva, 100 ml víz van benne és 5 g kávé.
 - cpp: |
-    A logikai értékből készíthetsz 0/1-et: `(int)is_on`
+    A logikai értékből készíthetsz "ON"/"OFF"-ot: `is_on ? "ON" : "OFF"`
   py: |
-    A logikai értékből készíthetsz 0/1-et: `int(self.__is_on)`
+    A logikai értékből készíthetsz "ON"/"OFF"-ot: `"ON" if self.__is_on else "OFF"`

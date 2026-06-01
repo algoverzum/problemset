@@ -23,12 +23,12 @@ class CoffeeMachine {
         // Write your code here
     }
 
-    void set_water(int amount) {
+    void add_water(int amount) {
         // Adds the given amount to the machine's water level (water_ml).
         // Write your code here
     }
 
-    void set_coffee(int amount) {
+    void add_coffee(int amount) {
         // Adds the given amount to the machine's coffee level (coffee_g).
         // Write your code here
     }
@@ -71,11 +71,11 @@ int main() {
         } else if (cur == 3) {
             int water;
             cin >> water;
-            CM.set_water(water);
+            CM.add_water(water);
         } else if (cur == 4) {
             int coffee;
             cin >> coffee;
-            CM.set_coffee(coffee);
+            CM.add_coffee(coffee);
         } else if (cur == 5) {
             CM.brew_coffee();
         } else if (cur == 6) {
