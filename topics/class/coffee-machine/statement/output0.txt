@@ -1,2 +1,1 @@
-ABC 0 0 0
-OK
+ABC OFF 0ml 0g

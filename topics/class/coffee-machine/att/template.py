@@ -31,38 +31,31 @@ class CoffeeMachine:
 
     def get_status(self):
         """Returns a formatted string with the machine's brand,
-        power status, current water, and coffee levels."""
+        power status (ON/OFF), current water in ml, and coffee level in g.
+        Example: "ABC ON 100ml 5g" if the brand is ABC, the machine is turned on, contains 100 ml of water, and 5 g of coffee."""
         # Write your code here
 
 
 # Do not change anything below.
 name = input()
 CM = CoffeeMachine(name)
-ok = True
-try:
-    cur = int(input())
-    while cur != 0:
-        if cur == 2:
-            on = int(input())
-            if on == 1:
-                CM.set_electricity(True)
-            else:
-                CM.set_electricity(False)
-        elif cur == 3:
-            water = int(input())
-            CM.set_water(water)
-        elif cur == 4:
-            coffee = int(input())
-            CM.set_coffee(coffee)
-        elif cur == 5:
-            CM.brew_coffee()
-        elif cur == 6:
-            print(CM.get_status())
-        cur = int(input())
-except:
-    ok = False
 
-if ok:
-    print("OK")
-else:
-    print("HIBA")
+cur = int(input())
+while cur != 0:
+    if cur == 2:
+        on = int(input())
+        if on == 1:
+            CM.set_electricity(True)
+        else:
+            CM.set_electricity(False)
+    elif cur == 3:
+        water = int(input())
+        CM.set_water(water)
+    elif cur == 4:
+        coffee = int(input())
+        CM.set_coffee(coffee)
+    elif cur == 5:
+        CM.brew_coffee()
+    elif cur == 6:
+        print(CM.get_status())
+    cur = int(input())

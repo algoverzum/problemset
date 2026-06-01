@@ -40,37 +40,29 @@ class CoffeeMachine:
     def get_status(self):
         """Returns a formatted string with the machine's brand,
         power status, current water, and coffee levels."""
-        return f"{self.brand} {int(self.__is_on)} {self.__water_ml} {self.__coffee_g}"
+        status = "ON" if self.__is_on else "OFF"
+        return f"{self.brand} {status} {self.__water_ml}ml {self.__coffee_g}g"
 
 
 # Do not change anything below.
 name = input()
 CM = CoffeeMachine(name)
-ok = True
-try:
+cur = int(input())
+while cur != 0:
+    if cur == 2:
+        on = int(input())
+        if on == 1:
+            CM.set_electricity(True)
+        else:
+            CM.set_electricity(False)
+    elif cur == 3:
+        water = int(input())
+        CM.set_water(water)
+    elif cur == 4:
+        coffee = int(input())
+        CM.set_coffee(coffee)
+    elif cur == 5:
+        CM.brew_coffee()
+    elif cur == 6:
+        print(CM.get_status())
     cur = int(input())
-    while cur != 0:
-        if cur == 2:
-            on = int(input())
-            if on == 1:
-                CM.set_electricity(True)
-            else:
-                CM.set_electricity(False)
-        elif cur == 3:
-            water = int(input())
-            CM.set_water(water)
-        elif cur == 4:
-            coffee = int(input())
-            CM.set_coffee(coffee)
-        elif cur == 5:
-            CM.brew_coffee()
-        elif cur == 6:
-            print(CM.get_status())
-        cur = int(input())
-except:
-    ok = False
-
-if ok:
-    print("OK")
-else:
-    print("HIBA")

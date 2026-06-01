@@ -38,24 +38,21 @@ R1 = int(input())
 R2 = int(input())
 
 ok = True
-try:
-    C1 = Circle(R1)
-    C2 = Circle(R2)
-    if C1.get_radius() != R1:
-        ok = False
-    if abs(C1.get_area() - R1 * R1 * 3.14) > 0.01:
-        ok = False
-    if abs(C1.get_perimeter() - 2 * R1 * 3.14) > 0.01:
-        ok = False
-    if C1.bigger(C2).get_radius() != max(R1, R2):
-        ok = False
-    C1.set_radius(13)
-    if C1.radius != 13:
-        ok = False
-except:
+C1 = Circle(R1)
+C2 = Circle(R2)
+if C1.get_radius() != R1:
+    ok = False
+if abs(C1.get_area() - R1 * R1 * 3.14) > 0.01:
+    ok = False
+if abs(C1.get_perimeter() - 2 * R1 * 3.14) > 0.01:
+    ok = False
+if C1.bigger(C2).get_radius() != max(R1, R2):
+    ok = False
+C1.set_radius(13)
+if C1.radius != 13:
     ok = False
 
 if ok:
     print("OK")
 else:
-    print("HIBA")
+    print("ERROR")

@@ -12,8 +12,8 @@ class CoffeeMachine {
   public:
     string brand;
 
-    CoffeeMachine(string brand) {
-        this->brand = brand;
+    CoffeeMachine(string cur_brand) {
+        brand = cur_brand;
         is_on = false;
         water_ml = 0;
         coffee_g = 0;
@@ -35,8 +35,8 @@ class CoffeeMachine {
     }
 
     string get_status() {
-        return brand + " " + to_string((int)is_on) + " " + to_string(water_ml) +
-               " " + to_string(coffee_g);
+        return brand + " " + (is_on ? "ON" : "OFF") + " " +
+               to_string(water_ml) + "ml " + to_string(coffee_g) + "g";
     }
 };
 
@@ -46,42 +46,32 @@ int main() {
     cin >> name;
 
     CoffeeMachine CM(name);
-    bool ok = true;
 
-    try {
-        int cur;
-        cin >> cur;
+    int cur;
+    cin >> cur;
 
-        while (cur != 0) {
-            if (cur == 2) {
-                int on;
-                cin >> on;
-                if (on == 1)
-                    CM.set_electricity(true);
-                else
-                    CM.set_electricity(false);
-            } else if (cur == 3) {
-                int water;
-                cin >> water;
-                CM.set_water(water);
-            } else if (cur == 4) {
-                int coffee;
-                cin >> coffee;
-                CM.set_coffee(coffee);
-            } else if (cur == 5) {
-                CM.brew_coffee();
-            } else if (cur == 6) {
-                cout << CM.get_status() << '\n';
-            }
-            cin >> cur;
+    while (cur != 0) {
+        if (cur == 2) {
+            int on;
+            cin >> on;
+            if (on == 1)
+                CM.set_electricity(true);
+            else
+                CM.set_electricity(false);
+        } else if (cur == 3) {
+            int water;
+            cin >> water;
+            CM.set_water(water);
+        } else if (cur == 4) {
+            int coffee;
+            cin >> coffee;
+            CM.set_coffee(coffee);
+        } else if (cur == 5) {
+            CM.brew_coffee();
+        } else if (cur == 6) {
+            cout << CM.get_status() << '\n';
         }
-    } catch (...) {
-        ok = false;
+        cin >> cur;
     }
-
-    if (ok)
-        cout << "OK\n";
-    else
-        cout << "HIBA\n";
     return 0;
 }
