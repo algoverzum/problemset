@@ -1,0 +1,37 @@
+---
+- cpp: |
+    In the constructor, set the brand and initialize the data members:
+    `is_on = false;`
+    `water_ml = 0;`
+    `coffee_g = 0;`
+  py: |
+    In the constructor, store the brand and initialize:
+    `self.__is_on = False`
+    `self.__water_ml = 0`
+    `self.__coffee_g = 0`
+- cpp: |
+    The `set_electricity()` function should store the received value in the `is_on` data member.
+  py: |
+    The `set_electricity()` method should store the received value in the `__is_on` attribute.
+- cpp: |
+    The `add_water()` function should increase the amount of water:
+    `water_ml += amount;`
+  py: |
+    The `add_water()` method should increase the amount of water:
+    `self.__water_ml += amount`
+- cpp: |
+    The `add_coffee()` function should increase the amount of coffee.
+  py: |
+    The `add_coffee()` method should increase the amount of coffee.
+- Coffee can only be brewed if the machine is turned on, contains at least 50 ml of water, and contains at least 15 g of coffee.
+- When brewing coffee successfully, subtract 50 ml of water and 15 g of coffee from the machine's supplies.
+- cpp: |
+    The return type of `brew_coffee()` is `bool`.
+    Return `true` on success and `false` otherwise.
+  py: |
+    The `brew_coffee()` method should return `True` on success and `False` otherwise.
+- The `get_status()` method should return a single string containing the brand, the power status (`"ON"` or `"OFF"`), the amount of water in ml, and the amount of coffee in g. E.g. `"ABC ON 100ml 5g"` if the brand is `ABC`, the machine is turned on, contains 100 ml of water, and 5 g of coffee.
+- cpp: |
+    You can convert a boolean value to "ON"/"OFF" using: `is_on ? "ON" : "OFF"`
+  py: |
+    You can convert a boolean value to "ON"/"OFF" using: `"ON" if self.__is_on else "OFF"`
