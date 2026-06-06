@@ -1,0 +1,34 @@
+---
+- cpp: Save the numerator and denominator in the constructor, then call the `reduce()` function.
+  py: Save the numerator and denominator in the constructor (`self.__num`, `self.__denom`), then call the `reduce()` method.
+- The purpose of `reduce()` is to divide the numerator and denominator by their greatest common divisor.
+- cpp: |
+    You can compute the greatest common divisor using
+    `std::gcd(num, denom)`.
+  py: |
+    You can compute the greatest common divisor using
+    `math.gcd(self.__num, self.__denom)`.
+- After simplification, the denominator must always be positive. If it is negative, multiply both the numerator and denominator by -1.
+- |
+  The string representation of a fraction should be:
+  `numerator/denominator`
+  For example: `-1/2`
+- |
+  To add two fractions, use the formula:
+  `(a/b) + (c/d) = (ad + bc) / bd`
+- |
+  To subtract two fractions, use the formula:
+  `(a/b) - (c/d) = (ad - bc) / bd`
+- |
+  To multiply two fractions, multiply the numerators and denominators:
+  `(a/b) * (c/d) = (ac) / (bd)`
+- |
+  To divide two fractions, multiply by the reciprocal of the second fraction:
+  `(a/b) / (c/d) = (ad) / (bc)`
+- cpp: Create and return a new `Fraction` object as the result of each arithmetic operation.
+  py: Create and return a new `Fraction` object as the result of each arithmetic operation.
+- If every new fraction is created through the constructor, the results will automatically be stored in simplified form.
+- cpp: Consider overloading the `operator<<` operator for output.
+  py: The `print()` function will automatically use the `__str__()` method.
+- cpp: Declare the data members as `private`.
+  py: Store the data members as `self.__num` and `self.__denom` to make them private.

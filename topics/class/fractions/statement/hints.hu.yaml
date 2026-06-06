@@ -1,0 +1,30 @@
+---
+- cpp: A konstruktorban mentsd el a számlálót és a nevezőt a privát adattagokba, majd hívd meg a `reduce()` függvényt.
+  py: A konstruktorban mentsd el a számlálót és a nevezőt a privát adattagokba (`self.__num`, `self.__denom`), majd hívd meg a `reduce()` metódust.
+- A `reduce()` feladata, hogy a számlálót és a nevezőt elossza a legnagyobb közös osztójukkal.
+- cpp: |
+    A legnagyobb közös osztót meghatározhatod a `std::gcd(num, denom)` függvénnyel.
+  py: |
+    A legnagyobb közös osztót meghatározhatod a `math.gcd(self.__num, self.__denom)` függvénnyel.
+- Az egyszerűsítés után a nevezőnek mindig pozitívnak kell lennie. Ha negatív, szorozd meg a számlálót és a nevezőt is -1-gyel.
+- |
+  A tört szöveges alakja legyen: `számláló/nevező`. Például: `-1/2`
+- |
+  Két tört összeadásához használd a képletet:
+  `(a/b) + (c/d) = (ad + bc) / bd`
+- |
+  Két tört kivonásához használd a képletet:
+  `(a/b) - (c/d) = (ad - bc) / bd`
+- |
+  Két tört szorzásához szorozd össze a számlálókat és a nevezőket:
+  `(a/b) * (c/d) = (ac) / (bd)`
+- |
+  Két tört osztásához szorozz a második tört reciprokával:
+  `(a/b) / (c/d) = (ad) / (bc)`
+- cpp: Az aritmetikai műveletek eredményeként hozz létre és adj vissza egy új `Fraction` objektumot.
+  py: Az aritmetikai műveletek eredményeként hozz létre és adj vissza egy új `Fraction` objektumot.
+- Ha minden új tört a konstruktoron keresztül jön létre, akkor az eredmények automatikusan egyszerűsített alakban lesznek tárolva.
+- cpp: A kiíráshoz érdemes túlterhelni az `operator<<` operátort.
+  py: A `print()` automatikusan a `__str__()` metódust fogja használni.
+- cpp: Az adattagokat `private` láthatósággal hozd létre.
+  py: Az adattagokat `self.__num` és `self.__denom` néven tárold, hogy privátak legyenek.

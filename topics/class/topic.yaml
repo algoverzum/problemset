@@ -6,6 +6,8 @@ problems:
     type: REQUIRED
   - problem_id: coffee-machine
     type: REQUIRED
+  - problem_id: fractions
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:
