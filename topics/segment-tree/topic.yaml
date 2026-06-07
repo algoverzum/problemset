@@ -1,0 +1,10 @@
+---
+id: segment-tree
+name: Segment Tree
+problems:
+  - problem_id: inversion-count
+    type: REQUIRED
+prerequisites:
+dependents:
+visualization:
+# Notes:
