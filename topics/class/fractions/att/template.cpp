@@ -40,7 +40,7 @@ class Fraction {
         reduce();
     }
 
-    double toDouble() const { return (double)num / denom; }
+    double to_double() const { return (double)num / denom; }
 
     // Operator overloading
     // Returns a new fraction representing the addition

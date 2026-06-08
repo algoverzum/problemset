@@ -51,7 +51,7 @@ class Fraction {
 
     Fraction inverse() const { return Fraction(denom, num); }
 
-    double toDouble() const { return (double)num / denom; }
+    double to_double() const { return (double)num / denom; }
 
     // Operator overloading
     Fraction operator+(const Fraction &other) const {
