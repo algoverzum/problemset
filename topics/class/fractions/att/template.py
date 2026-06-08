@@ -64,7 +64,7 @@ class Fraction:
 
 
 # Do not change anything below.
-
+a, b, c, d = [int(x) for x in input().split()]
 f1 = Fraction(a, b)
 f2 = Fraction(c, d)
 
