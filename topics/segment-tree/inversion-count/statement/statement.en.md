@@ -12,6 +12,7 @@ Each test case begins with an integer $n$, the size of the array. The second lin
 For each test case, print a single line containing the number of inversions in the corresponding array.
 
 ### Constraints
+* $1 \le T \le 100$
 * $1 \le n \le 200,000$
 * $1 \le A[i] \le 10^6$ for all $i$
 * All elements of the array are distinct.

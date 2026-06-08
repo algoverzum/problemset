@@ -25,8 +25,7 @@
 - |
   To divide two fractions, multiply by the reciprocal of the second fraction:
   `(a/b) / (c/d) = (ad) / (bc)`
-- cpp: Create and return a new `Fraction` object as the result of each arithmetic operation.
-  py: Create and return a new `Fraction` object as the result of each arithmetic operation.
+- Create and return a new `Fraction` object as the result of each arithmetic operation.
 - If every new fraction is created through the constructor, the results will automatically be stored in simplified form.
 - cpp: Consider overloading the `operator<<` operator for output.
   py: The `print()` function will automatically use the `__str__()` method.

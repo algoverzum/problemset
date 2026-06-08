@@ -12,6 +12,7 @@ Minden teszteset első sora egy $n$ egész számot tartalmaz. A második sor $n$
 Minden tesztesethez írj ki egy sort, amely az adott tömbben található inverziók számát tartalmazza.
 
 ### Korlátok
+* $1 \le T \le 100$
 * $1 \le n \le 200\,000$
 * $1 \le A[i] \le 10^6$ minden $i$-re
 * $A[i] \neq A[j]$ ha $i \neq j$

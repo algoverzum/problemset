@@ -21,8 +21,7 @@
 - |
   Két tört osztásához szorozz a második tört reciprokával:
   `(a/b) / (c/d) = (ad) / (bc)`
-- cpp: Az aritmetikai műveletek eredményeként hozz létre és adj vissza egy új `Fraction` objektumot.
-  py: Az aritmetikai műveletek eredményeként hozz létre és adj vissza egy új `Fraction` objektumot.
+- Az aritmetikai műveletek eredményeként hozz létre és adj vissza egy új `Fraction` objektumot.
 - Ha minden új tört a konstruktoron keresztül jön létre, akkor az eredmények automatikusan egyszerűsített alakban lesznek tárolva.
 - cpp: A kiíráshoz érdemes túlterhelni az `operator<<` operátort.
   py: A `print()` automatikusan a `__str__()` metódust fogja használni.

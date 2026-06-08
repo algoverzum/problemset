@@ -1,7 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// A number represented as a fraction
+// A number represented as a fraction in reduced form.
+// The denominator is always positive;
+// the sign of the fraction is carried by the numerator.
 class Fraction {
   private:
     int num;
@@ -32,16 +34,13 @@ class Fraction {
     }
 
     void set_denom(int value) {
-        if (value == 0)
-            throw invalid_argument("Denominator cannot be zero");
+        assert(value != 0);
 
         denom = value;
         reduce();
     }
 
-    Fraction inverse() const { return Fraction(denom, num); }
-
-    double toDouble() const { return static_cast<double>(num) / denom; }
+    double toDouble() const { return (double)num / denom; }
 
     // Operator overloading
     // Returns a new fraction representing the addition
@@ -64,7 +63,7 @@ class Fraction {
         // Write your code here
     }
 
-    // Returns a string representation of self
+    // Returns a string representation of this fraction
     // For example '-1/2' if numerator = -1 and denominator = 2
     friend ostream &operator<<(ostream &os, const Fraction &f) {
         // Write your code here

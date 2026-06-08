@@ -3,7 +3,9 @@
 
 class Fraction:
     """
-    A number represented as a fraction
+    A number represented as a fraction in reduced form.
+    The denominator is always positive;
+    the sign of the fraction is carried by the numerator.
     """
 
     def __init__(self, num, denom):

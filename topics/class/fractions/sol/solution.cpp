@@ -24,8 +24,7 @@ class Fraction {
 
   public:
     Fraction(int n, int d) {
-        if (d == 0)
-            throw invalid_argument("Denominator cannot be zero");
+        assert(d != 0);
 
         num = n;
         denom = d;
@@ -44,8 +43,7 @@ class Fraction {
     }
 
     void set_denom(int value) {
-        if (value == 0)
-            throw invalid_argument("Denominator cannot be zero");
+        assert(value != 0);
 
         denom = value;
         reduce();
@@ -53,7 +51,7 @@ class Fraction {
 
     Fraction inverse() const { return Fraction(denom, num); }
 
-    double toDouble() const { return static_cast<double>(num) / denom; }
+    double toDouble() const { return (double)num / denom; }
 
     // Operator overloading
     Fraction operator+(const Fraction &other) const {
