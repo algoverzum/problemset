@@ -40,20 +40,16 @@ def run(N, sumN, A):
             cur.add(randint(1, A))
         cur = sorted(cur)
         print(1)
-        print()
         print(len(cur))
-        for a in cur:
-            print(a)
+        print(*cur)
     elif sumN == -2:
         cur = set()
         while len(cur) < N:
             cur.add(randint(1, A))
         cur = sorted(cur, reverse=True)
         print(1)
-        print()
         print(len(cur))
-        for a in cur:
-            print(a)
+        print(*cur)
     else:
         tests = []
         while len(tests) < 100 and sumN >= N:
@@ -67,10 +63,8 @@ def run(N, sumN, A):
             tests.append(cur)
         print(len(tests))
         for test in tests:
-            print()
             print(len(test))
-            for a in test:
-                print(a)
+            print(*test)
 
 
 if __name__ == "__main__":

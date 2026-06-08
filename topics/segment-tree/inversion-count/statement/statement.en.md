@@ -6,9 +6,7 @@ Your task is to determine the number of inversions in the given array.
 ### Input
 The first line contains an integer $T$, the number of test cases.
 
-Each test case begins with an integer $n$, the size of the array. The next $n$ lines contain the elements of the array, where the $i$-th of these lines contains $A[i]$.
-
-Consecutive test cases are separated by a blank line.
+Each test case begins with an integer $n$, the size of the array. The second line contains $n$ space-separated integers, where the $i$-th integer denotes $A[i]$.
 
 ### Output
 For each test case, print a single line containing the number of inversions in the corresponding array.
@@ -20,20 +18,15 @@ For each test case, print a single line containing the number of inversions in t
 * The sum of $n$ over all test cases does not exceed 200000.
 
 ### Example input
-    2
-    
+    3    
     3
-    3
-    1
-    2
-    
+    3 1 2
     5
-    2
-    3
-    8
-    6
+    2 3 8 6 1
     1
+    10
 
 ### Example output
     2
     5
+    0

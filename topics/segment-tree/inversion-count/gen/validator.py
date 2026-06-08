@@ -21,17 +21,14 @@ def run(f, st):
     sumN = 0
 
     for _ in range(T):
-        empty = next(f).strip()
-        assert len(empty) == 0
         N = int(next(f))
         sumN += N
         assert MIN <= N <= MAXN
-        A = set()
-        for i in range(N):
-            a = int(next(f))
-            assert MIN <= a <= MAXA
-            A.add(a)
+        A = list(map(int, next(f).split()))
         assert len(A) == N
+        for i in range(N):
+            assert MIN <= A[i] <= MAXA
+        assert len(set(A)) == N
     assert MIN <= sumN <= MAXN
 
     assert next(f, None) is None

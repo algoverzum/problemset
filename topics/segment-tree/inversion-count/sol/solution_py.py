@@ -51,13 +51,11 @@ def solve():
     N = int(input())
     res = 0
     segmentTree = SegmentTree([0] * (10**6 + 1))
-    for i in range(N):
-        A = int(input())
+    for A in map(int, input().split()):
         segmentTree.add(A)
         res += segmentTree.sumInRange(A + 1, 10**6 + 1)
     print(res)
 
 
 for _ in range(int(input())):
-    input()
     solve()
