@@ -1,0 +1,4 @@
+---
+- Iterate through the elements of the array from left to right, and for each element determine how many larger elements have appeared before it.
+- Use a segment tree or a Fenwick tree of size $10^6$, storing for each value how many times it has occurred so far. After processing an element, increment the corresponding position by one.
+- For a value $x$, add the result of the query $\sum(x+1, 10^6)$ to the answer.

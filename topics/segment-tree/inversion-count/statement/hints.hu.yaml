@@ -1,0 +1,4 @@
+---
+- Menjünk sorban az elemeken, és mindegyikre kérdezzük le, hogy hány nála nagyobb volt korábban.
+- Használjunk egy $10^6$ méretű szegmensfát vagy Fenwick fát, amelyben minden értékre számoljuk, hogy eddig hányszor szerepelt. Mindig a megfelelő helyen növeljük eggyel.
+- Egy $x$ értéknél a $\sum(x+1, 10^6)$ lekérdezés eredményét adjuk a válaszhoz.
