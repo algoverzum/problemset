@@ -1,0 +1,5 @@
+---
+- Tegyük fel, hogy $D$ nehézséget szeretnénk elérni. Ehhez hány edzést kell hozzáadni a jelenlegiekhez?
+- cpp: Ha $x=M_{i+1}-M_i$, akkor itt $\lceil\frac{x}{D}\rceil-1= (x-1)/D$ edzést kell beszúrni. Ezt számoljuk ki minden szomszédos párra, majd összegezzük.
+  py: Ha $x=M_{i+1}-M_i$, akkor itt $\lceil\frac{x}{D}\rceil-1= (x-1)//D$ edzést kell beszúrni. Ezt számoljuk ki minden szomszédos párra, majd összegezzük.
+- Bináris kereséssel keressük a legkisebb $D$ értéket az $[1,max(M_{i+1}-M_i)]$ intervallumban. Ha egy adott $D$-hez legfeljebb $K$ beszúrás szükséges, akkor minden nagyobb $D$ is megvalósítható, ezért a feltétel monoton.

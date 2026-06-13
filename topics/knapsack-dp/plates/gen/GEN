@@ -1,0 +1,32 @@
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input0.txt
+
+# Subtask 2: N <= 3
+#ST: 50
+#STNAME: small
+#COPY: gen/smalltestcases/input1.txt
+#COPY: gen/smalltestcases/input2.txt
+#COPY: gen/smalltestcases/input3.txt
+#COPY: gen/smalltestcases/input4.txt
+#COPY: gen/smalltestcases/input5.txt
+#COPY: gen/smalltestcases/input6.txt
+#COPY: gen/smalltestcases/input7.txt
+#COPY: gen/smalltestcases/input8.txt
+#COPY: gen/smalltestcases/input9.txt
+#COPY: gen/smalltestcases/input10.txt
+
+# Subtask 2: N <= 50
+#ST: 50
+#STNAME: all
+#COPY: gen/largetestcases/input1.txt
+#COPY: gen/largetestcases/input2.txt
+#COPY: gen/largetestcases/input3.txt
+#COPY: gen/largetestcases/input4.txt
+#COPY: gen/largetestcases/input5.txt
+#COPY: gen/largetestcases/input6.txt
+#COPY: gen/largetestcases/input7.txt
+#COPY: gen/largetestcases/input8.txt
+#COPY: gen/largetestcases/input9.txt
+#COPY: gen/largetestcases/input10.txt

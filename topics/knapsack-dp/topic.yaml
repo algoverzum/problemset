@@ -9,6 +9,8 @@ problems:
     type: REQUIRED
   - problem_id: imperial-inheritance
     type: REQUIRED
+  - problem_id: plates
+    type: REQUIRED
 prerequisites:
 dependents:
 visualization:

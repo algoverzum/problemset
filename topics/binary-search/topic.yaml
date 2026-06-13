@@ -6,6 +6,8 @@ problems:
     type: EXTRA
   - problem_id: lumberjack
     type: REQUIRED
+  - problem_id: workout
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:
