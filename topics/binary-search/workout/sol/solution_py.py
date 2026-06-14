@@ -5,10 +5,10 @@ m = list(map(int, input().split()))
 
 diffs = [m[i + 1] - m[i] for i in range(n - 1)]
 
-lo = 1
+lo = 0
 hi = max(diffs)
 
-while lo < hi:
+while hi - lo > 1:
     mid = (lo + hi) // 2
 
     needed = 0
@@ -18,6 +18,6 @@ while lo < hi:
     if needed <= k:
         hi = mid
     else:
-        lo = mid + 1
+        lo = mid
 
-print(lo)
+print(hi)

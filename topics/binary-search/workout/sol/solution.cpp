@@ -24,9 +24,9 @@ int main() {
         hi = max(hi, d);
     }
 
-    long long lo = 1;
+    long long lo = 0;
 
-    while (lo < hi) {
+    while (hi - lo > 1) {
         long long mid = (lo + hi) / 2;
 
         long long needed = 0;
@@ -37,11 +37,11 @@ int main() {
         if (needed <= K) {
             hi = mid;
         } else {
-            lo = mid + 1;
+            lo = mid;
         }
     }
 
-    cout << lo << '\n';
+    cout << hi << '\n';
 
     return 0;
 }
