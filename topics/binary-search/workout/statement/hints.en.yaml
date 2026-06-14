@@ -1,5 +1,5 @@
 ---
-- Suppose we want to achieve a difficulty of $D$. How many training sessions must be added to the existing schedule?
-- cpp: If $x=M_{i+1}-M_i$, then the number of sessions that must be inserted is $\lceil\frac{x}{D}\rceil-1=(x-1)/D$. Compute this for every adjacent pair and sum the results.
-  py: If $x=M_{i+1}-M_i$, then the number of sessions that must be inserted is $\lceil\frac{x}{D}\rceil-1=(x-1)//D$. Compute this for every adjacent pair and sum the results.
-- Use binary search to find the smallest value of $D$ in the interval $[1,\max(M_{i+1}-M_i)]$. If a given $D$ requires at most $K$ insertions, then any larger value of $D$ is also feasible, so the condition is monotonic.
+- Suppose the final workout program must have difficulty at most $D$. How many new training sessions need to be inserted so that every difference between consecutive sessions is at most $D$?
+- cpp: If $x=M_{i+1}-M_i$, then the number of required insertions is $\lceil\frac{x}{D}\rceil-1=(x-1)/D$. Compute this for every adjacent pair and sum the results.
+  py: If $x=M_{i+1}-M_i$, then the number of required insertions is $\lceil\frac{x}{D}\rceil-1=(x-1)//D$. Compute this for every adjacent pair and sum the results.
+- If at most $K$ insertions are needed for a given value of $D$, then any larger value of $D$ is also feasible. Therefore, the condition is monotonic, and the smallest valid $D$ can be found using binary search on the interval $(0,\max(M_{i+1}-M_i)]$.
