@@ -46,3 +46,5 @@ Minden tesztesetre írd ki a maximálisan elérhető összes szépségérték, t
 1. teszteset: 5 tányért kell választani. Az első kupacból a felső 3 tányért: $10 + 10 + 100 = 120$. A második kupacból a felső 2 tányért: $80 + 50 = 130$. Összesen: $120 + 130 = 250$
 
 2. teszteset: 3 tányért kell választani. Az első kupacból a felső 2 tányért: $80 + 80 = 160$. A második kupacból semmit. A harmadik kupacból az első tányért: $20$. Összesen: $160 + 20 = 180$
+
+Forrás: Google Coding Competitions Archive (Apache-2.0). Módosított változat. Licenc: https://www.apache.org/licenses/LICENSE-2.0

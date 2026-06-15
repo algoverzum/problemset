@@ -58,3 +58,5 @@ It is possible to form the straight $1,2,3,4,5,6,7,8,9$ by discarding one $D_4$ 
 
 ### Explanation of the example 4
 We can only form a straight of length 1.
+
+Source: Google Coding Competitions Archive (Apache-2.0). Modified. License: https://www.apache.org/licenses/LICENSE-2.0

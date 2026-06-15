@@ -89,3 +89,5 @@ Becca mindkét nyitó lépése (akár $H$, akár $V$) nyerő.
 
 ### 5. Példa magyarázat
 Becca nem tud lépni az elején.
+
+Forrás: Google Coding Competitions Archive (Apache-2.0). Módosított változat. Licenc: https://www.apache.org/licenses/LICENSE-2.0

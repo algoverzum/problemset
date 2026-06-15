@@ -77,3 +77,5 @@ A nehézség ezután 3.
 Tambourine legfeljebb három új edzést adhat hozzá. A beszúrt edzések félkövérrel jelölve:
 $1, 2, 3, 4, 5, 6, 7, \mathbf{8}, \mathbf{9}, 10$.
 A nehézség ezután 1. (Tambourine valójában csak **két** új edzést adott hozzá.)
+
+Forrás: Google Coding Competitions Archive (Apache-2.0). Módosított változat. Licenc: https://www.apache.org/licenses/LICENSE-2.0

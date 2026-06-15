@@ -70,3 +70,5 @@ Lehetséges létrehozni az $1,2,3,4,5,6,7,8,9$ sorozatot úgy, hogy az egyik $D_
 
 ### 4. Példa magyarázata
 Csak 1 hosszú sorozatot tudunk létrehozni.
+
+Forrás: Google Coding Competitions Archive (Apache-2.0). Módosított változat. Licenc: https://www.apache.org/licenses/LICENSE-2.0

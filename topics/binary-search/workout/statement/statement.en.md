@@ -76,3 +76,5 @@ The resulting difficulty is 3.
 ### Explanation of Example 4
 Tambourine may add up to three sessions. The inserted sessions are shown in bold: $1, 2, 3, 4, 5, 6, 7, \mathbf{8}, \mathbf{9}, 10$.
 The resulting difficulty is 1. (In fact, Tambourine only inserted **two** sessions.)
+
+Source: Google Coding Competitions Archive (Apache-2.0). Modified. License: https://www.apache.org/licenses/LICENSE-2.0

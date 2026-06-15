@@ -46,3 +46,5 @@ For each test case, output the maximum possible total beauty value on a separate
 **Test case 1:** We need to select 5 plates. From the first stack, take the top 3 plates: $10 + 10 + 100 = 120$. From the second stack, take the top 2 plates: $80 + 50 = 130$. Total: $120 + 130 = 250$.
 
 **Test case 2:** We need to select 3 plates. From the first stack, take the top 2 plates: $80 + 80 = 160$. Take no plates from the second stack. From the third stack, take the top plate: $20$. Total: $160 + 20 = 180$.
+
+Source: Google Coding Competitions Archive (Apache-2.0). Modified. License: https://www.apache.org/licenses/LICENSE-2.0
