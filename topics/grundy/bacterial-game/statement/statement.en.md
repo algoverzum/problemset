@@ -90,3 +90,5 @@ Both of Becca's two distinct possible opening moves are winning ($H$/$V$).
 
 ### Explanation of the example 5
 Becca has no possible opening moves.
+
+Source: Google Coding Competitions Archive (Apache-2.0). Modified. License: https://www.apache.org/licenses/LICENSE-2.0

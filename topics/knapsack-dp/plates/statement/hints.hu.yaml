@@ -1,0 +1,6 @@
+---
+- Legyen `dp[i][j]` a maximálisan elérhető szépségösszeg, ha az első `i` tányéroszlopból összesen `j` tányért választunk ki.
+- |
+  Egy oszlopból csak a tetejéről vehetünk el tányérokat, ezért minden oszlop esetén csak prefixeket választhatunk. Azaz `x = 0, 1, ..., K` tányér vehető az `i`-edik oszlopból. Érdemes előre kiszámolni a prefix összegeket: `prefix[i][x] =` az `i`-edik oszlop felső `x` tányérjának összértéke.
+- |
+  Az átmenet: `dp[i][j] = max(dp[i-1][j-x] + prefix[i][x])`, ahol `x = 0..min(K, j)`. Másképp: az `i`-edik oszlopnál végigpróbáljuk, hány tányért veszünk el (0-tól `K`-ig), és a maradék `j-x` tányért az előző `i-1` oszlopból választjuk ki optimálisan.

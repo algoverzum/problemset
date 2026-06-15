@@ -71,3 +71,5 @@ It is impossible to be exactly $2/23$ Elf. Therefore, the answer is "impossible"
 
 ### Example 5 output
     8
+
+Source: Google Coding Competitions Archive (Apache-2.0). Modified. License: https://www.apache.org/licenses/LICENSE-2.0

@@ -1,0 +1,6 @@
+---
+- Let `dp[i][j]` be the maximum achievable beauty sum when selecting exactly `j` plates from the first `i` stacks.
+- |
+  From each stack, plates can only be taken from the top. Therefore, for each stack we can only choose prefixes, i.e. `x = 0, 1, ..., K` plates from the `i`-th stack. It is useful to precompute prefix sums: `prefix[i][x] =` the total beauty sum of the top `x` plates in the `i`-th stack.
+- |
+  Transition: `dp[i][j] = max(dp[i-1][j-x] + prefix[i][x])`, where `x = 0..min(K, j)`. In other words, for the `i`-th stack we try all possible numbers of plates taken (from `0` to `K`), and distribute the remaining `j-x` plates optimally among the first `i-1` stacks.

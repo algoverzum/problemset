@@ -69,3 +69,5 @@ Nem lehetséges pontosan $2/23$ részben tündének lenni. Ezért a válasz "imp
 
 ### 5. Példa kimenet
     8
+
+Forrás: Google Coding Competitions Archive (Apache-2.0). Módosított változat. Licenc: https://www.apache.org/licenses/LICENSE-2.0

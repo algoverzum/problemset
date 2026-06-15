@@ -59,3 +59,5 @@ Alternatively, it is also possible to add for example a mote of size 3.
 
 ### Example output 4
     4
+
+Source: Google Coding Competitions Archive (Apache-2.0). Modified. License: https://www.apache.org/licenses/LICENSE-2.0

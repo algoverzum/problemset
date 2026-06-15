@@ -59,3 +59,5 @@ De az is megfelelő lenne ha hozzáadnánk például egy 3-as gömböcöt.
 
 ### 4. Példa kimenet
     4
+
+Forrás: Google Coding Competitions Archive (Apache-2.0). Módosított változat. Licenc: https://www.apache.org/licenses/LICENSE-2.0

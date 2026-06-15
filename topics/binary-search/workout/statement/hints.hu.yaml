@@ -1,0 +1,5 @@
+---
+- Tegyük fel, hogy a végső edzésprogram nehézsége legfeljebb $D$. Hány új edzést kell beszúrni ahhoz, hogy minden szomszédos különbség legfeljebb $D$ legyen?
+- cpp: Ha $x=M_{i+1}-M_i$, akkor ehhez $\lceil\frac{x}{D}\rceil-1=(x-1)/D$ új edzést kell beszúrni. Számoljuk ki ezt minden szomszédos párra, majd adjuk össze az eredményeket.
+  py: Ha $x=M_{i+1}-M_i$, akkor ehhez $\lceil\frac{x}{D}\rceil-1=(x-1)//D$ új edzést kell beszúrni. Számoljuk ki ezt minden szomszédos párra, majd adjuk össze az eredményeket.
+- Ha egy adott $D$ értékhez legfeljebb $K$ beszúrás szükséges, akkor minden nagyobb $D$ is megvalósítható. Ezért a feltétel monoton, így bináris kereséssel megkereshető a legkisebb megfelelő $D$ a $(0,\max(M_{i+1}-M_i)]$ tartományban.
