@@ -4,7 +4,7 @@ Adott $n$ egész szám. A feladat: a számokat két nem üres részre osztani ú
 * Mindkét részben legyen legalább egy elem.
 * A két részben az elemek összege azonos paritású legyen.
 
-Például, ha az adott számok [1, 2, 4, 3, 2, 3, 5, 4], akkor a két rész lehet: [1, 2, 3] ás [4, 2, 3, 5, 4], ahol az első részben az elemek összege 6, a második részben az elemek összege 18.
+Például, ha az adott számok [1, 2, 4, 3, 2, 3, 5, 4], akkor a két rész lehet: [1, 2, 3] és [4, 2, 3, 5, 4], ahol az első részben az elemek összege 6, a második részben az elemek összege 18.
 
 ### Bemenet
 Az első sor egy egész számot tartalmaz, $n$ - a megadott számok számát.  
