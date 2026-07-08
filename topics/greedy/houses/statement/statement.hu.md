@@ -1,5 +1,5 @@
 ## Házak
-$N$ darab ház eladó. Az $i$-edik ház ára $A_i$ dollár. A költségvetésed $B$ dollár.
+$N$ darab ház eladó. Az $i$-edik ház ára $A_i$ dollár. $B$ dollárod van összesen. Legfeljebb hány házat tudsz megvenni?
 
 ### Bemenet
 A bemenet első sora a tesztesetek számát, $T$-t tartalmazza. Ezután következik $T$ teszteset.  
