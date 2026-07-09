@@ -1,0 +1,7 @@
+---
+- First, read `N` and `K`. Then read the distance and price of each trip one by one. There is no need to store all the data; it is enough to keep track of the current distance and price.
+- Use a variable called `cheapest`, initially set to `-1`. It will store the price of the cheapest trip whose distance is at least `K`.
+- cpp: |
+    Inside the loop, after reading the current values of `distance` and `price`, write: `if (distance >= k && (cheapest == -1 || price < cheapest)) { cheapest = price; }`
+  py: |
+    Inside the loop, after reading the current values of `distance` and `price`, write: `if distance >= k and (cheapest == -1 or price < cheapest): cheapest = price`

@@ -1,0 +1,7 @@
+---
+- First, read the number of buildings, `N`. Then read the height of the first building and store it in a variable called `maxi`. This will be the tallest building seen so far.
+- Read the remaining `N - 1` heights one by one. For each height, compare it with `maxi`. If it is larger, update the value of `maxi`.
+- cpp: |
+    Inside the loop, after reading the current height into the variable `height`, write: `if (height > maxi) { maxi = height; }`
+  py: |
+    Inside the loop, after reading the current height into the variable `height`, write: `if height > maxi: maxi = height`

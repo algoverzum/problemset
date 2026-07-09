@@ -16,6 +16,16 @@ problems:
     type: REQUIRED
   - problem_id: shortest-word
     type: REQUIRED
+  - problem_id: tallest-building-multiline
+    type: REQUIRED
+  - problem_id: coldest-day-multiline
+    type: REQUIRED
+  - problem_id: best-shirt-multiline
+    type: REQUIRED
+  - problem_id: max-temperature-variation-multiline
+    type: REQUIRED
+  - problem_id: cheapest-long-travel-multiline
+    type: REQUIRED
 prerequisites:
   - array
 dependents: []

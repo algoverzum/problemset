@@ -1,0 +1,7 @@
+---
+- First, read the number of days, `N`. Then read the temperature of the first day and store it in a variable called `mintemp`. Since this is the first value, it is currently the smallest temperature. Also store its index in a variable called `minindex` (initially `1`).
+- Read the remaining `N - 1` temperatures one by one. For each temperature, compare it with `mintemp`. If it is smaller, update both `mintemp` and `minindex`.
+- cpp: |
+    Inside the loop, after reading the current temperature into the variable `curtemp`, write: `if (curtemp < mintemp) { mintemp = curtemp; minindex = i; }`
+  py: |
+    Inside the loop, after reading the current temperature into the variable `curtemp`, write: `if curtemp < mintemp: mintemp = curtemp; minindex = i`

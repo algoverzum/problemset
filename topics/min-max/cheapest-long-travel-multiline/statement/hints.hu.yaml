@@ -1,0 +1,7 @@
+---
+- Először olvassuk be `N`-et és `K`-t. Ezután egyesével olvassuk be az egyes utazások távolságát és árát. Nem szükséges eltárolni az összes adatot, elég mindig csak az aktuális távolságot és árat.
+- Legyen egy `cheapest` változó, amely kezdetben `-1`. Ez fogja tárolni a legalább `K` távolságra lévő utazások közül a legolcsóbb árát.
+- cpp: |
+    A cikluson belül, miután beolvastuk az aktuális `distance` és `price` értékeket, írjuk ezt: `if (distance >= k && (cheapest == -1 || price < cheapest)) { cheapest = price; }`
+  py: |
+    A cikluson belül, miután beolvastuk az aktuális `distance` és `price` értékeket, írjuk ezt: `if distance >= k and (cheapest == -1 or price < cheapest): cheapest = price`

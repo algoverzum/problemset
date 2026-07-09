@@ -1,0 +1,7 @@
+---
+- Először olvassuk be a napok számát, `N`-et. Ezután olvassuk be az első napi hőmérsékletet, és tároljuk el egy `mintemp` nevű változóban. Mivel ez az első elem, egyelőre ez a legkisebb hőmérséklet. Tároljuk el az indexét is egy `minindex` nevű változóban (kezdetben `1`).
+- Ezután egyesével olvassuk be a maradék `N - 1` hőmérsékletet. Minden beolvasott értéket hasonlítsunk össze a `mintemp` értékével. Ha kisebb, frissítsük `mintemp` és `minindex` értékét.
+- cpp: |
+    A cikluson belül, miután beolvastuk az aktuális hőmérsékletet a `curtemp` változóba, írjuk ezt: `if (curtemp < mintemp) { mintemp = curtemp; minindex = i; }`
+  py: |
+    A cikluson belül, miután beolvastuk az aktuális hőmérsékletet a `curtemp` változóba, írjuk ezt: `if curtemp < mintemp: mintemp = curtemp; minindex = i`
