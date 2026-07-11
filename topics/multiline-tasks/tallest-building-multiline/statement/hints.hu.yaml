@@ -1,0 +1,7 @@
+---
+- Először olvassuk be az épületek számát, `N`-et. Ezután olvassuk be az első épület magasságát, és tároljuk el egy `maxi` nevű változóban. Ez lesz az eddig látott legmagasabb épület.
+- Ezután egyesével olvassuk be a maradék `N - 1` magasságot. Minden beolvasott magasságot hasonlítsunk össze a `maxi` értékével. Ha nagyobb, frissítsük `maxi` értékét.
+- cpp: |
+    A cikluson belül, miután beolvastuk az aktuális magasságot a `height` változóba, írjuk ezt: `if (height > maxi) { maxi = height; }`
+  py: |
+    A cikluson belül, miután beolvastuk az aktuális magasságot a `height` változóba, írjuk ezt: `if height > maxi: maxi = height`

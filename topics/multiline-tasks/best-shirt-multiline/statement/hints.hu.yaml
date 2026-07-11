@@ -1,0 +1,7 @@
+---
+- Először olvassuk be `N`-et és `K`-t. Ezután egyesével olvassuk be az ingek árait. Nem szükséges eltárolni az összes árat, elég mindig csak az aktuálisat.
+- Tartsuk nyilván a legdrágább eddig talált megvehető ing árát egy `maxvalue` változóban, valamint ennek indexét egy `maxindex` változóban. Mindkettő kezdetben legyen `0`.
+- cpp: |
+    A cikluson belül, miután beolvastuk az aktuális árat a `price` változóba, írjuk ezt: `if (price <= k && price > maxvalue) { maxvalue = price; maxindex = i; }`
+  py: |
+    A cikluson belül, miután beolvastuk az aktuális árat a `price` változóba, írjuk ezt: `if price <= k and price > maxvalue: maxvalue = price; maxindex = i`

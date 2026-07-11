@@ -1,0 +1,7 @@
+---
+- First, read `N`. Then read the minimum and maximum temperatures of the first day (`A` and `B`), and initialize the variable `maxdiff` with their difference.
+- Read the minimum and maximum temperatures of the remaining days one by one. For each day, compute the temperature difference (`B - A`), and if it is larger than `maxdiff`, update `maxdiff`.
+- cpp: |
+    Inside the loop, after reading the current values of `A` and `B`, write: `if (B - A > maxdiff) { maxdiff = B - A; }`. The same can be written a bit more concisely using the two-argument `max` function: `maxdiff = max(maxdiff, B - A);`
+  py: |
+    Inside the loop, after reading the current values of `A` and `B`, write: `if B - A > maxdiff: maxdiff = B - A`

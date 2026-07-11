@@ -1,0 +1,7 @@
+---
+- First, read `N` and `K`. Then read the shirt prices one by one. There is no need to store all the prices; it is enough to keep track of the current one.
+- Keep track of the price of the most expensive affordable shirt in a variable called `maxvalue`, and its index in a variable called `maxindex`. Initially, both variables should be `0`.
+- cpp: |
+    Inside the loop, after reading the current price into the variable `price`, write: `if (price <= k && price > maxvalue) { maxvalue = price; maxindex = i; }`
+  py: |
+    Inside the loop, after reading the current price into the variable `price`, write: `if price <= k and price > maxvalue: maxvalue = price; maxindex = i`

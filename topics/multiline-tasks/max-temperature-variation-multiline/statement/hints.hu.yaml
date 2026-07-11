@@ -1,0 +1,7 @@
+---
+- Először olvassuk be `N`-et. Ezután olvassuk be az első nap minimum- és maximumhőmérsékletét (`A` és `B`), és ezek különbségével inicializáljuk a `maxdiff` változót.
+- Ezután olvassuk be egyesével a maradék napok minimum- és maximumhőmérsékletét. Minden nap számítsuk ki a hőingást (`B - A`), és ha ez nagyobb a `maxdiff` értékénél, frissítsük azt.
+- cpp: |
+    A cikluson belül, miután beolvastuk az aktuális `A` és `B` értékeket, írjuk ezt: `if (B - A > maxdiff) { maxdiff = B - A; }`. Ugyanezt el lehet érni a kétváltozós `max` függvény használtával is kicsit rövidebben: `maxdiff = max(maxdiff, B - A);`
+  py: |
+    A cikluson belül, miután beolvastuk az aktuális `A` és `B` értékeket, írjuk ezt: `if B - A > maxdiff:  maxdiff = B - A`
