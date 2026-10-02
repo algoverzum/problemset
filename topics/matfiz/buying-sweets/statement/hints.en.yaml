@@ -1,4 +1,4 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- After buying the cake, I have $X-A$ money left, and we need to subtract $B$ from this amount as many times as possible. The question is how much money is left afterward. We can do this with a single operation. Which operation?
+- We need to take the remainder when dividing by $B$. Pay attention to the parentheses.
+- $(X-A) % B$

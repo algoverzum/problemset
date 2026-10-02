@@ -1,4 +1,5 @@
 ---
-- TODO
-- cpp: TODO
-  py: TODO
+- What operation can you use to get the first, middle, and last digit of a three-digit number?
+- cpp: What do these do? `a / 100, (a / 10) % 10, a % 10`
+  py: What do these do? `a // 100, (a // 10) % 10, a % 10`
+- Add these digits for both numbers, then use an `if` to check which sum is larger and print it.
