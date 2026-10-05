@@ -3,19 +3,16 @@
 using namespace std;
 
 int main() {
-    int A, B;
-    cin >> A >> B;
-    int SA = 0;
-    int SB = 0;
-    for (int i = 1; i <= 3; i++) {
-        SA += A % 10;
-        A /= 10;
-        SB += B % 10;
-        B /= 10;
-    }
-    if (SA >= SB) {
-        cout << SA << endl;
-    } else {
-        cout << SB << endl;
-    }
+    int a, b;
+    cin >> a >> b;
+
+    int A = a / 100 + (a / 10) % 10 + a % 10;
+    int B = b / 100 + (b / 10) % 10 + b % 10;
+
+    if (A > B)
+        cout << A << '\n';
+    else
+        cout << B << '\n';
+
+    return 0;
 }

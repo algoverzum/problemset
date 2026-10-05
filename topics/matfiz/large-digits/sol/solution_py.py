@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
 # @check-accepted: *
 
-A = int(input())
-B = int(input())
-SA = 0
-SB = 0
-for i in range(3):
-    SA += A % 10
-    A //= 10
-    SB += B % 10
-    B //= 10
-if SA >= SB:
-    print(SA)
+a = int(input())
+b = int(input())
+
+A = a // 100 + (a // 10) % 10 + a % 10
+B = b // 100 + (b // 10) % 10 + b % 10
+
+if A > B:
+    print(A)
 else:
-    print(SB)
+    print(B)
