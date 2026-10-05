@@ -1,4 +1,4 @@
 ---
 - A torta után $X-A$ pénzem van, és ebből a annyiszor kell levonni $B$-t, ahányszor csak tudjuk, és az a kérdés, hogy ezután mennyi maradt. Ez utóbbit egy művelettel meg tudjuk tenni, melyik művelettel?
 - Venni kell a maradékot $B$-vel. A zárójelezésre figyeljünk.
-- $(X-A) % B$
+- $(X-A) \% B$
