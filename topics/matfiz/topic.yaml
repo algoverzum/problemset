@@ -114,6 +114,26 @@ problems:
     type: REQUIRED
   - problem_id: allatok
     type: REQUIRED
+  - problem_id: lancolt
+    type: REQUIRED
+  - problem_id: legkisebbktgosszefuz
+    type: REQUIRED
+  - problem_id: k-legnagyobb-elem
+    type: REQUIRED
+  - problem_id: kabelek-osszekotese
+    type: REQUIRED
+  - problem_id: feladat-utemezo
+    type: REQUIRED
+  - problem_id: vasut
+    type: REQUIRED
+  - problem_id: roka
+    type: REQUIRED
+  - problem_id: napsugar-kemping
+    type: REQUIRED
+  - problem_id: f-lengyel
+    type: REQUIRED
+  - problem_id: balatoni-kemping
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:

@@ -1,0 +1,5 @@
+---
+- Nem szükséges az összes számot rendezni.
+- Érdemes mindig nyilvántartani a jelenlegi $k$ legnagyobb elemet.
+- Ha már van $k$ elemünk, és érkezik egy új szám, akkor csak akkor kell vele foglalkoznunk, ha nagyobb a jelenlegi legkisebb kiválasztott elemnél.
+- Melyik prioritási sor adja meg gyorsan a jelenlegi $k$ elem közül a legkisebbet?
