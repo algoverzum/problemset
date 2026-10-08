@@ -1,0 +1,5 @@
+---
+- Ha számot olvasunk, tegyük el későbbre.
+- Ha operátort olvasunk, szükségünk lesz a két legutóbb eltárolt számra.
+- Melyik adatszerkezet tudja hatékonyan kezelni a "legutóbb betett elem legyen az elsőként kivett" működést?
+- "Az operátor feldolgozásakor:\nvegyük ki a legfelső elemet,\nmajd a következőt,\nvégezzük el a műveletet,\naz eredményt tegyük vissza."

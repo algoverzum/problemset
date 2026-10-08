@@ -1,0 +1,4 @@
+---
+- Prioritási sor kell, min-heap. Hogyan kell deklarálni?
+- Melyik metódussal lehet a sorba berakni? Melyikkel kivenni?
+- Mi lesz a ciklus fejrészében a feltétel? A size() adja vissza a prioritási sor elemeinek a számát!

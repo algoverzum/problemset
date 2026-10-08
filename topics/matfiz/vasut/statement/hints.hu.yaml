@@ -1,0 +1,4 @@
+---
+- "A feladat ismert neve: **train sorting** vagy **stack permutation**. A lényeg: a kimeneti sorozatot balról jobbra kell előállítanunk. Mindig két lehetőségünk van: ha a következő kívánt kocsi éppen a bemenet elején van, kivehetjük onnan; ha a verem tetején van, onnan is kivehetjük. Egyéb esetben a bemenetről tolunk a verembe, amíg meg nem jelenik a keresett kocsi. Tehát kell egy verem, pl. stack<int> s;"
+- "Algoritmus vázlat:\n* Legyen akt = 1 (a következő kocsi, amit a bemenetről tolhatunk)!\n* Végigmegyünk a kimeneti sorozaton.\n*  Minden egyes kívánt kocsihoz: Ha a verem tetején éppen ez van -> pop(). Különben addig tolunk a bemenetről, amíg a kívánt kocsi be nem kerül a verem tetejére (ha közben elfogy a bemenet, akkor lehetetlen)."
+- "A bemenet kezdetben 1,2,... ,N sorrendben van, ezért a 'következő tolandó kocsi' mindig egy számlálóval nyomon követhető. Nem kell tömböt fenntartanunk a bemenetre, elég egyetlen egész változó ($next\_to\_push$)."

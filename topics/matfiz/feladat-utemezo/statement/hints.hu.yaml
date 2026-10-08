@@ -1,0 +1,4 @@
+---
+- A prioritási sor tetején mindig a legnagyobb prioritású elem található.
+- Érdemes egy saját struktúrát létrehozni, amely tárolja a feladat nevét, prioritását és a beolvasás sorszámát.
+- "A prioritási sorból addig vegyük ki az elemeket, amíg ki nem ürül. Az egyenlő prioritásúak sorrendjét a beolvasási sorszám dönti el: a kisebb sorszám kerül előbbre. A prioritási sorból addig vegyük ki az elemeket, amíg ki nem ürül."
