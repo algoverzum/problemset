@@ -1,0 +1,5 @@
+---
+- Ha X tárgy elszállítható a sor elejétől, akkor minden Y <= X tárgy is biztosan elszállítható. Ez monotonitást biztosít, ami lehetővé teszi a bináris (parametrikus) keresést a darabszámra.
+- Egy feltételezett X érték ellenőrzésekor (a döntési függvényben) elegendő kizárólag a legelső $X$ darab tárgyat vizsgálni a tömb elejétől kezdve.
+- A döntési függvényben egy kamiont mindig addig töltünk balról jobbra haladva, amíg a következő tárgy súlyával együtt sem lépjük túl a kamion $S$ kapacitását. Ha túlglépnénk, új kamiont kell indítanunk.
+- Az eldöntés O(X) időben megválaszolható egyetlen lineáris bejárással (szimulációval). Ezt a függvényt hívjuk meg a bináris keresés minden lépésében, így a teljes algoritmus futásideje O(N log N) lesz.

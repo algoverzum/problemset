@@ -1,0 +1,5 @@
+---
+- "Tegyük fel, hogy tudjuk a választ! Legyen ez X.\nMeg tudjuk mondani, hogy az összes könyv kiosztható-e úgy, hogy senki ne kapjon X oldalnál többet?"
+- "Haladjunk balról jobbra. Amíg a következő könyv még belefér az aktuális másoló terhelésébe, adjuk neki. Ha már nem fér bele, új másolót kell indítani. Célszerű megírni egy függvényt, amely eldönti, hogy a könyvek kioszthatók-e legfeljebb k másolónak úgy, hogy senki ne kapjon limit oldalnál többet."
+- "Ha egy adott X értékkel megoldható a feladat, akkor minden nagyobb értékkel is megoldható."
+- " válaszok monotonak: nem nem nem nem igen igen igen igen ..."

@@ -134,6 +134,16 @@ problems:
     type: REQUIRED
   - problem_id: balatoni-kemping
     type: REQUIRED
+  - problem_id: vizellatas
+    type: REQUIRED
+  - problem_id: szallitas
+    type: REQUIRED
+  - problem_id: konyvmasolas
+    type: REQUIRED
+  - problem_id: kamionok
+    type: REQUIRED
+  - problem_id: egyenletes-pakolas
+    type: REQUIRED
 prerequisites: []
 dependents: []
 visualization:
