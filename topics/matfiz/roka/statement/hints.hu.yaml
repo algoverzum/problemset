@@ -1,0 +1,7 @@
+---
+- Tároljuk külön, hogy hány 1 éves, 2 éves, \dots, L éves rókánk van!
+- Minden évben meg kell határozni, hány új róka születik. Mely korcsoportok szaporodnak?
+- Gondold végig, mi történik az életkorokkal egy év elteltével!\nA 2 évesekből 3 évesek lesznek, a 3 évesekből 4 évesek stb.
+- Az L éves rókák a következő évre már nem maradnak életben.
+- Az életkorok természetes sorrendje miatt érdemes olyan adatszerkezetet használni, amelynek elejéről törölni és a végére beszúrni is gyorsan lehet.
+- A született rókák mindig az 1 éves korcsoportba kerülnek.

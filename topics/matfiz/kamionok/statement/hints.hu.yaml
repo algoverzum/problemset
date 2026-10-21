@@ -1,0 +1,5 @@
+---
+- A prioritási sor tetején mindig a legnagyobb prioritású elem található.
+- A rakományokat sorrendben kell feldolgozni.
+- Mindig addig pakoljunk egy kamionba, amíg még elfér a következő rakomány.
+- A kapacitásra bináris keresést alkalmazhatunk.
