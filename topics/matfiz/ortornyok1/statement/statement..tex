@@ -1,0 +1,980 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[magyar]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{minted}
+\geometry{margin=2.5cm}
+\usepackage{listings}
+
+\title{Pruning technikák}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Állapottér bejárás és pruning}
+
+Számos kombinatorikai feladat megoldható visszalépéses kereséssel (backtracking), amely az összes lehetséges részmegoldást egy állapottér-fában járja be. Az ilyen keresések azonban gyakran exponenciális számú állapotot eredményeznek, ezért a teljes bejárás nem minden esetben végrehajtható hatékonyan. Ezen segít a \textbf{pruning} (visszametszés, vágás): célja, hogy ne vizsgáljunk meg olyan ágakat a keresési fában, amelyek biztosan nem befolyásolják a végeredményt.
+
+Néhány példa:
+
+Vannak számok: $3, 5, 8, 10$.
+
+Válasszunk ki néhányat úgy, hogy az összeg ne haladja meg a 12-t.
+
+Amikor
+
+$3 + 5 + 8 = 16$
+
+már tudjuk, hogy
+
+$16 > 12$
+
+Innen teljesen felesleges továbbmenni, ezért ezt az ágat levágjuk. Ez a pruning.
+
+Egy másik példa:
+Az $N$ királynő problémában soronként egy-egy királynőt helyezünk el. Már 3 királynőt elhelyeztünk a sakktáblán, és a negyediket próbáljuk lerakni a következő sorba. Ha egy mező egy már lerakott királynővel
+
+\begin{itemize}
+    \item ugyanabban az oszlopban van,
+    \item vagy ugyanazon az átlón van,
+\end{itemize}
+
+akkor azt az elhelyezést nem folytatjuk. Ez is pruning. A teljes sakktáblát nem kell végigvizsgálni.
+
+\subsection*{Kapcsolata a backtrackinggel}
+A backtracking algoritmus általában így néz ki:
+\begin{verbatim}
+bejár(csúcs):
+    ha kész megoldás
+        kiír
+    különben
+        minden lehetőségre (ciklus)
+            ha érvényes
+                bejár(következő)
+\end{verbatim}
+
+\textbf{Pruninggal:}
+
+\begin{verbatim}
+bejár(csúcs):
+    ha biztosan rossz
+        vissza
+    ha kész megoldás
+        kiír
+    különben
+        minden lehetőségre (ciklus)
+            bejár(következő)
+\end{verbatim}
+
+A különbség csupán egyetlen plusz ellenőrzés:
+
+\texttt{ha biztosan rossz, akkor vissza}
+
+Ez az egy sor rengeteg időt takaríthat meg.
+
+\textbf{Összefoglalva:}
+A hatékonyság növelésének kulcstechnikája a \textbf{pruning} (visszametszés), amely során a keresés bizonyos ágait már korai fázisban elvetjük, ha azokból biztosan nem vezethetünk érvényes vagy optimális megoldáshoz. Ez lehet például egy feltétel sérülése, a célérték túllépése, vagy annak belátása, hogy a további bővítés már nem vezethet jobb eredményre.
+
+
+
+Az első feladatban még nem használunk pruningot, a második változatában viszont igen, így jól látható a pruning jelentősége.
+
+
+\section{Feladat I. -- A király őrtornyai}
+
+A Számok Királyságának határán $N$ őrtorony áll. A király minden toronyba szeretne őrt állítani, azonban bizonyos tornyok egyszerre nem őrizhetők, mert jelzőtüzeik megzavarnák egymást.
+
+Egy \emph{őrbeosztás} a tornyok egy olyan részhalmaza, amelyben egyetlen tiltott toronypár sem szerepel egyszerre.
+
+Feladatod az összes lehetséges őrbeosztás előállítása.
+
+\subsection*{Bemenet}
+
+Az első sor két egész számot tartalmaz: $N$ és $M$,
+ahol
+
+\begin{itemize}
+    \item $N$ az őrtornyok száma,
+    \item $M$ a tiltott toronypárok száma.
+\end{itemize}
+
+A következő $M$ sor mindegyike két egész számot tartalmaz: $a$ és $b$, ami azt jelenti, hogy az $a$ és $b$ sorszámú torony egyszerre nem őrizhető.
+
+\textbf{Korlátok}
+
+\begin{itemize}
+    \item $1 \le N \le 20$
+    \item $0 \le M \le 100$
+\end{itemize}
+
+\subsection*{Kimenet}
+
+Első sor:
+
+Az érvényes őrbeosztások száma.
+
+Ezután minden őrbeosztást külön sorba kell kiírni.
+
+A tornyok sorszámai minden sorban növekvő sorrendben szerepeljenek.
+
+Az üres őrbeosztást (egy üres sort) elsőként kell kiírni. A nem üres őrbeosztásokat ezután lexikografikus sorrendben kell megjeleníteni.
+
+\subsection*{Példa}
+
+\subsubsection*{Bemenet}
+
+\begin{verbatim}
+4 2
+1 2
+2 3
+\end{verbatim}
+
+\subsubsection*{Kimenet}
+
+\begin{verbatim}
+10
+
+1
+1 3
+1 3 4
+1 4
+2
+2 4
+3
+3 4
+4
+\end{verbatim}
+
+\subsection*{Hint 1}
+Használj egy logikai mátrixot (\texttt{bool tiltott[MAX][MAX]}), amely tárolja, hogy mely tornyok nem lehetnek együtt! Az aktuális őrbeosztás tornyainak sorszámait egy \texttt{vector<int> aktualis}, a kész őrbeosztásokat egy \texttt{vector<vector<int>> megoldasok} tárolja.
+
+\subsection*{Hint 2}
+Írj egy függvényt (\texttt{lehet}), amely ellenőrzi, hogy az \texttt{idx} torony felvehető-e a jelenlegi részhalmazba! Ehhez az \texttt{aktualis} elemein kell végigmenned, és megnézned, hogy valamelyik \texttt{t} elemre igaz-e a \texttt{tiltott[idx][t]}.
+
+\subsection*{Hint 3}
+A backtrack eljárásban minden toronyról döntünk, hogy bekerül-e. Két ág van: az \texttt{idx} tornyot vagy bevesszük (ha lehet), vagy kihagyjuk. Ha \texttt{idx > N}, akkor már minden toronyról döntöttünk, tehát az aktuális részhalmaz egy kész őrbeosztás.
+
+\subsection*{Hint 4}
+Az 1. ágon: \texttt{if (lehet(idx))}, azaz megnézzük, hogy az \texttt{idx} kiválasztható-e. Ha igen, betesszük, meghívjuk a \texttt{backtrack(idx + 1)}-et, majd kivesszük. A 2. ágon az \texttt{idx} tornyot NEM választjuk ki: \texttt{backtrack(idx + 1)}.
+
+\subsection*{Hint 5}
+Ez a bejárási sorrend nem lexikografikus (például az \texttt{1 3} előbb készül el, mint az \texttt{1}), ezért a végén rendezd a megoldásokat (\texttt{sort})! Az üres őrbeosztás a rendezés után automatikusan az első lesz.
+
+
+
+\subsection*{Megoldás}
+\begin{minted}[linenos,breaklines]{cpp}
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int N, M;
+
+const int MAX=21; //20 torony lehet max.
+bool tiltott[MAX][MAX];
+
+vector<int> aktualis;
+vector<vector<int>> megoldasok;
+
+/*
+    Eldönti, hogy az idx torony hozzáadható-e a jelenlegi őrbeosztáshoz.
+*/
+bool lehet(int idx)
+{
+    for (int i = 0; i < (int)aktualis.size(); i++)
+    {
+        if (tiltott[idx][aktualis[i]])
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+void backtrack(int idx)
+{
+    if (idx > N)
+    {
+        megoldasok.push_back(aktualis);
+        return;
+    }
+
+    // 1. ág: bevesszük
+    if (lehet(idx))
+    {
+        aktualis.push_back(idx);
+        backtrack(idx + 1);
+        aktualis.pop_back();
+    }
+
+    // 2. ág: nem vesszük be
+    backtrack(idx + 1);
+}
+
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cin >> N >> M;
+
+    for (int i = 0; i < M; i++)
+    {
+        int a, b;
+        cin >> a >> b;
+
+        tiltott[a][b] = true;
+        tiltott[b][a] = true;
+    }
+    backtrack(1);
+    // A bejárás sorrendje nem lexikografikus (pl. az [1, 3] előbb
+    // készül el, mint az [1]), ezért a végén rendezünk.
+    // Az üres vector a legkisebb, így az kerül előre.
+    sort(megoldasok.begin(), megoldasok.end());
+    cout << megoldasok.size() << "\n";
+    for (int i = 0; i < (int)megoldasok.size(); i++)
+    {
+        for (int j = 0; j < (int)megoldasok[i].size(); j++)
+        {
+            if (j > 0)
+            {
+                cout << " ";
+            }
+
+            cout << megoldasok[i][j];
+        }
+
+        cout << "\n";
+    }
+    return 0;
+}
+\end{minted}
+
+
+\section{Feladat II. -- A király őrtornyai}
+
+A király átnézte az összes lehetséges őrbeosztást, és azt szeretné kiválasztani, amelyben a lehető legtöbb toronyban áll őr.
+
+Feladatod meghatározni azt az őrbeosztást,
+
+\begin{itemize}
+    \item amelyben egyetlen tiltott toronypár sem szerepel egyszerre;
+    \item amely a lehető legtöbb tornyot tartalmaz.
+\end{itemize}
+
+Ha több maximális őrbeosztás is létezik, akkor a
+\textbf{lexikografikusan legkisebbet} kell kiírni.
+
+Két őrbeosztás összehasonlításakor a kisebb első eltérő toronyszámot tartalmazó tekintendő lexikografikusan kisebbnek. Ha az egyik a másik prefixe (előtagja), akkor a rövidebb tekintendő kisebbnek.
+
+\subsection*{Bemenet}
+
+A standard input első sorában két egész szám található: $N$ és $M$,
+ahol
+
+\begin{itemize}
+    \item $N$ az őrtornyok száma,
+    \item $M$ a tiltott toronypárok száma.
+\end{itemize}
+
+A következő $M$ sor mindegyike két egész számot tartalmaz: $a$ és $b$, ami azt jelenti, hogy az $a$ és $b$ sorszámú torony egyszerre nem őrizhető.
+
+\textbf{Korlátok}
+
+\begin{itemize}
+    \item $1 \le N \le 25$
+    \item $0 \le M \le 100$
+\end{itemize}
+
+\subsection*{Kimenet}
+
+Az első sorba írd ki a maximális őrbeosztás méretét!
+
+A második sorba írd ki a kiválasztott tornyok sorszámait növekvő sorrendben.
+
+\subsection*{Példa}
+
+\subsubsection*{Bemenet}
+
+\begin{verbatim}
+6 5
+1 2
+1 4
+2 3
+3 6
+5 6
+\end{verbatim}
+
+\subsubsection*{Kimenet}
+
+\begin{verbatim}
+3
+1 3 5
+\end{verbatim}
+
+\subsection*{Magyarázat}
+
+A példában három toronynál nagyobb érvényes őrbeosztás nem létezik. Háromelemű érvényes őrbeosztásból négy is van: $\{1, 3, 5\}$, $\{2, 4, 5\}$, $\{2, 4, 6\}$ és $\{3, 4, 5\}$. Ezek közül az $\{1, 3, 5\}$ a lexikografikusan legkisebb, ezért ezt kell kiírni.
+
+\subsection*{Hint 1}
+
+Ismét három vector kellene: \texttt{forbidden} a tiltott párokra (minden toronyhoz a vele ütköző tornyok listája), valamint kettő az aktuális és a legjobb tornyokra: \texttt{current}, \texttt{best}.
+
+\subsection*{Hint 2}
+
+Mielőtt kiválasztasz egy új tornyot, ellenőrizd, hogy nem ütközik-e valamelyik korábban kiválasztott toronnyal.
+
+\subsection*{Hint 3}
+
+Alkalmazz \textbf{pruning} technikát!
+
+Ha az aktuális részmegoldásban eddig $x$ tornyot választottál ki, még legfeljebb $r$ torony választható, és már ismert egy $k$ méretű megoldás, akkor
+
+\[
+x+r < k
+\]
+
+esetén ezen az ágon már biztosan nem található jobb megoldás.
+
+\subsection*{Hint 4}
+
+Ha
+
+\[
+x+r = k,
+\]
+
+akkor is elhagyható az ág, amennyiben a belőle előállítható legjobb megoldás sem lehet lexikografikusan kisebb a már megtaláltnál. (Ez egy további vágási lehetőség; a lenti megoldás csak a Hint 3-ban leírt vágást alkalmazza, egyenlőség esetén tovább keres.)
+
+\subsection*{Hint 5}
+A lexikografikus összehasonlításhoz érdemes egy külön függvényt írni! Pl.
+\begin{verbatim}
+bool lexicographicallySmaller(const vector<int> &a,
+                              const vector<int> &b) {
+    return a < b;
+}
+\end{verbatim}
+A \texttt{vector}-ok \texttt{<} operátora éppen lexikografikusan hasonlít.
+
+\subsection*{Megoldás}
+\begin{minted}[linenos,breaklines]{cpp}
+#include <bits/stdc++.h>
+using namespace std;
+
+int N, M;
+
+vector<vector<int>> forbidden;
+vector<int> current, best;
+
+/*
+Ellenőrzi, hogy az új torony felvehető-e
+a jelenlegi kiválasztottak mellé.
+*/
+bool ok(int x) {
+    for (int y : current) {
+        for (int z : forbidden[y]) {
+            if (z == x) return false;
+        }
+    }
+    return true;
+}
+
+/* Lexikografikus összehasonlítás: true, ha a < b */
+bool lexicographicallySmaller(const vector<int> &a, const vector<int> &b) {
+    return a < b;
+}
+
+/* Pruning: megnézzük, hogy van-e esély jobb megoldásra*/
+bool canImprove(int idx, int currentSize) {
+    int remaining = N - idx + 1;
+    return currentSize + remaining >= (int)best.size();
+}
+
+void backtrack(int idx) {
+    if (idx > N) {
+        if (current.size() > best.size()) {
+            best = current;
+        } 
+        else if (current.size() == best.size()) {
+            if (lexicographicallySmaller(current, best)) {
+                best = current;
+            }
+        }
+        return;
+    }
+
+    // PRUNING: ha innen már nem lehet jobb megoldás
+    if (!canImprove(idx, current.size())) {
+        return;
+    }
+
+    // 1. ág: NEM választjuk
+    backtrack(idx + 1);
+
+    // 2. ág: választjuk (ha lehet)
+    if (ok(idx)) {
+        current.push_back(idx);
+        backtrack(idx + 1);
+        current.pop_back();
+    }
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cin >> N >> M;
+    forbidden.assign(N + 1, vector<int>());
+
+    for (int i = 0; i < M; i++) {
+        int a, b;
+        cin >> a >> b;
+        forbidden[a].push_back(b);
+        forbidden[b].push_back(a);
+    }
+    backtrack(1);
+    cout << best.size() << "\n";
+
+    for (int i = 0; i < (int)best.size(); i++) {
+        cout << best[i];
+        if (i + 1 < (int)best.size()) cout << " ";
+    }
+    cout << "\n";
+    return 0;
+}
+\end{minted}
+
+
+\section{Adott összegű részhalmazok -- I.}
+
+\subsection*{Megjegyzés}
+A következő feladatban a pruning különösen fontos szerepet játszik, mivel a részhalmazok generálása során jelentősen csökkenti a bejárandó állapottér méretét.
+
+\vspace{1cm}
+
+Adott egy $N$ darab pozitív egész számot tartalmazó tömb, valamint egy $T$ célérték. A tömbben ismétlődő elemek is előfordulhatnak.
+
+Feladatod, hogy hatékony visszalépéses kereséssel (backtracking) keresd meg az összes olyan részhalmazt, amelyek elemeinek összege pontosan $T$.
+
+A megoldás során különös figyelmet kell fordítani a \textbf{pruning technikák} alkalmazására, mivel a naiv bejárás időben nem fér bele.
+
+\textbf{Fontos szabályok:}
+\begin{itemize}
+    \item Minden elemet legfeljebb egyszer használhatsz fel egy részhalmazban.
+    \item A részhalmazok elemei mindig \textbf{növekvő (nem csökkenő) sorrendben} szerepeljenek. (Ismétlődő értékek miatt egy részhalmazban azonos értékek is lehetnek, például \texttt{1 1 6}.)
+    \item Az eredményben a részhalmazokat \textbf{lexikografikus sorrendben} kell kiírni.
+    \item Azonos részhalmaz nem szerepelhet kétszer, még ha az input tartalmaz ismétlődő értékeket is.
+\end{itemize}
+
+\subsection*{Bemenet}
+
+A standard input első sora egy $N$ egész szám.
+
+A második sor $N$ darab pozitív egész számot tartalmaz.
+
+A harmadik sor a célösszeget, $T$-t tartalmazza.
+
+\textbf{Korlátok:}
+\begin{itemize}
+    \item $1 \le N \le 100$
+    \item $1 \le A[i] \le 50$
+    \item $1 \le T \le 100$
+    \item Garantált, hogy a megoldások száma legfeljebb $10^5$.
+\end{itemize}
+
+\subsection*{Kimenet}
+
+Az összes megfelelő részhalmaz kiírása soronként, elemek szóközzel elválasztva.
+
+Ha nincs megoldás, akkor:
+\begin{verbatim}
+Nincs megoldas
+\end{verbatim}
+szöveget kell kiírni.
+
+\subsection*{Példa}
+
+\subsubsection*{Bemenet}
+\begin{verbatim}
+7
+10 1 2 7 6 1 5
+8
+\end{verbatim}
+
+\subsubsection*{Kimenet}
+\begin{verbatim}
+1 1 6
+1 2 5
+1 7
+2 6
+\end{verbatim}
+
+\subsection*{Megjegyzés a megoldáshoz}
+
+A feladat hatékony megoldásához backtracking szükséges, amelyet több szinten is pruning technikákkal kell optimalizálni:
+
+\begin{itemize}
+    \item Ha az aktuális részösszeg meghaladja $T$-t, az ág nem folytatható.
+    \item A bemenet rendezése után, ha egy elem nagyobb, mint a fennmaradó célösszeg, a további elemek vizsgálata elhagyható.
+    \item Az azonos értékű elemeket egy rekurziós szinten belül ki kell hagyni a duplikációk elkerülésére.
+\end{itemize}
+
+\subsection*{Hint 1}
+A megoldáshoz szükség van 3 vector-ra!
+\begin{verbatim}
+vector<int> a;
+vector<vector<int>> result;
+vector<int> current;
+\end{verbatim}
+A beolvasott értékek, az eredmények, és az aktuális részhalmaz elemeinek tárolására.
+
+\subsection*{Hint 2}
+A hatékony megoldás kulcsa a rendezett tömb, a növekvő indexek mentén történő bejárás, valamint a korai visszavágás (pruning) alkalmazása minden olyan ágon, amely nem vezethet érvényes megoldáshoz.
+
+\subsection*{Hint 3}
+Ha az összeg (\texttt{sum}) egyenlő $T$-vel, akkor megvan egy megoldás; ha nagyobb $T$-nél, akkor vágunk (pruning). Akkor is vágni kell (és a ciklusból kilépni), ha az \texttt{a[j] <= T - sum} feltétel hamis, mert a rendezés miatt a további elemek még nagyobbak.
+
+\subsection*{Hint 4}
+Arra is figyelni kell, hogy ne legyen benne duplikáció! Egy rekurziós szinten belül egy adott értéket csak egyszer próbáljunk ki: jegyezzük meg az előzőleg kipróbált értéket (\texttt{prev}), és ha az aktuális elem ugyanekkora, hagyjuk ki.
+
+\subsection*{Megoldás}
+\begin{minted}[linenos,breaklines]{cpp}
+#include <bits/stdc++.h>
+using namespace std;
+
+int N, T;
+vector<int> a;
+
+vector<vector<int>> result;
+vector<int> current;
+
+/*
+Backtracking kombinációs bejárás
+i = aktuális index
+sum = jelenlegi összeg
+*/
+void backtrack(int i, int sum) {
+
+    if (sum == T) {
+        result.push_back(current);
+        return;
+    }
+
+    if (sum > T) return;
+
+    if (i >= N) return;
+
+    int prev = -1;
+
+    for (int j = i; j < N; j++) {
+
+        // duplikáció védelem egy szinten
+        bool isDuplicate = false;
+        if (j > i && a[j] == prev) {
+            isDuplicate = true;
+        }
+
+        if (!isDuplicate) {
+
+            // pruning: ha túl nagy, akkor innentől minden nagyobb is
+            if (a[j] <= T - sum) {
+
+                current.push_back(a[j]);
+                backtrack(j + 1, sum + a[j]);
+                current.pop_back();
+            } 
+            else {
+                // rendezett tömb miatt itt már nincs értelme továbbmenni
+                break;
+            }
+            prev = a[j];
+        }
+    }
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    cin >> N;
+    a.resize(N);
+    for (int i = 0; i < N; i++) {
+        cin >> a[i];
+    }
+    cin >> T;
+    sort(a.begin(), a.end());
+    backtrack(0, 0);
+    if (result.empty()) {
+        cout << "Nincs megoldas\n";
+        return 0;
+    }
+    for (auto &v : result) {
+        for (int i = 0; i < (int)v.size(); i++) {
+            cout << v[i];
+            if (i + 1 < (int)v.size()) cout << " ";
+        }
+        cout << "\n";
+    }
+    return 0;
+}
+\end{minted}
+
+\section{Adott összegű részhalmazok -- II.}
+
+Adott egy $N$ darab pozitív egész számot tartalmazó tömb, valamint egy $T$ célérték. A tömbben előfordulhatnak ismétlődő elemek is. Feladatod, hogy megtaláld az összes olyan részhalmazt (az elemek sorrendje nem számít), amelyek elemeinek összege pontosan $T$-vel egyenlő.
+
+\textbf{Fontos szabályok:}
+\begin{itemize}
+    \item Minden elemet legfeljebb egyszer használhatsz fel egy részhalmazban.
+    \item A talált részhalmazokat \textbf{növekvő (nem csökkenő)} sorrendben kell tárolni (azaz minden részhalmaz elemei növekvő sorrendben legyenek).
+    \item A végeredményben a részhalmazok \textbf{lexikografikusan} (szótárrendszerűen) növekvő sorrendben jelenjenek meg.
+    \item A megoldásod ne tartalmazzon duplikált részhalmazokat!
+\end{itemize}
+
+\subsection*{Bemenet}
+
+A standard input első sorában egy $N$ egész szám található, amely a tömb elemeinek számát jelöli.
+
+A második sorban $N$ darab szóközzel elválasztott pozitív egész szám található (a tömb elemei).
+
+A harmadik sorban egyetlen $T$ egész szám található (a célösszeg).
+
+\textbf{Korlátok:}
+\begin{itemize}
+    \item $1 \le N \le 100$
+    \item $1 \le A[i] \le 50$
+    \item $1 \le T \le 100$
+    \item Garantált, hogy a megoldások száma legfeljebb $10^5$.
+\end{itemize}
+
+\subsection*{Kimenet}
+
+A standard kimenetre írd ki az összes olyan részhalmazt, amelyek összege $T$-vel egyenlő! Minden részhalmazt külön sorba írj, az elemeket szóközzel elválasztva!
+
+Ha nincs egyetlen megfelelő részhalmaz sem, a kimenet egyetlen sort tartalmazzon:
+\begin{verbatim}
+Nincs megoldas
+\end{verbatim}
+
+\subsection*{Példa}
+
+\subsubsection*{Példa bemenet}
+\begin{verbatim}
+7
+10 1 2 7 6 1 5
+8
+\end{verbatim}
+
+\subsubsection*{Példa kimenet}
+\begin{verbatim}
+1 1 6
+1 2 5
+1 7
+2 6
+\end{verbatim}
+
+\subsection*{Magyarázat}
+
+A bemeneti tömb: $[10, 1, 2, 7, 6, 1, 5]$, a célösszeg $T = 8$.
+
+A lehetséges részhalmazok, amelyek összege $8$:
+\begin{itemize}
+    \item $[1, 1, 6]$ (az első és a második 1-es, valamint a 6-os)
+    \item $[1, 2, 5]$ (az egyik 1-es, a 2-es és az 5-ös)
+    \item $[1, 7]$ (az egyik 1-es és a 7-es)
+    \item $[2, 6]$ (a 2-es és a 6-os)
+\end{itemize}
+
+A $[10]$ nem jöhet szóba, mert $10 > 8$. A részhalmazok lexikografikusan növekvő sorrendben jelennek meg. Nincs két egyforma részhalmaz, annak ellenére, hogy két darab 1-es is van a tömbben.
+
+\subsection*{Hint 1}
+Használd a \textbf{backtracking} (visszalépéses keresés) algoritmust a részhalmazok előállításához!
+\subsection*{Hint 2}
+\textbf{Rendezd} a tömböt növekvő sorrendbe!
+\subsection*{Hint 3}
+Alkalmazz \textbf{metszést} (pruning) a hatékonyság növelésére:
+\begin{itemize}
+    \item Ha az aktuális részösszeg már meghaladta $T$-t, ne menj tovább ezen az ágon!
+    \item Ha az aktuális elem nagyobb, mint a maradék célösszeg, a ciklusból is kiléphetsz (rendezés miatt).
+    \item Az azonos értékű elemeket egy szinten belül hagyd ki, ezzel elkerülve a duplikált részhalmazokat!
+\end{itemize}
+\subsection*{Hint 4}
+A duplikátumok kiszűréséhez egy rekurziós szinten belül tárold az előzőleg kipróbált értéket! A részhalmazok elemeit mindig növekvő sorrendben add hozzá!
+
+\subsection*{Hint 5}
+A lexikografikus sorrend garantálható, ha a tömböt rendezve indítod, és a rekurzió során az elemeket növekvő index szerint vizsgálod.
+
+\subsection*{Megoldás}
+
+\begin{minted}[linenos,breaklines]{cpp}
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+void backtrack(int start, vector<int>& candidates, int target, 
+               vector<int>& current, vector<vector<int>>& result) {
+    // Ha elértük a célt, elmentjük a megoldást
+    if (target == 0) {
+        result.push_back(current);
+        return;
+    }
+    
+    // Ha túlléptük, ezt az ágat nem vizsgáljuk tovább (METSZÉS 1)
+    if (target < 0) {
+        return;
+    }
+    
+    int prev = -1;
+    for (int i = start; i < (int)candidates.size(); i++) {
+        // Duplikátumok kihagyása (METSZÉS 2) - continue nélkül
+        if (candidates[i] != prev) {
+            // Ha az aktuális elem már nagyobb, mint a maradék cél,
+            // a többi elem is nagyobb (rendezés miatt) -> kilépünk (METSZÉS 3)
+            if (candidates[i] > target) {
+                break;
+            }
+            
+            // Választás
+            current.push_back(candidates[i]);
+            
+            // Rekurzív hívás: i+1, mert minden elemet csak egyszer használhatunk
+            backtrack(i + 1, candidates, target - candidates[i], current, result);
+            
+            // Visszalépés
+            current.pop_back();
+            
+            // Az aktuális érték beállítása az előzőnek a duplikátumok kihagyásához
+            prev = candidates[i];
+        }
+    }
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int N;
+    cin >> N;
+    vector<int> candidates(N);
+    for (int i = 0; i < N; i++) {
+        cin >> candidates[i];
+    }
+   
+    int T;
+    cin >> T;
+    // Rendezés: lehetővé teszi a metszést és a lexikografikus sorrendet
+    sort(candidates.begin(), candidates.end());
+    vector<int> current;
+    vector<vector<int>> result;
+    
+    backtrack(0, candidates, T, current, result);
+    
+    if (result.empty()) {
+        cout << "Nincs megoldas\n";
+    } else {
+        for (const auto& subset : result) {
+            for (int i = 0; i < (int)subset.size(); i++) {
+                cout << subset[i];
+                if (i < (int)subset.size() - 1) {
+                    cout << " ";
+                }
+            }
+            cout << "\n";
+        }
+    }
+    return 0;
+}
+\end{minted}
+
+\section{Őrzőkapuk}
+
+A Számok Királyságában minden lehetséges sorrend egy-egy útvonalat jelent a Királyi Kertben.
+
+A kertbe azonban csak olyan sorozatok léphetnek be, amelyeket az Őrzőkapuk engedélyeznek. Minden kapu egy szabályt figyel: azt vizsgálja, hogy az éppen kialakuló sorrend „összhangban van-e” a királyság törvényeivel.
+
+Ahogy haladsz előre és egyre több számot fűzöl össze, minden lépésnél újabb kapuhoz érsz. Ha a kapu úgy látja, hogy a jelenlegi részleges sorrend már biztosan nem folytatható érvényes úttá, akkor nem enged tovább — vissza kell fordulnod, és másik utat keresned.
+
+A célod, hogy megtaláld az összes olyan teljes útvonalat, amely végig átjut az összes őrzőkapun, és eléri a kert végpontját anélkül, hogy bármelyik szabályt megsértené.
+
+A siker kulcsa nem az, hogy minden utat kipróbálj, hanem hogy felismerd, mely utak vezetnek zsákutcába még azelőtt, hogy végigjárnád őket.
+
+\begin{itemize}
+    \item Minden számot pontosan egyszer kell felhasználni.
+    \item A permutációban nem állhat két azonos érték egymás mellett.
+    \item A permutációban minden szomszédos párra igaz kell legyen, hogy az első elem kisebb vagy egyenlő a másodiknál VAGY a különbségük legalább $K$.
+\end{itemize}
+
+Formálisan, egy $p_1, p_2, \dots, p_N$ permutáció akkor elfogadott, ha minden $1 \le i < N$ esetén:
+
+\[
+p_i \neq p_{i+1} \quad \text{és} \quad (p_i \le p_{i+1} \;\; \lor \;\; |p_i - p_{i+1}| \ge K)
+\]
+
+\textbf{Fontos:}
+\begin{itemize}
+    \item Azonos értékű elemek esetén különböző indexű elemeknek számítanak (tehát külön felhasználhatók).
+    \item A kimenetben a permutációkat lexikografikusan növekvő sorrendben kell kiírni.
+    \item A megoldás során azonos permutáció nem szerepelhet többször.
+\end{itemize}
+
+\subsection*{Bemenet}
+
+Az első sorban $N$ és $K$ található.
+
+A második sor $N$ darab egész számot tartalmaz.
+
+\textbf{Korlátok:}
+\begin{itemize}
+    \item $1 \le N \le 10$
+    \item $1 \le K \le 100$
+    \item $1 \le A[i] \le 100$
+    \item Garantált, hogy a megfelelő permutációk száma legfeljebb $10^5$.
+\end{itemize}
+
+\subsection*{Kimenet}
+
+Írd ki az összes megfelelő permutációt soronként, szóközökkel elválasztva.
+
+Ha nincs megoldás, akkor az alábbi szöveget:
+\begin{verbatim}
+Nincs megoldas
+\end{verbatim}
+
+\subsection*{Példa}
+
+\subsubsection*{Bemenet}
+\begin{verbatim}
+4 3
+1 3 5 2
+\end{verbatim}
+
+\subsubsection*{Kimenet}
+\begin{verbatim}
+1 2 3 5
+1 3 5 2
+1 5 2 3
+2 3 5 1
+2 5 1 3
+3 5 1 2
+5 1 2 3
+\end{verbatim}
+
+\subsection*{Magyarázat}
+
+A rendezett bemenet: $1, 2, 3, 5$, és $K = 3$. Egy szomszédos pár akkor megengedett, ha növekvő, vagy ha a csökkenés legalább $3$. A $3$-as szám után tehát csak nagyobb szám állhat (a csökkenés legfeljebb $2$ lenne), az $5$-ös után viszont az $1$ és a $2$ is következhet. Ezért például a \texttt{2 5 3 1} nem megfelelő, mert az $5 \to 3$ csökkenés csak $2$.
+
+\subsection*{Megjegyzés}
+
+A feladatot visszalépéses kereséssel (backtracking) oldjuk meg.
+
+A naiv megoldás minden permutációt előállítana, és csak a végén ellenőrizné ($O(N \cdot N!)$, $N = 10$ esetén $10! = 3\,628\,800$ permutáció), ezért érdemes a \textbf{pruning alkalmazása}: a hibás részleges permutációkat azonnal elvetjük.
+
+\subsection*{Hint 1}
+A megoldás során építsd fel a permutációt lépésről lépésre, és minden lépésnél ellenőrizd a feltételeket.
+
+\subsection*{Hint 2}
+Ha egy részleges permutáció már sérti a szomszédsági feltételt, az ágat azonnal el lehet vetni (pruning).
+
+\subsection*{Hint 3}
+A bemenet rendezése segíthet a lexikografikus sorrend biztosításában.
+
+\subsection*{Hint 4}
+Az azonos értékű elemek kezelésére figyelj: bár külön indexen szerepelnek, ugyanazt a permutációt adnák többször. Ezért egy rekurziós szinten belül egy adott értéket csak egyszer próbáljunk ki (jegyezzük meg az ezen a szinten utoljára kipróbált értéket). Így nem kell a kész permutációk között utólag keresni a duplikátumokat.
+
+\subsection*{Megoldás}
+
+\begin{minted}[linenos,breaklines]{cpp}
+#include <bits/stdc++.h>
+using namespace std;
+
+int N, K;
+vector<int> a;
+
+vector<bool> used;
+vector<int> perm;
+vector<vector<int>> result;
+
+bool ok(int last, int cur) {
+    if (last == -1) return true;
+    if (last == cur) return false;
+    if (last <= cur) return true;
+    if (abs(last - cur) >= K) return true;
+    return false;
+}
+
+void backtrack() {
+    if ((int)perm.size() == N) {
+        result.push_back(perm);
+        return;
+    }
+
+    int last = perm.empty() ? -1 : perm.back();
+
+    int prevUsedValue = INT_MIN;
+    bool hasPrev = false;
+
+    for (int i = 0; i < N; i++) {
+
+        if (!used[i]) {
+
+            // duplikáció pruning (azonos értékek egy szinten)
+            bool duplicateSkip = false;
+            if (hasPrev && a[i] == prevUsedValue) {
+                duplicateSkip = true;
+            }
+            if (!duplicateSkip) {
+
+                // szomszédsági feltétel pruning
+                if (ok(last, a[i])) {
+
+                    used[i] = true;
+                    perm.push_back(a[i]);
+
+                    backtrack(); //itt a rekurzió 
+
+                    perm.pop_back(); //"visszatörlés"
+                    used[i] = false;
+
+                    prevUsedValue = a[i];
+                    hasPrev = true;
+                }
+            }
+        }
+    }
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cin >> N >> K;
+    a.resize(N);
+    used.assign(N, false);
+    for (int i = 0; i < N; i++) {
+        cin >> a[i];
+    }
+
+    sort(a.begin(), a.end());
+    backtrack();
+    if (result.empty()) {
+        cout << "Nincs megoldas\n";
+        return 0;
+    }
+    for (auto &v : result) {
+        for (int i = 0; i < (int)v.size(); i++) {
+            cout << v[i] << (i + 1 < (int)v.size() ? ' ' : '\n');
+        }
+    }
+    return 0;
+}
+\end{minted}
+
+
+\end{document}
