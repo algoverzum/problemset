@@ -1,0 +1,6 @@
+---
+- "Use a boolean matrix (bool tiltott[MAX][MAX]) that stores which towers cannot be together! The numbers of the towers in the current guard assignment are stored in a vector<int> aktualis, and the completed guard assignments in a vector<vector<int>> megoldasok."
+- "Write a function (lehet) that checks whether tower idx can be added to the current subset! To do this, you must go through the elements of aktualis and check whether tiltott[idx][t] is true for some element t."
+- "In the backtrack procedure, we decide about each tower whether it is included. There are two branches: either we include tower idx (if possible) or we leave it out. If idx > N, then we have decided about every tower, so the current subset is a completed guard assignment."
+- "On branch 1: if (lehet(idx)), that is, we check whether tower idx can be selected. If so, we add it, call backtrack(idx + 1), then remove it. On branch 2, we do NOT select tower idx: backtrack(idx + 1)."
+- "This traversal order is not lexicographic (for example, 1 3 is completed before 1), so at the end sort the solutions (sort)! After sorting, the empty guard assignment will automatically be first."
