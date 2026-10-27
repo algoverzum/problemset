@@ -1,0 +1,20 @@
+# N
+
+# Subtask 1: Examples
+#ST: 0
+#STNAME: examples
+#COPY: statement/input7.txt
+
+# Subtask 2: No additional constraints
+#ST: 100
+#STNAME: all
+#COPY: gen/input0.txt
+#COPY: gen/input1.txt
+#COPY: gen/input2.txt
+#COPY: gen/input3.txt
+#COPY: gen/input4.txt
+#COPY: gen/input5.txt
+#COPY: gen/input6.txt
+#COPY: gen/input8.txt
+#COPY: gen/input9.txt
+
