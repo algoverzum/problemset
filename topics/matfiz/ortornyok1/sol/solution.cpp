@@ -1,12 +1,12 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
 int N, M;
 
-const int MAX=21;
+const int MAX = 21;
 bool tiltott[MAX][MAX];
 
 vector<int> aktualis;
@@ -16,12 +16,9 @@ vector<vector<int>> megoldasok;
     Eldönti, hogy az idx torony
     hozzáadható-e a jelenlegi őrbeosztáshoz.
 */
-bool lehet(int idx)
-{
-    for (int i = 0; i < aktualis.size(); i++)
-    {
-        if (tiltott[idx][aktualis[i]])
-        {
+bool lehet(int idx) {
+    for (int i = 0; i < aktualis.size(); i++) {
+        if (tiltott[idx][aktualis[i]]) {
             return false;
         }
     }
@@ -32,17 +29,14 @@ bool lehet(int idx)
 /*
     Backtracking
 */
-void backtrack(int idx)
-{
-    if (idx > N)
-    {
+void backtrack(int idx) {
+    if (idx > N) {
         megoldasok.push_back(aktualis);
         return;
     }
 
     // 1. ág: bevesszük
-    if (lehet(idx))
-    {
+    if (lehet(idx)) {
         aktualis.push_back(idx);
         backtrack(idx + 1);
         aktualis.pop_back();
@@ -52,12 +46,10 @@ void backtrack(int idx)
     backtrack(idx + 1);
 }
 
-int main()
-{
+int main() {
     cin >> N >> M;
 
-    for (int i = 0; i < M; i++)
-    {
+    for (int i = 0; i < M; i++) {
         int a, b;
         cin >> a >> b;
 
@@ -72,12 +64,9 @@ int main()
 
     cout << megoldasok.size() << "\n";
 
-    for (int i = 0; i < megoldasok.size(); i++)
-    {
-        for (int j = 0; j < megoldasok[i].size(); j++)
-        {
-            if (j > 0)
-            {
+    for (int i = 0; i < megoldasok.size(); i++) {
+        for (int j = 0; j < megoldasok[i].size(); j++) {
+            if (j > 0) {
                 cout << " ";
             }
 

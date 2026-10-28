@@ -1,1 +1,1 @@
-1 0
+../statement/input0.txt

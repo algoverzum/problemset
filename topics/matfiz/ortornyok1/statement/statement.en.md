@@ -1,4 +1,4 @@
-# Task I – The King's Watchtowers (Python)
+# Task I – The King's Watchtowers
 
 On the border of the Kingdom of Numbers stand $N$ watchtowers. The king wants to station a guard in every tower, but certain towers cannot be guarded at the same time because their signal fires would interfere with each other.
 
@@ -42,3 +42,21 @@ The empty guard assignment (an empty line) must be printed first. The non-empty 
 4 2
 1 2
 2 3
+```
+
+### Output
+
+``` text
+10
+
+1
+1 3
+1 3 4
+1 4
+2
+2 4
+3
+3 4
+4
+```
+
