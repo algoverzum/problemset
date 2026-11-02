@@ -1,0 +1,7 @@
+hints.en.yaml
+hints.hu.yaml
+imputok
+statement.en.md
+statement.hu.md
+statement.pdf
+statement.tex

@@ -1,0 +1,33 @@
+- |-
+  Ismét három vector kellene: `forbidden` a tiltott párokra (minden toronyhoz a vele ütköző tornyok listája), valamint kettő az aktuális és a legjobb tornyokra: `current`, `best`.
+
+- |-
+  Mielőtt kiválasztasz egy új tornyot, ellenőrizd, hogy nem ütközik-e valamelyik korábban kiválasztott toronnyal.
+
+- |-
+  Alkalmazz **pruning** technikát!
+  
+  Ha az aktuális részmegoldásban eddig $x$ tornyot választottál ki, még legfeljebb $r$ torony választható, és már ismert egy $k$ méretű megoldás, akkor
+  
+  $$x+r < k$$
+  
+  esetén ezen az ágon már biztosan nem található jobb megoldás.
+
+- |-
+  Ha
+  
+  $$x+r = k,$$
+  
+  akkor is elhagyható az ág, amennyiben a belőle előállítható legjobb megoldás sem lehet lexikografikusan kisebb a már megtaláltnál. (Ez egy további vágási lehetőség; a lenti megoldás csak a Hint 3-ban leírt vágást alkalmazza, egyenlőség esetén tovább keres.)
+
+- |-
+  A lexikografikus összehasonlításhoz érdemes egy külön függvényt írni! Pl.
+  
+  ``` text
+  bool lexicographicallySmaller(const vector<int> &a,
+                                const vector<int> &b) {
+      return a < b;
+  }
+  ```
+  
+  A `vector`-ok `<` operátora éppen lexikografikusan hasonlít. Pythonban a lexikografikus összehasonlításhoz nem kell külön függvény: két lista `<` operátora (`current < best`) éppen lexikografikusan hasonlít. Ha új legjobb megoldást találsz, másolatot ments: `best = current[:]`!
