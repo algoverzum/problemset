@@ -6,28 +6,28 @@
 
 - |-
   Apply **pruning**!
-  
+
   If the current partial solution contains $x$ towers, at most $r$ more towers can still be selected, and a solution of size $k$ has already been found, then whenever
-  
+
   $$x+r < k$$
-  
+
   this branch cannot produce a better solution and can be pruned.
 
 - |-
   If
-  
+
   $$x+r = k,$$
-  
+
   the branch can still be pruned if even the best solution obtainable from it cannot be lexicographically smaller than the best solution already found. (This is an additional pruning option; the solution below only applies the pruning described in Hint 3 and continues searching in the case of equality.)
 
 - |-
   It is useful to write a separate function for lexicographic comparison. For example:
-  
+
   ```text
   bool lexicographicallySmaller(const vector<int> &a,
                                 const vector<int> &b) {
       return a < b;
   }
   ```
-  
+
   The `<` operator for `vector` objects performs lexicographic comparison.
